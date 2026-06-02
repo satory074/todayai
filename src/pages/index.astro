@@ -1,0 +1,64 @@
+---
+import Layout from "@/components/Layout.astro";
+import FeedCard from "@/components/FeedCard.astro";
+import SourceFilter from "@/components/SourceFilter.astro";
+import { dayKey, dayLabel, relativeTime, type FeedData, type FeedItem } from "@/lib/feed";
+import feedJson from "@/data/feed.json";
+
+const feed = feedJson as FeedData;
+const items = [...feed.items].sort(
+  (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
+);
+
+// 日付ごとにグループ化（表示順を維持）
+const groups: { key: string; label: string; items: FeedItem[] }[] = [];
+for (const item of items) {
+  const key = dayKey(item.publishedAt);
+  let group = groups.find((g) => g.key === key);
+  if (!group) {
+    group = { key, label: dayLabel(key), items: [] };
+    groups.push(group);
+  }
+  group.items.push(item);
+}
+
+const updatedRel = feed.updatedAt ? relativeTime(feed.updatedAt) : "";
+---
+
+<Layout>
+  <section class="pt-4">
+    <h1 class="text-[22px] font-bold tracking-tight">AI情報フィード</h1>
+    <p class="mt-1 text-[13px] text-[var(--color-text-muted)]">
+      X・Feedly・はてなブックマーク（テクノロジー）から自動集約。
+      {updatedRel && <span class="text-[var(--color-text-subtle)]">最終更新 {updatedRel}</span>}
+    </p>
+  </section>
+
+  <SourceFilter items={items} />
+
+  {
+    items.length === 0 ? (
+      <div class="rounded-xl border border-dashed border-[var(--color-border)] bg-[var(--color-card)] p-10 text-center text-[var(--color-text-muted)]">
+        <p>まだアイテムがありません。</p>
+        <p class="mt-1 text-[12px] text-[var(--color-text-subtle)]">
+          <code>npm run aggregate</code> を実行するとフィードが取り込まれます。
+        </p>
+      </div>
+    ) : (
+      <div class="space-y-7">
+        {groups.map((group) => (
+          <section data-day-section>
+            <h2 class="sticky top-[108px] z-[5] mb-2.5 inline-block rounded-md bg-[var(--color-surface)] px-2.5 py-1 text-[12px] font-semibold tracking-wide text-[var(--color-text-muted)]">
+              {group.label}
+            </h2>
+            <div class="space-y-2.5">
+              {group.items.map((item) => (
+                <FeedCard item={item} />
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    )
+  }
+</Layout>

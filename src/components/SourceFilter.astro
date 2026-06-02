@@ -1,0 +1,65 @@
+---
+import { SOURCES, type FeedItem } from "@/lib/feed";
+
+interface Props {
+  items: FeedItem[];
+}
+const { items } = Astro.props;
+
+const counts: Record<string, number> = { all: items.length };
+for (const s of SOURCES) counts[s.key] = items.filter((i) => i.source === s.key).length;
+
+const chips = [
+  { key: "all", label: "すべて", badgeClass: "" },
+  ...SOURCES.map((s) => ({ key: s.key, label: s.label, badgeClass: s.badgeClass })),
+];
+---
+
+<div
+  id="source-filter"
+  class="sticky top-[57px] z-10 -mx-4 mb-4 flex flex-wrap gap-2 border-b border-[var(--color-border)] bg-[var(--color-bg)]/85 px-4 py-3 backdrop-blur-md sm:-mx-6 sm:px-6"
+>
+  {
+    chips.map((c) => (
+      <button
+        type="button"
+        data-filter={c.key}
+        class="filter-chip inline-flex items-center gap-1.5 rounded-full border border-[var(--color-border)] px-3 py-1.5 text-[12.5px] font-medium text-[var(--color-text-muted)] transition-colors hover:border-[var(--color-border-strong)] hover:text-[var(--color-text)] aria-[pressed=true]:border-[var(--color-accent-deep)] aria-[pressed=true]:bg-[var(--color-accent-glow)] aria-[pressed=true]:text-[var(--color-accent-bright)]"
+        aria-pressed={c.key === "all" ? "true" : "false"}
+      >
+        {c.label}
+        <span class="text-[10.5px] text-[var(--color-text-subtle)]">{counts[c.key]}</span>
+      </button>
+    ))
+  }
+</div>
+
+<script>
+  const filterBar = document.getElementById("source-filter");
+  const chips = Array.from(document.querySelectorAll<HTMLButtonElement>(".filter-chip"));
+  const cards = Array.from(document.querySelectorAll<HTMLElement>("article[data-source]"));
+  const daySections = Array.from(document.querySelectorAll<HTMLElement>("[data-day-section]"));
+
+  function applyFilter(filter: string) {
+    for (const card of cards) {
+      const match = filter === "all" || card.dataset.source === filter;
+      card.classList.toggle("is-hidden", !match);
+    }
+    // 中身が全部隠れた日付セクションは見出しごと隠す
+    for (const section of daySections) {
+      const visible = section.querySelectorAll(
+        "article[data-source]:not(.is-hidden)",
+      ).length;
+      section.classList.toggle("is-hidden", visible === 0);
+    }
+    for (const chip of chips) {
+      chip.setAttribute("aria-pressed", chip.dataset.filter === filter ? "true" : "false");
+    }
+  }
+
+  filterBar?.addEventListener("click", (e) => {
+    const chip = (e.target as HTMLElement).closest<HTMLButtonElement>(".filter-chip");
+    if (!chip?.dataset.filter) return;
+    applyFilter(chip.dataset.filter);
+  });
+</script>

@@ -1,0 +1,41 @@
+{
+  "updatedAt": "2026-06-03T09:00:00.000Z",
+  "items": [
+    {
+      "id": "x-sample-1",
+      "source": "x",
+      "title": "（サンプル）新しいAIモデルを発表しました。推論能力が大幅に向上し、長文コンテキストの理解が改善されています。",
+      "url": "https://x.com/OpenAI",
+      "publishedAt": "2026-06-03T08:30:00.000Z",
+      "author": "@OpenAI"
+    },
+    {
+      "id": "feedly-sample-1",
+      "source": "feedly",
+      "title": "（サンプル）大規模言語モデルの効率的な蒸留手法に関する研究",
+      "url": "https://example.com/article",
+      "publishedAt": "2026-06-03T07:15:00.000Z",
+      "summary": "本記事では、知識蒸留を用いて大規模モデルの性能を小型モデルに移す最新手法を解説します。推論コストを抑えつつ精度を維持するアプローチが注目されています。",
+      "author": "AI Research Blog"
+    },
+    {
+      "id": "hatena-sample-1",
+      "source": "hatena",
+      "title": "（サンプル）エンジニアのための生成AI活用ガイド",
+      "url": "https://example.com/hatena-entry",
+      "publishedAt": "2026-06-02T22:00:00.000Z",
+      "summary": "日々の開発に生成AIを取り入れる実践的なテクニックをまとめた記事。コードレビューやテスト生成での活用例が豊富。",
+      "bookmarkCount": 342
+    },
+    {
+      "id": "hatena-sample-2",
+      "source": "hatena",
+      "title": "（サンプル）ベクトルデータベース入門",
+      "url": "https://example.com/hatena-entry-2",
+      "publishedAt": "2026-06-02T14:20:00.000Z",
+      "summary": "RAG構築に欠かせないベクトルDBの基礎と主要プロダクトの比較。",
+      "bookmarkCount": 128
+    }
+  ],
+  "state": {}
+}

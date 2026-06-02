@@ -1,0 +1,44 @@
+---
+import Layout from "@/components/Layout.astro";
+---
+
+<Layout title="このサイトについて — today.ai">
+  <section class="prose-invert pt-6">
+    <h1 class="text-[22px] font-bold tracking-tight">このサイトについて</h1>
+
+    <p class="mt-4 text-[14px] leading-relaxed text-[var(--color-text-muted)]">
+      <strong class="text-[var(--color-text)]">today.ai</strong> は、AI関連の情報を1つのタイムラインにまとめて読むための個人用フィードです。
+      数時間ごとに以下の3つの情報源を自動取得し、時系列で表示します。
+    </p>
+
+    <div class="mt-6 space-y-3">
+      <div class="rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] p-4">
+        <span class="src-x inline-flex rounded-full px-2 py-0.5 text-[11px] font-semibold">X</span>
+        <p class="mt-2 text-[13px] text-[var(--color-text-muted)]">
+          特定の X(Twitter) アカウントの投稿。公式 API で増分取得しています。
+        </p>
+      </div>
+      <div class="rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] p-4">
+        <span class="src-feedly inline-flex rounded-full px-2 py-0.5 text-[11px] font-semibold"
+          >Feedly</span
+        >
+        <p class="mt-2 text-[13px] text-[var(--color-text-muted)]">
+          Feedly の特定フォルダ（カテゴリ）に登録した記事。
+        </p>
+      </div>
+      <div class="rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] p-4">
+        <span class="src-hatena inline-flex rounded-full px-2 py-0.5 text-[11px] font-semibold"
+          >はてブ</span
+        >
+        <p class="mt-2 text-[13px] text-[var(--color-text-muted)]">
+          はてなブックマーク 人気エントリー「テクノロジー」。
+        </p>
+      </div>
+    </div>
+
+    <p class="mt-6 text-[12px] text-[var(--color-text-subtle)]">
+      GitHub Actions（6時間ごと）でフィードを取得し、GitHub Pages に静的サイトとしてデプロイしています。
+      各アイテムのリンク先は元の投稿・記事です。
+    </p>
+  </section>
+</Layout>

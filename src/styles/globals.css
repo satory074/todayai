@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  /* Surface — 落ち着いたダーク */
+  --color-bg: #0a0b0f;
+  --color-surface: #101218;
+  --color-card: #14161e;
+  --color-card-hover: #181b25;
+  --color-border: #232633;
+  --color-border-strong: #313747;
+
+  /* Text */
+  --color-text: #eef0f5;
+  --color-text-muted: #9aa1b0;
+  --color-text-subtle: #646b7d;
+
+  /* Brand accent — エレクトリック・シアン */
+  --color-accent: #3dd7d0;
+  --color-accent-bright: #6ff0ea;
+  --color-accent-deep: #1c8b87;
+  --color-accent-glow: rgba(61, 215, 208, 0.12);
+
+  /* ソース別アクセント */
+  --color-x: #e7e9ee;
+  --color-x-bg: rgba(231, 233, 238, 0.08);
+  --color-feedly: #4ec46f;
+  --color-feedly-bg: rgba(78, 196, 111, 0.1);
+  --color-hatena: #3a9ad9;
+  --color-hatena-bg: rgba(58, 154, 217, 0.12);
+
+  /* Typography */
+  --font-sans: "Inter", "Noto Sans JP", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --leading-jp-body: 1.7;
+
+  /* Motion */
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-base: 220ms;
+}
+
+html {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-feature-settings: "palt" 1, "kern" 1;
+  line-height: var(--leading-jp-body);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(61, 215, 208, 0.07), transparent 55%),
+    var(--color-bg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* スクロールバー控えめ */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border-strong) transparent;
+}
+
+/* ソースバッジの配色ユーティリティ */
+.src-x {
+  color: var(--color-x);
+  background: var(--color-x-bg);
+}
+.src-feedly {
+  color: var(--color-feedly);
+  background: var(--color-feedly-bg);
+}
+.src-hatena {
+  color: var(--color-hatena);
+  background: var(--color-hatena-bg);
+}
+
+/* フィルタ非表示用 */
+[data-source].is-hidden {
+  display: none;
+}

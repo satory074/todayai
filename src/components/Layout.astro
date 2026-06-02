@@ -1,0 +1,93 @@
+---
+import "@/styles/globals.css";
+import { siteLink, absUrl } from "@/lib/url";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "today.ai — AI情報フィード",
+  description = "特定のXアカウント・Feedlyフォルダ・はてなブックマーク（テクノロジー）からAI関連情報を集約する個人フィード。",
+} = Astro.props;
+
+const ogImage = absUrl("/og-default.png");
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href={siteLink("/favicon.svg")} />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="today.ai"
+      href={siteLink("/rss.xml")}
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="mx-auto flex min-h-screen max-w-2xl flex-col px-4 sm:px-6">
+      <header
+        class="sticky top-0 z-20 -mx-4 mb-2 border-b border-[var(--color-border)] bg-[var(--color-bg)]/85 px-4 py-3.5 backdrop-blur-md sm:-mx-6 sm:px-6"
+      >
+        <div class="flex items-center justify-between gap-3">
+          <a href={siteLink("/")} class="group flex items-center gap-2.5">
+            <span
+              class="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-[var(--color-accent)] to-[var(--color-accent-deep)] text-sm font-bold text-[#06201f] shadow-[0_0_18px_var(--color-accent-glow)]"
+              >ai</span
+            >
+            <span class="text-[15px] font-semibold tracking-tight">
+              today<span class="text-[var(--color-accent)]">.ai</span>
+            </span>
+          </a>
+          <nav class="flex items-center gap-1 text-[13px] text-[var(--color-text-muted)]">
+            <a
+              href={siteLink("/")}
+              class="rounded-md px-2.5 py-1.5 transition-colors hover:bg-[var(--color-card)] hover:text-[var(--color-text)]"
+              >フィード</a
+            >
+            <a
+              href={siteLink("/about")}
+              class="rounded-md px-2.5 py-1.5 transition-colors hover:bg-[var(--color-card)] hover:text-[var(--color-text)]"
+              >このサイト</a
+            >
+            <a
+              href={siteLink("/rss.xml")}
+              class="rounded-md px-2.5 py-1.5 transition-colors hover:bg-[var(--color-card)] hover:text-[var(--color-text)]"
+              aria-label="RSS"
+              >RSS</a
+            >
+          </nav>
+        </div>
+      </header>
+
+      <main class="flex-1 pb-16">
+        <slot />
+      </main>
+
+      <footer
+        class="border-t border-[var(--color-border)] py-6 text-center text-[12px] text-[var(--color-text-subtle)]"
+      >
+        <p>
+          today.ai — AI情報を1つのフィードに。X / Feedly / はてなブックマークから自動集約。
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

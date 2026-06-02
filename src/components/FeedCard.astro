@@ -1,0 +1,85 @@
+---
+import type { FeedItem } from "@/lib/feed";
+import { SOURCES, relativeTime } from "@/lib/feed";
+
+interface Props {
+  item: FeedItem;
+}
+
+const { item } = Astro.props;
+const meta = SOURCES.find((s) => s.key === item.source)!;
+const rel = relativeTime(item.publishedAt);
+---
+
+<article
+  data-source={item.source}
+  class="group relative rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-colors duration-[var(--duration-base)] hover:border-[var(--color-border-strong)] hover:bg-[var(--color-card-hover)]"
+>
+  <a
+    href={item.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="absolute inset-0 z-0 rounded-xl"
+    aria-label={item.title}></a>
+
+  <div class="relative z-10 flex gap-3.5">
+    <div class="min-w-0 flex-1">
+      <div class="mb-2 flex items-center gap-2 text-[11px]">
+        <span
+          class={`inline-flex items-center rounded-full px-2 py-0.5 font-semibold tracking-wide ${meta.badgeClass}`}
+        >
+          {meta.label}
+        </span>
+        {
+          item.author && (
+            <span class="truncate text-[var(--color-text-subtle)]">{item.author}</span>
+          )
+        }
+        <span class="ml-auto shrink-0 text-[var(--color-text-subtle)]">{rel}</span>
+      </div>
+
+      <h2
+        class="text-[15px] font-semibold leading-snug text-[var(--color-text)] transition-colors group-hover:text-[var(--color-accent-bright)]"
+      >
+        {item.title}
+      </h2>
+
+      {
+        item.summary && (
+          <p class="mt-1.5 line-clamp-2 text-[13px] leading-relaxed text-[var(--color-text-muted)]">
+            {item.summary}
+          </p>
+        )
+      }
+
+      {
+        item.bookmarkCount !== undefined && (
+          <div class="mt-2 inline-flex items-center gap-1 rounded-md bg-[var(--color-hatena-bg)] px-2 py-0.5 text-[11px] font-medium text-[var(--color-hatena)]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="h-3 w-3"
+            >
+              <path d="M6 2a2 2 0 0 0-2 2v18l8-5.5L20 22V4a2 2 0 0 0-2-2H6z" />
+            </svg>
+            {item.bookmarkCount} users
+          </div>
+        )
+      }
+    </div>
+
+    {
+      item.thumbnail && (
+        <div class="relative z-10 hidden h-16 w-16 shrink-0 overflow-hidden rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] sm:block">
+          <img
+            src={item.thumbnail}
+            alt=""
+            loading="lazy"
+            class="h-full w-full object-cover"
+          />
+        </div>
+      )
+    }
+  </div>
+</article>
