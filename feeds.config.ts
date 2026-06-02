@@ -39,12 +39,13 @@ export interface FeedsConfig {
 
 export const feedsConfig: FeedsConfig = {
   x: {
-    username: "OpenAI", // ★ 取得したいアカウントに変更
+    username: "satory074", // 自分のアカウント = Owned Read ($0.001/件)
     maxResults: 20,
     disabled: false,
   },
   feedly: {
-    streamId: "user/REPLACE_ME/category/AI", // ★ 自分の streamId に変更
+    streamId:
+      "user/25e9a004-74fc-4204-9c66-0e1687f69f73/category/fcda305b-0f50-44d9-a1da-689b3d1fe43a",
     count: 30,
     disabled: false,
   },
