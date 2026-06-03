@@ -1,6 +1,45 @@
 {
-  "updatedAt": "2026-06-03T13:48:03.653Z",
+  "updatedAt": "2026-06-03T19:26:57.792Z",
   "items": [
+    {
+      "id": "hatena-https://gigazine.net/news/20260603-leiden-declaration-on-ai-and-math/",
+      "source": "hatena",
+      "title": "16人の数学者がAIの精度や信頼性など数学分野への潜在的な脅威について警告する「ライデン宣言」を発表",
+      "url": "https://gigazine.net/news/20260603-leiden-declaration-on-ai-and-math/",
+      "publishedAt": "2026-06-03T11:47:47.000Z",
+      "summary": "数学研究におけるAIの利用が証明の信頼性、著作権や貢献の帰属、研究の自律性などに影響を及ぼすとして、15大学の研究者16人からなる作業部会が2026年6月2日、「Leiden Declaration on Artificial Intelligence and Mathematics(人工知能と数学に関するライデン宣言)」を発表しました。宣言はAIを数学から排除するのでは...",
+      "thumbnail": "https://i.gzn.jp/img/2026/06/03/leiden-declaration-on-ai-and-math/00_m.jpg",
+      "bookmarkCount": 4
+    },
+    {
+      "id": "hatena-https://kamichidu.hatenablog.com/entry/2026/06/03/001719",
+      "source": "hatena",
+      "title": "VimでJavaを実行する方法 2026年最新版 - なるはやで いい感じの 動作確認",
+      "url": "https://kamichidu.hatenablog.com/entry/2026/06/03/001719",
+      "publishedAt": "2026-06-03T11:47:35.000Z",
+      "summary": "どうも、kamichiduです。 この記事は Vim 駅伝 2026-06-03 の記事となります。 早速ですがみなさん、開発をしていて Vim から Java を実行したいと感じたことはないでしょうか。 私はあります。 特にちょっとしたコードやアルゴリズムを試したいとき、端末へ切り替えたり、ビルドしたり、実行したりという往復は意外と面...",
+      "thumbnail": "https://ogimage.blog.st-hatena.com/8599973812317846885/14945776032038050168/1780415091",
+      "bookmarkCount": 11
+    },
+    {
+      "id": "hatena-https://scrapbox.io/kawasima/%E3%83%9E%E3%82%B8%E3%83%83%E3%82%AF%E3%83%8A%E3%83%B3%E3%83%90%E3%83%BC%E3%81%A8%E3%83%87%E3%83%BC%E3%82%BF%E6%8A%BD%E8%B1%A1",
+      "source": "hatena",
+      "title": "マジックナンバーとデータ抽象 - kawasima",
+      "url": "https://scrapbox.io/kawasima/%E3%83%9E%E3%82%B8%E3%83%83%E3%82%AF%E3%83%8A%E3%83%B3%E3%83%90%E3%83%BC%E3%81%A8%E3%83%87%E3%83%BC%E3%82%BF%E6%8A%BD%E8%B1%A1",
+      "publishedAt": "2026-06-03T10:40:19.000Z",
+      "summary": "コードに直接書かれた 3 や 0 のような数値リテラル、いわゆるマジックナンバーを名前付き定数に置き換える。if (retryCount > 3) を if (retryCount > MAX_RETRY_COUNT) に直す。リファクタリングの定番として、ほとんど反射的にに行われている。 マジックナンバーを定数にする一番の理由としてよく挙がるのは、値の変...",
+      "thumbnail": "https://scrapbox.io/assets/img/content-logo.png",
+      "bookmarkCount": 22
+    },
+    {
+      "id": "hatena-https://av.watch.impress.co.jp/docs/news/2114221.html",
+      "source": "hatena",
+      "title": "アップル＆グーグルから新HDR「Eclipsa Video」。スマホや次期Chromeに実装へ",
+      "url": "https://av.watch.impress.co.jp/docs/news/2114221.html",
+      "publishedAt": "2026-06-03T10:10:13.000Z",
+      "thumbnail": "https://av.watch.impress.co.jp/img/avw/list/2114/221/d00.jpg",
+      "bookmarkCount": 18
+    },
     {
       "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/03/news124.html",
       "source": "hatena",
@@ -9,7 +48,25 @@
       "publishedAt": "2026-06-03T08:46:24.000Z",
       "summary": "米GitHubが6月1日（現地時間）に適用した「GitHub Copilot」の新料金制度を巡り、SNS上で不満の声が続出している。新体系は、基本料金を据え置きつつ、毎月一定のクレジットを支給し、超過分は従量課金する仕組み。しかし、ユーザーからは「クレジットの消費が早すぎる」「使い物にならなくなった」との声が散見される。...",
       "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/03/cover_news124.png",
-      "bookmarkCount": 94
+      "bookmarkCount": 149
+    },
+    {
+      "id": "hatena-https://forest.watch.impress.co.jp/docs/news/2113943.html",
+      "source": "hatena",
+      "title": "すぐ知りたい「Microsoft Build 2026」まとめ ～Windows AI APIがGPUにも対応、RTX Spark搭載の開発用PC、ローカルSLM新モデル、エージェント前提の新デバイスなど／OpenClawも安全？なAI用サンドボックス、パーソナルエージェントも",
+      "url": "https://forest.watch.impress.co.jp/docs/news/2113943.html",
+      "publishedAt": "2026-06-03T08:42:28.000Z",
+      "thumbnail": "https://forest.watch.impress.co.jp/img/wf/list/2113/943/build00.png",
+      "bookmarkCount": 12
+    },
+    {
+      "id": "hatena-https://forest.watch.impress.co.jp/docs/news/2113920.html",
+      "source": "hatena",
+      "title": "「Codex」をアプリ開発以外にも！職種プラグインで「営業」「制作」「投資」などの役割で動作、職種にあった外部ツールとも連携／文書やスライドの修正が簡単に指示できる「Annotations」、共有サイトを制作する「Sites」も導入",
+      "url": "https://forest.watch.impress.co.jp/docs/news/2113920.html",
+      "publishedAt": "2026-06-03T08:42:17.000Z",
+      "thumbnail": "https://forest.watch.impress.co.jp/img/wf/list/2113/920/codex_app.png",
+      "bookmarkCount": 8
     },
     {
       "id": "x-sample-1",
@@ -20,6 +77,15 @@
       "author": "@OpenAI"
     },
     {
+      "id": "hatena-https://pc.watch.impress.co.jp/docs/news/2114136.html",
+      "source": "hatena",
+      "title": "NVIDIA、1兆パラメータが動くWindowsのデスクトップAIスパコン",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2114136.html",
+      "publishedAt": "2026-06-03T08:27:14.000Z",
+      "thumbnail": "https://pc.watch.impress.co.jp/img/pcw/list/2114/136/1.jpg",
+      "bookmarkCount": 9
+    },
+    {
       "id": "hatena-https://togetter.com/li/2704904",
       "source": "hatena",
       "title": "『IT業界長いけど、募集要項のある部分に気をつけていたら攻撃的な人がいる職場に当たってない』 警戒する理由込みで共感",
@@ -27,17 +93,7 @@
       "publishedAt": "2026-06-03T08:17:56.000Z",
       "summary": "水雪駄🍊 @mizsetta IT業界長いけど ・一人称で仕事できる人 ・自走できる人 って、募集要項に書いてる会社避けてきたら、攻撃的な人がいる職場に当たったことない。 自走力より、コミュニケーション重視の会社だと →チームワーク大切にする →技術力があっても攻撃的な人は評価されにくい →いても残りにくい →結果、雰囲...",
       "thumbnail": "https://s.tgstc.com/ogp3/a4b8e8c3be2d701a12d6bdd750d3149a-1200x630.jpeg",
-      "bookmarkCount": 170
-    },
-    {
-      "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/03/news121.html",
-      "source": "hatena",
-      "title": "「Chatwork」で一時障害、不安定に　ユーザー「もう帰りたい」",
-      "url": "https://www.itmedia.co.jp/news/articles/2606/03/news121.html",
-      "publishedAt": "2026-06-03T08:02:57.000Z",
-      "summary": "kubell（旧Chatwork）が運営するビジネスチャット「Chatwork」で6月3日午後3時40分ごろから一時障害が発生し、アクセスしづらい状態になっていたが、午後4時までに解消した。 公式Xアカウント（@chatwork_ja）は同日午後3時49分、「Chatworkへのアクセスが不安定になっています」と告知。午後4時に解消を発表した。 X上...",
-      "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/03/cover_news121.png",
-      "bookmarkCount": 18
+      "bookmarkCount": 244
     },
     {
       "id": "hatena-https://forest.watch.impress.co.jp/docs/news/2114149.html",
@@ -46,7 +102,7 @@
       "url": "https://forest.watch.impress.co.jp/docs/news/2114149.html",
       "publishedAt": "2026-06-03T07:42:19.000Z",
       "thumbnail": "https://forest.watch.impress.co.jp/img/wf/list/2114/149/hermes.jpg",
-      "bookmarkCount": 12
+      "bookmarkCount": 69
     },
     {
       "id": "hatena-https://odiak.net/cloudflare-agents-personal-micromanager",
@@ -56,7 +112,7 @@
       "publishedAt": "2026-06-03T07:27:55.000Z",
       "summary": "Cloudflare Agentsで、自分をマイクロマネジメントしてくれるAIエージェント「Kuro」を作っている。 朝、ぼんやりしたまま一日が始まることがよくある。 やることはある。やった方がいいことも分かっている。Obsidianのdaily notesにタスクも書いてある。 それなのに、朝の時点でちゃんと今日やることを決めないまま、な...",
       "thumbnail": "https://i.imgur.com/nvOMId2.png",
-      "bookmarkCount": 29
+      "bookmarkCount": 39
     },
     {
       "id": "feedly-sample-1",
@@ -75,7 +131,7 @@
       "publishedAt": "2026-06-03T07:05:17.000Z",
       "summary": "新しいAIモデル「クロード・ミュトス」が、日本政府や一部の金融機関で利用できるようになったことを受けて、松本デジタル大臣は「大きな一歩だ」と評価し、日本全体のサイバーセキュリティーの強化につなげたいと…",
       "thumbnail": "https://imgu.web.nhk/news/u/news/html/20260603/K10015139651_2606031310_0603135429_01_02.jpg",
-      "bookmarkCount": 5
+      "bookmarkCount": 11
     },
     {
       "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/03/news114.html",
@@ -85,7 +141,7 @@
       "publishedAt": "2026-06-03T07:02:53.000Z",
       "summary": "クラウドファンディング大手のCAMPFIREは6月2日、同社のGitHubアカウントが不正アクセスを受け、最大22.5万件の個人情報が漏えいした可能性がある問題の原因について、外部専門機関によるフォレンジック調査の結果を発表した。 従業員が発行したGitHub認証情報が、個人開発で利用していたサーバに意図せずアップロードさ...",
       "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/03/cover_news114.png",
-      "bookmarkCount": 37
+      "bookmarkCount": 54
     },
     {
       "id": "hatena-https://gigazine.net/news/20260603-github-copilot-credit-consumption/",
@@ -95,17 +151,16 @@
       "publishedAt": "2026-06-03T07:00:18.000Z",
       "summary": "Microsoft傘下のGitHubが提供するAIコーディング支援サービス「GitHub Copilot」は、エディタ上でコード補完やチャットによる相談を行える開発者向けツールです。従来のCopilotは数行のコード補完や短い質問に答える使い方が目立っていましたが、近年は複数のファイルを調べながらAIが複数の手順をたどって修正案を作る...",
       "thumbnail": "https://i.gzn.jp/img/2026/06/03/github-copilot-credit-consumption/00.jpg",
-      "bookmarkCount": 34
+      "bookmarkCount": 39
     },
     {
-      "id": "hatena-https://anond.hatelabo.jp/20260603152215",
+      "id": "hatena-https://www.watch.impress.co.jp/docs/news/2114069.html",
       "source": "hatena",
-      "title": "[AI解説]UK暴動とトミー・ロビンソンの功罪[URLつき]",
-      "url": "https://anond.hatelabo.jp/20260603152215",
-      "publishedAt": "2026-06-03T06:22:22.000Z",
-      "summary": "質問:トミー・ロビンソンの功罪。白人貧困層という道徳的弱者の苦闘。グルーミングギャングにみるマイノリティと行政の結託。 回答:トミー・ロビンソンの功罪、白人貧困層の苦闘、そしてグルーミングギャング問題におけるマイノリティ（主にパキスタン系）と行政の結託について。 このテーマは英国社会の深い傷を突くも...",
-      "thumbnail": "https://anond.hatelabo.jp/assets/images/og-image-1500.gif",
-      "bookmarkCount": 3
+      "title": "マイクロソフト、翻訳“コストゼロ”も可能 EdgeのローカルAI強化",
+      "url": "https://www.watch.impress.co.jp/docs/news/2114069.html",
+      "publishedAt": "2026-06-03T06:23:48.000Z",
+      "thumbnail": "https://www.watch.impress.co.jp/img/ipw/list/2114/069/00.jpg",
+      "bookmarkCount": 4
     },
     {
       "id": "hatena-https://www.watch.impress.co.jp/docs/news/2114032.html",
@@ -114,7 +169,7 @@
       "url": "https://www.watch.impress.co.jp/docs/news/2114032.html",
       "publishedAt": "2026-06-03T06:19:04.000Z",
       "thumbnail": "https://www.watch.impress.co.jp/img/ipw/list/2114/032/andknot_01.jpg",
-      "bookmarkCount": 11
+      "bookmarkCount": 25
     },
     {
       "id": "hatena-https://blog.inorinrinrin.com/entry/2026/06/02/215815",
@@ -124,26 +179,7 @@
       "publishedAt": "2026-06-03T06:10:40.000Z",
       "summary": "先日受験した TOEIC L&R 422 でついに一つの目標だったTOEIC 700点を超えました。 4月にGoogle Cloud Nextでアメリカに行った 時も、日常会話やセッションを聞くといった場では特に困らなかったので、「もしかして英語力上がってる？」と思い始めたところ、この結果です。 学生の頃にはこの壁は越えられなかったので、間...",
       "thumbnail": "https://ogimage.blog.st-hatena.com/6802418398318546029/14945776032037983161/1780452713",
-      "bookmarkCount": 22
-    },
-    {
-      "id": "hatena-https://www.4gamer.net/games/869/G086964/20260602061/",
-      "source": "hatena",
-      "title": "NVIDIAのWindows PC向けSoC「RTX Spark」はどんなプロセッサなのか。アーキテクチャや性能を考察する",
-      "url": "https://www.4gamer.net/games/869/G086964/20260602061/",
-      "publishedAt": "2026-06-03T05:45:32.000Z",
-      "summary": "NVIDIAのWindows PC向けSoC「RTX Spark」はどんなプロセッサなのか。アーキテクチャや性能を考察する ライター：西川善司 2026年6月1日，NVIDIAが主催するGPU技術関連イベント「NVIDIA GTC Taipei」がスタートした。基調講演では，同社のCEOを務めるJensen Huang（ジェンスン・フアン）氏が，さまざまな新製品やサービス...",
-      "thumbnail": "https://www.4gamer.net/games/869/G086964/20260602061/SS/008.jpg",
-      "bookmarkCount": 16
-    },
-    {
-      "id": "hatena-https://forest.watch.impress.co.jp/docs/news/2113918.html",
-      "source": "hatena",
-      "title": "「Coreutils for Windows」が一般提供 ～Linuxなどの定番コマンドをWindowsでネイティブ実行／macOS、WSL、コンテナー、クラウド環境などをまたいで作業する場合に",
-      "url": "https://forest.watch.impress.co.jp/docs/news/2113918.html",
-      "publishedAt": "2026-06-03T04:36:52.000Z",
-      "thumbnail": "https://forest.watch.impress.co.jp/img/wf/list/2113/918/coreutils.jpg",
-      "bookmarkCount": 34
+      "bookmarkCount": 32
     },
     {
       "id": "hatena-https://takoratta.hatenablog.com/entry/2026/06/03/120535",
@@ -153,7 +189,27 @@
       "publishedAt": "2026-06-03T04:07:04.000Z",
       "summary": "私が「AIには開発できない（だから引き続き人間が担うしかない）」と一年ほど前まで言い続けていたものがいくつかある。その代表がOSだ。自分がかつてOS開発に関わったから、という思い入れもある。だがそれを抜きにしても、OSがもっとも難易度の高いソフトウェアの一つだと言って、正面から反論する人は少ないだろう。...",
       "thumbnail": "https://ogimage.blog.st-hatena.com/12704346814673891608/14945776032038191545/1780455935",
-      "bookmarkCount": 35
+      "bookmarkCount": 52
+    },
+    {
+      "id": "hatena-https://gigazine.net/news/20260603-microsoft-scout-by-openclaw/",
+      "source": "hatena",
+      "title": "MicrosoftがOpenClawベースの常時稼働型AIエージェント「Scout」を発表、ユーザーの代わりに仕事を進める「Autopilot」第1弾",
+      "url": "https://gigazine.net/news/20260603-microsoft-scout-by-openclaw/",
+      "publishedAt": "2026-06-03T03:40:53.000Z",
+      "summary": "Microsoftが、Microsoft 365向けの常時稼働型AIエージェント「Microsoft Scout」を発表しました。ScoutはAIエージェントフレームワークである「OpenClaw」の技術を基盤としており、ユーザーが毎回指示を出さなくてもバックグラウンドで作業を進める「Autopilot」という新カテゴリの最初のエージェントとして位置付けられ...",
+      "thumbnail": "https://i.gzn.jp/img/2026/06/03/microsoft-scout-by-openclaw/00.png",
+      "bookmarkCount": 4
+    },
+    {
+      "id": "hatena-https://tech.layerx.co.jp/entry/ai-agent-long-term-memory-simulation",
+      "source": "hatena",
+      "title": "AIエージェントに1年分のニュースを読ませて4,500件の長期記憶を作って見えた課題 - LayerX エンジニアブログ",
+      "url": "https://tech.layerx.co.jp/entry/ai-agent-long-term-memory-simulation",
+      "publishedAt": "2026-06-03T03:39:16.000Z",
+      "summary": "はじめに LayerX Ai Workforce事業部でApplied R&D をしているtyoyoです。 AI Agentの長期記憶に関して様々な手法が提案されていますが、そのどれもが実際に長期間で運用されたことはほとんどないはずです。なぜなら、それらが台頭したのが最近だからです。 個人的に長期記憶についての肌感覚がなかったので、実験として...",
+      "thumbnail": "https://cdn.image.st-hatena.com/image/scale/f47fc59f25bb780f4af73d254a2dd0ad848caa92/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fi%2Fipod_nana%2F20260603%2F20260603111845.png",
+      "bookmarkCount": 8
     },
     {
       "id": "hatena-https://internet.watch.impress.co.jp/docs/yajiuma/2114004.html",
@@ -162,27 +218,7 @@
       "url": "https://internet.watch.impress.co.jp/docs/yajiuma/2114004.html",
       "publishedAt": "2026-06-03T03:23:49.000Z",
       "thumbnail": "https://internet.watch.impress.co.jp/img/iw/list/2114/004/yajiuma-watch_1.png",
-      "bookmarkCount": 24
-    },
-    {
-      "id": "hatena-https://trpg.cocolog-nifty.com/anizakki/2011/05/post-80607d.html",
-      "source": "hatena",
-      "title": "いまさら巫女SEさんの騒動の話 | akiraaniの日記 | スラド - 彬兄雑記帳",
-      "url": "https://trpg.cocolog-nifty.com/anizakki/2011/05/post-80607d.html",
-      "publishedAt": "2026-06-03T03:23:35.000Z",
-      "summary": "これの話 Twitter使ってないのでtogetterの読み方がさっぱりわからないので、コメントからの憶測になります。 それ違うよって話があればコメントで突っ込みいただけると幸い。 だいたいの流れは以下のようになると理解してます 稼働中のシステムについて、どうも作った連中がいい加減だったことがあとから判明 このため...",
-      "thumbnail": "https://trpg.cocolog-nifty.com/.shared-cocolog/nifty_managed/images/web/ogp/default.png",
-      "bookmarkCount": 55
-    },
-    {
-      "id": "hatena-https://japan.cnet.com/article/35248350/",
-      "source": "hatena",
-      "title": "Instagram著名アカウントが相次ぎ乗っ取られる　原因はMetaのAIサポートか",
-      "url": "https://japan.cnet.com/article/35248350/",
-      "publishedAt": "2026-06-03T03:10:25.000Z",
-      "summary": "あまり知られていないのは、ハッカーがそれほど苦労する必要がなかったとされる点だ。MetaのAIカスタマーサポートチャットボットが、事実上アカウントを引き渡していたという。 404 Mediaによると、ハッカーはMetaのAIサポートチャットボットに対し、標的アカウントにひも付けられたメールアドレスの変更を依頼した。そ...",
-      "thumbnail": "https://japan.cnet.com/storage/2026/06/03/eff48e5427630b6f470aa1b3e7481ba4/gettyimages-2240569467_1280x960.jpg",
-      "bookmarkCount": 9
+      "bookmarkCount": 107
     },
     {
       "id": "hatena-https://japan.zdnet.com/article/35248091/",
@@ -192,7 +228,7 @@
       "publishedAt": "2026-06-03T03:07:11.000Z",
       "summary": "「Linux」におけるシェルは、カーネルが命令を理解し実行できるようにコマンドを解釈する役割を担っている。シェルが存在しなければ、コマンドが機能しないだけでなく、アプリケーションそのものも動作しない。シェルは極めて重要な存在だ。 多くのLinuxディストリビューションは、標準のシェルに「Bash」を採用している...",
       "thumbnail": "https://japan.zdnet.com/storage/2026/05/27/e936bf1c81b2ce3ef1fc90f7954774c7/fishhero_l.jpg",
-      "bookmarkCount": 9
+      "bookmarkCount": 19
     },
     {
       "id": "hatena-https://k-tai.watch.impress.co.jp/docs/news/2114003.html",
@@ -201,16 +237,7 @@
       "url": "https://k-tai.watch.impress.co.jp/docs/news/2114003.html",
       "publishedAt": "2026-06-03T02:45:26.000Z",
       "thumbnail": "https://k-tai.watch.impress.co.jp/img/ktw/list/2114/003/apple.jpg",
-      "bookmarkCount": 50
-    },
-    {
-      "id": "hatena-https://k-tai.watch.impress.co.jp/docs/column/stapaapple/2113740.html",
-      "source": "hatena",
-      "title": "[スタパ齋藤のApple野郎] ケーブル着脱に自立スタンド搭載。全部入りのQi2対応モバイルバッテリーがチョー便利!!!",
-      "url": "https://k-tai.watch.impress.co.jp/docs/column/stapaapple/2113740.html",
-      "publishedAt": "2026-06-03T02:35:13.000Z",
-      "thumbnail": "https://k-tai.watch.impress.co.jp/img/ktw/list/2113/740/01.jpg",
-      "bookmarkCount": 5
+      "bookmarkCount": 57
     },
     {
       "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/03/news081.html",
@@ -220,7 +247,16 @@
       "publishedAt": "2026-06-03T02:34:43.000Z",
       "summary": "デザイン誌「MdN」（2019年に休刊）で知られた出版社・エムディエヌコーポレーションが7月1日付でインプレスに吸収合併され、法人として消滅する。親会社のインプレスホールディングス（HD）が6月1日に発表した。 エムディエヌコーポレーションは1992年設立。デザイン誌「MdN」の他、 デザインやグラフィックスの専門書...",
       "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/03/cover_news081.png",
-      "bookmarkCount": 159
+      "bookmarkCount": 175
+    },
+    {
+      "id": "hatena-https://forest.watch.impress.co.jp/docs/news/2113917.html",
+      "source": "hatena",
+      "title": "Microsoft、AIエージェント統合の「Intelligent Terminal 0.1」を試験公開／「Windows Terminal」のフォーク、エラー自動検出やエージェント管理機能を搭載",
+      "url": "https://forest.watch.impress.co.jp/docs/news/2113917.html",
+      "publishedAt": "2026-06-03T02:02:04.000Z",
+      "thumbnail": "https://forest.watch.impress.co.jp/img/wf/list/2113/917/intelligent_terminal.jpg",
+      "bookmarkCount": 9
     },
     {
       "id": "hatena-https://gihyo.jp/book/2026/978-4-297-15704-3",
@@ -230,7 +266,7 @@
       "publishedAt": "2026-06-03T01:12:34.000Z",
       "summary": "概要 AIによるコード生成が現実となった今、ソフトウェアテストの重要性はますます高まっています。AIエージェントの能力を最大限に発揮する上でも、テスト自動化などを含む開発基盤の整備は必須のものになってくるでしょう。本書では、フロントエンド開発の現場で効果的にテストを導入・運用するための力を身に付けるこ...",
       "thumbnail": "https://gihyo.jp/assets/images/ogp/2026/9784297157043.jpg",
-      "bookmarkCount": 10
+      "bookmarkCount": 49
     },
     {
       "id": "hatena-https://www.watch.impress.co.jp/docs/news/2113912.html",
@@ -239,47 +275,7 @@
       "url": "https://www.watch.impress.co.jp/docs/news/2113912.html",
       "publishedAt": "2026-06-03T00:58:44.000Z",
       "thumbnail": "https://www.watch.impress.co.jp/img/ipw/list/2113/912/f03.jpg",
-      "bookmarkCount": 143
-    },
-    {
-      "id": "hatena-https://atmarkit.itmedia.co.jp/ait/articles/2606/03/news014.html",
-      "source": "hatena",
-      "title": "COBOLも古いJavaももう“塩漬け”にしなくていい？　AIを制御し「数年を数日まで」短縮できるレガシー刷新の今",
-      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2606/03/news014.html",
-      "publishedAt": "2026-06-03T00:41:16.000Z",
-      "summary": "老朽化やブラックボックス化によって、調査だけでも億単位のコストがかかる――。開発当時の担当者が退職し、仕様を把握している人が不在となったCOBOLシステムなどレガシー化した基幹システムでは、刷新の必要性は分かっていても、継続的なシステム改善が進まないケースが少なくない。企業固有のビジネスロジックが深く組...",
-      "thumbnail": "https://image.itmedia.co.jp/ait/articles/2606/03/cover_news014.jpg",
-      "bookmarkCount": 7
-    },
-    {
-      "id": "hatena-https://kaminashi-developer.hatenablog.jp/entry/2026/06/03/aws-emulator-selection",
-      "source": "hatena",
-      "title": "もし、今からAWSのエミュレーターを選ぶならどれにする？ - カミナシ エンジニアブログ",
-      "url": "https://kaminashi-developer.hatenablog.jp/entry/2026/06/03/aws-emulator-selection",
-      "publishedAt": "2026-06-02T23:34:55.000Z",
-      "summary": "はじめに カミナシでエンジニアリングマネージャーをしてます、すずけん（@szk3）です。 唐突ですが、皆さん AWSのエミュレーター使ってますか？ 自チームのプロダクトはS3、DynamoDB、STS、IAM あたりの AWS サービスに依存していて、ローカル開発やテストではこれらのエミュレーターを使っています。ただ、歴史的な背...",
-      "thumbnail": "https://cdn.image.st-hatena.com/image/scale/1088796979eedd4f47d9b063ff5eac82665ac482/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fk%2Fkaminashi-developer%2F20260602%2F20260602133018.png",
-      "bookmarkCount": 131
-    },
-    {
-      "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/03/news054.html",
-      "source": "hatena",
-      "title": "「電源タップは3～5年で交換推奨」は短すぎ？　推奨する日本配線システム工業会に聞いてみた",
-      "url": "https://www.itmedia.co.jp/news/articles/2606/03/news054.html",
-      "publishedAt": "2026-06-02T22:53:44.000Z",
-      "summary": "「この機会に、解説させてください。電源タップの交換目安は、3～5年と推奨されています」──パナソニックのくらし・家電アカウントによるXへの投稿が「早すぎるのではないか？」などと物議を醸している。そこで、パナソニックが推奨している団体として名前を挙げていた日本配線システム工業会に話を聞いた。 日本配線シ...",
-      "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/03/cover_news054.jpg",
-      "bookmarkCount": 270
-    },
-    {
-      "id": "hatena-https://www.publickey1.jp/blog/26/unixwindowscoreutils_for_window.html",
-      "source": "hatena",
-      "title": "［速報］マイクロソフト、UNIX系コマンドをWindowsに移植「Coreutils for Windows」一般公開",
-      "url": "https://www.publickey1.jp/blog/26/unixwindowscoreutils_for_window.html",
-      "publishedAt": "2026-06-02T20:51:31.000Z",
-      "summary": "マイクロソフトは、日本時間6月3日未明に開幕した年次イベント「Microsoft Build 2026」で、UNIX系の基本的なコマンド群をWindowsに移植した「Coreutils for Window」の一般公開を発表しました。 CoreutilsはUNIX系OSにおいて利用可能な基本的なコマンド、例えばファイルのコピーを行うcpコマンドやファイルの移動を行う...",
-      "thumbnail": "https://www.publickey1.jp/2026/coreutils4windows-build2026.png",
-      "bookmarkCount": 299
+      "bookmarkCount": 160
     },
     {
       "id": "hatena-https://rinsuki.hatenablog.jp/entry/2026/06/02/215544",
@@ -289,27 +285,16 @@
       "publishedAt": "2026-06-02T13:45:50.000Z",
       "summary": "とりあえずここだけ読んでほしい 今Twitterアカウントが凍結されると、異議申し立てをしても的外れな回答しか来ずに事実上詰むことがある。 まだ凍結されていないなら凍結される前に https://x.com/settings/download_your_data からアーカイブのリクエストをしよう。 さらに、できることならアーカイブがダウンロードで...",
       "thumbnail": "https://ogimage.blog.st-hatena.com/8599973812322014554/14945776032037994935/1780408298",
-      "bookmarkCount": 11
+      "bookmarkCount": 15
     },
     {
-      "id": "hatena-https://gigazine.net/news/20260602-florida-sues-openai-sam-altman/",
+      "id": "hatena-https://qiita.com/y-morimatsu/items/ea44baec84417d36b85d",
       "source": "hatena",
-      "title": "「危険なChatGPTをリリースした」としてOpenAIとサム・アルトマンがフロリダ州司法長官に提訴される",
-      "url": "https://gigazine.net/news/20260602-florida-sues-openai-sam-altman/",
-      "publishedAt": "2026-06-02T07:53:27.000Z",
-      "summary": "アメリカ・フロリダ州の司法長官を務めるジェームズ・ウスマイヤー氏が、欺瞞(まん)行為と損害を理由にOpenAIとサム・アルトマンCEOに対して訴訟を提起しました。 Attorney General James Uthmeier Files First-in-the-Nation State-Led Lawsuit Against OpenAI, CEO Sam Altman for Dece…",
-      "thumbnail": "https://i.gzn.jp/img/2026/06/02/florida-sues-openai-sam-altman/00_m.png",
-      "bookmarkCount": 10
-    },
-    {
-      "id": "hatena-https://zenn.dev/tokium_dev/articles/20260427_ai_tech_researcher",
-      "source": "hatena",
-      "title": "1年間の育休に備えて「勝手に賢くなる」AI情報収集基盤を作った",
-      "url": "https://zenn.dev/tokium_dev/articles/20260427_ai_tech_researcher",
-      "publishedAt": "2026-05-08T07:12:06.000Z",
-      "summary": "はじめに こんにちは、TOKIUMでEMをしているskです。 もうすぐ1年間の育休に入ります👶🍼 新生活がとても楽しみな一方で、ひとつ気がかりなことがあります。 それは生成AI周りの技術トレンド、1年離れたら完全に浦島太郎になるのでは？ という点です。 この領域は1週間単位でも新しいツールや手法がどんどん出てきます。...",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--Fpzf6Frn--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:1%25E5%25B9%25B4%25E9%2596%2593%25E3%2581%25AE%25E8%2582%25B2%25E4%25BC%2591%25E3%2581%25AB%25E5%2582%2599%25E3%2581%2588%25E3%2581%25A6%25E3%2580%258C%25E5%258B%259D%25E6%2589%258B%25E3%2581%25AB%25E8%25B3%25A2%25E3%2581%258F%25E3%2581%25AA%25E3%2582%258B%25E3%2580%258DAI%25E6%2583%2585%25E5%25A0%25B1%25E5%258F%258E%25E9%259B%2586%25E5%259F%25BA%25E7%259B%25A4%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:sk%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzViNTEwYjI5ZjEuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:TOKIUM%25E3%2583%2597%25E3%2583%25AD%25E3%2583%2580%25E3%2582%25AF%25E3%2583%2588%25E3%2583%2581%25E3%2583%25BC%25E3%2583%25A0%2520%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2E2NDM1NDE3NmMuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
-      "bookmarkCount": 513
+      "title": "Claude Opus 4.8 のプロンプティング・ベストプラクティス — 公式ガイドの要点 - Qiita",
+      "url": "https://qiita.com/y-morimatsu/items/ea44baec84417d36b85d",
+      "publishedAt": "2026-06-02T01:23:23.000Z",
+      "summary": "グラレコ はじめに 🎯 Anthropic が公開しているプロンプトエンジニアリングの公式ガイドに、Claude Opus 4.8 向けのベストプラクティス がまとまっています。このモデルは long-horizon agentic（長期にわたる自律作業）・knowledge work・vision・memory といったタスクに強く、しかも Opus 4.7 のプロンプトをそのま...",
+      "bookmarkCount": 25
     }
   ],
   "state": {}
