@@ -1,6 +1,94 @@
 {
-  "updatedAt": "2026-06-04T13:15:17.652Z",
+  "updatedAt": "2026-06-04T18:54:10.800Z",
   "items": [
+    {
+      "id": "hatena-https://blog.cloudflare.com/voidzero-joins-cloudflare/",
+      "source": "hatena",
+      "title": "VoidZero is joining Cloudflare",
+      "url": "https://blog.cloudflare.com/voidzero-joins-cloudflare/",
+      "publishedAt": "2026-06-04T13:14:45.000Z",
+      "summary": "VoidZero, the company behind Vite, Vitest, Rolldown, Oxc, and Vite+, is joining Cloudflare. As part of this change, all team members of VoidZero are joining Cloudflare, too. Before saying anything …",
+      "thumbnail": "https://cf-assets.www.cloudflare.com/zkvhlag99gkb/77PFBBDzFzIVtsPi4GXm5g/ea71873167012a47518dc593033032c6/BLOG-VOID_OG.png",
+      "bookmarkCount": 13
+    },
+    {
+      "id": "hatena-https://voidzero.dev/posts/voidzero-cloudflare",
+      "source": "hatena",
+      "title": "VoidZero is Joining Cloudflare",
+      "url": "https://voidzero.dev/posts/voidzero-cloudflare",
+      "publishedAt": "2026-06-04T13:14:19.000Z",
+      "summary": "TL;DR: We are excited to announce that VoidZero is joining Cloudflare. Vite, Vitest, Rolldown, Oxc, and Vite+ will remain open-source and MIT-licensed. Evan and the rest of the VoidZero team will c…",
+      "thumbnail": "https://voidzero.dev/covers/voidzero-cloudflare.jpg",
+      "bookmarkCount": 25
+    },
+    {
+      "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/04/news125.html",
+      "source": "hatena",
+      "title": "Googleが「蚊で蚊を減らす」プロジェクト　“特殊な雄”6400万匹の放出を米2州で申請",
+      "url": "https://www.itmedia.co.jp/news/articles/2606/04/news125.html",
+      "publishedAt": "2026-06-04T11:52:34.000Z",
+      "summary": "米Googleが、米国の2州で2年間に計6400万匹の蚊を放ち、感染症を媒介する蚊を減らす実験を計画している。米環境保護庁（EPA）は、この計画を地域的・全国的に重要となりうるものだとして、同社が申請している農薬を野外で試験する際に必要な事前許可「実験的使用許可（EUP）」について、6月5日（現地時間）まで意見を公...",
+      "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/04/cover_news125.png",
+      "bookmarkCount": 4
+    },
+    {
+      "id": "hatena-https://marin72.hatenablog.com/entry/2026/06/04/200000",
+      "source": "hatena",
+      "title": "東京Ruby会議12の副実行委員長をしました - なっちゃんのめもがき。",
+      "url": "https://marin72.hatenablog.com/entry/2026/06/04/200000",
+      "publishedAt": "2026-06-04T11:32:54.000Z",
+      "summary": "こんにちは、なっちゃんです。 2025年1月18日に東京Ruby会議12を開催しました。わたしは副実行委員長として関わりました。 東京Ruby会議12で撮影されたプリたち 不安の中で迎えた東京Ruby会議12 開催1日前に東京Ruby会議12はどういうカンファレンスかと聞かれたら、不安がいっぱいのカンファレンスと答えていたと思いま...",
+      "thumbnail": "https://cdn.image.st-hatena.com/image/scale/65d17501d1ea1cfc85493cb3f80ebde8bd40c6b3/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fm%2Fmarin72_com%2F20250118%2F20250118161636.jpg",
+      "bookmarkCount": 5
+    },
+    {
+      "id": "hatena-https://gigazine.net/news/20260604-github-token-stealing/",
+      "source": "hatena",
+      "title": "GitHubのアクセストークンが「リンクを1回クリックしただけ」で盗まれる脆弱性が報告される",
+      "url": "https://gigazine.net/news/20260604-github-token-stealing/",
+      "publishedAt": "2026-06-04T10:54:39.000Z",
+      "summary": "GitHubのブラウザ版開発環境「github.dev」で、細工されたリンクをクリックするだけでGitHubの認証トークンが盗まれる可能性があった脆弱(ぜいじゃく)性が報告されました。 1-Click GitHub Token Stealing via a VSCode Bug – Ammar's Blog https://blog.ammaraskar.com/github-token-s…",
+      "thumbnail": "https://i.gzn.jp/img/2026/06/04/github-token-stealing/00.jpg",
+      "bookmarkCount": 17
+    },
+    {
+      "id": "hatena-https://gigazine.net/news/20260604-gemma-4-12b-encoder-free/",
+      "source": "hatena",
+      "title": "ノートPCで動くGoogle製「Gemma 4 12B」がエンコーダー不要で画像＆音声を処理する仕組みとは？",
+      "url": "https://gigazine.net/news/20260604-gemma-4-12b-encoder-free/",
+      "publishedAt": "2026-06-04T10:54:38.000Z",
+      "summary": "Googleは16GBのVRAMもしくはユニファイドメモリで動作する軽量AIモデル「Gemma 4 12B」を2026年6月3日に公開しました。Gemma 4 12Bは「画像と音声をエンコーダーなしで処理できるマルチモーダルモデル」としてアピールされており、この「エンコーダーなし」の仕組みや意義についてGoogle DeepMindの社員であるマールテン...",
+      "thumbnail": "https://i.gzn.jp/img/2026/06/04/gemma-4-12b-encoder-free/00.png",
+      "bookmarkCount": 13
+    },
+    {
+      "id": "hatena-https://internet.watch.impress.co.jp/docs/news/2114607.html",
+      "source": "hatena",
+      "title": "無印良品、ディスクユニオン、東芝など複数のサイトで「不審な認証画面」が表示される　「polyfill io」の認証画面に注意を",
+      "url": "https://internet.watch.impress.co.jp/docs/news/2114607.html",
+      "publishedAt": "2026-06-04T10:41:29.000Z",
+      "thumbnail": "https://internet.watch.impress.co.jp/img/iw/list/2114/607/01.png",
+      "bookmarkCount": 5
+    },
+    {
+      "id": "hatena-https://www.nikkei.com/article/DGXZQOSG017QY0R00C26A6000000/",
+      "source": "hatena",
+      "title": "東大と米アンソロピック、日本の生成AI利用の実態調査　普及後押し - 日本経済新聞",
+      "url": "https://www.nikkei.com/article/DGXZQOSG017QY0R00C26A6000000/",
+      "publishedAt": "2026-06-04T09:22:17.000Z",
+      "summary": "東京大学と米アンソロピックなどは4日、国内の生成AI（人工知能）の利用状況を把握する取り組みで連携すると発表した。同社の対話型AIの利用状況に関するデータや政府統計などを組み合わせ、生成AIが企業の経営や国の政策、教育に与える影響を探る。秋にも結果をまとめる。アンソロピックが日本の学術機関と連携するのは...",
+      "thumbnail": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3119767004062026000000-2.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&fp-x=0.33&fp-y=0.13&h=630&w=1200&s=b2d169b07a82b26eea9b6a7b581120b4",
+      "bookmarkCount": 5
+    },
+    {
+      "id": "hatena-https://pc.watch.impress.co.jp/docs/news/2114494.html",
+      "source": "hatena",
+      "title": "次世代AIビジネスノート「Dell Pro 3」など6機種が一挙デビュー",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2114494.html",
+      "publishedAt": "2026-06-04T09:05:11.000Z",
+      "thumbnail": "https://pc.watch.impress.co.jp/img/pcw/list/2114/494/001.jpg",
+      "bookmarkCount": 4
+    },
     {
       "id": "hatena-https://forest.watch.impress.co.jp/docs/serial/yajiuma/2114500.html",
       "source": "hatena",
@@ -8,27 +96,16 @@
       "url": "https://forest.watch.impress.co.jp/docs/serial/yajiuma/2114500.html",
       "publishedAt": "2026-06-04T08:45:06.000Z",
       "thumbnail": "https://forest.watch.impress.co.jp/img/wf/list/2114/500/image1.png",
-      "bookmarkCount": 28
+      "bookmarkCount": 72
     },
     {
-      "id": "hatena-https://www.itmedia.co.jp/aiplus/article/2606/04/2000000058/",
+      "id": "hatena-https://ai.watch.impress.co.jp/docs/news/2114510.html",
       "source": "hatena",
-      "title": "「仕事がなくなる？」“AIの影響”可視化へ　東大松尾研、Anthropic、PKSHAが協業",
-      "url": "https://www.itmedia.co.jp/aiplus/article/2606/04/2000000058/",
-      "publishedAt": "2026-06-04T08:40:38.000Z",
-      "summary": "LLMの利用に関する統計データと、日本国内の経済や雇用、教育に関する公的データを組み合わせて分析する。AIによる働き方や組織、教育の変化、経済への影響などの可視化を図る。例えば、職種ごとのAIの活用法や年齢・地域別の利用率、他国の利用状況との違いなどを測定する。 協業では、松尾研究室が中立的な分析設計を...",
-      "thumbnail": "https://www.itmedia.co.jp/aiplus/article/ogp/2606/04/2000000058/10000325/2048",
-      "bookmarkCount": 4
-    },
-    {
-      "id": "hatena-https://koudenpa.hatenablog.com/entry/2026/05/06/153121",
-      "source": "hatena",
-      "title": "大手外食業の中央注文管理Webサービスがダウンしたら？ - koudenpaのブログ",
-      "url": "https://koudenpa.hatenablog.com/entry/2026/05/06/153121",
-      "publishedAt": "2026-06-04T08:36:20.000Z",
-      "summary": "どうなるか、どうするか。 どうなるかというと、全店舗でプライマリな注文フローが機能しなくなる。これは大変だ。 とはいえ、インターネットを介して注文を受け付けるフローとしていたなら、その受け口となるWebサービスのダウンは想定していて然るべきだろう。 大手ならそうした状況に対応する手段をマニュアル化して...",
-      "thumbnail": "https://ogimage.blog.st-hatena.com/10328537792365897752/17179246901384706579/1778049081",
-      "bookmarkCount": 11
+      "title": "AIを便利に使えるなら、ある程度電力不足はしょうがない？ NTTドコモ モバイル社会研究所が調査結果を発表",
+      "url": "https://ai.watch.impress.co.jp/docs/news/2114510.html",
+      "publishedAt": "2026-06-04T08:35:10.000Z",
+      "thumbnail": "https://ai.watch.impress.co.jp/img/aiw/list/2114/510/0400.jpg",
+      "bookmarkCount": 5
     },
     {
       "id": "hatena-https://gigazine.net/news/20260604-openai-frontier-safety-blueprint/",
@@ -38,7 +115,16 @@
       "publishedAt": "2026-06-04T08:28:20.000Z",
       "summary": "OpenAIが最先端の高性能AIである「フロンティアAI」を対象にした規制案「Democratic Governance of Frontier AI: A blueprint for a federal framework(フロンティアAIの民主的ガバナンス：連邦レベルの枠組みの青写真)」を発表しました。アメリカ政府がフロンティアAIをどのように評価し、安全性を確認し、責任を持って...",
       "thumbnail": "https://i.gzn.jp/img/2026/06/04/openai-frontier-safety-blueprint/00.jpg",
-      "bookmarkCount": 13
+      "bookmarkCount": 19
+    },
+    {
+      "id": "hatena-https://forest.watch.impress.co.jp/docs/news/2114472.html",
+      "source": "hatena",
+      "title": "研究開発に特化したAI環境「Microsoft Discovery」が一般提供、ローカルアプリもプレビュー／仮説の構築、実験と検証の反復といった研究サイクル全体を支援",
+      "url": "https://forest.watch.impress.co.jp/docs/news/2114472.html",
+      "publishedAt": "2026-06-04T08:24:21.000Z",
+      "thumbnail": "https://forest.watch.impress.co.jp/img/wf/list/2114/472/image_top.png",
+      "bookmarkCount": 17
     },
     {
       "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/04/news102.html",
@@ -48,7 +134,16 @@
       "publishedAt": "2026-06-04T08:19:05.000Z",
       "summary": "発生した事象は、サイトの一部ページを開いた際、ユーザー名とパスワードの入力を求める認証画面が出るというもの。象印マホービンは6月3日付の告知で、URL表示が「polyfill.io」となったログイン画面の例を示し、同じ画面が出た場合は何も入力せず「キャンセル」を選ぶよう求めている。 多くの企業は、polyfill.ioへの...",
       "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/04/cover_news102.jpg",
-      "bookmarkCount": 142
+      "bookmarkCount": 198
+    },
+    {
+      "id": "hatena-https://www.watch.impress.co.jp/docs/news/2114466.html",
+      "source": "hatena",
+      "title": "日本における「AIのものさし」を作る　東大松尾研らが「Japan AI Index」始動",
+      "url": "https://www.watch.impress.co.jp/docs/news/2114466.html",
+      "publishedAt": "2026-06-04T07:41:52.000Z",
+      "thumbnail": "https://www.watch.impress.co.jp/img/ipw/list/2114/466/01.jpg",
+      "bookmarkCount": 5
     },
     {
       "id": "hatena-https://mainichi.jp/articles/20260604/k00/00m/040/187000c",
@@ -56,7 +151,7 @@
       "title": "AIで性的に加工した写真も「児童ポルノ」　名古屋地裁が初判断 | 毎日新聞",
       "url": "https://mainichi.jp/articles/20260604/k00/00m/040/187000c",
       "publishedAt": "2026-06-04T07:38:53.000Z",
-      "bookmarkCount": 37
+      "bookmarkCount": 45
     },
     {
       "id": "hatena-https://www.47news.jp/14415059.html",
@@ -66,36 +161,7 @@
       "publishedAt": "2026-06-04T07:09:30.000Z",
       "summary": "教員盗撮共有事件で、名古屋市立小元教諭（35）を実刑とした4日の名古屋地裁判決は、生成人工知能（AI）で加工した女児の性的な画像を所持したとする児童買春・ポルノ禁止法違反の罪も認定した。同種事案で初めてとみられる。",
       "thumbnail": "https://img.cf.47news.jp/static/renewal/common/img/thumb_large.png",
-      "bookmarkCount": 92
-    },
-    {
-      "id": "hatena-https://microsoft.github.io/RustTraining/python-book/",
-      "source": "hatena",
-      "title": "Introduction - Rust for Python Programmers",
-      "url": "https://microsoft.github.io/RustTraining/python-book/",
-      "publishedAt": "2026-06-04T06:30:08.000Z",
-      "summary": "Press ← or → to navigate between chapters Press S or / to search in the book Press ? to show this help Press Esc to hide this help Rust for Python Programmers: Complete Training Guide A comprehensi…",
-      "bookmarkCount": 17
-    },
-    {
-      "id": "hatena-https://gigazine.net/news/20260604-google-dreambeans/",
-      "source": "hatena",
-      "title": "Googleが各ユーザーの検索履歴・写真・メールなどをもとに毎日オリジナルストーリーを生成する「Dreambeans」を公開",
-      "url": "https://gigazine.net/news/20260604-google-dreambeans/",
-      "publishedAt": "2026-06-04T06:16:21.000Z",
-      "summary": "スマートフォンにはメール、カレンダー、写真、動画の視聴履歴、検索履歴など、日々の行動を示すデータが大量に蓄積されていますが、一方で予定を確認するためにカレンダーを開き、購入履歴を調べるためにGmailを検索し、思い出を振り返るためにGoogle Photosを見るといったように、必要な情報は複数のアプリに分散して...",
-      "thumbnail": "https://i.gzn.jp/img/2026/06/04/google-dreambeans/00.png",
-      "bookmarkCount": 8
-    },
-    {
-      "id": "hatena-https://gigazine.net/news/20260604-apple-vision-pro-roadmap-stop/",
-      "source": "hatena",
-      "title": "AppleはApple Vision Pro後継機開発を中止してスマートグラスに注力しているとの報道",
-      "url": "https://gigazine.net/news/20260604-apple-vision-pro-roadmap-stop/",
-      "publishedAt": "2026-06-04T05:56:04.000Z",
-      "summary": "Appleは2024年6月に初のMRヘッドセットデバイス「Apple Vision Pro」を約60万円で発売しました。このApple Vision Proの後継モデルあるいは廉価モデルの開発がウワサされていましたが、スマートグラスに注力するためにApple Vision Pro関連の開発は中止されたと報じられています。 1. The Apple XR headset and smart g…",
-      "thumbnail": "https://i.gzn.jp/img/2026/06/04/apple-vision-pro-roadmap-stop/00_m.jpg",
-      "bookmarkCount": 10
+      "bookmarkCount": 120
     },
     {
       "id": "hatena-https://forest.watch.impress.co.jp/docs/news/2114322.html",
@@ -104,17 +170,7 @@
       "url": "https://forest.watch.impress.co.jp/docs/news/2114322.html",
       "publishedAt": "2026-06-04T05:49:38.000Z",
       "thumbnail": "https://forest.watch.impress.co.jp/img/wf/list/2114/322/open_claw.jpg",
-      "bookmarkCount": 5
-    },
-    {
-      "id": "hatena-https://gigazine.net/news/20260604-hermes-desktop-agent-ai/",
-      "source": "hatena",
-      "title": "使い込むほど成長するAIエージェント「Hermes Agent」の公式デスクトップアプリ「Hermes Desktop」が登場",
-      "url": "https://gigazine.net/news/20260604-hermes-desktop-agent-ai/",
-      "publishedAt": "2026-06-04T05:42:48.000Z",
-      "summary": "AIエージェントシステム「Hermes Agent」をGUIで管理できる公式デスクトップアプリ「Hermes Desktop」が2026年6月3日に登場しました。Hermes DesktopはWindows・macOS・Linux向けにパブリックプレビュー版として公開されています。 Hermes Desktop | Nous Research https://hermes-agent.nou…",
-      "thumbnail": "https://i.gzn.jp/img/2026/06/04/hermes-desktop-agent-ai/00.png",
-      "bookmarkCount": 4
+      "bookmarkCount": 17
     },
     {
       "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/04/news098.html",
@@ -124,17 +180,7 @@
       "publishedAt": "2026-06-04T05:28:41.000Z",
       "summary": "Key新作「anemoi」マスターデータ流出、個人情報も漏えいか ビジュアルアーツに不正アクセス 取引先のマイナンバーも ゲームブランド「Key」を手がけるビジュアルアーツ（大阪市）は6月4日、第三者による不正アクセスを受け、顧客の氏名や住所、取引先のマイナンバーなどの個人情報が漏えいした可能性があると発表した...",
       "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/04/cover_news098.png",
-      "bookmarkCount": 100
-    },
-    {
-      "id": "hatena-https://gigazine.net/news/20260604-http-2-bomb-attack/",
-      "source": "hatena",
-      "title": "ウェブサーバーを数秒以内にダウンさせる「HTTP/2 Bomb」攻撃がOpenAIのCodexを使って発見される",
-      "url": "https://gigazine.net/news/20260604-http-2-bomb-attack/",
-      "publishedAt": "2026-06-04T05:02:30.000Z",
-      "summary": "普通の家庭用PCで数秒以内にサーバーをダウンさせられるDoS攻撃手法をセキュリティ研究者が発見しました。 Codex Discovered a Hidden HTTP/2 Bomb - Calif https://blog.calif.io/p/codex-discovered-a-hidden-http2-bomb New 'HTTP/2 Bomb' DoS attack crashes …",
-      "thumbnail": "https://i.gzn.jp/img/2026/06/04/http-2-bomb-attack/00.jpg",
-      "bookmarkCount": 20
+      "bookmarkCount": 112
     },
     {
       "id": "hatena-https://pc.watch.impress.co.jp/docs/news/2114422.html",
@@ -143,17 +189,16 @@
       "url": "https://pc.watch.impress.co.jp/docs/news/2114422.html",
       "publishedAt": "2026-06-04T04:57:10.000Z",
       "thumbnail": "https://pc.watch.impress.co.jp/img/pcw/list/2114/422/1.jpg",
-      "bookmarkCount": 16
+      "bookmarkCount": 25
     },
     {
-      "id": "hatena-https://togetter.com/li/2705238",
+      "id": "hatena-https://k-tai.watch.impress.co.jp/docs/news/2114391.html",
       "source": "hatena",
-      "title": "タンカー船の造水機は『水は100℃じゃなくても沸騰する』という仕組みを利用して真水を作っている「なにそれ頭いい！」",
-      "url": "https://togetter.com/li/2705238",
-      "publishedAt": "2026-06-04T04:37:23.000Z",
-      "summary": "東幸海運🚢✨タンカーの船会社 @tokokaiun 水は100°Cじゃなくても沸騰します！😲💡 これはタンカー船の「造水機」という機械。なんと気圧を下げることで、海水を【50°C以下】のぬるま湯レベルで沸騰させて真水を作っています！ 熱源にはエンジンのゴミになるはずの「排熱」を再利用。海の上で貴重な真水を作る究極のエコ...",
-      "thumbnail": "https://s.tgstc.com/ogp3/88e715b44b09b0a6e6e52c95ef75d8b0-1200x630.jpeg",
-      "bookmarkCount": 52
+      "title": "グーグル「Gemma 4 12B」発表、メモリー16GBで動作するAIモデル",
+      "url": "https://k-tai.watch.impress.co.jp/docs/news/2114391.html",
+      "publishedAt": "2026-06-04T04:54:15.000Z",
+      "thumbnail": "https://k-tai.watch.impress.co.jp/img/ktw/list/2114/391/00.jpg",
+      "bookmarkCount": 4
     },
     {
       "id": "hatena-https://www.itmedia.co.jp/mobile/articles/2606/04/news088.html",
@@ -163,17 +208,7 @@
       "publishedAt": "2026-06-04T04:03:58.000Z",
       "summary": "6月1日にファミリーマート店舗でのセブン銀行ATMの設置が開始された。本稿執筆の6月2日時点で「ファミリーマート ムスブ田町店」と「ファミリーマート 戸田市役所／S店」の2店舗での設置が行われており、今後4年をかけて全国約1万6000台の既存ATMが統一の「ファミマATM」へと置換されていく（エリアフランチャイズである...",
       "thumbnail": "https://image.itmedia.co.jp/mobile/articles/2606/04/cover_news088.jpg",
-      "bookmarkCount": 28
-    },
-    {
-      "id": "hatena-https://gigazine.net/news/20260604-nvidia-n2x-n3x-plan/",
-      "source": "hatena",
-      "title": "NVIDIAはWindowsノートPC向けSoCの第2世代・第3世代をすでに計画中、ジェンスン・フアンCEOは将来的にR2-D2のようなロボットの開発を目指す",
-      "url": "https://gigazine.net/news/20260604-nvidia-n2x-n3x-plan/",
-      "publishedAt": "2026-06-04T03:35:17.000Z",
-      "summary": "2026年6月1日、高性能AIのローカル実行を可能にするノートPC向けSoC「RTX Spark」がNVIDIAから発表されました。NVIDIAのジェンスン・フアンCEOはいくつかのインタビューでこのSoCについて語り、いずれはスター・ウォーズに登場する「R2-D2」のようなシステムを作りたいと話しています。その目標に向け、既に次世代のチッ...",
-      "thumbnail": "https://i.gzn.jp/img/2026/06/04/nvidia-n2x-n3x-plan/00.jpg",
-      "bookmarkCount": 7
+      "bookmarkCount": 37
     },
     {
       "id": "hatena-https://anond.hatelabo.jp/20260604122015",
@@ -183,17 +218,7 @@
       "publishedAt": "2026-06-04T03:22:24.000Z",
       "summary": "切れ痔が、ついに治った。 この2年間ずっと戦ってきて、やっと終戦した 切れ痔は毎日リセットされる怪我だ 排便をトリガーに振り出しに戻される、 いわば ケツアナタイムリープ だ でもついに抜け出した 2年ぶりにウォシュレットを最大にしても、ビクともしないケツアナが戻ってきた。 何も気にせず好きなものを食える。...",
       "thumbnail": "https://anond.hatelabo.jp/assets/images/og-image-1500.gif",
-      "bookmarkCount": 10
-    },
-    {
-      "id": "hatena-https://japan.cnet.com/article/35248434/",
-      "source": "hatena",
-      "title": "Mac版「Office 2019」が閲覧専用に　7月13日から編集も新規作成も不可",
-      "url": "https://japan.cnet.com/article/35248434/",
-      "publishedAt": "2026-06-04T03:17:14.000Z",
-      "summary": "MacでMicrosoftの「Office 2019」を使い続けているなら、それはまもなく閲覧専用の文書ビューアーになってしまう。 2026年7月13日以降、「Word」「Excel」「PowerPoint」「Outlook」「OneNote」を含む「Office 2019 for Mac」の各アプリは「機能制限モード」に入り、ファイルの編集、保存、新規作成ができなくなる。閲覧...",
-      "thumbnail": "https://japan.cnet.com/storage/2026/06/04/d963a932273dd78544db2fdd89987ccc/ms-office-2019-commerce-image_1280x960.jpg",
-      "bookmarkCount": 6
+      "bookmarkCount": 118
     },
     {
       "id": "hatena-https://pc.watch.impress.co.jp/docs/news/2114311.html",
@@ -202,7 +227,7 @@
       "url": "https://pc.watch.impress.co.jp/docs/news/2114311.html",
       "publishedAt": "2026-06-04T02:26:06.000Z",
       "thumbnail": "https://pc.watch.impress.co.jp/img/pcw/list/2114/311/1.jpg",
-      "bookmarkCount": 14
+      "bookmarkCount": 31
     },
     {
       "id": "hatena-https://weblab.t.u-tokyo.ac.jp/lecture/course-list/large-language-model-slide/",
@@ -212,46 +237,17 @@
       "publishedAt": "2026-06-04T02:07:14.000Z",
       "summary": "LLMについて基礎理論から最新のモデル動向までを一気通貫で学べる実践型講座。 学生や一部社会人はどなたでも無料で受講可能です。 東京大学 松尾・岩澤研究室「大規模言語モデル（LLM）講座 2025 基礎編」講義資料を無料公開中 本資料は2025年10月から11月にかけて開催され、 延べ4,000名以上が受講した 「大規模言語...",
       "thumbnail": "http://weblab.t.u-tokyo.ac.jp/wp-content/uploads/2026/05/llm_doc_dl.png",
-      "bookmarkCount": 100
+      "bookmarkCount": 167
     },
     {
-      "id": "hatena-https://applech2.com/archives/20260604-iris-native-macos-photo-app.html",
+      "id": "hatena-https://ascii.jp/elem/000/004/407/4407056/",
       "source": "hatena",
-      "title": "Macの写真ライブラリ内にある写真をクラウド機能を使わずにローカルでAIを利用し管理できるMacネイティブの写真アプリ「Iris」がリリース。",
-      "url": "https://applech2.com/archives/20260604-iris-native-macos-photo-app.html",
-      "publishedAt": "2026-06-04T01:56:10.000Z",
-      "summary": "Macの写真ライブラリ内にある写真をクラウド機能を使わずにローカルでAIを利用し管理できるMacネイティブの写真アプリ「Iris」がリリースされています。詳細は以下から。 AppleがmacOSやiOS/iPadOSにデフォルトで提供している写真(Photos)アプリを始め、多くの写真アプリがクラウドサービスと連携していますが、写真には...",
-      "bookmarkCount": 7
-    },
-    {
-      "id": "hatena-https://www.itmedia.co.jp/mobile/articles/2606/04/news066.html",
-      "source": "hatena",
-      "title": "光回線業者を装い「ご自宅のコンセント見せて」──“偽装チラシ”の恐怖ネットに、自衛策は？",
-      "url": "https://www.itmedia.co.jp/mobile/articles/2606/04/news066.html",
-      "publishedAt": "2026-06-04T00:04:35.000Z",
-      "summary": "「今よりネット料金が安く、通信速度が速くなります」──。自宅の郵便受けに入っていた1枚のチラシ。マンションの管理会社からのお知らせのような体裁で、一見すると怪しいところはない。しかし、このチラシを信じて連絡し、やって来た業者を部屋に入れた結果、「家中のコンセントを見て回られた」という不気味な体験談が...",
-      "thumbnail": "https://image.itmedia.co.jp/mobile/articles/2606/04/cover_news066.jpg",
-      "bookmarkCount": 21
-    },
-    {
-      "id": "hatena-https://nowokay.hatenablog.com/entry/2026/06/04/033047",
-      "source": "hatena",
-      "title": "Gemma 4-12B、日常使いによさそう - きしだのHatena",
-      "url": "https://nowokay.hatenablog.com/entry/2026/06/04/033047",
-      "publishedAt": "2026-06-04T00:00:30.000Z",
-      "summary": "なんか出てた。メモリがそんなにないしコード書かないし、というところにちょうどよさそうなので、UnslothさんのところのQ4_K_XLで試してみたんだけど、要約や翻訳、ロールプレイなど、コーディング以外で使うには結局よさそう。 Qwen3.5はよかったけど9Bは少したりず、Qwen3.6やGemma 4が4月に出たときは性能十分ってな...",
-      "thumbnail": "https://cdn.image.st-hatena.com/image/scale/f163a827058c96f80850afd6908f413f5fed9fa0/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fn%2Fnowokay%2F20260604%2F20260604155345.png",
-      "bookmarkCount": 39
-    },
-    {
-      "id": "hatena-https://www.gizmodo.jp/article/google_gemma_4_12b/",
-      "source": "hatena",
-      "title": "Googleが「Gemma 4 12B」をリリース。ノートPCで動いて26B級の性能、またお化けローカルLLM | ギズモード・ジャパン",
-      "url": "https://www.gizmodo.jp/article/google_gemma_4_12b/",
-      "publishedAt": "2026-06-03T22:59:57.000Z",
-      "summary": "ローカルLLMの進化、止まらなすぎ。 2026年6月4日、Googleが新しいローカルLLM「Gemma 4 12B」を発表しました。 よりサイズが大きくスペック要件も高い兄弟モデル「Gemma 4 26B A4B」に迫るベンチマーク結果を残しているとのことで、さっそく試したくなりました。 Gemma 4 12Bのベンチマーク結果。よりサイズが大きいGem...",
-      "thumbnail": "https://media.loom-app.com/loom/2026/06/03/2d87f417-b372-4139-bd84-7ecb3d77eed3/original.jpg?w=1200&h=630",
-      "bookmarkCount": 370
+      "title": "Claude CodeのPlan modeをやめてみる　～grill-meスキルで一歩ずつ設計を固め、アプリを作る～",
+      "url": "https://ascii.jp/elem/000/004/407/4407056/",
+      "publishedAt": "2026-06-04T01:25:05.000Z",
+      "summary": "Claude CodeのPlan modeをやめてみる ～grill-meスキルで一歩ずつ設計を固め、アプリを作る～ Claude Codeでの開発、捗ってますか？最近、Opus 4.7 がリリースされたり、日々様々なTipsや手法が公開されてます。 その中でもPlan modeを使った開発をしている人は多いのではないでしょうか。 Plan mode×Opus 4.7 の組み合...",
+      "thumbnail": "https://ascii.jp/img/2026/06/02/4476033/xl/2d36a1e5dbdcebcc.png?20200122",
+      "bookmarkCount": 30
     },
     {
       "id": "hatena-https://forest.watch.impress.co.jp/docs/news/2114180.html",
@@ -260,7 +256,7 @@
       "url": "https://forest.watch.impress.co.jp/docs/news/2114180.html",
       "publishedAt": "2026-06-03T22:59:47.000Z",
       "thumbnail": "https://forest.watch.impress.co.jp/img/wf/list/2114/180/01.png",
-      "bookmarkCount": 207
+      "bookmarkCount": 269
     },
     {
       "id": "hatena-https://zenn.dev/nasubikun/articles/tmux-for-ai-agents",
@@ -270,17 +266,7 @@
       "publishedAt": "2026-06-03T20:50:03.000Z",
       "summary": "Claude Code や Codex を使っていると、AI にコマンドを実行させる場面が増えます。その中で困ることが 2 つあります。 時間がかかるコマンドを background task で実行したとき、エージェントごとに挙動が違う AI が対話型コマンドを実行できない どちらも tmux で解決できます。 tmux といえば「ターミナルを分割して...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--iX751--u--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E4%25BD%25BF%25E3%2581%2584%25E6%2596%25B9%25E3%2581%25AF%25E8%25A6%259A%25E3%2581%2588%25E3%2581%25AA%25E3%2581%258F%25E3%2581%25A6%25E3%2581%2584%25E3%2581%2584%25E3%2581%258B%25E3%2582%2589%2520tmux%2520%25E3%2582%2592%25E5%2585%25A5%25E3%2582%258C%25E3%2582%258D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:jomatsu%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2QyNjgzZWVlMWIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 224
-    },
-    {
-      "id": "hatena-https://zenn.dev/acntechjp/articles/20260602_test-automation",
-      "source": "hatena",
-      "title": "誰も教えてくれないテスト自動化が普及しない理由",
-      "url": "https://zenn.dev/acntechjp/articles/20260602_test-automation",
-      "publishedAt": "2026-06-03T13:37:03.000Z",
-      "summary": "半地下のこのバーには不思議といつも、日本のIT業界の疲弊と倦怠感のような吹き溜まりが似合う。 Enterキーを叩く音が切なく響くような、鈍色の夜がまた凝りもせず繰り返し訪れる。今夜もまた、気を滅入らせる雨が降っている。 今夜もひとり、静かに飲んでいたら後輩がやってきた。珍しくスーツがよれている。 ——先輩、...",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--th1tmP39--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E8%25AA%25B0%25E3%2582%2582%25E6%2595%2599%25E3%2581%2588%25E3%2581%25A6%25E3%2581%258F%25E3%2582%258C%25E3%2581%25AA%25E3%2581%2584%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E8%2587%25AA%25E5%258B%2595%25E5%258C%2596%25E3%2581%258C%25E6%2599%25AE%25E5%258F%258A%25E3%2581%2597%25E3%2581%25AA%25E3%2581%2584%25E7%2590%2586%25E7%2594%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Inoue%252C%2520Takuya%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2U2ZDA4MDY5ODcuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Accenture%2520Japan%2520%2528%25E6%259C%2589%25E5%25BF%2597%2529%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTGZLdG9HY1lxTVQtVWNWUzVtVHZ5ODJ2aTNaNmNXZUdjVzNFTlRxa092ZDB2ZTJocz1zOTYtYw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 290
+      "bookmarkCount": 262
     },
     {
       "id": "x-sample-1",
@@ -291,15 +277,6 @@
       "author": "@OpenAI"
     },
     {
-      "id": "hatena-https://jpfont-library.com/",
-      "source": "hatena",
-      "title": "日本語ふぉんとライブラリ",
-      "url": "https://jpfont-library.com/",
-      "publishedAt": "2026-06-03T08:26:06.000Z",
-      "summary": "プロユース向け日本語フォントの書体見本やフォント情報を 横断的に閲覧・検索できる総合ライブラリです。 このサイトについて すべてのフォントを見る 本サイトに掲載している全てのフォントを見る カテゴリ別に見る フォントカテゴリ別にフォントを見る メーカー別に見る フォントメーカー別にフォントを見る フォント...",
-      "bookmarkCount": 728
-    },
-    {
       "id": "feedly-sample-1",
       "source": "feedly",
       "title": "（サンプル）大規模言語モデルの効率的な蒸留手法に関する研究",
@@ -307,6 +284,26 @@
       "publishedAt": "2026-06-03T07:15:00.000Z",
       "summary": "本記事では、知識蒸留を用いて大規模モデルの性能を小型モデルに移す最新手法を解説します。推論コストを抑えつつ精度を維持するアプローチが注目されています。",
       "author": "AI Research Blog"
+    },
+    {
+      "id": "hatena-https://ics.media/entry/260603/",
+      "source": "hatena",
+      "title": "WebStorage / IndexedDB / OPFS 個人開発でも活躍するブラウザーのデータ保存機能を紹介 - ICS MEDIA",
+      "url": "https://ics.media/entry/260603/",
+      "publishedAt": "2026-06-03T04:04:47.000Z",
+      "summary": "3つのストレージはそれぞれ得意分野が異なります。この中で一番手軽なのはWebStorageですが、何も考えずになんでも入れてしまうと、容量制限やパフォーマンスの問題にぶつかりやすくなります。 デモ：3つのストレージを併用したアプリ（簡易ペイントソフト） まずは3つのストレージ機能を活用した簡単なデモを見てみまし...",
+      "thumbnail": "https://ics.media/entry/260603/images/eyecatch.png",
+      "bookmarkCount": 16
+    },
+    {
+      "id": "hatena-https://gleam.run/news/single-file-gleam-beam-programs-with-escript/",
+      "source": "hatena",
+      "title": "Single file Gleam BEAM programs with escript | Gleam programming language",
+      "url": "https://gleam.run/news/single-file-gleam-beam-programs-with-escript/",
+      "publishedAt": "2026-06-03T00:37:01.000Z",
+      "summary": "Gleam is a type safe and scalable language for the Erlang virtual machine and JavaScript runtimes. Today Gleam v1.17.0 has been published. Gleam Gathering But first: the first videos from the first…",
+      "thumbnail": "https://gleam.run/images/preview/v1.17.png",
+      "bookmarkCount": 5
     }
   ],
   "state": {}
