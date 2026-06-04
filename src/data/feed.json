@@ -1,6 +1,95 @@
 {
-  "updatedAt": "2026-06-03T19:26:57.792Z",
+  "updatedAt": "2026-06-04T01:09:56.468Z",
   "items": [
+    {
+      "id": "hatena-https://kaminashi-developer.hatenablog.jp/entry/yagni-layered-architecture",
+      "source": "hatena",
+      "title": "必要になるまで作らず、必要になったら切り出す — バックエンド3層から4層への再構成 - カミナシ エンジニアブログ",
+      "url": "https://kaminashi-developer.hatenablog.jp/entry/yagni-layered-architecture",
+      "publishedAt": "2026-06-03T23:59:36.000Z",
+      "summary": "こんにちは、ソフトウェアエンジニアの渡邉（匠）です。「カミナシ 設備保全」の開発に携わっています。ゴールデンウィークが明けて1ヶ月ほどが経過し、休暇モードからやっと仕事モードに戻ってきました。 このプロダクトは開発開始から約2年が経ちました。バックエンドは長いあいだ presentation / domain / repository...",
+      "thumbnail": "https://cdn.image.st-hatena.com/image/scale/ecc043be8d32b0fc762245090145a33ec13164e6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fk%2Fkaminashi-developer%2F20260603%2F20260603181003.png",
+      "bookmarkCount": 18
+    },
+    {
+      "id": "hatena-https://tech.findy.co.jp/entry/2026/06/04/083000",
+      "source": "hatena",
+      "title": "配ったSkillの効果を「定着 × 成果」で測る — Findy AI+の活用事例 - Findy Tech Blog",
+      "url": "https://tech.findy.co.jp/entry/2026/06/04/083000",
+      "publishedAt": "2026-06-03T23:51:26.000Z",
+      "summary": "こんにちは。ファインディ株式会社でアプリケーションエンジニアをしている西村です。 ファインディの開発組織ではここ1年ほど、Claude Codeを使った開発プロセスのSkill化を進めてきました。Issue生成やセルフレビュー、タスク分解といった作業をSkillにして、社内のClaude Code Pluginに追加するのが日常になっていま...",
+      "thumbnail": "https://cdn.image.st-hatena.com/image/scale/1caaa7f4ba77082c945963235d850f437ba75485/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fsontixyou%2F20260603%2F20260603152759.jpg",
+      "bookmarkCount": 5
+    },
+    {
+      "id": "hatena-https://forest.watch.impress.co.jp/docs/news/2113901.html",
+      "source": "hatena",
+      "title": "「Google ドライブ」の散らかったファイルをGeminiが自動で整理してくれるように／表示言語が英語に設定されているユーザー向けに提供",
+      "url": "https://forest.watch.impress.co.jp/docs/news/2113901.html",
+      "publishedAt": "2026-06-03T23:24:29.000Z",
+      "thumbnail": "https://forest.watch.impress.co.jp/img/wf/list/2113/901/googledrive.png",
+      "bookmarkCount": 8
+    },
+    {
+      "id": "hatena-https://www.gizmodo.jp/article/google_gemma_4_12b/",
+      "source": "hatena",
+      "title": "Googleが「Gemma 4 12B」をリリース。ノートPCで動いて26B級の性能、またお化けローカルLLM | ギズモード・ジャパン",
+      "url": "https://www.gizmodo.jp/article/google_gemma_4_12b/",
+      "publishedAt": "2026-06-03T22:59:57.000Z",
+      "summary": "ローカルLLMの進化、止まらなすぎ。 2026年6月4日、Googleが新しいローカルLLM「Gemma 4 12B」を発表しました。 よりサイズが大きくスペック要件も高い兄弟モデル「Gemma 4 26B A4B」に迫るベンチマーク結果を残しているとのことで、さっそく試したくなりました。 Gemma 4 12Bのベンチマーク結果。よりサイズが大きいGem...",
+      "thumbnail": "https://media.loom-app.com/loom/2026/06/03/2d87f417-b372-4139-bd84-7ecb3d77eed3/original.jpg?w=1200&h=630",
+      "bookmarkCount": 103
+    },
+    {
+      "id": "hatena-https://www.nikkei.com/article/DGXZQOGN03DYJ0T00C26A6000000/",
+      "source": "hatena",
+      "title": "Google､AI検索の引用を拒否可能に　世界で機能提供へ - 日本経済新聞",
+      "url": "https://www.nikkei.com/article/DGXZQOGN03DYJ0T00C26A6000000/",
+      "publishedAt": "2026-06-03T21:46:21.000Z",
+      "summary": "【シリコンバレー=伴正春】米グーグルは3日、人工知能（AI）を使った検索結果でウェブサイトの内容を参照・引用する機能に関して、サイト側が引用を拒否できる機能の提供を始めたと発表した。規制対応のためまず英国で始め、世界に展開する方針としている。検索や対話型で普及が進む生成AIを巡っては、利用者が各サイト...",
+      "thumbnail": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3118115003062026000000-2.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&h=630&w=1200&s=1736196ec203fb9b95c129471787a45f",
+      "bookmarkCount": 4
+    },
+    {
+      "id": "hatena-https://www.publickey1.jp/blog/26/aiwindowswindows_development_skills.html",
+      "source": "hatena",
+      "title": "マイクロソフト、AIエージェントにWindowsアプリ開発の知識を与える「Windows Development Skills」を一般提供開始",
+      "url": "https://www.publickey1.jp/blog/26/aiwindowswindows_development_skills.html",
+      "publishedAt": "2026-06-03T15:02:06.000Z",
+      "summary": "マイクロソフト、AIエージェントにWindowsアプリ開発の知識を与える「Windows Development Skills」を一般提供開始 マイクロソフトは日本時間6月3日未明に開幕した年次イベント「Microsoft Build 2026」で、AIエージェントにWindowsアプリ開発のライフサイクル全体に関する知識を与える「Windows Development Skills」の...",
+      "thumbnail": "https://www.publickey1.jp/2026/windevskills-build2026.png",
+      "bookmarkCount": 44
+    },
+    {
+      "id": "hatena-https://zenn.dev/acntechjp/articles/20260602_test-automation",
+      "source": "hatena",
+      "title": "誰も教えてくれないテスト自動化が普及しない理由",
+      "url": "https://zenn.dev/acntechjp/articles/20260602_test-automation",
+      "publishedAt": "2026-06-03T13:37:03.000Z",
+      "summary": "半地下のこのバーには不思議といつも、日本のIT業界の疲弊と倦怠感のような吹き溜まりが似合う。 Enterキーを叩く音が切なく響くような、鈍色の夜がまた凝りもせず繰り返し訪れる。今夜もまた、気を滅入らせる雨が降っている。 今夜もひとり、静かに飲んでいたら後輩がやってきた。珍しくスーツがよれている。 ——先輩、...",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--th1tmP39--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E8%25AA%25B0%25E3%2582%2582%25E6%2595%2599%25E3%2581%2588%25E3%2581%25A6%25E3%2581%258F%25E3%2582%258C%25E3%2581%25AA%25E3%2581%2584%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E8%2587%25AA%25E5%258B%2595%25E5%258C%2596%25E3%2581%258C%25E6%2599%25AE%25E5%258F%258A%25E3%2581%2597%25E3%2581%25AA%25E3%2581%2584%25E7%2590%2586%25E7%2594%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Inoue%252C%2520Takuya%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2U2ZDA4MDY5ODcuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Accenture%2520Japan%2520%2528%25E6%259C%2589%25E5%25BF%2597%2529%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTGZLdG9HY1lxTVQtVWNWUzVtVHZ5ODJ2aTNaNmNXZUdjVzNFTlRxa092ZDB2ZTJocz1zOTYtYw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "bookmarkCount": 60
+    },
+    {
+      "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/03/news138.html",
+      "source": "hatena",
+      "title": "阿波銀行の情報漏えい、被害のテスト環境は「本来廃止すべきだった」　システム高度化作業でも利用",
+      "url": "https://www.itmedia.co.jp/news/articles/2606/03/news138.html",
+      "publishedAt": "2026-06-03T12:04:07.000Z",
+      "summary": "阿波銀行（徳島市）は6月3日、4月3日に公表した不正アクセスによる顧客情報漏えいの調査結果を発表した。本来廃止すべきテスト環境をAI高度化作業などに使い続け、消すべき顧客データも残っていたと判明。同行は管理態勢の不備を認め、福永丈久頭取ら役員の処分を明らかにした。 同行は、不正アクセスの直接の原因を「何...",
+      "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/03/cover_news138.png",
+      "bookmarkCount": 32
+    },
+    {
+      "id": "hatena-https://www.itmedia.co.jp/aiplus/article/2606/03/2000000054/",
+      "source": "hatena",
+      "title": "「AIに戒名を作らせて何が問題か」――寺院向け専門誌の特集が話題",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2606/03/2000000054/",
+      "publishedAt": "2026-06-03T12:03:10.000Z",
+      "summary": "「AIに戒名を作らせて何が問題か」――寺院の住職向け雑誌「月刊住職」6月号のこのような特集がXで話題だ。きっかけは、あるXユーザーが6月3日に投稿した同特集を紹介するポスト。「めちゃくちゃ気になる」などの声が相次いでいる。 月刊住職を手掛ける興山舎（東京都港区）の公式サイトによれば、特集のタイトルは「生成A...",
+      "thumbnail": "https://www.itmedia.co.jp/aiplus/article/ogp/2606/03/2000000054/10000305/2048",
+      "bookmarkCount": 29
+    },
     {
       "id": "hatena-https://gigazine.net/news/20260603-leiden-declaration-on-ai-and-math/",
       "source": "hatena",
@@ -9,17 +98,27 @@
       "publishedAt": "2026-06-03T11:47:47.000Z",
       "summary": "数学研究におけるAIの利用が証明の信頼性、著作権や貢献の帰属、研究の自律性などに影響を及ぼすとして、15大学の研究者16人からなる作業部会が2026年6月2日、「Leiden Declaration on Artificial Intelligence and Mathematics(人工知能と数学に関するライデン宣言)」を発表しました。宣言はAIを数学から排除するのでは...",
       "thumbnail": "https://i.gzn.jp/img/2026/06/03/leiden-declaration-on-ai-and-math/00_m.jpg",
-      "bookmarkCount": 4
+      "bookmarkCount": 23
     },
     {
-      "id": "hatena-https://kamichidu.hatenablog.com/entry/2026/06/03/001719",
+      "id": "hatena-https://www.afpbb.com/articles/-/3636926",
       "source": "hatena",
-      "title": "VimでJavaを実行する方法 2026年最新版 - なるはやで いい感じの 動作確認",
-      "url": "https://kamichidu.hatenablog.com/entry/2026/06/03/001719",
-      "publishedAt": "2026-06-03T11:47:35.000Z",
-      "summary": "どうも、kamichiduです。 この記事は Vim 駅伝 2026-06-03 の記事となります。 早速ですがみなさん、開発をしていて Vim から Java を実行したいと感じたことはないでしょうか。 私はあります。 特にちょっとしたコードやアルゴリズムを試したいとき、端末へ切り替えたり、ビルドしたり、実行したりという往復は意外と面...",
-      "thumbnail": "https://ogimage.blog.st-hatena.com/8599973812317846885/14945776032038050168/1780415091",
-      "bookmarkCount": 11
+      "title": "【三里河中国経済観察】中国の「トークン」海外展開、東南アジアの現地語AIモデルを後押し",
+      "url": "https://www.afpbb.com/articles/-/3636926",
+      "publishedAt": "2026-06-03T11:44:32.000Z",
+      "summary": "【6月3日 CNS】シンガポールで働くある外国人スタッフは、西側の人工知能（AI）大規模言語モデルに苦労した末、現地語に対応した言語モデルへと乗り換えた。彼が口にする「シーライオン」は、水族館にいるかわいらしい海獣のことではない。シンガポール政府が巨額を投じて進める国家級の大規模言語モデルプロジェクト「S...",
+      "thumbnail": "https://afpbb.ismcdn.jp/mwimgs/8/0/1000x/img_80ef43d1060c294eafe8c0090d9815a680535.jpg",
+      "bookmarkCount": 7
+    },
+    {
+      "id": "hatena-https://gigazine.net/news/20260603-trump-ai-innovation-security/",
+      "source": "hatena",
+      "title": "トランプ大統領がAI規制は拒否しつつサイバー防衛能力を強化する大統領令に署名",
+      "url": "https://gigazine.net/news/20260603-trump-ai-innovation-security/",
+      "publishedAt": "2026-06-03T11:09:47.000Z",
+      "summary": "AIのサイバー攻撃能力は年々高まっており、AI企業のAnthropicは自社で開発した「Claude Mythos Preview」モデルを「ソフトウェアの脆弱(ぜいじゃく)性を発見する能力が極めて高い」として自主的に公開を控えるなどしています。こうしたAIを政府側に共有してもらうための枠組みを作る大統領令に、ドナルド・トランプ大統...",
+      "thumbnail": "https://i.gzn.jp/img/2026/06/03/trump-ai-innovation-security/00.jpg",
+      "bookmarkCount": 4
     },
     {
       "id": "hatena-https://scrapbox.io/kawasima/%E3%83%9E%E3%82%B8%E3%83%83%E3%82%AF%E3%83%8A%E3%83%B3%E3%83%90%E3%83%BC%E3%81%A8%E3%83%87%E3%83%BC%E3%82%BF%E6%8A%BD%E8%B1%A1",
@@ -29,16 +128,27 @@
       "publishedAt": "2026-06-03T10:40:19.000Z",
       "summary": "コードに直接書かれた 3 や 0 のような数値リテラル、いわゆるマジックナンバーを名前付き定数に置き換える。if (retryCount > 3) を if (retryCount > MAX_RETRY_COUNT) に直す。リファクタリングの定番として、ほとんど反射的にに行われている。 マジックナンバーを定数にする一番の理由としてよく挙がるのは、値の変...",
       "thumbnail": "https://scrapbox.io/assets/img/content-logo.png",
-      "bookmarkCount": 22
+      "bookmarkCount": 103
     },
     {
-      "id": "hatena-https://av.watch.impress.co.jp/docs/news/2114221.html",
+      "id": "hatena-https://blog.calif.io/p/codex-discovered-a-hidden-http2-bomb",
       "source": "hatena",
-      "title": "アップル＆グーグルから新HDR「Eclipsa Video」。スマホや次期Chromeに実装へ",
-      "url": "https://av.watch.impress.co.jp/docs/news/2114221.html",
-      "publishedAt": "2026-06-03T10:10:13.000Z",
-      "thumbnail": "https://av.watch.impress.co.jp/img/avw/list/2114/221/d00.jpg",
-      "bookmarkCount": 18
+      "title": "Codex Discovered a Hidden HTTP/2 Bomb",
+      "url": "https://blog.calif.io/p/codex-discovered-a-hidden-http2-bomb",
+      "publishedAt": "2026-06-03T10:08:39.000Z",
+      "summary": "We’re publishing HTTP/2 Bomb, a remote denial-of-service exploit against most major web servers, including: nginx Apache httpd Microsoft IIS Envoy Cloudflare Pingora The vulnerable behavior exists …",
+      "thumbnail": "https://substackcdn.com/image/fetch/$s_!oj_T!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4bedabfd-d72a-4e69-9121-5abe45efeab0_1200x630.png",
+      "bookmarkCount": 25
+    },
+    {
+      "id": "hatena-https://news.yahoo.co.jp/articles/a94a2cd40c2e16bafe19429d3dd28669420f80d5",
+      "source": "hatena",
+      "title": "CAMPFIRE「従業員がGitHub認証情報を個人開発サーバに誤アップロード」　不正アクセスの原因公表（ITmedia NEWS） - Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/articles/a94a2cd40c2e16bafe19429d3dd28669420f80d5",
+      "publishedAt": "2026-06-03T09:25:47.000Z",
+      "summary": "クラウドファンディング大手のCAMPFIREは6月2日、同社のGitHubアカウントが不正アクセスを受け、最大22.5万件の個人情報が漏えいした可能性がある問題の原因について、外部専門機関によるフォレンジック調査の結果を発表した。 【その他の画像】 従業員が発行したGitHub認証情報が、個人開発で利用していたサーバに意図...",
+      "thumbnail": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20260603-00000070-zdn_n-000-2-view.jpg?exp=10800",
+      "bookmarkCount": 6
     },
     {
       "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/03/news124.html",
@@ -48,16 +158,7 @@
       "publishedAt": "2026-06-03T08:46:24.000Z",
       "summary": "米GitHubが6月1日（現地時間）に適用した「GitHub Copilot」の新料金制度を巡り、SNS上で不満の声が続出している。新体系は、基本料金を据え置きつつ、毎月一定のクレジットを支給し、超過分は従量課金する仕組み。しかし、ユーザーからは「クレジットの消費が早すぎる」「使い物にならなくなった」との声が散見される。...",
       "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/03/cover_news124.png",
-      "bookmarkCount": 149
-    },
-    {
-      "id": "hatena-https://forest.watch.impress.co.jp/docs/news/2113943.html",
-      "source": "hatena",
-      "title": "すぐ知りたい「Microsoft Build 2026」まとめ ～Windows AI APIがGPUにも対応、RTX Spark搭載の開発用PC、ローカルSLM新モデル、エージェント前提の新デバイスなど／OpenClawも安全？なAI用サンドボックス、パーソナルエージェントも",
-      "url": "https://forest.watch.impress.co.jp/docs/news/2113943.html",
-      "publishedAt": "2026-06-03T08:42:28.000Z",
-      "thumbnail": "https://forest.watch.impress.co.jp/img/wf/list/2113/943/build00.png",
-      "bookmarkCount": 12
+      "bookmarkCount": 212
     },
     {
       "id": "hatena-https://forest.watch.impress.co.jp/docs/news/2113920.html",
@@ -66,7 +167,7 @@
       "url": "https://forest.watch.impress.co.jp/docs/news/2113920.html",
       "publishedAt": "2026-06-03T08:42:17.000Z",
       "thumbnail": "https://forest.watch.impress.co.jp/img/wf/list/2113/920/codex_app.png",
-      "bookmarkCount": 8
+      "bookmarkCount": 87
     },
     {
       "id": "x-sample-1",
@@ -77,13 +178,13 @@
       "author": "@OpenAI"
     },
     {
-      "id": "hatena-https://pc.watch.impress.co.jp/docs/news/2114136.html",
+      "id": "hatena-https://jpfont-library.com/",
       "source": "hatena",
-      "title": "NVIDIA、1兆パラメータが動くWindowsのデスクトップAIスパコン",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2114136.html",
-      "publishedAt": "2026-06-03T08:27:14.000Z",
-      "thumbnail": "https://pc.watch.impress.co.jp/img/pcw/list/2114/136/1.jpg",
-      "bookmarkCount": 9
+      "title": "日本語ふぉんとライブラリ",
+      "url": "https://jpfont-library.com/",
+      "publishedAt": "2026-06-03T08:26:06.000Z",
+      "summary": "プロユース向け日本語フォントの書体見本やフォント情報を 横断的に閲覧・検索できる総合ライブラリです。 このサイトについて すべてのフォントを見る 本サイトに掲載している全てのフォントを見る カテゴリ別に見る フォントカテゴリ別にフォントを見る メーカー別に見る フォントメーカー別にフォントを見る フォント...",
+      "bookmarkCount": 217
     },
     {
       "id": "hatena-https://togetter.com/li/2704904",
@@ -93,7 +194,7 @@
       "publishedAt": "2026-06-03T08:17:56.000Z",
       "summary": "水雪駄🍊 @mizsetta IT業界長いけど ・一人称で仕事できる人 ・自走できる人 って、募集要項に書いてる会社避けてきたら、攻撃的な人がいる職場に当たったことない。 自走力より、コミュニケーション重視の会社だと →チームワーク大切にする →技術力があっても攻撃的な人は評価されにくい →いても残りにくい →結果、雰囲...",
       "thumbnail": "https://s.tgstc.com/ogp3/a4b8e8c3be2d701a12d6bdd750d3149a-1200x630.jpeg",
-      "bookmarkCount": 244
+      "bookmarkCount": 317
     },
     {
       "id": "hatena-https://forest.watch.impress.co.jp/docs/news/2114149.html",
@@ -102,17 +203,16 @@
       "url": "https://forest.watch.impress.co.jp/docs/news/2114149.html",
       "publishedAt": "2026-06-03T07:42:19.000Z",
       "thumbnail": "https://forest.watch.impress.co.jp/img/wf/list/2114/149/hermes.jpg",
-      "bookmarkCount": 69
+      "bookmarkCount": 152
     },
     {
-      "id": "hatena-https://odiak.net/cloudflare-agents-personal-micromanager",
+      "id": "hatena-https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf",
       "source": "hatena",
-      "title": "Cloudflare Agentsで自分をマイクロマネジメントするAIを作った",
-      "url": "https://odiak.net/cloudflare-agents-personal-micromanager",
-      "publishedAt": "2026-06-03T07:27:55.000Z",
-      "summary": "Cloudflare Agentsで、自分をマイクロマネジメントしてくれるAIエージェント「Kuro」を作っている。 朝、ぼんやりしたまま一日が始まることがよくある。 やることはある。やった方がいいことも分かっている。Obsidianのdaily notesにタスクも書いてある。 それなのに、朝の時点でちゃんと今日やることを決めないまま、な...",
-      "thumbnail": "https://i.imgur.com/nvOMId2.png",
-      "bookmarkCount": 39
+      "title": "MAI-Thinking-1: Building a Hill-Climbing Machine",
+      "url": "https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf",
+      "publishedAt": "2026-06-03T07:33:14.000Z",
+      "summary": "MAI-Thinking-1: Building a Hill-Climbing Machine The Microsoft AI Team 1 Abstract Progress in AI is driven not by a single model, but by the ability to continually improve upon the current state of…",
+      "bookmarkCount": 5
     },
     {
       "id": "feedly-sample-1",
@@ -124,92 +224,14 @@
       "author": "AI Research Blog"
     },
     {
-      "id": "hatena-https://news.web.nhk/newsweb/na/na-k10015139651000",
+      "id": "hatena-https://gigazine.net/news/20260603-openai-codex-role-tool-workflow/",
       "source": "hatena",
-      "title": "AI ミュトス利用可能でサイバーセキュリティー強化 デジタル相 | NHKニュース",
-      "url": "https://news.web.nhk/newsweb/na/na-k10015139651000",
-      "publishedAt": "2026-06-03T07:05:17.000Z",
-      "summary": "新しいAIモデル「クロード・ミュトス」が、日本政府や一部の金融機関で利用できるようになったことを受けて、松本デジタル大臣は「大きな一歩だ」と評価し、日本全体のサイバーセキュリティーの強化につなげたいと…",
-      "thumbnail": "https://imgu.web.nhk/news/u/news/html/20260603/K10015139651_2606031310_0603135429_01_02.jpg",
-      "bookmarkCount": 11
-    },
-    {
-      "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/03/news114.html",
-      "source": "hatena",
-      "title": "CAMPFIRE「従業員がGitHub認証情報を個人開発サーバに誤アップロード」　不正アクセスの原因公表",
-      "url": "https://www.itmedia.co.jp/news/articles/2606/03/news114.html",
-      "publishedAt": "2026-06-03T07:02:53.000Z",
-      "summary": "クラウドファンディング大手のCAMPFIREは6月2日、同社のGitHubアカウントが不正アクセスを受け、最大22.5万件の個人情報が漏えいした可能性がある問題の原因について、外部専門機関によるフォレンジック調査の結果を発表した。 従業員が発行したGitHub認証情報が、個人開発で利用していたサーバに意図せずアップロードさ...",
-      "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/03/cover_news114.png",
-      "bookmarkCount": 54
-    },
-    {
-      "id": "hatena-https://gigazine.net/news/20260603-github-copilot-credit-consumption/",
-      "source": "hatena",
-      "title": "従量課金になったGitHub Copilotで「クレジット消費が激しすぎる」との声が相次ぐ",
-      "url": "https://gigazine.net/news/20260603-github-copilot-credit-consumption/",
-      "publishedAt": "2026-06-03T07:00:18.000Z",
-      "summary": "Microsoft傘下のGitHubが提供するAIコーディング支援サービス「GitHub Copilot」は、エディタ上でコード補完やチャットによる相談を行える開発者向けツールです。従来のCopilotは数行のコード補完や短い質問に答える使い方が目立っていましたが、近年は複数のファイルを調べながらAIが複数の手順をたどって修正案を作る...",
-      "thumbnail": "https://i.gzn.jp/img/2026/06/03/github-copilot-credit-consumption/00.jpg",
-      "bookmarkCount": 39
-    },
-    {
-      "id": "hatena-https://www.watch.impress.co.jp/docs/news/2114069.html",
-      "source": "hatena",
-      "title": "マイクロソフト、翻訳“コストゼロ”も可能 EdgeのローカルAI強化",
-      "url": "https://www.watch.impress.co.jp/docs/news/2114069.html",
-      "publishedAt": "2026-06-03T06:23:48.000Z",
-      "thumbnail": "https://www.watch.impress.co.jp/img/ipw/list/2114/069/00.jpg",
-      "bookmarkCount": 4
-    },
-    {
-      "id": "hatena-https://www.watch.impress.co.jp/docs/news/2114032.html",
-      "source": "hatena",
-      "title": "カラビナ付きジェットストリームインクボールペン　三菱鉛筆新ブランド",
-      "url": "https://www.watch.impress.co.jp/docs/news/2114032.html",
-      "publishedAt": "2026-06-03T06:19:04.000Z",
-      "thumbnail": "https://www.watch.impress.co.jp/img/ipw/list/2114/032/andknot_01.jpg",
-      "bookmarkCount": 25
-    },
-    {
-      "id": "hatena-https://blog.inorinrinrin.com/entry/2026/06/02/215815",
-      "source": "hatena",
-      "title": "TOEIC教材や対策を全く活用せずに半年でTOEIC700点を超えるまでにやったこと - プププなテクブ",
-      "url": "https://blog.inorinrinrin.com/entry/2026/06/02/215815",
-      "publishedAt": "2026-06-03T06:10:40.000Z",
-      "summary": "先日受験した TOEIC L&R 422 でついに一つの目標だったTOEIC 700点を超えました。 4月にGoogle Cloud Nextでアメリカに行った 時も、日常会話やセッションを聞くといった場では特に困らなかったので、「もしかして英語力上がってる？」と思い始めたところ、この結果です。 学生の頃にはこの壁は越えられなかったので、間...",
-      "thumbnail": "https://ogimage.blog.st-hatena.com/6802418398318546029/14945776032037983161/1780452713",
-      "bookmarkCount": 32
-    },
-    {
-      "id": "hatena-https://takoratta.hatenablog.com/entry/2026/06/03/120535",
-      "source": "hatena",
-      "title": "AI時代、人間は非完全情報ゲームを担う - Nothing ventured, nothing gained.",
-      "url": "https://takoratta.hatenablog.com/entry/2026/06/03/120535",
-      "publishedAt": "2026-06-03T04:07:04.000Z",
-      "summary": "私が「AIには開発できない（だから引き続き人間が担うしかない）」と一年ほど前まで言い続けていたものがいくつかある。その代表がOSだ。自分がかつてOS開発に関わったから、という思い入れもある。だがそれを抜きにしても、OSがもっとも難易度の高いソフトウェアの一つだと言って、正面から反論する人は少ないだろう。...",
-      "thumbnail": "https://ogimage.blog.st-hatena.com/12704346814673891608/14945776032038191545/1780455935",
-      "bookmarkCount": 52
-    },
-    {
-      "id": "hatena-https://gigazine.net/news/20260603-microsoft-scout-by-openclaw/",
-      "source": "hatena",
-      "title": "MicrosoftがOpenClawベースの常時稼働型AIエージェント「Scout」を発表、ユーザーの代わりに仕事を進める「Autopilot」第1弾",
-      "url": "https://gigazine.net/news/20260603-microsoft-scout-by-openclaw/",
-      "publishedAt": "2026-06-03T03:40:53.000Z",
-      "summary": "Microsoftが、Microsoft 365向けの常時稼働型AIエージェント「Microsoft Scout」を発表しました。ScoutはAIエージェントフレームワークである「OpenClaw」の技術を基盤としており、ユーザーが毎回指示を出さなくてもバックグラウンドで作業を進める「Autopilot」という新カテゴリの最初のエージェントとして位置付けられ...",
-      "thumbnail": "https://i.gzn.jp/img/2026/06/03/microsoft-scout-by-openclaw/00.png",
-      "bookmarkCount": 4
-    },
-    {
-      "id": "hatena-https://tech.layerx.co.jp/entry/ai-agent-long-term-memory-simulation",
-      "source": "hatena",
-      "title": "AIエージェントに1年分のニュースを読ませて4,500件の長期記憶を作って見えた課題 - LayerX エンジニアブログ",
-      "url": "https://tech.layerx.co.jp/entry/ai-agent-long-term-memory-simulation",
-      "publishedAt": "2026-06-03T03:39:16.000Z",
-      "summary": "はじめに LayerX Ai Workforce事業部でApplied R&D をしているtyoyoです。 AI Agentの長期記憶に関して様々な手法が提案されていますが、そのどれもが実際に長期間で運用されたことはほとんどないはずです。なぜなら、それらが台頭したのが最近だからです。 個人的に長期記憶についての肌感覚がなかったので、実験として...",
-      "thumbnail": "https://cdn.image.st-hatena.com/image/scale/f47fc59f25bb780f4af73d254a2dd0ad848caa92/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fi%2Fipod_nana%2F20260603%2F20260603111845.png",
-      "bookmarkCount": 8
+      "title": "Codexに「プログラマー以外にも役立つ業務改善プラグイン」が追加される、Codexの週間アクティブユーザーは500万人超え",
+      "url": "https://gigazine.net/news/20260603-openai-codex-role-tool-workflow/",
+      "publishedAt": "2026-06-03T05:52:19.000Z",
+      "summary": "OpenAIが開発するAIコーディングパートナーであるCodexの週間アクティブユーザー数が500万人を超えたことが明らかにありました。そんなCodexに、「プログラマー以外にも役立つ業務改善プラグイン」が追加されています。 Codex is becoming a productivity tool for everyone | OpenAI https://openai.com/index…",
+      "thumbnail": "https://i.gzn.jp/img/2026/06/03/openai-codex-role-tool-workflow/00_m.png",
+      "bookmarkCount": 12
     },
     {
       "id": "hatena-https://internet.watch.impress.co.jp/docs/yajiuma/2114004.html",
@@ -218,45 +240,27 @@
       "url": "https://internet.watch.impress.co.jp/docs/yajiuma/2114004.html",
       "publishedAt": "2026-06-03T03:23:49.000Z",
       "thumbnail": "https://internet.watch.impress.co.jp/img/iw/list/2114/004/yajiuma-watch_1.png",
-      "bookmarkCount": 107
+      "bookmarkCount": 203
     },
     {
-      "id": "hatena-https://japan.zdnet.com/article/35248091/",
+      "id": "hatena-https://gigazine.net/news/20260603-microsoft-project-solara/",
       "source": "hatena",
-      "title": "「Bash vs. Fish」--いつもの「Linux」シェルをもっと便利する方法",
-      "url": "https://japan.zdnet.com/article/35248091/",
-      "publishedAt": "2026-06-03T03:07:11.000Z",
-      "summary": "「Linux」におけるシェルは、カーネルが命令を理解し実行できるようにコマンドを解釈する役割を担っている。シェルが存在しなければ、コマンドが機能しないだけでなく、アプリケーションそのものも動作しない。シェルは極めて重要な存在だ。 多くのLinuxディストリビューションは、標準のシェルに「Bash」を採用している...",
-      "thumbnail": "https://japan.zdnet.com/storage/2026/05/27/e936bf1c81b2ce3ef1fc90f7954774c7/fishhero_l.jpg",
-      "bookmarkCount": 19
+      "title": "MicrosoftがAIエージェント専用デバイス向け新プラットフォーム「Project Solara」を発表、WindowsではなくAndroidベースのOSでエージェント中心のシステムを形成",
+      "url": "https://gigazine.net/news/20260603-microsoft-project-solara/",
+      "publishedAt": "2026-06-03T02:30:26.000Z",
+      "summary": "Microsoftが2026年6月2日にアメリカ・サンフランシスコで開催した開発者向けイベント「Microsoft Build 2026」で、AIエージェントを中心に動作する新しいデバイス向けプラットフォーム「Project Solara」を発表しました。MicrosoftはProject Solaraを単なるOSではなく、デバイスとクラウドをまたぐ「chip-to-cloud」プラ...",
+      "thumbnail": "https://i.gzn.jp/img/2026/06/03/microsoft-project-solara/00.png",
+      "bookmarkCount": 8
     },
     {
-      "id": "hatena-https://k-tai.watch.impress.co.jp/docs/news/2114003.html",
+      "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/03/news071.html",
       "source": "hatena",
-      "title": "横浜にApple Store誕生へ",
-      "url": "https://k-tai.watch.impress.co.jp/docs/news/2114003.html",
-      "publishedAt": "2026-06-03T02:45:26.000Z",
-      "thumbnail": "https://k-tai.watch.impress.co.jp/img/ktw/list/2114/003/apple.jpg",
-      "bookmarkCount": 57
-    },
-    {
-      "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/03/news081.html",
-      "source": "hatena",
-      "title": "デザイン書の老舗・MdNが消滅へ　インプレスに吸収合併",
-      "url": "https://www.itmedia.co.jp/news/articles/2606/03/news081.html",
-      "publishedAt": "2026-06-03T02:34:43.000Z",
-      "summary": "デザイン誌「MdN」（2019年に休刊）で知られた出版社・エムディエヌコーポレーションが7月1日付でインプレスに吸収合併され、法人として消滅する。親会社のインプレスホールディングス（HD）が6月1日に発表した。 エムディエヌコーポレーションは1992年設立。デザイン誌「MdN」の他、 デザインやグラフィックスの専門書...",
-      "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/03/cover_news081.png",
-      "bookmarkCount": 175
-    },
-    {
-      "id": "hatena-https://forest.watch.impress.co.jp/docs/news/2113917.html",
-      "source": "hatena",
-      "title": "Microsoft、AIエージェント統合の「Intelligent Terminal 0.1」を試験公開／「Windows Terminal」のフォーク、エラー自動検出やエージェント管理機能を搭載",
-      "url": "https://forest.watch.impress.co.jp/docs/news/2113917.html",
-      "publishedAt": "2026-06-03T02:02:04.000Z",
-      "thumbnail": "https://forest.watch.impress.co.jp/img/wf/list/2113/917/intelligent_terminal.jpg",
-      "bookmarkCount": 9
+      "title": "ネット青少年保護、年齢確認を厳格化　一律年齢制限には踏み込まず　総務省有識者案",
+      "url": "https://www.itmedia.co.jp/news/articles/2606/03/news071.html",
+      "publishedAt": "2026-06-03T02:03:33.000Z",
+      "summary": "総務省は6月2日、インターネット上で青少年を保護するための規制に関する有識者会議を開き、サービス事業者に年齢確認の厳格化などを求める報告書案を公表した。SNS依存や誹謗（ひぼう）中傷が社会問題化し、生成AIを悪用して加害者になるケースも相次いでいるため、対策を強化する。一方、年齢による一律の利用制限は望...",
+      "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/03/cover_news071.jpg",
+      "bookmarkCount": 7
     },
     {
       "id": "hatena-https://gihyo.jp/book/2026/978-4-297-15704-3",
@@ -266,35 +270,37 @@
       "publishedAt": "2026-06-03T01:12:34.000Z",
       "summary": "概要 AIによるコード生成が現実となった今、ソフトウェアテストの重要性はますます高まっています。AIエージェントの能力を最大限に発揮する上でも、テスト自動化などを含む開発基盤の整備は必須のものになってくるでしょう。本書では、フロントエンド開発の現場で効果的にテストを導入・運用するための力を身に付けるこ...",
       "thumbnail": "https://gihyo.jp/assets/images/ogp/2026/9784297157043.jpg",
-      "bookmarkCount": 49
+      "bookmarkCount": 97
     },
     {
-      "id": "hatena-https://www.watch.impress.co.jp/docs/news/2113912.html",
+      "id": "hatena-https://zenn.dev/innovation/articles/d3b5c1975e3c02",
       "source": "hatena",
-      "title": "なぜファミマはセブン銀行ATMに切り替えるのか",
-      "url": "https://www.watch.impress.co.jp/docs/news/2113912.html",
-      "publishedAt": "2026-06-03T00:58:44.000Z",
-      "thumbnail": "https://www.watch.impress.co.jp/img/ipw/list/2113/912/f03.jpg",
-      "bookmarkCount": 160
+      "title": "クリーンアーキテクチャを3行で説明してみる",
+      "url": "https://zenn.dev/innovation/articles/d3b5c1975e3c02",
+      "publishedAt": "2026-06-02T23:48:11.000Z",
+      "summary": "はじめに クリーンアーキテクチャって難しいですよね。 最近ではソフトウェアアーキテクチャを考える上で クリーンアーキテクチャ は避けて通れません。 ですが、クリーンアーキテクチャで設計しよう！となった時に、そもそもクリーンアーキテクチャとは... となることが多々あります。 そこで、クリーンアーキテクチャ...",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--fcVeYmHh--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25AF%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%25B3%25E3%2582%25A2%25E3%2583%25BC%25E3%2582%25AD%25E3%2583%2586%25E3%2582%25AF%25E3%2583%2581%25E3%2583%25A3%25E3%2582%25923%25E8%25A1%258C%25E3%2581%25A7%25E8%25AA%25AC%25E6%2598%258E%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2581%25AF%25E3%2581%25A1%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzFkYjgxMTIyYzAuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BE%25E3%2582%25A4%25E3%2583%258E%25E3%2583%2599%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%2520Tech%2520Blog%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzAwOTE5MjMwZjguanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "bookmarkCount": 57
     },
     {
-      "id": "hatena-https://rinsuki.hatenablog.jp/entry/2026/06/02/215544",
+      "id": "hatena-https://www.itmedia.co.jp/enterprise/articles/2606/03/news043.html",
       "source": "hatena",
-      "title": "俺にとってのX(あるいはTwitter)が終わったので、次を考える - rinsuki’s blog",
-      "url": "https://rinsuki.hatenablog.jp/entry/2026/06/02/215544",
-      "publishedAt": "2026-06-02T13:45:50.000Z",
-      "summary": "とりあえずここだけ読んでほしい 今Twitterアカウントが凍結されると、異議申し立てをしても的外れな回答しか来ずに事実上詰むことがある。 まだ凍結されていないなら凍結される前に https://x.com/settings/download_your_data からアーカイブのリクエストをしよう。 さらに、できることならアーカイブがダウンロードで...",
-      "thumbnail": "https://ogimage.blog.st-hatena.com/8599973812322014554/14945776032037994935/1780408298",
-      "bookmarkCount": 15
+      "title": "シャドーAIに「ログイン情報」を渡している割合は？　Oktaの実態調査で判明",
+      "url": "https://www.itmedia.co.jp/enterprise/articles/2606/03/news043.html",
+      "publishedAt": "2026-06-02T23:45:56.000Z",
+      "summary": "ID・アクセス管理（IAM）を手掛けるOktaが2026年5月27日に公開した調査によると、過去1年間にAI関連のセキュリティ問題やそれに近い事態を経験した経営幹部は58％に上る。さらに、経営幹部の95％は「従業員は責任を持ってAIを利用している」と回答しているが、IT部門の承認を得ないままAIツールを使う「シャドーAI」を利...",
+      "thumbnail": "https://image.itmedia.co.jp/enterprise/articles/2606/03/cover_news043.jpg",
+      "bookmarkCount": 12
     },
     {
-      "id": "hatena-https://qiita.com/y-morimatsu/items/ea44baec84417d36b85d",
+      "id": "hatena-https://zenn.dev/uhyo/articles/declarative-partial-updates-react",
       "source": "hatena",
-      "title": "Claude Opus 4.8 のプロンプティング・ベストプラクティス — 公式ガイドの要点 - Qiita",
-      "url": "https://qiita.com/y-morimatsu/items/ea44baec84417d36b85d",
-      "publishedAt": "2026-06-02T01:23:23.000Z",
-      "summary": "グラレコ はじめに 🎯 Anthropic が公開しているプロンプトエンジニアリングの公式ガイドに、Claude Opus 4.8 向けのベストプラクティス がまとまっています。このモデルは long-horizon agentic（長期にわたる自律作業）・knowledge work・vision・memory といったタスクに強く、しかも Opus 4.7 のプロンプトをそのま...",
-      "bookmarkCount": 25
+      "title": "Declarative Partial UpdatesをストリーミングSSRに使う",
+      "url": "https://zenn.dev/uhyo/articles/declarative-partial-updates-react",
+      "publishedAt": "2026-06-02T16:02:39.000Z",
+      "summary": "Declarative Partial Updates （宣言的部分更新） は、Googleによって提案されているWeb標準（候補）です。詳しくは以下のページをご覧ください。 GoogleのWeb標準というと、他のブラウザベンダーのサポートを得られないまま突っ走ることも多い印象ですが、このDeclarative Partial Updates（略してDPU）は、FirefoxとWe...",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--RgToT9iS--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Declarative%2520Partial%2520Updates%25E3%2582%2592%25E3%2582%25B9%25E3%2583%2588%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25B0SSR%25E3%2581%25AB%25E4%25BD%25BF%25E3%2581%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:uhyo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVjYjFlMDJlNGQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "bookmarkCount": 9
     }
   ],
   "state": {}
