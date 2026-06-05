@@ -1,6 +1,16 @@
 {
-  "updatedAt": "2026-06-05T13:10:26.987Z",
+  "updatedAt": "2026-06-05T18:45:48.362Z",
   "items": [
+    {
+      "id": "hatena-https://satoru-takeuchi.hatenablog.com/entry/2026/06/05/221440",
+      "source": "hatena",
+      "title": "あるプログラマの若かりし頃の奇行集 - 覚書",
+      "url": "https://satoru-takeuchi.hatenablog.com/entry/2026/06/05/221440",
+      "publishedAt": "2026-06-05T13:17:22.000Z",
+      "summary": "昔は自分がプログラマとして成長するためには何が必要なのかを悩み、悩みはするが深く考えずに思いつきで奇行に走るということをよくしていました。今になって振り返る微笑ましくて面白かったので、いくつかを紹介します。十中八九読者の今後の人生に役立たないですが、失笑しながら読んでもらえれば幸いです。 gzipコマ...",
+      "thumbnail": "https://ogimage.blog.st-hatena.com/10328749687217861088/14945776032038785598/1780665280",
+      "bookmarkCount": 9
+    },
     {
       "id": "hatena-https://takoratta.hatenablog.com/entry/2026/06/05/181559",
       "source": "hatena",
@@ -9,7 +19,7 @@
       "publishedAt": "2026-06-05T10:52:20.000Z",
       "summary": "この業界（どの業界なのかはともかく）にいて「PayPalマフィア」という言葉を聞いたことがない人は少ないのではないか。 私が初めて聞いたのはいつだろう。思い出せないが、かなり前だったのは間違いない。 でも告白すると、初期のPayPalで彼らが実際に何をやったのかを、長いことまったく説明できなかった。名前だけが...",
       "thumbnail": "https://ogimage.blog.st-hatena.com/12704346814673891608/14945776032039084454/1780650959",
-      "bookmarkCount": 9
+      "bookmarkCount": 172
     },
     {
       "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/05/news116.html",
@@ -19,7 +29,25 @@
       "publishedAt": "2026-06-05T09:50:58.000Z",
       "summary": "在キューバ日本国大使館は6月3日、キューバ国内で6月6日（現地時間）以降、米VISAと米Mastercardブランドのクレジットカードが使えなくなるとして、これから現地に渡航する日本人に注意を呼びかけた。 同大使館によると、現地でクレジットカードが使えると思い込み、現金を十分に持たずに困窮するケースが多発していると...",
       "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/05/cover_news116.jpg",
-      "bookmarkCount": 6
+      "bookmarkCount": 18
+    },
+    {
+      "id": "hatena-https://av.watch.impress.co.jp/docs/series/rt/2114785.html",
+      "source": "hatena",
+      "title": "日本のコンテンツ投資からAI戦略まで。Netflix・共同CEOがすべてに答えた【西田宗千佳のRandomTracking】",
+      "url": "https://av.watch.impress.co.jp/docs/series/rt/2114785.html",
+      "publishedAt": "2026-06-05T09:33:54.000Z",
+      "thumbnail": "https://av.watch.impress.co.jp/img/avw/list/2114/785/R3_C2600.jpg",
+      "bookmarkCount": 13
+    },
+    {
+      "id": "hatena-https://pc.watch.impress.co.jp/docs/news/event/2114795.html",
+      "source": "hatena",
+      "title": "【異次元の30Gbps】ASUSが放つ次世代Wi-Fi 8ルーターが爆速すぎる",
+      "url": "https://pc.watch.impress.co.jp/docs/news/event/2114795.html",
+      "publishedAt": "2026-06-05T08:45:29.000Z",
+      "thumbnail": "https://pc.watch.impress.co.jp/img/pcw/list/2114/795/41.jpg",
+      "bookmarkCount": 8
     },
     {
       "id": "hatena-https://soudai.hatenablog.com/entry/2026/06/05/153530",
@@ -29,17 +57,7 @@
       "publishedAt": "2026-06-05T08:02:35.000Z",
       "summary": "Djangoのデファクト・スタンダードなRDBMSはPostgreSQLである。 せっかくPostgreSQLを選んでいるなら、PostgreSQLの機能を使わないのはもったいない。 そこで今日はDjangoを利用した開発者がPostgreSQLのどんな機能を知っておくと便利か、という話をする。 例えばこのブログでも紹介しているがPostgreSQLにはJSON、配列...",
       "thumbnail": "https://ogimage.blog.st-hatena.com/10328749687203430916/14945776032038805103/1780641330",
-      "bookmarkCount": 17
-    },
-    {
-      "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/05/news110.html",
-      "source": "hatena",
-      "title": "ミスで“永久無料”の人気ゲーム「PICO PARK：Classic」配信停止へ　1000万DLも「ずっと無料はよくなかった」",
-      "url": "https://www.itmedia.co.jp/news/articles/2606/05/news110.html",
-      "publishedAt": "2026-06-05T07:54:28.000Z",
-      "summary": "ミスで“永久無料”の人気ゲーム「PICO PARK：Classic」配信停止へ 1000万DLも「ずっと無料はよくなかった」 開発者の手違いで“永久無料”になっていたアクションパズルゲーム「PICO PARK:Classic Edition」が、6月15日午後0時にSteamでの配信を停止すると、開発元のTECOPARKが発表した。ダウンロード済みのユーザーは引き...",
-      "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/05/cover_news110.png",
-      "bookmarkCount": 26
+      "bookmarkCount": 22
     },
     {
       "id": "hatena-https://gigazine.net/news/20260605-uber-caps-ai/",
@@ -49,7 +67,7 @@
       "publishedAt": "2026-06-05T07:53:54.000Z",
       "summary": "配車サービスのUberや食品配達サービスのUber Eatsを展開するUber Technologiesは、エンジニアが業務の90％でAIを活用しているとCEOが明かしたように、AIが業務に強く影響しています。しかしUber Technologiesは2026年の初めにAI予算を使い果たしたことを受け、従業員1人あたりのトークン支出を月額1500ドル(約24万円)に...",
       "thumbnail": "https://i.gzn.jp/img/2026/06/05/uber-caps-ai/00.jpg",
-      "bookmarkCount": 7
+      "bookmarkCount": 22
     },
     {
       "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/05/news107.html",
@@ -59,7 +77,7 @@
       "publishedAt": "2026-06-05T07:45:48.000Z",
       "summary": "塩野義製薬（大阪市北区）は6月5日、小児の注意欠如多動症（ADHD）の治療を補助するアプリ「ENDEAVORRIDE（エンデバーライド）」を販売開始した。小児ADHDを対象とした治療補助アプリの国内販売は初めてとなる。 ENDEAVORRIDEは、スマートフォンやタブレットで取り組むことでADHDの症状改善が期待できるアプリだ。「小児...",
       "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/05/cover_news107.png",
-      "bookmarkCount": 32
+      "bookmarkCount": 45
     },
     {
       "id": "hatena-https://gigazine.net/news/20260605-anthropic-ai-build-itself/",
@@ -69,7 +87,7 @@
       "publishedAt": "2026-06-05T07:38:35.000Z",
       "summary": "ソフトウェア開発では、エンジニアがAIにコードを書かせる場面が増えています。Anthropicは、こうした流れがAI開発そのものにも広がっているとして、AIが次世代のAIを設計してさらに強力なAIを生み出す「再帰的自己改善」のリスクについて公式に論じました。 When AI builds itself \\ Anthropic https://www.anthropic.c...",
       "thumbnail": "https://i.gzn.jp/img/2026/06/05/anthropic-ai-build-itself/00.jpg",
-      "bookmarkCount": 10
+      "bookmarkCount": 20
     },
     {
       "id": "hatena-https://gigazine.net/news/20260605-lm-studio-lm-link-locally/",
@@ -79,7 +97,7 @@
       "publishedAt": "2026-06-05T07:13:45.000Z",
       "summary": "LM StudioはAIモデルをローカルにダウンロードして実行できるアプリです。新たに、LM Studioのリモート連携機能である「LM Link」を用いて外出先でもiPhone経由でPC上のAIモデルを実行可能になりました。iPhoneではクライアントアプリとして「Locally AI」を使う仕組みです。 LM Link • Use your local models, remotely...",
       "thumbnail": "https://i.gzn.jp/img/2026/06/05/lm-studio-lm-link-locally/00.png",
-      "bookmarkCount": 15
+      "bookmarkCount": 32
     },
     {
       "id": "hatena-https://gigazine.net/news/20260605-dashlane-how-attackers-managed-encrypted-password/",
@@ -89,7 +107,7 @@
       "publishedAt": "2026-06-05T07:08:39.000Z",
       "summary": "現地時間の2026年5月31日、パスワードマネージャーの「Dashlane」が外部から総当たり攻撃を受け、ユーザーのパスワードが保存された暗号化保管庫を盗まれました。このサイバー攻撃の経緯をDashlaneが説明しています。 Security advisory: Brute force attack on Dashlane user accounts – Dashlane https://s…",
       "thumbnail": "https://i.gzn.jp/img/2026/06/05/dashlane-how-attackers-managed-encrypted-password/00_m.jpg",
-      "bookmarkCount": 7
+      "bookmarkCount": 15
     },
     {
       "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/05/news106.html",
@@ -99,7 +117,7 @@
       "publishedAt": "2026-06-05T06:45:47.000Z",
       "summary": "スマートフォンアプリを通じてVisaプリペイドカード決済ができるサービス「Kyash」提供元は6月4日、クレジットカード番号などを機械的に推測して不正な決済を試みる「クレジットマスター攻撃」による被害を確認したと発表した。 ユーザーに対し、アプリ内の利用履歴を定期的に確認し、身に覚えのない利用がないかをチェ...",
       "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/05/cover_news106.png",
-      "bookmarkCount": 48
+      "bookmarkCount": 62
     },
     {
       "id": "hatena-https://togetter.com/li/2705710",
@@ -109,7 +127,16 @@
       "publishedAt": "2026-06-05T06:28:25.000Z",
       "summary": "SEライダー @Sys_Rider これあるある とあるシステム障害発生した時も 報告会議に全員参加 対策会議に全員参加 そのまま数時間の激詰会議 お偉いさんが『今どうなっていつ復旧するんだ！？』 PM『全員ここに強制的に集められて誰も対処出来ていません。全員集めて会議をしている以上、調査も復旧もあり得ません』 x.com/...",
       "thumbnail": "https://s.tgstc.com/ogp3/dc36189f947d09890253876b55da7fd0-1200x630.jpeg",
-      "bookmarkCount": 33
+      "bookmarkCount": 44
+    },
+    {
+      "id": "hatena-https://www.watch.impress.co.jp/docs/news/2114821.html",
+      "source": "hatena",
+      "title": "ヤマダとエディオンが経営統合　売上高2.5兆円規模の家電小売グループ誕生へ",
+      "url": "https://www.watch.impress.co.jp/docs/news/2114821.html",
+      "publishedAt": "2026-06-05T06:25:25.000Z",
+      "thumbnail": "https://www.watch.impress.co.jp/img/ipw/list/2114/821/yama00.jpg",
+      "bookmarkCount": 5
     },
     {
       "id": "hatena-https://softantenna.com/blog/wsl2-virtiofs-speedup/",
@@ -119,7 +146,17 @@
       "publishedAt": "2026-06-05T06:18:58.000Z",
       "summary": "WSL 2を使ってWindowsとLinuxを行き来しながら作業している人にとって、ファイルI/Oの速度は常に気になるポイントです。 2026年5月、WSL 2に新しい改善が入り、virtiofsを使ったクロスOSのファイルアクセスがさらに高速になりました。 Hayden Barnes氏のブログ記事「WSL 2 is getting faster Windows file system ac…",
       "thumbnail": "https://softantenna.com/blog/wp-content/uploads/2022/09/s_20220914_115442.jpg",
-      "bookmarkCount": 35
+      "bookmarkCount": 79
+    },
+    {
+      "id": "hatena-https://rheb.hatenablog.com/entry/2026/06/05/105749",
+      "source": "hatena",
+      "title": "Mythosでセキュリティの考え方が変わった！今こそコンテナを使おう！ - 赤帽エンジニアブログ",
+      "url": "https://rheb.hatenablog.com/entry/2026/06/05/105749",
+      "publishedAt": "2026-06-05T06:13:14.000Z",
+      "summary": "Red Hat のソリューションアーキテクトの瀬戸です。 Anthropicがアプリケーションの脆弱性を見つけ出すのが得意なClaude Mythos Previewを発表しました。それを使った脆弱性を見つけるプロジェクトはProject Glasswingとして組織され、すでに多くの企業で実験的に使われており、多数の脆弱性をみつけています。この記事...",
+      "thumbnail": "https://ogimage.blog.st-hatena.com/10257846132643728507/14945776032038967408/1780658347",
+      "bookmarkCount": 8
     },
     {
       "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/05/news097.html",
@@ -129,46 +166,27 @@
       "publishedAt": "2026-06-05T05:53:55.000Z",
       "summary": "マイナアプリは、現行の「マイナポータルアプリ」と「デジタル認証アプリ」の機能を統合したもの。マイナンバーカードを使った手続き時には、2つのアプリを使い分ける必要があったが、マイナアプリで1つに統合され、操作がシンプルになる。 マイナアプリのアイコンは、背景にピンクから薄い黄色へのグラデーションを採用...",
       "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/05/cover_news097.png",
-      "bookmarkCount": 37
+      "bookmarkCount": 42
     },
     {
-      "id": "hatena-https://pc.watch.impress.co.jp/docs/news/event/2114753.html",
+      "id": "hatena-https://japan.cnet.com/article/35248481/",
       "source": "hatena",
-      "title": "AMD B650チップセット搭載の拡張カード、M.2スロットやOCuLinkを増設",
-      "url": "https://pc.watch.impress.co.jp/docs/news/event/2114753.html",
-      "publishedAt": "2026-06-05T05:31:42.000Z",
-      "thumbnail": "https://pc.watch.impress.co.jp/img/pcw/list/2114/753/01.jpg",
-      "bookmarkCount": 8
+      "title": "レゴ史上最大、1万2000ピース超の「サグラダ・ファミリア」が登場　約13万円",
+      "url": "https://japan.cnet.com/article/35248481/",
+      "publishedAt": "2026-06-05T04:32:20.000Z",
+      "summary": "デンマークの玩具メーカーであるレゴは、アントニ・ガウディが設計した「サグラダ・ファミリア」の1万2060ピースのセットを799.99ドル（日本では12万9980円）で発売する。レゴは現地時間6月4日の発表で、これは同社が発売した中で最大のセットだと述べた。これに最も近いピース数なのは、1万ピース超のエッフェル塔だ。 ...",
+      "thumbnail": "https://japan.cnet.com/storage/2026/06/05/1d495f906bda513dad7323a15350fa80/screenshot-2026-06-04-at-4-47-43pm_1280x960.jpg",
+      "bookmarkCount": 5
     },
     {
-      "id": "hatena-https://gigazine.net/news/20260605-magenta-realtime-2-live-music-ai/",
+      "id": "hatena-https://securityonline.info/vitest-remote-code-execution-vulnerabilities/",
       "source": "hatena",
-      "title": "GoogleがAIとセッションできる音楽生成AI「Magenta RealTime 2」を公開＆DAWプラグインや楽器アプリも無料公開",
-      "url": "https://gigazine.net/news/20260605-magenta-realtime-2-live-music-ai/",
-      "publishedAt": "2026-06-05T05:19:46.000Z",
-      "summary": "Googleが音楽生成AIモデル「Magenta RealTime 2」を2026年6月4日に公開しました。合わせて、Magenta RealTime 2を実行できる楽器アプリやDAWプラグインも無料公開されています。 Magenta RealTime 2: Open & Local Live Music Models https://magenta.withgoogle.com/magen…",
-      "thumbnail": "https://i.gzn.jp/img/2026/06/05/magenta-realtime-2-live-music-ai/00.png",
-      "bookmarkCount": 27
-    },
-    {
-      "id": "hatena-https://www.nikkei.com/article/DGXZQOGN04D5P0U6A600C2000000/",
-      "source": "hatena",
-      "title": "アンソロピック、｢AI開発減速｣提言　OpenAIは政府規制強化を訴え - 日本経済新聞",
-      "url": "https://www.nikkei.com/article/DGXZQOGN04D5P0U6A600C2000000/",
-      "publishedAt": "2026-06-05T05:12:59.000Z",
-      "summary": "米新興アンソロピックは4日、人工知能（AI）の暴走リスクを抑えるには開発の一時停止や減速が有効だと提言した。競合の米オープンAIも政府の監視強化を求めた。AIの進化が早く、開発企業が自ら「ブレーキ」の必要性を訴える事態となっている。AIの「自己改良」で暴走リスクアンソロピックは4日公開のブログで「技術の発...",
-      "thumbnail": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3125414005062026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&fp-y=0.3&h=630&w=1200&s=9eca031ff33ab64e981715b43186ca63",
-      "bookmarkCount": 38
-    },
-    {
-      "id": "hatena-https://anond.hatelabo.jp/20260605131209",
-      "source": "hatena",
-      "title": "[AI解説]右翼・保守組織の集団無責任傾向",
-      "url": "https://anond.hatelabo.jp/20260605131209",
-      "publishedAt": "2026-06-05T04:16:15.000Z",
-      "summary": "保守組織全体から見た「多重集団化による免責機能」（責任分散・回避）の傾向は、左翼極左（ヘリ協・オール沖縄系）の「集団無責任体制」ほど意図的・構造的に洗練・慢性化していないのが全体的傾向です。ただし、連絡協議会型や分散型ネットワークでは一定の免責機能が見られ、問題発生時の責任追及を困難にするケース...",
-      "thumbnail": "https://anond.hatelabo.jp/assets/images/og-image-1500.gif",
-      "bookmarkCount": 19
+      "title": "53M Downloads At Risk: Critical 9.8 CVSS Vitest Remote Code Execution Vulnerabilities Disclosed",
+      "url": "https://securityonline.info/vitest-remote-code-execution-vulnerabilities/",
+      "publishedAt": "2026-06-05T04:24:55.000Z",
+      "summary": "53M Downloads At Risk: Critical 9.8 CVSS Vitest Remote Code Execution Vulnerabilities Disclosed Newly uncovered flaws expose millions of development setups to a dangerous Vitest remote code executi…",
+      "thumbnail": "https://securityonline.info/wp-content/uploads/2026/06/vitest.png",
+      "bookmarkCount": 6
     },
     {
       "id": "hatena-https://www.ipa.go.jp/pressrelease/2026/press20260605-2.html",
@@ -178,7 +196,17 @@
       "publishedAt": "2026-06-05T04:09:00.000Z",
       "summary": "新英語名称「Innovation Platform Agency」、タグライン「Beyond Digital」、新ロゴへ刷新 独立行政法人情報処理推進機構（IPA、理事長: 齊藤裕）は、IPAに求められる役割の広がりを踏まえ、新たなブランドアイデンティティを策定しました。 新たなタグラインとして「Beyond Digital」を掲げるとともに、英語名称を従来...",
       "thumbnail": "https://www.ipa.go.jp/k3q2q400000050d7-img/k3q2q400000050dg.jpg",
-      "bookmarkCount": 103
+      "bookmarkCount": 124
+    },
+    {
+      "id": "hatena-https://tech.smarthr.jp/entry/2026/06/05/104421",
+      "source": "hatena",
+      "title": "Rails 8.0アップグレードの落とし穴 —— rails-i18nによる金額表記の不具合と対策 - SmartHR Tech Blog",
+      "url": "https://tech.smarthr.jp/entry/2026/06/05/104421",
+      "publishedAt": "2026-06-05T03:45:19.000Z",
+      "summary": "こんにちは。SmartHRでRails顧問業をしている@willnetです。 最近は暑い日が多いですね。まだなんとかジョギングできるレベルなので、今のうちにできるだけ毎日走って体力を向上させたい、そして体重を落としたいという気持ちで毎日を過ごしています🏃💨。 今日はRails 8.0アップグレードの話をしようと思います。 「基...",
+      "thumbnail": "https://cdn.image.st-hatena.com/image/scale/857d4f98c577aae7c3116af669ce49afd18bebe5/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fsmarthr%2F20260605%2F20260605104423.png",
+      "bookmarkCount": 7
     },
     {
       "id": "hatena-https://car.watch.impress.co.jp/docs/news/2114654.html",
@@ -187,7 +215,7 @@
       "url": "https://car.watch.impress.co.jp/docs/news/2114654.html",
       "publishedAt": "2026-06-05T03:25:46.000Z",
       "thumbnail": "https://car.watch.impress.co.jp/img/car/list/2114/654/001.jpg",
-      "bookmarkCount": 11
+      "bookmarkCount": 16
     },
     {
       "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/05/news089.html",
@@ -197,7 +225,7 @@
       "publishedAt": "2026-06-05T03:07:49.000Z",
       "summary": "PayPayが6月2日、ポイント還元プログラム「PayPayステップ」のルールを変更したことが「改悪だ」とSNSで話題になっている。 同日から、電子本人確認（eKYC）が未完了だとポイント付与の対象外になったほか、ポイントで支払った分へのポイント還元も廃止されるなど、ユーザーに不利な変更が目立つ。 変更予定は2月に公表...",
       "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/05/cover_news089.png",
-      "bookmarkCount": 25
+      "bookmarkCount": 33
     },
     {
       "id": "hatena-https://internet.watch.impress.co.jp/docs/yajiuma/2114710.html",
@@ -206,26 +234,17 @@
       "url": "https://internet.watch.impress.co.jp/docs/yajiuma/2114710.html",
       "publishedAt": "2026-06-05T03:05:22.000Z",
       "thumbnail": "https://internet.watch.impress.co.jp/img/iw/list/2114/710/yajiuma-watch_3.png",
-      "bookmarkCount": 159
+      "bookmarkCount": 176
     },
     {
-      "id": "hatena-https://soudai.hatenablog.com/entry/2026/06/04/234835",
+      "id": "hatena-https://gigazine.net/news/20260605-laptop-8gb-ram/",
       "source": "hatena",
-      "title": "PostgreSQL 15から18までの主要な新機能紹介 - そーだいなるらくがき帳",
-      "url": "https://soudai.hatenablog.com/entry/2026/06/04/234835",
-      "publishedAt": "2026-06-05T02:58:03.000Z",
-      "summary": "PostgreSQL 15以降 *1 にも、ソフトウェア開発者やDBAが知っておくとよい機能が増えている。 全部を覚える必要はないが、設計や運用の選択肢として知っておくと良い機能をいくつか紹介する。 PostgreSQL 15 なんと言っても UNIQUE NULLS NOT DISTINCT はDjangoユーザに限らず分かりやすく、強力な機能である。 従来、SQL...",
-      "thumbnail": "https://ogimage.blog.st-hatena.com/10328749687203430916/14945776032038801686/1780585470",
-      "bookmarkCount": 44
-    },
-    {
-      "id": "hatena-https://forest.watch.impress.co.jp/docs/news/2114658.html",
-      "source": "hatena",
-      "title": "「Google Chrome 149」の脆弱性修正はなんと429件、できるだけ早めの更新を／致命的なものも22件",
-      "url": "https://forest.watch.impress.co.jp/docs/news/2114658.html",
-      "publishedAt": "2026-06-05T01:46:13.000Z",
-      "thumbnail": "https://forest.watch.impress.co.jp/img/wf/list/2114/658/google_chrome.jpg",
-      "bookmarkCount": 59
+      "title": "ノートPCに8GBのRAMが復活、部品不足の中メーカーは手頃な価格のノートPCを提供するためにメモリ容量を削減している",
+      "url": "https://gigazine.net/news/20260605-laptop-8gb-ram/",
+      "publishedAt": "2026-06-05T02:43:49.000Z",
+      "summary": "近年ノートPCの高性能化が進む中で、メモリの最低容量を16GBとするメーカーが多く、MicrosoftもAI PC「Copilot＋」の要件としてメモリ容量を最低16GBと定めており、それ以下の8GBメモリはもはや旧世代のスペックとなりつつあります。ところが、「MacBook Neo」を筆頭に「多少スペックが低くても安い端末が欲しい」と考え...",
+      "thumbnail": "https://i.gzn.jp/img/2026/06/05/laptop-8gb-ram/00.jpg",
+      "bookmarkCount": 9
     },
     {
       "id": "hatena-https://ananweb.jp/categories/entertainment/97300",
@@ -235,37 +254,16 @@
       "publishedAt": "2026-06-05T00:54:30.000Z",
       "summary": "いま注目の文筆家のエッセイ、小説などの創作を4号続けて掲載。今回は2497号（2026年5月26日発売）から、影山優佳さんのエッセイ連載 第3回「ウチらって、美しいからサ」をお届けします。 「デブス」 夏の大三角を構成する星でも、どこかにいそうな神の名でもない。 「親にも言われたことないのに！」と言いたくなるほど...",
       "thumbnail": "https://api.ananweb.jp/wp-content/uploads/2026/05/61d9ba9f17d17f3c458550ca002b0891.jpg",
-      "bookmarkCount": 8
+      "bookmarkCount": 15
     },
     {
-      "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/05/news035.html",
+      "id": "hatena-https://ai.watch.impress.co.jp/docs/serial/beginner/2113070.html",
       "source": "hatena",
-      "title": "「紙のマンガ vs. 電子マンガ」、読後の脳活動に差　東大などがfMRIで実証　学術誌に研究発表",
-      "url": "https://www.itmedia.co.jp/news/articles/2606/05/news035.html",
-      "publishedAt": "2026-06-04T23:34:44.000Z",
-      "summary": "2019年にスタートした本連載「Innovative Tech」は、世界中の幅広い分野から最先端の研究論文を独自視点で厳選、解説する。執筆は研究論文メディア「Seamless」（シームレス）を主宰し、日課として数多くの論文に目を通す山下氏が担当。イラストや漫画は、同メディア所属のアーティスト・おね氏が手掛けている。X：＠shi...",
-      "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/05/cover_news035.jpg",
-      "bookmarkCount": 151
-    },
-    {
-      "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/05/news032.html",
-      "source": "hatena",
-      "title": "「無駄な事務作業」はなぜ増え続けるのか？　“善意”からタスクが生まれるメカニズム、米MITが論文発表",
-      "url": "https://www.itmedia.co.jp/news/articles/2606/05/news032.html",
-      "publishedAt": "2026-06-04T23:03:01.000Z",
-      "summary": "2019年にスタートした本連載「Innovative Tech」は、世界中の幅広い分野から最先端の研究論文を独自視点で厳選、解説する。執筆は研究論文メディア「Seamless」（シームレス）を主宰し、日課として数多くの論文に目を通す山下氏が担当。イラストや漫画は、同メディア所属のアーティスト・おね氏が手掛けている。X：＠shi...",
-      "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/05/cover_news032.jpg",
-      "bookmarkCount": 117
-    },
-    {
-      "id": "hatena-https://gigazine.net/news/20260605-ai-conscious/",
-      "source": "hatena",
-      "title": "SF作家のテッド・チャンが「AIは意識を持っていると考えるべきではない」と語る",
-      "url": "https://gigazine.net/news/20260605-ai-conscious/",
-      "publishedAt": "2026-06-04T22:17:49.000Z",
-      "summary": "映画「メッセージ」の原作として知られるSF短編小説「あなたの人生の物語」の作者であるテッド・チャン氏が、アメリカの月刊誌「The Atlantic」に「いいえ、人工知能は意識を持っていません」と題したコラムを寄稿しました。チャン氏は生成AIに「有害な存在」と否定的な立場を取りつつ、AIに「意識」や「主体性」といっ...",
-      "thumbnail": "https://i.gzn.jp/img/2026/06/05/ai-conscious/00.jpg",
-      "bookmarkCount": 201
+      "title": "日沼諭史の「AI活用入門塾」 ローカルAIって何？ スマホでも使える＆無料＆安全で、いいことずくめ？",
+      "url": "https://ai.watch.impress.co.jp/docs/serial/beginner/2113070.html",
+      "publishedAt": "2026-06-05T00:10:53.000Z",
+      "thumbnail": "https://ai.watch.impress.co.jp/img/aiw/list/2113/070/0300.jpg",
+      "bookmarkCount": 6
     },
     {
       "id": "hatena-https://qiita.com/shinkai_/items/626dfa7857f2d554784e",
@@ -273,9 +271,9 @@
       "title": "GitHub Copilotの料金改定で大騒ぎになっているので、トークン削減の最新手法をまとめてみた - Qiita",
       "url": "https://qiita.com/shinkai_/items/626dfa7857f2d554784e",
       "publishedAt": "2026-06-04T22:14:07.000Z",
-      "summary": "2026年6月1日から GitHub Copilot の課金体系が変わりました。 X（Twitter）では日本でも海外でも辛辣な意見ばかり出ていました。Claude Sonnetのクレジット消費量が旧制度の9倍、Claude Opusにいたっては27倍という数字が一部ユーザーから報告されていて、Agent modeを日常的に使っていた人には事実上の大幅値上げです...",
+      "summary": "2026年6月1日から GitHub Copilot の課金体系が変わりました。 X（Twitter）では日本でも海外でも辛辣な意見ばかり出ています。Claude Sonnetのクレジット消費量が旧制度の9倍、Claude Opusにいたっては27倍という数字が一部ユーザーから報告されていて、Agent modeを日常的に使っていた人には事実上の大幅値上げです。 ...",
       "thumbnail": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYxMjAzMDIyJTJGMGIxMTAwMjI1ZTY5ZmU3YzVkZWYxYzFlNDVlNzk5M2M3MjU0MTU4MyUyRnhfbGFyZ2UucG5nJTNGMTY3MDk5NjkzMj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZGZiNzlkYTk4ZTljMjBiMmQ1MzhmOTNiNDhjN2UyYWI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dbd0ca793ffeb8f6099b8a44174ec6110?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9R2l0SHViJTIwQ29waWxvdCVFMyU4MSVBRSVFNiU5NiU5OSVFOSU4NyU5MSVFNiU5NCVCOSVFNSVBRSU5QSVFMyU4MSVBNyVFNSVBNCVBNyVFOSVBOCU5MiVFMyU4MSU4RSVFMyU4MSVBQiVFMyU4MSVBQSVFMyU4MSVBMyVFMyU4MSVBNiVFMyU4MSU4NCVFMyU4MiU4QiVFMyU4MSVBRSVFMyU4MSVBNyVFMyU4MCU4MSVFMyU4MyU4OCVFMyU4MyVCQyVFMyU4MiVBRiVFMyU4MyVCMyVFNSU4OSU4QSVFNiVCOCU5QiVFMyU4MSVBRSVFNiU5QyU4MCVFNiU5NiVCMCVFNiU4OSU4QiVFNiVCMyU5NSVFMyU4MiU5MiVFMyU4MSVCRSVFMyU4MSVBOCVFMyU4MiU4MSVFMyU4MSVBNiVFMyU4MSVCRiVFMyU4MSU5RiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTVlNjYwMmI1MjBlMTQzNTUzZjQzNDk0MWIxYjUyZWI3&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBzaGlua2FpXyZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWYxYjY3MWE3NWQ4ZWQ1OTJjMjhkMzA4NTlmNGMxM2Jk&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=5dba5c847eb5df605720a71257170be8",
-      "bookmarkCount": 46
+      "bookmarkCount": 132
     },
     {
       "id": "hatena-https://zenn.dev/minipoisson/articles/ai-self-cognition",
@@ -285,7 +283,7 @@
       "publishedAt": "2026-06-04T07:29:02.000Z",
       "summary": "きっかけ：「自分の使い分け」をAIに聞くとどうなるか Gemini・Claude・ChatGPT・Copilot——これら4つのAIのチャット履歴をすべて一つのNotebookLMノートブックに統合したところで、ふと思いつきました。 「各AIは自分を他のAIとどう使い分けるよう勧めているのだろう？ そして、その自己評価は他のAIの評価と一致してい...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--vGOiRGBQ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Gemini%25E3%2583%25BBClaude%25E3%2583%25BBChatGPT%25E3%2583%25BBCopilot%2520%25E3%2581%25AE4%25E3%2581%25A4%25E3%2581%25AEAI%25E3%2581%25AB%25E3%2581%259D%25E3%2582%258C%25E3%2582%2589%25E3%2581%25AE%25E4%25BD%25BF%25E3%2581%2584%25E5%2588%2586%25E3%2581%2591%25E3%2582%2592%25E8%2581%259E%25E3%2581%2584%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E5%2585%25A8%25E5%2593%25A1%25E3%2581%258C%25E8%2587%25AA%25E5%2588%2586%25E3%2582%2592...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:minipoisson%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzg3YjBmMDBjZTguanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 10
+      "bookmarkCount": 19
     },
     {
       "id": "hatena-https://note.com/ktknd/n/n362c35f32346",
@@ -295,7 +293,7 @@
       "publishedAt": "2026-06-04T05:37:33.000Z",
       "summary": "はじめに: AIの位置づけが、いま静かに変わっている最近、いろんな経営者やPM、事業責任者と話していて、ほぼ全員が同じ違和感を抱えています。 「AIめちゃくちゃ使ってるのに、組織のスループットが思ったほど上がってない」 自分も同じ感覚で、ずっと違和感だったんです。個人の作業速度は確実に上がる。なのに、組織...",
       "thumbnail": "https://assets.st-note.com/production/uploads/images/282307044/rectangle_large_type_2_c7a71005c715beda62d21dd69a6a4197.png?fit=bounds&quality=85&width=1280",
-      "bookmarkCount": 375
+      "bookmarkCount": 400
     },
     {
       "id": "x-sample-1",
