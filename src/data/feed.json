@@ -1,6 +1,46 @@
 {
-  "updatedAt": "2026-06-06T00:57:50.923Z",
+  "updatedAt": "2026-06-06T07:11:58.119Z",
   "items": [
+    {
+      "id": "hatena-https://dot.asahi.com/articles/-/284064?page=1",
+      "source": "hatena",
+      "title": "700万円のMacと”信者のこだわり”が生んだ「PPAP」　古坂大魔王さん　「AIにゼロから作らせるな」の理由（私とアップル） | AERA DIGITAL（アエラデジタル）",
+      "url": "https://dot.asahi.com/articles/-/284064?page=1",
+      "publishedAt": "2026-06-06T02:04:28.000Z",
+      "summary": "古坂大魔王さんの自宅スタジオで。MacBook Proをメインで使っていて、飛行機のなかでも曲を作れるようになったという（写真：本人提供） この記事の写真をすべて見る ピコ太郎の「PPAP」をMacで作り、世界的ヒットへと導いた古坂大魔王さん。いまや音楽制作から映像編集まで、ほとんどを1台のMacBook Proでこなしている...",
+      "thumbnail": "https://aeradot.ismcdn.jp/mwimgs/4/3/1200xm/img_43b6fb17b29fc063c57bdc4ba3a47aca302956.jpg",
+      "bookmarkCount": 49
+    },
+    {
+      "id": "hatena-https://note.com/genaird/n/n6be0a775853f",
+      "source": "hatena",
+      "title": "ObsidianをAIアシスタントにする新機能｜生成AI活用研究部",
+      "url": "https://note.com/genaird/n/n6be0a775853f",
+      "publishedAt": "2026-06-06T01:14:11.000Z",
+      "summary": "本記事については生成AIを活用して生成された記事となります。 解説内容の正確性については読者ご自身でご確認いただきますようお願いいたします。 本記事はObsidian Starter Kit v4 Is Here: Your Vault Is Now a Full AI Assistantの解説記事となります。 デジタルノート環境であるObsidianのスターターキット最新版に...",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/282024057/rectangle_large_type_2_c467f248eb7e16ca9b1d779f751df244.jpeg?fit=bounds&quality=85&width=1280",
+      "bookmarkCount": 6
+    },
+    {
+      "id": "hatena-https://news.web.nhk/newsweb/na/na-k10015142621000",
+      "source": "hatena",
+      "title": "生成AIで裸に見える画像製造・提供の罪で30代男性略式命令 | NHKニュース",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015142621000",
+      "publishedAt": "2026-06-06T00:38:27.000Z",
+      "summary": "生成AIを使って作成された実在の児童が裸のように見える画像を所持したなどとして、実刑判決を受けた名古屋市の元小学校教諭に画像を提供したなどとして、30代の男性が児童ポルノ禁止法違反の罪で略式命令を受け…",
+      "thumbnail": "https://imgu.web.nhk/news/u/news/html/20260606/K10015142621_2606052350_0606050325_01_02.jpg",
+      "bookmarkCount": 31
+    },
+    {
+      "id": "hatena-https://xtech.nikkei.com/atcl/nxt/column/18/00001/11799/",
+      "source": "hatena",
+      "title": "日立がメインフレーム撤退へ、「VOS3」販売終了 地銀勘定系も転換点",
+      "url": "https://xtech.nikkei.com/atcl/nxt/column/18/00001/11799/",
+      "publishedAt": "2026-06-05T17:23:17.000Z",
+      "summary": "日立製作所はメインフレーム向けOS「VOS3（Virtual-storage Operating System 3）」の販売・保守を終了する。販売は2027年11月に、保守は2034年12月に終了する。2035年には実質的にメインフレーム事業の終焉（しゅうえん）を迎える。富士通製メインフレームの製造・販売の撤退に続き、日本のIT産業にとって重要な転換点...",
+      "thumbnail": "https://xtech.nikkei.com/atcl/nxt/column/18/00001/11799/Topm.jpg?20220512",
+      "bookmarkCount": 5
+    },
     {
       "id": "hatena-https://www.watch.impress.co.jp/docs/news/2115005.html",
       "source": "hatena",
@@ -8,7 +48,7 @@
       "url": "https://www.watch.impress.co.jp/docs/news/2115005.html",
       "publishedAt": "2026-06-05T15:35:16.000Z",
       "thumbnail": "https://www.watch.impress.co.jp/img/ipw/list/2115/005/an1.jpg",
-      "bookmarkCount": 23
+      "bookmarkCount": 179
     },
     {
       "id": "hatena-https://azukiazusa.dev/blog/editor-zed/",
@@ -18,16 +58,7 @@
       "publishedAt": "2026-06-05T15:11:55.000Z",
       "summary": "Zed は Rust で書かれたネイティブアプリケーションで、非常に高速な動作と軽量な設計が特徴の新しいエディタです。この記事では、Zed のインストール方法と、実際に使ってみて感じた主要な機能や特徴について紹介していきたいと思います。 思えばエンジニアとして生を受けてから、大半の時間を Visual Studio Code を相...",
       "thumbnail": "https://ogp.azukiazusa.dev/blog/ogp/editor-zed.png",
-      "bookmarkCount": 6
-    },
-    {
-      "id": "hatena-https://www.watch.impress.co.jp/docs/news/2114908.html",
-      "source": "hatena",
-      "title": "ミュトスがあれば安全なのか　LayerXが語るAIサイバー防御",
-      "url": "https://www.watch.impress.co.jp/docs/news/2114908.html",
-      "publishedAt": "2026-06-05T13:49:00.000Z",
-      "thumbnail": "https://www.watch.impress.co.jp/img/ipw/list/2114/908/02.jpg",
-      "bookmarkCount": 4
+      "bookmarkCount": 59
     },
     {
       "id": "hatena-https://satoru-takeuchi.hatenablog.com/entry/2026/06/05/221440",
@@ -37,7 +68,7 @@
       "publishedAt": "2026-06-05T13:17:22.000Z",
       "summary": "昔は自分がプログラマとして成長するためには何が必要なのかを悩み、悩みはするが深く考えずに思いつきで奇行に走るということをよくしていました。今になって振り返る微笑ましくて面白かったので、いくつかを紹介します。十中八九読者の今後の人生に役立たないですが、失笑しながら読んでもらえれば幸いです。 gzipコマ...",
       "thumbnail": "https://ogimage.blog.st-hatena.com/10328749687217861088/14945776032038785598/1780665280",
-      "bookmarkCount": 54
+      "bookmarkCount": 100
     },
     {
       "id": "hatena-https://claude.com/blog/lessons-from-building-claude-code-how-we-use-skills",
@@ -47,7 +78,7 @@
       "publishedAt": "2026-06-05T12:56:57.000Z",
       "summary": "Types of skillsAfter cataloging all of our internal skills at Anthropic, we noticed they cluster into nine categories. The best skills fit cleanly into one; the ones that try to do too much straddl…",
       "thumbnail": "https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a2058f7af91f02cff0a6187_og-lessons-from-building-claude-code.jpg",
-      "bookmarkCount": 73
+      "bookmarkCount": 106
     },
     {
       "id": "hatena-https://gigazine.net/news/20260605-llm-resisting-russian-propaganda/",
@@ -57,17 +88,7 @@
       "publishedAt": "2026-06-05T12:40:00.000Z",
       "summary": "エストニア言語研究所が、大規模言語モデルのロシア宣伝への耐性を測る「Propaganda Resistance」ベンチマークを公開しました。その結果、AnthropicのClaude Opus 4.7が総合首位となり、NVIDIAやAlibabaのモデルも上位に入りました。 Propaganda­kindlus - Keelemudelite mõõdupuu https://xn--mdu…",
       "thumbnail": "https://i.gzn.jp/img/2026/06/05/llm-resisting-russian-propaganda/00.png",
-      "bookmarkCount": 5
-    },
-    {
-      "id": "hatena-https://www.itmedia.co.jp/mobile/articles/2606/05/news125.html",
-      "source": "hatena",
-      "title": "なぜ？　「PayPay改悪」といまネットで騒がれている理由　ユーザーがすべき対策を解説",
-      "url": "https://www.itmedia.co.jp/mobile/articles/2606/05/news125.html",
-      "publishedAt": "2026-06-05T12:05:13.000Z",
-      "summary": "6月2日から、Yahoo!ショッピングなどで付与される「PayPayステップ」のポイント付与条件が変更された。この変更に伴い、X（旧Twitter）などのSNS上ではユーザーから「PayPay改悪」という声が上がり、大きな話題を呼んでいる。今回のルール変更では、具体的に何が変わったのだろうか――。変更の全容とネット上の反応、そし...",
-      "thumbnail": "https://image.itmedia.co.jp/mobile/articles/2606/05/cover_news125.jpg",
-      "bookmarkCount": 4
+      "bookmarkCount": 14
     },
     {
       "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/05/news123.html",
@@ -77,7 +98,7 @@
       "publishedAt": "2026-06-05T11:35:54.000Z",
       "summary": "デジタル庁の松本尚デジタル相は6月5日、夏ごろ提供開始予定の「マイナアプリ」のアプリアイコンを公開した。",
       "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/05/cover_news123.jpg",
-      "bookmarkCount": 24
+      "bookmarkCount": 36
     },
     {
       "id": "hatena-https://note.com/mangaka_kyokai/n/nf90233eb4545",
@@ -87,7 +108,7 @@
       "publishedAt": "2026-06-05T11:32:24.000Z",
       "summary": "2024年5月に漫画家協会の公式サイトに設置いたしました「会員向け相談フォーム」に寄せられたいくつかの質問と回答例です。 初めての出版契約における助言や、フリーランス新法に基づいたアシスタントへの発注方法など、現在トラブルを抱えていない作家の皆様も是非目を通してみてください。 ※2026年6月5日 16件追加 「...",
       "thumbnail": "https://assets.st-note.com/production/uploads/images/212241361/rectangle_large_type_2_579a81273038fbac5e90479373a6af0a.jpeg?fit=bounds&quality=85&width=1280",
-      "bookmarkCount": 4
+      "bookmarkCount": 23
     },
     {
       "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/05/news119.html",
@@ -97,7 +118,7 @@
       "publishedAt": "2026-06-05T11:02:57.000Z",
       "summary": "家庭用PCでも数秒でサーバを“落とせる”、HTTP/2の脆弱性をCodexが発見 さくらインターネットも対策 米セキュリティ企業のCalifが6月3日（現地時間）、少しの通信量でWebサーバに過剰な負荷をかけ停止させるDoS攻撃手法「HTTP/2 Bomb」に注意喚起したことをきっかけに、その深刻さが話題になっている。国内では、さくら...",
       "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/05/cover_news119.png",
-      "bookmarkCount": 19
+      "bookmarkCount": 32
     },
     {
       "id": "hatena-https://forbesjapan.com/articles/detail/98497",
@@ -107,7 +128,7 @@
       "publishedAt": "2026-06-05T10:56:45.000Z",
       "summary": "Claudeの開発元であるアンソロピックは、米証券取引委員会（SEC）に非公開で書類を提出し、早ければ2026年秋にも実現する可能性がある待望の新規株式公開（IPO）に向けて第一歩を踏み出した。 アンソロピックは、つい最近、評価額9650億ドル（約154兆円）の下で650億ドル（約10兆4000億円）規模の大型資金調達を終えたば...",
       "thumbnail": "https://images.forbesjapan.com/media/article/98497/images/main_image_be94b8f83b274522f67e2cf0281d3ac0e47ed928.jpg",
-      "bookmarkCount": 34
+      "bookmarkCount": 79
     },
     {
       "id": "hatena-https://takoratta.hatenablog.com/entry/2026/06/05/181559",
@@ -117,7 +138,7 @@
       "publishedAt": "2026-06-05T10:52:20.000Z",
       "summary": "この業界（どの業界なのかはともかく）にいて「PayPalマフィア」という言葉を聞いたことがない人は少ないのではないか。 私が初めて聞いたのはいつだろう。思い出せないが、かなり前だったのは間違いない。 でも告白すると、初期のPayPalで彼らが実際に何をやったのかを、長いことまったく説明できなかった。名前だけが...",
       "thumbnail": "https://ogimage.blog.st-hatena.com/12704346814673891608/14945776032039084454/1780650959",
-      "bookmarkCount": 394
+      "bookmarkCount": 491
     },
     {
       "id": "hatena-https://www.afpbb.com/articles/-/3638434",
@@ -127,26 +148,37 @@
       "publishedAt": "2026-06-05T10:17:27.000Z",
       "summary": "【6月5日 AFP】中国人の工作員が採用担当者になりすまし、西側諸国の政府職員をだまして機密情報を開示させようとしていると、機密情報共有の枠組み「ファイブアイズ」が警告を発した。 英国、米国、オーストラリア、カナダ、ニュージーランドが構成するこの枠組みは、3日遅くに共同声明を出し、中国の軍事情報機関がビ...",
       "thumbnail": "https://afpbb.ismcdn.jp/mwimgs/6/e/1000x/img_6e658a0237cae86f143e22a42b08d7b12483145.jpg",
-      "bookmarkCount": 22
+      "bookmarkCount": 33
     },
     {
-      "id": "hatena-https://pc.watch.impress.co.jp/docs/news/2114768.html",
+      "id": "hatena-https://automaton-media.com/articles/newsjp/20260605-447381/",
       "source": "hatena",
-      "title": "写真編集機能やAIツール多数搭載！DaVinci Resolve 21正式版公開",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2114768.html",
-      "publishedAt": "2026-06-05T08:45:01.000Z",
-      "thumbnail": "https://pc.watch.impress.co.jp/img/pcw/list/2114/768/1.jpg",
-      "bookmarkCount": 8
+      "title": "新たなRPG開発ツール「RPG-Cobo」発表。ベテラン開発者のノウハウ結集、プログラミングの知識不要で3D RPGを制作できる - AUTOMATON",
+      "url": "https://automaton-media.com/articles/newsjp/20260605-447381/",
+      "publishedAt": "2026-06-05T09:37:30.000Z",
+      "summary": "株式会社スーパーシャークは6月5日、RPG開発ツール「RPG-Cobo」を発表した。本日よりベータテストが開始され、誰でも無料で参加可能。 本製品は、誰でも直感的に3D RPGを制作できるよう設計されたというRPG開発プラットフォームだ。RPG制作に必要な機能をワンパッケージで提供するとのこと。 「RPG-Cobo」では、PBRレン...",
+      "thumbnail": "https://automaton-media.com/wp-content/uploads/2026/06/20260605-447381-header.jpeg",
+      "bookmarkCount": 37
     },
     {
-      "id": "hatena-https://gigazine.net/news/20260605-uc-berkeley-failing-grades-ai-math/",
+      "id": "hatena-https://www.bbc.com/japanese/articles/crlpl2xrj15o",
       "source": "hatena",
-      "title": "アメリカの名門カリフォルニア大学バークレー校でAI利用の拡大と数学力低下が顕著になって落第者が激増",
-      "url": "https://gigazine.net/news/20260605-uc-berkeley-failing-grades-ai-math/",
-      "publishedAt": "2026-06-05T07:36:08.000Z",
-      "summary": "カリフォルニア大学バークレー校はアメリカ最高峰の大学として名高く、コンピューターサイエンスやAIなどの分野でアメリカを代表する研究拠点となっています。ところが、そんなカリフォルニア大学バークレー校のコンピューターサイエンスの授業で、AIの利用拡大と数学力の低下が顕著になっており、落第者が激増している...",
-      "thumbnail": "https://i.gzn.jp/img/2026/06/05/uc-berkeley-failing-grades-ai-math/00.JPG",
-      "bookmarkCount": 13
+      "title": "AIの進化、遅らせる策が必要　米アンソロピック共同創業者がBBC番組で主張 - BBCニュース",
+      "url": "https://www.bbc.com/japanese/articles/crlpl2xrj15o",
+      "publishedAt": "2026-06-05T09:14:06.000Z",
+      "summary": "米アンソロピックの共同創業者ジャック・クラーク氏が、人工知能（AI）の進化を遅らせる策が必要だと訴えている。AIが人間のインプットなしに発展できる段階に近づいていると、同氏は警告している。 クラーク氏は4日のBBC番組「ニューズナイト」に出演。「アクセルから足を外してブレーキを踏むことができるという、その...",
+      "thumbnail": "https://ichef.bbci.co.uk/news/1024/branded_japanese/8c99/live/b770f130-60b7-11f1-8b8c-6d33e1d5abb6.jpg",
+      "bookmarkCount": 4
+    },
+    {
+      "id": "hatena-https://atmarkit.itmedia.co.jp/ait/articles/2606/05/news061.html",
+      "source": "hatena",
+      "title": "Google、AIエージェント向け「Android CLI」を正式公開　アプリ開発が“3倍高速”に",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2606/05/news061.html",
+      "publishedAt": "2026-06-05T08:03:06.000Z",
+      "summary": "Googleは2026年4月16日（米国時間、以下同じ）、AIエージェントを活用したAndroidアプリ開発を支援するツール群およびリソース群「Android CLI」「Android Skills」「Android Knowledge Base」を発表した。これについて同社は2026年5月19日、Android CLIの安定版としてバージョン1.0をリリースしたことを発表した。 Andr...",
+      "thumbnail": "https://image.itmedia.co.jp/ait/articles/2606/05/cover_news061.jpg",
+      "bookmarkCount": 12
     },
     {
       "id": "hatena-https://gigazine.net/news/20260605-google-search-profile/",
@@ -156,37 +188,7 @@
       "publishedAt": "2026-06-05T07:24:44.000Z",
       "summary": "Googleがウェブサイト運営者やパブリッシャー、クリエイターの公式情報をGoogle検索上でまとめて表示できる新機能「Search profiles」を発表しました。Search profilesでは記事、動画、SNS投稿など複数の場所に分かれているコンテンツを1つのプロフィールに集約し、読者がGoogle検索やGoogle Discoverから情報発信元を見...",
       "thumbnail": "https://i.gzn.jp/img/2026/06/05/google-search-profile/00.png",
-      "bookmarkCount": 11
-    },
-    {
-      "id": "hatena-https://gigazine.net/news/20260605-voidzero-join-cloudflare/",
-      "source": "hatena",
-      "title": "Cloudflareが週間1億2900万DLの「Vite」開発元を買収、AI時代を見据えた狙いとは",
-      "url": "https://gigazine.net/news/20260605-voidzero-join-cloudflare/",
-      "publishedAt": "2026-06-05T06:57:35.000Z",
-      "summary": "2026年6月4日、Cloudflareはウェブ開発の基盤として利用されているオープンソースツール「Vite」の開発を主導している企業「VoidZero」を買収することを発表しました。 VoidZero is joining Cloudflare https://blog.cloudflare.com/voidzero-joins-cloudflare/ ウェブアプリを作るとき、コードを書き…",
-      "thumbnail": "https://i.gzn.jp/img/2026/06/05/voidzero-join-cloudflare/00.png",
-      "bookmarkCount": 8
-    },
-    {
-      "id": "hatena-https://gigazine.net/news/20260605-amazon-robot-proteus/",
-      "source": "hatena",
-      "title": "Amazonが次世代倉庫ロボット「Proteus」を欧州に導入、AI搭載の言語機能を搭載し作業員がロボットにタスクを割り当てることが可能",
-      "url": "https://gigazine.net/news/20260605-amazon-robot-proteus/",
-      "publishedAt": "2026-06-05T06:56:18.000Z",
-      "summary": "Amazonはロンドンで2026年6月4日に開催された物流技術見本市「Delivering the Future」で、欧州の物流網を近代化する新たなロボット技術と配送サービス拡大を発表しました。欧州のフルフィルメントセンターには約117億ドル(約1兆8100億円)を投じ、今後数年で2万5000人の雇用も増やす計画です。 Amazon announces new rob...",
-      "thumbnail": "https://i.gzn.jp/img/2026/06/05/amazon-robot-proteus/00.jpg",
-      "bookmarkCount": 4
-    },
-    {
-      "id": "hatena-https://softantenna.com/blog/wsl2-virtiofs-speedup/",
-      "source": "hatena",
-      "title": "WSL 2、Windows ファイルシステムアクセスが大幅改善へ | ソフトアンテナ",
-      "url": "https://softantenna.com/blog/wsl2-virtiofs-speedup/",
-      "publishedAt": "2026-06-05T06:18:58.000Z",
-      "summary": "WSL 2を使ってWindowsとLinuxを行き来しながら作業している人にとって、ファイルI/Oの速度は常に気になるポイントです。 2026年5月、WSL 2に新しい改善が入り、virtiofsを使ったクロスOSのファイルアクセスがさらに高速になりました。 Hayden Barnes氏のブログ記事「WSL 2 is getting faster Windows file system ac…",
-      "thumbnail": "https://softantenna.com/blog/wp-content/uploads/2022/09/s_20220914_115442.jpg",
-      "bookmarkCount": 95
+      "bookmarkCount": 17
     },
     {
       "id": "hatena-https://rheb.hatenablog.com/entry/2026/06/05/105749",
@@ -196,7 +198,17 @@
       "publishedAt": "2026-06-05T06:13:14.000Z",
       "summary": "Red Hat のソリューションアーキテクトの瀬戸です。 Anthropicがアプリケーションの脆弱性を見つけ出すのが得意なClaude Mythos Previewを発表しました。それを使った脆弱性を見つけるプロジェクトはProject Glasswingとして組織され、すでに多くの企業で実験的に使われており、多数の脆弱性をみつけています。この記事...",
       "thumbnail": "https://ogimage.blog.st-hatena.com/10257846132643728507/14945776032038967408/1780658347",
-      "bookmarkCount": 70
+      "bookmarkCount": 103
+    },
+    {
+      "id": "hatena-https://gigazine.net/news/20260605-qwen-open-agent/",
+      "source": "hatena",
+      "title": "ケンタッキーフライドチキンなどが中国アリババのAI「Qwen」を採用、あらゆる注文をチャットで全自動化へ",
+      "url": "https://gigazine.net/news/20260605-qwen-open-agent/",
+      "publishedAt": "2026-06-05T06:04:59.000Z",
+      "summary": "AIモデル「Qwen」を提供するアリババグループが、AIエージェント機能を第三者に開放する方針を発表しました。これにより、ユーザーはケンタッキーフライドチキン(KFC)やラッキンコーヒーなどが提供するカスタマイズAIエージェントとQwenアプリ経由でやりとりし、注文などを行えるようになります。 From fried chicken to...",
+      "thumbnail": "https://i.gzn.jp/img/2026/06/05/qwen-open-agent/00.jpg",
+      "bookmarkCount": 9
     },
     {
       "id": "hatena-https://gigazine.net/news/20260605-companies-reddit-manipulate-chatgpt-google-ai-search/",
@@ -206,7 +218,7 @@
       "publishedAt": "2026-06-05T05:21:47.000Z",
       "summary": "Google検索の「AIによる概要」や「AIモード」のように、従来のブラウザ検索がAI検索に取って代わられつつあるため、通常の検索エンジン最適化(SEO)ではなくAI検索結果を最適化する「回答エンジン最適化(AEO)」が注目されています。「企業はAEOのためにRedditに宣伝コンテンツを大量投入してAI検索結果を操作している」と...",
       "thumbnail": "https://i.gzn.jp/img/2026/06/05/companies-reddit-manipulate-chatgpt-google-ai-search/00_m.jpg",
-      "bookmarkCount": 6
+      "bookmarkCount": 13
     },
     {
       "id": "hatena-https://pc.watch.impress.co.jp/docs/news/2114675.html",
@@ -215,7 +227,17 @@
       "url": "https://pc.watch.impress.co.jp/docs/news/2114675.html",
       "publishedAt": "2026-06-05T04:29:15.000Z",
       "thumbnail": "https://pc.watch.impress.co.jp/img/pcw/list/2114/675/1.png",
-      "bookmarkCount": 24
+      "bookmarkCount": 42
+    },
+    {
+      "id": "hatena-https://gigazine.net/news/20260605-steam-machine-frame-2026-summer-release/",
+      "source": "hatena",
+      "title": "ValveがゲーミングPC「Steam Machine」とVRヘッドセット「Steam Frame」の2026年夏発売を発表",
+      "url": "https://gigazine.net/news/20260605-steam-machine-frame-2026-summer-release/",
+      "publishedAt": "2026-06-05T03:51:08.000Z",
+      "summary": "2026年6月4日、ValveがSteam Deckで快適に動作するゲームを評価する「Verifiedプログラム」を、Steam MachineおよびSteam Frameに拡大すると発表しました。また、Steam MachineおよびSteam Frameの発売時期は「2026年」となっていたのですが、2026年夏に決定しています。 Steam :: Steamworks Developm…",
+      "thumbnail": "https://i.gzn.jp/img/2026/06/05/steam-machine-frame-2026-summer-release/00_m.jpg",
+      "bookmarkCount": 7
     },
     {
       "id": "hatena-https://gigazine.net/news/20260605-chatgpt-memory-dreaming-v3/",
@@ -225,17 +247,7 @@
       "publishedAt": "2026-06-05T03:31:29.000Z",
       "summary": "OpenAIがChatGPTのメモリ機能のアップデートを発表しました。新たなメモリ機能は「Dreaming V3」と呼ばれており、ユーザーが明示的に記憶を指示せずともチャット履歴から自動的に判断してメモリを蓄積してくれます。さらに、メモリの要点をまとめた画面から内容を編集することも可能となりました。 Dreaming: Better mem...",
       "thumbnail": "https://i.gzn.jp/img/2026/06/05/chatgpt-memory-dreaming-v3/00.png",
-      "bookmarkCount": 9
-    },
-    {
-      "id": "hatena-https://gigazine.net/news/20260605-bioweapons-screening-open-letter/",
-      "source": "hatena",
-      "title": "AIで生物兵器の作り方を知れる時代に生物兵器に転用可能な合成DNA・RNAをネットで入手できる現状は問題だとしてOpenAI・Anthropic・Google・Microsoftなどが公開書簡に署名",
-      "url": "https://gigazine.net/news/20260605-bioweapons-screening-open-letter/",
-      "publishedAt": "2026-06-05T03:24:35.000Z",
-      "summary": "合成DNA・RNAがインターネットで簡単に入手できる現状は、研究・医療目的のためだとはいえ問題だとして、Anthropicなどのテック企業が署名した公開書簡が提出されました。署名者は、AIが生物兵器を開発しかねない状況を危惧しています。 An Open Letter in Support of Mandatory Nucleic Acid Synthesis Screening and R...",
-      "thumbnail": "https://i.gzn.jp/img/2026/06/05/bioweapons-screening-open-letter/00.jpg",
-      "bookmarkCount": 10
+      "bookmarkCount": 19
     },
     {
       "id": "hatena-https://gigazine.net/news/20260605-economist-against-ai-jobs-pocalypse/",
@@ -245,17 +257,7 @@
       "publishedAt": "2026-06-05T02:09:09.000Z",
       "summary": "生成AIの登場により複数の企業がAIの導入を理由に人員削減を実施しており、これにはMeta・HP・Cisco・GitLabといった企業も含まれます。このままいけば雇用が崩壊すると考える人もいますが、労働経済学者のキャスリン・アン・エドワーズ氏はこの説に反対しており、その理由を語りました。 An economist's case against t...",
       "thumbnail": "https://i.gzn.jp/img/2026/06/05/economist-against-ai-jobs-pocalypse/00_m.jpg",
-      "bookmarkCount": 10
-    },
-    {
-      "id": "hatena-https://gigazine.net/news/20260605-people-turn-to-ai-psychological-support/",
-      "source": "hatena",
-      "title": "63％の人々が心理的なサポートを求めてAIを利用したことがあり42％はAIのアドバイスに常に従うとの調査結果",
-      "url": "https://gigazine.net/news/20260605-people-turn-to-ai-psychological-support/",
-      "publishedAt": "2026-06-04T23:58:47.000Z",
-      "summary": "ChatGPTやGeminiといったAIはまるで人間のようなやり取りが可能であり、日々の相談相手や話し相手としてAIを活用する人もいます。新たに、フランスの金融・保険グループのアクサと市場調査企業のIPSOSが発表したレポートで、なんと63％もの人々が心理的なサポートを求めてAIを利用していることが報告されました。 Mind H...",
-      "thumbnail": "https://i.gzn.jp/img/2026/06/05/people-turn-to-ai-psychological-support/00.jpg",
-      "bookmarkCount": 5
+      "bookmarkCount": 21
     },
     {
       "id": "hatena-https://www.sbbit.jp/article/cont1/185480",
@@ -265,17 +267,7 @@
       "publishedAt": "2026-06-04T23:47:29.000Z",
       "summary": "AIを使って効率化しているはずなのに、タスクが渋滞して手が止まってしまう……この本末転倒な待ち時間をゼロに近づけるのが、Claude Codeによる「並列作業」です。AIを“1人の部下”とするのではなく、“複数の部下”として役割を与えれば、仕事は順番に片付けるものではなく、一気に片付くものに変わります。この記事では、...",
       "thumbnail": "https://img.sbbit.jp/article/image/185480/OGP_bit202605251222195327.jpg",
-      "bookmarkCount": 145
-    },
-    {
-      "id": "hatena-https://qiita.com/shinkai_/items/626dfa7857f2d554784e",
-      "source": "hatena",
-      "title": "GitHub Copilotの料金改定で大騒ぎになっているので、トークン削減の最新手法をまとめてみた - Qiita",
-      "url": "https://qiita.com/shinkai_/items/626dfa7857f2d554784e",
-      "publishedAt": "2026-06-04T22:14:07.000Z",
-      "summary": "2026年6月1日から GitHub Copilot の課金体系が変わりました。 X（Twitter）では日本でも海外でも辛辣な意見ばかり出ています。Claude Sonnetのクレジット消費量が旧制度の9倍、Claude Opusにいたっては27倍という数字が一部ユーザーから報告されていて、Agent modeを日常的に使っていた人には事実上の大幅値上げです。 ...",
-      "thumbnail": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYxMjAzMDIyJTJGMGIxMTAwMjI1ZTY5ZmU3YzVkZWYxYzFlNDVlNzk5M2M3MjU0MTU4MyUyRnhfbGFyZ2UucG5nJTNGMTY3MDk5NjkzMj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZGZiNzlkYTk4ZTljMjBiMmQ1MzhmOTNiNDhjN2UyYWI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dbd0ca793ffeb8f6099b8a44174ec6110?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9R2l0SHViJTIwQ29waWxvdCVFMyU4MSVBRSVFNiU5NiU5OSVFOSU4NyU5MSVFNiU5NCVCOSVFNSVBRSU5QSVFMyU4MSVBNyVFNSVBNCVBNyVFOSVBOCU5MiVFMyU4MSU4RSVFMyU4MSVBQiVFMyU4MSVBQSVFMyU4MSVBMyVFMyU4MSVBNiVFMyU4MSU4NCVFMyU4MiU4QiVFMyU4MSVBRSVFMyU4MSVBNyVFMyU4MCU4MSVFMyU4MyU4OCVFMyU4MyVCQyVFMyU4MiVBRiVFMyU4MyVCMyVFNSU4OSU4QSVFNiVCOCU5QiVFMyU4MSVBRSVFNiU5QyU4MCVFNiU5NiVCMCVFNiU4OSU4QiVFNiVCMyU5NSVFMyU4MiU5MiVFMyU4MSVCRSVFMyU4MSVBOCVFMyU4MiU4MSVFMyU4MSVBNiVFMyU4MSVCRiVFMyU4MSU5RiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTVlNjYwMmI1MjBlMTQzNTUzZjQzNDk0MWIxYjUyZWI3&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBzaGlua2FpXyZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWYxYjY3MWE3NWQ4ZWQ1OTJjMjhkMzA4NTlmNGMxM2Jk&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=5dba5c847eb5df605720a71257170be8",
-      "bookmarkCount": 189
+      "bookmarkCount": 276
     },
     {
       "id": "hatena-https://www.47news.jp/14416705.html",
@@ -285,7 +277,17 @@
       "publishedAt": "2026-06-04T18:46:38.000Z",
       "summary": "【ワシントン共同】日米両政府は4日、人工知能（AI）を活用して技術開発を加速させる米国の国家プロジェクトに、今後5年間でそれぞれ5億ドル（約800億円）を拠出することで合意した。",
       "thumbnail": "https://img.cf.47news.jp/static/renewal/common/img/thumb_large.png",
-      "bookmarkCount": 58
+      "bookmarkCount": 97
+    },
+    {
+      "id": "hatena-https://note.com/naoya_tech/n/ne7c83d38fc72",
+      "source": "hatena",
+      "title": "ZigがAIを禁止する理由。GitHub離脱、確固たる運営方針。｜直也テック",
+      "url": "https://note.com/naoya_tech/n/ne7c83d38fc72",
+      "publishedAt": "2026-06-04T15:42:17.000Z",
+      "summary": "今回はJetBrainsが公開した、Zig言語の作者アンドリュー・ケリー（Andrew Kelley）氏へのロングインタビューを取り上げます。 アンドリュー氏は2018年に勤めていた会社を辞め、プログラミング言語Zigの開発に専念してきた人物です。8年が経った今、ZigはGhosttyやTigerBeetle、さらにはUberのクロスコンパイルなどを支え...",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/281980227/rectangle_large_type_2_745b38712a0c06468e18735ac12cf4f4.jpeg?fit=bounds&quality=85&width=1280",
+      "bookmarkCount": 16
     },
     {
       "id": "hatena-https://satoru-takeuchi.hatenablog.com/entry/2026/06/04/214202",
@@ -295,7 +297,7 @@
       "publishedAt": "2026-06-04T13:04:48.000Z",
       "summary": "Claude Code、Codex，Devinのようなコーディングエージェントが出てきてしばらく経ちます。その進化は著しいです。そんななかで私には、よく読むIT技術書の種類が変わるという大きな変化がありました。この変化について、および、その変化について思ったことを書きます。 前述したようにコーディングエージェントの進化...",
       "thumbnail": "https://ogimage.blog.st-hatena.com/10328749687217861088/14945776032038768766/1780576922",
-      "bookmarkCount": 50
+      "bookmarkCount": 116
     },
     {
       "id": "x-sample-1",
