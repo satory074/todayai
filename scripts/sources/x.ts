@@ -35,6 +35,121 @@ function cleanText(text: string): string {
   return text.replace(/\s*https?:\/\/t\.co\/\S+\s*$/g, "").trim();
 }
 
+// ===== 外部アカウントのポスト（X API App-only Bearer + since_id 増分） =====
+
+const X_API_BASE = "https://api.x.com/2";
+
+interface XApiTweet {
+  id: string;
+  text: string;
+  created_at?: string;
+  attachments?: { media_keys?: string[] };
+}
+interface XApiMedia {
+  media_key: string;
+  url?: string;
+  preview_image_url?: string;
+}
+interface XUserTweetsResponse {
+  data?: XApiTweet[];
+  includes?: { media?: XApiMedia[] };
+  meta?: { result_count: number; newest_id?: string };
+  errors?: unknown;
+}
+
+export interface XAccountsResult {
+  items: FeedItem[];
+  /** username -> 次回 since_id に使う最新ツイートID（呼び出し側で state に保存） */
+  sinceIds: Record<string, string>;
+}
+
+async function resolveUserId(username: string, bearer: string): Promise<string> {
+  const res = await fetch(`${X_API_BASE}/users/by/username/${encodeURIComponent(username)}`, {
+    headers: { Authorization: `Bearer ${bearer}` },
+  });
+  if (!res.ok) {
+    throw new Error(`users/by/username @${username} failed (${res.status}): ${await res.text()}`);
+  }
+  const json = (await res.json()) as { data?: { id: string } };
+  if (!json.data?.id) throw new Error(`User not found: @${username}`);
+  return json.data.id;
+}
+
+/**
+ * 複数の外部アカウントの新着ポストを App-only Bearer で取得。
+ * since_id（前回最新ID）を渡すことで新着のみ取得＝重複課金を回避。
+ * 1アカウントの失敗は他に波及させない（個別 catch）。
+ */
+export async function fetchXAccounts(opts: {
+  accounts: string[];
+  bearer: string;
+  maxResults: number;
+  /** username -> 前回 since_id / username -> userId キャッシュ */
+  sinceIds: Record<string, string>;
+  userIds: Record<string, string>;
+}): Promise<XAccountsResult & { userIds: Record<string, string>; errors: string[] }> {
+  const items: FeedItem[] = [];
+  const newSinceIds: Record<string, string> = { ...opts.sinceIds };
+  const userIds: Record<string, string> = { ...opts.userIds };
+  const errors: string[] = [];
+
+  for (const username of opts.accounts) {
+    try {
+      let userId = userIds[username];
+      if (!userId) {
+        userId = await resolveUserId(username, opts.bearer);
+        userIds[username] = userId;
+      }
+      const url = new URL(`${X_API_BASE}/users/${userId}/tweets`);
+      url.searchParams.set("max_results", String(Math.max(5, Math.min(100, opts.maxResults))));
+      url.searchParams.set("tweet.fields", "created_at,attachments");
+      url.searchParams.set("expansions", "attachments.media_keys");
+      url.searchParams.set("media.fields", "url,preview_image_url");
+      url.searchParams.set("exclude", "retweets,replies");
+      const since = opts.sinceIds[username];
+      if (since) url.searchParams.set("since_id", since); // ★ 新着のみ＝重複課金回避
+
+      const res = await fetch(url.toString(), {
+        headers: { Authorization: `Bearer ${opts.bearer}` },
+      });
+      if (!res.ok) {
+        throw new Error(`users/${userId}/tweets failed (${res.status}): ${await res.text()}`);
+      }
+      const json = (await res.json()) as XUserTweetsResponse;
+      const mediaByKey = new Map((json.includes?.media ?? []).map((m) => [m.media_key, m]));
+      for (const t of json.data ?? []) {
+        let thumbnail: string | undefined;
+        for (const key of t.attachments?.media_keys ?? []) {
+          const m = mediaByKey.get(key);
+          const u = m?.url ?? m?.preview_image_url;
+          if (u) {
+            thumbnail = u;
+            break;
+          }
+        }
+        const text = t.text.trim();
+        const title = text.length > 140 ? text.slice(0, 137) + "…" : text;
+        items.push({
+          id: `x-${t.id}`,
+          source: "x",
+          title,
+          url: `https://x.com/${username}/status/${t.id}`,
+          publishedAt: t.created_at ?? new Date().toISOString(),
+          summary: text !== title ? text : undefined,
+          thumbnail,
+          author: `@${username}`,
+        });
+      }
+      if (json.meta?.newest_id) newSinceIds[username] = json.meta.newest_id;
+    } catch (e) {
+      errors.push(`x @${username}: ${(e as Error).message}`);
+    }
+  }
+  return { items, sinceIds: newSinceIds, userIds, errors };
+}
+
+// ===== 自分のデータ（basecamp 公開JSON） =====
+
 export async function fetchX(opts: {
   sourceUrl: string;
   username: string;

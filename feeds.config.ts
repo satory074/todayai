@@ -22,8 +22,16 @@ export interface FeedsConfig {
     sourceUrl: string;
     /** 取得対象アカウントのユーザー名（@ なし）。リンク生成・表示に使う */
     username: string;
-    /** 取り込むカテゴリ。post=自分の投稿 / like=いいね / bookmark=ブックマーク */
+    /** basecamp公開JSONから取り込むカテゴリ。post=自分の投稿 / like=いいね / bookmark=ブックマーク */
     categories: XCategory[];
+    /**
+     * 外部アカウントのポスト（@なしのユーザー名の配列）。
+     * X API App-only Bearer Token（env: X_BEARER_TOKEN）で取得し、
+     * since_id 増分で新着のみ課金（重複課金回避）。
+     */
+    accounts: string[];
+    /** 外部アカウント1件あたり1回に取得する最大件数（5〜100） */
+    accountMaxResults: number;
     /** true の場合、X取得を完全にスキップ */
     disabled?: boolean;
   };
@@ -49,7 +57,9 @@ export const feedsConfig: FeedsConfig = {
   x: {
     sourceUrl: "https://storage.googleapis.com/basecamp-feeds/x-tweets.json",
     username: "satory074",
-    categories: ["post"], // 投稿のみ。いいね/ブックマークも含めたいなら "like"/"bookmark" を追加
+    categories: ["bookmark"], // 自分のデータからはブックマークのみ取り込む
+    accounts: [], // ★ 取得したい外部アカウントのユーザー名（@なし）を追加。例: ["OpenAI"]
+    accountMaxResults: 20,
     disabled: false,
   },
   feedly: {

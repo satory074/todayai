@@ -30,11 +30,13 @@ jobs:
       - run: npm ci
 
       # 取得＋コミットは cron / 手動実行時のみ（push 時は既存キャッシュでビルドしてループ回避）
-      # X は basecamp 公開JSONを読むためトークン不要。Feedly のみ FEEDLY_API_TOKEN が必要。
+      # X: 自分のブックマークは basecamp 公開JSON（トークン不要）、外部アカウントのポストは
+      # X API App-only Bearer（X_BEARER_TOKEN）。Feedly は FEEDLY_API_TOKEN。
       - name: Aggregate feeds
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: npm run aggregate
         env:
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
           FEEDLY_API_TOKEN: ${{ secrets.FEEDLY_API_TOKEN }}
 
       - name: Commit feed.json if changed

@@ -24,12 +24,12 @@ export interface FeedData {
   /** 最終更新時刻 ISO 8601 */
   updatedAt: string;
   items: FeedItem[];
-  /** ソースごとの状態（X の since_id 等） */
+  /** ソースごとの状態（X 外部アカウントの since_id 等） */
   state?: {
-    /** 前回取得済みの最新ツイートID（since_id に使う＝重複課金回避） */
-    xLastSeenId?: string;
-    /** username→id の解決結果キャッシュ */
-    xUserId?: string;
+    /** 外部アカウント username -> 前回取得済み最新ツイートID（since_id＝重複課金回避） */
+    xAccountSinceIds?: Record<string, string>;
+    /** 外部アカウント username -> userId の解決結果キャッシュ */
+    xAccountUserIds?: Record<string, string>;
   };
 }
 

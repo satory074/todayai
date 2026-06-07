@@ -17,7 +17,7 @@ import { fileURLToPath } from "node:url";
 
 import { feedsConfig } from "../feeds.config";
 import type { FeedData, FeedItem, FeedSource } from "../src/lib/feed";
-import { fetchX } from "./sources/x";
+import { fetchX, fetchXAccounts } from "./sources/x";
 import { fetchFeedly } from "./sources/feedly";
 import { fetchHatena } from "./sources/hatena";
 
@@ -53,25 +53,60 @@ async function run(): Promise<void> {
   const collected: FeedItem[] = [];
   const errors: string[] = [];
 
-  // ---- X (basecamp 公開JSONを読む) ----
+  // ---- X ----
+  // 前回キャッシュを土台にし、取れたソースだけ上書き/追記する。
+  // ・ブックマーク: basecamp公開JSONが全件返すので毎回フレッシュに置換（dedupで更新）
+  // ・外部アカウント: since_id増分なので前回分を保持しつつ新着を追記（重複課金回避）
+  // 同一idはdedupで1件に集約される。
   if (feedsConfig.x.disabled) {
     console.log("[x] disabled");
     collected.push(...cachedFor(cache, "x"));
   } else {
+    // 外部アカウントのポストは since_id 増分のため前回分を保持する。
+    // ブックマークは公開JSONが全件返すので保持せず毎回フレッシュに置換（古い設定の残骸も purge）。
+    const accountAuthors = new Set(feedsConfig.x.accounts.map((u) => `@${u}`));
+    const xItems: FeedItem[] = cachedFor(cache, "x").filter(
+      (i) => i.author !== undefined && accountAuthors.has(i.author),
+    );
+
+    // (a) 自分のブックマーク等（basecamp 公開JSON、トークン不要）
     try {
       const items = await fetchX({
         sourceUrl: feedsConfig.x.sourceUrl,
         username: feedsConfig.x.username,
         categories: feedsConfig.x.categories,
       });
-      collected.push(...items);
-      console.log(`[x] ${items.length} items (${feedsConfig.x.categories.join("/")})`);
+      xItems.push(...items);
+      console.log(`[x] basecamp公開JSON: ${items.length} items (${feedsConfig.x.categories.join("/") || "なし"})`);
     } catch (e) {
       const msg = (e as Error).message;
-      errors.push(`x: ${msg}`);
-      console.error("[x] 取得失敗（前回キャッシュを維持）:", msg);
-      collected.push(...cachedFor(cache, "x"));
+      errors.push(`x(json): ${msg}`);
+      console.error("[x] 公開JSON取得失敗（前回分維持）:", msg);
     }
+
+    // (b) 外部アカウントのポスト（X API App-only Bearer + since_id 増分）
+    if (feedsConfig.x.accounts.length > 0) {
+      const bearer = process.env.X_BEARER_TOKEN;
+      if (!bearer) {
+        errors.push("x(accounts): X_BEARER_TOKEN 未設定");
+        console.error("[x] X_BEARER_TOKEN 未設定（外部アカウント取得スキップ・前回分維持）");
+      } else {
+        const r = await fetchXAccounts({
+          accounts: feedsConfig.x.accounts,
+          bearer,
+          maxResults: feedsConfig.x.accountMaxResults,
+          sinceIds: state.xAccountSinceIds ?? {},
+          userIds: state.xAccountUserIds ?? {},
+        });
+        state.xAccountSinceIds = r.sinceIds;
+        state.xAccountUserIds = r.userIds;
+        xItems.push(...r.items);
+        for (const e of r.errors) errors.push(e);
+        console.log(`[x] 外部アカウント: +${r.items.length} new (${feedsConfig.x.accounts.join(",")})`);
+      }
+    }
+
+    collected.push(...xItems);
   }
 
   // ---- Feedly ----
