@@ -30,16 +30,12 @@ jobs:
       - run: npm ci
 
       # 取得＋コミットは cron / 手動実行時のみ（push 時は既存キャッシュでビルドしてループ回避）
+      # X は basecamp 公開JSONを読むためトークン不要。Feedly のみ FEEDLY_API_TOKEN が必要。
       - name: Aggregate feeds
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: npm run aggregate
         env:
-          X_CLIENT_ID: ${{ secrets.X_CLIENT_ID }}
-          X_CLIENT_SECRET: ${{ secrets.X_CLIENT_SECRET }}
-          X_REFRESH_TOKEN: ${{ secrets.X_REFRESH_TOKEN }}
           FEEDLY_API_TOKEN: ${{ secrets.FEEDLY_API_TOKEN }}
-          GH_PAT: ${{ secrets.GH_PAT }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
 
       - name: Commit feed.json if changed
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'

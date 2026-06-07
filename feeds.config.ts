@@ -10,13 +10,21 @@
  * トークン類（X_*, FEEDLY_API_TOKEN）は .env / GitHub Secrets に置く（このファイルには書かない）。
  */
 
+export type XCategory = "post" | "like" | "bookmark";
+
 export interface FeedsConfig {
   x: {
-    /** 取得対象アカウントのユーザー名（@ なし）。例: "OpenAI" */
+    /**
+     * basecamp が公開している x-tweets.json の URL。
+     * これを読むことで X API・トークン・追加課金が不要になり、
+     * basecamp の X feed とトークンが競合しない。
+     */
+    sourceUrl: string;
+    /** 取得対象アカウントのユーザー名（@ なし）。リンク生成・表示に使う */
     username: string;
-    /** users/:id/tweets で1回に取得する最大件数（5〜100） */
-    maxResults: number;
-    /** true の場合、X取得を完全にスキップ（認証情報が無いとき用） */
+    /** 取り込むカテゴリ。post=自分の投稿 / like=いいね / bookmark=ブックマーク */
+    categories: XCategory[];
+    /** true の場合、X取得を完全にスキップ */
     disabled?: boolean;
   };
   feedly: {
@@ -39,8 +47,9 @@ export interface FeedsConfig {
 
 export const feedsConfig: FeedsConfig = {
   x: {
-    username: "satory074", // 自分のアカウント = Owned Read ($0.001/件)
-    maxResults: 20,
+    sourceUrl: "https://storage.googleapis.com/basecamp-feeds/x-tweets.json",
+    username: "satory074",
+    categories: ["post"], // 投稿のみ。いいね/ブックマークも含めたいなら "like"/"bookmark" を追加
     disabled: false,
   },
   feedly: {

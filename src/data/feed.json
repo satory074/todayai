@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-06-07T01:03:49.312Z",
+  "updatedAt": "2026-06-07T03:51:11.170Z",
   "items": [
+    {
+      "id": "hatena-https://anond.hatelabo.jp/20260607065550",
+      "source": "hatena",
+      "title": "外部URLを貼るリスクが上がりすぎたX 旧twitter、もう避難所を作った方がいい",
+      "url": "https://anond.hatelabo.jp/20260607065550",
+      "publishedAt": "2026-06-06T21:56:57.000Z",
+      "summary": "最近、外部URLの投稿後にアカウントが凍結されたという報告を見かける機会が増えた。 Grokに質問しても、「6月初旬頃から関連する報告が増えている」「自動検知システムが関係している可能性がある」といった趣旨の回答が返ってくる。 もちろん実際の凍結理由は個別のケースごとに異なるだろう。しかし、ニュース記事や...",
+      "thumbnail": "https://anond.hatelabo.jp/assets/images/og-image-1500.gif",
+      "bookmarkCount": 35
+    },
+    {
+      "id": "hatena-https://zenn.dev/tokium_dev/articles/d806c7ad4fd458",
+      "source": "hatena",
+      "title": "Claude を使って Gemini 議事録から必要な情報を抽出する仕組み",
+      "url": "https://zenn.dev/tokium_dev/articles/d806c7ad4fd458",
+      "publishedAt": "2026-06-06T15:47:54.000Z",
+      "summary": "はじめに Google Meet の Gemini 議事録は便利ですが、Google Drive に増えていくだけでは会議後の作業につながりません。 この記事では、Claude を使って Gemini 議事録から決定事項や TODO を抽出し、業務に必要な情報へ変える仕組みを紹介します。 この仕組みを作ると、会議後に誰かが議事録を読み直し、必要な情報を...",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--Q_IycC6B--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%2520Gemini%2520%25E8%25AD%25B0%25E4%25BA%258B%25E9%258C%25B2%25E3%2581%258B%25E3%2582%2589%25E5%25BF%2585%25E8%25A6%2581%25E3%2581%25AA%25E6%2583%2585%25E5%25A0%25B1%25E3%2582%2592%25E6%258A%25BD%25E5%2587%25BA%25E3%2581%2599%25E3%2582%258B%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2581%2597%25E3%2582%2587%25E3%2583%25BC%25E3%2581%2595%25E3%2582%2593%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzViNTEwYjI5ZjEuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:TOKIUM%25E3%2583%2597%25E3%2583%25AD%25E3%2583%2580%25E3%2582%25AF%25E3%2583%2588%25E3%2583%2581%25E3%2583%25BC%25E3%2583%25A0%2520%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzlkMzExMTE0OTcuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "bookmarkCount": 19
+    },
     {
       "id": "hatena-https://zenn.dev/pdfractal/articles/373be6a9de3e8c",
       "source": "hatena",
@@ -9,7 +29,7 @@
       "publishedAt": "2026-06-06T13:39:59.000Z",
       "summary": "はじめに 本題でいう「頭が良くなる」「頭が悪くなる」は、先天的な知能そのものが上下するという意味ではありません。問題になっているのは、AIを使うことで 判断主権 を自分の手元に残す人と、外へ渡してしまう人の差が拡大することです。2025年のMicrosoft Researchの調査でも、生成AIへの信頼が高いほど批判的思考は...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--xvK9c6Hr--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%25AA%25E3%2581%259C%25E3%2580%2581AI%25E3%2581%25AF%25E9%25A0%25AD%25E3%2581%258C%25E8%2589%25AF%25E3%2581%2584%25E4%25BA%25BA%25E3%2581%258C%25E4%25BD%25BF%25E3%2581%2586%25E3%2581%25A8%25E3%2582%2588%25E3%2582%258A%25E9%25A0%25AD%25E3%2581%258C%25E8%2589%25AF%25E3%2581%258F%25E3%2581%25AA%25E3%2582%258B%25E3%2581%25AE%25E3%2581%25AB%25E3%2580%2581%25E9%25A0%25AD%25E3%2581%258C%25E6%2582%25AA%25E3%2581%2584%25E4%25BA%25BA%25E3%2581%258C%25E4%25BD%25BF%25E3%2581%2586%25E3%2581%25A8%25E3%2582%2588%25E3%2582%258A%25E9%25A0%25AD%25E3%2581%258C%25E6%2582%25AA%25E3%2581%258F%25E3%2581%25AA%25E3%2582%258B%25E3%2581%25AE%25E3%2581%258B%25EF%25BC%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:pdfractal%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2FlODUxNjI3MGYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 250
+      "bookmarkCount": 359
     },
     {
       "id": "hatena-https://speakerdeck.com/kajitack/why-algebraic-data-type",
@@ -19,7 +39,7 @@
       "publishedAt": "2026-06-06T12:58:01.000Z",
       "summary": "フロントエンド・PHPカンファレンス北海道2026 の登壇資料です。 https://fortee.jp/frontend-phpcon-do-2026/proposal/f85e1c42-0592-4f5f-a493-e0757412e0a5 - 代数的データ型とはなにか？直積型/列挙型/…",
       "thumbnail": "https://files.speakerdeck.com/presentations/dee9cd84a1ba4b09894ec0d99f80f7dc/slide_0.jpg?39626028",
-      "bookmarkCount": 4
+      "bookmarkCount": 36
     },
     {
       "id": "hatena-https://www.47news.jp/14427079.html",
@@ -29,7 +49,7 @@
       "publishedAt": "2026-06-06T12:17:36.000Z",
       "summary": "【ニューヨーク共同】人工知能（AI）開発の米アンソロピックは6日までに、AIが人間の手を借りずに性能を自律的に高める段階に近づいたと指摘し、暴走して制御不能になる前に「開発を遅らせたり、一時停止したりする選択肢を持つことが世界にとって有益だ」と提言した。核軍縮条約を引き合いに、先端AI規制の国際的枠組み...",
       "thumbnail": "https://img.cf.47news.jp/public/photo/1a478aaa36ec8103a60cebc4d426a510/photo.jpg",
-      "bookmarkCount": 143
+      "bookmarkCount": 156
     },
     {
       "id": "hatena-https://p-shirokuma.hatenadiary.com/entry/20260606/1780740000",
@@ -39,7 +59,7 @@
       "publishedAt": "2026-06-06T10:58:46.000Z",
       "summary": "昔の引きこもりって凄い 今の引きこもりはネットを介してコミュニケーションしてるから認知機能は保たれてるけど、それ以前は全く新たな刺激がないまま引きこもってたはず 引きこもりの方の研究はネット時代以降のしかないから、それ以前の彼らは医学的にどうだったかもう分からないけど気になる— Lebenstrieb (@Kohler_...",
       "thumbnail": "https://ogimage.blog.st-hatena.com/6653458415124667212/14945776032039410750/1780744430",
-      "bookmarkCount": 73
+      "bookmarkCount": 121
     },
     {
       "id": "hatena-https://gigazine.net/news/20260606-llm-checker/",
@@ -49,7 +69,7 @@
       "publishedAt": "2026-06-06T10:53:45.000Z",
       "summary": "「LLM Checker」は自分のPCのハードウェアをスキャンしローカルで実行可能なLLMを推薦してくれるCLIツールであり、Ollamaと完全に統合されていることを特徴としています。 Pavelevich/llm-checker: Advanced CLI tool that scans your hardware and tells you exactly which LLM or sL…",
       "thumbnail": "https://i.gzn.jp/img/2026/06/06/llm-checker/00.png",
-      "bookmarkCount": 48
+      "bookmarkCount": 54
     },
     {
       "id": "hatena-https://azukiazusa.dev/blog/goal-command-use-case-vitest/",
@@ -59,7 +79,7 @@
       "publishedAt": "2026-06-06T10:46:56.000Z",
       "summary": "Vitest の `isolate: false` オプションを有効にすることで、テストの実行時間を大幅に短縮できましたが、その際に大規模なコードの修正が必要でした。Claude Code の `/goal` コマンドを活用することで、最終的なゴールを達成するために必要なステップを自律的に判断して実行させることができます。この記事ではその経...",
       "thumbnail": "https://ogp.azukiazusa.dev/blog/ogp/goal-command-use-case-vitest.png",
-      "bookmarkCount": 37
+      "bookmarkCount": 47
     },
     {
       "id": "hatena-https://speakerdeck.com/yusukebe/aishi-dai-nouihadokohexing-ku-sono2",
@@ -69,7 +89,17 @@
       "publishedAt": "2026-06-06T08:31:59.000Z",
       "summary": "フロントエンド・PHPカンファレンス北海道2026 June 6, 2026",
       "thumbnail": "https://files.speakerdeck.com/presentations/261fd6bb9f5e4c97926a85e1b04920a9/slide_0.jpg?39628857",
-      "bookmarkCount": 141
+      "bookmarkCount": 154
+    },
+    {
+      "id": "hatena-https://speakerdeck.com/syumai/jsx-runtime-basics",
+      "source": "hatena",
+      "title": "作って学ぶ、 JSX (TSX) ランタイムの基本",
+      "url": "https://speakerdeck.com/syumai/jsx-runtime-basics",
+      "publishedAt": "2026-06-06T08:29:37.000Z",
+      "summary": "フロントエンド・PHPカンファレンス 北海道 2026の発表資料です https://fortee.jp/frontend-phpcon-do-2026/proposal/9702d654-e233-4608-bffb-0fa04cff75c1",
+      "thumbnail": "https://files.speakerdeck.com/presentations/458ace1a03e24bf08c2f958a13a61150/slide_0.jpg?39626710",
+      "bookmarkCount": 15
     },
     {
       "id": "hatena-https://qiita.com/fj_qaengineer/items/cabe6aea0be459f7d97b",
@@ -79,7 +109,65 @@
       "publishedAt": "2026-06-06T07:35:15.000Z",
       "summary": "はじめに こんにちは。 QAエンジニアのふじです。 QAエンジニアとして実務に携わって約2年が経ちました。 私が過去に所属したプロジェクトではオフショア開発を取り入れており、 海外ベンダーが作成したテスト方針やテストケースのレビュー、および品質改善業務を担当する機会がありました。 そこでの業務を通じて、国内...",
       "thumbnail": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMzkwNjcwNSUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc4MDY1MzMzMT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZTRhMWYxMzgyOGYzZmZkZWQxNjUzODVhMzRiNGQ1ZWM%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dda79eebc6e1fefcea9361ddb1cb9f781?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU2JUI1JUI3JUU1JUE0JTk2JUUzJTgzJTk5JUUzJTgzJUIzJUUzJTgzJTgwJUUzJTgzJUJDJUUzJTgxJThDJUU0JUJEJTlDJUU2JTg4JTkwJUUzJTgxJTk3JUUzJTgxJTlGJUUzJTgzJTg2JUUzJTgyJUI5JUUzJTgzJTg4JUU2JTk2JUI5JUU5JTg3JTlEJUUzJTgyJTg0JUUzJTgzJTg2JUUzJTgyJUI5JUUzJTgzJTg4JUUzJTgyJUIxJUUzJTgzJUJDJUUzJTgyJUI5JUUzJTgxJUFCJUU1JUFGJUJFJUUzJTgxJTk5JUUzJTgyJThCJUU1JTkzJTgxJUU4JUIzJUFBJUU2JTk0JUI5JUU1JTk2JTg0JUU2JUE1JUFEJUU1JThCJTk5JUUzJTgxJUFCJUU1JUJFJTkzJUU0JUJBJThCJUUzJTgxJTk3JUUzJTgxJUE2JUU1JUJFJTk3JUUzJTgxJTlGJUU1JUFEJUE2JUUzJTgxJUIzJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MDhkN2I5MmVhZDg2NjVlMWZhYjJkYjdlODEzNWUzMWE&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBmal9xYWVuZ2luZWVyJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9NDBjOGEyMGQzN2NlOTM3NzgwM2JjMDk3NTEwNzBhYmM&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=79f34c91429fb631717cf87f950434ab",
-      "bookmarkCount": 51
+      "bookmarkCount": 54
+    },
+    {
+      "id": "x-2063153306755903603",
+      "source": "x",
+      "title": "https://t.co/ZqqSaRRKAo\n\n更新した；；",
+      "url": "https://x.com/satory074/status/2063153306755903603",
+      "publishedAt": "2026-06-06T06:57:34.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2063152243524923450",
+      "source": "x",
+      "title": "変な事務所に捕まらずにみんなデビューして幸せになってね",
+      "url": "https://x.com/satory074/status/2063152243524923450",
+      "publishedAt": "2026-06-06T06:53:21.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2063140665811501527",
+      "source": "x",
+      "title": "予想しておくと倍楽しいね",
+      "url": "https://x.com/satory074/status/2063140665811501527",
+      "publishedAt": "2026-06-06T06:07:20.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "hatena-https://zenn.dev/catatsuy/articles/e2fc71d810613a",
+      "source": "hatena",
+      "title": "開発者が攻撃対象になった時代に、開発環境とCI/CDについて考えていること",
+      "url": "https://zenn.dev/catatsuy/articles/e2fc71d810613a",
+      "publishedAt": "2026-06-06T06:03:49.000Z",
+      "summary": "最近のサプライチェーンアタックを見ていると、これまでとは明らかにフェーズが変わったと感じています。 この記事は、具体的な解決策を提示するというより、最近のサプライチェーン攻撃を見て、自分が開発環境やCI/CDについて考えていることを整理したものです。 以前の攻撃は、どちらかというとコンピュータリテラシー...",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--ezv_9rEh--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%2596%258B%25E7%2599%25BA%25E8%2580%2585%25E3%2581%258C%25E6%2594%25BB%25E6%2592%2583%25E5%25AF%25BE%25E8%25B1%25A1%25E3%2581%25AB%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%259F%25E6%2599%2582%25E4%25BB%25A3%25E3%2581%25AB%25E3%2580%2581%25E9%2596%258B%25E7%2599%25BA%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25A8CI%252FCD%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%2584%25E3%2581%25A6%25E8%2580%2583%25E3%2581%2588%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E3%2581%2593%25E3%2581%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:catatsuy%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2NiYTVlYjRjMTEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "bookmarkCount": 40
+    },
+    {
+      "id": "x-2063131196524294307",
+      "source": "x",
+      "title": "ドス鯉倶楽部",
+      "url": "https://x.com/satory074/status/2063131196524294307",
+      "publishedAt": "2026-06-06T05:29:43.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2063128665299575233",
+      "source": "x",
+      "title": "コイキーズ",
+      "url": "https://x.com/satory074/status/2063128665299575233",
+      "publishedAt": "2026-06-06T05:19:39.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2063126850222866810",
+      "source": "x",
+      "title": "全員でびはじゃ",
+      "url": "https://x.com/satory074/status/2063126850222866810",
+      "publishedAt": "2026-06-06T05:12:26.000Z",
+      "author": "@satory074"
     },
     {
       "id": "hatena-https://ladybird.org/posts/changing-how-we-develop-ladybird/",
@@ -88,17 +176,40 @@
       "url": "https://ladybird.org/posts/changing-how-we-develop-ladybird/",
       "publishedAt": "2026-06-06T05:10:02.000Z",
       "summary": "Today we’re changing how code enters the Ladybird project. We will no longer accept public pull requests. From now on, code changes to the Ladybird codebase will only be introduced by project maint…",
-      "bookmarkCount": 6
+      "bookmarkCount": 7
     },
     {
-      "id": "hatena-https://github.com/microsoft/pg_durable",
-      "source": "hatena",
-      "title": "GitHub - microsoft/pg_durable: PostgreSQL in-database durable execution",
-      "url": "https://github.com/microsoft/pg_durable",
-      "publishedAt": "2026-06-06T02:40:34.000Z",
-      "summary": "Long-running, fault-tolerant SQL functions for teams that already keep their state in Postgres and want to stop stitching together cron jobs, workers, queues, and status tables to make background w…",
-      "thumbnail": "https://opengraph.githubassets.com/f4d8b6611011590f581aa65b128a8835bb8450d0d36603417da4de4acce5f5c3/microsoft/pg_durable",
-      "bookmarkCount": 15
+      "id": "x-2063111956823966114",
+      "source": "x",
+      "title": "奏夢！",
+      "url": "https://x.com/satory074/status/2063111956823966114",
+      "publishedAt": "2026-06-06T04:13:15.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2063111680515772881",
+      "source": "x",
+      "title": "ストーリー部屋泣ける",
+      "url": "https://x.com/satory074/status/2063111680515772881",
+      "publishedAt": "2026-06-06T04:12:10.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2063099373303873818",
+      "source": "x",
+      "title": "順位予想と12pick",
+      "url": "https://x.com/satory074/status/2063099373303873818",
+      "publishedAt": "2026-06-06T03:23:15.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2063098056414036225",
+      "source": "x",
+      "title": "#日プ新世界 #土田央修とお茶を点てたい\n🍵お茶点て結果🍵\n暫定ランキング4,052位 茶力：25点　称号：湯気の向こうの候補生\n🍵お茶を点てた勢いで #日プ の #土田央修 に投票🍵\n投票ページは結果画像のQRから #PRODUCE0101JAPAN新世界 #프로…",
+      "url": "https://x.com/satory074/status/2063098056414036225",
+      "publishedAt": "2026-06-06T03:18:01.000Z",
+      "summary": "#日プ新世界 #土田央修とお茶を点てたい\n🍵お茶点て結果🍵\n暫定ランキング4,052位 茶力：25点　称号：湯気の向こうの候補生\n🍵お茶を点てた勢いで #日プ の #土田央修 に投票🍵\n投票ページは結果画像のQRから #PRODUCE0101JAPAN新世界 #프로듀스101\n\n🍵お茶点てはこちらから🍵",
+      "author": "@satory074"
     },
     {
       "id": "hatena-https://dot.asahi.com/articles/-/284064?page=1",
@@ -109,16 +220,6 @@
       "summary": "古坂大魔王さんの自宅スタジオで。MacBook Proをメインで使っていて、飛行機のなかでも曲を作れるようになったという（写真：本人提供） この記事の写真をすべて見る ピコ太郎の「PPAP」をMacで作り、世界的ヒットへと導いた古坂大魔王さん。いまや音楽制作から映像編集まで、ほとんどを1台のMacBook Proでこなしている...",
       "thumbnail": "https://aeradot.ismcdn.jp/mwimgs/4/3/1200xm/img_43b6fb17b29fc063c57bdc4ba3a47aca302956.jpg",
       "bookmarkCount": 185
-    },
-    {
-      "id": "hatena-https://note.com/genaird/n/n6be0a775853f",
-      "source": "hatena",
-      "title": "ObsidianをAIアシスタントにする新機能｜生成AI活用研究部",
-      "url": "https://note.com/genaird/n/n6be0a775853f",
-      "publishedAt": "2026-06-06T01:14:11.000Z",
-      "summary": "本記事については生成AIを活用して生成された記事となります。 解説内容の正確性については読者ご自身でご確認いただきますようお願いいたします。 本記事はObsidian Starter Kit v4 Is Here: Your Vault Is Now a Full AI Assistantの解説記事となります。 デジタルノート環境であるObsidianのスターターキット最新版に...",
-      "thumbnail": "https://assets.st-note.com/production/uploads/images/282024057/rectangle_large_type_2_c467f248eb7e16ca9b1d779f751df244.jpeg?fit=bounds&quality=85&width=1280",
-      "bookmarkCount": 35
     },
     {
       "id": "hatena-https://katukawa.com/?p=6345",
@@ -137,17 +238,17 @@
       "publishedAt": "2026-06-06T00:25:58.000Z",
       "summary": "米Anthropicは、同社の研究機関Anthropic Instituteによる論考「When AI builds itself（AIが自らを作るとき）」を公開した。AIがAI自身の開発を肩代わりし、その開発ペースを既に加速させているとし、2026年5月時点で同社のコードベースにマージされるコードの80%超を同社のAI「Claude」が記述していると明らかにした。...",
       "thumbnail": "https://japan.cnet.com/storage/2026/06/06/e3cbbe91252f859bdeaeb9cce3e54a6d/claude-ai-9831_1000x563.jpeg",
-      "bookmarkCount": 33
+      "bookmarkCount": 37
     },
     {
-      "id": "hatena-https://gigazine.net/news/20260606-your-ai-slop-bores-me/",
+      "id": "hatena-https://speakerdeck.com/tanimuyk/aipuratutohuomuwoyun-yong-sisok-kerutamenoke-guan-ce-xing",
       "source": "hatena",
-      "title": "AIになりきって他人の質問に回答できるチャットボット「Your AI Slop Bores Me」",
-      "url": "https://gigazine.net/news/20260606-your-ai-slop-bores-me/",
-      "publishedAt": "2026-06-06T00:03:16.000Z",
-      "summary": "「Your AI Slop Bores Me(お前の低品質なAI量産コンテンツにはうんざりだ)」は、人間として質問したり、AIのふりをして質問に回答したりできるAIチャットボット風のサービスです。実際に遊んでみました。 your ai slop bores me https://youraislopbores.me/ 上記のサイトにアクセスしたら、13歳以上であることの確認と...",
-      "thumbnail": "https://i.gzn.jp/img/2026/06/06/your-ai-slop-bores-me/00.png",
-      "bookmarkCount": 23
+      "title": "AIプラットフォームを運用し続けるための可観測性",
+      "url": "https://speakerdeck.com/tanimuyk/aipuratutohuomuwoyun-yong-sisok-kerutamenoke-guan-ce-xing",
+      "publishedAt": "2026-06-06T00:15:28.000Z",
+      "summary": "JJUG CCC 2026 Spring AI時代の開発こそ標準化を武器に！ ― 方式・プロセス・プラットフォームの標準化",
+      "thumbnail": "https://files.speakerdeck.com/presentations/c732fa50e7ca4a8394e9905472052f01/slide_0.jpg?39615600",
+      "bookmarkCount": 19
     },
     {
       "id": "hatena-https://date-fns.org/you-dont-need-date-fns",
@@ -157,7 +258,7 @@
       "publishedAt": "2026-06-05T23:51:13.000Z",
       "summary": "date-fns provides the most comprehensive yet simple and consistent toolset for manipulating JavaScript dates in a browser & Node.js.",
       "thumbnail": "http://cdn.date-fns.org/card.png",
-      "bookmarkCount": 8
+      "bookmarkCount": 10
     },
     {
       "id": "hatena-https://qiita.com/long-910/items/76779fc1d8602dab73b3",
@@ -167,27 +268,7 @@
       "publishedAt": "2026-06-05T23:40:42.000Z",
       "summary": "TL;DR CVE-2026-49975（通称 HTTP/2 Bomb）は、HTTP/2 の仕様上の組み合わせを悪用したリモート DoS 脆弱性 OpenAI Codex が nginx・Apache・IIS・Envoy・Cloudflare Pingora の 5 つの主要 Webサーバーに共通する問題を人間より先に発見した 家庭用の 100 Mbps 回線 1 本で 32GB の RAM…",
       "thumbnail": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYzNzQ1ODcwJTJGYTI4MDgyNWYwODU0NDFlMzM0MmUzZmEzZmJmNmE3MWE4ZmRlZjkyNiUyRmxhcmdlLnBuZyUzRjE3NzM1NzA3ODg_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTQyNDM2MTBiMWI4NzMzMjNhMWYwNGUyZjc1ZTY1NTdk%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dc1e5a002de72e68ee33d1ebe541e947f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q1ZFLTIwMjYtNDk5NzUlRTMlODAlOENIVFRQJTJGMiUyMEJvbWIlRTMlODAlOEQlRTMlODIlOTIlRTMlODIlOEYlRTMlODElOEIlRTMlODIlOEElRTMlODIlODQlRTMlODElOTklRTMlODElOEYlRTglQTclQTMlRTglQUElQUMlRTIlODAlOTQlRTIlODAlOTRBSSVFMyU4MSU4QyVFNCVCQSVCQSVFOSU5NiU5MyVFMyU4MiU4OCVFMyU4MiU4QSVFNSU4NSU4OCVFMyU4MSVBQiVFNiVCMCU5NyVFMyU4MSVBNSVFMyU4MSU4NCVFMyU4MSU5RiVFOCU4NCU4NiVFNSVCQyVCMSVFNiU4MCVBNyZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTU5ZDk1YjdmNDNhMDdkZjQ5OGNhNjViOTA0MTM1ODky&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBsb25nLTkxMCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTFmNTg5M2M1MjE2ZjU0YzIyMWNjYTZjMWRkN2RkMTU5&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=3b6586a09e53c1b5425bce5277f46c34",
-      "bookmarkCount": 60
-    },
-    {
-      "id": "hatena-https://blog.cloudnative.co.jp/articles/security-features-need-field-fit/",
-      "source": "hatena",
-      "title": "なぜWebサービスにはSSOやMFAが実装されないのか | CloudNative BLOGs",
-      "url": "https://blog.cloudnative.co.jp/articles/security-features-need-field-fit/",
-      "publishedAt": "2026-06-05T23:38:41.000Z",
-      "summary": "どうも おかしん です。 近年、X（旧Twitter）などのSNSで、情シス（情報システム部門）の方々が「SSO（シングルサインオン）やMFA（多要素認証）を実装してほしい」と、様々なWebサービスに対して要望や苦言を発信しているのをよく目にします。 私自身も、先日 2026年の今、なぜSSOが重要なのか という記事を書きました...",
-      "thumbnail": "https://blog.cloudnative.co.jp/assets/images/notion/a3f8ba141f8e.webp",
-      "bookmarkCount": 23
-    },
-    {
-      "id": "hatena-https://note.com/satoshoco/n/n073cb334dd8b",
-      "source": "hatena",
-      "title": "13年ぶりに宇部に戻ってきた理由。そして、次の挑戦へ。｜Shoko Sato",
-      "url": "https://note.com/satoshoco/n/n073cb334dd8b",
-      "publishedAt": "2026-06-05T15:52:29.000Z",
-      "summary": "令和8年６月３日。山口県宇部市民となりました。ただいま！ pic.twitter.com/3hhuQfLw7r — Shoco Sato (@satoshoco) June 3, 2026 とはいえ、東京には家族がいて、これまで続けてきた仕事もあります。そのため、完全な移住というよりも、東京と宇部を行き来する二拠点生活のスタートという表現の方が正しいかもしれませ...",
-      "thumbnail": "https://assets.st-note.com/production/uploads/images/282744910/rectangle_large_type_2_45b3458da69c2b92cface398a873169e.jpeg?fit=bounds&quality=85&width=1280",
-      "bookmarkCount": 13
+      "bookmarkCount": 61
     },
     {
       "id": "hatena-https://finance.biggo.jp/news/dkJzkZ4BoicNoOgCq3Zj",
@@ -197,7 +278,7 @@
       "publishedAt": "2026-06-05T11:44:12.000Z",
       "summary": "マイクロソフト、Build 2026で方針転換：WinUIを唯一のネイティブフレームワークに格上げ、Windows 11は「開発者ファースト」戦略でWebラッパーに全面反撃 マイクロソフトはBuild 2026開発者会議において、2つの重大な戦略転換を発表した。1つ目は、WinUI 3のブランド名を正式に廃止し「WinUI」に統一。Windowsアプリ開...",
       "thumbnail": "https://img.biggo.com/5iiQCrDbPBBw-QK3B1wKwbw_OgY_lu3iqvDmzI6ahVk/fit/1720/0/sm/1/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTA2L2RrSnprWjRCb2ljTm9PZ0NxM1pqXzE3ODA1NjU1OTFfZGVmYXVsdC5qcGc.jpg",
-      "bookmarkCount": 31
+      "bookmarkCount": 44
     },
     {
       "id": "hatena-https://www.itmedia.co.jp/aiplus/article/2606/05/2000000060/",
@@ -207,17 +288,25 @@
       "publishedAt": "2026-06-05T08:10:16.000Z",
       "summary": "米国企業がOpenAIやAnthropicの高額なAIモデルから、安価な中国製モデルへ乗り換えている実態が、米決済プラットフォーム「Ramp」の支出データから明らかになった。同社が6月3日（現地時間）に公開した月次調査結果「Top SaaS Vendors on Ramp」で、中国DeepSeekが急成長部門の首位に入った。 この調査は5万社超の法人カ...",
       "thumbnail": "https://www.itmedia.co.jp/aiplus/article/ogp/2606/05/2000000060/10000333/2048",
-      "bookmarkCount": 36
+      "bookmarkCount": 46
     },
     {
-      "id": "hatena-https://atmarkit.itmedia.co.jp/ait/articles/2606/05/news061.html",
+      "id": "hatena-https://www.dtmstation.com/archives/77741.html",
       "source": "hatena",
-      "title": "Google、AIエージェント向け「Android CLI」を正式公開　アプリ開発が“3倍高速”に",
-      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2606/05/news061.html",
-      "publishedAt": "2026-06-05T08:03:06.000Z",
-      "summary": "Googleは2026年4月16日（米国時間、以下同じ）、AIエージェントを活用したAndroidアプリ開発を支援するツール群およびリソース群「Android CLI」「Android Skills」「Android Knowledge Base」を発表した。これについて同社は2026年5月19日、Android CLIの安定版としてバージョン1.0をリリースしたことを発表した。 Andr...",
-      "thumbnail": "https://image.itmedia.co.jp/ait/articles/2606/05/cover_news061.jpg",
-      "bookmarkCount": 72
+      "title": "商用利用OKのAI音声合成ソフト「VOICEPEAK 商用可能 6ナレーターセット」にvol.2登場。4年間で大きく進化したエンジンとともに個性豊かな7種の声を収録",
+      "url": "https://www.dtmstation.com/archives/77741.html",
+      "publishedAt": "2026-06-05T04:05:39.000Z",
+      "summary": "2022年3月、音声合成業界に大きな衝撃を与えたAI音声合成ソフト「VOICEPEAK 商用可能 6ナレーターセット」が登場してから、早くも4年以上が経ちました。この製品はSynthesizer Vを開発したDreamtonicsが、歌声ではなく、しゃべるソフトを、過去最高といってもいいクオリティーで出したという点でも衝撃的でしたが、グッ...",
+      "thumbnail": "https://www.dtmstation.com/wp-content/uploads/2026/06/top.jpg",
+      "bookmarkCount": 7
+    },
+    {
+      "id": "x-2062721394799198602",
+      "source": "x",
+      "title": "初回全話無料のマンガアプリ「少年ジャンプ＋」で「[第10話]にこにこ元気☆ハッピーちゃん」を読んでます！ #ジャンププラス #にこにこ元気ハッピーちゃん",
+      "url": "https://x.com/satory074/status/2062721394799198602",
+      "publishedAt": "2026-06-05T02:21:18.000Z",
+      "author": "@satory074"
     },
     {
       "id": "hatena-https://zenn.dev/edhiblemeer/articles/claude-code-opus48-tool-corruption",
@@ -227,7 +316,7 @@
       "publishedAt": "2026-06-05T00:31:02.000Z",
       "summary": "長時間・常時起動でClaude Codeを使っていると、ある時からすべてのツール呼び出しが壊れて動かなくなることがある。日本語環境で複数のセッションを何時間も回していて、実際にこれを踏んだ。原因と回避策が分かったので、特に日本語ユーザーが踏みやすい点を含めて共有する。 起きること function callの開始タグが co...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--gxAaXu3L--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%2520%2528Opus%25204.8%2529%2520%25E3%2581%25A7%25E5%2585%25A8%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E5%2591%25BC%25E3%2581%25B3%25E5%2587%25BA%25E3%2581%2597%25E3%2581%258C%25E5%25A3%258A%25E3%2582%258C%25E3%2582%258B%2520%25E2%2580%2594%2520%25E6%2597%25A5%25E6%259C%25AC%25E8%25AA%259E%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25A7%25E8%25B8%258F%25E3%2581%25BF%25E3%2582%2584%25E3%2581%2599%25E3%2581%2584%25E6%259C%25AA%25E4%25BF%25AE%25E6%25AD%25A3%25E3%2583%2590%25E3%2582%25B0%25E3%2581%25A8%25E5%259B%259E%25E9%2581%25BF%25E7%25AD%2596%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:yoshi%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUlNTndyWXA4SHpUR3FEX2QtOTJqdHJ2aFUtc2J3c1ViZFpnYzVpMlBJc3kwSEpUNklfdz1zOTYtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 16
+      "bookmarkCount": 18
     },
     {
       "id": "hatena-https://engineering.nature.global/entry/smartlock-domain-models",
@@ -237,7 +326,7 @@
       "publishedAt": "2026-06-04T23:15:16.000Z",
       "summary": "バックエンドエンジニアの長田です。 2026年4月30日に、Nature はスマートロック製品である「Nature Lock」と、 その専用のスマートキーであり Apple の「探す」アプリにも対応した「Nature Key」を発売しました。 nature.global nature.global また、5月19日には iOS のショートカットアプリなどの Nature Home アプリ...",
       "thumbnail": "https://cdn.image.st-hatena.com/image/scale/d142ee21fbc16c3e147f80e66a24f65e5cba605b/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhandlename%2F20260604%2F20260604143211.png",
-      "bookmarkCount": 24
+      "bookmarkCount": 41
     },
     {
       "id": "hatena-https://atmarkit.itmedia.co.jp/ait/articles/2606/05/news010.html",
@@ -247,7 +336,7 @@
       "publishedAt": "2026-06-04T22:38:32.000Z",
       "summary": "ウィジェットや診断サービスを完全に「不活化」して無駄なリソース消費をなくす Windows 11は、設定画面から機能を「オフ」や「非表示」に切り替えても、バックグラウンドで関連プロセスが動作し続け、システムリソースを消費しているケースが少なくない。本Tech TIPSでは、ウィジェットや診断サービスなど、裏でリソー...",
       "thumbnail": "https://image.itmedia.co.jp/ait/articles/2606/05/cover_news010.jpg",
-      "bookmarkCount": 53
+      "bookmarkCount": 118
     },
     {
       "id": "hatena-https://note.com/naoya_tech/n/ne7c83d38fc72",
@@ -257,24 +346,23 @@
       "publishedAt": "2026-06-04T15:42:17.000Z",
       "summary": "今回はJetBrainsが公開した、Zig言語の作者アンドリュー・ケリー（Andrew Kelley）氏へのロングインタビューを取り上げます。 アンドリュー氏は2018年に勤めていた会社を辞め、プログラミング言語Zigの開発に専念してきた人物です。8年が経った今、ZigはGhosttyやTigerBeetle、さらにはUberのクロスコンパイルなどを支え...",
       "thumbnail": "https://assets.st-note.com/production/uploads/images/281980227/rectangle_large_type_2_745b38712a0c06468e18735ac12cf4f4.jpeg?fit=bounds&quality=85&width=1280",
-      "bookmarkCount": 176
+      "bookmarkCount": 182
     },
     {
-      "id": "x-sample-1",
+      "id": "x-2062142227829473451",
       "source": "x",
-      "title": "（サンプル）新しいAIモデルを発表しました。推論能力が大幅に向上し、長文コンテキストの理解が改善されています。",
-      "url": "https://x.com/OpenAI",
-      "publishedAt": "2026-06-03T08:30:00.000Z",
-      "author": "@OpenAI"
+      "title": "satory074さんの感想・レビュー『エフォートレス思考 努力を最小化して成果を最大化する』 #ブクログ https://t.co/w0jvtG66bK #ブクログ\n\n読み終わった\n2026年22冊目",
+      "url": "https://x.com/satory074/status/2062142227829473451",
+      "publishedAt": "2026-06-03T11:59:54.000Z",
+      "author": "@satory074"
     },
     {
-      "id": "feedly-sample-1",
-      "source": "feedly",
-      "title": "（サンプル）大規模言語モデルの効率的な蒸留手法に関する研究",
-      "url": "https://example.com/article",
-      "publishedAt": "2026-06-03T07:15:00.000Z",
-      "summary": "本記事では、知識蒸留を用いて大規模モデルの性能を小型モデルに移す最新手法を解説します。推論コストを抑えつつ精度を維持するアプローチが注目されています。",
-      "author": "AI Research Blog"
+      "id": "x-2062141967916806489",
+      "source": "x",
+      "title": "satory074さんの感想・レビュー『謎の香りはパン屋から2』 #ブクログ https://t.co/h86S48Ju19 #ブクログ\n\n読み終わった\n2026年21冊目",
+      "url": "https://x.com/satory074/status/2062141967916806489",
+      "publishedAt": "2026-06-03T11:58:52.000Z",
+      "author": "@satory074"
     },
     {
       "id": "hatena-https://zenn.dev/ttaniguchi/articles/instant-question-html-notes",
@@ -284,7 +372,256 @@
       "publishedAt": "2026-06-02T06:17:40.000Z",
       "summary": "はじめに 最近、スマホのChatGPTアプリからCodex経由で パソコンを操作できる ようになりました。 これを使って始めたのが、 「技術ノート」 の作成。 メモる速度で記事化する という作業。 疑問が浮かんだその瞬間、Codexに指示して記事化を始めるようになって、学習体験がすごく良くなりました。 移動中に音声入力で「...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--5oigtSKz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25A7%25BB%25E5%258B%2595%25E4%25B8%25AD%25E3%2581%25A7%25E3%2582%2582%25E5%25B0%25B1%25E5%25AF%259D%25E5%2589%258D%25E3%2581%25A7%25E3%2582%2582%25E3%2580%2581Codex%25E3%2581%25A8%25E8%2582%25B2%25E3%2581%25A6%25E3%2582%258B%25E3%2580%258C%25E6%258A%2580%25E8%25A1%2593%25E3%2583%258E%25E3%2583%25BC%25E3%2583%2588%25E3%2580%258D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ttaniguchi%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVjMGYxMTNiMTYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 37
+      "bookmarkCount": 43
+    },
+    {
+      "id": "x-2060029208676741536",
+      "source": "x",
+      "title": "大学ジャーナリスト",
+      "url": "https://x.com/satory074/status/2060029208676741536",
+      "publishedAt": "2026-05-28T16:03:31.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2060019355497488577",
+      "source": "x",
+      "title": "更新した；；",
+      "url": "https://x.com/satory074/status/2060019355497488577",
+      "publishedAt": "2026-05-28T15:24:22.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2060015656763044038",
+      "source": "x",
+      "title": "落ちる人誰もいなかったよ...",
+      "url": "https://x.com/satory074/status/2060015656763044038",
+      "publishedAt": "2026-05-28T15:09:40.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2060015494258938321",
+      "source": "x",
+      "title": "きなりがいない今、たくとかけいとか悩みまくった",
+      "url": "https://x.com/satory074/status/2060015494258938321",
+      "publishedAt": "2026-05-28T15:09:01.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2060014930112512417",
+      "source": "x",
+      "title": "https://t.co/eA7NolZwei\n\n#PRODUCE101JAPAN新世界\n#日プ新世界\n#101SHINSEKAI",
+      "url": "https://x.com/satory074/status/2060014930112512417",
+      "publishedAt": "2026-05-28T15:06:47.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2059632816430911703",
+      "source": "x",
+      "title": "艦これ13周年...?",
+      "url": "https://x.com/satory074/status/2059632816430911703",
+      "publishedAt": "2026-05-27T13:48:24.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2059598282943537236",
+      "source": "x",
+      "title": "https://t.co/i1SFpogspl",
+      "url": "https://x.com/satory074/status/2059598282943537236",
+      "publishedAt": "2026-05-27T11:31:10.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2059598026801614974",
+      "source": "x",
+      "title": "好きと好きのコラボで良かった\n\n【ヘブバン ✕ ペルソナ５ ザ・ロイヤル コラボ開催中！】期間限定ストーリーイベント「Operation Takanawa Mementos ～Wake Your Heart～」をクリアしました！\n\n▼ログインはこちら\nhttps://t.c…",
+      "url": "https://x.com/satory074/status/2059598026801614974",
+      "publishedAt": "2026-05-27T11:30:09.000Z",
+      "summary": "好きと好きのコラボで良かった\n\n【ヘブバン ✕ ペルソナ５ ザ・ロイヤル コラボ開催中！】期間限定ストーリーイベント「Operation Takanawa Mementos ～Wake Your Heart～」をクリアしました！\n\n▼ログインはこちら\nhttps://t.co/g6R656wtZu\n\n#ヘブバン #ヘブバンペルソナ５ザロイヤルコラボ",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2059593459716255754",
+      "source": "x",
+      "title": "指定した日付の\n・雨だった日数\n・気温の分布\n・風速の分布\nを過去のデータから表示する\n（結婚式とかお出かけとかのイベントの参考向け）\nhttps://t.co/ayAKYYDtly\n\nXで見た気がしたので",
+      "url": "https://x.com/satory074/status/2059593459716255754",
+      "publishedAt": "2026-05-27T11:12:00.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2059592194168877547",
+      "source": "x",
+      "title": "いろんな占いを一度にやるやつ\nhttps://t.co/0QsKLIA2qm\n\n細木数子のネフリを観たので",
+      "url": "https://x.com/satory074/status/2059592194168877547",
+      "publishedAt": "2026-05-27T11:06:59.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2059591669306343548",
+      "source": "x",
+      "title": "点字を勉強するやつ\nhttps://t.co/tIC7qFJmHU\n\n点字覚えてみたいなと思ったので",
+      "url": "https://x.com/satory074/status/2059591669306343548",
+      "publishedAt": "2026-05-27T11:04:53.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2059591453937197375",
+      "source": "x",
+      "title": "Claude Codeでなにもデプロイしてないなと思ったので、ちっちゃくてもいいからアプリを作ることを目標に何個か作った",
+      "url": "https://x.com/satory074/status/2059591453937197375",
+      "publishedAt": "2026-05-27T11:04:02.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2059042526246617576",
+      "source": "x",
+      "title": "細かいところが全然雑だけどいったん作った\n\n過去シリーズの順位を確認したり比較したりしたくて作った\n\nhttps://t.co/ZqqSaRRKAo",
+      "url": "https://x.com/satory074/status/2059042526246617576",
+      "publishedAt": "2026-05-25T22:42:48.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2058772023250412008",
+      "source": "x",
+      "title": "また1pick辞退した...😭😭😭",
+      "url": "https://x.com/satory074/status/2058772023250412008",
+      "publishedAt": "2026-05-25T04:47:55.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2058693790106615815",
+      "source": "x",
+      "title": "『こうやって頭のなかを言語化する。』 荒木俊哉 #ブクログ https://t.co/HNafcCgs8M #ブクログ\n\n読んだ\n2026年20冊目",
+      "url": "https://x.com/satory074/status/2058693790106615815",
+      "publishedAt": "2026-05-24T23:37:02.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2057244536594969023",
+      "source": "x",
+      "title": "satory074さんの感想・レビュー『考えてはいけないことリスト』 #ブクログ https://t.co/feTYPYgd83 #ブクログ\n\n読んだ\n2026年19冊目",
+      "url": "https://x.com/satory074/status/2057244536594969023",
+      "publishedAt": "2026-05-20T23:38:13.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2056678094828970441",
+      "source": "x",
+      "title": "『熟柿』 佐藤正午 #ブクログ https://t.co/UEHgJbfzhq #ブクログ\n\n読んだ\n2026年18冊目",
+      "url": "https://x.com/satory074/status/2056678094828970441",
+      "publishedAt": "2026-05-19T10:07:23.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2056168086865363261",
+      "source": "x",
+      "title": "『ユダヤの商法(新装版) 世界経済を動かす』 藤田田 #ブクログ https://t.co/lqxsCqvL5Z #ブクログ\n\n読んだ\n2026年17冊目",
+      "url": "https://x.com/satory074/status/2056168086865363261",
+      "publishedAt": "2026-05-18T00:20:48.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2055667595916005826",
+      "source": "x",
+      "title": "https://t.co/qhqUDCyekd\n\n#PRODUCE101JAPAN新世界\n#日プ新世界\n#101SHINSEKAI",
+      "url": "https://x.com/satory074/status/2055667595916005826",
+      "publishedAt": "2026-05-16T15:12:01.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2055604758522810680",
+      "source": "x",
+      "title": "映画『コンフィデンスマンJP ロマンス編』 https://t.co/3XmFBzQKyt #Filmarks #映画 #コンフィデンスマンJPロマンス編",
+      "url": "https://x.com/satory074/status/2055604758522810680",
+      "publishedAt": "2026-05-16T11:02:20.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2055575989439398132",
+      "source": "x",
+      "title": "ドラマ『コンフィデンスマンJP 運勢編』 https://t.co/1baY8xfFwh #Filmarks #ドラマ #コンフィデンスマンJP運勢編",
+      "url": "https://x.com/satory074/status/2055575989439398132",
+      "publishedAt": "2026-05-16T09:08:01.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2055545135212191976",
+      "source": "x",
+      "title": "ドラマ『コンフィデンスマンJP』★★★★★5.0点。  https://t.co/IseAhd8Wht #Filmarks #ドラマ #コンフィデンスマンJP",
+      "url": "https://x.com/satory074/status/2055545135212191976",
+      "publishedAt": "2026-05-16T07:05:25.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2054919674551513129",
+      "source": "x",
+      "title": "キナリノネコミタカッタ...",
+      "url": "https://x.com/satory074/status/2054919674551513129",
+      "publishedAt": "2026-05-14T13:40:03.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2054698357877289407",
+      "source": "x",
+      "title": "https://t.co/YV4Qrxzzto",
+      "url": "https://x.com/satory074/status/2054698357877289407",
+      "publishedAt": "2026-05-13T23:00:37.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2054334937801875557",
+      "source": "x",
+      "title": "初回全話無料のマンガアプリ「少年ジャンプ＋」で「[第17話]震える右手」を読んでます！ #ジャンププラス #震える右手",
+      "url": "https://x.com/satory074/status/2054334937801875557",
+      "publishedAt": "2026-05-12T22:56:31.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2053627086255087947",
+      "source": "x",
+      "title": "『「今日も仕事が終わらなかった」はなぜ起きるのか? 仕事が3倍速くなる計画・実行・中断の技術』 萩原雅裕 #ブクログ https://t.co/2unelHzw6p #ブクログ\n\n読んだ\n2026年16冊目",
+      "url": "https://x.com/satory074/status/2053627086255087947",
+      "publishedAt": "2026-05-11T00:03:46.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2053441866654462299",
+      "source": "x",
+      "title": "映画『花束みたいな恋をした』 https://t.co/vszUciGw6P #Filmarks #映画 #花束みたいな恋をした",
+      "url": "https://x.com/satory074/status/2053441866654462299",
+      "publishedAt": "2026-05-10T11:47:46.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2053440385511542845",
+      "source": "x",
+      "title": "映画『片思い世界』 https://t.co/h8q3xRoA0w #Filmarks #映画 #片思い世界",
+      "url": "https://x.com/satory074/status/2053440385511542845",
+      "publishedAt": "2026-05-10T11:41:53.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2053414085002432876",
+      "source": "x",
+      "title": "ドラマ『マイファミリー』★★★★4.5点。  https://t.co/fvBxlsYj82 #Filmarks #ドラマ #マイファミリー",
+      "url": "https://x.com/satory074/status/2053414085002432876",
+      "publishedAt": "2026-05-10T09:57:23.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2053413947286634581",
+      "source": "x",
+      "title": "ドラマ『グレイトギフト』 https://t.co/d258MRRGHO #Filmarks #ドラマ #グレイトギフト",
+      "url": "https://x.com/satory074/status/2053413947286634581",
+      "publishedAt": "2026-05-10T09:56:50.000Z",
+      "author": "@satory074"
+    },
+    {
+      "id": "x-2053077818142265591",
+      "source": "x",
+      "title": "KCONいいなあ",
+      "url": "https://x.com/satory074/status/2053077818142265591",
+      "publishedAt": "2026-05-09T11:41:10.000Z",
+      "author": "@satory074"
     }
   ],
   "state": {}

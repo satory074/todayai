@@ -44,24 +44,23 @@ npm run build          # 本番ビルド（型チェック込み）
 
 > Feedly のアクセストークンは **30日で失効**します。失効したら再発行して `FEEDLY_API_TOKEN` を更新してください。
 
-### X(Twitter) API について
+### X(Twitter) について
 
-他人アカウントの読み取りは **Non-owned Read（$0.005/件）** です。本リポジトリは `since_id` による
-**増分取得**で「同じ投稿の読み直し課金」を回避し、実コストを新着分のみに抑えています
-（前回最新ID `state.xLastSeenId` を `feed.json` に保存）。
+X API は**叩きません**。basecamp が公開している `x-tweets.json`
+（`https://storage.googleapis.com/basecamp-feeds/x-tweets.json`）を読むだけです。これにより:
 
-OAuth2 のリフレッシュトークンは X 側で毎回ローテーションします。CI では `GH_PAT` を使って
-`gh secret set` で `X_REFRESH_TOKEN` を自動更新します（basecamp と同方式）。
+- X API・トークン・追加課金が**不要**
+- basecamp の X feed とトークンローテーションが**競合しない**
+
+`feeds.config.ts` の `x.categories` で `post` / `like` / `bookmark` を選べます（既定は `post` のみ）。
 
 ## デプロイ（初回セットアップ）
 
 1. このディレクトリを git 初期化し、GitHub に `todayai` リポジトリを作成して push
 2. リポジトリ **Settings → Pages → Build and deployment → Source: GitHub Actions**
-3. **Settings → Secrets and variables → Actions** に登録:
-   - `X_CLIENT_ID` / `X_CLIENT_SECRET` / `X_REFRESH_TOKEN`（basecamp と同じ値で可）
-   - `FEEDLY_API_TOKEN`
-   - `GH_PAT`（`X_REFRESH_TOKEN` を書き戻すための PAT。`repo`/`secrets` 権限）
-4. `feeds.config.ts` に `x.username` と `feedly.streamId` を記入してコミット
+3. **Settings → Secrets and variables → Actions** に登録（**Feedly のみ**）:
+   - `FEEDLY_API_TOKEN` … Feedly 開発者トークン（X は公開JSONを読むため不要）
+4. `feeds.config.ts` の `feedly.streamId` を確認（X は設定済み）
 5. **Actions** タブ → 「Update feeds & Deploy」→ **Run workflow**（`workflow_dispatch`）で初回実行
 
 以降は6時間ごとに自動更新・デプロイされます。

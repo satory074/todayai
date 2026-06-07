@@ -53,23 +53,19 @@ async function run(): Promise<void> {
   const collected: FeedItem[] = [];
   const errors: string[] = [];
 
-  // ---- X ----
+  // ---- X (basecamp 公開JSONを読む) ----
   if (feedsConfig.x.disabled) {
     console.log("[x] disabled");
     collected.push(...cachedFor(cache, "x"));
   } else {
     try {
-      const r = await fetchX({
+      const items = await fetchX({
+        sourceUrl: feedsConfig.x.sourceUrl,
         username: feedsConfig.x.username,
-        maxResults: feedsConfig.x.maxResults,
-        sinceId: state.xLastSeenId,
-        cachedUserId: state.xUserId,
+        categories: feedsConfig.x.categories,
       });
-      state.xUserId = r.userId ?? state.xUserId;
-      // since_id 増分なので、既存キャッシュ + 新着 をマージ
-      collected.push(...cachedFor(cache, "x"), ...r.items);
-      if (r.newestId) state.xLastSeenId = r.newestId;
-      console.log(`[x] +${r.items.length} new (sinceId=${state.xLastSeenId ?? "-"})`);
+      collected.push(...items);
+      console.log(`[x] ${items.length} items (${feedsConfig.x.categories.join("/")})`);
     } catch (e) {
       const msg = (e as Error).message;
       errors.push(`x: ${msg}`);
