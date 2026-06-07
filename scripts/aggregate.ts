@@ -109,31 +109,23 @@ async function run(): Promise<void> {
     collected.push(...xItems);
   }
 
-  // ---- Feedly ----
+  // ---- Feedly（フォルダ相当の RSS を直接集約。トークン不要）----
   if (feedsConfig.feedly.disabled) {
     console.log("[feedly] disabled");
     collected.push(...cachedFor(cache, "feedly"));
   } else {
-    const token = process.env.FEEDLY_API_TOKEN;
-    if (!token) {
-      errors.push("feedly: FEEDLY_API_TOKEN 未設定");
-      console.error("[feedly] FEEDLY_API_TOKEN 未設定（前回キャッシュを維持）");
+    try {
+      const items = await fetchFeedly({
+        rssUrls: feedsConfig.feedly.rssUrls,
+        perFeedLimit: feedsConfig.feedly.perFeedLimit,
+      });
+      collected.push(...items);
+      console.log(`[feedly] ${items.length} items (${feedsConfig.feedly.rssUrls.length} feeds)`);
+    } catch (e) {
+      const msg = (e as Error).message;
+      errors.push(`feedly: ${msg}`);
+      console.error("[feedly] 取得失敗（前回キャッシュを維持）:", msg);
       collected.push(...cachedFor(cache, "feedly"));
-    } else {
-      try {
-        const items = await fetchFeedly({
-          streamId: feedsConfig.feedly.streamId,
-          count: feedsConfig.feedly.count,
-          token,
-        });
-        collected.push(...items);
-        console.log(`[feedly] ${items.length} items`);
-      } catch (e) {
-        const msg = (e as Error).message;
-        errors.push(`feedly: ${msg}`);
-        console.error("[feedly] 取得失敗（前回キャッシュを維持）:", msg);
-        collected.push(...cachedFor(cache, "feedly"));
-      }
     }
   }
 

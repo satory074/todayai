@@ -2,12 +2,12 @@
  * フィード情報源の設定。
  *
  * ★ 実運用前に以下を埋めること:
- *   - x.username       : 取得したい X(Twitter) アカウントのユーザー名（@ なし）
- *   - feedly.streamId  : Feedly カテゴリ(フォルダ)の streamId
- *                        形式: "user/<userId>/category/<categoryName>"
- *                        取得方法は README.md 参照
+ *   - x.username     : 取得したい X(Twitter) アカウントのユーザー名（@ なし）
+ *   - feedly.rssUrls : 集約したい AI 関連 RSS フィードの URL 一覧
  *
- * トークン類（X_*, FEEDLY_API_TOKEN）は .env / GitHub Secrets に置く（このファイルには書かない）。
+ * トークン類（X_*）は .env / GitHub Secrets に置く（このファイルには書かない）。
+ * Feedly は API トークンが現在 Enterprise プラン限定のため使わず、フォルダ相当の
+ * 各 RSS を直接取得する方式に変更（トークン不要）。
  */
 
 export type XCategory = "post" | "like" | "bookmark";
@@ -36,10 +36,15 @@ export interface FeedsConfig {
     disabled?: boolean;
   };
   feedly: {
-    /** "user/<userId>/category/<categoryName>" 形式の streamId */
-    streamId: string;
-    /** 1回に取得する記事数 */
-    count: number;
+    /**
+     * 直接取得する RSS フィードの URL 一覧（Feedly API の代替）。
+     * Feedly の開発者トークンは現在 Enterprise プラン限定で個人利用できないため、
+     * Feedly フォルダに入れていた各 RSS を rss-parser で直接取得する。
+     * トークン・課金・失効なし。表示は従来どおり「Feedly」バッジ。
+     */
+    rssUrls: string[];
+    /** 1フィードあたり取り込む最大件数（1ソースの占有を防ぐ） */
+    perFeedLimit: number;
     disabled?: boolean;
   };
   hatena: {
@@ -63,9 +68,18 @@ export const feedsConfig: FeedsConfig = {
     disabled: false,
   },
   feedly: {
-    streamId:
-      "user/25e9a004-74fc-4204-9c66-0e1687f69f73/category/fcda305b-0f50-44d9-a1da-689b3d1fe43a",
-    count: 30,
+    // AI 関連 RSS（Feedly フォルダ相当）。@なしのトークン不要・課金不要・失効なし。
+    rssUrls: [
+      "https://rss.itmedia.co.jp/rss/2.0/aiplus.xml", // ITmedia AI＋
+      "https://www.techno-edge.net/rss20/index.rdf", // テクノエッジ TechnoEdge
+      "https://note.com/npaka/rss", // npaka（AI/LLM）
+      "https://ainow.ai/feed", // AINOW
+      "https://zenn.dev/topics/ai/feed", // Zenn AIトピック
+      "https://qiita.com/tags/ai/feed", // Qiita AIタグ
+      "https://tech.algomatic.jp/feed", // Algomatic Tech Blog
+      "https://www.publickey1.jp/atom.xml", // Publickey
+    ],
+    perFeedLimit: 15,
     disabled: false,
   },
   hatena: {
