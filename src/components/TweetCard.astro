@@ -1,0 +1,98 @@
+---
+import type { FeedItem } from "@/lib/feed";
+import { absoluteTime, avatarColor, avatarInitials, parseXAuthor } from "@/lib/feed";
+
+interface Props {
+  item: FeedItem;
+}
+
+const { item } = Astro.props;
+const author = parseXAuthor(item.author);
+const body = item.summary ?? item.title;
+const ts = absoluteTime(item.publishedAt);
+
+// アバター: ハンドルがあればイニシャル＋安定色、無ければ X ロゴのグレー丸
+const initialsSeed = author.handle ?? "";
+const initials = author.kind === "handle" ? avatarInitials(initialsSeed) : "";
+const avatarBg = author.kind === "handle" ? avatarColor(initialsSeed) : "var(--color-tweet-border)";
+---
+
+<article
+  data-source="x"
+  class="group relative rounded-xl border border-[var(--color-tweet-border)] bg-[var(--color-tweet-bg)] p-3.5 text-[var(--color-tweet-text)] transition-colors duration-[var(--duration-base)] hover:bg-[var(--color-tweet-bg-hover)]"
+>
+  <a
+    href={item.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="absolute inset-0 z-0 rounded-xl"
+    aria-label={item.title}></a>
+
+  <!-- ヘッダー: アバター | 名前/ハンドル | X ロゴ -->
+  <div class="relative z-10 flex items-start gap-3">
+    <div
+      class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-[15px] font-bold text-white"
+      style={`background:${avatarBg}`}
+      aria-hidden="true"
+    >
+      {
+        author.kind === "handle" ? (
+          initials
+        ) : (
+          <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 text-[var(--color-tweet-text)]">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+          </svg>
+        )
+      }
+    </div>
+
+    <div class="min-w-0 flex-1 leading-tight">
+      {
+        author.kind === "handle" ? (
+          <>
+            <div class="truncate text-[15px] font-bold text-[var(--color-tweet-text)]">
+              {author.handle}
+            </div>
+            <div class="truncate text-[13px] text-[var(--color-tweet-muted)]">@{author.handle}</div>
+          </>
+        ) : (
+          <div class="truncate pt-1 text-[13px] text-[var(--color-tweet-muted)]">{author.label}</div>
+        )
+      }
+    </div>
+
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      class="ml-1 h-[22px] w-[22px] shrink-0 text-[var(--color-tweet-text)]"
+      aria-label="X"
+    >
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+    </svg>
+  </div>
+
+  <!-- 本文 -->
+  <p
+    class="relative z-10 mt-2.5 line-clamp-[8] whitespace-pre-wrap text-[15px] leading-relaxed text-[var(--color-tweet-text)]"
+  >
+    {body}
+  </p>
+
+  <!-- メディア（外部アカウントのみサムネあり） -->
+  {
+    item.thumbnail && (
+      <div class="relative z-10 mt-3 overflow-hidden rounded-xl border border-[var(--color-tweet-border)] bg-[var(--color-tweet-bg-hover)]">
+        <img
+          src={item.thumbnail}
+          alt=""
+          loading="lazy"
+          class="aspect-video w-full object-cover"
+          onerror="this.parentElement.style.display='none'"
+        />
+      </div>
+    )
+  }
+
+  <!-- 絶対時刻 -->
+  {ts && <div class="relative z-10 mt-2.5 text-[13px] text-[var(--color-tweet-muted)]">{ts}</div>}
+</article>

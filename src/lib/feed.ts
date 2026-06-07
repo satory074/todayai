@@ -69,6 +69,56 @@ export function relativeTime(iso: string, now: Date = new Date()): string {
   });
 }
 
+/** 絶対時刻（X 埋め込み風"14:32 · 2026年6月7日"）。 */
+export function absoluteTime(iso: string): string {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return "";
+  const time = d.toLocaleTimeString("ja-JP", { hour: "2-digit", minute: "2-digit", hour12: false });
+  const date = d.toLocaleDateString("ja-JP", { year: "numeric", month: "long", day: "numeric" });
+  return `${time} · ${date}`;
+}
+
+// ===== X 由来アイテムのアバター/著者表示ヘルパー =====
+
+/** X の author は "@handle"（自投稿・外部アカウント）か カテゴリラベル（いいね/ブックマーク/投稿）。 */
+export interface XAuthor {
+  kind: "handle" | "category";
+  /** kind="handle" のとき "@" を除いたハンドル名 */
+  handle?: string;
+  /** kind="category" のときの表示ラベル（"いいねした投稿" 等） */
+  label?: string;
+}
+
+const CATEGORY_DISPLAY: Record<string, string> = {
+  いいね: "いいねした投稿",
+  ブックマーク: "ブックマークした投稿",
+  投稿: "投稿",
+};
+
+export function parseXAuthor(author?: string): XAuthor {
+  const a = (author ?? "").trim();
+  if (a.startsWith("@")) return { kind: "handle", handle: a.slice(1) };
+  return { kind: "category", label: CATEGORY_DISPLAY[a] ?? a ?? "投稿" };
+}
+
+/** seed 文字列から表示用イニシャル（日本語1字 / 英数2字）。 */
+export function avatarInitials(seed: string): string {
+  const s = seed.replace(/^@+/, "").replace(/[^\p{L}\p{N}]/gu, "");
+  if (!s) return "X";
+  // 英数なら2字、それ以外（日本語等）は先頭1字
+  if (/^[A-Za-z0-9]/.test(s)) return s.slice(0, 2).toUpperCase();
+  return [...s][0];
+}
+
+/** seed 文字列をハッシュした安定色（HSL）。同じハンドルは常に同じ色。 */
+export function avatarColor(seed: string): string {
+  let hash = 0;
+  for (let i = 0; i < seed.length; i++) {
+    hash = (hash * 31 + seed.charCodeAt(i)) % 360;
+  }
+  return `hsl(${hash} 55% 45%)`;
+}
+
 /** 日付ヘッダ用のキー（"2026-06-03"）。 */
 export function dayKey(iso: string): string {
   return new Date(iso).toISOString().slice(0, 10);

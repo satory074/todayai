@@ -28,6 +28,14 @@
   --color-hatena: #3a9ad9;
   --color-hatena-bg: rgba(58, 154, 217, 0.12);
 
+  /* X ツイート風カード（公式埋め込み準拠の配色） */
+  --color-tweet-bg: #15202b;
+  --color-tweet-bg-hover: #1e2732;
+  --color-tweet-border: #38444d;
+  --color-tweet-text: #f7f9f9;
+  --color-tweet-muted: #8b98a5;
+  --color-tweet-blue: #1d9bf0;
+
   /* Typography */
   --font-sans: "Inter", "Noto Sans JP", system-ui, -apple-system, "Segoe UI", sans-serif;
 

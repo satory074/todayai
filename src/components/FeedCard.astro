@@ -1,6 +1,7 @@
 ---
 import type { FeedItem } from "@/lib/feed";
 import { SOURCES, relativeTime } from "@/lib/feed";
+import TweetCard from "./TweetCard.astro";
 
 interface Props {
   item: FeedItem;
@@ -11,7 +12,11 @@ const meta = SOURCES.find((s) => s.key === item.source)!;
 const rel = relativeTime(item.publishedAt);
 ---
 
-<article
+{
+  item.source === "x" ? (
+    <TweetCard item={item} />
+  ) : (
+    <article
   data-source={item.source}
   class="group relative rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-colors duration-[var(--duration-base)] hover:border-[var(--color-border-strong)] hover:bg-[var(--color-card-hover)]"
 >
@@ -81,5 +86,7 @@ const rel = relativeTime(item.publishedAt);
         </div>
       )
     }
-  </div>
-</article>
+    </div>
+    </article>
+  )
+}
