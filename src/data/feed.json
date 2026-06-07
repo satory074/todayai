@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-07T04:18:08.042Z",
+  "updatedAt": "2026-06-07T04:20:21.840Z",
   "items": [
     {
       "id": "hatena-https://anond.hatelabo.jp/20260607065550",
@@ -9,7 +9,7 @@
       "publishedAt": "2026-06-06T21:56:57.000Z",
       "summary": "最近、外部URLの投稿後にアカウントが凍結されたという報告を見かける機会が増えた。 Grokに質問しても、「6月初旬頃から関連する報告が増えている」「自動検知システムが関係している可能性がある」といった趣旨の回答が返ってくる。 もちろん実際の凍結理由は個別のケースごとに異なるだろう。しかし、ニュース記事や...",
       "thumbnail": "https://anond.hatelabo.jp/assets/images/og-image-1500.gif",
-      "bookmarkCount": 43
+      "bookmarkCount": 46
     },
     {
       "id": "hatena-https://zenn.dev/tokium_dev/articles/d806c7ad4fd458",
@@ -29,7 +29,7 @@
       "publishedAt": "2026-06-06T13:39:59.000Z",
       "summary": "はじめに 本題でいう「頭が良くなる」「頭が悪くなる」は、先天的な知能そのものが上下するという意味ではありません。問題になっているのは、AIを使うことで 判断主権 を自分の手元に残す人と、外へ渡してしまう人の差が拡大することです。2025年のMicrosoft Researchの調査でも、生成AIへの信頼が高いほど批判的思考は...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--xvK9c6Hr--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%25AA%25E3%2581%259C%25E3%2580%2581AI%25E3%2581%25AF%25E9%25A0%25AD%25E3%2581%258C%25E8%2589%25AF%25E3%2581%2584%25E4%25BA%25BA%25E3%2581%258C%25E4%25BD%25BF%25E3%2581%2586%25E3%2581%25A8%25E3%2582%2588%25E3%2582%258A%25E9%25A0%25AD%25E3%2581%258C%25E8%2589%25AF%25E3%2581%258F%25E3%2581%25AA%25E3%2582%258B%25E3%2581%25AE%25E3%2581%25AB%25E3%2580%2581%25E9%25A0%25AD%25E3%2581%258C%25E6%2582%25AA%25E3%2581%2584%25E4%25BA%25BA%25E3%2581%258C%25E4%25BD%25BF%25E3%2581%2586%25E3%2581%25A8%25E3%2582%2588%25E3%2582%258A%25E9%25A0%25AD%25E3%2581%258C%25E6%2582%25AA%25E3%2581%258F%25E3%2581%25AA%25E3%2582%258B%25E3%2581%25AE%25E3%2581%258B%25EF%25BC%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:pdfractal%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2FlODUxNjI3MGYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 377
+      "bookmarkCount": 378
     },
     {
       "id": "hatena-https://speakerdeck.com/kajitack/why-algebraic-data-type",
@@ -170,6 +170,16 @@
       "bookmarkCount": 20
     },
     {
+      "id": "hatena-https://gigazine.net/news/20260606-your-ai-slop-bores-me/",
+      "source": "hatena",
+      "title": "AIになりきって他人の質問に回答できるチャットボット「Your AI Slop Bores Me」",
+      "url": "https://gigazine.net/news/20260606-your-ai-slop-bores-me/",
+      "publishedAt": "2026-06-06T00:03:16.000Z",
+      "summary": "「Your AI Slop Bores Me(お前の低品質なAI量産コンテンツにはうんざりだ)」は、人間として質問したり、AIのふりをして質問に回答したりできるAIチャットボット風のサービスです。実際に遊んでみました。 your ai slop bores me https://youraislopbores.me/ 上記のサイトにアクセスしたら、13歳以上であることの確認と...",
+      "thumbnail": "https://i.gzn.jp/img/2026/06/06/your-ai-slop-bores-me/00.png",
+      "bookmarkCount": 24
+    },
+    {
       "id": "hatena-https://date-fns.org/you-dont-need-date-fns",
       "source": "hatena",
       "title": "Modern JavaScript Date Utility Library",
@@ -233,7 +243,7 @@
       "publishedAt": "2026-06-05T08:10:16.000Z",
       "summary": "米国企業がOpenAIやAnthropicの高額なAIモデルから、安価な中国製モデルへ乗り換えている実態が、米決済プラットフォーム「Ramp」の支出データから明らかになった。同社が6月3日（現地時間）に公開した月次調査結果「Top SaaS Vendors on Ramp」で、中国DeepSeekが急成長部門の首位に入った。 この調査は5万社超の法人カ...",
       "thumbnail": "https://www.itmedia.co.jp/aiplus/article/ogp/2606/05/2000000060/10000333/2048",
-      "bookmarkCount": 47
+      "bookmarkCount": 48
     },
     {
       "id": "hatena-https://www.dtmstation.com/archives/77741.html",
@@ -281,7 +291,7 @@
       "publishedAt": "2026-06-04T22:38:32.000Z",
       "summary": "ウィジェットや診断サービスを完全に「不活化」して無駄なリソース消費をなくす Windows 11は、設定画面から機能を「オフ」や「非表示」に切り替えても、バックグラウンドで関連プロセスが動作し続け、システムリソースを消費しているケースが少なくない。本Tech TIPSでは、ウィジェットや診断サービスなど、裏でリソー...",
       "thumbnail": "https://image.itmedia.co.jp/ait/articles/2606/05/cover_news010.jpg",
-      "bookmarkCount": 126
+      "bookmarkCount": 127
     },
     {
       "id": "x-2062653124326863077",
@@ -406,16 +416,6 @@
       "url": "https://x.com/i/status/2061765570161508782",
       "publishedAt": "2026-06-02T11:03:12.000Z",
       "author": "ブックマーク"
-    },
-    {
-      "id": "hatena-https://zenn.dev/ttaniguchi/articles/instant-question-html-notes",
-      "source": "hatena",
-      "title": "移動中でも就寝前でも、Codexと育てる「技術ノート」",
-      "url": "https://zenn.dev/ttaniguchi/articles/instant-question-html-notes",
-      "publishedAt": "2026-06-02T06:17:40.000Z",
-      "summary": "はじめに 最近、スマホのChatGPTアプリからCodex経由で パソコンを操作できる ようになりました。 これを使って始めたのが、 「技術ノート」 の作成。 メモる速度で記事化する という作業。 疑問が浮かんだその瞬間、Codexに指示して記事化を始めるようになって、学習体験がすごく良くなりました。 移動中に音声入力で「...",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--5oigtSKz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25A7%25BB%25E5%258B%2595%25E4%25B8%25AD%25E3%2581%25A7%25E3%2582%2582%25E5%25B0%25B1%25E5%25AF%259D%25E5%2589%258D%25E3%2581%25A7%25E3%2582%2582%25E3%2580%2581Codex%25E3%2581%25A8%25E8%2582%25B2%25E3%2581%25A6%25E3%2582%258B%25E3%2580%258C%25E6%258A%2580%25E8%25A1%2593%25E3%2583%258E%25E3%2583%25BC%25E3%2583%2588%25E3%2580%258D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ttaniguchi%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVjMGYxMTNiMTYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 43
     },
     {
       "id": "x-2061382263766663514",
