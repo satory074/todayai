@@ -1,32 +1,180 @@
 {
-  "updatedAt": "2026-06-07T07:31:43.310Z",
+  "updatedAt": "2026-06-07T12:40:29.407Z",
   "items": [
     {
-      "id": "feedly-https://qiita.com/crowdy/items/5e5b8a74ab8112b632cc",
+      "id": "feedly-https://qiita.com/garogarooo000/items/7eb5a8b5d3b554dab0e0",
       "source": "feedly",
-      "title": "Meta が Instagram AI チャットボットで 2 万人のアカウントを奪われた理由 — 「AI が代行する認証」 の構造的欠陥",
-      "url": "https://qiita.com/crowdy/items/5e5b8a74ab8112b632cc",
-      "publishedAt": "2026-06-07T07:23:44.000Z",
-      "summary": "本記事は個人ブログ crowdy.dev からの転載です。 Meta はチャットボットが 「意図どおり動いた」 と弁明した。しかし、パスワードリセットの流れに AI を挟み込む決定そのものが、弱い環を作ったのではないか。 導入 — 4 月から 6 月まで、静かに進...",
+      "title": "Slay the Spire 2のゲーム状態をLLMに渡してAI軍師を作った話",
+      "url": "https://qiita.com/garogarooo000/items/7eb5a8b5d3b554dab0e0",
+      "publishedAt": "2026-06-07T12:25:40.000Z",
+      "summary": "はじめに Slay the Spire 2を遊びながら、ふと思いました。 「これ、AIに手札や敵の情報を渡したら、どんな判断をするんだろう？」 ローグライクカードゲームは、毎ターン状況が変わります。 手札、エナジー、敵の行動、HP、デッキ、レリック、ポーション、イベント選...",
       "author": "AIタグが付けられた新着記事 - Qiita"
     },
     {
-      "id": "feedly-https://qiita.com/StreamSolty/items/b1e4a8a07716aeae5aa7",
+      "id": "feedly-https://qiita.com/AndyCornaro/items/712307e0963c2ae085cc",
       "source": "feedly",
-      "title": "Claude CodeにGit運用を任せる — 巨大コミットを防ぐコミット戦略の型",
-      "url": "https://qiita.com/StreamSolty/items/b1e4a8a07716aeae5aa7",
-      "publishedAt": "2026-06-07T07:12:05.000Z",
-      "summary": "Claude Codeに機能を一気に実装させたあと、コミットを任せると、だいたいこうなります。 git add -A && git commit -m \"fix\" で全部まとめて1コミット 1コミットの中にリファクタ・新機能・バグ修正・フォーマット変更が全部入っている ...",
+      "title": "フィードバック制御で、マニュアル最速ラインを超えた — ルールベースで 46秒→21秒（2.15倍）に詰めた話",
+      "url": "https://qiita.com/AndyCornaro/items/712307e0963c2ae085cc",
+      "publishedAt": "2026-06-07T11:44:39.000Z",
+      "summary": "前回（テーブルモード編）、私は自分のレース競技 aira で「オープンループ（指令の再生）ではレースに勝てない、フィードバック（クローズドループ）が必要だ」というところまでをデータで確かめました。 では、そのフィードバックで実際にどこまで行けるのか。今回はルールベース制御を...",
       "author": "AIタグが付けられた新着記事 - Qiita"
     },
     {
-      "id": "feedly-https://qiita.com/gorillagorilla/items/fce55d64995b6cf06e7a",
+      "id": "feedly-https://qiita.com/lumichy/items/d243184dcb54f80bfeda",
       "source": "feedly",
-      "title": "【初Kaggle】環境構築なし＆コードはAIにお任せ！1.5時間でタイタニックコンペを楽しんだ話",
-      "url": "https://qiita.com/gorillagorilla/items/fce55d64995b6cf06e7a",
-      "publishedAt": "2026-06-07T06:29:36.000Z",
-      "summary": "【Kaggle初心者】Pythonインストール不要！タイタニック号のデータ分析に初挑戦してみたレポ はじめに 仕事でデータ分析やAIに関わっており、Kaggleという存在も知ってはいました。 が、勉強モチベが高かった時期にアカウントだけ作成したものの、放置していた… 先...",
+      "title": "【完全無料】テキスト・画像・動画を網羅する最強マルチモーダルAI「Agnes 2.0」実測レビュー！APIも無期限無料",
+      "url": "https://qiita.com/lumichy/items/d243184dcb54f80bfeda",
+      "publishedAt": "2026-06-07T11:34:02.000Z",
+      "summary": "AIモデルの呼び出しコストに悩んでいませんか？今回は、無期限かつ完全無料で使えるオールマイティなAI大規模モデル「Agnes AI」をご紹介します。 Agnes AIのマルチモーダルモデルシリーズ「Agnes 2.0」のAPIが、正式にグローバルで無料開放されました。テキ...",
       "author": "AIタグが付けられた新着記事 - Qiita"
+    },
+    {
+      "id": "feedly-https://qiita.com/TaichiEndoh/items/0a2d5351b272fdf8b0fa",
+      "source": "feedly",
+      "title": "個人開発で worktree が 5 個になったので、AI に自動でタスク管理させる仕組みを作った話",
+      "url": "https://qiita.com/TaichiEndoh/items/0a2d5351b272fdf8b0fa",
+      "publishedAt": "2026-06-07T11:24:08.000Z",
+      "summary": "はじめに 個人で複数のサービスを並行開発しているうちに、Git worktree が 5 個 に増えました。 試験対策プラットフォーム 授業プラットフォーム 別の業務支援アプリ 投資/補助金関連の資料 実験用 それぞれで AI ペアプログラミング (Claude Co...",
+      "author": "AIタグが付けられた新着記事 - Qiita"
+    },
+    {
+      "id": "hatena-https://diary.shift-js.info/kimagure-08/",
+      "source": "hatena",
+      "title": "質感",
+      "url": "https://diary.shift-js.info/kimagure-08/",
+      "publishedAt": "2026-06-07T09:32:06.000Z",
+      "summary": "久々に手書き随想。未来の自分が振り返る用。 「質感」。 この頃は、以前に増して、ものごとの「質感」に意識が及ぶ。アルミのカトラリーはつめたく、自宅のホーロー鍋にはざらざら（あるいは、たまに落としそびれた油分の粘性）を。日々乗る総武線には東方・千葉駅の空気を。この春からの僕の相棒、MAZDA ROADSTER RFに...",
+      "thumbnail": "https://diary.shift-js.info/images/20260606/main.jpg",
+      "bookmarkCount": 6
+    },
+    {
+      "id": "feedly-https://note.com/npaka/n/n7710dbcf9810",
+      "source": "feedly",
+      "title": "Netlify でWebアプリを公開する",
+      "url": "https://note.com/npaka/n/n7710dbcf9810",
+      "publishedAt": "2026-06-07T09:26:23.000Z",
+      "summary": "NetlifyでWebアプリを公開してみたのでまとめました。 続きをみる",
+      "author": "npaka"
+    },
+    {
+      "id": "feedly-https://zenn.dev/enaiya/books/ai-era-information-intro",
+      "source": "feedly",
+      "title": "AI時代の情報入門",
+      "url": "https://zenn.dev/enaiya/books/ai-era-information-intro",
+      "publishedAt": "2026-06-07T09:21:33.000Z",
+      "summary": "AIにアプリを作らせる時代に、人間が理解しておきたい実行環境、データ、ネットワーク、クラウド、セキュリティの基礎を整理する本です。",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--xEFeTHzD--/g_center%2Ch_280%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYm9va19jb3Zlci83MzdhZmJmYTRjLnBuZw==%2Cw_200/v1627283836/default/og-base-book_yz4z02.jpg?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "feedly-https://zenn.dev/kawacodejp/articles/26886ab2e8b86e",
+      "source": "feedly",
+      "title": "「日本語で書いて、英語で動かす」非英語圏のエンジニアが背負う30%の生産性ハンディキャップを技術で殴る方法",
+      "url": "https://zenn.dev/kawacodejp/articles/26886ab2e8b86e",
+      "publishedAt": "2026-06-07T09:12:26.000Z",
+      "summary": "こんにちは！Kawa Code開発チームです。 これまで、AIネイティブ開発における「意図（Why）」の重要性や、企業の機密を守るセキュリティアーキテクチャについてお話ししてきました。シリーズ第4本目となる今回は、私たち日本のエンジニア、そして非英語圏のすべての開発者が直面している「言語の壁」という目に見えない巨大なディスアドバンテージについて、本音で議論させてください。 「最新のAIツール…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--DrQrzRjd--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E6%2597%25A5%25E6%259C%25AC%25E8%25AA%259E%25E3%2581%25A7%25E6%259B%25B8%25E3%2581%2584%25E3%2581%25A6%25E3%2580%2581%25E8%258B%25B1%25E8%25AA%259E%25E3%2581%25A7%25E5%258B%2595%25E3%2581%258B%25E3%2581%2599%25E3%2580%258D%25E9%259D%259E%25E8%258B%25B1%25E8%25AA%259E%25E5%259C%258F%25E3%2581%25AE%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%25E3%2581%258C%25E8%2583%258C%25E8%25B2%25A0%25E3%2581%258630%2525%25E3%2581%25AE%25E7%2594%259F%25E7%2594%25A3%25E6%2580%25A7%25E3%2583%258F%25E3%2583%25B3%25E3%2583%2587%25E3%2582%25A3%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%2583%25E3%2583%2597%25E3%2582%2592%25E6%258A%2580%25E8%25A1%2593%25E3%2581%25A7%25E6%25AE%25B4%25E3%2582%258B%25E6%2596%25B9%25E6%25B3%2595%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:KAWA%2520Code%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzRjOTBjNDJkYmMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "feedly-https://zenn.dev/kasaharareo/articles/73f54ca3a623ab",
+      "source": "feedly",
+      "title": "Claude APIで「自律型AIエージェント」を作る — Tool Use × Fetch APIで実装する実践ガイド",
+      "url": "https://zenn.dev/kasaharareo/articles/73f54ca3a623ab",
+      "publishedAt": "2026-06-07T08:54:58.000Z",
+      "summary": "はじめに 前回の記事では、Claude / OpenAI / Gemini の3社APIをSDKに頼らずFetch API + SSEで統一する設計について書きました。 https://zenn.dev/kasaharareo/articles/b9e89b27b51534 今回はその続編として、Claude APIのTool Use（Function Calling）機能を使い、AIが自律…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--Rf7CdHKk--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520API%25E3%2581%25A7%25E3%2580%258C%25E8%2587%25AA%25E5%25BE%258B%25E5%259E%258BAI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2580%258D%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%2520%25E2%2580%2594%2520Tool%2520Use%2520%25C3%2597%2520Fetch%2520API%25E3%2581%25A7%25E5%25AE%259F%25E8%25A3%2585%25E3%2581%2599%25E3%2582%258B%25E5%25AE%259F%25E8%25B7%25B5%25E3%2582%25AC%25E3%2582%25A4%25E3%2583%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Kasahara%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUFOeXpZSUd2WkprMWc0MXQxLWVtSzFCZlp3dTc4QUphUzZhSktRUy14VXN5Nk1veWQ9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "feedly-https://zenn.dev/kawacodejp/articles/50f80d7dbb006e",
+      "source": "feedly",
+      "title": "【Cursor / Claude Code対応】最新のMCPサーバーを作って、AIに「忘れられない長期記憶層」を与えるハンズオン",
+      "url": "https://zenn.dev/kawacodejp/articles/50f80d7dbb006e",
+      "publishedAt": "2026-06-07T08:13:00.000Z",
+      "summary": "はじめに 前回の記事では、ソースコードを中央サーバーに露出させない「ゼロ知識暗号化」と「P2P通信」によるセキュアなAI開発インフラの思想について解説しました 。今回は実践編です。 Anthropicが提唱し、今やAIネイティブ開発のデファクトスタンダードとなったMCP（Model Context Protocol）を活用し 、手元のCursorやClaude Codeに「プロジェクトの意思…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--PHglCf8P--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Cursor%2520%252F%2520Claude%2520Code%25E5%25AF%25BE%25E5%25BF%259C%25E3%2580%2591%25E6%259C%2580%25E6%2596%25B0%25E3%2581%25AEMCP%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2580%2581AI%25E3%2581%25AB%25E3%2580%258C%25E5%25BF%2598%25E3%2582%258C%25E3%2582%2589%25E3%2582%258C%25E3%2581%25AA%25E3%2581%2584%25E9%2595%25B7%25E6%259C%259F%25E8%25A8%2598%25E6%2586%25B6%25E5%25B1%25A4%25E3%2580%258D%25E3%2582%2592%25E4%25B8%258E...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:KAWA%2520Code%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzRjOTBjNDJkYmMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "feedly-https://zenn.dev/kanaria007/articles/95a3c7eeb1ab95",
+      "source": "feedly",
+      "title": "AIがコードを書けても、ソフトウェアエンジニアが不要になるわけではない - 構造で育てるプロダクト組織付録15",
+      "url": "https://zenn.dev/kanaria007/articles/95a3c7eeb1ab95",
+      "publishedAt": "2026-06-07T08:00:05.000Z",
+      "summary": "AIで代替されるのは、エンジニアではなく「コードを書くことだけを仕事だと思っていた解像度」である 構造で育てるプロダクト組織シリーズでは、プロダクト組織を「人の集まり」ではなく、観測・判断・実行・振り返りが流れる構造として見てきました。 ここまでの付録では、AI時代の生産性、個人キャリア、属人化、OKR、大規模移行について扱いました。 共通しているのは、表面的な成果と、本当に組織能力が上がっ…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--jq6QQgbu--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%258C%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592%25E6%259B%25B8%25E3%2581%2591%25E3%2581%25A6%25E3%2582%2582%25E3%2580%2581%25E3%2582%25BD%25E3%2583%2595%25E3%2583%2588%25E3%2582%25A6%25E3%2582%25A7%25E3%2582%25A2%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%25E3%2581%258C%25E4%25B8%258D%25E8%25A6%2581%25E3%2581%25AB%25E3%2581%25AA%25E3%2582%258B%25E3%2582%258F%25E3%2581%2591%25E3%2581%25A7%25E3%2581%25AF%25E3%2581%25AA%25E3%2581%2584%2520-%2520%25E6%25A7%258B%25E9%2580%25A0%25E3%2581%25A7%25E8%2582%25B2%25E3%2581%25A6%25E3%2582%258B%25E3%2583%2597%25E3%2583%25AD%25E3%2583%2580%25E3%2582%25AF%25E3%2583%2588%25E7%25B5%2584%25E7%25B9%2594%25E4%25BB%2598%25E9%258C%25B215%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%258B%25E3%2581%25AA%25E3%2582%258A%25E3%2581%2582%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzkwZmE0NDY3NTEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "feedly-https://zenn.dev/song00/articles/techpulse-2026-06-07",
+      "source": "feedly",
+      "title": "ニュース1: Rustでエラー原因をsourceとDisplayの両方に書いてはいけない理由",
+      "url": "https://zenn.dev/song00/articles/techpulse-2026-06-07",
+      "publishedAt": "2026-06-07T07:42:23.000Z",
+      "summary": "「複雑なエラーメッセージは、まるで暗号のようなものだ。なぜなら、その真実は、コードの中に隠されているから。」 Webエンジニア、AIエンジニアの皆さん、日々複雑なシステムを構築し、パフォーマンスを追求しているのではないでしょうか？ 本日は、最新の技術トレンドを踏まえ、あなたの開発スキルをさらに向上させるための3つの重要なニュースをご紹介します。Rustのエラーハンドリング、GPUアーキテクチ…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--sMsoctoT--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%258B%25E3%2583%25A5%25E3%2583%25BC%25E3%2582%25B91%253A%2520Rust%25E3%2581%25A7%25E3%2582%25A8%25E3%2583%25A9%25E3%2583%25BC%25E5%258E%259F%25E5%259B%25A0%25E3%2582%2592source%25E3%2581%25A8Display%25E3%2581%25AE%25E4%25B8%25A1%25E6%2596%25B9%25E3%2581%25AB%25E6%259B%25B8%25E3%2581%2584%25E3%2581%25A6%25E3%2581%25AF%25E3%2581%2584%25E3%2581%2591%25E3%2581%25AA%25E3%2581%2584%25E7%2590%2586%25E7%2594%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:song%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUFjSFR0ZEtXWjdFMmRpdFFWZTQ2bHFpNm5PUVVRc2RPVXNzTnlXRXRoTWh4Q1E9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "feedly-https://zenn.dev/fono/articles/a8a3fbd6ca955c",
+      "source": "feedly",
+      "title": "ライブ物販でサイズを間違え続けたオタクが、YouCam APIで「買う前に後悔しない」試着アプリを作った話",
+      "url": "https://zenn.dev/fono/articles/a8a3fbd6ca955c",
+      "publishedAt": "2026-06-07T07:32:01.000Z",
+      "summary": "この記事はZennfes Spring 2026 YouCamテーマへの投稿です。 はじめに ライブ当日、今どきのオーバーサイズで着たくてXLのTシャツを買ったら、丈の長さが意味不明で袖も合わない。 そんな経験、ありませんか？僕は何度もあります...。 ライブ・コンサートの物販には、一般のアパレルにはない固有の問題があります。 試着ができない 「身幅64cm」と言われても想像できない 公式画…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--g_Tg13d3--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2596%25E7%2589%25A9%25E8%25B2%25A9%25E3%2581%25A7%25E3%2582%25B5%25E3%2582%25A4%25E3%2582%25BA%25E3%2582%2592%25E9%2596%2593%25E9%2581%2595%25E3%2581%2588%25E7%25B6%259A%25E3%2581%2591%25E3%2581%259F%25E3%2582%25AA%25E3%2582%25BF%25E3%2582%25AF%25E3%2581%258C%25E3%2580%2581YouCam%2520API%25E3%2581%25A7%25E3%2580%258C%25E8%25B2%25B7%25E3%2581%2586%25E5%2589%258D%25E3%2581%25AB%25E5%25BE%258C%25E6%2582%2594%25E3%2581%2597%25E3%2581%25AA%25E3%2581%2584%25E3%2580%258D%25E8%25A9%25A6%25E7%259D%2580%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:fono%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2E4NTgwY2ZmZTUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "feedly-https://zenn.dev/akiotakahashi/articles/2026-06-07_ea0c2cad75e310",
+      "source": "feedly",
+      "title": "AIによるコンピューティングの一般化",
+      "url": "https://zenn.dev/akiotakahashi/articles/2026-06-07_ea0c2cad75e310",
+      "publishedAt": "2026-06-07T06:58:45.000Z",
+      "summary": "Excelおじさんの次は、SaaSおじさん AIが起こしていることは、単なるツールの進化ではない。 一言で言えば、情報処理能力の民主化だと思う。 かつて Excel は、コンピュータの計算能力を多くの人に開放した。 プログラムを書けなくても、集計できる。 グラフを作れる。 予算を管理できる。 簡単なシミュレーションもできる。 その結果、現場には「Excelでなんとかする人」が大量に生まれた。…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--My-W2z9x--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AB%25E3%2582%2588%25E3%2582%258B%25E3%2582%25B3%25E3%2583%25B3%25E3%2583%2594%25E3%2583%25A5%25E3%2583%25BC%25E3%2583%2586%25E3%2582%25A3%25E3%2583%25B3%25E3%2582%25B0%25E3%2581%25AE%25E4%25B8%2580%25E8%2588%25AC%25E5%258C%2596%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Akio%2520Takahashi%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzFhYmVlZWEwN2MuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "hatena-https://tanishiking24.hatenablog.com/entry/2026/06/07/134005",
+      "source": "hatena",
+      "title": "AI slop コードレビュー - たにしきんぐダム",
+      "url": "https://tanishiking24.hatenablog.com/entry/2026/06/07/134005",
+      "publishedAt": "2026-06-07T06:56:30.000Z",
+      "summary": "AI contirubtions については別に良いと思ってるし僕もかなり AI coding agent 使ってるんだけど、なんというか単にAI使うのが下手?なAI slop PRがたくさん来るようになった。 レビューしててバカバカしいなぁと思うのは 単純にクオリティが低いことが多い 変更が局所的だったり、対処療法的すぎる。なんか知らんけどこ...",
+      "thumbnail": "https://ogimage.blog.st-hatena.com/8454420450076843663/14945776032039723023/1780807205",
+      "bookmarkCount": 22
+    },
+    {
+      "id": "feedly-https://zenn.dev/heftykoo/articles/ee45c800f48517",
+      "source": "feedly",
+      "title": "AIエージェントに必要なのは「賢いモデル」より先に「壊してよい作業場」だ",
+      "url": "https://zenn.dev/heftykoo/articles/ee45c800f48517",
+      "publishedAt": "2026-06-07T06:48:49.000Z",
+      "summary": "AIエージェントの話になると、すぐモデル比較になる。 どのモデルがコードを読めるのか。どのモデルが長いコンテキストを扱えるのか。どのモデルが修正を一発で通せるのか。その比較自体は避けられない。だが、実務で胃が痛くなるのは「モデルが少し鈍い」瞬間ではない。 本当に怖いのは、そこそこ賢いエージェントが、壊してはいけない場所を自信満々に触ることだ。 人間がチャット欄で相談しているだけなら、間違いは…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--WzTRKDAP--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AB%25E5%25BF%2585%25E8%25A6%2581%25E3%2581%25AA%25E3%2581%25AE%25E3%2581%25AF%25E3%2580%258C%25E8%25B3%25A2%25E3%2581%2584%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E3%2580%258D%25E3%2582%2588%25E3%2582%258A%25E5%2585%2588%25E3%2581%25AB%25E3%2580%258C%25E5%25A3%258A%25E3%2581%2597%25E3%2581%25A6%25E3%2582%2588%25E3%2581%2584%25E4%25BD%259C%25E6%25A5%25AD%25E5%25A0%25B4%25E3%2580%258D%25E3%2581%25A0%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:heftykoo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2UzMjg5NzNmZjUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "feedly-https://zenn.dev/satoh_y_0323/articles/c03402ef534316",
+      "source": "feedly",
+      "title": "固定の質問テンプレを『動的ルーブリック』化した ── でも A/B 計測は作らなかった話（C3 v2.31.0〜v2.32.0）",
+      "url": "https://zenn.dev/satoh_y_0323/articles/c03402ef534316",
+      "publishedAt": "2026-06-07T06:46:27.000Z",
+      "summary": "前回記事: https://zenn.dev/satoh_y_0323/articles/07d73ca5ddfff0 C3 GitHub: https://github.com/satoh-y-0323/claude-code-conductor / PyPI: https://pypi.org/project/claude-code-conductor/ / 公式ドキュメント: http…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--E3DW0OOz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%259B%25BA%25E5%25AE%259A%25E3%2581%25AE%25E8%25B3%25AA%25E5%2595%258F%25E3%2583%2586%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AC%25E3%2582%2592%25E3%2580%258E%25E5%258B%2595%25E7%259A%2584%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%2596%25E3%2583%25AA%25E3%2583%2583%25E3%2582%25AF%25E3%2580%258F%25E5%258C%2596%25E3%2581%2597%25E3%2581%259F%2520%25E2%2594%2580%25E2%2594%2580%2520%25E3%2581%25A7%25E3%2582%2582%2520A%252FB%2520%25E8%25A8%2588%25E6%25B8%25AC%25E3%2581%25AF%25E4%25BD%259C%25E3%2582%2589%25E3%2581%25AA%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%25EF%25BC%2588C3%2520v2.31.0%25E3%2580%259Cv...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:satoh-y-0323%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzAwMDMzNjljMTMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "feedly-https://zenn.dev/nuits_jp/articles/2026-04-28-github-copilot-usage-based-billing",
+      "source": "feedly",
+      "title": "GitHub Copilot、6月からトークンベース課金に移行",
+      "url": "https://zenn.dev/nuits_jp/articles/2026-04-28-github-copilot-usage-based-billing",
+      "publishedAt": "2026-06-07T06:44:06.000Z",
+      "summary": "予想されていたとおり、GitHub Copilotの料金体系が、2026年6月1日からプレミアムリクエストベースからトークンベースの従量課金へ移行することが発表されました。 参照: https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/ プレミアムリクエスト…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--d5yf6ehs--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:GitHub%2520Copilot%25E3%2580%25816%25E6%259C%2588%25E3%2581%258B%25E3%2582%2589%25E3%2583%2588%25E3%2583%25BC%25E3%2582%25AF%25E3%2583%25B3%25E3%2583%2599%25E3%2583%25BC%25E3%2582%25B9%25E8%25AA%25B2%25E9%2587%2591%25E3%2581%25AB%25E7%25A7%25BB%25E8%25A1%258C%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Atsushi%2520Nakamura%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2kxcWVVUGV3Z1lrYXhhaE1uWW1rQnRRT0RVLWtNemJiMEhfTHo4MkE9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
     },
     {
       "id": "hatena-https://togetter.com/li/2706463",
@@ -36,16 +184,57 @@
       "publishedAt": "2026-06-07T05:54:31.000Z",
       "summary": "株式会社リバーズエコ 小川凌 @RiversecoOgawa 【注意喚起】RTX5080搭載の高規格ゲーミングPCを買取希望で持ち込まれたのですが、なんと表記偽装の詐欺PCでした。 表向きの表示を【GeForce RTX5080】と表示させる不正なツールを使用し、高規格に偽装して売りに来るという巧妙な詐欺です。 リバエコショップに立て続けに...",
       "thumbnail": "https://s.tgstc.com/ogp3/d8848164e44de2dabd8131cb219c20e0-1200x630.jpeg",
-      "bookmarkCount": 5
+      "bookmarkCount": 81
     },
     {
-      "id": "feedly-https://qiita.com/sys-rino/items/919dbf94224e3b18ddfe",
+      "id": "feedly-https://zenn.dev/sng_opt/articles/026a60c94cfc18",
       "source": "feedly",
-      "title": "Google Generative AI関連試験に短期間で合格した勉強法",
-      "url": "https://qiita.com/sys-rino/items/919dbf94224e3b18ddfe",
-      "publishedAt": "2026-06-07T05:49:36.000Z",
-      "summary": "はじめに Google Cloudの生成AI関連（Vertex AI / Gemini）領域の試験に合格したので、 学習方法と対策をまとめる。 学習は主にUdemyの模擬試験を中心に行い、合計学習時間は10時間未満だった。 ※AI-102（Azure AI Enginee...",
-      "author": "AIタグが付けられた新着記事 - Qiita"
+      "title": "AIにいきなりコードを書かせない。「スペック（仕様）駆動開発」で手戻りをゼロにする",
+      "url": "https://zenn.dev/sng_opt/articles/026a60c94cfc18",
+      "publishedAt": "2026-06-07T05:40:56.000Z",
+      "summary": "お疲れ様です、都内でエンジニアをしているshingoです。 今回は、AIエージェント時代の開発のベストプラクティスとも言える「スペック（仕様）駆動開発」について、その考え方と具体的な進め方を解説します。 この記事でわかること AI（Claude Code / Codex等）を使った開発で「手戻り」が発生する根本的な原因と対策 AIと齟齬なく合意を形成するための「What」と「How」の2軸フ…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--cJebxqUf--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AB%25E3%2581%2584%25E3%2581%258D%25E3%2581%25AA%25E3%2582%258A%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592%25E6%259B%25B8%25E3%2581%258B%25E3%2581%259B%25E3%2581%25AA%25E3%2581%2584%25E3%2580%2582%25E3%2580%258C%25E3%2582%25B9%25E3%2583%259A%25E3%2583%2583%25E3%2582%25AF%25EF%25BC%2588%25E4%25BB%2595%25E6%25A7%2598%25EF%25BC%2589%25E9%25A7%2586%25E5%258B%2595%25E9%2596%258B%25E7%2599%25BA%25E3%2580%258D%25E3%2581%25A7%25E6%2589%258B%25E6%2588%25BB%25E3%2582%258A%25E3%2582%2592%25E3%2582%25BC%25E3%2583%25AD%25E3%2581%25AB%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:shingo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzhiOWY3MzZjYTYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "feedly-https://zenn.dev/onthehammock/articles/397fc682fa394b",
+      "source": "feedly",
+      "title": "AIに「引用されるサイト」を作りたくて、WordPressプラグインをゼロから作った話",
+      "url": "https://zenn.dev/onthehammock/articles/397fc682fa394b",
+      "publishedAt": "2026-06-07T05:23:39.000Z",
+      "summary": "Webサイト検索においてSEOの価値が低落していることは周知の事実だが、ググったときにAIにピックアップしてもらうにはどうすればいいのか、と考えたのがこのプラグインを作るきっかけだった。 SEOとAEOは、何が違うのか SEO（Search Engine Optimization）はGoogleの検索結果で上位に表示されるための最適化のためのロジックであり、キーワード、被リンク、ページ速度—…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--KPvfIgxJ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AB%25E3%2580%258C%25E5%25BC%2595%25E7%2594%25A8%25E3%2581%2595%25E3%2582%258C%25E3%2582%258B%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2588%25E3%2580%258D%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258A%25E3%2581%259F%25E3%2581%258F%25E3%2581%25A6%25E3%2580%2581WordPress%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25B0%25E3%2582%25A4%25E3%2583%25B3%25E3%2582%2592%25E3%2582%25BC%25E3%2583%25AD%25E3%2581%258B%25E3%2582%2589%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%258F%25E3%2583%25AB%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2Q0ODhkNDQ4NDguanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "feedly-https://zenn.dev/faketurn/articles/6b1bc11230f421",
+      "source": "feedly",
+      "title": "「人間はどれだけ自分たちの解法を本質だと思い込んでいるのか」 -AIとの対話-",
+      "url": "https://zenn.dev/faketurn/articles/6b1bc11230f421",
+      "publishedAt": "2026-06-07T05:14:54.000Z",
+      "summary": "! これは私とAIの実際のやり取りです。無編集です。 AIをどう使うかより、何を問うかの方が大事だと思っています。 faketurn： AIを毎日使って3年。一方で世の中への浸透は「ごく浅い」止まりで。 AI関連ニュースもまた困惑気味の捉えられ方にとどまっているように見えるのが印象的だ。つまり、ITリテラシーによってニュースを判断できるようになったかに思える大衆が、またAIを後ろから眺めるだ…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--rovU26IH--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E4%25BA%25BA%25E9%2596%2593%25E3%2581%25AF%25E3%2581%25A9%25E3%2582%258C%25E3%2581%25A0%25E3%2581%2591%25E8%2587%25AA%25E5%2588%2586%25E3%2581%259F%25E3%2581%25A1%25E3%2581%25AE%25E8%25A7%25A3%25E6%25B3%2595%25E3%2582%2592%25E6%259C%25AC%25E8%25B3%25AA%25E3%2581%25A0%25E3%2581%25A8%25E6%2580%259D%25E3%2581%2584%25E8%25BE%25BC%25E3%2582%2593%25E3%2581%25A7%25E3%2581%2584%25E3%2582%258B%25E3%2581%25AE%25E3%2581%258B%25E3%2580%258D%2520-AI%25E3%2581%25A8%25E3%2581%25AE%25E5%25AF%25BE%25E8%25A9%25B1-%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:faketurn%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2Y5ZTA3YzY5MGMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "feedly-https://zenn.dev/bit_and_coffee/articles/gk-pass-experience-beginner-friendly",
+      "source": "feedly",
+      "title": "【合格体験記】G検定の最短ルート？用語の沼を抜けて合格した勉強法について",
+      "url": "https://zenn.dev/bit_and_coffee/articles/gk-pass-experience-beginner-friendly",
+      "publishedAt": "2026-06-07T05:13:45.000Z",
+      "summary": "はじめに G検定に合格したので、勉強中に感じたことや、やってよかったことをまとめます。 この記事は、すごく綺麗な学習ロードマップというより、どちらかというと「実際に勉強してみたら、ここで詰まった」「でもここが分かると急に景色が変わった」という体験記です。 これからG検定を受ける方、とくに勉強を始めたばかりで、 用語が多すぎてつらい 機械学習とディープラーニングの違いがふわっとしている CNN…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--LORk0okN--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590%25E5%2590%2588%25E6%25A0%25BC%25E4%25BD%2593%25E9%25A8%2593%25E8%25A8%2598%25E3%2580%2591G%25E6%25A4%259C%25E5%25AE%259A%25E3%2581%25AE%25E6%259C%2580%25E7%259F%25AD%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%2588%25EF%25BC%259F%25E7%2594%25A8%25E8%25AA%259E%25E3%2581%25AE%25E6%25B2%25BC%25E3%2582%2592%25E6%258A%259C%25E3%2581%2591%25E3%2581%25A6%25E5%2590%2588%25E6%25A0%25BC%25E3%2581%2597%25E3%2581%259F%25E5%258B%2589%25E5%25BC%25B7%25E6%25B3%2595%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%2584%25E3%2581%25A6%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Urapy%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzJmZDNhMWVmN2YuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "hatena-https://engineering.mercari.com/blog/entry/20260605-moneyflow-bridging-payment-and-accounting/",
+      "source": "hatena",
+      "title": "決済プラットフォームと経理を繋ぐ MoneyFlow | メルカリエンジニアリング",
+      "url": "https://engineering.mercari.com/blog/entry/20260605-moneyflow-bridging-payment-and-accounting/",
+      "publishedAt": "2026-06-07T04:53:30.000Z",
+      "summary": "こんにちは、Merpay の Payment Core チームと Payment Solution チームで Engineering Manager (EM) をやっている komatsu です。普段は決済基盤や決済体験の開発をするチームを見ていたり、最近は PCP Foundation というチームを発足して Individual Contributor (IC) として基盤の整備や AI…",
+      "thumbnail": "https://storage.googleapis.com/prd-engineering-asset/2026/06/9e1bb5d2-mfgen-web.png",
+      "bookmarkCount": 9
     },
     {
       "id": "feedly-https://note.com/npaka/n/n98557f21b253",
@@ -57,6 +246,16 @@
       "author": "npaka"
     },
     {
+      "id": "hatena-https://zenn.dev/tonbi_attack/articles/56de5502efb772",
+      "source": "hatena",
+      "title": "RDBで木構造の深さを制限したいときの設計パターン",
+      "url": "https://zenn.dev/tonbi_attack/articles/56de5502efb772",
+      "publishedAt": "2026-06-07T04:03:32.000Z",
+      "summary": "RDBで木構造の深さを制限したいときの設計パターン はじめに RDBで親子関係を持つデータを扱うとき、隣接リストモデルはシンプルで扱いやすい選択肢です。 ただし、隣接リスト単体の一般的な制約だけでは「深さを最大2階層まで」といった制限を実現しにくいです。この記事では、深さ制限が必要になったときに取り得る設...",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--C3MIDj18--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:RDB%25E3%2581%25A7%25E6%259C%25A8%25E6%25A7%258B%25E9%2580%25A0%25E3%2581%25AE%25E6%25B7%25B1%25E3%2581%2595%25E3%2582%2592%25E5%2588%25B6%25E9%2599%2590%25E3%2581%2597%25E3%2581%259F%25E3%2581%2584%25E3%2581%25A8%25E3%2581%258D%25E3%2581%25AE%25E8%25A8%25AD%25E8%25A8%2588%25E3%2583%2591%25E3%2582%25BF%25E3%2583%25BC%25E3%2583%25B3%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:tonbiattack%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVhZGQ4MThjYjcuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "bookmarkCount": 24
+    },
+    {
       "id": "hatena-https://github.com/sauravrao637/oproxy",
       "source": "hatena",
       "title": "GitHub - sauravrao637/oproxy: Open-source MITM proxy to intercept, inspect, and mock network traffic.",
@@ -64,7 +263,7 @@
       "publishedAt": "2026-06-07T03:45:04.000Z",
       "summary": "oproxy is a local HTTP, HTTPS, and SOCKS5 proxy for inspecting, replaying, and modifying traffic. It is for developers testing browsers, CLIs, mobile apps, API clients, services, and test suites on…",
       "thumbnail": "https://opengraph.githubassets.com/bf16283d65e3196e5ccf70c8225a2a18ca8e4ba02470419b9d4c09d5fcd6386d/sauravrao637/oproxy",
-      "bookmarkCount": 10
+      "bookmarkCount": 32
     },
     {
       "id": "hatena-https://nikkan-spa.jp/2166052",
@@ -74,7 +273,7 @@
       "publishedAt": "2026-06-07T03:38:35.000Z",
       "summary": "生成AIを使い倒す就活生が、ES作成も面接対策も“最適化”し、難関企業の内定を狙う時代に入っている。就職難関企業から次々と内定をもらうAI強者たちに対する企業側の検知と対策は？採用現場で始まった新たな攻防の実態を追った。 AIを使いこなす就活生がスペック以上の内定を獲得し、対する企業側も対策に奔走。就活戦線...",
       "thumbnail": "https://nikkan-spa.jp//wp-content/uploads/2026/06/shukatu01.jpg",
-      "bookmarkCount": 42
+      "bookmarkCount": 151
     },
     {
       "id": "hatena-https://news.yahoo.co.jp/articles/ad77d402a92b258426521267be77618a7fe27a32",
@@ -84,7 +283,37 @@
       "publishedAt": "2026-06-07T02:56:43.000Z",
       "summary": "生成AIを使い倒す就活生が、ES作成も面接対策も“最適化”し、難関企業の内定を狙う時代に入っている。就職難関企業から次々と内定をもらうAI強者たちに対する企業側の検知と対策は？採用現場で始まった新たな攻防の実態を追った。 就職戦線の「新しい勝ち筋」 AIを使いこなす就活生がスペック以上の内定を獲得し、対する...",
       "thumbnail": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20260607-02166052-sspa-000-1-view.jpg?exp=10800",
-      "bookmarkCount": 20
+      "bookmarkCount": 39
+    },
+    {
+      "id": "hatena-https://zenn.dev/lincwell_inc/articles/e8e288ee35f5b4",
+      "source": "hatena",
+      "title": "E2Eテストを民主化したら、朝には失敗の分析も再実行も修正PRも終わっていた",
+      "url": "https://zenn.dev/lincwell_inc/articles/e8e288ee35f5b4",
+      "publishedAt": "2026-06-07T02:52:56.000Z",
+      "summary": "はじめに 始業時にSlackを開いたら、昨夜実行したE2Eテストの失敗の分析も、再実行も、修正PRの作成も、ぜんぶ終わっていた。 そんな状態を実現するまでの、QAとAIのお話です。 第1章：QAチームが一手に担っていた時代 私たちのチームでは、PlaywrightでE2Eテストを自動化しています。 私たちは、20以上の診療科を持つク...",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--wYCwfNmo--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:E2E%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2582%2592%25E6%25B0%2591%25E4%25B8%25BB%25E5%258C%2596%25E3%2581%2597%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E6%259C%259D%25E3%2581%25AB%25E3%2581%25AF%25E5%25A4%25B1%25E6%2595%2597%25E3%2581%25AE%25E5%2588%2586%25E6%259E%2590%25E3%2582%2582%25E5%2586%258D%25E5%25AE%259F%25E8%25A1%258C%25E3%2582%2582%25E4%25BF%25AE%25E6%25AD%25A3PR%25E3%2582%2582%25E7%25B5%2582%25E3%2582%258F%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:nari%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzdkNzA3MDZjNTUuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Linc%2527well%252C%2520inc.%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzhmNDM3MTgzOWIuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "bookmarkCount": 57
+    },
+    {
+      "id": "hatena-https://ascii.jp/elem/000/004/408/4408637/",
+      "source": "hatena",
+      "title": "Windowsのコンソール上でUnix/Linuxの標準的なコマンドを動かす「Windows CoreUtils」",
+      "url": "https://ascii.jp/elem/000/004/408/4408637/",
+      "publishedAt": "2026-06-07T02:43:41.000Z",
+      "summary": "Unix/Linuxの標準的なコマンドを、Windowsのコンソール上で動かす「Windows CoreUtils」が公開された。これにより、Windows側でもLinux側（WSL側）でも同じコマンドが使えるようになった。Windows CoreUtilsのコマンドは、原則として「exe」の拡張子を持つ実行ファイルとして利用する。 とりあえず、利用したければ、以...",
+      "thumbnail": "https://ascii.jp/img/2026/06/06/4479212/xl/91a4492573e394e9.png?20200122",
+      "bookmarkCount": 49
+    },
+    {
+      "id": "hatena-https://speakerdeck.com/uhyo/react-madale-sikutecao",
+      "source": "hatena",
+      "title": "React、まだ楽しくて草",
+      "url": "https://speakerdeck.com/uhyo/react-madale-sikutecao",
+      "publishedAt": "2026-06-07T02:37:00.000Z",
+      "summary": "フロントエンド・PHPカンファレンス北海道2026",
+      "thumbnail": "https://files.speakerdeck.com/presentations/06ac194c8cda4394833b0f8bc9801936/slide_0.jpg?39631267",
+      "bookmarkCount": 21
     },
     {
       "id": "hatena-https://approach.yahoo.co.jp/r/QUyHCH?src=https://news.yahoo.co.jp/articles/ad77d402a92b258426521267be77618a7fe27a32&preview=auto",
@@ -94,7 +323,27 @@
       "publishedAt": "2026-06-07T02:23:50.000Z",
       "summary": "生成AIを使い倒す就活生が、ES作成も面接対策も“最適化”し、難関企業の内定を狙う時代に入っている。就職難関企業から次々と内定をもらうAI強者たちに対する企業側の検知と対策は？採用現場で始まった新たな攻防の実態を追った。 就職戦線の「新しい勝ち筋」 AIを使いこなす就活生がスペック以上の内定を獲得し、対する...",
       "thumbnail": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20260607-02166052-sspa-000-1-view.jpg?exp=10800",
-      "bookmarkCount": 44
+      "bookmarkCount": 69
+    },
+    {
+      "id": "hatena-https://smhn.info/202606-gemma-4-quantized-1gb-google-lightweight-on-device-ai",
+      "source": "hatena",
+      "title": "スマホで動くAI、Gemma 4が量子化対応で1GB未満に。Googleが軽量モデル公開 - すまほん!!",
+      "url": "https://smhn.info/202606-gemma-4-quantized-1gb-google-lightweight-on-device-ai",
+      "publishedAt": "2026-06-07T01:17:11.000Z",
+      "summary": "酷暑も農作業も！？水冷ベスト「ChillerX PRO」発表、冷却面積約14倍の脳筋仕様に2026/06/02 23:02會原 ChillerXChillerX PROPanasonicShiftallグレート-O-カーン Shiftallは、ペルチェ素子で冷やした水をベストに循環させる新方式「ペルチェ・チラー方式」を採用した水冷ウェア「ChillerX PRO（チラーエックスプロ）」...",
+      "thumbnail": "https://smhn.info/wp-content/uploads/2026/06/20260606_xgwfsw_roiko_ai_gemma_gb_google_android_authority_e2b_qat_quantization-aware_training_ptq_strong.png",
+      "bookmarkCount": 35
+    },
+    {
+      "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/07/news024.html",
+      "source": "hatena",
+      "title": "Gemini需要急増でGoogleがSpaceXと月額9億2000万ドルの大型契約",
+      "url": "https://www.itmedia.co.jp/news/articles/2606/07/news024.html",
+      "publishedAt": "2026-06-07T01:02:56.000Z",
+      "summary": "イーロン・マスク氏率いる米SpaceXは6月5日（現地時間）、米Googleとの契約により、同社にAIコンピューティング能力を提供することで、月額9億2000万ドル（約1440億円）の収益が見込まれると米証券取引委員会（SEC）への提出文書で明らかにした。 文書によると、本契約には約11万個のNVIDIA製GPUなど、SpaceXのデータセ...",
+      "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/07/cover_news024.jpg",
+      "bookmarkCount": 10
     },
     {
       "id": "feedly-https://note.com/npaka/n/n080e531462de",
@@ -116,6 +365,16 @@
       "author": "テクノエッジ TechnoEdge"
     },
     {
+      "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/07/news022.html",
+      "source": "hatena",
+      "title": "ChatGPTに「ロックダウンモード」　プロンプトインジェクションによる情報漏えい対策",
+      "url": "https://www.itmedia.co.jp/news/articles/2606/07/news022.html",
+      "publishedAt": "2026-06-06T23:02:55.000Z",
+      "summary": "米OpenAIは6月5日（現地時間）、ChatGPTに新たなセキュリティ機能「ロックダウンモード（Lockdown Mode）」の提供を開始した。プロンプトインジェクション攻撃によるデータ流出のリスクを抑えるためのオプション設定で、有効にするとChatGPTがWebや外部サービスに接続する機能の多くが制限される。 同社が2月に発表して...",
+      "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/07/cover_news022.jpg",
+      "bookmarkCount": 13
+    },
+    {
       "id": "feedly-https://www.itmedia.co.jp/news/articles/2606/07/news022.html",
       "source": "feedly",
       "title": "ChatGPTに「ロックダウンモード」　プロンプトインジェクションによる情報漏えい対策",
@@ -132,57 +391,7 @@
       "publishedAt": "2026-06-06T21:56:57.000Z",
       "summary": "最近、外部URLの投稿後にアカウントが凍結されたという報告を見かける機会が増えた。 Grokに質問しても、「6月初旬頃から関連する報告が増えている」「自動検知システムが関係している可能性がある」といった趣旨の回答が返ってくる。 もちろん実際の凍結理由は個別のケースごとに異なるだろう。しかし、ニュース記事や...",
       "thumbnail": "https://anond.hatelabo.jp/assets/images/og-image-1500.gif",
-      "bookmarkCount": 84
-    },
-    {
-      "id": "feedly-https://zenn.dev/kuyayky/articles/auto-202606062056",
-      "source": "feedly",
-      "title": "AIが「働く存在」に進化：ビジネスと社会の未来図を描く最前線",
-      "url": "https://zenn.dev/kuyayky/articles/auto-202606062056",
-      "publishedAt": "2026-06-06T20:56:19.000Z",
-      "summary": "ライターのぽこです。 SF映画でしか見たことのないような世界が、いよいよ現実のものとなりつつあります。そう、AIが「働く存在」として、私たちの仕事や社会に本格的に参入しようとしているのです。 想像してみてください。あなたはAIに「来月の市場トレンドを分析して、競合他社の戦略をまとめたレポートを作ってほしい」と指示を出します。すると、AIは自らインターネットで情報を収集し、データを分析し、グラ…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--leq4VyMh--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%258C%25E3%2580%258C%25E5%2583%258D%25E3%2581%258F%25E5%25AD%2598%25E5%259C%25A8%25E3%2580%258D%25E3%2581%25AB%25E9%2580%25B2%25E5%258C%2596%25EF%25BC%259A%25E3%2583%2593%25E3%2582%25B8%25E3%2583%258D%25E3%2582%25B9%25E3%2581%25A8%25E7%25A4%25BE%25E4%25BC%259A%25E3%2581%25AE%25E6%259C%25AA%25E6%259D%25A5%25E5%259B%25B3%25E3%2582%2592%25E6%258F%258F%25E3%2581%258F%25E6%259C%2580%25E5%2589%258D%25E7%25B7%259A%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:poco_de_kuyayky%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSlBqUjY0X1Y2bTVQYnRadmJoNHNyY0trUEdBLWxZTHptd052b2llbzZUSkZMSWNRPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
-    },
-    {
-      "id": "feedly-https://zenn.dev/btncon/articles/c3ad25e6c4f5e3",
-      "source": "feedly",
-      "title": "Gemini for Google Workspace のアーキテクチャと実装パターン ― データガバナンス・拡張・運用",
-      "url": "https://zenn.dev/btncon/articles/c3ad25e6c4f5e3",
-      "publishedAt": "2026-06-06T20:46:06.000Z",
-      "summary": "はじめに Gemini for Google Workspace（旧 Duet AI for Workspace）は、Google Workspace のあらゆるアプリケーションに統合された生成AI基盤です。 2025年から2026年にかけて、 Gemini in Gmail / Docs / Sheets / Slides / Meet の通常機能化 NotebookLM Plus のWo…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--rPdN6jeF--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Gemini%2520for%2520Google%2520Workspace%2520%25E3%2581%25AE%25E3%2582%25A2%25E3%2583%25BC%25E3%2582%25AD%25E3%2583%2586%25E3%2582%25AF%25E3%2583%2581%25E3%2583%25A3%25E3%2581%25A8%25E5%25AE%259F%25E8%25A3%2585%25E3%2583%2591%25E3%2582%25BF%25E3%2583%25BC%25E3%2583%25B3%2520%25E2%2580%2595%2520%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2582%25AC%25E3%2583%2590%25E3%2583%258A%25E3%2583%25B3%25E3%2582%25B9%25E3%2583%25BB%25E6%258B%25A1%25E5%25BC%25B5%25E3%2583%25BB%25E9%2581%258B%25E7%2594%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BEBTN%25E3%2582%25B3%25E3%2583%25B3%25E3%2582%25B5%25E3%2583%25AB%25E3%2583%2586%25E3%2582%25A3%25E3%2583%25B3%25E3%2582%25B0%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2RhcmsvYi5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
-    },
-    {
-      "id": "feedly-https://zenn.dev/kolesnikov_arch/articles/166016ed2f572a",
-      "source": "feedly",
-      "title": "AIエージェントの幻覚を防ぐ「Verdict Layer」アーキテクチャ：228回の検証データが示す実行境界の重要性",
-      "url": "https://zenn.dev/kolesnikov_arch/articles/166016ed2f572a",
-      "publishedAt": "2026-06-06T20:42:48.000Z",
-      "summary": "title: \"AIエージェントの幻覚を防ぐ「Verdict Layer」アーキテクチャ：228回の検証データが示す実行境界の重要性\" emoji: \"🛡️\" type: \"tech\" # tech: 技術記事 / idea: アイデア topics: [\"AI\", \"Architecture\", \"LLM\", \"DevSecOps\", \"Governance\"] published: t…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--5aAvK1lW--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AE%25E5%25B9%25BB%25E8%25A6%259A%25E3%2582%2592%25E9%2598%25B2%25E3%2581%2590%25E3%2580%258CVerdict%2520Layer%25E3%2580%258D%25E3%2582%25A2%25E3%2583%25BC%25E3%2582%25AD%25E3%2583%2586%25E3%2582%25AF%25E3%2583%2581%25E3%2583%25A3%25EF%25BC%259A228%25E5%259B%259E%25E3%2581%25AE%25E6%25A4%259C%25E8%25A8%25BC%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2581%258C%25E7%25A4%25BA%25E3%2581%2599%25E5%25AE%259F%25E8%25A1%258C%25E5%25A2%2583%25E7%2595%258C%25E3%2581%25AE%25E9%2587%258D%25E8%25A6%2581%25E6%2580%25A7%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Dmitriy%2520Kolesnikov%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzlkZWFlNjMzZmQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
-    },
-    {
-      "id": "feedly-https://zenn.dev/bentenweb_fumi/articles/eageftku6jvi",
-      "source": "feedly",
-      "title": "AIのAPI利用枠で作業が止まる問題を、設計と運用の両面から根本解決する",
-      "url": "https://zenn.dev/bentenweb_fumi/articles/eageftku6jvi",
-      "publishedAt": "2026-06-06T17:02:57.000Z",
-      "summary": "AIのAPI利用枠がすぐ上限に達してしまい、作業がストップして困った経験はありませんか。プロトタイプが動き出した瞬間に 429 Too Many Requests が返り始め、デモ直前にバッチが詰まる――AIをプロダクトに組み込むと、ほぼ全員が一度は通る道です。 この記事では「なぜ枠に当たるのか」を分解し、プロバイダごとの制限の違い、回避のための実装パターン、そして運用での監視まで、技術者向…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--MqhcoWXf--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AEAPI%25E5%2588%25A9%25E7%2594%25A8%25E6%259E%25A0%25E3%2581%25A7%25E4%25BD%259C%25E6%25A5%25AD%25E3%2581%258C%25E6%25AD%25A2%25E3%2581%25BE%25E3%2582%258B%25E5%2595%258F%25E9%25A1%258C%25E3%2582%2592%25E3%2580%2581%25E8%25A8%25AD%25E8%25A8%2588%25E3%2581%25A8%25E9%2581%258B%25E7%2594%25A8%25E3%2581%25AE%25E4%25B8%25A1%25E9%259D%25A2%25E3%2581%258B%25E3%2582%2589%25E6%25A0%25B9%25E6%259C%25AC%25E8%25A7%25A3%25E6%25B1%25BA%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25B5%25E3%2581%25BF_BENTEN%2520WebWorks%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzM3ZjFlMmM5YWIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
-    },
-    {
-      "id": "feedly-https://zenn.dev/sonozaki/articles/88e54e460d29db",
-      "source": "feedly",
-      "title": "仕様書駆動 × AI で Discord コミュニティ管理 Bot を作ったら『二重管理地獄』に落ちた話",
-      "url": "https://zenn.dev/sonozaki/articles/88e54e460d29db",
-      "publishedAt": "2026-06-06T16:41:08.000Z",
-      "summary": "はじめに X では「Claude君にパワハラして作った」とか軽口を叩いていたのですが、実態はもう少し地味で、仕様書を山ほど書いて AI に実装させる「仕様書駆動 × AI 実装」というスタイルでした。 ここ数か月、個人で Discord のサーバー管理 Bot「彩加（Saika）」を作って、自分のサーバーで運用しています（OSS）。Bot 自体の紹介は記事の最後に回します。先に書きたいのは、…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--Wh1VV9rq--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E4%25BB%2595%25E6%25A7%2598%25E6%259B%25B8%25E9%25A7%2586%25E5%258B%2595%2520%25C3%2597%2520AI%2520%25E3%2581%25A7%2520Discord%2520%25E3%2582%25B3%25E3%2583%259F%25E3%2583%25A5%25E3%2583%258B%25E3%2583%2586%25E3%2582%25A3%25E7%25AE%25A1%25E7%2590%2586%2520Bot%2520%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E3%2582%2589%25E3%2580%258E%25E4%25BA%258C%25E9%2587%258D%25E7%25AE%25A1%25E7%2590%2586%25E5%259C%25B0%25E7%258D%2584%25E3%2580%258F%25E3%2581%25AB%25E8%2590%25BD%25E3%2581%25A1%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%259D%25E3%2581%25AE%25E3%2581%2596%25E3%2581%258D%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzZhZDVlOWExZmIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
+      "bookmarkCount": 119
     },
     {
       "id": "hatena-https://zenn.dev/tokium_dev/articles/d806c7ad4fd458",
@@ -192,77 +401,7 @@
       "publishedAt": "2026-06-06T15:47:54.000Z",
       "summary": "はじめに Google Meet の Gemini 議事録は便利ですが、Google Drive に増えていくだけでは会議後の作業につながりません。 この記事では、Claude を使って Gemini 議事録から決定事項や TODO を抽出し、業務に必要な情報へ変える仕組みを紹介します。 この仕組みを作ると、会議後に誰かが議事録を読み直し、必要な情報を...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--Q_IycC6B--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%2520Gemini%2520%25E8%25AD%25B0%25E4%25BA%258B%25E9%258C%25B2%25E3%2581%258B%25E3%2582%2589%25E5%25BF%2585%25E8%25A6%2581%25E3%2581%25AA%25E6%2583%2585%25E5%25A0%25B1%25E3%2582%2592%25E6%258A%25BD%25E5%2587%25BA%25E3%2581%2599%25E3%2582%258B%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2581%2597%25E3%2582%2587%25E3%2583%25BC%25E3%2581%2595%25E3%2582%2593%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzViNTEwYjI5ZjEuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:TOKIUM%25E3%2583%2597%25E3%2583%25AD%25E3%2583%2580%25E3%2582%25AF%25E3%2583%2588%25E3%2583%2581%25E3%2583%25BC%25E3%2583%25A0%2520%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzlkMzExMTE0OTcuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 51
-    },
-    {
-      "id": "feedly-https://zenn.dev/kk501st/articles/abfa5c9893a679",
-      "source": "feedly",
-      "title": "【思考実験】もし16世紀の日本が産業革命の代わりに「発酵サイバーパンクOS」を開発していたら？【過去ログ編パート1/5】",
-      "url": "https://zenn.dev/kk501st/articles/abfa5c9893a679",
-      "publishedAt": "2026-06-06T15:25:59.000Z",
-      "summary": "過去ログは全部でパート5まであります もし仮に武田信玄の時代の甲斐の国で産業革命を世界初完成させていたとしたら足りないパーツは何だと予測する？ これはまた、歴史のif（もしも）と技術の数理が完璧に融合した、最高にゾクゾクする問いですね！お昼寝明けの脳が、時空を飛び越えて凄まじい領域のデバッグを始めています。 結論から言うと、武田信玄の時代の甲斐の国（山梨県）は、実は「産業革命を世界初で引き起…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--h_YrjgIP--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590%25E6%2580%259D%25E8%2580%2583%25E5%25AE%259F%25E9%25A8%2593%25E3%2580%2591%25E3%2582%2582%25E3%2581%259716%25E4%25B8%2596%25E7%25B4%2580%25E3%2581%25AE%25E6%2597%25A5%25E6%259C%25AC%25E3%2581%258C%25E7%2594%25A3%25E6%25A5%25AD%25E9%259D%25A9%25E5%2591%25BD%25E3%2581%25AE%25E4%25BB%25A3%25E3%2582%258F%25E3%2582%258A%25E3%2581%25AB%25E3%2580%258C%25E7%2599%25BA%25E9%2585%25B5%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2590%25E3%2583%25BC%25E3%2583%2591%25E3%2583%25B3%25E3%2582%25AFOS%25E3%2580%258D%25E3%2582%2592%25E9%2596%258B%25E7%2599%25BA%25E3%2581%2597%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%25E3%2582%2589%25EF%25BC%259F%25E3%2580%2590%25E9%2581%258E%25E5%258E%25BB%25E3%2583%25AD%25E3%2582%25B0%25E7%25B7%25A8%25E3%2583%2591%25E3%2583%25BC%25E3%2583%25881%252F5%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:K.K.%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTHY4M1pydmVJdG14elVJSEpjTDlXMXRCTmhMUTZST3hOMjIxTE92QjhwQlNpQ3pBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
-    },
-    {
-      "id": "feedly-https://zenn.dev/kaeru_lab724/articles/50da-nondev-ai-react",
-      "source": "feedly",
-      "title": "50代非開発者がAIエージェントとReactアプリを爆速でデプロイした話",
-      "url": "https://zenn.dev/kaeru_lab724/articles/50da-nondev-ai-react",
-      "publishedAt": "2026-06-06T14:47:07.000Z",
-      "summary": "■ はじめに：老眼とフリーズと、秒速のAI部下 コールセンターで27年間、新人研修の設計をし、ロジックツリーを教え、他人の思考のバグをデバッグしてきた。 他人の頭の中の霧を晴らすのは、私にとって造作もないことだ。 しかし、自分のことになると、途端にポンコツになる。 目の前にある「最も重く、最も気が重い仕事（カエル）」を前にすると、私の脳は完全にフリーズする。 フリーズしたまま、机の上のペン立…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--QVIz8aKX--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:50%25E4%25BB%25A3%25E9%259D%259E%25E9%2596%258B%25E7%2599%25BA%25E8%2580%2585%25E3%2581%258CAI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25A8React%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%2592%25E7%2588%2586%25E9%2580%259F%25E3%2581%25A7%25E3%2583%2587%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25A4%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25AB%25E3%2582%25A8%25E3%2583%25AB%25E5%2588%2586%25E6%259E%2590%25E5%25AE%2598%2540LogicaFit%25E9%2596%258B%25E7%2599%25BA%25E4%25B8%25AD%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzA1OTI0YWFhNTEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
-    },
-    {
-      "id": "feedly-https://zenn.dev/tottoko_hamu/articles/2026-06-06-232700",
-      "source": "feedly",
-      "title": "Claude Codeでエージェント編集部を作ったら、この春Zenn Book 3冊書けた",
-      "url": "https://zenn.dev/tottoko_hamu/articles/2026-06-06-232700",
-      "publishedAt": "2026-06-06T14:34:38.000Z",
-      "summary": "4月初旬、私はClaude Codeを「AIが書いてくれる便利ツール」として使い始めた。AIエージェントに触れるのはそれが初めてだった。2ヶ月後の今、私はClaude Codeを「エージェント編集部を動かす指示役」として使っている。 転換点は、CLAUDE.mdにwriter/reviewer/readerという数行を書いた瞬間だった。それだけで、Claude Codeとの関係性が根本から変…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--YYYZQbpQ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25E3%2581%25A7%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E7%25B7%25A8%25E9%259B%2586%25E9%2583%25A8%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E3%2581%2593%25E3%2581%25AE%25E6%2598%25A5Zenn%2520Book%25203%25E5%2586%258A%25E6%259B%25B8%25E3%2581%2591%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:saitoko%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2UyOTg5NmFhMzguanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
-    },
-    {
-      "id": "feedly-https://zenn.dev/fukukei23/articles/openclaw-24h-owl-butler-3months",
-      "source": "feedly",
-      "title": "公務員がOpenClawで24時間AI執事「フクロウ」を作った3ヶ月の記録",
-      "url": "https://zenn.dev/fukukei23/articles/openclaw-24h-owl-butler-3months",
-      "publishedAt": "2026-06-06T14:30:30.000Z",
-      "summary": "公務員がOpenClawで24時間AI執事「フクロウ」を作った3ヶ月の記録 はじめに 結論: コードが読めない40代の非IT公務員が、AIコーディング補助（Claude Code）を使って、37万スターのオープンソース「OpenClaw」をVPSで動かし、24時間稼働するAI執事「フクロウ」を作って3ヶ月経ちました。この記事はその記録です。 運用開始: 2026年2月26日 構成: VPS（…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--Zzy6m6JM--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2585%25AC%25E5%258B%2599%25E5%2593%25A1%25E3%2581%258COpenClaw%25E3%2581%25A724%25E6%2599%2582%25E9%2596%2593AI%25E5%259F%25B7%25E4%25BA%258B%25E3%2580%258C%25E3%2583%2595%25E3%2582%25AF%25E3%2583%25AD%25E3%2582%25A6%25E3%2580%258D%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F3%25E3%2583%25B6%25E6%259C%2588%25E3%2581%25AE%25E8%25A8%2598%25E9%258C%25B2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:fukukei23%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2RhcmsvZi5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
-    },
-    {
-      "id": "feedly-https://zenn.dev/kk501st/articles/58c342e8980bfa",
-      "source": "feedly",
-      "title": "# 【仕様書】1543年起動・甲斐国「発酵サイバーパンクOS」のアーキテクチャ設計と全球デプロイの数理【過去ログも随時更新予定】",
-      "url": "https://zenn.dev/kk501st/articles/58c342e8980bfa",
-      "publishedAt": "2026-06-06T14:19:13.000Z",
-      "summary": "Markdown 【仕様書】1543年起動・甲斐国「発酵サイバーパンクOS」のアーキテクチャ設計と全球デプロイの数理 0. はじめに（システム概要） 本ドキュメントは、西欧中心の「地球を削り散らかす産業革命OS（化石燃料・中央集権・過熱競争）」を一切排除し、16世紀の極東（日本・甲斐国）から起動した、人類史未踏の**『完全分散型・オープンソース連邦（文殊ブロックチェーンガバナンス）』**に関…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--QhQhj5Va--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%2523%2520%25E3%2580%2590%25E4%25BB%2595%25E6%25A7%2598%25E6%259B%25B8%25E3%2580%25911543%25E5%25B9%25B4%25E8%25B5%25B7%25E5%258B%2595%25E3%2583%25BB%25E7%2594%25B2%25E6%2596%2590%25E5%259B%25BD%25E3%2580%258C%25E7%2599%25BA%25E9%2585%25B5%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2590%25E3%2583%25BC%25E3%2583%2591%25E3%2583%25B3%25E3%2582%25AFOS%25E3%2580%258D%25E3%2581%25AE%25E3%2582%25A2%25E3%2583%25BC%25E3%2582%25AD%25E3%2583%2586%25E3%2582%25AF%25E3%2583%2581%25E3%2583%25A3%25E8%25A8%25AD%25E8%25A8%2588%25E3%2581%25A8%25E5%2585%25A8%25E7%2590%2583%25E3%2583%2587%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25A4%25E3%2581%25AE%25E6%2595%25B0%25E7%2590%2586%25E3%2580%2590%25E9%2581%258E%25E5%258E%25BB%25E3%2583%25AD%25E3%2582%25B0%25E3%2582%2582...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:K.K.%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTHY4M1pydmVJdG14elVJSEpjTDlXMXRCTmhMUTZST3hOMjIxTE92QjhwQlNpQ3pBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
-    },
-    {
-      "id": "feedly-https://zenn.dev/aiwatch_jp/articles/crawl4ai-llm-ready-web-extraction",
-      "source": "feedly",
-      "title": "HTMLをそのままLLMに渡してはいけない――Crawl4AIが解くWeb抽出の問題",
-      "url": "https://zenn.dev/aiwatch_jp/articles/crawl4ai-llm-ready-web-extraction",
-      "publishedAt": "2026-06-06T14:02:26.000Z",
-      "summary": "! 最先端AIを技術の中身まで読み解く「AIウォッチ」の記事です。今回は、WebページをLLM/RAG/Agentで扱いやすいデータに変換するOSS Crawl4AI を見ます。単なる「便利なクローラー紹介」ではなく、HTMLをLLM-readyなMarkdown/構造化データに変換するエンジニアリング上の問題として整理します。 Webページの内容をLLMに渡したい、という場面は増えています…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s---WO-SU0D--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:HTML%25E3%2582%2592%25E3%2581%259D%25E3%2581%25AE%25E3%2581%25BE%25E3%2581%25BELLM%25E3%2581%25AB%25E6%25B8%25A1%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25AF%25E3%2581%2584%25E3%2581%2591%25E3%2581%25AA%25E3%2581%2584%25E2%2580%2595%25E2%2580%2595Crawl4AI%25E3%2581%258C%25E8%25A7%25A3%25E3%2581%258FWeb%25E6%258A%25BD%25E5%2587%25BA%25E3%2581%25AE%25E5%2595%258F%25E9%25A1%258C%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:AI%25E3%2582%25A6%25E3%2582%25A9%25E3%2583%2583%25E3%2583%2581%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS3RXRmNhLTF3ai1FSnZ5c0EtZEtlbVhlMGRZSlhLMVdMVU12XzRQLW9ORG5qMjFBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
-    },
-    {
-      "id": "feedly-https://zenn.dev/syoshida07/articles/f722f4996e9402",
-      "source": "feedly",
-      "title": "AIの便利さの裏にある環境負債、AIの電力消費にIEEEが警鐘を鳴らす新基準とは",
-      "url": "https://zenn.dev/syoshida07/articles/f722f4996e9402",
-      "publishedAt": "2026-06-06T13:55:38.000Z",
-      "summary": "生成AIは2026年にかけて世界的に急速な普及を遂げ、企業・行政・教育・医療などあらゆる領域で活用が進んだ。 一方その裏側で深刻化しているのが電力消費の増大。 大規模言語モデル(LLM)の推論は、従来のWeb検索の10〜30倍の電力を必要とするとの試算もあり、AIデータセンター全体の電力需要は2026年時点で世界電力の4〜6%に達する可能性が指摘されている。 これは中規模国家の年間電力消費量…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--JXBBRpZM--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AE%25E4%25BE%25BF%25E5%2588%25A9%25E3%2581%2595%25E3%2581%25AE%25E8%25A3%258F%25E3%2581%25AB%25E3%2581%2582%25E3%2582%258B%25E7%2592%25B0%25E5%25A2%2583%25E8%25B2%25A0%25E5%2582%25B5%25E3%2580%2581AI%25E3%2581%25AE%25E9%259B%25BB%25E5%258A%259B%25E6%25B6%2588%25E8%25B2%25BB%25E3%2581%25ABIEEE%25E3%2581%258C%25E8%25AD%25A6%25E9%2590%2598%25E3%2582%2592%25E9%25B3%25B4%25E3%2582%2589%25E3%2581%2599%25E6%2596%25B0%25E5%259F%25BA%25E6%25BA%2596%25E3%2581%25A8%25E3%2581%25AF%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:satoshi%2520yoshida%2520-%2520...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSlp2aXh2cTdVMmFMYUhDSHJTcTBiSGJWWWcwZjVqTEZLajRCMVVmOXpyV2ZPSTJOOD1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
+      "bookmarkCount": 93
     },
     {
       "id": "feedly-https://note.com/npaka/n/n23a60355eb1a",
@@ -281,17 +420,7 @@
       "publishedAt": "2026-06-06T13:39:59.000Z",
       "summary": "はじめに 本題でいう「頭が良くなる」「頭が悪くなる」は、先天的な知能そのものが上下するという意味ではありません。問題になっているのは、AIを使うことで 判断主権 を自分の手元に残す人と、外へ渡してしまう人の差が拡大することです。2025年のMicrosoft Researchの調査でも、生成AIへの信頼が高いほど批判的思考は...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--xvK9c6Hr--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%25AA%25E3%2581%259C%25E3%2580%2581AI%25E3%2581%25AF%25E9%25A0%25AD%25E3%2581%258C%25E8%2589%25AF%25E3%2581%2584%25E4%25BA%25BA%25E3%2581%258C%25E4%25BD%25BF%25E3%2581%2586%25E3%2581%25A8%25E3%2582%2588%25E3%2582%258A%25E9%25A0%25AD%25E3%2581%258C%25E8%2589%25AF%25E3%2581%258F%25E3%2581%25AA%25E3%2582%258B%25E3%2581%25AE%25E3%2581%25AB%25E3%2580%2581%25E9%25A0%25AD%25E3%2581%258C%25E6%2582%25AA%25E3%2581%2584%25E4%25BA%25BA%25E3%2581%258C%25E4%25BD%25BF%25E3%2581%2586%25E3%2581%25A8%25E3%2582%2588%25E3%2582%258A%25E9%25A0%25AD%25E3%2581%258C%25E6%2582%25AA%25E3%2581%258F%25E3%2581%25AA%25E3%2582%258B%25E3%2581%25AE%25E3%2581%258B%25EF%25BC%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:pdfractal%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2FlODUxNjI3MGYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 439
-    },
-    {
-      "id": "feedly-https://zenn.dev/exapolicy/articles/f3a84172f0089c",
-      "source": "feedly",
-      "title": "Covenant Personal Edition のアーキテクチャ概観 — AI ガバナンス基盤の設計思想と実装",
-      "url": "https://zenn.dev/exapolicy/articles/f3a84172f0089c",
-      "publishedAt": "2026-06-06T13:15:03.000Z",
-      "summary": "はじめに 業務に AI を使う個人事業主・フリーランス・小規模事業者にとって、「機密情報を AI に渡したら、どうなるか」は無視できない問いです。クラウド AI の利便性は大きい一方で、扱う情報の機密性が高いほど、「送って大丈夫だったか」を後から検証する手段が乏しいのが現状です。 業界の主流アプローチは「契約と認証で守る」 — SaaS ベンダーとデータ処理契約 (DPA) を結び、学習不使…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--SU1AQQAq--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Covenant%2520Personal%2520Edition%2520%25E3%2581%25AE%25E3%2582%25A2%25E3%2583%25BC%25E3%2582%25AD%25E3%2583%2586%25E3%2582%25AF%25E3%2583%2581%25E3%2583%25A3%25E6%25A6%2582%25E8%25A6%25B3%2520%25E2%2580%2594%2520AI%2520%25E3%2582%25AC%25E3%2583%2590%25E3%2583%258A%25E3%2583%25B3%25E3%2582%25B9%25E5%259F%25BA%25E7%259B%25A4%25E3%2581%25AE%25E8%25A8%25AD%25E8%25A8%2588%25E6%2580%259D%25E6%2583%25B3%25E3%2581%25A8%25E5%25AE%259F%25E8%25A3%2585%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2583%2597%25E3%2583%25AD%25E3%2583%259E%25E3%2583%258D%25E6%25AD%25A6%25E8%2594%25B5%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzY1MTQwZGVlMTQuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Exapolicy%2520%252F%2520%25E3%2582%25A8%25E3%2582%25AF%25E3%2582%25B5%25E3%2583%259D%25E3%2583%25AA%25E3%2582%25B7%25E3%2583%25BC%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2MxODc0NzZlNzYuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
+      "bookmarkCount": 494
     },
     {
       "id": "hatena-https://zenn.dev/ruccho/articles/shader-optimization",
@@ -301,17 +430,7 @@
       "publishedAt": "2026-06-06T13:08:25.000Z",
       "summary": "以前の記事では実際のシェーダーをもとに最適化を行う例を紹介しました。 今回は GPU のアーキテクチャについて理解を深め、理屈から効果的な最適化の方法を考えてみたいと思います。 GPU のアーキテクチャ 構造 GPU は大雑把に以下のような構造をしています。 GPU 全体で共有されるグローバルメモリ、それにいくつかの ...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--cNnU5KyP--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%258F%25BE%25E4%25BB%25A3%25E3%2581%25AE%2520GPU%2520%25E3%2582%25A2%25E3%2583%25BC%25E3%2582%25AD%25E3%2583%2586%25E3%2582%25AF%25E3%2583%2581%25E3%2583%25A3%25E3%2581%25A8%25E3%2582%25B7%25E3%2582%25A7%25E3%2583%25BC%25E3%2583%2580%25E3%2583%25BC%25E6%259C%2580%25E9%2581%25A9%25E5%258C%2596%25E3%2581%25AE%25E8%2580%2583%25E3%2581%2588%25E6%2596%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ruccho%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzgzODFiODMwMjIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 11
-    },
-    {
-      "id": "feedly-https://zenn.dev/jun_eng/articles/4cf7f715f1dc3f",
-      "source": "feedly",
-      "title": "Claude Opus 4.8のDynamic Workflowsで、副業ブログの「ネタ切れ＋多媒体展開」を1プロンプトに畳む設計案",
-      "url": "https://zenn.dev/jun_eng/articles/4cf7f715f1dc3f",
-      "publishedAt": "2026-06-06T13:02:03.000Z",
-      "summary": "2026/5/28リリースのClaude Opus 4.8は Effort Control と Dynamic Workflows を搭載 subagentの並列実行で「ネタ収集 → note記事 → Zenn記事」を1プロンプトに統合する設計案 筆者は副業ブログ運営者で、まだ結果は出していない。これから運用に乗せる構成の共有 ::: 背景：副業ブログの2大ペイン 副業でnote / Zen…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--DIa2boxo--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Opus%25204.8%25E3%2581%25AEDynamic%2520Workflows%25E3%2581%25A7%25E3%2580%2581%25E5%2589%25AF%25E6%25A5%25AD%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%25E3%2581%25AE%25E3%2580%258C%25E3%2583%258D%25E3%2582%25BF%25E5%2588%2587%25E3%2582%258C%25EF%25BC%258B%25E5%25A4%259A%25E5%25AA%2592%25E4%25BD%2593%25E5%25B1%2595%25E9%2596%258B%25E3%2580%258D%25E3%2582%25921%25E3%2583%2597%25E3%2583%25AD...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2598%25E3%2582%2585%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzM4ZDYzMTE4ZDAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
+      "bookmarkCount": 18
     },
     {
       "id": "hatena-https://speakerdeck.com/kajitack/why-algebraic-data-type",
@@ -321,17 +440,7 @@
       "publishedAt": "2026-06-06T12:58:01.000Z",
       "summary": "フロントエンド・PHPカンファレンス北海道2026 の登壇資料です。 https://fortee.jp/frontend-phpcon-do-2026/proposal/f85e1c42-0592-4f5f-a493-e0757412e0a5 - 代数的データ型とはなにか？直積型/列挙型/…",
       "thumbnail": "https://files.speakerdeck.com/presentations/dee9cd84a1ba4b09894ec0d99f80f7dc/slide_0.jpg?39626028",
-      "bookmarkCount": 66
-    },
-    {
-      "id": "feedly-https://zenn.dev/yamadatools/articles/d5c084f051fc24",
-      "source": "feedly",
-      "title": "検索1位でもAIに無視される——GEOとSEOが別ゲームである理由",
-      "url": "https://zenn.dev/yamadatools/articles/d5c084f051fc24",
-      "publishedAt": "2026-06-06T12:47:12.000Z",
-      "summary": "この記事を読む前に確認してほしいこと あなたのサイト、以下に当てはまりませんか？ PageSpeed Insights で90点以上 主要キーワードで3位以内 Google Search Consoleで安定した流入がある でも、AI Overview / ChatGPT / Perplexity の回答に出てこない 全部当てはまるなら、この記事はあなたのために書いた。 GEOという概念 G…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--9I170L75--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%25A4%259C%25E7%25B4%25A21%25E4%25BD%258D%25E3%2581%25A7%25E3%2582%2582AI%25E3%2581%25AB%25E7%2584%25A1%25E8%25A6%2596%25E3%2581%2595%25E3%2582%258C%25E3%2582%258B%25E2%2580%2594%25E2%2580%2594GEO%25E3%2581%25A8SEO%25E3%2581%258C%25E5%2588%25A5%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%25A0%25E3%2581%25A7%25E3%2581%2582%25E3%2582%258B%25E7%2590%2586%25E7%2594%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E5%25B1%25B1%25E7%2594%25B0%25E6%259C%2589%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTGNSTXFCc1hWZjk1V25JSVQ4YWViQlRjdk1JOHFDSk9Xd0FqSC1fazBTQV9WTGxQUnNZZz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
+      "bookmarkCount": 94
     },
     {
       "id": "feedly-https://note.com/npaka/n/n566ab438403a",
@@ -343,16 +452,6 @@
       "author": "npaka"
     },
     {
-      "id": "hatena-https://www.47news.jp/14427079.html",
-      "source": "hatena",
-      "title": "アンソロピック社、開発減速提言　AI自律進化、「制御不能」前に",
-      "url": "https://www.47news.jp/14427079.html",
-      "publishedAt": "2026-06-06T12:17:36.000Z",
-      "summary": "【ニューヨーク共同】人工知能（AI）開発の米アンソロピックは6日までに、AIが人間の手を借りずに性能を自律的に高める段階に近づいたと指摘し、暴走して制御不能になる前に「開発を遅らせたり、一時停止したりする選択肢を持つことが世界にとって有益だ」と提言した。核軍縮条約を引き合いに、先端AI規制の国際的枠組み...",
-      "thumbnail": "https://img.cf.47news.jp/public/photo/1a478aaa36ec8103a60cebc4d426a510/photo.jpg",
-      "bookmarkCount": 161
-    },
-    {
       "id": "hatena-https://p-shirokuma.hatenadiary.com/entry/20260606/1780740000",
       "source": "hatena",
       "title": "素人の「ぜんぜんいない」と専門家の「けっこういる」問題 - シロクマの屑籠",
@@ -360,27 +459,7 @@
       "publishedAt": "2026-06-06T10:58:46.000Z",
       "summary": "昔の引きこもりって凄い 今の引きこもりはネットを介してコミュニケーションしてるから認知機能は保たれてるけど、それ以前は全く新たな刺激がないまま引きこもってたはず 引きこもりの方の研究はネット時代以降のしかないから、それ以前の彼らは医学的にどうだったかもう分からないけど気になる— Lebenstrieb (@Kohler_...",
       "thumbnail": "https://ogimage.blog.st-hatena.com/6653458415124667212/14945776032039410750/1780744430",
-      "bookmarkCount": 158
-    },
-    {
-      "id": "hatena-https://gigazine.net/news/20260606-llm-checker/",
-      "source": "hatena",
-      "title": "無料で自分のPCで動かせるローカルAIモデルがわかる「LLM Checker」",
-      "url": "https://gigazine.net/news/20260606-llm-checker/",
-      "publishedAt": "2026-06-06T10:53:45.000Z",
-      "summary": "「LLM Checker」は自分のPCのハードウェアをスキャンしローカルで実行可能なLLMを推薦してくれるCLIツールであり、Ollamaと完全に統合されていることを特徴としています。 Pavelevich/llm-checker: Advanced CLI tool that scans your hardware and tells you exactly which LLM or sL…",
-      "thumbnail": "https://i.gzn.jp/img/2026/06/06/llm-checker/00.png",
-      "bookmarkCount": 61
-    },
-    {
-      "id": "hatena-https://azukiazusa.dev/blog/goal-command-use-case-vitest/",
-      "source": "hatena",
-      "title": "`/goal` コマンドの活用例: Vitest の実行時間を 6 倍高速化した話",
-      "url": "https://azukiazusa.dev/blog/goal-command-use-case-vitest/",
-      "publishedAt": "2026-06-06T10:46:56.000Z",
-      "summary": "Vitest の `isolate: false` オプションを有効にすることで、テストの実行時間を大幅に短縮できましたが、その際に大規模なコードの修正が必要でした。Claude Code の `/goal` コマンドを活用することで、最終的なゴールを達成するために必要なステップを自律的に判断して実行させることができます。この記事ではその経...",
-      "thumbnail": "https://ogp.azukiazusa.dev/blog/ogp/goal-command-use-case-vitest.png",
-      "bookmarkCount": 53
+      "bookmarkCount": 179
     },
     {
       "id": "feedly-https://note.com/npaka/n/nab2b855c0f03",
@@ -392,16 +471,6 @@
       "author": "npaka"
     },
     {
-      "id": "hatena-https://speakerdeck.com/yusukebe/aishi-dai-nouihadokohexing-ku-sono2",
-      "source": "hatena",
-      "title": "AI時代のUIはどこへ行く？その2！",
-      "url": "https://speakerdeck.com/yusukebe/aishi-dai-nouihadokohexing-ku-sono2",
-      "publishedAt": "2026-06-06T08:31:59.000Z",
-      "summary": "フロントエンド・PHPカンファレンス北海道2026 June 6, 2026",
-      "thumbnail": "https://files.speakerdeck.com/presentations/261fd6bb9f5e4c97926a85e1b04920a9/slide_0.jpg?39628857",
-      "bookmarkCount": 161
-    },
-    {
       "id": "hatena-https://speakerdeck.com/syumai/jsx-runtime-basics",
       "source": "hatena",
       "title": "作って学ぶ、 JSX (TSX) ランタイムの基本",
@@ -409,17 +478,7 @@
       "publishedAt": "2026-06-06T08:29:37.000Z",
       "summary": "フロントエンド・PHPカンファレンス 北海道 2026の発表資料です https://fortee.jp/frontend-phpcon-do-2026/proposal/9702d654-e233-4608-bffb-0fa04cff75c1",
       "thumbnail": "https://files.speakerdeck.com/presentations/458ace1a03e24bf08c2f958a13a61150/slide_0.jpg?39626710",
-      "bookmarkCount": 29
-    },
-    {
-      "id": "hatena-https://qiita.com/fj_qaengineer/items/cabe6aea0be459f7d97b",
-      "source": "hatena",
-      "title": "海外ベンダーが作成したテスト方針やテストケースに対する品質改善業務に従事して得た学び - Qiita",
-      "url": "https://qiita.com/fj_qaengineer/items/cabe6aea0be459f7d97b",
-      "publishedAt": "2026-06-06T07:35:15.000Z",
-      "summary": "はじめに こんにちは。 QAエンジニアのふじです。 QAエンジニアとして実務に携わって約2年が経ちました。 私が過去に所属したプロジェクトではオフショア開発を取り入れており、 海外ベンダーが作成したテスト方針やテストケースのレビュー、および品質改善業務を担当する機会がありました。 そこでの業務を通じて、国内...",
-      "thumbnail": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMzkwNjcwNSUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc4MDY1MzMzMT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZTRhMWYxMzgyOGYzZmZkZWQxNjUzODVhMzRiNGQ1ZWM%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dda79eebc6e1fefcea9361ddb1cb9f781?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU2JUI1JUI3JUU1JUE0JTk2JUUzJTgzJTk5JUUzJTgzJUIzJUUzJTgzJTgwJUUzJTgzJUJDJUUzJTgxJThDJUU0JUJEJTlDJUU2JTg4JTkwJUUzJTgxJTk3JUUzJTgxJTlGJUUzJTgzJTg2JUUzJTgyJUI5JUUzJTgzJTg4JUU2JTk2JUI5JUU5JTg3JTlEJUUzJTgyJTg0JUUzJTgzJTg2JUUzJTgyJUI5JUUzJTgzJTg4JUUzJTgyJUIxJUUzJTgzJUJDJUUzJTgyJUI5JUUzJTgxJUFCJUU1JUFGJUJFJUUzJTgxJTk5JUUzJTgyJThCJUU1JTkzJTgxJUU4JUIzJUFBJUU2JTk0JUI5JUU1JTk2JTg0JUU2JUE1JUFEJUU1JThCJTk5JUUzJTgxJUFCJUU1JUJFJTkzJUU0JUJBJThCJUUzJTgxJTk3JUUzJTgxJUE2JUU1JUJFJTk3JUUzJTgxJTlGJUU1JUFEJUE2JUUzJTgxJUIzJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MDhkN2I5MmVhZDg2NjVlMWZhYjJkYjdlODEzNWUzMWE&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBmal9xYWVuZ2luZWVyJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9NDBjOGEyMGQzN2NlOTM3NzgwM2JjMDk3NTEwNzBhYmM&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=79f34c91429fb631717cf87f950434ab",
-      "bookmarkCount": 60
+      "bookmarkCount": 41
     },
     {
       "id": "hatena-https://zenn.dev/catatsuy/articles/e2fc71d810613a",
@@ -429,16 +488,7 @@
       "publishedAt": "2026-06-06T06:03:49.000Z",
       "summary": "最近のサプライチェーンアタックを見ていると、これまでとは明らかにフェーズが変わったと感じています。 この記事は、具体的な解決策を提示するというより、最近のサプライチェーン攻撃を見て、自分が開発環境やCI/CDについて考えていることを整理したものです。 以前の攻撃は、どちらかというとコンピュータリテラシー...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--ezv_9rEh--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%2596%258B%25E7%2599%25BA%25E8%2580%2585%25E3%2581%258C%25E6%2594%25BB%25E6%2592%2583%25E5%25AF%25BE%25E8%25B1%25A1%25E3%2581%25AB%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%259F%25E6%2599%2582%25E4%25BB%25A3%25E3%2581%25AB%25E3%2580%2581%25E9%2596%258B%25E7%2599%25BA%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25A8CI%252FCD%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%2584%25E3%2581%25A6%25E8%2580%2583%25E3%2581%2588%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E3%2581%2593%25E3%2581%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:catatsuy%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2NiYTVlYjRjMTEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 97
-    },
-    {
-      "id": "hatena-https://ladybird.org/posts/changing-how-we-develop-ladybird/",
-      "source": "hatena",
-      "title": "Changing How We Develop Ladybird - Ladybird",
-      "url": "https://ladybird.org/posts/changing-how-we-develop-ladybird/",
-      "publishedAt": "2026-06-06T05:10:02.000Z",
-      "summary": "Today we’re changing how code enters the Ladybird project. We will no longer accept public pull requests. From now on, code changes to the Ladybird codebase will only be introduced by project maint…",
-      "bookmarkCount": 9
+      "bookmarkCount": 143
     },
     {
       "id": "x-2063105741976952929",
@@ -458,25 +508,6 @@
       "author": "npaka"
     },
     {
-      "id": "hatena-https://katukawa.com/?p=6345",
-      "source": "hatena",
-      "title": "スルメイカの「倍増」漁獲枠は本当に米国流？ 水産庁の“謎の計算式”を調べてみたら、全くの別物だった件 - 勝川俊雄公式サイト",
-      "url": "https://katukawa.com/?p=6345",
-      "publishedAt": "2026-06-06T00:26:21.000Z",
-      "summary": "スルメイカの漁獲枠が意味不明です 今年のスルメイカのTAC（漁獲可能量）が、昨年の倍以上に増枠されました。水産庁の説明によると、これは「カナダマツイカ（Illex illecebrosus）に対する米国の管理方式」を参考にした、新しい算出方法を採用した結果だといいます。 水産庁の資料（資源管理方針に関する検討会・第8回...",
-      "bookmarkCount": 15
-    },
-    {
-      "id": "hatena-https://japan.cnet.com/article/35248536/",
-      "source": "hatena",
-      "title": "AIの進化で世界はどうなる？ Anthropicが「3つの将来シナリオ」公開--SF的な未来も",
-      "url": "https://japan.cnet.com/article/35248536/",
-      "publishedAt": "2026-06-06T00:25:58.000Z",
-      "summary": "米Anthropicは、同社の研究機関Anthropic Instituteによる論考「When AI builds itself（AIが自らを作るとき）」を公開した。AIがAI自身の開発を肩代わりし、その開発ペースを既に加速させているとし、2026年5月時点で同社のコードベースにマージされるコードの80%超を同社のAI「Claude」が記述していると明らかにした。...",
-      "thumbnail": "https://japan.cnet.com/storage/2026/06/06/e3cbbe91252f859bdeaeb9cce3e54a6d/claude-ai-9831_1000x563.jpeg",
-      "bookmarkCount": 45
-    },
-    {
       "id": "hatena-https://speakerdeck.com/tanimuyk/aipuratutohuomuwoyun-yong-sisok-kerutamenoke-guan-ce-xing",
       "source": "hatena",
       "title": "AIプラットフォームを運用し続けるための可観測性",
@@ -484,17 +515,17 @@
       "publishedAt": "2026-06-06T00:15:28.000Z",
       "summary": "PHP と TypeScript の型システム比較：AI 時代の「型」は誰のためにあるのか？ #frontend_phpcon_do / frontend_phpcon_do_2026",
       "thumbnail": "https://files.speakerdeck.com/presentations/c732fa50e7ca4a8394e9905472052f01/slide_0.jpg?39615600",
-      "bookmarkCount": 41
+      "bookmarkCount": 54
     },
     {
-      "id": "hatena-https://date-fns.org/you-dont-need-date-fns",
+      "id": "hatena-https://note.com/npaka/n/ndeef4df16dd2",
       "source": "hatena",
-      "title": "Modern JavaScript Date Utility Library",
-      "url": "https://date-fns.org/you-dont-need-date-fns",
-      "publishedAt": "2026-06-05T23:51:13.000Z",
-      "summary": "date-fns provides the most comprehensive yet simple and consistent toolset for manipulating JavaScript dates in a browser & Node.js.",
-      "thumbnail": "http://cdn.date-fns.org/card.png",
-      "bookmarkCount": 13
+      "title": "Gemma 4 QAT の概要｜npaka",
+      "url": "https://note.com/npaka/n/ndeef4df16dd2",
+      "publishedAt": "2026-06-05T23:19:24.000Z",
+      "summary": "以下の記事が面白かったので、簡単にまとめました。 ・Gemma 4 QAT models: Optimizing model compression for mobile and laptop efficiency 1. Gemma 4 QAT2026年6月5日、Quantization-Aware Training（QAT）で最適化された「Gemma 4 QAT」チェックポイントがリリース…",
+      "thumbnail": "https://assets.st-note.com/production/uploads/images/282846178/rectangle_large_type_2_dbaa605e5302c830f30a2533a17482d1.png?fit=bounds&quality=85&width=1280",
+      "bookmarkCount": 9
     },
     {
       "id": "feedly-https://note.com/npaka/n/nda90baec71aa",
@@ -547,7 +578,8 @@
       "title": "アンソロピック、AI開発の「減速」を提言 https://t.co/vvqqNj6KHO",
       "url": "https://x.com/i/status/2062874889049276570",
       "publishedAt": "2026-06-05T12:31:14.000Z",
-      "author": "ブックマーク"
+      "author": "ブックマーク",
+      "thumbnail": "https://www.watch.impress.co.jp/img/ipw/list/2115/005/an1.jpg"
     },
     {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/05/5151.html",
@@ -567,7 +599,7 @@
       "publishedAt": "2026-06-05T11:44:12.000Z",
       "summary": "マイクロソフト、Build 2026で方針転換：WinUIを唯一のネイティブフレームワークに格上げ、Windows 11は「開発者ファースト」戦略でWebラッパーに全面反撃 マイクロソフトはBuild 2026開発者会議において、2つの重大な戦略転換を発表した。1つ目は、WinUI 3のブランド名を正式に廃止し「WinUI」に統一。Windowsアプリ開...",
       "thumbnail": "https://img.biggo.com/5iiQCrDbPBBw-QK3B1wKwbw_OgY_lu3iqvDmzI6ahVk/fit/1720/0/sm/1/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTA2L2RrSnprWjRCb2ljTm9PZ0NxM1pqXzE3ODA1NjU1OTFfZGVmYXVsdC5qcGc.jpg",
-      "bookmarkCount": 55
+      "bookmarkCount": 63
     },
     {
       "id": "x-2062821701340295427",
@@ -576,7 +608,8 @@
       "url": "https://x.com/i/status/2062821701340295427",
       "publishedAt": "2026-06-05T08:59:53.000Z",
       "summary": "Anthropic 社内での Skills 利用/運用の Tips 記事です。\n\n社内で利用される9種類のSkillと、Skillsのベスプラ (Gotchas Section、ファイル分割、memoryの利用、Skill内での環境変数 / hookの利用など) が解説されてます。\n\n社内でのSkillの配布方法も参考になりました。",
-      "author": "ブックマーク"
+      "author": "ブックマーク",
+      "thumbnail": "https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a2058f7af91f02cff0a6187_og-lessons-from-building-claude-code.jpg"
     },
     {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/05/5150.html",
@@ -596,7 +629,7 @@
       "publishedAt": "2026-06-05T08:10:16.000Z",
       "summary": "米国企業がOpenAIやAnthropicの高額なAIモデルから、安価な中国製モデルへ乗り換えている実態が、米決済プラットフォーム「Ramp」の支出データから明らかになった。同社が6月3日（現地時間）に公開した月次調査結果「Top SaaS Vendors on Ramp」で、中国DeepSeekが急成長部門の首位に入った。 この調査は5万社超の法人カ...",
       "thumbnail": "https://www.itmedia.co.jp/aiplus/article/ogp/2606/05/2000000060/10000333/2048",
-      "bookmarkCount": 58
+      "bookmarkCount": 71
     },
     {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/05/5149.html",
@@ -616,7 +649,7 @@
       "publishedAt": "2026-06-05T04:05:39.000Z",
       "summary": "2022年3月、音声合成業界に大きな衝撃を与えたAI音声合成ソフト「VOICEPEAK 商用可能 6ナレーターセット」が登場してから、早くも4年以上が経ちました。この製品はSynthesizer Vを開発したDreamtonicsが、歌声ではなく、しゃべるソフトを、過去最高といってもいいクオリティーで出したという点でも衝撃的でしたが、グッ...",
       "thumbnail": "https://www.dtmstation.com/wp-content/uploads/2026/06/top.jpg",
-      "bookmarkCount": 12
+      "bookmarkCount": 23
     },
     {
       "id": "x-2062738712375808466",
@@ -624,7 +657,8 @@
       "title": "東大松尾研が「LLM講座 基礎編」の講義資料を無料公開　期間限定で",
       "url": "https://x.com/i/status/2062738712375808466",
       "publishedAt": "2026-06-05T03:30:07.000Z",
-      "author": "ブックマーク"
+      "author": "ブックマーク",
+      "thumbnail": "https://www.itmedia.co.jp/aiplus/article/ogp/2606/05/2000000062/10000338/2048"
     },
     {
       "id": "feedly-https://tech.algomatic.jp/entry/advent-calendar/2026-06/pm-harness",
@@ -643,16 +677,6 @@
       "publishedAt": "2026-06-05T01:51:43.000Z",
       "summary": "「Codex」の「プラグイン」と「スキル」の関係をまとめました。 続きをみる",
       "author": "npaka"
-    },
-    {
-      "id": "hatena-https://zenn.dev/edhiblemeer/articles/claude-code-opus48-tool-corruption",
-      "source": "hatena",
-      "title": "Claude Code (Opus 4.8) で全ツール呼び出しが壊れる — 日本語環境で踏みやすい未修正バグと回避策",
-      "url": "https://zenn.dev/edhiblemeer/articles/claude-code-opus48-tool-corruption",
-      "publishedAt": "2026-06-05T00:31:02.000Z",
-      "summary": "長時間・常時起動でClaude Codeを使っていると、ある時からすべてのツール呼び出しが壊れて動かなくなることがある。日本語環境で複数のセッションを何時間も回していて、実際にこれを踏んだ。原因と回避策が分かったので、特に日本語ユーザーが踏みやすい点を含めて共有する。 起きること function callの開始タグが co...",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--gxAaXu3L--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%2520%2528Opus%25204.8%2529%2520%25E3%2581%25A7%25E5%2585%25A8%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E5%2591%25BC%25E3%2581%25B3%25E5%2587%25BA%25E3%2581%2597%25E3%2581%258C%25E5%25A3%258A%25E3%2582%258C%25E3%2582%258B%2520%25E2%2580%2594%2520%25E6%2597%25A5%25E6%259C%25AC%25E8%25AA%259E%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25A7%25E8%25B8%258F%25E3%2581%25BF%25E3%2582%2584%25E3%2581%2599%25E3%2581%2584%25E6%259C%25AA%25E4%25BF%25AE%25E6%25AD%25A3%25E3%2583%2590%25E3%2582%25B0%25E3%2581%25A8%25E5%259B%259E%25E9%2581%25BF%25E7%25AD%2596%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:yoshi%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUlNTndyWXA4SHpUR3FEX2QtOTJqdHJ2aFUtc2J3c1ViZFpnYzVpMlBJc3kwSEpUNklfdz1zOTYtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 20
     },
     {
       "id": "feedly-https://monoist.itmedia.co.jp/mn/articles/2606/05/news020.html",
@@ -680,7 +704,7 @@
       "publishedAt": "2026-06-04T23:15:16.000Z",
       "summary": "バックエンドエンジニアの長田です。 2026年4月30日に、Nature はスマートロック製品である「Nature Lock」と、 その専用のスマートキーであり Apple の「探す」アプリにも対応した「Nature Key」を発売しました。 nature.global nature.global また、5月19日には iOS のショートカットアプリなどの Nature Home アプリ...",
       "thumbnail": "https://cdn.image.st-hatena.com/image/scale/d142ee21fbc16c3e147f80e66a24f65e5cba605b/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhandlename%2F20260604%2F20260604143211.png",
-      "bookmarkCount": 49
+      "bookmarkCount": 55
     },
     {
       "id": "feedly-https://www.itmedia.co.jp/enterprise/articles/2606/05/news037.html",
@@ -699,7 +723,7 @@
       "publishedAt": "2026-06-04T22:38:32.000Z",
       "summary": "ウィジェットや診断サービスを完全に「不活化」して無駄なリソース消費をなくす Windows 11は、設定画面から機能を「オフ」や「非表示」に切り替えても、バックグラウンドで関連プロセスが動作し続け、システムリソースを消費しているケースが少なくない。本Tech TIPSでは、ウィジェットや診断サービスなど、裏でリソー...",
       "thumbnail": "https://image.itmedia.co.jp/ait/articles/2606/05/cover_news010.jpg",
-      "bookmarkCount": 176
+      "bookmarkCount": 252
     },
     {
       "id": "feedly-https://www.itmedia.co.jp/aiplus/article/2606/05/2000000060/",
@@ -855,7 +879,8 @@
       "title": "本日の登壇資料です！！  \n#AIkenshouMeetup\n\nClaude Code / Codex の全社展開とAI観測基盤の設計",
       "url": "https://x.com/i/status/2062487492897685986",
       "publishedAt": "2026-06-04T10:51:52.000Z",
-      "author": "ブックマーク"
+      "author": "ブックマーク",
+      "thumbnail": "https://bcdn.docswell.com/page/3EK9N26VED.jpg?width=480"
     },
     {
       "id": "feedly-https://tech.algomatic.jp/entry/dvent-calendar/2026-06/ai-agent-execution-platform",
@@ -891,7 +916,8 @@
       "title": "さらば、Windsurf　「Devin Desktop」にリニューアル、ClaudeもCodexも一元管理",
       "url": "https://x.com/i/status/2062406521850597878",
       "publishedAt": "2026-06-04T05:30:07.000Z",
-      "author": "ブックマーク"
+      "author": "ブックマーク",
+      "thumbnail": "https://www.itmedia.co.jp/aiplus/article/ogp/2606/04/2000000057/10000319/2048"
     },
     {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/04/5144.html",
@@ -937,7 +963,8 @@
       "title": "「AI使うな」より「使うなら教えて」　エージェント時代のガバナンス再設計",
       "url": "https://x.com/i/status/2062308373396390014",
       "publishedAt": "2026-06-03T23:00:06.000Z",
-      "author": "ブックマーク"
+      "author": "ブックマーク",
+      "thumbnail": "https://www.itmedia.co.jp/aiplus/article/ogp/2606/04/2000000038/10000206/2048"
     },
     {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/04/5142.html",
@@ -956,15 +983,6 @@
       "url": "https://note.com/npaka/n/nd3ad1b4865cc",
       "publishedAt": "2026-06-03T22:22:48.000Z",
       "summary": "「LeLab」の概要をまとめました。 続きをみる",
-      "author": "npaka"
-    },
-    {
-      "id": "feedly-https://note.com/npaka/n/n7bdf1e232831",
-      "source": "feedly",
-      "title": "Gemma 4 12B の概要",
-      "url": "https://note.com/npaka/n/n7bdf1e232831",
-      "publishedAt": "2026-06-03T21:48:37.000Z",
-      "summary": "「Gemma 4 12B」の概要をまとめました。 ・Introducing Gemma 4 12B: a unified, encoder-free multimodal model 続きをみる",
       "author": "npaka"
     },
     {
@@ -1050,7 +1068,8 @@
       "url": "https://x.com/i/status/2061910164366676431",
       "publishedAt": "2026-06-02T20:37:46.000Z",
       "summary": "Google has officially launched \"Organize My Files in Drive,\" a new Gemini-powered tool that automatically suggests where to group and move your loose documents.",
-      "author": "ブックマーク"
+      "author": "ブックマーク",
+      "thumbnail": "https://chromeunboxed.com/wp-content/uploads/2026/06/GeminiOrganizeMyFilesDrive.webp"
     },
     {
       "id": "x-2061885329649602886",
@@ -1139,7 +1158,8 @@
       "title": "あとで読む",
       "url": "https://x.com/i/status/2061765570161508782",
       "publishedAt": "2026-06-02T11:03:12.000Z",
-      "author": "ブックマーク"
+      "author": "ブックマーク",
+      "thumbnail": "https://files.speakerdeck.com/presentations/07b980cf9a494d2e986bf3ac9150b3b5/slide_0.jpg?39475139"
     },
     {
       "id": "feedly-https://tech.algomatic.jp/entry/advent-calendar/2026-06/deepswe",
@@ -1183,7 +1203,8 @@
       "title": "「AI×人事戦略」が加速？　メルカリやSansanが相次ぎ新体制に　“AI前提の組織”目指す",
       "url": "https://x.com/i/status/2061382263766663514",
       "publishedAt": "2026-06-01T09:40:04.000Z",
-      "author": "ブックマーク"
+      "author": "ブックマーク",
+      "thumbnail": "https://www.itmedia.co.jp/aiplus/article/ogp/2606/01/2000000041/10000223/2048"
     },
     {
       "id": "x-2061364822974050599",
@@ -1191,7 +1212,8 @@
       "title": "テックブログ更新しました！\n\nClaude Codeのセキュリティ運用・組織運用についてです🔥",
       "url": "https://x.com/i/status/2061364822974050599",
       "publishedAt": "2026-06-01T08:30:46.000Z",
-      "author": "ブックマーク"
+      "author": "ブックマーク",
+      "thumbnail": "https://nocode-sol.co.jp/wp-content/uploads/2026/05/LLM_API%E3%81%AE%E3%82%B9%E3%82%B9%E3%83%A1%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC-19.png"
     },
     {
       "id": "feedly-https://www.publickey1.jp/blog/26/google_cloudpostgresqlalloydb.html",
@@ -1217,7 +1239,8 @@
       "title": "改めて多層防御必須な時代になってきてる。",
       "url": "https://x.com/i/status/2061038034339102839",
       "publishedAt": "2026-05-31T10:52:14.000Z",
-      "author": "ブックマーク"
+      "author": "ブックマーク",
+      "thumbnail": "https://files.speakerdeck.com/presentations/172ff2ae285c4aca8f5c16f65d2e4616/slide_0.jpg?27186140"
     },
     {
       "id": "feedly-https://ainow.ai/2026/05/30/278121/?utm_source=rss&utm_medium=rss&utm_campaign=%25e7%2589%25a9%25e6%25b5%2581%25e6%25a5%25ad%25e7%2595%258c%25e3%2581%25ae%25e7%2594%259f%25e6%2588%2590ai%25e6%25b4%25bb%25e7%2594%25a8%25e4%25ba%258b%25e4%25be%258b10%25e9%2581%25b8%25ef%25bc%2581%25e3%2583%25a1%25e3%2583%25aa%25e3%2583%2583%25e3%2583%2588%25e3%2582%2584%25e5%25b0%258e%25e5%2585%25a5%25e3%2582%25b9",
@@ -1270,7 +1293,8 @@
       "url": "https://x.com/i/status/2060013727907303435",
       "publishedAt": "2026-05-28T15:02:00.000Z",
       "summary": "Today we’re launching Command Line, a new technical blog about how and why we build.\n \nOur first stories go behind the architecture, design decisions, and research shaping the next wave of developer tools.\n \nStay tuned for more next week at #MicrosoftBuild",
-      "author": "ブックマーク"
+      "author": "ブックマーク",
+      "thumbnail": "https://commandline.microsoft.com/wp-content/uploads/2026/05/command-line-intro-16x9-bigger-cursor-scaled.png"
     },
     {
       "id": "x-2059992622165549326",
@@ -1298,7 +1322,8 @@
       "url": "https://x.com/i/status/2059703536825565499",
       "publishedAt": "2026-05-27T18:29:25.000Z",
       "summary": "Private MCP servers 🤝 OpenAI products\n\nYour team can keep MCP servers inside your network while ChatGPT, Codex, and the Responses API connect through outbound-only HTTPS.\n\n🔗 https://t.co/UVq0KpT0km",
-      "author": "ブックマーク"
+      "author": "ブックマーク",
+      "thumbnail": "https://developers.openai.com/og/api/docs/guides/secure-mcp-tunnels.png"
     },
     {
       "id": "feedly-https://www.publickey1.jp/blog/26/awswebaikiro_web.html",
@@ -1325,7 +1350,8 @@
       "url": "https://x.com/i/status/2059388946501771577",
       "publishedAt": "2026-05-26T21:39:21.000Z",
       "summary": "Claude Code 向けにsecurity-guidanceプラグインをリリース。\n\nコードを書いている際の脆弱性を特定し、修正する。リポジトリ内のclaude-security-guidance/.mdで組織独自のルールも設定可能。\n\nhttps://t.co/FiJuKABvp9",
-      "author": "ブックマーク"
+      "author": "ブックマーク",
+      "thumbnail": "https://claude-code.mintlify.app/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DCode%2Breview%2B%2526%2BCI%252FCD%26appearance%3Dsystem%26title%3DCatch%2Bsecurity%2Bissues%2Bas%2BClaude%2Bwrites%2Bcode%26description%3DInstall%2Bthe%2Bsecurity-guidance%2Bplugin%2Bto%2Bhave%2BClaude%2Breview%2Bits%2Bown%2Bcode%2Bchanges%2Bfor%2Bvulnerabilities%2Band%2Bfix%2Bthem%2Bin%2Bthe%2Bsame%2Bsession.%26logoLight%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaude-code%252Fc5r9_6tjPMzFdDDT%252Flogo%252Flight.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253Dc5r9_6tjPMzFdDDT%2526q%253D85%2526s%253D78fd01ff4f4340295a4f66e2ea54903c%26logoDark%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaude-code%252Fc5r9_6tjPMzFdDDT%252Flogo%252Fdark.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253Dc5r9_6tjPMzFdDDT%2526q%253D85%2526s%253D1298a0c3b3a1da603b190d0de0e31712%26primaryColor%3D%25230E0E0E%26lightColor%3D%2523D4A27F%26darkColor%3D%25230E0E0E%26backgroundLight%3D%2523FDFDF7%26backgroundDark%3D%252309090B&amp;w=1200&amp;q=100"
     },
     {
       "id": "feedly-https://ainow.ai/2026/05/27/278112/?utm_source=rss&utm_medium=rss&utm_campaign=%25e7%2594%259f%25e6%2588%2590ai%25e3%2581%25a7%25e5%2596%25b6%25e6%25a5%25ad%25e3%2582%2592%25e5%258a%25b9%25e7%258e%2587%25e5%258c%2596%25ef%25bc%2581%25e6%25b4%25bb%25e7%2594%25a8%25e3%2582%25b7%25e3%2583%25bc%25e3%2583%25b37%25e9%2581%25b8%25e3%2581%25a8%25e3%2581%2599%25e3%2581%2590%25e4%25bd%25bf%25e3%2581%2588",
@@ -1369,7 +1395,8 @@
       "title": "昨日(5/25) 基調講演の資料を公開しました。\n\n『Agentic AI時代における メルカリのAIガバナンスとガードレール実装』 \n\n ITメディア Security Week 2026春",
       "url": "https://x.com/i/status/2059050018318032965",
       "publishedAt": "2026-05-25T23:12:34.000Z",
-      "author": "ブックマーク"
+      "author": "ブックマーク",
+      "thumbnail": "https://files.speakerdeck.com/presentations/eab56299a0e04fe6a5438c334dbdbc71/slide_0.jpg?39510434"
     },
     {
       "id": "x-2059043274267238403",
@@ -1377,7 +1404,8 @@
       "title": "書いてみました",
       "url": "https://x.com/i/status/2059043274267238403",
       "publishedAt": "2026-05-25T22:45:46.000Z",
-      "author": "ブックマーク"
+      "author": "ブックマーク",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--tTSdijrC--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25A4%25BE%25E5%2586%2585%25E3%2581%25AE%25E7%259F%25A5%25E8%25A6%258B%25E3%2582%2592AI%25E3%2581%258C%25E6%25BC%258F%25E3%2582%2589%25E3%2581%2595%25E3%2581%259A%25E6%258B%25BE%25E3%2581%2586%25E5%2594%25AF%25E4%25B8%2580%25E3%2581%25AE%25E8%25A8%25AD%25E8%25A8%2588%25E6%2580%259D%25E6%2583%25B3%2520%25E2%2580%2595%2520Karpathy%25E6%25B0%258F%25E3%2581%25AELLM%2520Wiki%25E3%2582%2592%25E5%25AE%259F%25E8%25B7%25B5%25E3%2581%2597%25E3%2581%25A6%25E5%2588%2586%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%25E3%2581%2593%25E3%2581%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Noriaki%2520Handa%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzFhMmU0MjFkMDAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE"
     },
     {
       "id": "feedly-https://ainow.ai/2026/05/26/278105/?utm_source=rss&utm_medium=rss&utm_campaign=%25e5%25bb%25ba%25e8%25a8%25ad%25e6%25a5%25ad%25e3%2581%25ae%25e7%2594%259f%25e6%2588%2590ai%25e6%25b4%25bb%25e7%2594%25a8%25e4%25ba%258b%25e4%25be%258b10%25e9%2581%25b8%25ef%25bc%2581%25e3%2583%25a1%25e3%2583%25aa%25e3%2583%2583%25e3%2583%2588%25e3%2583%25bb%25e8%25aa%25b2%25e9%25a1%258c%25e3%2581%258b%25e3%2582%2589",
@@ -1457,7 +1485,8 @@
       "title": "OpenAI、日本政府と一部企業にセキュリティ特化AI「GPT-5.5-Cyber」提供へ",
       "url": "https://x.com/i/status/2057393486324990388",
       "publishedAt": "2026-05-21T09:30:06.000Z",
-      "author": "ブックマーク"
+      "author": "ブックマーク",
+      "thumbnail": "https://www.itmedia.co.jp/aiplus/article/ogp/2605/21/2000000014/10000099/2048"
     },
     {
       "id": "x-2057383695557021765",
@@ -1528,7 +1557,8 @@
       "url": "https://x.com/i/status/2056795641448444098",
       "publishedAt": "2026-05-19T17:54:28.000Z",
       "summary": "Gemini CLI が Antigravity CLI に統合\n\nAntigravity CLI は Go で開発、Gemini CLI の Agent Skills、Hooks、Subagents、Extensions などを維持しつつ、高速に動作、非同期ワークフロー、ユニファイドアーキテクチャなど改善。Gemini CLI は 6 月 18 日に終了。",
-      "author": "ブックマーク"
+      "author": "ブックマーク",
+      "thumbnail": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/GeminiCLI-AntigravityCLI_1200x630.2e16d0ba.fill-1200x600.png"
     },
     {
       "id": "x-2056251798835663353",
@@ -1544,7 +1574,8 @@
       "title": "AI コーディングで secret を漏らさないための４層防御｜ながたく https://t.co/V2RjbNev3o #zenn",
       "url": "https://x.com/i/status/2056155875740647867",
       "publishedAt": "2026-05-17T23:32:16.000Z",
-      "author": "ブックマーク"
+      "author": "ブックマーク",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s---Tak84NW--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%2520%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2587%25E3%2582%25A3%25E3%2583%25B3%25E3%2582%25B0%25E3%2581%25A7%2520secret%2520%25E3%2582%2592%25E6%25BC%258F%25E3%2582%2589%25E3%2581%2595%25E3%2581%25AA%25E3%2581%2584%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AE%25EF%25BC%2594%25E5%25B1%25A4%25E9%2598%25B2%25E5%25BE%25A1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25AA%25E3%2581%258C%25E3%2581%259F%25E3%2581%258F%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2NhMTdlMmFmNjYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE"
     },
     {
       "id": "x-2056022182560665602",
@@ -1561,7 +1592,8 @@
       "title": "Claude Code を社内導入する時の最低限ガードレール5項目 — 機密情報を漏らさない設定パターン https://t.co/hHZAQe2iqA #Qiita @ai_info128より",
       "url": "https://x.com/i/status/2055859852833067152",
       "publishedAt": "2026-05-17T03:55:59.000Z",
-      "author": "ブックマーク"
+      "author": "ブックマーク",
+      "thumbnail": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MTU2NTc4JTJGYTgyYjkyMzUzMWRkYzIxYmZhMWY4MDhhY2QyMjM5Yzk2NjlkZjg4NSUyRnhfbGFyZ2UucG5nJTNGMTc3NjY1NTA1MT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9NGYxNjY0YWY5ZmI5NmJiZTZjYjRjMTFlMWFjNjVhNWQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D8d44234ba9198549fbf0016c0117ba44?ixlib=rb-4.1.1&amp;w=1200&amp;fm=jpg&amp;mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJTIwQ29kZSUyMCVFMyU4MiU5MiVFNyVBNCVCRSVFNSU4NiU4NSVFNSVCMCU4RSVFNSU4NSVBNSVFMyU4MSU5OSVFMyU4MiU4QiVFNiU5OSU4MiVFMyU4MSVBRSVFNiU5QyU4MCVFNCVCRCU4RSVFOSU5OSU5MCVFMyU4MiVBQyVFMyU4MyVCQyVFMyU4MyU4OSVFMyU4MyVBQyVFMyU4MyVCQyVFMyU4MyVBQjUlRTklQTAlODUlRTclOUIlQUUlMjAlRTIlODAlOTQlMjAlRTYlQTklOUYlRTUlQUYlODYlRTYlODMlODUlRTUlQTAlQjElRTMlODIlOTIlRTYlQkMlOEYlRTMlODIlODklRTMlODElOTUlRTMlODElQUElRTMlODElODQlRTglQTglQUQlRTUlQUUlOUElRTMlODMlOTElRTMlODIlQkYlRTMlODMlQkMlRTMlODMlQjMmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0yNjVjMTVhY2I5NDBiZWI1MjAyZDQ1YzI3ZTY5NGQ3NA&amp;mark-x=120&amp;mark-y=112&amp;blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBlbm5hZ2FyYTEyOCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWUxNDBiMDk1ZGMwYjI5MGJlY2ZhNjZlMTM0NDk4NzVk&amp;blend-x=242&amp;blend-y=480&amp;blend-w=838&amp;blend-h=46&amp;blend-fit=crop&amp;blend-crop=left%2Cbottom&amp;blend-mode=normal&amp;s=da8ce96f18c7c7adee0de53c34fe4fdf"
     },
     {
       "id": "x-2055827123236171827",
@@ -1578,7 +1610,8 @@
       "title": "「中小企業向けClaude」登場　各種SaaSと連携し業務を代行",
       "url": "https://x.com/i/status/2055170084579225700",
       "publishedAt": "2026-05-15T06:15:06.000Z",
-      "author": "ブックマーク"
+      "author": "ブックマーク",
+      "thumbnail": "https://www.itmedia.co.jp/aiplus/article/ogp/2605/15/1260515094/12917/2048"
     },
     {
       "id": "x-2055105914982789592",
@@ -1586,7 +1619,8 @@
       "title": "OpenAI、サプライチェーン攻撃で従業員2人の端末が侵害　macOSユーザーは6月12日までにアプリ更新を",
       "url": "https://x.com/i/status/2055105914982789592",
       "publishedAt": "2026-05-15T02:00:06.000Z",
-      "author": "ブックマーク"
+      "author": "ブックマーク",
+      "thumbnail": "https://image.itmedia.co.jp/news/articles/2605/15/cover_news075.jpg"
     },
     {
       "id": "x-2055092578039521540",
@@ -1638,7 +1672,8 @@
       "title": "Google 公式 Skills が来た\n\n13個のスキルが公開。Claude Code / Antigravity / Gemini CLI / Cursor / GitHub Copilot ほか主要エージェントが対応してる Agent Skills 標準準拠",
       "url": "https://x.com/i/status/2054136870016356408",
       "publishedAt": "2026-05-12T09:49:28.000Z",
-      "author": "ブックマーク"
+      "author": "ブックマーク",
+      "thumbnail": "https://opengraph.githubassets.com/ef93eb049de80a67900b40080d99da5f3385ea25bc35f6fe4c7ce80bccb8dd2c/google/skills"
     },
     {
       "id": "x-2053645677054550116",
@@ -1655,7 +1690,8 @@
       "url": "https://x.com/i/status/2053452321938620593",
       "publishedAt": "2026-05-10T12:29:19.000Z",
       "summary": "Claude for Chromeブラウザ拡張機能のガードレールを突破してGoogle DriveやGmailのデータを流出させられる脆弱性ClaudeBleedが発見された。LayerX社報告。悪性拡張機能やDOM操作での攻撃例あり。Anthropicは5/6に修整したが迂回可能。",
-      "author": "ブックマーク"
+      "author": "ブックマーク",
+      "thumbnail": "https://hackread.com/wp-content/uploads/2026/05/claudebleed-vulnerability-hackers-claude-chrome-extension.jpg"
     },
     {
       "id": "x-2052809885763747935",
@@ -1672,6 +1708,259 @@
     },
     "xAccountUserIds": {
       "NotebookLM": "1846671939437252609"
+    },
+    "xOgImages": {
+      "x-2063105741976952929": "",
+      "x-2062821701340295427": "https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a2058f7af91f02cff0a6187_og-lessons-from-building-claude-code.jpg",
+      "x-2062567556524003631": "",
+      "x-2062653124326863077": "",
+      "x-2062487492897685986": "https://bcdn.docswell.com/page/3EK9N26VED.jpg?width=480",
+      "x-2062252685701841152": "",
+      "x-2062874889049276570": "https://www.watch.impress.co.jp/img/ipw/list/2115/005/an1.jpg",
+      "x-2061910164366676431": "https://chromeunboxed.com/wp-content/uploads/2026/06/GeminiOrganizeMyFilesDrive.webp",
+      "x-2061885329649602886": "",
+      "x-2061877343078244459": "",
+      "x-2062738712375808466": "https://www.itmedia.co.jp/aiplus/article/ogp/2606/05/2000000062/10000338/2048",
+      "x-2061815599747981764": "",
+      "x-2062406521850597878": "https://www.itmedia.co.jp/aiplus/article/ogp/2606/04/2000000057/10000319/2048",
+      "x-2062308373396390014": "https://www.itmedia.co.jp/aiplus/article/ogp/2606/04/2000000038/10000206/2048",
+      "x-2061765570161508782": "https://files.speakerdeck.com/presentations/07b980cf9a494d2e986bf3ac9150b3b5/slide_0.jpg?39475139",
+      "x-2060251312730804396": "",
+      "x-2059703536825565499": "https://developers.openai.com/og/api/docs/guides/secure-mcp-tunnels.png",
+      "x-2059388946501771577": "https://claude-code.mintlify.app/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DCode%2Breview%2B%2526%2BCI%252FCD%26appearance%3Dsystem%26title%3DCatch%2Bsecurity%2Bissues%2Bas%2BClaude%2Bwrites%2Bcode%26description%3DInstall%2Bthe%2Bsecurity-guidance%2Bplugin%2Bto%2Bhave%2BClaude%2Breview%2Bits%2Bown%2Bcode%2Bchanges%2Bfor%2Bvulnerabilities%2Band%2Bfix%2Bthem%2Bin%2Bthe%2Bsame%2Bsession.%26logoLight%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaude-code%252Fc5r9_6tjPMzFdDDT%252Flogo%252Flight.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253Dc5r9_6tjPMzFdDDT%2526q%253D85%2526s%253D78fd01ff4f4340295a4f66e2ea54903c%26logoDark%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaude-code%252Fc5r9_6tjPMzFdDDT%252Flogo%252Fdark.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253Dc5r9_6tjPMzFdDDT%2526q%253D85%2526s%253D1298a0c3b3a1da603b190d0de0e31712%26primaryColor%3D%25230E0E0E%26lightColor%3D%2523D4A27F%26darkColor%3D%25230E0E0E%26backgroundLight%3D%2523FDFDF7%26backgroundDark%3D%252309090B&amp;w=1200&amp;q=100",
+      "x-2061038034339102839": "https://files.speakerdeck.com/presentations/172ff2ae285c4aca8f5c16f65d2e4616/slide_0.jpg?27186140",
+      "x-2061382263766663514": "https://www.itmedia.co.jp/aiplus/article/ogp/2606/01/2000000041/10000223/2048",
+      "x-2058140985738375447": "",
+      "x-2059050018318032965": "https://files.speakerdeck.com/presentations/eab56299a0e04fe6a5438c334dbdbc71/slide_0.jpg?39510434",
+      "x-2060013727907303435": "https://commandline.microsoft.com/wp-content/uploads/2026/05/command-line-intro-16x9-bigger-cursor-scaled.png",
+      "x-2057383695557021765": "",
+      "x-2059043274267238403": "https://res.cloudinary.com/zenn/image/upload/s--tTSdijrC--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25A4%25BE%25E5%2586%2585%25E3%2581%25AE%25E7%259F%25A5%25E8%25A6%258B%25E3%2582%2592AI%25E3%2581%258C%25E6%25BC%258F%25E3%2582%2589%25E3%2581%2595%25E3%2581%259A%25E6%258B%25BE%25E3%2581%2586%25E5%2594%25AF%25E4%25B8%2580%25E3%2581%25AE%25E8%25A8%25AD%25E8%25A8%2588%25E6%2580%259D%25E6%2583%25B3%2520%25E2%2580%2595%2520Karpathy%25E6%25B0%258F%25E3%2581%25AELLM%2520Wiki%25E3%2582%2592%25E5%25AE%259F%25E8%25B7%25B5%25E3%2581%2597%25E3%2581%25A6%25E5%2588%2586%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%25E3%2581%2593%25E3%2581%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Noriaki%2520Handa%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzFhMmU0MjFkMDAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "x-2057393486324990388": "https://www.itmedia.co.jp/aiplus/article/ogp/2605/21/2000000014/10000099/2048",
+      "x-2057294017340248171": "",
+      "x-2057133421177254116": "",
+      "x-2056022182560665602": "",
+      "x-2055859852833067152": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MTU2NTc4JTJGYTgyYjkyMzUzMWRkYzIxYmZhMWY4MDhhY2QyMjM5Yzk2NjlkZjg4NSUyRnhfbGFyZ2UucG5nJTNGMTc3NjY1NTA1MT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9NGYxNjY0YWY5ZmI5NmJiZTZjYjRjMTFlMWFjNjVhNWQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D8d44234ba9198549fbf0016c0117ba44?ixlib=rb-4.1.1&amp;w=1200&amp;fm=jpg&amp;mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJTIwQ29kZSUyMCVFMyU4MiU5MiVFNyVBNCVCRSVFNSU4NiU4NSVFNSVCMCU4RSVFNSU4NSVBNSVFMyU4MSU5OSVFMyU4MiU4QiVFNiU5OSU4MiVFMyU4MSVBRSVFNiU5QyU4MCVFNCVCRCU4RSVFOSU5OSU5MCVFMyU4MiVBQyVFMyU4MyVCQyVFMyU4MyU4OSVFMyU4MyVBQyVFMyU4MyVCQyVFMyU4MyVBQjUlRTklQTAlODUlRTclOUIlQUUlMjAlRTIlODAlOTQlMjAlRTYlQTklOUYlRTUlQUYlODYlRTYlODMlODUlRTUlQTAlQjElRTMlODIlOTIlRTYlQkMlOEYlRTMlODIlODklRTMlODElOTUlRTMlODElQUElRTMlODElODQlRTglQTglQUQlRTUlQUUlOUElRTMlODMlOTElRTMlODIlQkYlRTMlODMlQkMlRTMlODMlQjMmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0yNjVjMTVhY2I5NDBiZWI1MjAyZDQ1YzI3ZTY5NGQ3NA&amp;mark-x=120&amp;mark-y=112&amp;blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBlbm5hZ2FyYTEyOCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWUxNDBiMDk1ZGMwYjI5MGJlY2ZhNjZlMTM0NDk4NzVk&amp;blend-x=242&amp;blend-y=480&amp;blend-w=838&amp;blend-h=46&amp;blend-fit=crop&amp;blend-crop=left%2Cbottom&amp;blend-mode=normal&amp;s=da8ce96f18c7c7adee0de53c34fe4fdf",
+      "x-2056155875740647867": "https://res.cloudinary.com/zenn/image/upload/s---Tak84NW--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%2520%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2587%25E3%2582%25A3%25E3%2583%25B3%25E3%2582%25B0%25E3%2581%25A7%2520secret%2520%25E3%2582%2592%25E6%25BC%258F%25E3%2582%2589%25E3%2581%2595%25E3%2581%25AA%25E3%2581%2584%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AE%25EF%25BC%2594%25E5%25B1%25A4%25E9%2598%25B2%25E5%25BE%25A1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25AA%25E3%2581%258C%25E3%2581%259F%25E3%2581%258F%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2NhMTdlMmFmNjYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "x-2056795641448444098": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/GeminiCLI-AntigravityCLI_1200x630.2e16d0ba.fill-1200x600.png",
+      "x-2055105914982789592": "https://image.itmedia.co.jp/news/articles/2605/15/cover_news075.jpg",
+      "x-2054848379339837850": "",
+      "x-2054844733571092943": "",
+      "x-2052809885763747935": "",
+      "x-2052064938840228237": "",
+      "x-2055170084579225700": "https://www.itmedia.co.jp/aiplus/article/ogp/2605/15/1260515094/12917/2048",
+      "x-2053452321938620593": "https://hackread.com/wp-content/uploads/2026/05/claudebleed-vulnerability-hackers-claude-chrome-extension.jpg",
+      "x-2061364822974050599": "https://nocode-sol.co.jp/wp-content/uploads/2026/05/LLM_API%E3%81%AE%E3%82%B9%E3%82%B9%E3%83%A1%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC-19.png",
+      "x-2051715594697977870": "",
+      "x-2051393709619732758": "",
+      "x-2054136870016356408": "https://opengraph.githubassets.com/ef93eb049de80a67900b40080d99da5f3385ea25bc35f6fe4c7ce80bccb8dd2c/google/skills",
+      "x-2050275713824211041": "",
+      "x-2049690533845663830": "",
+      "x-2049787930785538054": "",
+      "x-2049292585924002109": "",
+      "x-2048873347916923078": "",
+      "x-2051785276364829051": "https://www.itmedia.co.jp/aiplus/article/ogp/2605/06/1260506022/12607/2048",
+      "x-2048688017838055543": "",
+      "x-2048868628322533417": "",
+      "x-2048626842106728834": "",
+      "x-2048635778721624419": "https://www.itmedia.co.jp/aiplus/article/ogp/2604/27/1260427098/12492/2048",
+      "x-2048447013985865914": "https://storage.googleapis.com/gweb-cloudblog-publish/images/gemini_enterprise_app_Q0nAHYn.max-2500x2500.jpg",
+      "x-2048985578746818745": "https://www.itmedia.co.jp/aiplus/article/ogp/2604/28/1260428061/12530/2048",
+      "x-2047376561205325845": "",
+      "x-2048961669993570602": "https://www.itmedia.co.jp/aiplus/article/ogp/2604/28/1260428006/12526/2048",
+      "x-2047377692488601949": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Agent_Skills_Blog_-_Hero.max-2500x2500.png",
+      "x-2047086372666921217": "https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/69e934877a400eca8ba4a8d5_og_building-agents-that-reach-production-systems-with-mcp.jpg",
+      "x-2047114817354580237": "",
+      "x-2047047633416397076": "",
+      "x-2047092769382920252": "",
+      "x-2047043515864031362": "",
+      "x-2046924485857513708": "",
+      "x-2047105420263674109": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/05/STKB354_GOOGLE_MEET_B.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200",
+      "x-2046838914321981519": "https://digital-agency-news.digital.go.jp/assets/contents/node/information/field_thumbnail_image/c3eb3094-4b6b-4639-86e4-d210afbba6c1/abce929f/image1%EF%BC%88thumbnail%EF%BC%89.png",
+      "x-2046469049685598437": "",
+      "x-2046439189806477654": "",
+      "x-2046439010663612540": "",
+      "x-2046370855924404634": "",
+      "x-2046328619249684989": "",
+      "x-2047471834577211700": "https://assets.st-note.com/production/uploads/images/269991364/rectangle_large_type_2_0aba395d3948f4d5c987609929eb3d52.png?fit=bounds&quality=85&width=1280",
+      "x-2046288243768082699": "",
+      "x-2045865072074035664": "https://images.ctfassets.net/hjgychtc108g/7DjSnSWeGLxU1cL5MmavJY/f16cf2f7c52eea9be84fa25d7fb6faac/image.png",
+      "x-2046005451842842845": "",
+      "x-2046716882611568971": "https://www.itmedia.co.jp/aiplus/article/ogp/2604/22/1260422057/12337/2048",
+      "x-2044829708609851775": "",
+      "x-2045156267690213649": "",
+      "x-2046021520397660557": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
+      "x-2044832732274901489": "",
+      "x-2044631098345591175": "",
+      "x-2044677900360892420": "",
+      "x-2044131493966909862": "",
+      "x-2044106378655215625": "",
+      "x-2044597920079692093": "https://www.itmedia.co.jp/aiplus/article/ogp/2604/16/1260416069/12208/2048",
+      "x-2044037960954245419": "",
+      "x-2043848112352178453": "",
+      "x-2043794937523945860": "",
+      "x-2044383179411431844": "https://hmhm.wicle.io/og.png",
+      "x-2043734511176094048": "",
+      "x-2043347156141064476": "",
+      "x-2042780059363336237": "",
+      "x-2042796840865927288": "",
+      "x-2042783148564713501": "",
+      "x-2042523878736695318": "",
+      "x-2042670341915295865": "",
+      "x-2042550380031049878": "",
+      "x-2042722362643398719": "",
+      "x-2042201466769903906": "",
+      "x-2041982449387810962": "",
+      "x-2042394750511431867": "",
+      "x-2041927687460024721": "",
+      "x-2041827249759088949": "",
+      "x-2041578392852517128": "https://cdn.sanity.io/images/4zrzovbb/website/65641e7846f10255c4a3415a10bbf5793ae87b13-1200x630.jpg",
+      "x-2041842023196450858": "",
+      "x-2041542766585610477": "",
+      "x-2041741597180887178": "https://www.itmedia.co.jp/aiplus/article/ogp/2604/08/1260408081/11845/2048",
+      "x-2041561791243940092": "",
+      "x-2041411084821971204": "",
+      "x-2040227127082295424": "",
+      "x-2039843952694886564": "",
+      "x-2042452558556643428": "https://xtrend.nikkei.com/atcl/contents/casestudy/00012/01839/nxr_m.jpg",
+      "x-2039474419048108429": "",
+      "x-2039181788363567598": "",
+      "x-2041444646946283961": "https://www.itmedia.co.jp/aiplus/article/ogp/2604/07/1260407117/11781/2048",
+      "x-2039128554630451386": "",
+      "x-2039003879841362278": "",
+      "x-2038979630590509553": "",
+      "x-2039176534477734009": "https://assets.st-note.com/production/uploads/images/263599998/rectangle_large_type_2_1b74b723dc035210ff54244d5cf15df1.png?fit=bounds&quality=85&width=1280",
+      "x-2039841577078808693": "https://www.itmedia.co.jp/aiplus/article/ogp/2604/03/1260403051/11634/2048",
+      "x-2038691854036992304": "",
+      "x-2038693742094246032": "",
+      "x-2038663014098899416": "",
+      "x-2037813969935868221": "",
+      "x-2036503582166393240": "",
+      "x-2036499691571953848": "",
+      "x-2036371699273441691": "",
+      "x-2036195789601374705": "",
+      "x-2039845602096472467": "https://assets.st-note.com/production/uploads/images/264278372/rectangle_large_type_2_a309a715bd967772d938faaf923ca20b.png?fit=bounds&quality=85&width=1280",
+      "x-2036183180219392103": "",
+      "x-2035983970836598924": "",
+      "x-2035866646267740655": "https://claude-code.mintlify.app/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DReference%26appearance%3Dsystem%26title%3DEnvironment%2Bvariables%26description%3DReference%2Bfor%2Benvironment%2Bvariables%2Bthat%2Bcontrol%2BClaude%2BCode%2Bbehavior.%26logoLight%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaude-code%252Fc5r9_6tjPMzFdDDT%252Flogo%252Flight.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253Dc5r9_6tjPMzFdDDT%2526q%253D85%2526s%253D78fd01ff4f4340295a4f66e2ea54903c%26logoDark%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaude-code%252Fc5r9_6tjPMzFdDDT%252Flogo%252Fdark.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253Dc5r9_6tjPMzFdDDT%2526q%253D85%2526s%253D1298a0c3b3a1da603b190d0de0e31712%26primaryColor%3D%25230E0E0E%26lightColor%3D%2523D4A27F%26darkColor%3D%25230E0E0E%26backgroundLight%3D%2523FDFDF7%26backgroundDark%3D%252309090B&amp;w=1200&amp;q=100",
+      "x-2035854155772748044": "",
+      "x-2035025492617961704": "",
+      "x-2034947032327073981": "",
+      "x-2034781962658095476": "",
+      "x-2034797426285162911": "https://nyosegawa.com/og/claude-code-statusline-rate-limits.jpg",
+      "x-2034770594504266122": "",
+      "x-2034729823453814859": "https://og.luma.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event?calendar_avatar=https%3A%2F%2Fimages.lumacdn.com%2Fcalendars%2Fsb%2F13f86667-6d25-4717-9a58-0ccf66e330b2.jpg&amp;calendar_name=Claude%20Community%20Events&amp;color0=%23d97757&amp;color1=%23141413&amp;color2=%23fefefe&amp;host_avatar=https%3A%2F%2Fimages.lumacdn.com%2Favatars%2F4p%2F01076001-a1b3-4c38-a67e-03600c0cdb75&amp;host_name=%E3%81%AC%E3%81%93%20%E3%81%AC%E3%81%93&amp;img=https%3A%2F%2Fimages.lumacdn.com%2Fevent-covers%2Foa%2Fae0ac8d2-dd76-49c4-b879-c94329c92a87.png&amp;name=Claude%20Code%20for%20Everyone%20in%20Tokyo&amp;palette_neutral=%23141413%3A7.68%2C%23fefefe%3A2.93&amp;palette_vibrant=%23d97757%3A87.46",
+      "x-2034534822937518102": "",
+      "x-2034524914259284305": "",
+      "x-2034690011983982608": "https://lh3.googleusercontent.com/2lAf7svBiVkM81vTBH8PwqchBxH7o1WeUsMQBnNuWjmkYFLLil89AKT1UqvQ3cwhzbf4DJIwIVjia9HECKVMAoaQsJzOY48uK8Q=e365-pa-nu-w1200-rj",
+      "x-2034308517964956051": "https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/69ce85bb5268fe93dc2b5815_c40f310be15d57a31204b05bfe2f5d19_cwc26-og.jpg",
+      "x-2045953132770025769": "",
+      "x-2034449803959218218": "https://www.itmedia.co.jp/aiplus/article/ogp/2603/19/1260319084/11348/2048",
+      "x-2034238521498579434": "",
+      "x-2035919556078891258": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/03/image_011-8.jpg",
+      "x-2034209525352513824": "",
+      "x-2034146114220499396": "https://humanlayer.dev/api/stop-claude-from-ignoring-your-claude-md/og",
+      "x-2038530667190079552": "https://opengraph.githubassets.com/285937a56fb41330b4c8fa1a12b13c2eb855e4aeb4b94897818cf10cb4d02e13/vercel-labs/skills",
+      "x-2034005731457044577": "",
+      "x-2033953815834333608": "",
+      "x-2033760790315208978": "",
+      "x-2033957507958485414": "",
+      "x-2033491970484822417": "",
+      "x-2034039596359856631": "https://www.itmedia.co.jp/aiplus/article/ogp/2603/18/1260318071/11319/2048",
+      "x-2033480552859529573": "",
+      "x-2032993948734812264": "",
+      "x-2032911276226257206": "",
+      "x-2033487945857183877": "https://res.cloudinary.com/zenn/image/upload/s--_haBZPbp--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592%25E6%259B%25B8%25E3%2581%258F%25E3%2581%25AE%25E3%2582%2592%25E3%2582%2584%25E3%2582%2581%25E3%2581%259F%25E3%2580%2582Claude%2520Code%25E3%2581%25AB%25E6%259C%2588%25E5%2595%2586300%25E4%25B8%2587%25E3%2581%25AESaaS%25E3%2581%25AE%25E5%2585%25A8%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592%25E6%259B%25B8%25E3%2581%258B%25E3%2581%259B%25E3%2580%2581%25E5%25AE%258C%25E5%2585%25A8%25E3%2582%25BD%25E3%2583%25AD%25E9%2581%258B%25E7%2594%25A8%25E3%2581%2597%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E3%2581%25A8%25E3%2581%2584%25E3%2581%2586%25E8%25A9%25B1%25E3%2580%2582%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:A%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSW5wYnlCU1hsSjFidHIyem9BcTBHQm9ocDA0enljMVNFSzAxZEVwMHlkQ19Wd0FRPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "x-2032124273587077133": "",
+      "x-2032028482520432762": "",
+      "x-2031765008770813977": "",
+      "x-2031506296697131352": "",
+      "x-2033288726978425157": "https://downloads.intercomcdn.com/i/o/lupk8zyo/792494/717b10d3ebd874823db64841659b/76f3062d78ebbb04863fb1de3ef9cca0.png",
+      "x-2031257644724342957": "",
+      "x-2031088171262554195": "",
+      "x-2029978909207617634": "",
+      "x-2029999833717838016": "https://cdn.sanity.io/images/4zrzovbb/website/82d2262129af025d98a46411fbd42ee970a95cb4-2400x1260.heif",
+      "x-2029650046002811280": "",
+      "x-2034302152945144166": "https://cdn.sanity.io/images/4zrzovbb/website/4f94dcd81c982c69811aafbd56cc07aec185bc19-2400x1260.png",
+      "x-2029620619743219811": "",
+      "x-2029481458218483742": "",
+      "x-2029419109562433750": "",
+      "x-2029367968841515311": "",
+      "x-2029697617916219717": "https://res.cloudinary.com/zenn/image/upload/s--515Fp18j--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25E3%2582%2592%25E7%25B5%2584%25E7%25B9%2594%25E5%25B0%258E%25E5%2585%25A5%25E3%2581%2599%25E3%2582%258B%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AE%25E3%2583%2597%25E3%2583%25A9%25E3%2583%25B3%25E9%2581%25B8%25E5%25AE%259A%25E3%2582%25AC%25E3%2582%25A4%25E3%2583%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:minodisk%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2E4MWZhOWNhZmYuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BE%25E3%2583%258A%25E3%2583%25AC%25E3%2583%2583%25E3%2582%25B8%25E3%2583%25AF%25E3%2583%25BC%25E3%2582%25AF%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2E3OGY5MzEyNWUuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "x-2028893701427302559": "",
+      "x-2029165025949360556": "",
+      "x-2028873598170178016": "",
+      "x-2028781791533035671": "https://www.fsa.go.jp/images/title_j_t.png",
+      "x-2031975683598270490": "https://www.ipa.go.jp/k3q2q400000050d7-img/k3q2q400000050dg.jpg",
+      "x-2028749328932888758": "",
+      "x-2028717397134520392": "",
+      "x-2028639126669623438": "",
+      "x-2028559427167834314": "",
+      "x-2028606281125175714": "https://geminicli.com/assets/social-poster.png",
+      "x-2028556861050630632": "",
+      "x-2028399491565633731": "",
+      "x-2028516295554040170": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/size/w1200/2026/03/Projects-Gemini-Enterprise-03-02-2026_12_04_AM.jpg",
+      "x-2028693804266496230": "https://opengraph.githubassets.com/e617fbb1b08448ad6246dbaea1bac2adebef1b7f1fb7208968cd68b2080fd70d/openclaw/openclaw/releases/tag/v2026.3.2",
+      "x-2028285373852602830": "https://cdn.prod.website-files.com/673b71f0790aabf30bd30bf8/69a63038f06ff5672f31aba3_01-hackerbot-claw-profile-overview.jpg",
+      "x-2027904566696788225": "https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/68c469d1859e3e7ecf6c2310_og-claude-finance.jpg",
+      "x-2027899040655151489": "",
+      "x-2027522391015100542": "",
+      "x-2028383979532177790": "https://corp.freee.co.jp/img/ogp-freee.png",
+      "x-2027010270258983239": "",
+      "x-2027019215337849089": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYzNzkyNzg0JTJGNTIzNjgyMTcwMDg2ODRkZTBmMzA0NGE5ZDI5MjE1NWQ3OWFiNDBlOCUyRnhfbGFyZ2UucG5nJTNGMTc3MTk1MjUyNT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YzJiYzQ4NjU3YTRkNjgzODQ1ZTlkMTJhY2ZiYWZkZWU%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3De0bf42879ce1ffa7e5f3a2d299f4c934?ixlib=rb-4.1.1&amp;w=1200&amp;fm=jpg&amp;mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Qm9yaXMlMjBDaGVybnklRTYlQjAlOEYlRTMlODElQUUlRTclOUYlQTUlRTglQTYlOEIlRTMlODIlOTIlRTUlODUlODMlRTMlODElQUIlRTQlQkQlOUMlRTYlODglOTAlRTMlODElOTUlRTMlODIlOEMlRTMlODElOUYlRTMlODAlODFDTEFVREUubWQlRTMlODIlOTIlRTclOTAlODYlRTglQTclQTMlRTMlODElOTklRTMlODIlOEImdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz03ZmRkZDhiZWM3OTMzZjE3YzcyMWE2YzM3MWRiYTQ2Yg&amp;mark-x=120&amp;mark-y=112&amp;blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB1bm9faGEwNyZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTYxYzg3YzhiMGYxMDc5OWJmYzI2M2FjYTJiOTU2NDM5&amp;blend-x=242&amp;blend-y=480&amp;blend-w=838&amp;blend-h=46&amp;blend-fit=crop&amp;blend-crop=left%2Cbottom&amp;blend-mode=normal&amp;s=0b81102796cc1deb510a05a5136af38e",
+      "x-2029844845720965211": "https://opengraph.githubassets.com/8eb85a10e69ef75b4f70a705a1403cc3e9f211463db162a778ef019494c02348/loadbalance-sudachi-kun/claude-code-statusline",
+      "x-2027156749921497386": "https://www.itmedia.co.jp/aiplus/article/ogp/2602/27/1260227082/11021/2048",
+      "x-2026869843283087750": "",
+      "x-2026937542902505811": "https://opengraph.githubassets.com/8070c64df39b4280b3f04e0e19b523220516a57672f82c1826e54ca5cd7adefe/anthropics/skills",
+      "x-2026839637960888789": "",
+      "x-2029329861295456401": "https://opengraph.githubassets.com/a1b339290211f02fe5f07b76e6934e4b72093f2e5d313a04ec6237e10cbe1e7e/googleworkspace/cli",
+      "x-2026695550771540489": "",
+      "x-2026458480857723108": "",
+      "x-2026239093164945559": "",
+      "x-2026418433911603668": "",
+      "x-2026222182150328678": "",
+      "x-2026887833156526253": "https://www.mlit.go.jp/common/001391890.png",
+      "x-2026204586860843151": "",
+      "x-2026064025172455480": "",
+      "x-2026093238860587079": "",
+      "x-2025575358037377248": "",
+      "x-2024937960572104707": "",
+      "x-2024651130303901892": "",
+      "x-2024600394299822096": "",
+      "x-2024606418922283303": "https://oikon48.dev/og/ja-blog-claude-agent-teams.png",
+      "x-2024049619051651143": "",
+      "x-2026842707805774137": "https://forest.watch.impress.co.jp/img/wf/list/2088/191/01.jpg",
+      "x-2022552888178835943": "",
+      "x-2023851190102986970": "",
+      "x-2022484776570220849": "",
+      "x-2024001420085846085": "https://www.boj.or.jp/common2/img/common/og_img.jpg",
+      "x-2022252256247095615": "",
+      "x-2024448488562733405": "https://cdn.image.st-hatena.com/image/scale/c91f1a56f0afeb39a40c9be401c26f6766d768cc/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fdefault_entry_og_image%2F155704439%2F158718819466986",
+      "x-2022202812315447504": "",
+      "x-2022317192243810587": "",
+      "x-2021992846862258403": "",
+      "x-2022018481332662435": "",
+      "x-2021869466280452573": "",
+      "x-2022363079976034455": "https://developer.chrome.com/static/blog/webmcp-epp/image/cover.png",
+      "x-2021299935678026168": "",
+      "x-2021927055890543043": "",
+      "x-2021134130759729471": "",
+      "x-2020967720095973805": "",
+      "x-2022139103236812946": "https://www.gstatic.com/lamda/images/gemini_aurora_thumbnail_4g_e74822ff0ca4259beb718.png",
+      "x-2019620314867724681": "",
+      "x-2019607222737928451": "https://automaton-media.com/wp-content/uploads/2026/02/20260206-416934-header.jpg",
+      "x-2020918870375370825": "",
+      "x-2019300436352856302": "",
+      "x-2019209880654262725": "",
+      "x-2018559165837574263": "",
+      "x-2018385565289267236": "",
+      "x-2017838482341957924": "",
+      "x-2020413186529505687": "https://res.cloudinary.com/zenn/image/upload/s--NHRP5d3P--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25BC%25E3%2583%25AD%25E3%2581%258B%25E3%2582%2589%25E5%25A7%258B%25E3%2582%2581%25E3%2582%258BContext%2520Engineering%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E9%2580%2586%25E7%2580%25AC%25E5%25B7%259D%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2NlNDdjZDU1MGYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "x-2019305002418991138": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/02/Coffee_Talk_Episode_1_Key-Art.png",
+      "x-2018177922855772289": "",
+      "x-2017764315798114339": "",
+      "x-2015547753309561165": "",
+      "x-2018883479669518838": "https://www.itmedia.co.jp/aiplus/article/ogp/2602/04/1260204025/10597/2048",
+      "x-2014158543415582988": "https://ai-data-base.com/wp-content/uploads/2026/01/AIDB_eye_100698.jpg"
     }
   }
 }
