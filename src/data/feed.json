@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-07T03:51:11.170Z",
+  "updatedAt": "2026-06-07T03:54:28.202Z",
   "items": [
     {
       "id": "hatena-https://anond.hatelabo.jp/20260607065550",
@@ -9,7 +9,7 @@
       "publishedAt": "2026-06-06T21:56:57.000Z",
       "summary": "最近、外部URLの投稿後にアカウントが凍結されたという報告を見かける機会が増えた。 Grokに質問しても、「6月初旬頃から関連する報告が増えている」「自動検知システムが関係している可能性がある」といった趣旨の回答が返ってくる。 もちろん実際の凍結理由は個別のケースごとに異なるだろう。しかし、ニュース記事や...",
       "thumbnail": "https://anond.hatelabo.jp/assets/images/og-image-1500.gif",
-      "bookmarkCount": 35
+      "bookmarkCount": 36
     },
     {
       "id": "hatena-https://zenn.dev/tokium_dev/articles/d806c7ad4fd458",
@@ -29,7 +29,7 @@
       "publishedAt": "2026-06-06T13:39:59.000Z",
       "summary": "はじめに 本題でいう「頭が良くなる」「頭が悪くなる」は、先天的な知能そのものが上下するという意味ではありません。問題になっているのは、AIを使うことで 判断主権 を自分の手元に残す人と、外へ渡してしまう人の差が拡大することです。2025年のMicrosoft Researchの調査でも、生成AIへの信頼が高いほど批判的思考は...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--xvK9c6Hr--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%25AA%25E3%2581%259C%25E3%2580%2581AI%25E3%2581%25AF%25E9%25A0%25AD%25E3%2581%258C%25E8%2589%25AF%25E3%2581%2584%25E4%25BA%25BA%25E3%2581%258C%25E4%25BD%25BF%25E3%2581%2586%25E3%2581%25A8%25E3%2582%2588%25E3%2582%258A%25E9%25A0%25AD%25E3%2581%258C%25E8%2589%25AF%25E3%2581%258F%25E3%2581%25AA%25E3%2582%258B%25E3%2581%25AE%25E3%2581%25AB%25E3%2580%2581%25E9%25A0%25AD%25E3%2581%258C%25E6%2582%25AA%25E3%2581%2584%25E4%25BA%25BA%25E3%2581%258C%25E4%25BD%25BF%25E3%2581%2586%25E3%2581%25A8%25E3%2582%2588%25E3%2582%258A%25E9%25A0%25AD%25E3%2581%258C%25E6%2582%25AA%25E3%2581%258F%25E3%2581%25AA%25E3%2582%258B%25E3%2581%25AE%25E3%2581%258B%25EF%25BC%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:pdfractal%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2FlODUxNjI3MGYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 359
+      "bookmarkCount": 364
     },
     {
       "id": "hatena-https://speakerdeck.com/kajitack/why-algebraic-data-type",
@@ -39,7 +39,7 @@
       "publishedAt": "2026-06-06T12:58:01.000Z",
       "summary": "フロントエンド・PHPカンファレンス北海道2026 の登壇資料です。 https://fortee.jp/frontend-phpcon-do-2026/proposal/f85e1c42-0592-4f5f-a493-e0757412e0a5 - 代数的データ型とはなにか？直積型/列挙型/…",
       "thumbnail": "https://files.speakerdeck.com/presentations/dee9cd84a1ba4b09894ec0d99f80f7dc/slide_0.jpg?39626028",
-      "bookmarkCount": 36
+      "bookmarkCount": 37
     },
     {
       "id": "hatena-https://www.47news.jp/14427079.html",
@@ -59,7 +59,7 @@
       "publishedAt": "2026-06-06T10:58:46.000Z",
       "summary": "昔の引きこもりって凄い 今の引きこもりはネットを介してコミュニケーションしてるから認知機能は保たれてるけど、それ以前は全く新たな刺激がないまま引きこもってたはず 引きこもりの方の研究はネット時代以降のしかないから、それ以前の彼らは医学的にどうだったかもう分からないけど気になる— Lebenstrieb (@Kohler_...",
       "thumbnail": "https://ogimage.blog.st-hatena.com/6653458415124667212/14945776032039410750/1780744430",
-      "bookmarkCount": 121
+      "bookmarkCount": 122
     },
     {
       "id": "hatena-https://gigazine.net/news/20260606-llm-checker/",
@@ -79,7 +79,7 @@
       "publishedAt": "2026-06-06T10:46:56.000Z",
       "summary": "Vitest の `isolate: false` オプションを有効にすることで、テストの実行時間を大幅に短縮できましたが、その際に大規模なコードの修正が必要でした。Claude Code の `/goal` コマンドを活用することで、最終的なゴールを達成するために必要なステップを自律的に判断して実行させることができます。この記事ではその経...",
       "thumbnail": "https://ogp.azukiazusa.dev/blog/ogp/goal-command-use-case-vitest.png",
-      "bookmarkCount": 47
+      "bookmarkCount": 48
     },
     {
       "id": "hatena-https://speakerdeck.com/yusukebe/aishi-dai-nouihadokohexing-ku-sono2",
@@ -143,7 +143,7 @@
       "publishedAt": "2026-06-06T06:03:49.000Z",
       "summary": "最近のサプライチェーンアタックを見ていると、これまでとは明らかにフェーズが変わったと感じています。 この記事は、具体的な解決策を提示するというより、最近のサプライチェーン攻撃を見て、自分が開発環境やCI/CDについて考えていることを整理したものです。 以前の攻撃は、どちらかというとコンピュータリテラシー...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--ezv_9rEh--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%2596%258B%25E7%2599%25BA%25E8%2580%2585%25E3%2581%258C%25E6%2594%25BB%25E6%2592%2583%25E5%25AF%25BE%25E8%25B1%25A1%25E3%2581%25AB%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%259F%25E6%2599%2582%25E4%25BB%25A3%25E3%2581%25AB%25E3%2580%2581%25E9%2596%258B%25E7%2599%25BA%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25A8CI%252FCD%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%2584%25E3%2581%25A6%25E8%2580%2583%25E3%2581%2588%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E3%2581%2593%25E3%2581%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:catatsuy%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2NiYTVlYjRjMTEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 40
+      "bookmarkCount": 44
     },
     {
       "id": "x-2063131196524294307",
@@ -278,7 +278,7 @@
       "publishedAt": "2026-06-05T11:44:12.000Z",
       "summary": "マイクロソフト、Build 2026で方針転換：WinUIを唯一のネイティブフレームワークに格上げ、Windows 11は「開発者ファースト」戦略でWebラッパーに全面反撃 マイクロソフトはBuild 2026開発者会議において、2つの重大な戦略転換を発表した。1つ目は、WinUI 3のブランド名を正式に廃止し「WinUI」に統一。Windowsアプリ開...",
       "thumbnail": "https://img.biggo.com/5iiQCrDbPBBw-QK3B1wKwbw_OgY_lu3iqvDmzI6ahVk/fit/1720/0/sm/1/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTA2L2RrSnprWjRCb2ljTm9PZ0NxM1pqXzE3ODA1NjU1OTFfZGVmYXVsdC5qcGc.jpg",
-      "bookmarkCount": 44
+      "bookmarkCount": 45
     },
     {
       "id": "hatena-https://www.itmedia.co.jp/aiplus/article/2606/05/2000000060/",
@@ -336,7 +336,7 @@
       "publishedAt": "2026-06-04T22:38:32.000Z",
       "summary": "ウィジェットや診断サービスを完全に「不活化」して無駄なリソース消費をなくす Windows 11は、設定画面から機能を「オフ」や「非表示」に切り替えても、バックグラウンドで関連プロセスが動作し続け、システムリソースを消費しているケースが少なくない。本Tech TIPSでは、ウィジェットや診断サービスなど、裏でリソー...",
       "thumbnail": "https://image.itmedia.co.jp/ait/articles/2606/05/cover_news010.jpg",
-      "bookmarkCount": 118
+      "bookmarkCount": 119
     },
     {
       "id": "hatena-https://note.com/naoya_tech/n/ne7c83d38fc72",
@@ -346,7 +346,7 @@
       "publishedAt": "2026-06-04T15:42:17.000Z",
       "summary": "今回はJetBrainsが公開した、Zig言語の作者アンドリュー・ケリー（Andrew Kelley）氏へのロングインタビューを取り上げます。 アンドリュー氏は2018年に勤めていた会社を辞め、プログラミング言語Zigの開発に専念してきた人物です。8年が経った今、ZigはGhosttyやTigerBeetle、さらにはUberのクロスコンパイルなどを支え...",
       "thumbnail": "https://assets.st-note.com/production/uploads/images/281980227/rectangle_large_type_2_745b38712a0c06468e18735ac12cf4f4.jpeg?fit=bounds&quality=85&width=1280",
-      "bookmarkCount": 182
+      "bookmarkCount": 183
     },
     {
       "id": "x-2062142227829473451",
