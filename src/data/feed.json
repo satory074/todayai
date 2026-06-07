@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-07T04:10:11.567Z",
+  "updatedAt": "2026-06-07T04:18:08.042Z",
   "items": [
     {
       "id": "hatena-https://anond.hatelabo.jp/20260607065550",
@@ -9,7 +9,7 @@
       "publishedAt": "2026-06-06T21:56:57.000Z",
       "summary": "最近、外部URLの投稿後にアカウントが凍結されたという報告を見かける機会が増えた。 Grokに質問しても、「6月初旬頃から関連する報告が増えている」「自動検知システムが関係している可能性がある」といった趣旨の回答が返ってくる。 もちろん実際の凍結理由は個別のケースごとに異なるだろう。しかし、ニュース記事や...",
       "thumbnail": "https://anond.hatelabo.jp/assets/images/og-image-1500.gif",
-      "bookmarkCount": 42
+      "bookmarkCount": 43
     },
     {
       "id": "hatena-https://zenn.dev/tokium_dev/articles/d806c7ad4fd458",
@@ -19,7 +19,7 @@
       "publishedAt": "2026-06-06T15:47:54.000Z",
       "summary": "はじめに Google Meet の Gemini 議事録は便利ですが、Google Drive に増えていくだけでは会議後の作業につながりません。 この記事では、Claude を使って Gemini 議事録から決定事項や TODO を抽出し、業務に必要な情報へ変える仕組みを紹介します。 この仕組みを作ると、会議後に誰かが議事録を読み直し、必要な情報を...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--Q_IycC6B--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%2520Gemini%2520%25E8%25AD%25B0%25E4%25BA%258B%25E9%258C%25B2%25E3%2581%258B%25E3%2582%2589%25E5%25BF%2585%25E8%25A6%2581%25E3%2581%25AA%25E6%2583%2585%25E5%25A0%25B1%25E3%2582%2592%25E6%258A%25BD%25E5%2587%25BA%25E3%2581%2599%25E3%2582%258B%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2581%2597%25E3%2582%2587%25E3%2583%25BC%25E3%2581%2595%25E3%2582%2593%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzViNTEwYjI5ZjEuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:TOKIUM%25E3%2583%2597%25E3%2583%25AD%25E3%2583%2580%25E3%2582%25AF%25E3%2583%2588%25E3%2583%2581%25E3%2583%25BC%25E3%2583%25A0%2520%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzlkMzExMTE0OTcuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 22
+      "bookmarkCount": 24
     },
     {
       "id": "hatena-https://zenn.dev/pdfractal/articles/373be6a9de3e8c",
@@ -29,7 +29,7 @@
       "publishedAt": "2026-06-06T13:39:59.000Z",
       "summary": "はじめに 本題でいう「頭が良くなる」「頭が悪くなる」は、先天的な知能そのものが上下するという意味ではありません。問題になっているのは、AIを使うことで 判断主権 を自分の手元に残す人と、外へ渡してしまう人の差が拡大することです。2025年のMicrosoft Researchの調査でも、生成AIへの信頼が高いほど批判的思考は...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--xvK9c6Hr--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%25AA%25E3%2581%259C%25E3%2580%2581AI%25E3%2581%25AF%25E9%25A0%25AD%25E3%2581%258C%25E8%2589%25AF%25E3%2581%2584%25E4%25BA%25BA%25E3%2581%258C%25E4%25BD%25BF%25E3%2581%2586%25E3%2581%25A8%25E3%2582%2588%25E3%2582%258A%25E9%25A0%25AD%25E3%2581%258C%25E8%2589%25AF%25E3%2581%258F%25E3%2581%25AA%25E3%2582%258B%25E3%2581%25AE%25E3%2581%25AB%25E3%2580%2581%25E9%25A0%25AD%25E3%2581%258C%25E6%2582%25AA%25E3%2581%2584%25E4%25BA%25BA%25E3%2581%258C%25E4%25BD%25BF%25E3%2581%2586%25E3%2581%25A8%25E3%2582%2588%25E3%2582%258A%25E9%25A0%25AD%25E3%2581%258C%25E6%2582%25AA%25E3%2581%258F%25E3%2581%25AA%25E3%2582%258B%25E3%2581%25AE%25E3%2581%258B%25EF%25BC%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:pdfractal%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2FlODUxNjI3MGYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 374
+      "bookmarkCount": 377
     },
     {
       "id": "hatena-https://speakerdeck.com/kajitack/why-algebraic-data-type",
@@ -39,7 +39,7 @@
       "publishedAt": "2026-06-06T12:58:01.000Z",
       "summary": "フロントエンド・PHPカンファレンス北海道2026 の登壇資料です。 https://fortee.jp/frontend-phpcon-do-2026/proposal/f85e1c42-0592-4f5f-a493-e0757412e0a5 - 代数的データ型とはなにか？直積型/列挙型/…",
       "thumbnail": "https://files.speakerdeck.com/presentations/dee9cd84a1ba4b09894ec0d99f80f7dc/slide_0.jpg?39626028",
-      "bookmarkCount": 40
+      "bookmarkCount": 42
     },
     {
       "id": "hatena-https://www.47news.jp/14427079.html",
@@ -59,7 +59,7 @@
       "publishedAt": "2026-06-06T10:58:46.000Z",
       "summary": "昔の引きこもりって凄い 今の引きこもりはネットを介してコミュニケーションしてるから認知機能は保たれてるけど、それ以前は全く新たな刺激がないまま引きこもってたはず 引きこもりの方の研究はネット時代以降のしかないから、それ以前の彼らは医学的にどうだったかもう分からないけど気になる— Lebenstrieb (@Kohler_...",
       "thumbnail": "https://ogimage.blog.st-hatena.com/6653458415124667212/14945776032039410750/1780744430",
-      "bookmarkCount": 122
+      "bookmarkCount": 123
     },
     {
       "id": "hatena-https://gigazine.net/news/20260606-llm-checker/",
@@ -109,7 +109,7 @@
       "publishedAt": "2026-06-06T07:35:15.000Z",
       "summary": "はじめに こんにちは。 QAエンジニアのふじです。 QAエンジニアとして実務に携わって約2年が経ちました。 私が過去に所属したプロジェクトではオフショア開発を取り入れており、 海外ベンダーが作成したテスト方針やテストケースのレビュー、および品質改善業務を担当する機会がありました。 そこでの業務を通じて、国内...",
       "thumbnail": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMzkwNjcwNSUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc4MDY1MzMzMT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZTRhMWYxMzgyOGYzZmZkZWQxNjUzODVhMzRiNGQ1ZWM%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dda79eebc6e1fefcea9361ddb1cb9f781?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU2JUI1JUI3JUU1JUE0JTk2JUUzJTgzJTk5JUUzJTgzJUIzJUUzJTgzJTgwJUUzJTgzJUJDJUUzJTgxJThDJUU0JUJEJTlDJUU2JTg4JTkwJUUzJTgxJTk3JUUzJTgxJTlGJUUzJTgzJTg2JUUzJTgyJUI5JUUzJTgzJTg4JUU2JTk2JUI5JUU5JTg3JTlEJUUzJTgyJTg0JUUzJTgzJTg2JUUzJTgyJUI5JUUzJTgzJTg4JUUzJTgyJUIxJUUzJTgzJUJDJUUzJTgyJUI5JUUzJTgxJUFCJUU1JUFGJUJFJUUzJTgxJTk5JUUzJTgyJThCJUU1JTkzJTgxJUU4JUIzJUFBJUU2JTk0JUI5JUU1JTk2JTg0JUU2JUE1JUFEJUU1JThCJTk5JUUzJTgxJUFCJUU1JUJFJTkzJUU0JUJBJThCJUUzJTgxJTk3JUUzJTgxJUE2JUU1JUJFJTk3JUUzJTgxJTlGJUU1JUFEJUE2JUUzJTgxJUIzJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MDhkN2I5MmVhZDg2NjVlMWZhYjJkYjdlODEzNWUzMWE&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBmal9xYWVuZ2luZWVyJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9NDBjOGEyMGQzN2NlOTM3NzgwM2JjMDk3NTEwNzBhYmM&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=79f34c91429fb631717cf87f950434ab",
-      "bookmarkCount": 55
+      "bookmarkCount": 56
     },
     {
       "id": "hatena-https://zenn.dev/catatsuy/articles/e2fc71d810613a",
@@ -119,7 +119,7 @@
       "publishedAt": "2026-06-06T06:03:49.000Z",
       "summary": "最近のサプライチェーンアタックを見ていると、これまでとは明らかにフェーズが変わったと感じています。 この記事は、具体的な解決策を提示するというより、最近のサプライチェーン攻撃を見て、自分が開発環境やCI/CDについて考えていることを整理したものです。 以前の攻撃は、どちらかというとコンピュータリテラシー...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--ezv_9rEh--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%2596%258B%25E7%2599%25BA%25E8%2580%2585%25E3%2581%258C%25E6%2594%25BB%25E6%2592%2583%25E5%25AF%25BE%25E8%25B1%25A1%25E3%2581%25AB%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%259F%25E6%2599%2582%25E4%25BB%25A3%25E3%2581%25AB%25E3%2580%2581%25E9%2596%258B%25E7%2599%25BA%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25A8CI%252FCD%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%2584%25E3%2581%25A6%25E8%2580%2583%25E3%2581%2588%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E3%2581%2593%25E3%2581%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:catatsuy%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2NiYTVlYjRjMTEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 47
+      "bookmarkCount": 49
     },
     {
       "id": "hatena-https://ladybird.org/posts/changing-how-we-develop-ladybird/",
@@ -167,7 +167,7 @@
       "publishedAt": "2026-06-06T00:15:28.000Z",
       "summary": "JJUG CCC 2026 Spring AI時代の開発こそ標準化を武器に！ ― 方式・プロセス・プラットフォームの標準化",
       "thumbnail": "https://files.speakerdeck.com/presentations/c732fa50e7ca4a8394e9905472052f01/slide_0.jpg?39615600",
-      "bookmarkCount": 19
+      "bookmarkCount": 20
     },
     {
       "id": "hatena-https://date-fns.org/you-dont-need-date-fns",
@@ -188,6 +188,15 @@
       "summary": "TL;DR CVE-2026-49975（通称 HTTP/2 Bomb）は、HTTP/2 の仕様上の組み合わせを悪用したリモート DoS 脆弱性 OpenAI Codex が nginx・Apache・IIS・Envoy・Cloudflare Pingora の 5 つの主要 Webサーバーに共通する問題を人間より先に発見した 家庭用の 100 Mbps 回線 1 本で 32GB の RAM…",
       "thumbnail": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYzNzQ1ODcwJTJGYTI4MDgyNWYwODU0NDFlMzM0MmUzZmEzZmJmNmE3MWE4ZmRlZjkyNiUyRmxhcmdlLnBuZyUzRjE3NzM1NzA3ODg_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTQyNDM2MTBiMWI4NzMzMjNhMWYwNGUyZjc1ZTY1NTdk%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dc1e5a002de72e68ee33d1ebe541e947f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q1ZFLTIwMjYtNDk5NzUlRTMlODAlOENIVFRQJTJGMiUyMEJvbWIlRTMlODAlOEQlRTMlODIlOTIlRTMlODIlOEYlRTMlODElOEIlRTMlODIlOEElRTMlODIlODQlRTMlODElOTklRTMlODElOEYlRTglQTclQTMlRTglQUElQUMlRTIlODAlOTQlRTIlODAlOTRBSSVFMyU4MSU4QyVFNCVCQSVCQSVFOSU5NiU5MyVFMyU4MiU4OCVFMyU4MiU4QSVFNSU4NSU4OCVFMyU4MSVBQiVFNiVCMCU5NyVFMyU4MSVBNSVFMyU4MSU4NCVFMyU4MSU5RiVFOCU4NCU4NiVFNSVCQyVCMSVFNiU4MCVBNyZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTU5ZDk1YjdmNDNhMDdkZjQ5OGNhNjViOTA0MTM1ODky&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBsb25nLTkxMCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTFmNTg5M2M1MjE2ZjU0YzIyMWNjYTZjMWRkN2RkMTU5&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=3b6586a09e53c1b5425bce5277f46c34",
       "bookmarkCount": 61
+    },
+    {
+      "id": "x-2063005289885155439",
+      "source": "x",
+      "title": "Ok, it’s probably about time we changed the game.\n\nStay tuned  👀 https://t.co/50PHNRJB0i",
+      "url": "https://x.com/NotebookLM/status/2063005289885155439",
+      "publishedAt": "2026-06-05T21:09:24.000Z",
+      "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2063004981788299264/img/jDfqEksQ1eXoLZX8.jpg",
+      "author": "@NotebookLM"
     },
     {
       "id": "x-2062874889049276570",
@@ -272,7 +281,7 @@
       "publishedAt": "2026-06-04T22:38:32.000Z",
       "summary": "ウィジェットや診断サービスを完全に「不活化」して無駄なリソース消費をなくす Windows 11は、設定画面から機能を「オフ」や「非表示」に切り替えても、バックグラウンドで関連プロセスが動作し続け、システムリソースを消費しているケースが少なくない。本Tech TIPSでは、ウィジェットや診断サービスなど、裏でリソー...",
       "thumbnail": "https://image.itmedia.co.jp/ait/articles/2606/05/cover_news010.jpg",
-      "bookmarkCount": 125
+      "bookmarkCount": 126
     },
     {
       "id": "x-2062653124326863077",
@@ -282,6 +291,16 @@
       "publishedAt": "2026-06-04T21:50:01.000Z",
       "summary": "Today we’re launching another highly requested feature: Source Attribution! 🥳\n\nNo more guessing. Now you can see the exact formula (prompts + sources) used to make each of your artifacts. Want to make an adjustment? Just tap \"Iterate\" and customize to your heart’s content 💖",
       "author": "ブックマーク"
+    },
+    {
+      "id": "x-2062582348194197743",
+      "source": "x",
+      "title": "PRO TIP: Gamify your notebooks\n\nDon't just read your notes— investigate them. Our new Sherlock Holmes notebook turns studying into an int…",
+      "url": "https://x.com/NotebookLM/status/2062582348194197743",
+      "publishedAt": "2026-06-04T17:08:47.000Z",
+      "summary": "PRO TIP: Gamify your notebooks\n\nDon't just read your notes— investigate them. Our new Sherlock Holmes notebook turns studying into an interactive mystery game. Deduce facts, uncover clues, &amp; prove that even the most complex matters can be elementary.\n\n➡️ https://t.co/Z5gAzflax9 https://t.co/N9EuYubWrq",
+      "thumbnail": "https://pbs.twimg.com/media/HJ_CXIdbYAA7gWU.jpg",
+      "author": "@NotebookLM"
     },
     {
       "id": "x-2062567556524003631",
@@ -300,7 +319,7 @@
       "publishedAt": "2026-06-04T15:42:17.000Z",
       "summary": "今回はJetBrainsが公開した、Zig言語の作者アンドリュー・ケリー（Andrew Kelley）氏へのロングインタビューを取り上げます。 アンドリュー氏は2018年に勤めていた会社を辞め、プログラミング言語Zigの開発に専念してきた人物です。8年が経った今、ZigはGhosttyやTigerBeetle、さらにはUberのクロスコンパイルなどを支え...",
       "thumbnail": "https://assets.st-note.com/production/uploads/images/281980227/rectangle_large_type_2_745b38712a0c06468e18735ac12cf4f4.jpeg?fit=bounds&quality=85&width=1280",
-      "bookmarkCount": 184
+      "bookmarkCount": 186
     },
     {
       "id": "x-2062487492897685986",
@@ -333,6 +352,16 @@
       "url": "https://x.com/i/status/2062252685701841152",
       "publishedAt": "2026-06-03T19:18:49.000Z",
       "author": "ブックマーク"
+    },
+    {
+      "id": "x-2061916823860174980",
+      "source": "x",
+      "title": "Notice anything different about the NotebookLM mobile app recently? 😉\n\nWell, we’re excited to REPORT that you can now create briefing do…",
+      "url": "https://x.com/NotebookLM/status/2061916823860174980",
+      "publishedAt": "2026-06-02T21:04:14.000Z",
+      "summary": "Notice anything different about the NotebookLM mobile app recently? 😉\n\nWell, we’re excited to REPORT that you can now create briefing docs, study guides, and blog posts on-the-go! 📱✨\n\nAre there any other report formats you'd want specifically for mobile? Let us know! https://t.co/nzzgnQFgs7",
+      "thumbnail": "https://pbs.twimg.com/media/HJ1mU5tXoAARwsl.jpg",
+      "author": "@NotebookLM"
     },
     {
       "id": "x-2061910164366676431",
@@ -457,6 +486,16 @@
       "author": "ブックマーク"
     },
     {
+      "id": "x-2059966960876601539",
+      "source": "x",
+      "title": "ICYMI, check out our public notebook summarizing all of the top announcements from Google I/O 2026.\n\nAccess it here: https://t.co/4O3pxgm…",
+      "url": "https://x.com/NotebookLM/status/2059966960876601539",
+      "publishedAt": "2026-05-28T11:56:10.000Z",
+      "summary": "ICYMI, check out our public notebook summarizing all of the top announcements from Google I/O 2026.\n\nAccess it here: https://t.co/4O3pxgmP1P https://t.co/1mxzFfZSKI",
+      "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2059966655879409664/img/xOc3mVlP6NqfLiME.jpg",
+      "author": "@NotebookLM"
+    },
+    {
       "id": "x-2059703536825565499",
       "source": "x",
       "title": "Private MCP servers 🤝 OpenAI products\n\nYour team can keep MCP servers inside your network while ChatGPT, Codex, and the Responses API co…",
@@ -535,6 +574,15 @@
       "author": "ブックマーク"
     },
     {
+      "id": "x-2057215182469046574",
+      "source": "x",
+      "title": "We're back in action! Back to your regularly programmed studying, learning, and research.\n\n(Thank you SO much for your patience and under…",
+      "url": "https://x.com/NotebookLM/status/2057215182469046574",
+      "publishedAt": "2026-05-20T21:41:35.000Z",
+      "summary": "We're back in action! Back to your regularly programmed studying, learning, and research.\n\n(Thank you SO much for your patience and understanding 🙏) https://t.co/GchYR6XWXY",
+      "author": "@NotebookLM"
+    },
+    {
       "id": "x-2057133421177254116",
       "source": "x",
       "title": "The day has come… you can (finally) merge cells in tables.\n\nMerge. Unmerge. Merge merges into BIGGER MERGES 😤",
@@ -550,6 +598,24 @@
       "publishedAt": "2026-05-20T04:04:32.000Z",
       "summary": "1/ We are sharing additional details regarding our investigation into unauthorized access to GitHub's internal repositories.\n\nYesterday we detected and contained a compromise of an employee device involving a poisoned VS Code extension. We removed the malicious extension version,",
       "author": "ブックマーク"
+    },
+    {
+      "id": "x-2056899738071633987",
+      "source": "x",
+      "title": "We're currently experiencing some system issues 🛠️\n\nIf you are on a paid plan, you might notice temporary restrictions on your usage and…",
+      "url": "https://x.com/NotebookLM/status/2056899738071633987",
+      "publishedAt": "2026-05-20T00:48:07.000Z",
+      "summary": "We're currently experiencing some system issues 🛠️\n\nIf you are on a paid plan, you might notice temporary restrictions on your usage and limits. We're working to get this resolved and bring your quotas back to normal ASAP!\n\nThank you so much for your patience and understanding 🙏",
+      "author": "@NotebookLM"
+    },
+    {
+      "id": "x-2056802364955504824",
+      "source": "x",
+      "title": "Happy anniversary to our beloved Tailwind 🎂\n\n1.5 billion notebooks, audio overviews, and slide decks later… we are so grateful for the l…",
+      "url": "https://x.com/NotebookLM/status/2056802364955504824",
+      "publishedAt": "2026-05-19T18:21:12.000Z",
+      "summary": "Happy anniversary to our beloved Tailwind 🎂\n\n1.5 billion notebooks, audio overviews, and slide decks later… we are so grateful for the love and support from this incredible, one-of-a-kind community.\n\nWe can’t wait to show you what’s next! 👀",
+      "author": "@NotebookLM"
     },
     {
       "id": "x-2056795641448444098",
@@ -696,5 +762,12 @@
       "author": "ブックマーク"
     }
   ],
-  "state": {}
+  "state": {
+    "xAccountSinceIds": {
+      "NotebookLM": "2063005289885155439"
+    },
+    "xAccountUserIds": {
+      "NotebookLM": "1846671939437252609"
+    }
+  }
 }
