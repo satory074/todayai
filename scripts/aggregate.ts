@@ -20,6 +20,7 @@ import type { FeedData, FeedItem, FeedSource } from "../src/lib/feed";
 import { fetchX, fetchXAccounts } from "./sources/x";
 import { fetchFeedly } from "./sources/feedly";
 import { fetchHatena } from "./sources/hatena";
+import { fetchLayerX } from "./sources/layerx";
 
 loadEnv();
 
@@ -149,6 +150,39 @@ async function run(): Promise<void> {
     }
   }
 
+  // ---- LayerX AI・LLM Newsletter（Gmail 経由）----
+  if (feedsConfig.layerx.disabled) {
+    console.log("[layerx] disabled");
+    collected.push(...cachedFor(cache, "layerx"));
+  } else {
+    const clientId = process.env.GMAIL_CLIENT_ID;
+    const clientSecret = process.env.GMAIL_CLIENT_SECRET;
+    const refreshToken = process.env.GMAIL_REFRESH_TOKEN;
+    if (!clientId || !clientSecret || !refreshToken) {
+      errors.push("layerx: GMAIL_CLIENT_ID/SECRET/REFRESH_TOKEN 未設定");
+      console.error("[layerx] GMAIL_* 未設定（取得スキップ・前回キャッシュを維持）");
+      collected.push(...cachedFor(cache, "layerx"));
+    } else {
+      try {
+        const items = await fetchLayerX({
+          sender: feedsConfig.layerx.sender,
+          newerThanDays: feedsConfig.layerx.newerThanDays,
+          maxResults: feedsConfig.layerx.maxResults,
+          clientId,
+          clientSecret,
+          refreshToken,
+        });
+        collected.push(...items);
+        console.log(`[layerx] ${items.length} items`);
+      } catch (e) {
+        const msg = (e as Error).message;
+        errors.push(`layerx: ${msg}`);
+        console.error("[layerx] 取得失敗（前回キャッシュを維持）:", msg);
+        collected.push(...cachedFor(cache, "layerx"));
+      }
+    }
+  }
+
   // ---- 重複排除 → ソート → トリム ----
   const byId = new Map<string, FeedItem>();
   for (const item of collected) {
@@ -173,10 +207,10 @@ async function run(): Promise<void> {
   };
   writeCache(out);
 
-  const counts = { x: 0, feedly: 0, hatena: 0 } as Record<FeedSource, number>;
+  const counts = { x: 0, feedly: 0, hatena: 0, layerx: 0 } as Record<FeedSource, number>;
   for (const i of items) counts[i.source]++;
   console.log(
-    `\n✅ feed.json 更新: 計 ${items.length} 件 (X=${counts.x} / Feedly=${counts.feedly} / はてブ=${counts.hatena})`,
+    `\n✅ feed.json 更新: 計 ${items.length} 件 (X=${counts.x} / Feedly=${counts.feedly} / はてブ=${counts.hatena} / LayerX=${counts.layerx})`,
   );
   if (errors.length) {
     console.warn(`⚠️  ${errors.length} 件のソースでエラー:\n  - ${errors.join("\n  - ")}`);

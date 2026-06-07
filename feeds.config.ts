@@ -52,6 +52,20 @@ export interface FeedsConfig {
     rssUrl: string;
     disabled?: boolean;
   };
+  layerx: {
+    /**
+     * LayerX AI・LLM Newsletter（Substack 発行・毎週 Gmail に届く）の取得設定。
+     * Substack の公開 RSS は invite-only のため、Gmail REST API でこの送信元のメールを読む。
+     * 認証情報は env / GitHub Secrets（GMAIL_CLIENT_ID / GMAIL_CLIENT_SECRET / GMAIL_REFRESH_TOKEN）。
+     * いずれか未設定ならこのソースはスキップされる。
+     */
+    sender: string;
+    /** この日数より新しいメールのみ取得（Gmail クエリ newer_than:Nd） */
+    newerThanDays: number;
+    /** 1回に取得する最大メール数 */
+    maxResults: number;
+    disabled?: boolean;
+  };
   /** 集約後、保持する最大件数 */
   maxItems: number;
   /** 集約後、この日数より古いアイテムは捨てる */
@@ -84,6 +98,12 @@ export const feedsConfig: FeedsConfig = {
   },
   hatena: {
     rssUrl: "https://b.hatena.ne.jp/hotentry/it.rss",
+    disabled: false,
+  },
+  layerx: {
+    sender: "layerxnews@substack.com",
+    newerThanDays: 30,
+    maxResults: 20,
     disabled: false,
   },
   maxItems: 200,

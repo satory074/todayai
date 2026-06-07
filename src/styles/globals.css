@@ -27,6 +27,8 @@
   --color-feedly-bg: rgba(78, 196, 111, 0.1);
   --color-hatena: #3a9ad9;
   --color-hatena-bg: rgba(58, 154, 217, 0.12);
+  --color-layerx: #ff6719;
+  --color-layerx-bg: rgba(255, 103, 25, 0.12);
 
   /* X ツイート風カード（公式埋め込み準拠の配色） */
   --color-tweet-bg: #15202b;
@@ -86,6 +88,10 @@ a {
 .src-hatena {
   color: var(--color-hatena);
   background: var(--color-hatena-bg);
+}
+.src-layerx {
+  color: var(--color-layerx);
+  background: var(--color-layerx-bg);
 }
 
 /* フィルタ非表示用 */

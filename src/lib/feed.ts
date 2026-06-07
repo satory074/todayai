@@ -1,5 +1,5 @@
 /** 全情報源を統一する正規化済みフィードアイテム。 */
-export type FeedSource = "x" | "feedly" | "hatena";
+export type FeedSource = "x" | "feedly" | "hatena" | "layerx";
 
 export interface FeedItem {
   /** 一意キー（X: tweet id / Feedly: item id / はてブ: entry url） */
@@ -46,6 +46,7 @@ export const SOURCES: SourceMeta[] = [
   { key: "x", label: "X", badgeClass: "src-x" },
   { key: "feedly", label: "Feedly", badgeClass: "src-feedly" },
   { key: "hatena", label: "はてブ", badgeClass: "src-hatena" },
+  { key: "layerx", label: "LayerX", badgeClass: "src-layerx" },
 ];
 
 export function sourceLabel(source: FeedSource): string {
