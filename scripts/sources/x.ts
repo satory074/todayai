@@ -10,6 +10,7 @@
  */
 import type { FeedItem } from "../../src/lib/feed";
 import type { XCategory } from "../../feeds.config";
+import { resolveOgImage } from "./ogp";
 
 interface XTweetEntry {
   id: string;
@@ -33,6 +34,23 @@ const CATEGORY_LABEL: Record<XCategory, string> = {
 /** 末尾の t.co 短縮URLを除去して表示を整える。 */
 function cleanText(text: string): string {
   return text.replace(/\s*https?:\/\/t\.co\/\S+\s*$/g, "").trim();
+}
+
+/** 本文中の t.co URL を出現順に抽出（OGP サムネ補完用）。 */
+function extractTcoUrls(text: string): string[] {
+  return text.match(/https?:\/\/t\.co\/\S+/g) ?? [];
+}
+
+/** 並列数を制限して非同期タスクを実行する簡易プール。 */
+async function mapLimit<T>(items: T[], limit: number, fn: (item: T) => Promise<void>): Promise<void> {
+  let cursor = 0;
+  const workers = Array.from({ length: Math.min(limit, items.length) }, async () => {
+    while (cursor < items.length) {
+      const i = cursor++;
+      await fn(items[i]);
+    }
+  });
+  await Promise.all(workers);
 }
 
 // ===== 外部アカウントのポスト（X API App-only Bearer + since_id 増分） =====
@@ -150,19 +168,31 @@ export async function fetchXAccounts(opts: {
 
 // ===== 自分のデータ（basecamp 公開JSON） =====
 
+export interface FetchXResult {
+  items: FeedItem[];
+  /** tweet id(`x-<id>`) -> OGP画像URL / "" (確認済み・画像なし) のキャッシュ */
+  ogCache: Record<string, string>;
+}
+
 export async function fetchX(opts: {
   sourceUrl: string;
   username: string;
   categories: XCategory[];
-}): Promise<FeedItem[]> {
+  /** 前回までの OGP サムネ取得結果（負キャッシュ含む）。再取得回避に使う */
+  ogCache?: Record<string, string>;
+}): Promise<FetchXResult> {
   const res = await fetch(opts.sourceUrl, { headers: { "cache-control": "no-cache" } });
   if (!res.ok) {
     throw new Error(`x-tweets.json fetch failed (${res.status}): ${opts.sourceUrl}`);
   }
   const file = (await res.json()) as XTweetsFile;
   const wanted = new Set(opts.categories);
+  const ogCache: Record<string, string> = { ...(opts.ogCache ?? {}) };
 
   const items: FeedItem[] = [];
+  // OGP 解決待ちのアイテム（生本文から t.co を抽出できたもの）
+  const pending: { item: FeedItem; tcoUrls: string[] }[] = [];
+
   for (const t of file.tweets ?? []) {
     if (!wanted.has(t.category)) continue;
     if (t.isRetweet) continue;
@@ -175,7 +205,7 @@ export async function fetchX(opts: {
       t.category === "post"
         ? `https://x.com/${opts.username}/status/${t.id}`
         : `https://x.com/i/status/${t.id}`;
-    items.push({
+    const item: FeedItem = {
       id: `x-${t.id}`,
       source: "x",
       title,
@@ -183,7 +213,32 @@ export async function fetchX(opts: {
       publishedAt: t.date,
       summary: text !== title ? text : undefined,
       author: t.category === "post" ? `@${opts.username}` : CATEGORY_LABEL[t.category],
+    };
+
+    // サムネ補完: キャッシュ済みなら流用、未確認なら t.co を OGP 解決対象に積む
+    const cached = ogCache[item.id];
+    if (cached !== undefined) {
+      if (cached) item.thumbnail = cached;
+    } else {
+      const tcoUrls = extractTcoUrls(raw);
+      if (tcoUrls.length > 0) pending.push({ item, tcoUrls });
+    }
+
+    items.push(item);
+  }
+
+  // 新規分のみ OGP 解決（並列5・各5秒タイムアウト）。1つでも取れたら採用、無ければ負キャッシュ。
+  if (pending.length > 0) {
+    await mapLimit(pending, 5, async ({ item, tcoUrls }) => {
+      let found: string | undefined;
+      for (const tco of tcoUrls) {
+        found = await resolveOgImage(tco);
+        if (found) break;
+      }
+      if (found) item.thumbnail = found;
+      ogCache[item.id] = found ?? "";
     });
   }
-  return items;
+
+  return { items, ogCache };
 }

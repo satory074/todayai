@@ -30,6 +30,8 @@ export interface FeedData {
     xAccountSinceIds?: Record<string, string>;
     /** 外部アカウント username -> userId の解決結果キャッシュ */
     xAccountUserIds?: Record<string, string>;
+    /** X ブックマーク等 tweet id(`x-<id>`) -> OGP画像URL / ""(確認済み・画像なし) */
+    xOgImages?: Record<string, string>;
   };
 }
 

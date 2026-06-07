@@ -71,13 +71,16 @@ async function run(): Promise<void> {
 
     // (a) 自分のブックマーク等（basecamp 公開JSON、トークン不要）
     try {
-      const items = await fetchX({
+      const r = await fetchX({
         sourceUrl: feedsConfig.x.sourceUrl,
         username: feedsConfig.x.username,
         categories: feedsConfig.x.categories,
+        ogCache: state.xOgImages ?? {},
       });
-      xItems.push(...items);
-      console.log(`[x] basecamp公開JSON: ${items.length} items (${feedsConfig.x.categories.join("/") || "なし"})`);
+      state.xOgImages = r.ogCache;
+      xItems.push(...r.items);
+      const withThumb = r.items.filter((i) => i.thumbnail).length;
+      console.log(`[x] basecamp公開JSON: ${r.items.length} items (${feedsConfig.x.categories.join("/") || "なし"}, サムネ ${withThumb})`);
     } catch (e) {
       const msg = (e as Error).message;
       errors.push(`x(json): ${msg}`);
