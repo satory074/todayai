@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-06T18:33:02.213Z",
+  "updatedAt": "2026-06-07T01:03:49.312Z",
   "items": [
     {
       "id": "hatena-https://zenn.dev/pdfractal/articles/373be6a9de3e8c",
@@ -9,7 +9,17 @@
       "publishedAt": "2026-06-06T13:39:59.000Z",
       "summary": "はじめに 本題でいう「頭が良くなる」「頭が悪くなる」は、先天的な知能そのものが上下するという意味ではありません。問題になっているのは、AIを使うことで 判断主権 を自分の手元に残す人と、外へ渡してしまう人の差が拡大することです。2025年のMicrosoft Researchの調査でも、生成AIへの信頼が高いほど批判的思考は...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--xvK9c6Hr--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%25AA%25E3%2581%259C%25E3%2580%2581AI%25E3%2581%25AF%25E9%25A0%25AD%25E3%2581%258C%25E8%2589%25AF%25E3%2581%2584%25E4%25BA%25BA%25E3%2581%258C%25E4%25BD%25BF%25E3%2581%2586%25E3%2581%25A8%25E3%2582%2588%25E3%2582%258A%25E9%25A0%25AD%25E3%2581%258C%25E8%2589%25AF%25E3%2581%258F%25E3%2581%25AA%25E3%2582%258B%25E3%2581%25AE%25E3%2581%25AB%25E3%2580%2581%25E9%25A0%25AD%25E3%2581%258C%25E6%2582%25AA%25E3%2581%2584%25E4%25BA%25BA%25E3%2581%258C%25E4%25BD%25BF%25E3%2581%2586%25E3%2581%25A8%25E3%2582%2588%25E3%2582%258A%25E9%25A0%25AD%25E3%2581%258C%25E6%2582%25AA%25E3%2581%258F%25E3%2581%25AA%25E3%2582%258B%25E3%2581%25AE%25E3%2581%258B%25EF%25BC%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:pdfractal%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2FlODUxNjI3MGYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 31
+      "bookmarkCount": 250
+    },
+    {
+      "id": "hatena-https://speakerdeck.com/kajitack/why-algebraic-data-type",
+      "source": "hatena",
+      "title": "代数的データ型って何が嬉しいの？ #frontend_phpcon_do",
+      "url": "https://speakerdeck.com/kajitack/why-algebraic-data-type",
+      "publishedAt": "2026-06-06T12:58:01.000Z",
+      "summary": "フロントエンド・PHPカンファレンス北海道2026 の登壇資料です。 https://fortee.jp/frontend-phpcon-do-2026/proposal/f85e1c42-0592-4f5f-a493-e0757412e0a5 - 代数的データ型とはなにか？直積型/列挙型/…",
+      "thumbnail": "https://files.speakerdeck.com/presentations/dee9cd84a1ba4b09894ec0d99f80f7dc/slide_0.jpg?39626028",
+      "bookmarkCount": 4
     },
     {
       "id": "hatena-https://www.47news.jp/14427079.html",
@@ -19,7 +29,17 @@
       "publishedAt": "2026-06-06T12:17:36.000Z",
       "summary": "【ニューヨーク共同】人工知能（AI）開発の米アンソロピックは6日までに、AIが人間の手を借りずに性能を自律的に高める段階に近づいたと指摘し、暴走して制御不能になる前に「開発を遅らせたり、一時停止したりする選択肢を持つことが世界にとって有益だ」と提言した。核軍縮条約を引き合いに、先端AI規制の国際的枠組み...",
       "thumbnail": "https://img.cf.47news.jp/public/photo/1a478aaa36ec8103a60cebc4d426a510/photo.jpg",
-      "bookmarkCount": 69
+      "bookmarkCount": 143
+    },
+    {
+      "id": "hatena-https://p-shirokuma.hatenadiary.com/entry/20260606/1780740000",
+      "source": "hatena",
+      "title": "素人の「ぜんぜんいない」と専門家の「けっこういる」問題 - シロクマの屑籠",
+      "url": "https://p-shirokuma.hatenadiary.com/entry/20260606/1780740000",
+      "publishedAt": "2026-06-06T10:58:46.000Z",
+      "summary": "昔の引きこもりって凄い 今の引きこもりはネットを介してコミュニケーションしてるから認知機能は保たれてるけど、それ以前は全く新たな刺激がないまま引きこもってたはず 引きこもりの方の研究はネット時代以降のしかないから、それ以前の彼らは医学的にどうだったかもう分からないけど気になる— Lebenstrieb (@Kohler_...",
+      "thumbnail": "https://ogimage.blog.st-hatena.com/6653458415124667212/14945776032039410750/1780744430",
+      "bookmarkCount": 73
     },
     {
       "id": "hatena-https://gigazine.net/news/20260606-llm-checker/",
@@ -29,7 +49,7 @@
       "publishedAt": "2026-06-06T10:53:45.000Z",
       "summary": "「LLM Checker」は自分のPCのハードウェアをスキャンしローカルで実行可能なLLMを推薦してくれるCLIツールであり、Ollamaと完全に統合されていることを特徴としています。 Pavelevich/llm-checker: Advanced CLI tool that scans your hardware and tells you exactly which LLM or sL…",
       "thumbnail": "https://i.gzn.jp/img/2026/06/06/llm-checker/00.png",
-      "bookmarkCount": 31
+      "bookmarkCount": 48
     },
     {
       "id": "hatena-https://azukiazusa.dev/blog/goal-command-use-case-vitest/",
@@ -39,7 +59,7 @@
       "publishedAt": "2026-06-06T10:46:56.000Z",
       "summary": "Vitest の `isolate: false` オプションを有効にすることで、テストの実行時間を大幅に短縮できましたが、その際に大規模なコードの修正が必要でした。Claude Code の `/goal` コマンドを活用することで、最終的なゴールを達成するために必要なステップを自律的に判断して実行させることができます。この記事ではその経...",
       "thumbnail": "https://ogp.azukiazusa.dev/blog/ogp/goal-command-use-case-vitest.png",
-      "bookmarkCount": 13
+      "bookmarkCount": 37
     },
     {
       "id": "hatena-https://speakerdeck.com/yusukebe/aishi-dai-nouihadokohexing-ku-sono2",
@@ -49,7 +69,7 @@
       "publishedAt": "2026-06-06T08:31:59.000Z",
       "summary": "フロントエンド・PHPカンファレンス北海道2026 June 6, 2026",
       "thumbnail": "https://files.speakerdeck.com/presentations/261fd6bb9f5e4c97926a85e1b04920a9/slide_0.jpg?39628857",
-      "bookmarkCount": 94
+      "bookmarkCount": 141
     },
     {
       "id": "hatena-https://qiita.com/fj_qaengineer/items/cabe6aea0be459f7d97b",
@@ -59,7 +79,7 @@
       "publishedAt": "2026-06-06T07:35:15.000Z",
       "summary": "はじめに こんにちは。 QAエンジニアのふじです。 QAエンジニアとして実務に携わって約2年が経ちました。 私が過去に所属したプロジェクトではオフショア開発を取り入れており、 海外ベンダーが作成したテスト方針やテストケースのレビュー、および品質改善業務を担当する機会がありました。 そこでの業務を通じて、国内...",
       "thumbnail": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMzkwNjcwNSUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc4MDY1MzMzMT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZTRhMWYxMzgyOGYzZmZkZWQxNjUzODVhMzRiNGQ1ZWM%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dda79eebc6e1fefcea9361ddb1cb9f781?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU2JUI1JUI3JUU1JUE0JTk2JUUzJTgzJTk5JUUzJTgzJUIzJUUzJTgzJTgwJUUzJTgzJUJDJUUzJTgxJThDJUU0JUJEJTlDJUU2JTg4JTkwJUUzJTgxJTk3JUUzJTgxJTlGJUUzJTgzJTg2JUUzJTgyJUI5JUUzJTgzJTg4JUU2JTk2JUI5JUU5JTg3JTlEJUUzJTgyJTg0JUUzJTgzJTg2JUUzJTgyJUI5JUUzJTgzJTg4JUUzJTgyJUIxJUUzJTgzJUJDJUUzJTgyJUI5JUUzJTgxJUFCJUU1JUFGJUJFJUUzJTgxJTk5JUUzJTgyJThCJUU1JTkzJTgxJUU4JUIzJUFBJUU2JTk0JUI5JUU1JTk2JTg0JUU2JUE1JUFEJUU1JThCJTk5JUUzJTgxJUFCJUU1JUJFJTkzJUU0JUJBJThCJUUzJTgxJTk3JUUzJTgxJUE2JUU1JUJFJTk3JUUzJTgxJTlGJUU1JUFEJUE2JUUzJTgxJUIzJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MDhkN2I5MmVhZDg2NjVlMWZhYjJkYjdlODEzNWUzMWE&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBmal9xYWVuZ2luZWVyJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9NDBjOGEyMGQzN2NlOTM3NzgwM2JjMDk3NTEwNzBhYmM&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=79f34c91429fb631717cf87f950434ab",
-      "bookmarkCount": 33
+      "bookmarkCount": 51
     },
     {
       "id": "hatena-https://ladybird.org/posts/changing-how-we-develop-ladybird/",
@@ -68,7 +88,7 @@
       "url": "https://ladybird.org/posts/changing-how-we-develop-ladybird/",
       "publishedAt": "2026-06-06T05:10:02.000Z",
       "summary": "Today we’re changing how code enters the Ladybird project. We will no longer accept public pull requests. From now on, code changes to the Ladybird codebase will only be introduced by project maint…",
-      "bookmarkCount": 5
+      "bookmarkCount": 6
     },
     {
       "id": "hatena-https://github.com/microsoft/pg_durable",
@@ -78,7 +98,7 @@
       "publishedAt": "2026-06-06T02:40:34.000Z",
       "summary": "Long-running, fault-tolerant SQL functions for teams that already keep their state in Postgres and want to stop stitching together cron jobs, workers, queues, and status tables to make background w…",
       "thumbnail": "https://opengraph.githubassets.com/f4d8b6611011590f581aa65b128a8835bb8450d0d36603417da4de4acce5f5c3/microsoft/pg_durable",
-      "bookmarkCount": 14
+      "bookmarkCount": 15
     },
     {
       "id": "hatena-https://dot.asahi.com/articles/-/284064?page=1",
@@ -88,7 +108,7 @@
       "publishedAt": "2026-06-06T02:04:28.000Z",
       "summary": "古坂大魔王さんの自宅スタジオで。MacBook Proをメインで使っていて、飛行機のなかでも曲を作れるようになったという（写真：本人提供） この記事の写真をすべて見る ピコ太郎の「PPAP」をMacで作り、世界的ヒットへと導いた古坂大魔王さん。いまや音楽制作から映像編集まで、ほとんどを1台のMacBook Proでこなしている...",
       "thumbnail": "https://aeradot.ismcdn.jp/mwimgs/4/3/1200xm/img_43b6fb17b29fc063c57bdc4ba3a47aca302956.jpg",
-      "bookmarkCount": 179
+      "bookmarkCount": 185
     },
     {
       "id": "hatena-https://note.com/genaird/n/n6be0a775853f",
@@ -98,17 +118,7 @@
       "publishedAt": "2026-06-06T01:14:11.000Z",
       "summary": "本記事については生成AIを活用して生成された記事となります。 解説内容の正確性については読者ご自身でご確認いただきますようお願いいたします。 本記事はObsidian Starter Kit v4 Is Here: Your Vault Is Now a Full AI Assistantの解説記事となります。 デジタルノート環境であるObsidianのスターターキット最新版に...",
       "thumbnail": "https://assets.st-note.com/production/uploads/images/282024057/rectangle_large_type_2_c467f248eb7e16ca9b1d779f751df244.jpeg?fit=bounds&quality=85&width=1280",
-      "bookmarkCount": 28
-    },
-    {
-      "id": "hatena-https://news.web.nhk/newsweb/na/na-k10015142621000",
-      "source": "hatena",
-      "title": "生成AIで裸に見える画像製造・提供の罪で30代男性略式命令 | NHKニュース",
-      "url": "https://news.web.nhk/newsweb/na/na-k10015142621000",
-      "publishedAt": "2026-06-06T00:38:27.000Z",
-      "summary": "生成AIを使って作成された実在の児童が裸のように見える画像を所持したなどとして、実刑判決を受けた名古屋市の元小学校教諭に画像を提供したなどとして、30代の男性が児童ポルノ禁止法違反の罪で略式命令を受け…",
-      "thumbnail": "https://imgu.web.nhk/news/u/news/html/20260606/K10015142621_2606052350_0606050325_01_02.jpg",
-      "bookmarkCount": 75
+      "bookmarkCount": 35
     },
     {
       "id": "hatena-https://katukawa.com/?p=6345",
@@ -117,7 +127,7 @@
       "url": "https://katukawa.com/?p=6345",
       "publishedAt": "2026-06-06T00:26:21.000Z",
       "summary": "スルメイカの漁獲枠が意味不明です 今年のスルメイカのTAC（漁獲可能量）が、昨年の倍以上に増枠されました。水産庁の説明によると、これは「カナダマツイカ（Illex illecebrosus）に対する米国の管理方式」を参考にした、新しい算出方法を採用した結果だといいます。 水産庁の資料（資源管理方針に関する検討会・第8回...",
-      "bookmarkCount": 10
+      "bookmarkCount": 14
     },
     {
       "id": "hatena-https://japan.cnet.com/article/35248536/",
@@ -127,7 +137,7 @@
       "publishedAt": "2026-06-06T00:25:58.000Z",
       "summary": "米Anthropicは、同社の研究機関Anthropic Instituteによる論考「When AI builds itself（AIが自らを作るとき）」を公開した。AIがAI自身の開発を肩代わりし、その開発ペースを既に加速させているとし、2026年5月時点で同社のコードベースにマージされるコードの80%超を同社のAI「Claude」が記述していると明らかにした。...",
       "thumbnail": "https://japan.cnet.com/storage/2026/06/06/e3cbbe91252f859bdeaeb9cce3e54a6d/claude-ai-9831_1000x563.jpeg",
-      "bookmarkCount": 17
+      "bookmarkCount": 33
     },
     {
       "id": "hatena-https://gigazine.net/news/20260606-your-ai-slop-bores-me/",
@@ -137,7 +147,7 @@
       "publishedAt": "2026-06-06T00:03:16.000Z",
       "summary": "「Your AI Slop Bores Me(お前の低品質なAI量産コンテンツにはうんざりだ)」は、人間として質問したり、AIのふりをして質問に回答したりできるAIチャットボット風のサービスです。実際に遊んでみました。 your ai slop bores me https://youraislopbores.me/ 上記のサイトにアクセスしたら、13歳以上であることの確認と...",
       "thumbnail": "https://i.gzn.jp/img/2026/06/06/your-ai-slop-bores-me/00.png",
-      "bookmarkCount": 19
+      "bookmarkCount": 23
     },
     {
       "id": "hatena-https://date-fns.org/you-dont-need-date-fns",
@@ -147,7 +157,7 @@
       "publishedAt": "2026-06-05T23:51:13.000Z",
       "summary": "date-fns provides the most comprehensive yet simple and consistent toolset for manipulating JavaScript dates in a browser & Node.js.",
       "thumbnail": "http://cdn.date-fns.org/card.png",
-      "bookmarkCount": 4
+      "bookmarkCount": 8
     },
     {
       "id": "hatena-https://qiita.com/long-910/items/76779fc1d8602dab73b3",
@@ -157,7 +167,7 @@
       "publishedAt": "2026-06-05T23:40:42.000Z",
       "summary": "TL;DR CVE-2026-49975（通称 HTTP/2 Bomb）は、HTTP/2 の仕様上の組み合わせを悪用したリモート DoS 脆弱性 OpenAI Codex が nginx・Apache・IIS・Envoy・Cloudflare Pingora の 5 つの主要 Webサーバーに共通する問題を人間より先に発見した 家庭用の 100 Mbps 回線 1 本で 32GB の RAM…",
       "thumbnail": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYzNzQ1ODcwJTJGYTI4MDgyNWYwODU0NDFlMzM0MmUzZmEzZmJmNmE3MWE4ZmRlZjkyNiUyRmxhcmdlLnBuZyUzRjE3NzM1NzA3ODg_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTQyNDM2MTBiMWI4NzMzMjNhMWYwNGUyZjc1ZTY1NTdk%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dc1e5a002de72e68ee33d1ebe541e947f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q1ZFLTIwMjYtNDk5NzUlRTMlODAlOENIVFRQJTJGMiUyMEJvbWIlRTMlODAlOEQlRTMlODIlOTIlRTMlODIlOEYlRTMlODElOEIlRTMlODIlOEElRTMlODIlODQlRTMlODElOTklRTMlODElOEYlRTglQTclQTMlRTglQUElQUMlRTIlODAlOTQlRTIlODAlOTRBSSVFMyU4MSU4QyVFNCVCQSVCQSVFOSU5NiU5MyVFMyU4MiU4OCVFMyU4MiU4QSVFNSU4NSU4OCVFMyU4MSVBQiVFNiVCMCU5NyVFMyU4MSVBNSVFMyU4MSU4NCVFMyU4MSU5RiVFOCU4NCU4NiVFNSVCQyVCMSVFNiU4MCVBNyZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTU5ZDk1YjdmNDNhMDdkZjQ5OGNhNjViOTA0MTM1ODky&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBsb25nLTkxMCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTFmNTg5M2M1MjE2ZjU0YzIyMWNjYTZjMWRkN2RkMTU5&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=3b6586a09e53c1b5425bce5277f46c34",
-      "bookmarkCount": 50
+      "bookmarkCount": 60
     },
     {
       "id": "hatena-https://blog.cloudnative.co.jp/articles/security-features-need-field-fit/",
@@ -167,17 +177,7 @@
       "publishedAt": "2026-06-05T23:38:41.000Z",
       "summary": "どうも おかしん です。 近年、X（旧Twitter）などのSNSで、情シス（情報システム部門）の方々が「SSO（シングルサインオン）やMFA（多要素認証）を実装してほしい」と、様々なWebサービスに対して要望や苦言を発信しているのをよく目にします。 私自身も、先日 2026年の今、なぜSSOが重要なのか という記事を書きました...",
       "thumbnail": "https://blog.cloudnative.co.jp/assets/images/notion/a3f8ba141f8e.webp",
-      "bookmarkCount": 20
-    },
-    {
-      "id": "hatena-https://xtech.nikkei.com/atcl/nxt/column/18/00001/11799/",
-      "source": "hatena",
-      "title": "日立がメインフレーム撤退へ、「VOS3」販売終了 地銀勘定系も転換点",
-      "url": "https://xtech.nikkei.com/atcl/nxt/column/18/00001/11799/",
-      "publishedAt": "2026-06-05T17:23:17.000Z",
-      "summary": "日立製作所はメインフレーム向けOS「VOS3（Virtual-storage Operating System 3）」の販売・保守を終了する。販売は2027年11月に、保守は2034年12月に終了する。2035年には実質的にメインフレーム事業の終焉（しゅうえん）を迎える。富士通製メインフレームの製造・販売の撤退に続き、日本のIT産業にとって重要な転換点...",
-      "thumbnail": "https://xtech.nikkei.com/atcl/nxt/column/18/00001/11799/Topm.jpg?20220512",
-      "bookmarkCount": 16
+      "bookmarkCount": 23
     },
     {
       "id": "hatena-https://note.com/satoshoco/n/n073cb334dd8b",
@@ -187,26 +187,17 @@
       "publishedAt": "2026-06-05T15:52:29.000Z",
       "summary": "令和8年６月３日。山口県宇部市民となりました。ただいま！ pic.twitter.com/3hhuQfLw7r — Shoco Sato (@satoshoco) June 3, 2026 とはいえ、東京には家族がいて、これまで続けてきた仕事もあります。そのため、完全な移住というよりも、東京と宇部を行き来する二拠点生活のスタートという表現の方が正しいかもしれませ...",
       "thumbnail": "https://assets.st-note.com/production/uploads/images/282744910/rectangle_large_type_2_45b3458da69c2b92cface398a873169e.jpeg?fit=bounds&quality=85&width=1280",
-      "bookmarkCount": 11
+      "bookmarkCount": 13
     },
     {
-      "id": "hatena-https://www.watch.impress.co.jp/docs/news/2115005.html",
+      "id": "hatena-https://finance.biggo.jp/news/dkJzkZ4BoicNoOgCq3Zj",
       "source": "hatena",
-      "title": "アンソロピック、AI開発の「減速」を提言",
-      "url": "https://www.watch.impress.co.jp/docs/news/2115005.html",
-      "publishedAt": "2026-06-05T15:35:16.000Z",
-      "thumbnail": "https://www.watch.impress.co.jp/img/ipw/list/2115/005/an1.jpg",
-      "bookmarkCount": 265
-    },
-    {
-      "id": "hatena-https://claude.com/blog/using-llms-to-secure-source-code",
-      "source": "hatena",
-      "title": "Using LLMs to secure source code | Claude",
-      "url": "https://claude.com/blog/using-llms-to-secure-source-code",
-      "publishedAt": "2026-06-05T12:06:28.000Z",
-      "summary": "Model capabilities are advancing quickly, and unevenly. We’ve been working with security teams to find and fix vulnerabilities in their own code and open source software, and the work has given us …",
-      "thumbnail": "https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a1765c92ff7f5b53db95147_og_using-llms-to-secure-source-code%20(1).jpg",
-      "bookmarkCount": 15
+      "title": "マイクロソフト、Build 2026で方針転換：WinUIを唯一のネイティブフレームワークに格上げ、Windows 11は「開発者ファースト」戦略でWebラッパーに全面反撃 — BigGo ファイナンス",
+      "url": "https://finance.biggo.jp/news/dkJzkZ4BoicNoOgCq3Zj",
+      "publishedAt": "2026-06-05T11:44:12.000Z",
+      "summary": "マイクロソフト、Build 2026で方針転換：WinUIを唯一のネイティブフレームワークに格上げ、Windows 11は「開発者ファースト」戦略でWebラッパーに全面反撃 マイクロソフトはBuild 2026開発者会議において、2つの重大な戦略転換を発表した。1つ目は、WinUI 3のブランド名を正式に廃止し「WinUI」に統一。Windowsアプリ開...",
+      "thumbnail": "https://img.biggo.com/5iiQCrDbPBBw-QK3B1wKwbw_OgY_lu3iqvDmzI6ahVk/fit/1720/0/sm/1/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTA2L2RrSnprWjRCb2ljTm9PZ0NxM1pqXzE3ODA1NjU1OTFfZGVmYXVsdC5qcGc.jpg",
+      "bookmarkCount": 31
     },
     {
       "id": "hatena-https://www.itmedia.co.jp/aiplus/article/2606/05/2000000060/",
@@ -216,7 +207,7 @@
       "publishedAt": "2026-06-05T08:10:16.000Z",
       "summary": "米国企業がOpenAIやAnthropicの高額なAIモデルから、安価な中国製モデルへ乗り換えている実態が、米決済プラットフォーム「Ramp」の支出データから明らかになった。同社が6月3日（現地時間）に公開した月次調査結果「Top SaaS Vendors on Ramp」で、中国DeepSeekが急成長部門の首位に入った。 この調査は5万社超の法人カ...",
       "thumbnail": "https://www.itmedia.co.jp/aiplus/article/ogp/2606/05/2000000060/10000333/2048",
-      "bookmarkCount": 6
+      "bookmarkCount": 36
     },
     {
       "id": "hatena-https://atmarkit.itmedia.co.jp/ait/articles/2606/05/news061.html",
@@ -226,7 +217,7 @@
       "publishedAt": "2026-06-05T08:03:06.000Z",
       "summary": "Googleは2026年4月16日（米国時間、以下同じ）、AIエージェントを活用したAndroidアプリ開発を支援するツール群およびリソース群「Android CLI」「Android Skills」「Android Knowledge Base」を発表した。これについて同社は2026年5月19日、Android CLIの安定版としてバージョン1.0をリリースしたことを発表した。 Andr...",
       "thumbnail": "https://image.itmedia.co.jp/ait/articles/2606/05/cover_news061.jpg",
-      "bookmarkCount": 68
+      "bookmarkCount": 72
     },
     {
       "id": "hatena-https://zenn.dev/edhiblemeer/articles/claude-code-opus48-tool-corruption",
@@ -236,17 +227,27 @@
       "publishedAt": "2026-06-05T00:31:02.000Z",
       "summary": "長時間・常時起動でClaude Codeを使っていると、ある時からすべてのツール呼び出しが壊れて動かなくなることがある。日本語環境で複数のセッションを何時間も回していて、実際にこれを踏んだ。原因と回避策が分かったので、特に日本語ユーザーが踏みやすい点を含めて共有する。 起きること function callの開始タグが co...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--gxAaXu3L--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%2520%2528Opus%25204.8%2529%2520%25E3%2581%25A7%25E5%2585%25A8%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E5%2591%25BC%25E3%2581%25B3%25E5%2587%25BA%25E3%2581%2597%25E3%2581%258C%25E5%25A3%258A%25E3%2582%258C%25E3%2582%258B%2520%25E2%2580%2594%2520%25E6%2597%25A5%25E6%259C%25AC%25E8%25AA%259E%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25A7%25E8%25B8%258F%25E3%2581%25BF%25E3%2582%2584%25E3%2581%2599%25E3%2581%2584%25E6%259C%25AA%25E4%25BF%25AE%25E6%25AD%25A3%25E3%2583%2590%25E3%2582%25B0%25E3%2581%25A8%25E5%259B%259E%25E9%2581%25BF%25E7%25AD%2596%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:yoshi%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUlNTndyWXA4SHpUR3FEX2QtOTJqdHJ2aFUtc2J3c1ViZFpnYzVpMlBJc3kwSEpUNklfdz1zOTYtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 9
+      "bookmarkCount": 16
     },
     {
-      "id": "hatena-https://active.nikkeibp.co.jp/atcl/act/19/00775/051200001/",
+      "id": "hatena-https://engineering.nature.global/entry/smartlock-domain-models",
       "source": "hatena",
-      "title": "AIが数学の未解決問題を相次いで解決、証明の鍵は「形式化」",
-      "url": "https://active.nikkeibp.co.jp/atcl/act/19/00775/051200001/",
-      "publishedAt": "2026-06-04T22:31:58.000Z",
-      "summary": "出典：日経クロステック、2026年4月6日 （記事は執筆時の情報に基づいており、現在では異なる場合があります） AI（人工知能）が数学界でも注目を集めている。AIが数学の未解決問題を相次いで解決したからだ。AIの能力や影響を研究する非営利機関のEpoch AI（エポックAI）は2026年3月5日、米OpenAI（オープンAI）のGPT-5...",
-      "thumbnail": "https://active.nikkeibp.co.jp/atcl/act/19/00775/051200001/topm.jpg",
-      "bookmarkCount": 14
+      "title": "Nature における「スマートロックとはなにか」をドメインモデリングする - Nature Engineering Blog",
+      "url": "https://engineering.nature.global/entry/smartlock-domain-models",
+      "publishedAt": "2026-06-04T23:15:16.000Z",
+      "summary": "バックエンドエンジニアの長田です。 2026年4月30日に、Nature はスマートロック製品である「Nature Lock」と、 その専用のスマートキーであり Apple の「探す」アプリにも対応した「Nature Key」を発売しました。 nature.global nature.global また、5月19日には iOS のショートカットアプリなどの Nature Home アプリ...",
+      "thumbnail": "https://cdn.image.st-hatena.com/image/scale/d142ee21fbc16c3e147f80e66a24f65e5cba605b/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhandlename%2F20260604%2F20260604143211.png",
+      "bookmarkCount": 24
+    },
+    {
+      "id": "hatena-https://atmarkit.itmedia.co.jp/ait/articles/2606/05/news010.html",
+      "source": "hatena",
+      "title": "【Windows 11ダイエット術】「隠れた不要サービス」を停止して軽量化する",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2606/05/news010.html",
+      "publishedAt": "2026-06-04T22:38:32.000Z",
+      "summary": "ウィジェットや診断サービスを完全に「不活化」して無駄なリソース消費をなくす Windows 11は、設定画面から機能を「オフ」や「非表示」に切り替えても、バックグラウンドで関連プロセスが動作し続け、システムリソースを消費しているケースが少なくない。本Tech TIPSでは、ウィジェットや診断サービスなど、裏でリソー...",
+      "thumbnail": "https://image.itmedia.co.jp/ait/articles/2606/05/cover_news010.jpg",
+      "bookmarkCount": 53
     },
     {
       "id": "hatena-https://note.com/naoya_tech/n/ne7c83d38fc72",
@@ -256,7 +257,7 @@
       "publishedAt": "2026-06-04T15:42:17.000Z",
       "summary": "今回はJetBrainsが公開した、Zig言語の作者アンドリュー・ケリー（Andrew Kelley）氏へのロングインタビューを取り上げます。 アンドリュー氏は2018年に勤めていた会社を辞め、プログラミング言語Zigの開発に専念してきた人物です。8年が経った今、ZigはGhosttyやTigerBeetle、さらにはUberのクロスコンパイルなどを支え...",
       "thumbnail": "https://assets.st-note.com/production/uploads/images/281980227/rectangle_large_type_2_745b38712a0c06468e18735ac12cf4f4.jpeg?fit=bounds&quality=85&width=1280",
-      "bookmarkCount": 154
+      "bookmarkCount": 176
     },
     {
       "id": "x-sample-1",
@@ -283,7 +284,7 @@
       "publishedAt": "2026-06-02T06:17:40.000Z",
       "summary": "はじめに 最近、スマホのChatGPTアプリからCodex経由で パソコンを操作できる ようになりました。 これを使って始めたのが、 「技術ノート」 の作成。 メモる速度で記事化する という作業。 疑問が浮かんだその瞬間、Codexに指示して記事化を始めるようになって、学習体験がすごく良くなりました。 移動中に音声入力で「...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--5oigtSKz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25A7%25BB%25E5%258B%2595%25E4%25B8%25AD%25E3%2581%25A7%25E3%2582%2582%25E5%25B0%25B1%25E5%25AF%259D%25E5%2589%258D%25E3%2581%25A7%25E3%2582%2582%25E3%2580%2581Codex%25E3%2581%25A8%25E8%2582%25B2%25E3%2581%25A6%25E3%2582%258B%25E3%2580%258C%25E6%258A%2580%25E8%25A1%2593%25E3%2583%258E%25E3%2583%25BC%25E3%2583%2588%25E3%2580%258D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ttaniguchi%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVjMGYxMTNiMTYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 30
+      "bookmarkCount": 37
     }
   ],
   "state": {}
