@@ -1,6 +1,42 @@
 {
-  "updatedAt": "2026-06-09T18:50:36.462Z",
+  "updatedAt": "2026-06-09T21:33:25.791Z",
   "items": [
+    {
+      "id": "feedly-https://qiita.com/tkazuaki0820/items/72310d3126e9c9406da7",
+      "source": "feedly",
+      "title": "Claude(Anthropic)の新しい利用規約が策定　Mythos/Fabelは本当に使って大丈夫？",
+      "url": "https://qiita.com/tkazuaki0820/items/72310d3126e9c9406da7",
+      "publishedAt": "2026-06-09T21:31:04.000Z",
+      "summary": "今回はAnthropic社から本日発表されたClaudeのMythosクラスモデルのデータ保持に関する新しい利用規約についての解説となります。 https://support.claude.com/en/articles/15425996-data-retention-pr...",
+      "author": "AIタグが付けられた新着記事 - Qiita"
+    },
+    {
+      "id": "feedly-https://qiita.com/quotidia/items/407e72dfcffe8c53e35f",
+      "source": "feedly",
+      "title": "Metaが自社アプリ内でAI生成の「ニュース風記事」を配信していた——指摘を受け取り下げ",
+      "url": "https://qiita.com/quotidia/items/407e72dfcffe8c53e35f",
+      "publishedAt": "2026-06-09T21:00:59.000Z",
+      "summary": "本記事は筆者が運営する AI Quotidia (ai.quotidia.jp) の海外ニュース解説記事です。 Metaが自社アプリで「AIが書いたニュース風記事」を配信していた——何が問題か スマホで見かける「ニュースっぽい記事」が、実は誰の取材も経ず、すべてAIに...",
+      "author": "AIタグが付けられた新着記事 - Qiita"
+    },
+    {
+      "id": "feedly-https://qiita.com/picnic/items/337ee23813aaed8ba100",
+      "source": "feedly",
+      "title": "Claude Fable 5登場 — AnthropicがFableシリーズを発表、開発者が知るべきこと",
+      "url": "https://qiita.com/picnic/items/337ee23813aaed8ba100",
+      "publishedAt": "2026-06-09T20:31:09.000Z",
+      "summary": "はじめに 2026年6月9日、AnthropicがHacker Newsにて Claude Fable 5 を発表しました。このニュースはHacker Newsで 1,102のいいね を獲得し、AIコミュニティに大きな波紋を呼んでいます。 既存のClaude 4.Xファミ...",
+      "author": "AIタグが付けられた新着記事 - Qiita"
+    },
+    {
+      "id": "feedly-https://qiita.com/picnic/items/42111f155348f97c74e6",
+      "source": "feedly",
+      "title": "Claude Fable 5 & Mythos 5 発表：次世代AIモデルの概要と対応指針",
+      "url": "https://qiita.com/picnic/items/42111f155348f97c74e6",
+      "publishedAt": "2026-06-09T20:30:07.000Z",
+      "summary": "はじめに 2026年6月9日、Anthropicが次世代モデル Claude Fable 5 および Claude Mythos 5 を正式発表しました。 公式アナウンスには「最も困難な知識労働とコーディング問題に向けた次世代の知能（Our next generation...",
+      "author": "AIタグが付けられた新着記事 - Qiita"
+    },
     {
       "id": "x-2064410506287538387",
       "source": "x",
@@ -11,15 +47,6 @@
       "author": "@NotebookLM"
     },
     {
-      "id": "feedly-https://qiita.com/kai_kou/items/822970e2f03786f0692c",
-      "source": "feedly",
-      "title": "Claude Code でスライドを丸ごと自動生成して Qiita Bash で登壇してきた話",
-      "url": "https://qiita.com/kai_kou/items/822970e2f03786f0692c",
-      "publishedAt": "2026-06-09T18:03:52.000Z",
-      "summary": "はじめに 2026-04-28（火）に Qiita 株式会社（Increments）主催の Qiita Bash「エンジニアリングとデザインをつなぐAI活用」 で LT 登壇させてもらいました。 会場 + YouTube Live のハイブリッド開催で、申込数は会場 4...",
-      "author": "AIタグが付けられた新着記事 - Qiita"
-    },
-    {
       "id": "hatena-https://www.anthropic.com/news/claude-fable-5-mythos-5",
       "source": "hatena",
       "title": "Claude Fable 5 and Claude Mythos 5",
@@ -27,34 +54,7 @@
       "publishedAt": "2026-06-09T17:21:09.000Z",
       "summary": "Today we’re launching Claude Fable 5: a Mythos-class1 model that we’ve made safe for general use. Fable 5’s capabilities exceed those of any model we’ve ever made generally available. It is state-o…",
       "thumbnail": "https://cdn.sanity.io/images/4zrzovbb/website/b7055119423427c40a0e4d84054aed17682b50a2-2880x1620.png",
-      "bookmarkCount": 9
-    },
-    {
-      "id": "feedly-https://qiita.com/lemonIN/items/8ac1f0d6fce47dc623c5",
-      "source": "feedly",
-      "title": "同期不可！残像ビート",
-      "url": "https://qiita.com/lemonIN/items/8ac1f0d6fce47dc623c5",
-      "publishedAt": "2026-06-09T17:07:51.000Z",
-      "summary": "同期不可！残像ビート 概要 あなたの脳を試す、新感覚ブラウザ音ゲー！視覚情報と実際のノーツ位置がズレる「残像」の中で、正確なリズムを刻む脳内同期チャレンジゲームです。カオスな画面に惑わされず、正確なタイミングでノーツを叩き続けろ！ ゲームシステム 通常の音ゲーのように...",
-      "author": "AIタグが付けられた新着記事 - Qiita"
-    },
-    {
-      "id": "feedly-https://qiita.com/YushiYamamoto/items/5796ade82485ca14dbea",
-      "source": "feedly",
-      "title": "AIエージェントを安全に業務へ入れるための4つの境界線",
-      "url": "https://qiita.com/YushiYamamoto/items/5796ade82485ca14dbea",
-      "publishedAt": "2026-06-09T16:35:15.000Z",
-      "summary": "2026年6月9日 JST 時点で、まず直近72時間（6月7日から6月9日）の英語一次情報を確認しました。今回のテーマに使える高信号な一次情報はその範囲だけでは不足したため、直近1週間内の6月2日から6月4日に公開された一次情報も含めて読み直しています。 そこから見えた論点...",
-      "author": "AIタグが付けられた新着記事 - Qiita"
-    },
-    {
-      "id": "feedly-https://qiita.com/ariefwara/items/15cd79956f28dd954eeb",
-      "source": "feedly",
-      "title": "AIエージェント導入、本当の成熟度はどこ？ エンジニアが知るべき5段階モデルと実装の現実",
-      "url": "https://qiita.com/ariefwara/items/15cd79956f28dd954eeb",
-      "publishedAt": "2026-06-09T16:15:19.000Z",
-      "summary": "この記事で扱うこと 「うちはもうAIエージェントを導入している」という言葉を聞いたとき、それが単なるチャットボットなのか、メール下書き支援なのか、それとも実際にAPIを叩いて業務システムに書き込みを行う自律実行なのか、組織内で定義が一致していない経験はないだろうか。 本記...",
-      "author": "AIタグが付けられた新着記事 - Qiita"
+      "bookmarkCount": 35
     },
     {
       "id": "feedly-https://www.publickey1.jp/blog/26/cloudflareaicloudflare_ai_gateway.html",
@@ -83,7 +83,7 @@
       "publishedAt": "2026-06-09T14:09:39.000Z",
       "summary": "AI Engineering Summit Tokyo 2026の登壇資料です。 価格.comは、C#とClassic ASPが混在するWindowsシステムを、創業から約30年、抜本的な刷新をせずに運用してきました。コードは約960万行、テーブルは13,210に及びます。この積み重なった技術的負…",
       "thumbnail": "https://files.speakerdeck.com/presentations/b0a3c6959e6e42dca3d8bc44e0037909/slide_0.jpg?39657738",
-      "bookmarkCount": 36
+      "bookmarkCount": 52
     },
     {
       "id": "hatena-https://togetter.com/li/2707454",
@@ -93,7 +93,7 @@
       "publishedAt": "2026-06-09T12:19:28.000Z",
       "summary": "OS - watchOS 27 - Apple watchOS 27 with all-new Siri powered by Apple Intelligence and new features for a more responsive a… 7 users 30 Apple",
       "thumbnail": "https://s.tgstc.com/ogp3/9d069e68faa52227dee6d1dcfcda4613-1200x630.jpeg",
-      "bookmarkCount": 65
+      "bookmarkCount": 80
     },
     {
       "id": "hatena-https://togetter.com/li/2707424",
@@ -103,7 +103,7 @@
       "publishedAt": "2026-06-09T12:11:53.000Z",
       "summary": "色葉おりん🥷💙ずんだ同人ゲームズ @orinorin3 仲良い子がVRチャットでお砂糖になった人から闇バイトを持ち掛けられてギリッギリだったらしい お砂糖になった人に使ってないgmaiあったら2万円でちょうだいって言われて渡したらそれで悪い事して従わなかったら警察に〜みたいな。 もうgmai渡しちゃったけどおかしいって気...",
       "thumbnail": "https://s.tgstc.com/ogp3/4d101a68ae81070ad1d2ebec351b27a0-1200x630.jpeg",
-      "bookmarkCount": 12
+      "bookmarkCount": 16
     },
     {
       "id": "hatena-https://gigazine.net/news/20260609-performative-ui/",
@@ -113,7 +113,7 @@
       "publishedAt": "2026-06-09T11:23:53.000Z",
       "summary": "AIスタートアップの公式サイトでよく見る演出をReactコンポーネントとしてまとめたライブラリ「performative-ui」が公開されています。光るボタン、グラデーション文字、プロンプト入力欄など、AI関連サービスのランディングページで見覚えのある表現を実装できる部品集です。 performative-ui | AI-native React Compon...",
       "thumbnail": "https://i.gzn.jp/img/2026/06/09/performative-ui/00.png",
-      "bookmarkCount": 7
+      "bookmarkCount": 10
     },
     {
       "id": "feedly-https://zenn.dev/creationline/articles/ai-harness-guardrails-enterprise-2026",
@@ -124,6 +124,15 @@
       "summary": "AIエージェントの導入を進めている企業で「ハーネス」と「ガードレール」の設計が後回しになっている場合、開発速度の向上よりもインシデントとセキュリティリスクが先に増える。 Capgemini の調査では、82%の企業が2026年までにAIエージェントの実装を計画しています。しかし、導入に成功する企業と失敗する企業の差は、AIの能力ではなく「AIを制御する仕組みの設計」にあります。 本記事では、…",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--fBZ3bKGi--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2583%258F%25E3%2583%25BC%25E3%2583%258D%25E3%2582%25B9%25E3%2583%25BB%25E3%2582%25AC%25E3%2583%25BC%25E3%2583%2589%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%25AB%25EF%25BD%259C%25E4%25BC%2581%25E6%25A5%25AD%25E5%25B0%258E%25E5%2585%25A5%25E3%2581%25AE%25E8%25A8%25AD%25E8%25A8%2588%25E5%258E%259F%25E5%2589%25872026%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:konkazu%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzUwZmYxYzFlOGQuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Creationline%2520Insights%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzRhODg1ZWY4NDAuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
       "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "feedly-https://www.itmedia.co.jp/aiplus/article/2606/10/2000000073/",
+      "source": "feedly",
+      "title": "Anthropic、最上位「ミュトス」級モデルを一般提供　悪用防ぐ保護機能を備えた「Claude Fable 5」",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2606/10/2000000073/",
+      "publishedAt": "2026-06-09T10:34:43.000Z",
+      "summary": "米Anthropicは6月9日（現地時間）、新AIモデル「Claude Fable 5」の一般提供を始めた。同社がOpusクラスを上回る能力を持つと位置付ける最上位の「Mythos（ミュトス）クラス」に属するモデルで、これまでセキュリティ上の懸念から一般公開を見送ってきた水準の能力を、悪用を防ぐ保護機能（セーフガード）とともに初めて全ユーザーに開放した。同時に、保護機能の一部を解除した上位版…",
+      "author": "ITmedia AI＋ 最新記事一覧"
     },
     {
       "id": "feedly-https://zenn.dev/adawarp/articles/lerobot-run-trained-model",
@@ -162,7 +171,7 @@
       "publishedAt": "2026-06-09T09:38:34.000Z",
       "summary": "はじめに モバイルアプリ開発におけるE2Eテストは、テストシナリオの作成やメンテナンスにコストがかかるため、十分な数のテストシナリオを整備・維持するのが難しいという課題があります。私自身も業務でMaestroを利用していますが、一部の主要なテストシナリオに絞った運用にとどまっていました。 そこで、Maestro MCP...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--10hryZ-A--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Maestro%2520MCP%25E3%2581%25A8Claude%2520Code%2520Skills%25E3%2581%25AB%25E3%2582%2588%25E3%2582%258B%25E8%2587%25AA%25E5%25BE%258B%25E7%259A%2584%25E3%2581%25AAE2E%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E4%25BD%259C%25E6%2588%2590%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:asmz%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzY1NzlmMWQxMjcuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BE%25E3%2583%2595%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%25A4%25E3%2583%25BC%2520Tech%2520Blog%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzU5MDQ4YzA5OTAuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 18
+      "bookmarkCount": 19
     },
     {
       "id": "hatena-https://japan.cnet.com/article/35248649/",
@@ -172,7 +181,7 @@
       "publishedAt": "2026-06-09T09:30:17.000Z",
       "summary": "チャットが大幅に強化 NotebookLMは「Gemini 3.5」と「Google Antigravity」で動作するようになり、精度が向上するほか、推論や出力の過程をより分かりやすく確認できるようになる。Googleによると、これは要望の多かった機能だという。 各ノートブックにはセキュアなクラウドコンピューターが用意されるため、NotebookL...",
       "thumbnail": "https://japan.cnet.com/storage/2026/06/09/4e3b06d777ae33aa420ea2f51e140127/screenshot-2026-06-08-at-10-42-11am_1280x960.jpg",
-      "bookmarkCount": 4
+      "bookmarkCount": 17
     },
     {
       "id": "feedly-https://ainow.ai/2026/06/09/278154/?utm_source=rss&utm_medium=rss&utm_campaign=%25e7%2594%259f%25e6%2588%2590ai%25e3%2581%25ae%25e8%2591%2597%25e4%25bd%259c%25e6%25a8%25a9%25e3%2583%25aa%25e3%2582%25b9%25e3%2582%25af%25e3%2582%2592%25e4%25bc%2581%25e6%25a5%25ad%25e5%2590%2591%25e3%2581%2591%25e3%2581%25ab%25e8%25a7%25a3%25e8%25aa%25ac%25ef%25bc%2581%25e4%25be%25b5%25e5%25ae%25b3%25e4%25ba%258b%25e4%25be%258b",
@@ -191,7 +200,7 @@
       "publishedAt": "2026-06-09T09:13:45.000Z",
       "summary": "こんにちは！バクラク申請・経費精算のエンジニアリングマネージャーをやっています、@ar_tamaです。 今回は、私たちのプロダクトで最近行ったバックエンドのパフォーマンスチューニング（スロークエリの改善）について書いてみたいと思います。比較的地味なトピックではありますが、Coding Agentをフル活用したエピソー...",
       "thumbnail": "https://cdn.image.st-hatena.com/image/scale/e4cb730cb8a137f0ef5ccd7e164e48b4569059cc/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Far_tama%2F20260609%2F20260609165745.png",
-      "bookmarkCount": 4
+      "bookmarkCount": 7
     },
     {
       "id": "feedly-https://zenn.dev/itsuya/articles/devinfra-20260608-00",
@@ -211,7 +220,7 @@
       "publishedAt": "2026-06-09T08:53:32.000Z",
       "summary": "女性自身TOP > 国内 > 政治 > 内閣広報官 > 「絶望的にダサい」内閣広報官の公式X AI生成のデフォルメアイコンに失笑…リプ欄閉鎖の“一方通行”にも疑問の声 5月1日に開設され、高市内閣の動向を発信してきたXアカウント「内閣広報室」。開設当初は1カ月の試行運用としていたが、6月2日にアカウント名が「内閣広報官（色...",
       "thumbnail": "https://img.jisin.jp/uploads/2026/06/naikaku_houkoukan_x_fb.jpg",
-      "bookmarkCount": 55
+      "bookmarkCount": 60
     },
     {
       "id": "feedly-https://zenn.dev/mohhh_ok/articles/freee-mcp-invoice-creation",
@@ -240,7 +249,7 @@
       "url": "https://www.watch.impress.co.jp/docs/news/2115684.html",
       "publishedAt": "2026-06-09T08:30:13.000Z",
       "thumbnail": "https://www.watch.impress.co.jp/img/ipw/list/2115/684/jrqr1.jpg",
-      "bookmarkCount": 235
+      "bookmarkCount": 249
     },
     {
       "id": "hatena-https://zenn.dev/dely_jp/articles/data-engineer-context-action-layer",
@@ -250,7 +259,7 @@
       "publishedAt": "2026-06-09T08:23:38.000Z",
       "summary": "こんにちは、クラシルでデータエンジニアをしているharry(@gappy50)です。 クラシルでは、これまでAI-Readyなデータ利活用に取り組んできました。Tier設計でデータの信頼性を担保したり、Snowflake Managed MCP × Claude Codeでデータの仕事をAgenticに回したりと、データをAIで扱える状態にする仕事を続けてきています...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--EhG1ny6i--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%25E3%2581%2593%25E3%2581%259D%25E7%25B5%2584%25E7%25B9%2594%25E3%2581%25AE%25E3%2582%25AA%25E3%2583%25B3%25E3%2583%2588%25E3%2583%25AD%25E3%2582%25B8%25E3%2583%25BC%25E3%2581%25AB%25E5%2590%2591%25E3%2581%258D%25E5%2590%2588%25E3%2581%2586%25E3%2581%25B9%25E3%2581%258D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:harry%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzM3MDYyNjhkNmMuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Kurashiru%2520Tech%2520Blog%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzkwYWViZTYyZDcuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 48
+      "bookmarkCount": 56
     },
     {
       "id": "feedly-https://tech.algomatic.jp/entry/advent-calendar/2026-06/codex-rust-claude-code-bun",
@@ -299,7 +308,7 @@
       "publishedAt": "2026-06-09T07:48:50.000Z",
       "summary": "GitHub Wiki Docs OpenCV 5 is one of the most important releases in the history of OpenCV. For more than two decades, OpenCV has been the foundation for computer vision research, robotics, embedded …",
       "thumbnail": "https://opencv.org/wp-content/uploads/2026/06/opencv-5.png",
-      "bookmarkCount": 6
+      "bookmarkCount": 8
     },
     {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/09/5163.html",
@@ -339,7 +348,7 @@
       "publishedAt": "2026-06-09T06:51:49.000Z",
       "summary": "2026年6月8日、WWDC26の基調講演後、AppleのMachine Learning Researchに「Introducing the Third Generation of Apple's Foundation Models」という記事が静かに公開されました。 WWDC26の基調講演はティム・クックCEOの最後の花道といった感じで、AI関係でもすごい発表があるかもと期待されていた割…",
       "thumbnail": "https://www.techno-edge.net/imgs/ogp_f/32172.png",
-      "bookmarkCount": 54
+      "bookmarkCount": 57
     },
     {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/09/5162.html",
@@ -379,7 +388,7 @@
       "publishedAt": "2026-06-09T06:25:56.000Z",
       "summary": "Goならわかるシステムプログラミングなどのウェブ連載や書籍化でお世話になりまくりの鹿野さんのブログ記事が話題となっています。 golden-luckyの日記: AI時代のコンピューター技術書これを読んで、今までモヤモヤ思っていたことに光明が射してきたので、ちょっと実験してみました。 AI開発のボトルネックは今どこか1年...",
       "thumbnail": "https://future-architect.github.io/images/2026/20260609a/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-05-19_20.49.30.png",
-      "bookmarkCount": 109
+      "bookmarkCount": 123
     },
     {
       "id": "hatena-https://k-tai.watch.impress.co.jp/docs/news/2115581.html",
@@ -388,7 +397,7 @@
       "url": "https://k-tai.watch.impress.co.jp/docs/news/2115581.html",
       "publishedAt": "2026-06-09T06:19:31.000Z",
       "thumbnail": "https://k-tai.watch.impress.co.jp/img/ktw/list/2115/581/a.jpg",
-      "bookmarkCount": 14
+      "bookmarkCount": 19
     },
     {
       "id": "feedly-https://zenn.dev/yusukebass/articles/75d24324ecb2ff",
@@ -408,7 +417,7 @@
       "publishedAt": "2026-06-09T05:20:59.000Z",
       "summary": "Docker Composeで複数のコンテナを管理していると、気づかないうちにDocker Buildの待ち時間が長くなりがちです。 私の関わっているプロジェクトでは、Next.jsのフロントエンド1台、Goのバックエンド2台、Go Worker1台をビルドしており、開発中に頻繁にDocker Buildを実行していました。 しかし、ビルド時間が1分以上か...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--71S0jkjU--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Docker%2520Build%25E3%2582%2592106%25E7%25A7%2592%25E2%2586%259244%25E7%25A7%2592%25E3%2580%258132%25E7%25A7%2592%25E2%2586%25923%25E7%25A7%2592%25E3%2581%25AB%25E9%25AB%2598%25E9%2580%259F%25E5%258C%2596%25E3%2581%2597%25E3%2581%259F3%25E3%2581%25A4%25E3%2581%25AE%25E6%2594%25B9%25E5%2596%2584%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%259D%2589%25E5%25B1%25B1%25E6%2599%25B4%25E8%25BC%259D%2528Haruki.Sugiyama%2529%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzlmOWMzNTliYjYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 8
+      "bookmarkCount": 12
     },
     {
       "id": "hatena-https://joho-todai.com/microsoft-declares-winui-sole-native-framework/",
@@ -418,7 +427,17 @@
       "publishedAt": "2026-06-09T05:15:46.000Z",
       "summary": "Build 2026で、MicrosoftはWinUIをWindowsネイティブアプリの正式な基盤と位置付けた。20年近く続いた「次の推奨フレームワーク」の乗り換え要求に終止符を打つ宣言であり、同時にWindows 11内部でもWebベースのシェルをネイティブコードに書き換える作業が加速している。開発者にとっての「また切り捨てられるのではな...",
       "thumbnail": "https://joho-todai.com/content/images/size/w1200/2026/06/ada724cbc94927ddebca73cc2.webp",
-      "bookmarkCount": 7
+      "bookmarkCount": 9
+    },
+    {
+      "id": "hatena-https://zenn.dev/pepabo/articles/claude-code-token-reduction-measured",
+      "source": "hatena",
+      "title": "Claude Code のトークン削減を実測した — semble 93%・cacheRead 1800倍の内訳",
+      "url": "https://zenn.dev/pepabo/articles/claude-code-token-reduction-measured",
+      "publishedAt": "2026-06-09T05:11:29.000Z",
+      "summary": "特にプロンプトキャッシングは効果が大きいので、運用ルールにしています。Claude Code は設定ファイルやモデルを変えるとキャッシュが破棄され、次のリクエストでフル課金になります。そのため「設定を変えたらセッションを切り直す」を徹底し、破棄を1回で済ませています。 モデルルーティングは、タスクの性質で自動...",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--VaEgW2aN--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%2520%25E3%2581%25AE%25E3%2583%2588%25E3%2583%25BC%25E3%2582%25AF%25E3%2583%25B3%25E5%2589%258A%25E6%25B8%259B%25E3%2582%2592%25E5%25AE%259F%25E6%25B8%25AC%25E3%2581%2597%25E3%2581%259F%2520%25E2%2580%2594%2520semble%252093%2525%25E3%2583%25BBcacheRead%25201800%25E5%2580%258D%25E3%2581%25AE%25E5%2586%2585%25E8%25A8%25B3%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2581%2582%25E3%2581%259F%25E3%2581%25AB%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzA0ZTQxODhhYTMuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:GMO%25E3%2583%259A%25E3%2583%2591%25E3%2583%259C%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BE%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS01pZnBXYTEwM0NjM0gza3FxakVyUGhzS0dvaWJCYXJRV2FGbHZxMXVYWHhvZWYyeHc9czk2LWM=%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "bookmarkCount": 22
     },
     {
       "id": "hatena-https://k-tai.watch.impress.co.jp/docs/news/2115566.html",
@@ -427,7 +446,7 @@
       "url": "https://k-tai.watch.impress.co.jp/docs/news/2115566.html",
       "publishedAt": "2026-06-09T04:59:37.000Z",
       "thumbnail": "https://k-tai.watch.impress.co.jp/img/ktw/list/2115/566/03.jpg",
-      "bookmarkCount": 23
+      "bookmarkCount": 26
     },
     {
       "id": "feedly-https://zenn.dev/nattosystem_jp/articles/5c65ebeda79fae",
@@ -456,7 +475,7 @@
       "publishedAt": "2026-06-09T04:27:53.000Z",
       "summary": "現代、AIとの対話は日常的になり、日々の思考や業務を支える相棒になりました。一方で、チャットや資料、アイデアが散らばり、重要な知見が過去の履歴に埋もれてしまうといった課題もあります。Geminiに追加されたノートブック機能は、NotebookLMとの連携により、情報の収集・整理・分析・資産化を1つの流れで実現する新...",
       "thumbnail": "https://img.sbbit.jp/article/image/185597/OGP_bit202606021118592889.jpg",
-      "bookmarkCount": 4
+      "bookmarkCount": 8
     },
     {
       "id": "hatena-https://zenn.dev/knowledgesense/articles/7ce72924c0050f",
@@ -466,7 +485,7 @@
       "publishedAt": "2026-06-09T04:02:22.000Z",
       "summary": "本記事では、Claude Code の裏側を支えるアーキテクチャについて、ざっくり理解します。 株式会社ナレッジセンスは、生成AIやRAGを使ったプロダクトを、エンタープライズ企業向けに開発しているスタートアップです。 この記事は何 この記事は、Claude Code の内部構造を、ソースコードレベルで解析した論文[1]について、...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--Ael96KdM--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258CClaude%2520Code%25E3%2580%258D%25E3%2582%2592%25E6%2594%25AF%25E3%2581%2588%25E3%2582%258B%25E6%258A%2580%25E8%25A1%2593%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Atsushi%2520Kadowaki%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLmRldi9pbWFnZXMvZGVmYXVsdC1wdWJsaWNhdGlvbi1hdmF0YXIucG5n%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2583%258A%25E3%2583%25AC%25E3%2583%2583%25E3%2582%25B8%25E3%2582%25BB%25E3%2583%25B3%25E3%2582%25B9%2520-%2520%25E7%2594%259F%25E6%2588%2590AI%25E3%2581%25A8RAG%25E3%2581%25AE%25E5%25AE%259F%25E8%25A3%2585...%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzRlMjk5Y2IwN2IuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 12
+      "bookmarkCount": 26
     },
     {
       "id": "hatena-https://www.nikkei.com/article/DGXZQOUC0519S0V00C26A6000000/",
@@ -476,7 +495,7 @@
       "publishedAt": "2026-06-09T03:46:47.000Z",
       "summary": "「年間で1億円超えじゃないか」。ある国内大手企業の最高情報責任者（CIO）は、1人の社員にかかった人工知能（AI）利用額を聞いて耳を疑った。5月だけで1000万円。AIエージェント同士に夜通し会話をさせるなど、長時間の活用作業を繰り返していたという。経費負担が大きすぎるとして対応策の検討に乗り出した。企業でのA...",
       "thumbnail": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3133403008062026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&fp-x=0.55&fp-y=0.31&h=630&w=1200&s=2f4b2f3719276045e059b63270e83040",
-      "bookmarkCount": 114
+      "bookmarkCount": 115
     },
     {
       "id": "hatena-https://addyosmani.com/blog/loop-engineering/",
@@ -486,7 +505,7 @@
       "publishedAt": "2026-06-09T03:42:15.000Z",
       "summary": "June 7, 2026 Loop engineering is replacing yourself as the person who prompts the agent. You design the system that does it instead. A loop here can be thought of a recursive goal where you define …",
       "thumbnail": "https://addyosmani.com/assets/images/loop-engineering.jpg",
-      "bookmarkCount": 171
+      "bookmarkCount": 184
     },
     {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/09/5161.html",
@@ -497,15 +516,6 @@
       "summary": "・AppleがWWDC26で「Siri AI」を発表。画面上のコンテキスト理解やウェブ検索、アプリをまたいだ操作など従来のSiriから大幅に機能を拡張した全く新しいバージョン。 ・子どもの子アカウント設定、閲覧サイトの承認制、暴力・性的コンテンツの自動ブロックなど、ペアレンタルコントロール機能が大幅に強化された。 ・iOS 27など各OSでアプリ起動が最大30%高速化、写真読み込みが最大70…",
       "thumbnail": "https://www.techno-edge.net/imgs/rss/32161.jpg",
       "author": "テクノエッジ TechnoEdge"
-    },
-    {
-      "id": "hatena-https://pc.watch.impress.co.jp/docs/news/2115523.html",
-      "source": "hatena",
-      "title": "Google AI Plusが月額725円に値下げ。ストレージは倍増",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2115523.html",
-      "publishedAt": "2026-06-09T03:30:52.000Z",
-      "thumbnail": "https://pc.watch.impress.co.jp/img/pcw/list/2115/523/01.jpg",
-      "bookmarkCount": 116
     },
     {
       "id": "feedly-https://www.itmedia.co.jp/news/articles/2606/09/news088.html",
@@ -569,17 +579,7 @@
       "url": "https://forest.watch.impress.co.jp/docs/news/2115471.html",
       "publishedAt": "2026-06-09T01:13:55.000Z",
       "thumbnail": "https://forest.watch.impress.co.jp/img/wf/list/2115/471/i06093.png",
-      "bookmarkCount": 274
-    },
-    {
-      "id": "hatena-https://togetter.com/li/2707208",
-      "source": "hatena",
-      "title": "こういう屋上テラスに滅茶苦茶憧れるんですが、雨が降ったらどうするの？→続々と現実的な回答が集まり、憧れが打ち砕かれる",
-      "url": "https://togetter.com/li/2707208",
-      "publishedAt": "2026-06-09T01:08:10.000Z",
-      "summary": "白饅頭（ちいかわちいレナーシュ） @kasemaito @naokJ2DyHbITXTg 鳥が来るから嫌なんだ🤨 故にダニだらけになる🫩 ステンレスの🪑とテーブルで軒つけて 使う前に高圧洗浄してブロアしたほうが実用的やで🫩 床は1%くらい勾配つけてな🫩 2026-06-08 23:46:57",
-      "thumbnail": "https://s.tgstc.com/ogp3/f1b737539f7d69cb0f93dd0da7906b5c-1200x630.jpeg",
-      "bookmarkCount": 6
+      "bookmarkCount": 276
     },
     {
       "id": "feedly-https://www.itmedia.co.jp/news/articles/2606/09/news069.html",
@@ -625,7 +625,7 @@
       "url": "https://www.watch.impress.co.jp/docs/news/2115451.html",
       "publishedAt": "2026-06-08T22:27:23.000Z",
       "thumbnail": "https://www.watch.impress.co.jp/img/ipw/list/2115/451/w18.jpg",
-      "bookmarkCount": 6
+      "bookmarkCount": 9
     },
     {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/09/5158.html",
@@ -636,6 +636,15 @@
       "summary": "アップルは、日本時間2026年6月9日未明に配信されたWWDC26の基調講演で、同社の各種デバイスを使用する子どもたちのデジタル体験を保護者がより安全に管理するための一連の新機能を発表しました。",
       "thumbnail": "https://www.techno-edge.net/imgs/rss/32106.jpg",
       "author": "テクノエッジ TechnoEdge"
+    },
+    {
+      "id": "hatena-https://k-tai.watch.impress.co.jp/docs/news/2115453.html",
+      "source": "hatena",
+      "title": "iPhoneのAIはどう変わる？　「Apple Intelligence」大幅アップデートの裏にグーグル「Gemini」",
+      "url": "https://k-tai.watch.impress.co.jp/docs/news/2115453.html",
+      "publishedAt": "2026-06-08T21:35:11.000Z",
+      "thumbnail": "https://k-tai.watch.impress.co.jp/img/ktw/list/2115/453/cont502.png",
+      "bookmarkCount": 4
     },
     {
       "id": "x-2064084158570512770",
@@ -813,7 +822,7 @@
       "publishedAt": "2026-06-08T06:42:58.000Z",
       "summary": "はじめに 社内では最近、HTMLで書いた設計資料を認証付きの基盤に置き、誰でもブラウザから閲覧できる仕組みを整えました。この共有基盤の上で、私がいま個人的に試しているのが、設計資料のHTMLにコメント機能を持たせ、その指摘をそのまま修正プロンプトにしてClaude Codeに渡す、というワークフローです。 社内でHTML...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--4nYbgbkM--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E8%25A8%25AD%25E8%25A8%2588%25E8%25B3%2587%25E6%2596%2599%25E3%2582%2592HTML%25E3%2581%25A7%25E5%259B%259E%25E3%2581%2599%2520%25E2%2580%2594%2520%25E7%2594%259F%25E6%2588%2590%25E3%2583%25BB%25E3%2583%25AC%25E3%2583%2593%25E3%2583%25A5%25E3%2583%25BC%25E3%2583%25BB%25E7%25A4%25BE%25E5%2586%2585%25E5%2585%25B1%25E6%259C%2589%25E3%2581%25AE%25E3%2583%25AF%25E3%2583%25BC%25E3%2582%25AF%25E3%2583%2595%25E3%2583%25AD%25E3%2583%25BC%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Masaki%2520Kubota%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzNkYzExOTgzNjguanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Rehab%2520Tech%2520Blog%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzY1YTE3YzE2YzMuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 105
+      "bookmarkCount": 110
     },
     {
       "id": "hatena-https://techfeed.io/entries/6a25dbba448e384852d76345",
@@ -823,7 +832,7 @@
       "publishedAt": "2026-06-08T04:47:45.000Z",
       "summary": "6月5日、Anders Murphyが「The perils of UUID primary keys in SQLite」と題した記事を公開した。衝撃の実験結果：UUID主キーは12倍遅いSQLiteで1億行のデータ挿入テストを行った結果、UUID4主キーは整数主キーと比較して12倍以上遅いという衝撃的な結果が明らかになった。この性能差は、多くの開発者が見落としがちな...",
       "thumbnail": "https://res.cloudinary.com/techfeed/image//upload/w_1200,h_630,c_fill/default_07.jpg",
-      "bookmarkCount": 6
+      "bookmarkCount": 8
     },
     {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/08/5155.html",
@@ -860,15 +869,6 @@
       "url": "https://monoist.itmedia.co.jp/mn/articles/2606/08/news029.html",
       "publishedAt": "2026-06-08T03:30:00.000Z",
       "summary": "MONOistに掲載した主要な記事を、読みやすいPDF形式の電子ブックレットに再編集した「エンジニア電子ブックレット」。今回は、設計や解析など製品開発の現場で活用が進みつつあるAI関連のニュースをまとめた「AI×設計開発ニュースまとめ（2026年4月）」をお送りします。",
-      "author": "ITmedia AI＋ 最新記事一覧"
-    },
-    {
-      "id": "feedly-https://www.itmedia.co.jp/news/articles/2606/08/news084.html",
-      "source": "feedly",
-      "title": "AIペットロボット「モフリン」好調、カシオが新規事業に注力　4本目の柱に育成",
-      "url": "https://www.itmedia.co.jp/news/articles/2606/08/news084.html",
-      "publishedAt": "2026-06-08T02:12:00.000Z",
-      "summary": "カシオ計算機が新規事業の創出に注力している。好調に推移する「G-SHOCK」（ジーショック）など腕時計事業に加え、経営の多角化を進める狙いだ。精鋭が集まった社長直轄組織がその役割を担い、挑戦の行方が注目される。",
       "author": "ITmedia AI＋ 最新記事一覧"
     },
     {
@@ -1062,6 +1062,15 @@
       "summary": "調査会社Omdiaは、アップルがOLEDディスプレイを搭載する「MacBook Ultra」と仮称される新製品を、2026年第3四半期（7～9月）に発売すると予測する報告書を発表しました。",
       "thumbnail": "https://www.techno-edge.net/imgs/rss/32046.jpg",
       "author": "テクノエッジ TechnoEdge"
+    },
+    {
+      "id": "layerx-https://layerxnews.substack.com/p/ai2200080",
+      "source": "layerx",
+      "title": "三井物産がAI活用で効率化「社員のアウトプット2倍に」／書類枚数2,000枚以上・添付多数の請求業務でも、電子発行率80％超を実現",
+      "url": "https://layerxnews.substack.com/p/ai2200080",
+      "publishedAt": "2026-06-05T10:17:45.000Z",
+      "summary": "今週の注目トピック 今週のLayerXでは、書類枚数2,000枚以上・添付多数の請求業務でも、電子発行率80％超を実現 などを紹介しています。 AI利活用最前線では、三井物産による、AI活用で効率化「社員のアウトプット2倍に」 などを紹介しています。 Section1: AI利活用最前線 テクノロジー AI生成テキストからAI臭さを取り除いてより自然で人間らしい文章にするClaude Cod…",
+      "author": "LayerX AI・LLM Newsletter"
     },
     {
       "id": "x-2062821701340295427",
@@ -1438,6 +1447,15 @@
       "author": "AI専門ニュースメディア AINOW"
     },
     {
+      "id": "layerx-https://layerxnews.substack.com/p/gmo3ailayerxai-agent",
+      "source": "layerx",
+      "title": "GMOあおぞらネット銀行が3つのAIエージェント化を同時宣言／【LayerX初】学生向けの「自律型AI Agentハッカソン」開催",
+      "url": "https://layerxnews.substack.com/p/gmo3ailayerxai-agent",
+      "publishedAt": "2026-05-29T11:12:23.000Z",
+      "summary": "今週の注目トピック 今週のLayerXでは、【LayerX初】学生向けの「自律型AI Agentハッカソン」開催 などを紹介しています。 AI利活用最前線では、GMOあおぞらネット銀行による、3つのAIエージェント化の同時宣言 などを紹介しています。 Section1: AI利活用最前線 テクノロジー AIでコーディングが自動化されているのに、ソフトウェアエンジニア求人が増えている理由は、「…",
+      "author": "LayerX AI・LLM Newsletter"
+    },
+    {
       "id": "x-2060251312730804396",
       "source": "x",
       "title": "GrokをDynamic Workflowsのメンバーに入れるの、天才の発想過ぎる。",
@@ -1556,6 +1574,15 @@
       "publishedAt": "2026-05-23T11:00:24.000Z",
       "summary": "AI한테 코드 짜달라고 하면 기능은 돌아가는데 슬금슬금 복잡도만 올라가서 나중에 리팩토링 지옥 열리기 십상임. 이럴 때 Cursor 개발팀이 자기들 내부에서 제일 많이 쓴다는 /thermo-nuclear-code-quality-review 스킬 참고하면 직효약일 듯. 1k 라인 넘는 파일은 아예 차단하고, 알맹이 없는 껍데기",
       "author": "ブックマーク"
+    },
+    {
+      "id": "layerx-https://layerxnews.substack.com/p/ai-d73",
+      "source": "layerx",
+      "title": "ダイセルが設計開発業務を生成AIで変革／バクラク請求書発行が発行済み書類の差し替え・履歴管理機能を提供開始",
+      "url": "https://layerxnews.substack.com/p/ai-d73",
+      "publishedAt": "2026-05-22T13:37:09.000Z",
+      "summary": "今週の注目トピック 今週のLayerXでは、バクラク請求書発行による、発行済み書類の差し替え・履歴管理機能を提供開始、 などを紹介しています。 AI利活用最前線では、ダイセルによる、設計開発業務を生成AIで変革などを紹介しています。 Section1: AI利活用最前線 テクノロジー AI需要は人間とAIエージェントで全く違う [ https://substack.com/redirect/…",
+      "author": "LayerX AI・LLM Newsletter"
     },
     {
       "id": "x-2057500470147698936",
@@ -1690,6 +1717,15 @@
       "publishedAt": "2026-05-17T01:45:56.000Z",
       "summary": "🚨 We recently discovered that an unauthorized party obtained a token with access to the Grafana Labs GitHub environment, enabling the threat actor to download our codebase. (1/6)",
       "author": "ブックマーク"
+    },
+    {
+      "id": "layerx-https://layerxnews.substack.com/p/ai20302030ai",
+      "source": "layerx",
+      "title": "AIエージェントが契約前後の業務自動化を支援する「バクラク契約管理」が今夏リリース予定／独コメルツ銀行が「2030年までの成長経路\"モメンタム2030\"を通じAIの可能性を最大限に活用",
+      "url": "https://layerxnews.substack.com/p/ai20302030ai",
+      "publishedAt": "2026-05-16T14:54:55.000Z",
+      "summary": "今週の注目トピック 今週のLayerXでは、AIエージェントが契約前後の業務自動化を支援する「バクラク契約管理」を今夏リリース予定、 などを紹介しています。 AI利活用最前線では、独コメルツ銀行による「2030年までの成長経路「モメンタム2030」を通じたAIの可能性のさらなる活用」などを紹介しています。 Section1: AI利活用最前線 テクノロジー 2026年3月の限定的な期間中に、…",
+      "author": "LayerX AI・LLM Newsletter"
     },
     {
       "id": "x-2055170084579225700",
