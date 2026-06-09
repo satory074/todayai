@@ -32,6 +32,8 @@ export interface FeedData {
     xAccountUserIds?: Record<string, string>;
     /** X ブックマーク等 tweet id(`x-<id>`) -> OGP画像URL / ""(確認済み・画像なし) */
     xOgImages?: Record<string, string>;
+    /** LayerX トピック id(`layerx-<uuid>`) -> OGP画像URL / ""(確認済み・画像なし) */
+    layerxOgImages?: Record<string, string>;
   };
 }
 
