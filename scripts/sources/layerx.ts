@@ -10,9 +10,14 @@
  *
  * メール構造（実メールで確認済み）:
  *   - 送信元: layerxnews@substack.com（毎週）
- *   - 件名  : その回のニュース見出し → title
- *   - 本文先頭: "View this post on the web at https://layerxnews.substack.com/p/<slug>" → url
- *   - 粒度  : 1メール = 1 FeedItem（週次ダイジェスト1件）
+ *   - 本文(text/plain)は各セクションに `<タイトル> [ <substack redirect url> ]` 形式のトピック行が
+ *     1通あたり ~190 行並ぶ。
+ *   - 粒度  : 1トピック行 = 1 FeedItem（本文に列挙された全リンクを個別に取り込む）
+ *
+ * 行末に `[ url ]` がある行だけを採用することで、ボイラープレートが自然に除外される:
+ *   - "View this post on the web at <url>"（ブラケット無し）
+ *   - "Unsubscribe https://substack.com/redirect/2/<base64>?"（UUID 形でない＋ブラケット無し）
+ *   - 文中プロモ "…製品紹介ページ [ url ]から資料を…"（`]` の後にテキストが続く＝行末でない）
  */
 import type { FeedItem } from "../../src/lib/feed";
 
@@ -83,11 +88,16 @@ function header(msg: GmailMessage, name: string): string | undefined {
   return msg.payload?.headers?.find((h) => h.name.toLowerCase() === name.toLowerCase())?.value;
 }
 
-function snippet(s: string | undefined): string | undefined {
-  if (!s) return undefined;
-  const text = s.replace(/\s+/g, " ").trim();
-  if (!text) return undefined;
-  return text.length > 200 ? text.slice(0, 197) + "…" : text;
+/**
+ * トピック行: `<タイトル> [ https://substack.com/redirect/<uuid>?j=<token> ]` が行末にあるもの。
+ * group1=タイトル / group2=リダイレクトURL。行末アンカー `$` でボイラープレート・文中リンクを除外。
+ */
+const TOPIC_RE =
+  /^(.+?)\s+\[\s*(https:\/\/substack\.com\/redirect\/[0-9a-f]{8}-[0-9a-f-]{27}\?j=[^\]\s]+)\s*\]\s*$/;
+
+/** リダイレクトURLから安定した id 用 UUID を取り出す。 */
+function redirectUuid(url: string): string | undefined {
+  return url.match(/\/redirect\/([0-9a-f-]{36})/)?.[1];
 }
 
 export async function fetchLayerX(opts: {
@@ -122,34 +132,36 @@ export async function fetchLayerX(opts: {
       }
       const msg = (await msgRes.json()) as GmailMessage;
 
-      const subject = header(msg, "Subject")?.trim();
       const dateHeader = header(msg, "Date");
-      const publishedAt = dateHeader ? new Date(dateHeader).toISOString() : new Date().toISOString();
-
+      const baseMs = dateHeader ? new Date(dateHeader).getTime() : Date.now();
       const plain = extractBody(msg.payload, "text/plain");
+      if (!plain) {
+        console.warn(`[layerx] 本文(text/plain)無し（スキップ）: ${id}`);
+        continue;
+      }
 
-      // 本文先頭の "View this post on the web at <url>" を記事リンクとして使う
-      const canonical = plain?.match(
-        /View this post on the web at\s+(https:\/\/layerxnews\.substack\.com\/p\/\S+)/,
-      )?.[1];
-      const url = canonical ?? `https://mail.google.com/mail/u/0/#all/${id}`;
-
-      // summary: 先頭の "View this post…" 行を除去して要約
-      const bodyForSummary = plain?.replace(/^View this post on the web at\s+\S+\s*/, "");
-      const summary = snippet(bodyForSummary);
-
-      // thumbnail は付けない: 本文の Substack CDN 画像は 36px のアイコンばかりで
-      // サムネとして使えるヘッダー画像が無いため（はてブ/Feedly 同様 thumbnail なしで表示）。
-
-      items.push({
-        id: `layerx-${canonical ?? id}`,
-        source: "layerx",
-        title: subject || "LayerX AI・LLM Newsletter",
-        url,
-        publishedAt,
-        summary,
-        author: "LayerX AI・LLM Newsletter",
-      });
+      // 本文の各トピック行を個別の FeedItem にする。掲載順を保つため index 秒ずつ古くする。
+      const seen = new Set<string>();
+      let topicIndex = 0;
+      for (const rawLine of plain.split("\n")) {
+        const m = TOPIC_RE.exec(rawLine.trim());
+        if (!m) continue;
+        const title = m[1].replace(/\s+/g, " ").trim();
+        const url = m[2];
+        const uuid = redirectUuid(url);
+        const itemId = `layerx-${uuid ?? url}`;
+        if (seen.has(itemId)) continue;
+        seen.add(itemId);
+        items.push({
+          id: itemId,
+          source: "layerx",
+          title,
+          url,
+          publishedAt: new Date(baseMs - topicIndex * 1000).toISOString(),
+          author: "LayerX AI・LLM Newsletter",
+        });
+        topicIndex++;
+      }
     } catch (e) {
       console.warn(`[layerx] 1メール処理失敗（スキップ）: ${id} — ${(e as Error).message}`);
     }

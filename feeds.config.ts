@@ -106,6 +106,6 @@ export const feedsConfig: FeedsConfig = {
     maxResults: 20,
     disabled: false,
   },
-  maxItems: 200,
+  maxItems: 1000, // LayerX は1通あたり ~190 トピックを個別取り込みするため大きめ
   maxAgeDays: 30,
 };
