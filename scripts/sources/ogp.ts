@@ -55,42 +55,16 @@ function extractOgImage(html: string, baseUrl: string): string | undefined {
  * URL を解決して og:image を返す。取得不可・X 由来・エラー時は undefined。
  */
 export async function resolveOgImage(url: string): Promise<string | undefined> {
-  return (await resolveOgImageDetailed(url)).image;
-}
-
-export interface OgResult {
-  /** 取得できた og:image（無ければ undefined） */
-  image?: string;
-  /**
-   * 結果が確定的か。
-   * - true : 画像取得成功 / ページは取れたが og:image 無し / X 由来（恒久的に無し）
-   *          → 呼び出し側は結果をキャッシュしてよい（負キャッシュ含む）
-   * - false: HTTP 非OK・タイムアウト・ネットワークエラー等の一過性失敗
-   *          → キャッシュせず次回再試行すべき（レート制限の負キャッシュ汚染を防ぐ）
-   */
-  definitive: boolean;
-}
-
-/**
- * og:image を解決し、結果が確定的かどうかも返す。
- * 一過性の失敗（429 等）を「画像なし」と恒久キャッシュしてしまう汚染を防ぐために使う。
- */
-export async function resolveOgImageDetailed(url: string): Promise<OgResult> {
-  let res: Response;
   try {
-    res = await fetchWithTimeout(url);
-  } catch {
-    return { definitive: false }; // タイムアウト/ネットワーク → 一過性
-  }
-  if (!res.ok) return { definitive: false }; // 429/5xx 等 → 一過性（再試行）
-  try {
+    const res = await fetchWithTimeout(url);
+    if (!res.ok) return undefined;
     const finalUrl = res.url || url;
-    if (isXHost(new URL(finalUrl).host)) return { definitive: true }; // X はログイン壁で恒久的に無し
+    if (isXHost(new URL(finalUrl).host)) return undefined; // ログイン壁で og:image 無し
     const ct = res.headers.get("content-type") ?? "";
-    if (!ct.includes("html")) return { definitive: true }; // 画像/PDF 等 → og 無しで確定
+    if (!ct.includes("html")) return undefined;
     const html = await res.text();
-    return { image: extractOgImage(html, finalUrl), definitive: true };
+    return extractOgImage(html, finalUrl);
   } catch {
-    return { definitive: false };
+    return undefined;
   }
 }

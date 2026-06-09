@@ -164,19 +164,16 @@ async function run(): Promise<void> {
       collected.push(...cachedFor(cache, "layerx"));
     } else {
       try {
-        const r = await fetchLayerX({
+        const items = await fetchLayerX({
           sender: feedsConfig.layerx.sender,
           newerThanDays: feedsConfig.layerx.newerThanDays,
           maxResults: feedsConfig.layerx.maxResults,
           clientId,
           clientSecret,
           refreshToken,
-          ogCache: state.layerxOgImages ?? {},
         });
-        state.layerxOgImages = r.ogCache;
-        collected.push(...r.items);
-        const withThumb = r.items.filter((i) => i.thumbnail).length;
-        console.log(`[layerx] ${r.items.length} items (サムネ ${withThumb})`);
+        collected.push(...items);
+        console.log(`[layerx] ${items.length} items`);
       } catch (e) {
         const msg = (e as Error).message;
         errors.push(`layerx: ${msg}`);
