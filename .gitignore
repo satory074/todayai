@@ -5,6 +5,3 @@ dist/
 .env.local
 .DS_Store
 *.log
-
-# nested standalone repo (kisei app)
-kisei/
