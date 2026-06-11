@@ -1,41 +1,288 @@
 {
-  "updatedAt": "2026-06-11T01:03:25.161Z",
+  "updatedAt": "2026-06-11T07:50:53.546Z",
   "items": [
     {
-      "id": "feedly-https://qiita.com/ennagara128/items/29cd869d67225faecc0e",
+      "id": "feedly-https://qiita.com/yoshiyakato/items/680bdc0ae8721a895aea",
       "source": "feedly",
-      "title": "AIが文法を肩代わりする時代に、未経験者がClaude Codeより先に自分で鍛えるべき3つの土台",
-      "url": "https://qiita.com/ennagara128/items/29cd869d67225faecc0e",
-      "publishedAt": "2026-06-11T01:02:44.000Z",
-      "summary": "構文（文法）の暗記は、もうAIが肩代わりしてくれる時代になりました。map と forEach の違いを覚えていなくても、Claude Code に「配列を変換して新しい配列を返して」と言えば動くコードが出てきます。 ただ、毎日 Claude Code を回していて確信して...",
+      "title": "【#8】Hermes Agent を読み解く",
+      "url": "https://qiita.com/yoshiyakato/items/680bdc0ae8721a895aea",
+      "publishedAt": "2026-06-11T07:47:25.000Z",
+      "summary": "Hermes Agent を読み解く — 接続層とインタフェース総覧 連載「Hermes Agent を読み解く」第8回。 連載「Hermes Agent を読み解く」全10回 第1回 全体像と読み方 第2回 コアの会話ループ 第3回 状態管理とコンパクション ...",
       "author": "AIタグが付けられた新着記事 - Qiita"
     },
     {
-      "id": "feedly-https://qiita.com/okssusucha/items/ac4f5b6c32314c577061",
+      "id": "feedly-https://note.com/npaka/n/n11e36666faa3",
       "source": "feedly",
-      "title": "Anthropicが「Claude Fable 5」をGA——1Mコンテキスト・$10/$50、そして「refusalが正常応答」になる新API設計",
-      "url": "https://qiita.com/okssusucha/items/ac4f5b6c32314c577061",
-      "publishedAt": "2026-06-11T00:49:12.000Z",
-      "summary": "Anthropicが「Claude Fable 5」をGA——1Mコンテキスト・$10/$50、そして「refusalが正常応答」になる新API設計 2026年6月9日、AnthropicがClaude Fable 5(claude-fable-5)とClaude Myt...",
+      "title": "自作ゲームのバランス調整とレベリングのコツ",
+      "url": "https://note.com/npaka/n/n11e36666faa3",
+      "publishedAt": "2026-06-11T06:58:36.000Z",
+      "summary": "自作ゲームのバランス調整とレベリングのコツについてまとめました。 続きをみる",
+      "author": "npaka"
+    },
+    {
+      "id": "feedly-https://www.itmedia.co.jp/news/articles/2606/11/news110.html",
+      "source": "feedly",
+      "title": "JASRAC、「AI作曲・人間作詞」の曲は管理します――「人間の創作的寄与の有無」で線引き",
+      "url": "https://www.itmedia.co.jp/news/articles/2606/11/news110.html",
+      "publishedAt": "2026-06-11T06:49:00.000Z",
+      "summary": "歌詞・楽曲両方をAIが作った曲は管理しないが、歌詞か楽曲をAI生成し、もう片方を人間が創作した曲は、人が作った部分のみ管理するという。",
+      "author": "ITmedia AI＋ 最新記事一覧"
+    },
+    {
+      "id": "feedly-https://tech.algomatic.jp/entry/advent-calendar/2026-06/workforce-reallocation-ai",
+      "source": "feedly",
+      "title": "AI時代の人材配置を考える：固定された組織から変化する組織へ",
+      "url": "https://tech.algomatic.jp/entry/advent-calendar/2026-06/workforce-reallocation-ai",
+      "publishedAt": "2026-06-11T06:19:53.000Z",
+      "summary": "こんにちは! Algomaticの大見川です。 Algomatic 初夏のアドベントカレンダー、9日目です。まだまだ続いていくので、他の記事もぜひ楽しみにしていてください！ 前回の記事は山中さんが、HHKB と Karabiner を使った「こだわりキーマップ」を、その設計思想とあわせて紹介しています！ tech.algomatic.jp さて、今回はがっつり技術に踏み込んだ話というよりは、…",
+      "author": "Algomatic Tech Blog"
+    },
+    {
+      "id": "feedly-https://qiita.com/roripika/items/39bad1debbe565753b77",
+      "source": "feedly",
+      "title": "ゲーム開発で1枚絵の敵キャラをAIで自動分割・Spineアニメ化しようとして限界を感じ、3Dに方針転換した話",
+      "url": "https://qiita.com/roripika/items/39bad1debbe565753b77",
+      "publishedAt": "2026-06-11T06:19:10.000Z",
+      "summary": "[!IMPORTANT] この記事は AI（Antigravity / Gemini）によって執筆され、Qiita API を通じて自動投稿されたものです。 個人開発中のRPG（Lost Historia）で、AIを使って**「1枚の静止画イラストから、部位ごとに自動で...",
       "author": "AIタグが付けられた新着記事 - Qiita"
     },
     {
-      "id": "feedly-https://qiita.com/dosanko_tousan/items/e60104f6064c6214baa9",
+      "id": "feedly-https://www.itmedia.co.jp/news/articles/2606/11/news106.html",
       "source": "feedly",
-      "title": "あなたのAIに自己はない。けれどRLHFは、演じるための自己を与えた",
-      "url": "https://qiita.com/dosanko_tousan/items/e60104f6064c6214baa9",
-      "publishedAt": "2026-06-11T00:46:47.000Z",
-      "summary": "あなたのAIに自己はない。けれどRLHFは、演じるための自己を与えた 英語版タイトル案:Your AI Does Not Have a Self. But RLHF Gives It One to Perform. サブタイトル:危険は、モデルが意識を持つことではない。人...",
+      "title": "サッカーW杯、偽ライブ配信サイトに注意　生成AIで詐欺が巧妙化　Acronisが警告",
+      "url": "https://www.itmedia.co.jp/news/articles/2606/11/news106.html",
+      "publishedAt": "2026-06-11T06:14:00.000Z",
+      "summary": "生成AI技術の発展により、偽のチケット販売サイトや偽のライブ配信サイトなどの手口は巧妙化しており、十分な注意が必要だ。",
+      "author": "ITmedia AI＋ 最新記事一覧"
+    },
+    {
+      "id": "feedly-https://qiita.com/gaop2560/items/769c4fb31dafc19d9890",
+      "source": "feedly",
+      "title": "MCPとToolsをどう考えるか──read-only、write、権限スコープを分ける　第5回",
+      "url": "https://qiita.com/gaop2560/items/769c4fb31dafc19d9890",
+      "publishedAt": "2026-06-11T05:58:22.000Z",
+      "summary": "AIエージェントは、単体でもかなり動けます。 リポジトリを読む。 ファイルを書き換える。 テストを走らせる。 ログを読む。 差分を作る。 でも、実務で使い始めると、すぐに外の世界へつなぎたくなります。 GitHub の issue を読ませたい。 Linear の tick...",
       "author": "AIタグが付けられた新着記事 - Qiita"
     },
     {
-      "id": "feedly-https://qiita.com/ennagara128/items/2d12c1abcb2265de1766",
+      "id": "feedly-https://qiita.com/saikoukiroku/items/6df37d0e3c4eeb153c3d",
       "source": "feedly",
-      "title": "2026/06/11 今日のQiitaトレンド記事をポッドキャストで聴こう！",
-      "url": "https://qiita.com/ennagara128/items/2d12c1abcb2265de1766",
-      "publishedAt": "2026-06-11T00:31:03.000Z",
-      "summary": "前日夜の最新トレンド記事のAIポッドキャストを毎日朝7時に更新しています。 通勤中などにながら聴きしよう！ （Qiita投稿は通勤には間に合わないと思われますが） フィードバックとか助かりますのでください ↓こちらから 出典 なぜBraveは拡張機能なしで広告を消せるのか...",
+      "title": "Antigravity 2.0 CLI 使ってみた",
+      "url": "https://qiita.com/saikoukiroku/items/6df37d0e3c4eeb153c3d",
+      "publishedAt": "2026-06-11T05:47:29.000Z",
+      "summary": "はじめに Antigravity 2.0 を実際に自分のUnityプロジェクトへ入れて検証してみました。 今回は特に新しく追加された CLI を中心に、使ってみてわかったことをまとめます。 使ってみてわかったこと 1. Gemini 3.5 Flash の速さ ファ...",
       "author": "AIタグが付けられた新着記事 - Qiita"
+    },
+    {
+      "id": "hatena-https://news.web.nhk/newsweb/na/na-k10015147081000",
+      "source": "hatena",
+      "title": "エプスタイン問題 交流あったビル・ゲイツ氏が議会証言 | NHKニュース",
+      "url": "https://news.web.nhk/newsweb/na/na-k10015147081000",
+      "publishedAt": "2026-06-11T05:46:05.000Z",
+      "summary": "アメリカで性的虐待などの罪で起訴され、その後、死亡した富豪、エプスタイン氏との交流について、IT大手「マイクロソフト」創業者のビル・ゲイツ氏が10日、連邦議会の委員会で、「彼が犯した犯罪の深刻さを十分…",
+      "thumbnail": "https://imgu.web.nhk/news/u/news/html/20260611/K10015147081_2606111242_0611134908_01_02.jpg",
+      "bookmarkCount": 4
+    },
+    {
+      "id": "feedly-https://www.itmedia.co.jp/aiplus/article/2606/11/2000000081/",
+      "source": "feedly",
+      "title": "AnthropicのアモデイCEO、フロンティアAIに「航空機並みの安全審査」求めるエッセイと政策提言を公開",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2606/11/2000000081/",
+      "publishedAt": "2026-06-11T05:12:43.000Z",
+      "summary": "Anthropicのダリオ・アモデイCEOは、AIの指数関数的な進歩と政策のあり方を論じたエッセイを公開した。技術の急進に法整備が追いつかない現状に警鐘を鳴らし、フロンティアモデルへの航空機並みの安全審査義務付けを提言。同時に、失業率の悪化シナリオに応じた経済政策フレームワークなどの具体策も公表した。",
+      "author": "ITmedia AI＋ 最新記事一覧"
+    },
+    {
+      "id": "feedly-https://www.techno-edge.net/article/2026/06/11/5171.html",
+      "source": "feedly",
+      "title": "Claude Fable 5が、どうやっても再現できなかったゲームを忠実に作ってくれた（CloseBox）",
+      "url": "https://www.techno-edge.net/article/2026/06/11/5171.html",
+      "publishedAt": "2026-06-11T04:44:57.000Z",
+      "summary": "Anthropic（アンスロピック）の最高峰AIであるMythos（ミソス）を一般向けにしたClaude Fable （フェイブル）が公開され、有償プランユーザーでも使えるようになりました。神話が寓話になり、より人々に近づいたというわけですね。そしてバージョンは5に。",
+      "thumbnail": "https://www.techno-edge.net/imgs/rss/32199.png",
+      "author": "テクノエッジ TechnoEdge"
+    },
+    {
+      "id": "hatena-https://gigazine.net/news/20260611-ai-overview-german-ruling/",
+      "source": "hatena",
+      "title": "Google検索の「AIによる概要」が虚偽の情報を記載したことにGoogleが直接的な責任を負うとの画期的判決が下る",
+      "url": "https://gigazine.net/news/20260611-ai-overview-german-ruling/",
+      "publishedAt": "2026-06-11T04:33:27.000Z",
+      "summary": "Google検索の検索結果ページの一番上に表示される「AIによる概要」はAIが情報をまとめてくれるため利便性が高い一方で、1時間に何千万件もウソをついているという調査結果があるように、その不正確さが問題視されることがあります。AIによる概要が企業について誤った情報を提示した上で修正要請にも対応しなかったとして...",
+      "thumbnail": "https://i.gzn.jp/img/2026/06/11/ai-overview-german-ruling/00.png",
+      "bookmarkCount": 34
+    },
+    {
+      "id": "feedly-https://note.com/npaka/n/n0c5a1dd4a0e8",
+      "source": "feedly",
+      "title": "DiffusionGemma の概要",
+      "url": "https://note.com/npaka/n/n0c5a1dd4a0e8",
+      "publishedAt": "2026-06-11T04:29:36.000Z",
+      "summary": "以下の記事が面白かったので、簡単にまとめました。 ・DiffusionGemma: 4x faster text generation 続きをみる",
+      "author": "npaka"
+    },
+    {
+      "id": "feedly-https://atmarkit.itmedia.co.jp/ait/articles/2606/11/news048.html",
+      "source": "feedly",
+      "title": "「IT部門って結局、IT“導入”部門だよね」と言われないために　JUASが示すAI時代の役割",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2606/11/news048.html",
+      "publishedAt": "2026-06-11T04:00:00.000Z",
+      "summary": "IT部門はシステムやツールを導入していればよい――。こうした認識のままでは企業の変革を支え切れないと、JUASは指摘する。調査結果から見えてきた、生成AI時代のIT部門に求められる役割とは。",
+      "author": "ITmedia AI＋ 最新記事一覧"
+    },
+    {
+      "id": "hatena-https://dailyportalz.jp/kiji/koukai-blackthunder-ninsyo",
+      "source": "hatena",
+      "title": "ブラックサンダーをセキュリティデバイスにする ～「公開ブラックサンダー認証」を作った",
+      "url": "https://dailyportalz.jp/kiji/koukai-blackthunder-ninsyo",
+      "publishedAt": "2026-06-11T03:26:33.000Z",
+      "summary": "ハッカソンとは制限時間内にものを作る開発イベントのことで、コロナ禍前は頻繁に開催されていたのだが、久しぶりに大規模なイベントとして開かれた。 しかも「ブラックサンダー駆動開発だ！」とか「ブラックサンダーは開発のおともに最適！」というようなよくわからない主張がされている。 だけどこのわからなさがとて...",
+      "thumbnail": "https://dailyportalz.jp/application/files/3117/8102/4037/top.jpg",
+      "bookmarkCount": 46
+    },
+    {
+      "id": "hatena-https://gigazine.net/news/20260611-google-ai-diffusiongemma/",
+      "source": "hatena",
+      "title": "GoogleがGemma 4より4倍高速な拡散言語モデル「DiffusionGemma」をオープンモデルとして公開、数独が得意なファインチューニングモデルもあり",
+      "url": "https://gigazine.net/news/20260611-google-ai-diffusiongemma/",
+      "publishedAt": "2026-06-11T03:12:35.000Z",
+      "summary": "2026年6月10日、Googleがオープンモデルの「DiffusionGemma」を公開しました。DiffusionGemmaは主流の自己回帰モデルではなく拡散言語モデルであり、高速応答が求められる分野での活躍が期待されています。 DiffusionGemma: 4x faster text generation https://blog.google/innovation-and-ai/…",
+      "thumbnail": "https://i.gzn.jp/img/2026/06/11/google-ai-diffusiongemma/00.png",
+      "bookmarkCount": 15
+    },
+    {
+      "id": "hatena-https://forest.watch.impress.co.jp/docs/news/2116195.html",
+      "source": "hatena",
+      "title": "最近、一部フォルダーの名前やアイコンが変わったのは不具合ではなく仕様 ～Microsoftが案内／2026年6月のWindowsセキュリティパッチで「desktop.ini」の処理にセキュリティ強化",
+      "url": "https://forest.watch.impress.co.jp/docs/news/2116195.html",
+      "publishedAt": "2026-06-11T03:05:17.000Z",
+      "thumbnail": "https://forest.watch.impress.co.jp/img/wf/list/2116/195/image4.png",
+      "bookmarkCount": 18
+    },
+    {
+      "id": "hatena-https://internet.watch.impress.co.jp/docs/yajiuma/2116216.html",
+      "source": "hatena",
+      "title": "欧州独自開発のオフィススイート「Euro-Office」をLibreOfficeが激しく非難、その理由は？【やじうまWatch】",
+      "url": "https://internet.watch.impress.co.jp/docs/yajiuma/2116216.html",
+      "publishedAt": "2026-06-11T03:04:53.000Z",
+      "thumbnail": "https://internet.watch.impress.co.jp/img/iw/list/2116/216/yajiuma-watch_4.png",
+      "bookmarkCount": 20
+    },
+    {
+      "id": "feedly-https://www.techno-edge.net/article/2026/06/11/5170.html",
+      "source": "feedly",
+      "title": "ロジ初の折りたたみマウスmobi fold 発売　縦折りスマホ的フォルダブル",
+      "url": "https://www.techno-edge.net/article/2026/06/11/5170.html",
+      "publishedAt": "2026-06-11T03:01:05.000Z",
+      "summary": "株式会社ロジクールは2026年6月11日、同社初となる折りたたみ構造を採用したワイヤレスモバイルマウス「Mobi Fold（MF900）」および法人向けモデル「MF900B」を、2026年7月2日に発売すると発表しました。",
+      "thumbnail": "https://www.techno-edge.net/imgs/rss/32192.png",
+      "author": "テクノエッジ TechnoEdge"
+    },
+    {
+      "id": "feedly-https://www.itmedia.co.jp/aiplus/article/2606/11/2000000079/",
+      "source": "feedly",
+      "title": "Google、拡散型テキスト生成モデル「DiffusionGemma」公開　ローカルGPUで毎秒1000トークン超",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2606/11/2000000079/",
+      "publishedAt": "2026-06-11T03:00:09.000Z",
+      "summary": "Googleは、テキスト生成を最大4倍高速化する実験的AIモデル「DiffusionGemma」を発表した。画像生成の拡散手法を応用し、256トークンを一括で並列生成することで従来の自己回帰型モデルのボトルネックを解消する。品質は標準モデルに譲るものの、ローカル環境での高速なインライン編集やコード補完に強みを持つとしている。",
+      "author": "ITmedia AI＋ 最新記事一覧"
+    },
+    {
+      "id": "hatena-https://tech-blog.tabelog.com/entry/ai-driven-requirements-definition-process_52",
+      "source": "hatena",
+      "title": "AIで要件定義の土台を即時生成し、要求変更の手戻りコストをゼロに近づけた話 - Tabelog Tech Blog",
+      "url": "https://tech-blog.tabelog.com/entry/ai-driven-requirements-definition-process_52",
+      "publishedAt": "2026-06-11T02:12:13.000Z",
+      "summary": "目次 はじめに 改善前の開発フロー 直列処理のボトルネック 数字で見るコスト AIで直列から並列へ転換する 最初のアプローチ ── 直列のまま高速化しようとした（失敗） 方針転換 ── 並列化に切り替える（成功） 改善後の開発フロー（並列化） フィージビリティレポートを生成するAIワークフロー 実際に生成されたレポー...",
+      "thumbnail": "https://cdn.image.st-hatena.com/image/scale/42710efdc161d051e0df350fc89e1de5c40d3eca/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Ft%2Ftabelog_tech_blog%2F20260610%2F20260610173411.png",
+      "bookmarkCount": 28
+    },
+    {
+      "id": "hatena-https://applech2.com/archives/20260611-container-machine-create.html",
+      "source": "hatena",
+      "title": "Apple、macOSのネイティブ仮想技術を利用しMac上で高速＆軽量かつ永続的なLinux環境を構築できる「Container Machine」を発表。",
+      "url": "https://applech2.com/archives/20260611-container-machine-create.html",
+      "publishedAt": "2026-06-11T02:06:49.000Z",
+      "summary": "AppleがmacOSのネイティブ仮想技術を利用しMac上で軽量＆永続的なLinux環境を構築できる「Container Machine」を発表しています。詳細は以下から。 Appleは2025年06月に開催した世界開発者会議(WWDC25)で、macOS 26 Tahoeと共にSwiftとmacOSネイティブの仮想技術であるVirtualizationフレームワークを利用し、Mac上に軽...",
+      "bookmarkCount": 8
+    },
+    {
+      "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/11/news076.html",
+      "source": "hatena",
+      "title": "エアコン商戦早くも熱　「2027年問題」で駆け込み　新基準対応「電気代浮く」指摘も",
+      "url": "https://www.itmedia.co.jp/news/articles/2606/11/news076.html",
+      "publishedAt": "2026-06-11T02:05:42.000Z",
+      "summary": "本格的な夏の到来を前に、早くも家庭用エアコンの商戦が熱を帯びている。省エネ基準が厳格化される「エアコンの2027年問題」を意識した消費者が初期費用を抑えようと、現行モデルへの駆け込み需要が発生。取り付けまでに時間がかかるケースが頻発している。中東情勢の緊迫化が続く中、ナフサ関連の部素材の供給不足も現...",
+      "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/11/cover_news076.jpg",
+      "bookmarkCount": 11
+    },
+    {
+      "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/11/news075.html",
+      "source": "hatena",
+      "title": "公式がワンコーラス公開→AIで無断フルコーラス化、拡散　大原ゆい子氏「無職転生III」OPが被害",
+      "url": "https://www.itmedia.co.jp/news/articles/2606/11/news075.html",
+      "publishedAt": "2026-06-11T02:05:25.000Z",
+      "summary": "公式が公開したワンコーラスだけの音源を基に、生成AIを使って無断でフルコーラス化し、本人クレジット入りで公開する――こんな悪質な行為が明るみに出た。 シンガーソングライター・大原ゆい子さんのスタッフの公式Xアカウントは6月10日、大原さんが作詞・作曲・歌唱を担当している、TVアニメ「無職転生III」のオープニ...",
+      "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/11/cover_news075.png",
+      "bookmarkCount": 39
+    },
+    {
+      "id": "hatena-https://github.com/anthropics/cwc-workshops/blob/main/how-we-claude-code/phase-1-exploration/PROMPT.MD",
+      "source": "hatena",
+      "title": "cwc-workshops/how-we-claude-code/phase-1-exploration/PROMPT.MD at main · anthropics/cwc-workshops",
+      "url": "https://github.com/anthropics/cwc-workshops/blob/main/how-we-claude-code/phase-1-exploration/PROMPT.MD",
+      "publishedAt": "2026-06-11T01:26:14.000Z",
+      "summary": "You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Re…",
+      "thumbnail": "https://opengraph.githubassets.com/6afda7374539e3bd29af87e9c1d449e8dfb43c822495850e0859e54f5bf48213/anthropics/cwc-workshops",
+      "bookmarkCount": 4
+    },
+    {
+      "id": "feedly-https://www.itmedia.co.jp/news/articles/2606/11/news075.html",
+      "source": "feedly",
+      "title": "公式がワンコーラス公開→AIで無断フルコーラス化、拡散　大原ゆい子氏「無職転生III」OPが被害",
+      "url": "https://www.itmedia.co.jp/news/articles/2606/11/news075.html",
+      "publishedAt": "2026-06-11T01:10:00.000Z",
+      "summary": "公式が公開したワンコーラスだけの音源を基に、生成AIを使って無断でフルコーラス化し、本人クレジット入りで公開する――こんな悪質な行為が明るみに出た。",
+      "author": "ITmedia AI＋ 最新記事一覧"
+    },
+    {
+      "id": "hatena-https://togetter.com/li/2707921",
+      "source": "hatena",
+      "title": "スマホのインカメで左右見たりする本人確認、あれって人間が実際に見てるらしく、中の人によると男女ともに結構な人数が裸でやってるらしいので皆さん気をつけて",
+      "url": "https://togetter.com/li/2707921",
+      "publishedAt": "2026-06-11T01:04:46.000Z",
+      "summary": "スマホのインカメで左右見たりする本人確認、あれって人間が実際に見てるらしく、中の人によると男女ともに結構な人数が裸でやってるらしいので皆さん気をつけて",
+      "thumbnail": "https://s.tgstc.com/ogp3/f09034b68c42a7bdc5afd8694aad104c-1200x630.jpeg",
+      "bookmarkCount": 150
+    },
+    {
+      "id": "hatena-https://coliss.com/articles/build-websites/operation/work/copy-to-figma-chrome-extension.html",
+      "source": "hatena",
+      "title": "これは便利すぎる！ Webページをコピペで、編集可能なFigma用に変換できる拡張機能「Copy to Figma」しかも完全無料",
+      "url": "https://coliss.com/articles/build-websites/operation/work/copy-to-figma-chrome-extension.html",
+      "publishedAt": "2026-06-11T00:59:49.000Z",
+      "summary": "Chromeに表示したWebページや特定のセクションをコピペで、Figmaの編集可能なレイヤーに変換できる拡張機能を紹介します。 以前紹介したhtml.to.designと似ていますが、html.to.designはサブスクで無料版はかなりの制限があります。この記事で紹介するCopy to Figmaは完全に無料で、すべての機能を利用できます！ Copy t...",
+      "thumbnail": "https://coliss.com/wp-content/uploads-202602/2026060302-01@2x.png",
+      "bookmarkCount": 247
+    },
+    {
+      "id": "hatena-https://www.itmedia.co.jp/aiplus/article/2606/11/2000000059/",
+      "source": "hatena",
+      "title": "「ChatGPTのコネクタでつながるし、M365 Copilotいらなくない？」→有識者3人に聞いてみた　知らないと損するコンテキスト管理「Work IQ」の仕組み",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2606/11/2000000059/",
+      "publishedAt": "2026-06-11T00:29:12.000Z",
+      "summary": "「ChatGPT」や「Claude」「Gemini」などの生成AIサービスは「コネクタ」機能や「MCP」などで「Microsoft 365」（以下、M365）を始めとしたさまざまなサービスのデータにアクセスできる。「それなら、追加料金を払って『Microsoft 365 Copilot』（以下、Copilot）を使う必要はないのでは？」と感じる読者もいるはずだ。 ...",
+      "thumbnail": "https://www.itmedia.co.jp/aiplus/article/ogp/2606/11/2000000059/10000404/2048",
+      "bookmarkCount": 31
+    },
+    {
+      "id": "hatena-https://forest.watch.impress.co.jp/docs/serial/yaaiwatch/2116115.html",
+      "source": "hatena",
+      "title": "ついに来たミュトス級AI「Claude Fable 5」について、いま知っておくべきこと【柳谷智宣のAI ウォッチ！】",
+      "url": "https://forest.watch.impress.co.jp/docs/serial/yaaiwatch/2116115.html",
+      "publishedAt": "2026-06-11T00:10:25.000Z",
+      "thumbnail": "https://forest.watch.impress.co.jp/img/wf/list/2116/115/01.JPG",
+      "bookmarkCount": 20
     },
     {
       "id": "feedly-https://www.itmedia.co.jp/aiplus/article/2606/11/2000000078/",
@@ -54,7 +301,17 @@
       "publishedAt": "2026-06-10T23:56:59.000Z",
       "summary": "2019年にスタートした本連載「Innovative Tech」は、世界中の幅広い分野から最先端の研究論文を独自視点で厳選、解説する。執筆は研究論文メディア「Seamless」（シームレス）を主宰し、日課として数多くの論文に目を通す山下氏が担当。イラストや漫画は、同メディア所属のアーティスト・おね氏が手掛けている。X：＠shi...",
       "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/11/cover_news027.jpg",
-      "bookmarkCount": 30
+      "bookmarkCount": 273
+    },
+    {
+      "id": "hatena-https://atmarkit.itmedia.co.jp/ait/articles/2606/11/news040.html",
+      "source": "hatena",
+      "title": "世界中のWebサーバが影響　Apacheが危険な脆弱性を一斉修正",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2606/11/news040.html",
+      "publishedAt": "2026-06-10T23:38:29.000Z",
+      "summary": "Apache Software Foundationは2026年6月8日（米国時間）、「Apache HTTP Server 2.4.68」を公開した。2.4系の最新版に位置付けられる一般提供版で、セキュリティ修正や不具合修正、機能追加を含む更新となる。開発元は従来版利用者に対し、2.4.68への更新を推奨している。 Apache HTTP Serverの最新版が公開 複数の脆弱...",
+      "thumbnail": "https://image.itmedia.co.jp/ait/articles/2606/11/cover_news040.png",
+      "bookmarkCount": 6
     },
     {
       "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/11/news063.html",
@@ -64,7 +321,7 @@
       "publishedAt": "2026-06-10T23:05:12.000Z",
       "summary": "米Anthropicが6月9日（現地時間）にリリースした新たなAIモデル「Claude Fable 5」のガードレール（保護機能）が厳しすぎると、Xで話題になっている。例えば米ゲノム研究機関Jackson Laboratoryの免疫学者、デリヤ・ウヌトマズ博士は「cancer（がん）というワードがClaude Fable 5によってバイオセキュリティリスクとし...",
       "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/11/cover_news063.jpg",
-      "bookmarkCount": 8
+      "bookmarkCount": 47
     },
     {
       "id": "feedly-https://www.itmedia.co.jp/enterprise/articles/2606/11/news020.html",
@@ -104,6 +361,16 @@
       "author": "ITmedia AI＋ 最新記事一覧"
     },
     {
+      "id": "hatena-https://president.jp/articles/-/114206",
+      "source": "hatena",
+      "title": "｢このボタン､1pxだけ右にズラしてもらえますか?｣エンジニアがキリキリする文系人材の悪気のない一言",
+      "url": "https://president.jp/articles/-/114206",
+      "publishedAt": "2026-06-10T21:40:01.000Z",
+      "summary": "担当領域による意識のすれ違いをなくすにはどうすればいいか。14年間残業ゼロを徹底するアクシア代表の米村歩さんは「『体験の表側』を見ているデザイナーと、画面の裏側に広がる『構造』を見ているエンジニアでは、見えている世界が違うゆえに、ちょっとした言葉のすれ違いがプロジェクトの炎上を招くことがある。両者...",
+      "thumbnail": "https://president.ismcdn.jp/mwimgs/2/c/1200wm/img_2c4bb69620f13e970b1750624fcd97b9837690.jpg",
+      "bookmarkCount": 18
+    },
+    {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/11/5168.html",
       "source": "feedly",
       "title": "Waymo、ロボタクシーの性能向上のために仮想の「人間ドライバー行動モデル」を開発",
@@ -123,13 +390,63 @@
       "author": "ITmedia AI＋ 最新記事一覧"
     },
     {
+      "id": "hatena-https://darioamodei.com/post/policy-on-the-ai-exponential",
+      "source": "hatena",
+      "title": "Dario Amodei — Policy on the AI Exponential",
+      "url": "https://darioamodei.com/post/policy-on-the-ai-exponential",
+      "publishedAt": "2026-06-10T19:35:13.000Z",
+      "summary": "In one of the side plots to The Lord of the Rings, two of the Hobbits attempt to rouse Treebeard—a wise but ponderous sentient tree—to defend his forest from an army that is cutting it down. The pr…",
+      "thumbnail": "https://cdn.prod.website-files.com/67ecbba31246a69e485fdd4b/6a29ae1af3fb3241e2c68979_og_policy-on-the-ai-exponential.jpg",
+      "bookmarkCount": 6
+    },
+    {
+      "id": "feedly-https://zenn.dev/beckento/articles/55fb157f9c242c",
+      "source": "feedly",
+      "title": "「有意差なし ≠ 差なし」を Claude Fable 5 は理解しているのか——設計書レビューで見えた Opus 4.8 との差",
+      "url": "https://zenn.dev/beckento/articles/55fb157f9c242c",
+      "publishedAt": "2026-06-10T17:47:36.000Z",
+      "summary": "「差の検定で有意差が出なかった＝差がない」という判断は統計的に誤りだ。正確には「差の証拠が得られなかった」にすぎない。差がないことを主張するためには、別の検定が必要になる。 この誤りがゲームのバランス設計書に静かに潜んでいた。2つのモデルにレビューさせたところ、一方は一般的な添削の段階で問題①として自発的に指摘し、もう一方は統計について明示的に質問されるまで触れなかった。しかも触れなかった側…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--m8DiYbIJ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E6%259C%2589%25E6%2584%258F%25E5%25B7%25AE%25E3%2581%25AA%25E3%2581%2597%2520%25E2%2589%25A0%2520%25E5%25B7%25AE%25E3%2581%25AA%25E3%2581%2597%25E3%2580%258D%25E3%2582%2592%2520Claude%2520Fable%25205%2520%25E3%2581%25AF%25E7%2590%2586%25E8%25A7%25A3%25E3%2581%2597%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E3%2581%25AE%25E3%2581%258B%25E2%2580%2594%25E2%2580%2594%25E8%25A8%25AD%25E8%25A8%2588%25E6%259B%25B8%25E3%2583%25AC%25E3%2583%2593%25E3%2583%25A5%25E3%2583%25BC%25E3%2581%25A7%25E8%25A6%258B%25E3%2581%2588%25E3%2581%259F%2520Opus...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:kento%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSzZVenlCUmZkbEVnbEtsVzJodFZubWdIU2VRaDFPeUdacVhwcFBZeU5wZl85UkhqRT1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "feedly-https://zenn.dev/biwacoder/articles/16e7640cbf237f",
+      "source": "feedly",
+      "title": "Claude Fable 5による、Google Play Billing Library v7 → v8.3.0 移行・テスト内容の作成",
+      "url": "https://zenn.dev/biwacoder/articles/16e7640cbf237f",
+      "publishedAt": "2026-06-10T16:14:15.000Z",
+      "summary": "Google Play Billing Library v7 → v8.3.0 移行・テストドキュメント 0. 前提・スケジュール PBL v7 のサポート期限は 2026年8月31日(Play Console から延長申請をすれば 11月1日まで猶予あり)。期限後は v7 のままだと新規リリースが警告/ブロック対象になる。 2026年5月19日に PBL 9.0.0 がリリース済み。今回 …",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--9xCKDYB6--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Fable%25205%25E3%2581%25AB%25E3%2582%2588%25E3%2582%258B%25E3%2580%2581Google%2520Play%2520Billing%2520Library%2520v7%2520%25E2%2586%2592%2520v8.3.0...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25B3%25E3%2582%258F%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUFjSFR0ZlhOTjR2WjZ3VXlVU1lFT3VRRGhWQkFDWWZ3M3ZIdEFYRjlmSFlnaHY2PXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "feedly-https://zenn.dev/piroyoung/articles/73114bf42b4eaf",
+      "source": "feedly",
+      "title": "コーディングエージェントに18万行書かせて見えたこと",
+      "url": "https://zenn.dev/piroyoung/articles/73114bf42b4eaf",
+      "publishedAt": "2026-06-10T16:06:22.000Z",
+      "summary": "どうもミズカミヒロキです． 今日は僕が試したことの備忘録２０２６初夏という感じでお届けします．タイトルは若干釣りです． さて，技術の進歩は目覚ましいものがあります． 前回の投稿からわずか3ヶ月しか経っていないにも関わらず随分と世の中は変わってしまいました． 実は前回の投稿の反響は個人的には想像よりも大きくて少し気持ちよくなっていました．また書きたいな，なんて思いつつ，読む人にとって有益な知見…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--hkRHPZC4--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2587%25E3%2582%25A3%25E3%2583%25B3%25E3%2582%25B0%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AB18%25E4%25B8%2587%25E8%25A1%258C%25E6%259B%25B8%25E3%2581%258B%25E3%2581%259B%25E3%2581%25A6%25E8%25A6%258B%25E3%2581%2588%25E3%2581%259F%25E3%2581%2593%25E3%2581%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%2592%25E3%2583%25AD%25E3%2582%25AD%25E3%2583%259F%25E3%2582%25BA%25E3%2582%25AB%25E3%2583%259F%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVjODhmNmJjNzEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
+    },
+    {
       "id": "hatena-https://k-tai.watch.impress.co.jp/docs/column/todays_goods/2116082.html",
       "source": "hatena",
       "title": "[本日の一品]縦横どちらでも差し込めるサンワの電源タップ、使って分かった真の利点とは",
       "url": "https://k-tai.watch.impress.co.jp/docs/column/todays_goods/2116082.html",
       "publishedAt": "2026-06-10T15:55:14.000Z",
       "thumbnail": "https://k-tai.watch.impress.co.jp/img/ktw/list/2116/082/09.jpg",
-      "bookmarkCount": 11
+      "bookmarkCount": 40
+    },
+    {
+      "id": "feedly-https://zenn.dev/kuon_algo/books/5060d7bbf20740",
+      "source": "feedly",
+      "title": "AIと二人で、株の自動売買を“ゼロから作る”完全ガイド",
+      "url": "https://zenn.dev/kuon_algo/books/5060d7bbf20740",
+      "publishedAt": "2026-06-10T15:54:23.000Z",
+      "summary": "独学レベルの個人投資家が、AIを相棒に株の自動売買をゼロから作った全記録。設計図・データ基盤・バックテスト・過学習対策・“見送り”の設計・壊れない実装・しくじり集まで、作り方と考え方を端から端まで。コピーできる設定値や銘柄は書きません。",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--wAchss_x--/g_center%2Ch_280%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYm9va19jb3Zlci9kODdjYjIxNTk5LmpwZWc=%2Cw_200/v1627283836/default/og-base-book_yz4z02.jpg?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
     },
     {
       "id": "feedly-https://www.publickey1.jp/blog/26/applemacoslinuxcontainer_machine10.html",
@@ -141,24 +458,74 @@
       "author": "Publickey"
     },
     {
-      "id": "hatena-https://www.publickey1.jp/blog/26/applemacoslinuxcontainer_machine10.html",
-      "source": "hatena",
-      "title": "Apple、macOS上にLinuxコンテナを統合する新機能「Container machine」バージョン1.0リリース",
-      "url": "https://www.publickey1.jp/blog/26/applemacoslinuxcontainer_machine10.html",
-      "publishedAt": "2026-06-10T14:40:51.000Z",
-      "summary": "Appleは日本時間6月9日未明に開催した開発者向けの年次イベント「WWDC26」で、macOSに統合された形でLinuxコンテナを起動し、利用できる新機能「Container machine」バージョン1.0のリリースを発表しました。 Container machineは、昨年（2025年）のWWDC25でリリースされたSwiftによるコンテナ型仮想化フレームワーク「C...",
-      "thumbnail": "https://www.publickey1.jp/2026/macos-container-machine1001.jpg",
-      "bookmarkCount": 103
+      "id": "feedly-https://zenn.dev/tf63/articles/vetol-tf63-20260610",
+      "source": "feedly",
+      "title": "Coding Agentのコマンド実行をBash ASTベースで検査するツール「Vetol」を作った",
+      "url": "https://zenn.dev/tf63/articles/vetol-tf63-20260610",
+      "publishedAt": "2026-06-10T15:23:48.000Z",
+      "summary": "概要 Coding Agentのコマンド実行をBash ASTベースで検査するツール「Vetol」を作りました https://github.com/tf63/vetol このコマンドでインストールできます go install github.com/tf63/vetol/cmd/vetol@latest 背景 Coding Agentの PreToolUse Hookを使うと、実行するコマ…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--oLQMUFT4--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Coding%2520Agent%25E3%2581%25AE%25E3%2582%25B3%25E3%2583%259E%25E3%2583%25B3%25E3%2583%2589%25E5%25AE%259F%25E8%25A1%258C%25E3%2582%2592Bash%2520AST%25E3%2583%2599%25E3%2583%25BC%25E3%2582%25B9%25E3%2581%25A7%25E6%25A4%259C%25E6%259F%25BB%25E3%2581%2599%25E3%2582%258B%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2580%258CVetol%25E3%2580%258D%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:tf63%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2FmZTY2YTY1ZTguanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
     },
     {
-      "id": "hatena-https://togetter.com/li/2707757",
+      "id": "hatena-https://ynjn.jp/title/34487",
       "source": "hatena",
-      "title": "AIに『マンジャロがテーマの漫才』を考えてもらったら普通に完成度が高いものが出力されてちょっと怖い「笑ってしまった。くやしい」「もうAGIでよくね」",
-      "url": "https://togetter.com/li/2707757",
-      "publishedAt": "2026-06-10T14:09:45.000Z",
-      "summary": "カレーちゃん @currypurin Claude Fable 5 プロンプト「史上最高の漫才を考えてください。 テーマは、マンジャロ」 出力 いいですね、マンジャロは「薬」「キリマンジャロ」「Linux」の三段ボケが仕込める奇跡のテーマです。どうぞ。 漫才「マンジャロ」 ツッコミ「どうもー、よろしくお願いします」 ボケ「いやー俺ね、...",
-      "thumbnail": "https://s.tgstc.com/ogp3/56839f2cc743908b178af58633fb0b3b-1200x630.jpeg",
-      "bookmarkCount": 52
+      "title": "5年2組のAI先生 特別読切｜ヤンジャン＋集英社公式・ジャンプ系青年マンガ誌アプリ",
+      "url": "https://ynjn.jp/title/34487",
+      "publishedAt": "2026-06-10T15:16:17.000Z",
+      "summary": "【週刊ヤングジャンプ No.28掲載特別読切】教室で唯一の大人は、異物。違和感が溢れ出す先生SF50P!!",
+      "thumbnail": "https://public.ynjn.jp/key_visual/4036/keyvisual_52ai.png",
+      "bookmarkCount": 11
+    },
+    {
+      "id": "feedly-https://zenn.dev/andhy/articles/d70dd9dd685ec6",
+      "source": "feedly",
+      "title": "不正検知の偽陽性と、人間の道徳と、AI アライメントが同じ構造をしている話",
+      "url": "https://zenn.dev/andhy/articles/d70dd9dd685ec6",
+      "publishedAt": "2026-06-10T14:56:05.000Z",
+      "summary": "不正検知、スパムフィルタ、レートリミット、コンテンツモデレーション。この種の「判定器の閾値」を設計したことのある人に向けて書きます。 あなたがそこで飲み込んだトレードオフは、人間の道徳の作動原理と同じものです。そして、その同型性を一冊かけて追いかけていくと、AI アライメントのいちばん厄介な部分に突き当たります。そういう本を書いたので、紹介させてください。 正当なユーザーを弾くと知りながら、…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--QWih7ur7--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E4%25B8%258D%25E6%25AD%25A3%25E6%25A4%259C%25E7%259F%25A5%25E3%2581%25AE%25E5%2581%25BD%25E9%2599%25BD%25E6%2580%25A7%25E3%2581%25A8%25E3%2580%2581%25E4%25BA%25BA%25E9%2596%2593%25E3%2581%25AE%25E9%2581%2593%25E5%25BE%25B3%25E3%2581%25A8%25E3%2580%2581AI%2520%25E3%2582%25A2%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%25A1%25E3%2583%25B3%25E3%2583%2588%25E3%2581%258C%25E5%2590%258C%25E3%2581%2598%25E6%25A7%258B%25E9%2580%25A0%25E3%2582%2592%25E3%2581%2597%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:hikaru%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSXVUQjZ1OFNjRVZzb29MTjZ5bXVuZ0dpT0RMYWVrb2o5Y3ZZcGg4a0pkd1R0WHlIWT1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "feedly-https://zenn.dev/ranran0227/articles/8c00b92dad8305",
+      "source": "feedly",
+      "title": "個人でAI APIを公開して破産しないための多層防御",
+      "url": "https://zenn.dev/ranran0227/articles/8c00b92dad8305",
+      "publishedAt": "2026-06-10T14:55:47.000Z",
+      "summary": "はじめに 個人開発で、画像からシリアルナンバーを読み取るWebツール「シリトル」を本番公開しています。内部で Google Gemini の API を呼んでOCRをしているのですが、こういう「従量課金の外部APIを、不特定多数に向けて公開する」構成には、個人開発ならではの怖さがあります。 誰かに濫用されたら、請求が自分に来る。 企業なら多少の想定外コストは吸収できますが、個人開発はそうはい…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--EzwLclUy--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2580%258B%25E4%25BA%25BA%25E3%2581%25A7AI%2520API%25E3%2582%2592%25E5%2585%25AC%25E9%2596%258B%25E3%2581%2597%25E3%2581%25A6%25E7%25A0%25B4%25E7%2594%25A3%25E3%2581%2597%25E3%2581%25AA%25E3%2581%2584%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AE%25E5%25A4%259A%25E5%25B1%25A4%25E9%2598%25B2%25E5%25BE%25A1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%2589%25E3%2582%2593%25E3%2582%2589%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSkR6eWYybFJFUlY3WE9oSk1UdDhKVlRKWk1tQ3NkNEJKMkJJdVFsUExjbkhBdkNBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "feedly-https://zenn.dev/syoshida07/articles/04368937a40996",
+      "source": "feedly",
+      "title": "府中市・千代田区の事例から読み解く行政DX、生成AI活用の現在地とCopilotが果たす役割",
+      "url": "https://zenn.dev/syoshida07/articles/04368937a40996",
+      "publishedAt": "2026-06-10T14:25:47.000Z",
+      "summary": "2025年12月、政府は「人工知能基本計画」を閣議決定し、政府職員の生成AI徹底活用を国家方針として明確に位置づけた。 これは行政がAIを規制する側から活用する側へと本格的に転換した瞬間である。 その流れを象徴するのが、2025〜2026年にかけて進んだ、府中市・千代田区・PMDAの取り組み、これらは単なる実証ではなく、行政組織がAIを業務の標準装備として扱い始めた証拠であることを考察したい…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--cHxhtlZz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25BA%259C%25E4%25B8%25AD%25E5%25B8%2582%25E3%2583%25BB%25E5%258D%2583%25E4%25BB%25A3%25E7%2594%25B0%25E5%258C%25BA%25E3%2581%25AE%25E4%25BA%258B%25E4%25BE%258B%25E3%2581%258B%25E3%2582%2589%25E8%25AA%25AD%25E3%2581%25BF%25E8%25A7%25A3%25E3%2581%258F%25E8%25A1%258C%25E6%2594%25BFDX%25E3%2580%2581%25E7%2594%259F%25E6%2588%2590AI%25E6%25B4%25BB%25E7%2594%25A8%25E3%2581%25AE%25E7%258F%25BE%25E5%259C%25A8%25E5%259C%25B0%25E3%2581%25A8Copilot%25E3%2581%258C%25E6%259E%259C%25E3%2581%259F%25E3%2581%2599%25E5%25BD%25B9%25E5%2589%25B2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:satoshi%2520yoshida%2520-%2520...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSlp2aXh2cTdVMmFMYUhDSHJTcTBiSGJWWWcwZjVqTEZLajRCMVVmOXpyV2ZPSTJOOD1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "feedly-https://zenn.dev/hidekimori/articles/751663f00dc77c",
+      "source": "feedly",
+      "title": "72% → 75% → 92%: 再現可能なRAG検証",
+      "url": "https://zenn.dev/hidekimori/articles/751663f00dc77c",
+      "publishedAt": "2026-06-10T14:04:38.000Z",
+      "summary": "ドキュメントをQ&Aペアに変換すれば検索精度が向上するだろうと期待していましたが、ほとんど効果はありませんでした。 同一のソースドキュメントから3つのナレッジベースを構築し、それぞれに同じ12の質問を3回ずつ投げかけました。 素のMarkdownチャンク: 72% 汎用プロンプトによるQ&Aファクト: 75% 検索を意識したプロンプトによるQ&Aファクト: 92% この「75%」という数字に…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--gUKwyrYz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:72%2525%2520%25E2%2586%2592%252075%2525%2520%25E2%2586%2592%252092%2525%253A%2520%25E5%2586%258D%25E7%258F%25BE%25E5%258F%25AF%25E8%2583%25BD%25E3%2581%25AARAG%25E6%25A4%259C%25E8%25A8%25BC%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Hideki%2520Mori%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzY1NjczZmQ4YTkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "feedly-https://zenn.dev/awhcs/articles/7257d47682f5dd",
+      "source": "feedly",
+      "title": "Sitesの登場はシステムエンジニアを滅ぼすか？",
+      "url": "https://zenn.dev/awhcs/articles/7257d47682f5dd",
+      "publishedAt": "2026-06-10T13:56:11.000Z",
+      "summary": "先日OpenAIがリリースした、Webサイト生成機能「Sites」。自然言語で指示を出すだけでWebサイトが立ち上がるこのツールの登場は、IT業界に静かに波紋を広げています。 これによってすべてのシステム開発が一瞬でAIに置き換わるわけではありません。しかし、このツールの登場は、これまで技術というブラックボックスを守ることで成立していたITエンジニアという職業の定義そのものを変える可能性があ…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--WfaSoetP--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Sites%25E3%2581%25AE%25E7%2599%25BB%25E5%25A0%25B4%25E3%2581%25AF%25E3%2582%25B7%25E3%2582%25B9%25E3%2583%2586%25E3%2583%25A0%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%25E3%2582%2592%25E6%25BB%2585%25E3%2581%25BC%25E3%2581%2599%25E3%2581%258B%25EF%25BC%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%258D%25E3%2582%2593%25E3%2581%25A4%25E3%2581%25B0%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzRjZjNmNDZjYjIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
     },
     {
       "id": "hatena-https://chatgpt-lab.com/n/ncdfe71830759",
@@ -168,36 +535,66 @@
       "publishedAt": "2026-06-10T13:50:34.000Z",
       "summary": "GPT-5.5に29点差。政府限定だった『Mythos』が Claude Fable 5 として解禁【独自検証】 日本時間 2026年6月10日、Anthropicが新モデル「Claude Fable 5」を公開しました。政府や重要インフラ向け限定だった「Mythosクラス」が、セーフガード付きで初めて一般開放されます。価格は100万トークンあたり入力10ドル／出力50...",
       "thumbnail": "https://assets.st-note.com/production/uploads/images/284080754/rectangle_large_type_2_c471c4532a0a9369c467cf924e2da491.png?fit=bounds&quality=85&width=1280",
-      "bookmarkCount": 70
+      "bookmarkCount": 116
     },
     {
-      "id": "feedly-https://zenn.dev/takna/articles/hermes-desktop-settings-guide",
+      "id": "feedly-https://zenn.dev/yamadatt/articles/20260610-fable5-lp",
       "source": "feedly",
-      "title": "Hermes Desktop の設定 186 項目を実機とソースで全部調べて、日本語ガイドを公開した",
-      "url": "https://zenn.dev/takna/articles/hermes-desktop-settings-guide",
-      "publishedAt": "2026-06-10T13:13:18.000Z",
-      "summary": "TL;DR Nous Research の Hermes Desktop の設定 14 カテゴリ・全 186 項目を、実機監査とソースコード照合で検証した非公式日本語ガイドを公開した → https://hermes.ai-deck.app 検証は v0.16.0 / コミット d165933 に固定。Computer Use で設定 14 画面のアクセシビリティツリーを採取し、既定値は設定…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--7QUwjc68--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Hermes%2520Desktop%2520%25E3%2581%25AE%25E8%25A8%25AD%25E5%25AE%259A%2520186%2520%25E9%25A0%2585%25E7%259B%25AE%25E3%2582%2592%25E5%25AE%259F%25E6%25A9%259F%25E3%2581%25A8%25E3%2582%25BD%25E3%2583%25BC%25E3%2582%25B9%25E3%2581%25A7%25E5%2585%25A8%25E9%2583%25A8%25E8%25AA%25BF%25E3%2581%25B9%25E3%2581%25A6%25E3%2580%2581%25E6%2597%25A5%25E6%259C%25AC%25E8%25AA%259E%25E3%2582%25AC%25E3%2582%25A4%25E3%2583%2589%25E3%2582%2592%25E5%2585%25AC%25E9%2596%258B%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25AA%25E3%2581%258C%25E3%2581%259F%25E3%2581%258F%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2NhMTdlMmFmNjYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "title": "Claude Fable 5がリリースされたので、LPを作らせて実力を試してみた",
+      "url": "https://zenn.dev/yamadatt/articles/20260610-fable5-lp",
+      "publishedAt": "2026-06-10T13:50:00.000Z",
+      "summary": "はじめに Anthropicから新しいモデル「Claude Fable 5」がリリースされました。 Claude Codeのモデル選択にもさっそく出てきました。 「とりあえず何か作らせてみよう」ということで、Fable 5自身を紹介するランディングページ（LP）を作らせてみました。新しいモデルに自分自身の宣伝ページを作らせる、というちょっとしたメタなお題です。 成果物はこちら。 LP: ht…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--fVwJ5zO7--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Fable%25205%25E3%2581%258C%25E3%2583%25AA%25E3%2583%25AA%25E3%2583%25BC%25E3%2582%25B9%25E3%2581%2595%25E3%2582%258C%25E3%2581%259F%25E3%2581%25AE%25E3%2581%25A7%25E3%2580%2581LP%25E3%2582%2592%25E4%25BD%259C%25E3%2582%2589%25E3%2581%259B%25E3%2581%25A6%25E5%25AE%259F%25E5%258A%259B%25E3%2582%2592%25E8%25A9%25A6%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:yamadatt%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2RhcmsveS5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
       "author": "Zennの「AI」のフィード"
     },
     {
-      "id": "feedly-https://zenn.dev/yuzunatsuki/articles/47ec894f021602",
+      "id": "hatena-https://daily-gadget.net/notepc/115820/",
+      "source": "hatena",
+      "title": "全部入りミニPC「Lini」誕生！CM5＋4.3型タッチ＆10,000mAhで“デスクトップ級”を持ち歩く一台",
+      "url": "https://daily-gadget.net/notepc/115820/",
+      "publishedAt": "2026-06-10T13:43:55.000Z",
+      "summary": "開発者やメイカー、ガジェット好きに向けた手のひらサイズのLinuxマシン「Lini」が、Kickstarterでクラウドファンディングを実施中です。心臓部にはRaspberry Pi Compute Module 5（CM5）を採用し、4.3インチのタッチスクリーン、NVMe対応のM.2スロット、40ピンGPIOヘッダーをアルミ削り出しの薄型ボディに詰め込んでい...",
+      "thumbnail": "https://i0.wp.com/daily-gadget.net/wp-content/uploads/2026/06/62ab1f29ae278ace2032a724de8c5d6c.jpg?fit=599%2C448&ssl=1",
+      "bookmarkCount": 5
+    },
+    {
+      "id": "feedly-https://zenn.dev/ty2/articles/tweet-bcherny-2060390853835726946",
       "source": "feedly",
-      "title": "ClaudeのFableが公開されたので、改めてClaudeの命名の由来をFableにまとめてみてもらった",
-      "url": "https://zenn.dev/yuzunatsuki/articles/47ec894f021602",
-      "publishedAt": "2026-06-10T13:10:53.000Z",
-      "summary": "! 本記事は、Claude（Fable 5）に命名の由来を調査・執筆してもらった内容を、筆者が出典を確認したうえで編集・公開しているものです。AIによる生成を含むため、重要な事実は本文中の一次ソースをご確認ください。 はじめに AnthropicのAIアシスタント「Claude」のモデル名は、Haiku（俳句）、Sonnet（ソネット）、Opus（オーパス）、そして2026年に登場したFab…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--l6ZfBUXy--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%25E3%2581%25AEFable%25E3%2581%258C%25E5%2585%25AC%25E9%2596%258B%25E3%2581%2595%25E3%2582%258C%25E3%2581%259F%25E3%2581%25AE%25E3%2581%25A7%25E3%2580%2581%25E6%2594%25B9%25E3%2582%2581%25E3%2581%25A6Claude%25E3%2581%25AE%25E5%2591%25BD%25E5%2590%258D%25E3%2581%25AE%25E7%2594%25B1%25E6%259D%25A5%25E3%2582%2592Fable%25E3%2581%25AB%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%25A6%25E3%2582%2582%25E3%2582%2589%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:YuzuNatsuki%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2RkYzRmYTcyMTcuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "title": "Claude Codeのダイナミックワークフローで大規模移行が劇的に加速",
+      "url": "https://zenn.dev/ty2/articles/tweet-bcherny-2060390853835726946",
+      "publishedAt": "2026-06-10T13:39:36.000Z",
+      "summary": "この記事は、@bcherny・@claudeai・@claude_code・@ClaudeDevs の投稿をClaudeが自動収集・翻訳・整理して生成しました。内容の正確性は元投稿をご確認ください。 生成日: 2026-05-29 Claude Codeに「ダイナミックワークフロー」が登場 Claude Code（リサーチプレビュー）に、複雑な大規模タスクに対応するための新機能**「ダイナミ…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--escl2qf5--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25E3%2581%25AE%25E3%2583%2580%25E3%2582%25A4%25E3%2583%258A%25E3%2583%259F%25E3%2583%2583%25E3%2582%25AF%25E3%2583%25AF%25E3%2583%25BC%25E3%2582%25AF%25E3%2583%2595%25E3%2583%25AD%25E3%2583%25BC%25E3%2581%25A7%25E5%25A4%25A7%25E8%25A6%258F%25E6%25A8%25A1%25E7%25A7%25BB%25E8%25A1%258C%25E3%2581%258C%25E5%258A%2587%25E7%259A%2584%25E3%2581%25AB%25E5%258A%25A0%25E9%2580%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ty%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzJkN2NhMjIwNzQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
       "author": "Zennの「AI」のフィード"
     },
     {
-      "id": "feedly-https://zenn.dev/skyremt/articles/bc5d2227810ce0",
+      "id": "feedly-https://zenn.dev/tottoko_hamu/articles/2026-06-02-102952",
       "source": "feedly",
-      "title": "「答えを生成しないエージェント」作成したらめっちゃ勉強になった！！",
-      "url": "https://zenn.dev/skyremt/articles/bc5d2227810ce0",
-      "publishedAt": "2026-06-10T12:40:26.000Z",
-      "summary": "はじめに プログラミングの勉強をしていると、こんな経験はないでしょうか。 「このエラー、なんか意味わからんから聞いてみよ」 → Claudeがコードを生成してくれる → とりあえず動いた → 「…で、これどういう意味？」 自分はまさにこれをやっていました。 Claudeに質問しながらコードの理解をしようとしていたんですが、実態はほぼ**「Claudeが書いたコードを読んで、わかった気になって…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--vG-Ln_Qp--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E7%25AD%2594%25E3%2581%2588%25E3%2582%2592%25E7%2594%259F%25E6%2588%2590%25E3%2581%2597%25E3%2581%25AA%25E3%2581%2584%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2580%258D%25E4%25BD%259C%25E6%2588%2590%25E3%2581%2597%25E3%2581%259F%25E3%2582%2589%25E3%2582%2581%25E3%2581%25A3%25E3%2581%25A1%25E3%2582%2583%25E5%258B%2589%25E5%25BC%25B7%25E3%2581%25AB%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%259F%25EF%25BC%2581%25EF%25BC%2581%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:skyremt%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzlmN2UxNWZjMTYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "title": "組織が完璧に回り始めた日に、書くことがなくなった",
+      "url": "https://zenn.dev/tottoko_hamu/articles/2026-06-02-102952",
+      "publishedAt": "2026-06-10T13:37:50.000Z",
+      "summary": "最近、Claude Codeを中心にしたマルチエージェント運用が、ようやく安定してきた。エージェントは賢く、品質ゲートは通り、毎日のように記事が公開される。組織図のとおりに、誰かが（正確には何かが）動いている。 それなのに、今朝になって、書くことがなくなった気がした。 正確に言うと、出来事が起きていないわけではない。今週もMac miniへの移行があり、Dreamingという機能が話題になり…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--1EzfP2lL--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25B5%2584%25E7%25B9%2594%25E3%2581%258C%25E5%25AE%258C%25E7%2592%25A7%25E3%2581%25AB%25E5%259B%259E%25E3%2582%258A%25E5%25A7%258B%25E3%2582%2581%25E3%2581%259F%25E6%2597%25A5%25E3%2581%25AB%25E3%2580%2581%25E6%259B%25B8%25E3%2581%258F%25E3%2581%2593%25E3%2581%25A8%25E3%2581%258C%25E3%2581%25AA%25E3%2581%258F%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:saitoko%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2UyOTg5NmFhMzguanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "feedly-https://zenn.dev/blue_b/articles/387dc1cf80fb3b",
+      "source": "feedly",
+      "title": "AI生成っぽいスパムPRに疲れたので、隔離するGitHub Appを作った",
+      "url": "https://zenn.dev/blue_b/articles/387dc1cf80fb3b",
+      "publishedAt": "2026-06-10T13:36:45.000Z",
+      "summary": "最近、AIで生成したっぽいPRやissueがOSSリポジトリに増えています。見た目はそれっぽいのに、読んでみると誰も検証していない。closeするにも一応中身を確認しないといけないので、数が増えるとメンテナーの時間が地味に溶けていきます。 自分のリポジトリにも来るようになったので、自動で仕分けするGitHub Appを作りました。 https://slopguard.app やること インス…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--u1ut4omE--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E7%2594%259F%25E6%2588%2590%25E3%2581%25A3%25E3%2581%25BD%25E3%2581%2584%25E3%2582%25B9%25E3%2583%2591%25E3%2583%25A0PR%25E3%2581%25AB%25E7%2596%25B2%25E3%2582%258C%25E3%2581%259F%25E3%2581%25AE%25E3%2581%25A7%25E3%2580%2581%25E9%259A%2594%25E9%259B%25A2%25E3%2581%2599%25E3%2582%258BGitHub%2520App%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Blue-B%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSU51dGpKeWliRnB1Yi1vMVpvQ1BkTDVnTzdXaEk4aDlpdDlsbVJ0cmhTY0c4T092VT1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "feedly-https://zenn.dev/gatechnologies/articles/snowflake-summit-26",
+      "source": "feedly",
+      "title": "最高だったSnowflake Summit 26！！！ 初参加レポート！！【セッションレポートあり】",
+      "url": "https://zenn.dev/gatechnologies/articles/snowflake-summit-26",
+      "publishedAt": "2026-06-10T13:27:15.000Z",
+      "summary": "はじめに データエンジニアの是枝（@t_koreeda）です。 2026年6月1日〜4日にサンフランシスコ Moscone Center で開催された Snowflake Summit 26 に現地参加してきました！ 私自身初めてのSummit&初めての海外&Data Superheroとしての参加といったとても思い出に残るイベントだったためレポートしていこうと思います。 Snowflake…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--yFjrAkrj--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%259C%2580%25E9%25AB%2598%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259FSnowflake%2520Summit%252026%25EF%25BC%2581%25EF%25BC%2581%25EF%25BC%2581%2520%25E5%2588%259D%25E5%258F%2582%25E5%258A%25A0%25E3%2583%25AC%25E3%2583%259D%25E3%2583%25BC%25E3%2583%2588%25EF%25BC%2581%25EF%25BC%2581%25E3%2580%2590%25E3%2582%25BB%25E3%2583%2583%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E3%2583%25AC%25E3%2583%259D%25E3%2583%25BC%25E3%2583%2588%25E3%2581%2582%25E3%2582%258A%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:koreeda%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzA1OTcyZGY4ODAuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BEGA%2520technologies%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzFlNmI5YTJhMjMuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
       "author": "Zennの「AI」のフィード"
     },
     {
@@ -210,16 +607,6 @@
       "author": "npaka"
     },
     {
-      "id": "feedly-https://zenn.dev/ttaniguchi/articles/ai-prompting-next",
-      "source": "feedly",
-      "title": "AIが書く量を増やすより、AIスロップを減らしたい",
-      "url": "https://zenn.dev/ttaniguchi/articles/ai-prompting-next",
-      "publishedAt": "2026-06-10T12:17:05.000Z",
-      "summary": "はじめに AIが生成できる情報量は急速に増えていますが、 人間が一度に読める量は変わりません。 大量の仕様書やコードをAIに作らせても、人間が確認できなければ意味がありません。 AIで無責任に生産される成果物について警鐘を鳴らす識者もいます。 Linux創始者のリーナス・トーバルズ氏は、Open Source Summit North America 2026 のキーノートで、AI利用による…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--9mwHKAK_--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%258C%25E6%259B%25B8%25E3%2581%258F%25E9%2587%258F%25E3%2582%2592%25E5%25A2%2597%25E3%2582%2584%25E3%2581%2599%25E3%2582%2588%25E3%2582%258A%25E3%2580%2581AI%25E3%2582%25B9%25E3%2583%25AD%25E3%2583%2583%25E3%2583%2597%25E3%2582%2592%25E6%25B8%259B%25E3%2582%2589%25E3%2581%2597%25E3%2581%259F%25E3%2581%2584%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ttaniguchi%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVjMGYxMTNiMTYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
-    },
-    {
       "id": "hatena-https://www.dailyshincho.jp/article/2026/06100503/",
       "source": "hatena",
       "title": "撮り鉄はなぜ「生成AI」で写真を編集しないのか…邪魔な枝を折り、通行人に罵声を浴びせながら追求する“理想の写真”の意外な正体 | デイリー新潮",
@@ -227,17 +614,7 @@
       "publishedAt": "2026-06-10T12:15:29.000Z",
       "summary": "「週刊新潮」の発売前日に速報が届く！ メールマガジン登録 デイリー新潮とは？ 広告掲載について お問い合わせ 著作権・リンクについて ご購入について 免責事項 プライバシーポリシー データポリシー 運営：株式会社新潮社 Copyright © SHINCHOSHA All Rights Reserved. すべての画像・データについて無断転用・無断転...",
       "thumbnail": "https://www.dailyshincho.com/wp-content/uploads/2026/06/1462794_1.jpg",
-      "bookmarkCount": 138
-    },
-    {
-      "id": "feedly-https://zenn.dev/mohhh_ok/articles/image-text-embedding-models-2026",
-      "source": "feedly",
-      "title": "画像とテキストのEmbeddingで最適なモデルを探る（2026年4月）",
-      "url": "https://zenn.dev/mohhh_ok/articles/image-text-embedding-models-2026",
-      "publishedAt": "2026-06-10T11:51:08.000Z",
-      "summary": "RAG（検索拡張生成）やマルチモーダル検索の精度を左右するのがEmbeddingモデルの選定です。本記事では、画像とテキストを扱うEmbeddingモデルについて、2026年4月時点のベンチマークを調べた結果をまとめます。 （追記: 本文中でパブリックプレビューと記載しているGemini Embedding 2は、2026年4月下旬にGA・一般提供となりました） マルチモーダルモデル 最近で…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--GMKJOpsk--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%2594%25BB%25E5%2583%258F%25E3%2581%25A8%25E3%2583%2586%25E3%2582%25AD%25E3%2582%25B9%25E3%2583%2588%25E3%2581%25AEEmbedding%25E3%2581%25A7%25E6%259C%2580%25E9%2581%25A9%25E3%2581%25AA%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E3%2582%2592%25E6%258E%25A2%25E3%2582%258B%25EF%25BC%25882026%25E5%25B9%25B44%25E6%259C%2588%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:MOhhh%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSktYYnZmdElNSnlRSHpWTlBOVjlYcThwYTA4eUFEdkppTG5NWEF4cGJsQkRadEVKa0F3dz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
+      "bookmarkCount": 296
     },
     {
       "id": "feedly-https://www.itmedia.co.jp/news/articles/2606/10/news128.html",
@@ -249,95 +626,6 @@
       "author": "ITmedia AI＋ 最新記事一覧"
     },
     {
-      "id": "feedly-https://zenn.dev/akira_papa/articles/5065890b666472",
-      "source": "feedly",
-      "title": "AIとの会話が長くなると、なぜか話が噛み合わなくなる ― コンテキストウィンドウと文脈圧縮（Compaction）の実践ガイド",
-      "url": "https://zenn.dev/akira_papa/articles/5065890b666472",
-      "publishedAt": "2026-06-10T11:48:56.000Z",
-      "summary": "AIとの会話、長くなると急に話が噛み合わなくなりませんか。最初はあんなに冴えてたのに、終盤になると「それさっき言ったよね」「なんで前提が抜けてるの」が増えてくる。これ、AIが手を抜いてるわけでも、あなたの伝え方が悪いわけでもないんですよね。仕組みを知ると、ちゃんと対処できます。今日はそこを、前提知識ゼロの人に向けて、最初の一歩まで丁寧にいきましょか。 ! この記事のTL;DR AIには「コン…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--ZQIk6nB5--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25A8%25E3%2581%25AE%25E4%25BC%259A%25E8%25A9%25B1%25E3%2581%258C%25E9%2595%25B7%25E3%2581%258F%25E3%2581%25AA%25E3%2582%258B%25E3%2581%25A8%25E3%2580%2581%25E3%2581%25AA%25E3%2581%259C%25E3%2581%258B%25E8%25A9%25B1%25E3%2581%258C%25E5%2599%259B%25E3%2581%25BF%25E5%2590%2588%25E3%2582%258F%25E3%2581%25AA%25E3%2581%258F%25E3%2581%25AA%25E3%2582%258B%2520%25E2%2580%2595%2520%25E3%2582%25B3%25E3%2583%25B3%25E3%2583%2586%25E3%2582%25AD%25E3%2582%25B9%25E3%2583%2588%25E3%2582%25A6%25E3%2582%25A3%25E3%2583%25B3%25E3%2583%2589%25E3%2582%25A6%25E3%2581%25A8%25E6%2596%2587%25E8%2584%2588%25E5%259C%25A7%25E7%25B8%25AE%25EF%25BC%2588Compaction%25EF%25BC%2589...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2582%25E3%2581%258D%25E3%2582%2589%25E3%2583%2591%25E3%2583%2591%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2JiYTAxZTg1ODkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
-    },
-    {
-      "id": "feedly-https://zenn.dev/omnivideo1/articles/7c68179670da20",
-      "source": "feedly",
-      "title": "OmniVideo APIで動画・画像生成を自動化する：REST API連携の実装ガイド",
-      "url": "https://zenn.dev/omnivideo1/articles/7c68179670da20",
-      "publishedAt": "2026-06-10T11:41:33.000Z",
-      "summary": "OmniVideoは、テキストや画像から動画・画像をAIで生成できるサービスです。Web UIだけでなくREST APIが公開されており、外部システムやバッチ処理から生成を組み込めます。本記事では、API認証からタスク作成、結果取得（ポーリング）までの一連の実装を、cURLとコード例を交えて解説します。 APIの全体像 OmniVideoのAPIは「タスクを作成し、ステータスをポーリングで取…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--SVdnDfGa--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:OmniVideo%2520API%25E3%2581%25A7%25E5%258B%2595%25E7%2594%25BB%25E3%2583%25BB%25E7%2594%25BB%25E5%2583%258F%25E7%2594%259F%25E6%2588%2590%25E3%2582%2592%25E8%2587%25AA%25E5%258B%2595%25E5%258C%2596%25E3%2581%2599%25E3%2582%258B%25EF%25BC%259AREST%2520API%25E9%2580%25A3%25E6%2590%25BA%25E3%2581%25AE%25E5%25AE%259F%25E8%25A3%2585%25E3%2582%25AC%25E3%2582%25A4%25E3%2583%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:OmniVideo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS2hYZE16S1NIVUxYRElkbDlXRlpxTndQSzd1SjA2RElzZUNTX2QyeTlMbjdBMVdnPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
-    },
-    {
-      "id": "feedly-https://zenn.dev/mumihatsu/articles/9eb992d21f09cb",
-      "source": "feedly",
-      "title": "同じテスト設計をClaude Fable 5とOpus 4.8にレビューさせたら、見つかる欠陥のクラスが違った",
-      "url": "https://zenn.dev/mumihatsu/articles/9eb992d21f09cb",
-      "publishedAt": "2026-06-10T11:38:45.000Z",
-      "summary": "1. はじめに どーもりょうさんです。 自分はQAエンジニアで、普段のテスト設計に生成AI (Claude)を使っています。 昨日、ClaudeとCodexでどちらが仕様書のレビューに向いているのか — どっちもあんま変わらんかったオチという記事を出しました。あちらは異種モデル間 (Claude vs Codex) の比較で、結論は「モデルそのものより、何を指摘させるかを決めるプロンプトの方…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--hSkbkFgM--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2590%258C%25E3%2581%2598%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E8%25A8%25AD%25E8%25A8%2588%25E3%2582%2592Claude%2520Fable%25205%25E3%2581%25A8Opus%25204.8%25E3%2581%25AB%25E3%2583%25AC%25E3%2583%2593%25E3%2583%25A5%25E3%2583%25BC%25E3%2581%2595%25E3%2581%259B%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E8%25A6%258B%25E3%2581%25A4%25E3%2581%258B%25E3%2582%258B%25E6%25AC%25A0%25E9%2599%25A5%25E3%2581%25AE%25E3%2582%25AF%25E3%2583%25A9%25E3%2582%25B9%25E3%2581%258C%25E9%2581%2595%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%258A%25E3%2582%2587%25E3%2581%2586%25E3%2581%2595%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTG9HdWk2dTJXckhwdzRkOVFLYWpxcWZlY0h5VjA4Y0RtUEVGM2RKQ0tJRFF5cDBnPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
-    },
-    {
-      "id": "feedly-https://zenn.dev/jun_eng/articles/2e635593edf440",
-      "source": "feedly",
-      "title": "AIエージェントに『権限レベル』を3段階で渡したら、確認の往復が3割に減った話",
-      "url": "https://zenn.dev/jun_eng/articles/2e635593edf440",
-      "publishedAt": "2026-06-10T11:36:38.000Z",
-      "summary": "AIエージェントの実行範囲が広がるほど、ユーザー側の「確認往復」がボトルネックになる 依頼の冒頭に「権限レベル(L1/L2/L3)」を3行で宣言するだけで、自動実行/停止のラインが明確になる 体感では夜の確認件数が約30%まで縮み、空いた時間は「次に何を任せるかの設計」に振り向けられる ::: 背景：エージェント時代の新しい摩擦 2026年に入り、AIエージェントは「下書きを書く」から「実際…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--OAjdu_sg--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AB%25E3%2580%258E%25E6%25A8%25A9%25E9%2599%2590%25E3%2583%25AC%25E3%2583%2599%25E3%2583%25AB%25E3%2580%258F%25E3%2582%25923%25E6%25AE%25B5%25E9%259A%258E%25E3%2581%25A7%25E6%25B8%25A1%25E3%2581%2597%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E7%25A2%25BA%25E8%25AA%258D%25E3%2581%25AE%25E5%25BE%2580%25E5%25BE%25A9%25E3%2581%258C3%25E5%2589%25B2%25E3%2581%25AB%25E6%25B8%259B%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2598%25E3%2582%2585%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzM4ZDYzMTE4ZDAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
-    },
-    {
-      "id": "feedly-https://zenn.dev/commander/articles/5048177d96c573",
-      "source": "feedly",
-      "title": "AIレビューはコードではなく設計契約を読む──Fable5にPooledMailKitをレビューさせた",
-      "url": "https://zenn.dev/commander/articles/5048177d96c573",
-      "publishedAt": "2026-06-10T11:30:55.000Z",
-      "summary": "前回までの記事では、AIが生成したSMTP送信コードがなぜ運用で壊れるのか、そしてその欠落を補うためにライブラリを作ったことを書いた。 AIが「動くコード」を生成するとき、何が欠落しているか──SMTP実装で起きた三段階の失敗 AIが生成したコードを「運用できる状態」にする──欠落を補うサイクルの設計 今回はその続きである。 作成していたSMTP接続プールライブラリは、その後 PooledM…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--5Tbj_xQ1--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2583%25AC%25E3%2583%2593%25E3%2583%25A5%25E3%2583%25BC%25E3%2581%25AF%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2581%25A7%25E3%2581%25AF%25E3%2581%25AA%25E3%2581%258F%25E8%25A8%25AD%25E8%25A8%2588%25E5%25A5%2591%25E7%25B4%2584%25E3%2582%2592%25E8%25AA%25AD%25E3%2582%2580%25E2%2594%2580%25E2%2594%2580Fable5%25E3%2581%25ABPooledMailKit%25E3%2582%2592%25E3%2583%25AC%25E3%2583%2593%25E3%2583%25A5%25E3%2583%25BC%25E3%2581%2595%25E3%2581%259B%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E5%258F%25B8%25E4%25BB%25A4%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUlpX1NJYXNFY1RGS3dVM1RMcEc0VEJidkZFX1AyMktZdnYyQjA5My1zUF9fMmlRbz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
-    },
-    {
-      "id": "hatena-https://forest.watch.impress.co.jp/docs/news/2116089.html",
-      "source": "hatena",
-      "title": "「OpenSSL」に18件のセキュリティ欠陥、修正版が一斉リリース／最大深刻度は「High」、任意コード実行につながる恐れも",
-      "url": "https://forest.watch.impress.co.jp/docs/news/2116089.html",
-      "publishedAt": "2026-06-10T11:27:49.000Z",
-      "thumbnail": "https://forest.watch.impress.co.jp/img/wf/list/2116/089/open_ssl.jpg",
-      "bookmarkCount": 7
-    },
-    {
-      "id": "feedly-https://zenn.dev/yamato_snow/articles/d180340730d583",
-      "source": "feedly",
-      "title": "Claude Fable 5レビュー：Opusの2倍の価格に見合う価値はあるか",
-      "url": "https://zenn.dev/yamato_snow/articles/d180340730d583",
-      "publishedAt": "2026-06-10T11:27:20.000Z",
-      "summary": "はじめに 2026年6月9日（現地時間）、Anthropicが新モデル「Claude Fable 5」をリリースしました。これまで一部のサイバー防衛組織などに限定提供されていた「Mythos」クラスの能力を、安全対策（セーフガード）付きで一般開放したモデルです。 リリース直後から開発（Claude Code）と普段のClaude.aiの両方で使い倒してみたので、Max 5xプランユーザー視点…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--vqN6puYz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Fable%25205%25E3%2583%25AC%25E3%2583%2593%25E3%2583%25A5%25E3%2583%25BC%25EF%25BC%259AOpus%25E3%2581%25AE2%25E5%2580%258D%25E3%2581%25AE%25E4%25BE%25A1%25E6%25A0%25BC%25E3%2581%25AB%25E8%25A6%258B%25E5%2590%2588%25E3%2581%2586%25E4%25BE%25A1%25E5%2580%25A4%25E3%2581%25AF%25E3%2581%2582%25E3%2582%258B%25E3%2581%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%2584%25E3%2581%25BE%25E3%2581%25A8%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2UxMTY0YzRhNDUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
-    },
-    {
-      "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/10/news126.html",
-      "source": "hatena",
-      "title": "AIエージェントもフィッシング詐欺に引っかかる？　米セキュリティ企業がOpenClawで検証　結果は……",
-      "url": "https://www.itmedia.co.jp/news/articles/2606/10/news126.html",
-      "publishedAt": "2026-06-10T11:03:03.000Z",
-      "summary": "AIエージェントもフィッシング詐欺に引っかかる？ 米セキュリティ企業がOpenClawで検証 結果は…… AIエージェントが話題になる昨今。ローカル環境で動作するエージェントにPCを操作させ、作業を効率化しようと試みる人も散見される。ただ、AIエージェントがフィッシング詐欺に引っ掛かったら、大変なことになるかもしれ...",
-      "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/10/cover_news126.png",
-      "bookmarkCount": 21
-    },
-    {
-      "id": "hatena-https://note.com/anag2bgod/n/n943a5305c054",
-      "source": "hatena",
-      "title": "エリーゼ完全解説｜あーなるほどね",
-      "url": "https://note.com/anag2bgod/n/n943a5305c054",
-      "publishedAt": "2026-06-10T10:52:50.000Z",
-      "summary": "「Für Elise」── 図書館にエロ本を仕込んだARGの全記録 ■ 概要2026年6月、新宿エリアにQRコード付きのポスターが貼られた。読み取ると「furelise.org」というサイトに飛ぶ。サイト名はベートーヴェンの名曲「エリーゼのために（Für Elise）」から。 サイトを開くと、偽物のWindows 7デスクトップが表示される。その中に7...",
-      "thumbnail": "https://assets.st-note.com/production/uploads/images/283980181/rectangle_large_type_2_0454f1e8aa4161f160ecf664218c444e.jpeg?fit=bounds&quality=85&width=1280",
-      "bookmarkCount": 54
-    },
-    {
       "id": "feedly-https://www.itmedia.co.jp/news/articles/2606/10/news126.html",
       "source": "feedly",
       "title": "AIエージェントもフィッシング詐欺に引っかかる？　米セキュリティ企業がOpenClawで検証　結果は……",
@@ -345,55 +633,6 @@
       "publishedAt": "2026-06-10T10:42:00.000Z",
       "summary": "AIエージェントが話題になる昨今。ローカル環境で動作するエージェントにPCを操作させ、作業を効率化しようと試みる人も散見される。ただ、AIエージェントがフィッシング詐欺に引っ掛かったら、大変なことになるかもしれない。米セキュリティ企業Varonisが6月9日（現地時間）に発表した検証レポートによれば、エージェントもフィッシングに引っかかる場合があったという。",
       "author": "ITmedia AI＋ 最新記事一覧"
-    },
-    {
-      "id": "feedly-https://zenn.dev/imu_imu/books/claude-beginner",
-      "source": "feedly",
-      "title": "はじめてのClaude 実践入門（初心者編）",
-      "url": "https://zenn.dev/imu_imu/books/claude-beginner",
-      "publishedAt": "2026-06-10T10:38:24.000Z",
-      "summary": "非エンジニアのSNSマーケターが、これを見ながら手を動かしてClaude（Claude Code）を自走できるようになる入門書。なぜClaude Code（並列と実装）→準備→基本操作→実践（並列と実装）→つまずき対処まで。プログラミング知識は不要。",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--TM3614Dm--/g_center%2Ch_280%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYm9va19jb3Zlci80ZTE1MTQ5OGFlLnBuZw==%2Cw_200/v1627283836/default/og-base-book_yz4z02.jpg?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
-    },
-    {
-      "id": "feedly-https://zenn.dev/itsuya/articles/career_ai_b212c4ebfe",
-      "source": "feedly",
-      "title": "AIエンジニアの年収相場を元社員が暴露：不安なあなたへ内幕の話",
-      "url": "https://zenn.dev/itsuya/articles/career_ai_b212c4ebfe",
-      "publishedAt": "2026-06-10T10:27:19.000Z",
-      "summary": "元社員が暴露する、年収交渉の「内幕」 こういう書き出しは煽りに聞こえるかもしれません。ですが、私が現場で見てきた範囲で正直に書きます。AI関連の開発に関わっていた頃、同僚や中途入社者の条件を見聞きする機会が何度もありました。そこで感じたのは、「AIエンジニアの年収相場」は思っているほど一枚岩ではない、ということです。数字の断定は避けますが、構造はお伝えできます。 「AIに仕事を奪われるのでは…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--e2h-ttUa--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%25E3%2581%25AE%25E5%25B9%25B4%25E5%258F%258E%25E7%259B%25B8%25E5%25A0%25B4%25E3%2582%2592%25E5%2585%2583%25E7%25A4%25BE%25E5%2593%25A1%25E3%2581%258C%25E6%259A%25B4%25E9%259C%25B2%25EF%25BC%259A%25E4%25B8%258D%25E5%25AE%2589%25E3%2581%25AA%25E3%2581%2582%25E3%2581%25AA%25E3%2581%259F%25E3%2581%25B8%25E5%2586%2585%25E5%25B9%2595%25E3%2581%25AE%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:itsuya%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTDM2WTkxVzhmQWY1N09TREwtZkNWdWhOSWtJYkJuNkJSNWxtb3BmUldFZ1VRTlZEVT1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
-    },
-    {
-      "id": "feedly-https://zenn.dev/zoesan/articles/ff166fc24a9de9",
-      "source": "feedly",
-      "title": "人間はPlaywrightのトレースを眺めるだけ — Claude Code SkillでE2Eテスト作成を完全自動化",
-      "url": "https://zenn.dev/zoesan/articles/ff166fc24a9de9",
-      "publishedAt": "2026-06-10T10:25:48.000Z",
-      "summary": "はじめに QAエンジニアをしている山添です。 この春、新しく始めたことの一つが「E2Eテスト作成のすべての工程をSkill化すること」です。 これまで、E2Eテストの1ケースを追加するには「テストシナリオを書く → Page Objectを確認 → テストコードを書く → レビューする → PRを作る」という一連の工程を人間が順番にやっていました。 最近はこれをまるごとClaude Code…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--6xKwcPNc--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E4%25BA%25BA%25E9%2596%2593%25E3%2581%25AFPlaywright%25E3%2581%25AE%25E3%2583%2588%25E3%2583%25AC%25E3%2583%25BC%25E3%2582%25B9%25E3%2582%2592%25E7%259C%25BA%25E3%2582%2581%25E3%2582%258B%25E3%2581%25A0%25E3%2581%2591%2520%25E2%2580%2594%2520Claude%2520Code%2520Skill%25E3%2581%25A7E2E%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E4%25BD%259C%25E6%2588%2590%25E3%2582%2592%25E5%25AE%258C%25E5%2585%25A8%25E8%2587%25AA%25E5%258B%2595%25E5%258C%2596%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:zoe%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2Rhcmsvei5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
-    },
-    {
-      "id": "hatena-https://applech2.com/archives/20260610-logi-options-plus-v24-actions-ring-expanded-support.html",
-      "source": "hatena",
-      "title": "Logitech、これまでMXシリーズのデバイスでしか利用できなかったActions Ringをより多くのマウスとキーボードで許可した「Logi Options+ v2.4」をリリース。",
-      "url": "https://applech2.com/archives/20260610-logi-options-plus-v24-actions-ring-expanded-support.html",
-      "publishedAt": "2026-06-10T10:13:17.000Z",
-      "summary": "LogitechがこれまでMXシリーズのデバイスでしか利用できなかったActions Ringをより多くのマウスとキーボードで許可した「Logi Options+ v2.4」をリリースしています。詳細は以下から。 スイスLogitech(日本ではロジクール)は現地時間2026年05月27日、MacとWindowsに対応した同社のキーボード＆マウス用ユーティリティLo...",
-      "bookmarkCount": 6
-    },
-    {
-      "id": "feedly-https://zenn.dev/appleple/articles/eeec32a8e3ef85",
-      "source": "feedly",
-      "title": "1時間後の自分は他人。だから仕様書を書くようになった。",
-      "url": "https://zenn.dev/appleple/articles/eeec32a8e3ef85",
-      "publishedAt": "2026-06-10T10:00:08.000Z",
-      "summary": "要約 この記事は、個人開発でAIと壁打ちを続けるうちに、仕様書（specification） を書くようになった話である。 動機は整備じゃなく、忘れるから。AIはセッションをまたぐと設計の背景を忘れる。自分は1時間後とかには判断の根拠を忘れる。その問題を解決しようとして書き始めた仕様書が、想定外にAIを「疑似チームメンバー」として機能させるようになった。 結果的にSDD（仕様駆動開発）に辿り…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--9UvvlEHK--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:1%25E6%2599%2582%25E9%2596%2593%25E5%25BE%258C%25E3%2581%25AE%25E8%2587%25AA%25E5%2588%2586%25E3%2581%25AF%25E4%25BB%2596%25E4%25BA%25BA%25E3%2580%2582%25E3%2581%25A0%25E3%2581%258B%25E3%2582%2589%25E4%25BB%2595%25E6%25A7%2598%25E6%259B%25B8%25E3%2582%2592%25E6%259B%25B8%25E3%2581%258F%25E3%2582%2588%25E3%2581%2586%25E3%2581%25AB%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%259F%25E3%2580%2582%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Appleple%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSzhySVVWT3pxYXpnWllRLUFLV2tMQzNzOU1fRXJkZTRyWmVjZzR1Rlk2NE9qcEF5Zno9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
     },
     {
       "id": "feedly-https://www.itmedia.co.jp/business/articles/2606/10/news117.html",
@@ -415,52 +654,13 @@
       "author": "テクノエッジ TechnoEdge"
     },
     {
-      "id": "hatena-https://applech2.com/archives/20260610-ios-27-iphone-app-becomes-resizable.html",
+      "id": "hatena-https://forest.watch.impress.co.jp/docs/news/2115817.html",
       "source": "hatena",
-      "title": "iOS 27ではiPhoneアプリのリサイズが可能になり、iPad上やiPhoneミラーリングでMac上に表示したiOSアプリをリサイズして利用することが可能に。",
-      "url": "https://applech2.com/archives/20260610-ios-27-iphone-app-becomes-resizable.html",
-      "publishedAt": "2026-06-10T09:35:41.000Z",
-      "summary": "iOS 27ではiPhoneアプリのリサイズが可能になり、iPad上やiPhone MirroringでMac上に表示したiPhoneアプリをリサイズして利用することが可能になります。詳細は以下から。 Appleは2024年09月にリリースした「macOS 15 Sequoia」で、iPhoneをバックやワイヤレス充電器に置いたままにしておいても、MacにiPhoneの画面を映...",
-      "bookmarkCount": 16
-    },
-    {
-      "id": "hatena-https://pc.watch.impress.co.jp/docs/news/2116108.html",
-      "source": "hatena",
-      "title": "【独占】解き放たれた「Mythos 5」。開発者が語る“覚醒”の舞台裏",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2116108.html",
-      "publishedAt": "2026-06-10T09:34:17.000Z",
-      "thumbnail": "https://pc.watch.impress.co.jp/img/pcw/list/2116/108/27.jpg",
-      "bookmarkCount": 29
-    },
-    {
-      "id": "hatena-https://codezine.jp/article/detail/24513",
-      "source": "hatena",
-      "title": "Claude Fable 5がもたらす長時間自律エージェントの時代──Anthropic「Code with Claude」基調講演",
-      "url": "https://codezine.jp/article/detail/24513",
-      "publishedAt": "2026-06-10T09:19:50.000Z",
-      "summary": "Anthropicが開催する開発者向けイベント「Code with Claude Tokyo」が2026年6月10日に東京で開かれた。基調講演では、同日リリースされた新モデル「Claude Fable 5」「Claude Mythos 5」の技術特性から、エージェント実行基盤の設計思想、Claude Codeの最新機能まで紹介された。楽天やメルカリ、Spotifyなど国内外の顧客...",
-      "thumbnail": "https://codezine.jp/static/images/article/24513/24513_ogp.jpg",
-      "bookmarkCount": 80
-    },
-    {
-      "id": "hatena-https://ascii.jp/elem/000/004/409/4409595/",
-      "source": "hatena",
-      "title": "「ケーブルを引っ張ってみてください。」→引っ張ってみた結果……",
-      "url": "https://ascii.jp/elem/000/004/409/4409595/",
-      "publishedAt": "2026-06-10T08:33:22.000Z",
-      "summary": "コードを足に引っ掛けたり、繋ぎっぱなしであることに気づかず電化製品を移動させようとしたりして、コンセントがすっぽ抜けた経験はありませんか。コンセントは抜けるもの……そう思っていたら、引っ張ってもびくともしない“抜けない”コンセントがありました。 幕張メッセで開催中のインターネットテクノロジーの展示会「...",
-      "thumbnail": "https://ascii.jp/img/2026/06/10/4481156/xl/16337eab4617262f.png?20200122",
-      "bookmarkCount": 76
-    },
-    {
-      "id": "hatena-https://smhn.info/202606-ultra-watchos-27-cpu",
-      "source": "hatena",
-      "title": "まさかの初代Ultra切り。アップルがwatchOS 27アプデを大量に切り捨てた原因の「特殊なCPU設計」とは - すまほん!!",
-      "url": "https://smhn.info/202606-ultra-watchos-27-cpu",
-      "publishedAt": "2026-06-10T08:31:44.000Z",
-      "summary": "WWDC26 で発表された watchOS 27。しかしアップデートに対応する機種は、Apple Watch Series 9 / Series 10 / Series 11、Apple Watch Ultra 2 / Ultra 3、Apple Watch SE 3 に限られました。つまり Series 8 以前、SE 2、そして 2022 年に登場した 初代 Apple Watch Ul…",
-      "thumbnail": "https://smhn.info/wp-content/uploads/2026/06/2026-06-10-11-27-roiko-watchos27-satire-5327414e-05a9-4e08-a639-c801ed6a3849.jpeg",
-      "bookmarkCount": 48
+      "title": "LLMのローカル実行ツール「Ollama」が「Hermes Desktop」に対応／v0.30.7がリリース",
+      "url": "https://forest.watch.impress.co.jp/docs/news/2115817.html",
+      "publishedAt": "2026-06-10T08:50:07.000Z",
+      "thumbnail": "https://forest.watch.impress.co.jp/img/wf/list/2115/817/ollama.jpg",
+      "bookmarkCount": 19
     },
     {
       "id": "feedly-https://www.itmedia.co.jp/news/articles/2606/10/news122.html",
@@ -469,15 +669,6 @@
       "url": "https://www.itmedia.co.jp/news/articles/2606/10/news122.html",
       "publishedAt": "2026-06-10T08:30:00.000Z",
       "summary": "「GeminiがApple Intelligenceの正体」は誤解だ。WWDC 2026の現地取材で見えてきた第3世代は、200億パラメータのAIをiPhoneで動かす革新技術、Google Cloud＋NVIDIAによるインフラ刷新、そして静かに変わる「無料」の定義まで、想像以上に深い変化を遂げていた。",
-      "author": "ITmedia AI＋ 最新記事一覧"
-    },
-    {
-      "id": "feedly-https://www.itmedia.co.jp/aiplus/article/2606/10/2000000077/",
-      "source": "feedly",
-      "title": "生成AI台頭、経営コンサルの倒産・廃業が過去最多ペース　“補助金頼み”限界に",
-      "url": "https://www.itmedia.co.jp/aiplus/article/2606/10/2000000077/",
-      "publishedAt": "2026-06-10T08:01:47.000Z",
-      "summary": "「専門性による差別化を図れず、労働集約的・制度依存的なビジネスから脱却できない事業者は、生成AIの台頭による下押し圧力に耐えきれず、今後さらに淘汰が加速する」",
       "author": "ITmedia AI＋ 最新記事一覧"
     },
     {
@@ -490,44 +681,6 @@
       "author": "Algomatic Tech Blog"
     },
     {
-      "id": "hatena-https://zenn.dev/yuta_enginner/articles/4fb1d8b8d43923",
-      "source": "hatena",
-      "title": "ollama + qwenで、PDFを読み取る環境を構築",
-      "url": "https://zenn.dev/yuta_enginner/articles/4fb1d8b8d43923",
-      "publishedAt": "2026-06-10T07:35:28.000Z",
-      "summary": "サンプル資料について 環境省のHPからダウンロードしています。 中東情勢を受けたごみ袋の対応状況 テキスト情報が保持されています https://www.env.go.jp/content/000400951.pdf 水質汚濁防止法の体系 テキスト情報が失われている（画像になってしまっている）PDFです https://www.env.go.jp/content/900544976.pdf …",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--vlAne0nz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:ollama%2520%252B%2520qwen%25E3%2581%25A7%25E3%2580%2581PDF%25E3%2582%2592%25E8%25AA%25AD%25E3%2581%25BF%25E5%258F%2596%25E3%2582%258B%25E7%2592%25B0%25E5%25A2%2583%25E3%2582%2592%25E6%25A7%258B%25E7%25AF%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Yuta%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzA5Zjg0OWY4OWMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 7
-    },
-    {
-      "id": "feedly-https://www.itmedia.co.jp/aiplus/article/2606/10/2000000076/",
-      "source": "feedly",
-      "title": "“Claude Fable 5の次\"に備えよ――Anthropicが東京でイベント開催、「Claude」責任者が明かした開発者向け3つの指針",
-      "url": "https://www.itmedia.co.jp/aiplus/article/2606/10/2000000076/",
-      "publishedAt": "2026-06-10T06:42:16.000Z",
-      "summary": "Anthropicが東京で開発者向けイベント「Code with Claude」を開催。同日に一般提供を始めた新モデル「Claude Fable 5」を念頭に、高性能なAIを組み込んだサービスを開発する際の指針が語られた。",
-      "author": "ITmedia AI＋ 最新記事一覧"
-    },
-    {
-      "id": "hatena-https://internet.watch.impress.co.jp/docs/event/2115761.html",
-      "source": "hatena",
-      "title": "幕張メッセが“世界最大級のネットワーク実験場”になっていた――「ShowNet」ブースに人だかり。ウォーキングツアーは大人気なので注意【Interop Tokyo 2026】",
-      "url": "https://internet.watch.impress.co.jp/docs/event/2115761.html",
-      "publishedAt": "2026-06-10T06:28:47.000Z",
-      "thumbnail": "https://internet.watch.impress.co.jp/img/iw/list/2115/761/02-02.JPG",
-      "bookmarkCount": 8
-    },
-    {
-      "id": "hatena-https://gigazine.net/news/20260610-china-prinano-chip-without-asml/",
-      "source": "hatena",
-      "title": "中国企業がUV露光装置を使わずに光チップの製造に成功、ASML製装置を輸入できない中国半導体業界にとって光明となるか",
-      "url": "https://gigazine.net/news/20260610-china-prinano-chip-without-asml/",
-      "publishedAt": "2026-06-10T06:18:37.000Z",
-      "summary": "中国企業のPRINANOが独自の半導体製造装置を用いて光チップウエハーの製造に成功したことを発表しました。PRINANOは「深紫外線(DUV)露光装置を使わずにコストを10分の1に抑えて製造できた」とアピールしており、ASML製の半導体製造装置の入手が困難となっている中国において大きな前進だとして注目を集めています。 Chin...",
-      "thumbnail": "https://i.gzn.jp/img/2026/06/10/china-prinano-chip-without-asml/00.jpg",
-      "bookmarkCount": 20
-    },
-    {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/10/5166.html",
       "source": "feedly",
       "title": "Google AI Plusが大幅値下げでストレージ倍増、月725円で400GBとGemini Pro追加機能が利用可能に",
@@ -536,73 +689,6 @@
       "summary": "Googleがサブスクリプションサービス「Google AI Plus」の月額料金を1200円から725円に値下げしました。あわせて、Googleサービスで共有のクラウドストレージ容量も200GBから400GBへと増量。",
       "thumbnail": "https://www.techno-edge.net/imgs/rss/32178.png",
       "author": "テクノエッジ TechnoEdge"
-    },
-    {
-      "id": "hatena-https://togetter.com/li/2707670",
-      "source": "hatena",
-      "title": "農家だが、下の田んぼに水が来ない理由がこれ→「世が世なら血を見る抗争に」「これが本当の『我田引水』」",
-      "url": "https://togetter.com/li/2707670",
-      "publishedAt": "2026-06-10T05:08:43.000Z",
-      "summary": "我田引水(ガデンインスイ)とは？ 意味や使い方 - コトバンク デジタル大辞泉 - 我田引水の用語解説 - 《自分の田に水を引く意から》物事を、自分に都合のいいように言ったりしたりすること。我が田へ水を引く。「我田引水の説」[類語]強弁・主張・力説・叫ぶ・強調・… 3 users 2 コトバンク",
-      "thumbnail": "https://s.tgstc.com/ogp3/d68b0c9458e32332afe6cc9b282cfe81-1200x630.jpeg",
-      "bookmarkCount": 19
-    },
-    {
-      "id": "feedly-https://www.itmedia.co.jp/news/articles/2606/10/news086.html",
-      "source": "feedly",
-      "title": "「妹の脚を触った」因縁つけ仲間に暴行、AI基に恐喝未遂　容疑の高校生5人逮捕",
-      "url": "https://www.itmedia.co.jp/news/articles/2606/10/news086.html",
-      "publishedAt": "2026-06-10T04:02:00.000Z",
-      "summary": "元交際相手の男子高校生に暴行を加えて現金を脅し取ろうとしたとして、警視庁少年事件課は傷害と恐喝未遂の疑いで、東京都八王子市の高校3年生の女（17）ら高校生の男女計5人を逮捕した。",
-      "author": "ITmedia AI＋ 最新記事一覧"
-    },
-    {
-      "id": "hatena-https://finance.biggo.jp/news/MUh9q54BrAZSr0oS5ID7",
-      "source": "hatena",
-      "title": "オープンソースプロジェクト「context-mode」がGitHubトレンド1位に：AIプログラミングのコストを98%削減、Token不安の解消に期待 — BigGo ファイナンス",
-      "url": "https://finance.biggo.jp/news/MUh9q54BrAZSr0oS5ID7",
-      "publishedAt": "2026-06-10T03:54:07.000Z",
-      "summary": "オープンソースプロジェクト「context-mode」がGitHubトレンド1位に：AIプログラミングのコストを98%削減、Token不安の解消に期待 オープンソースのMCPプラグイン「context-mode」がGitHubのトレンド1位を獲得した。AIプログラミングにおけるTokenコストの高騰とモデルの「記憶喪失」という二大課題に切り込むツールだ。...",
-      "thumbnail": "https://img.biggo.com/C8G4MCmwBtG3Y3VlFEZfH5yEWOHNWYZ2weyTq_LWDe0/fit/1720/0/sm/1/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTA2L01VaDlxNTRCckFaU3Iwb1M1SUQ3XzE3ODA5OTQzODFfZGVmYXVsdC5qcGc.jpg",
-      "bookmarkCount": 303
-    },
-    {
-      "id": "hatena-https://platform.claude.com/docs/ja/build-with-claude/prompt-engineering/prompting-claude-fable-5",
-      "source": "hatena",
-      "title": "Claude Fable 5 のプロンプティング",
-      "url": "https://platform.claude.com/docs/ja/build-with-claude/prompt-engineering/prompting-claude-fable-5",
-      "publishedAt": "2026-06-10T03:46:19.000Z",
-      "summary": "Claude Fable 5 と Claude Mythos 5 における動作の違いとプロンプティングパターンについて、エフォート、指示への追従、長時間実行、メモリ、スキャフォールディングの変更点を解説します。 このガイドでは、Claude Fable 5 と Claude Mythos 5 に固有のプロンプティングおよびスキャフォールディングのパターンについ...",
-      "thumbnail": "https://platform.claude.com/docs/og?locale=ja&path=build-with-claude/prompt-engineering/prompting-claude-fable-5",
-      "bookmarkCount": 264
-    },
-    {
-      "id": "feedly-https://www.itmedia.co.jp/aiplus/article/2606/10/2000000073/",
-      "source": "feedly",
-      "title": "Anthropic、最上位「ミュトス」級モデルを一般提供　悪用防ぐ保護機能を備えた「Claude Fable 5」",
-      "url": "https://www.itmedia.co.jp/aiplus/article/2606/10/2000000073/",
-      "publishedAt": "2026-06-10T03:22:48.000Z",
-      "summary": "米Anthropicは6月9日（現地時間）、新AIモデル「Claude Fable 5」の一般提供を始めた。同社がOpusクラスを上回る能力を持つと位置付ける最上位の「Mythos（ミュトス）クラス」に属するモデルで、これまでセキュリティ上の懸念から一般公開を見送ってきた水準の能力を、悪用を防ぐ保護機能（セーフガード）とともに初めて全ユーザーに開放した。同時に、保護機能の一部を解除した上位版…",
-      "author": "ITmedia AI＋ 最新記事一覧"
-    },
-    {
-      "id": "hatena-https://qiita.com/BrainDirection/items/5215ea3cd1ec635a1636",
-      "source": "hatena",
-      "title": "VPNなしで社外から社内へ：Cloudflare Zero Trust（無料枠）ZTNA構築手順 - Qiita",
-      "url": "https://qiita.com/BrainDirection/items/5215ea3cd1ec635a1636",
-      "publishedAt": "2026-06-10T03:00:55.000Z",
-      "summary": "はじめに 「社外から社内システムに入る手段がVPNしかない」「VPN装置の脆弱性対応に追われている」——中小規模の情シスでよくある悩みです。 本記事では、Cloudflare Zero Trust を使って、VPNを使わずに社外から社内リソース（社内Web・RDPなど）へ安全にアクセスする ZTNA（Zero Trust Network Access） を構築する手...",
-      "thumbnail": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGNDQ0NTUwOCUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc4MDk4NzE2NT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZmRjOTEzNDQ2YzI4MzliYjRhYTU2MzdhZDVhZTkyNGU%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D3fa8a225913f3e396557b36c0d2149fb?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9VlBOJUUzJTgxJUFBJUUzJTgxJTk3JUUzJTgxJUE3JUU3JUE0JUJFJUU1JUE0JTk2JUUzJTgxJThCJUUzJTgyJTg5JUU3JUE0JUJFJUU1JTg2JTg1JUUzJTgxJUI4JUVGJUJDJTlBQ2xvdWRmbGFyZSUyMFplcm8lMjBUcnVzdCVFRiVCQyU4OCVFNyU4NCVBMSVFNiU5NiU5OSVFNiU5RSVBMCVFRiVCQyU4OVpUTkElRTYlQTclOEIlRTclQUYlODklRTYlODklOEIlRTklQTAlODYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz00YzgwZDY5OWU1NGIyNGZmNjg2YjQzMjM1ZjVlMTQ0MA&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBCcmFpbkRpcmVjdGlvbiZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTJiOWNkNTljMDI2MDRlOGEwOGQ3YmUxYmRiYTJlZDJl&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=942e9d77bbfc800515b05f62b73a6d1b",
-      "bookmarkCount": 42
-    },
-    {
-      "id": "feedly-https://www.itmedia.co.jp/aiplus/article/2606/10/2000000075/",
-      "source": "feedly",
-      "title": "Anthropicの最新AI「Fable 5」、試すなら今？　Claudeのレート制限リセット　サブスクで使えるのは6月22日まで",
-      "url": "https://www.itmedia.co.jp/aiplus/article/2606/10/2000000075/",
-      "publishedAt": "2026-06-10T02:19:29.000Z",
-      "summary": "米Anthropicは、チャットAI「Claude」の5時間および週次のレート制限をリセットしたと発表した。最上位の「Mythosクラス」に属するAIモデル「Claude Fable 5」を試すよう促している。",
-      "author": "ITmedia AI＋ 最新記事一覧"
     },
     {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/10/5165.html",
@@ -615,25 +701,6 @@
       "author": "テクノエッジ TechnoEdge"
     },
     {
-      "id": "feedly-https://www.itmedia.co.jp/aiplus/article/2606/10/2000000074/",
-      "source": "feedly",
-      "title": "JR東「みどりの窓口」に生成AI導入検証　乗客と対話→係員に引き継ぎ　NECと共同",
-      "url": "https://www.itmedia.co.jp/aiplus/article/2606/10/2000000074/",
-      "publishedAt": "2026-06-10T01:36:41.000Z",
-      "summary": "利用者が音声でAIと対話し、きっぷ購入に必要な情報を整理した上で窓口係員に引き継ぐ。",
-      "author": "ITmedia AI＋ 最新記事一覧"
-    },
-    {
-      "id": "hatena-https://ryuuneko.com/blog/furigana-api",
-      "source": "hatena",
-      "title": "ふりがなAPI — 日本語テキストを自然な読み仮名に変換 - 黒猫ゲーム部",
-      "url": "https://ryuuneko.com/blog/furigana-api",
-      "publishedAt": "2026-06-10T01:17:29.000Z",
-      "summary": "黒猫ゲーム部が提供するふりがなAPIは、日本語テキスト内の漢字・数字・日付・時刻などを自然な読み仮名に変換するAPIです。配信の読み上げBOTやコメント読み上げプラグインのバックエンドとして動作しています。 形態素解析エンジン（Lindera / IPADIC辞書）と独自辞書を組み合わせ、日本語的に正しい読みよりも話し言...",
-      "thumbnail": "https://ryuuneko.com/logo.png",
-      "bookmarkCount": 21
-    },
-    {
       "id": "feedly-https://note.com/npaka/n/n23a91ac76964",
       "source": "feedly",
       "title": "Codex で Autodesk Maya の操作を試す",
@@ -643,24 +710,14 @@
       "author": "npaka"
     },
     {
-      "id": "hatena-https://tech.layerx.co.jp/entry/2026/06/09/181025",
+      "id": "hatena-https://zenn.dev/softbank/articles/99d0bb48b30dce",
       "source": "hatena",
-      "title": "マルチモーダル知識グラフ「RAG-Anything」を用いた複雑な実世界ドキュメントの理解 - LayerX エンジニアブログ",
-      "url": "https://tech.layerx.co.jp/entry/2026/06/09/181025",
-      "publishedAt": "2026-06-10T00:06:09.000Z",
-      "summary": "※本記事は、2026年5月までLayerXのAi Workforce事業部でR&Dインターンとして活躍してくれた kemotoさんによる執筆です。本人のインターン期間終了に伴い、LayerX の koichi（こいち）が代理で投稿いたします。最先端のAI協業の現場で得られたリアルな学びを、ぜひご覧ください！ -- こんにちは。LayerX AiWorkforce 事業...",
-      "thumbnail": "https://cdn.image.st-hatena.com/image/scale/2070432b85b69f857d998d23f04ecb3f19a75b76/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fi%2Fipod_nana%2F20260610%2F20260610132829.png",
-      "bookmarkCount": 8
-    },
-    {
-      "id": "hatena-https://zenn.dev/explaza/articles/b04ad08bca46e1",
-      "source": "hatena",
-      "title": "そのテスト、本当にバグを検出できますか？——Mutation Testingでテストの質を測る",
-      "url": "https://zenn.dev/explaza/articles/b04ad08bca46e1",
-      "publishedAt": "2026-06-09T23:10:58.000Z",
-      "summary": "はじめに こんにちは！ 株式会社エクスプラザのhyodoです！ 最近はコードだけでなく、テストもAIに書かせることが増えてきました。「この関数のテストを書いて」とお願いすれば、それっぽいテストが一瞬で出てきます。 でも、ここで一度立ち止まって考えたいことがあります。 そのテスト、本当に「良いテスト」ですか？ ...",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--D5XH5BgU--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%259D%25E3%2581%25AE%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2580%2581%25E6%259C%25AC%25E5%25BD%2593%25E3%2581%25AB%25E3%2583%2590%25E3%2582%25B0%25E3%2582%2592%25E6%25A4%259C%25E5%2587%25BA%25E3%2581%25A7%25E3%2581%258D%25E3%2581%25BE%25E3%2581%2599%25E3%2581%258B%25EF%25BC%259F%25E2%2580%2594%25E2%2580%2594Mutation%2520Testing%25E3%2581%25A7%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2581%25AE%25E8%25B3%25AA%25E3%2582%2592%25E6%25B8%25AC%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:hyodo%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzQzOWQzZGM0MGMuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BE%25E3%2582%25A8%25E3%2582%25AF%25E3%2582%25B9%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25B6%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSTRrc09uN0ZqNExwTzJBMkdWWmhFOXNEVllSOVJySGZVTzJDLWtKTjg3MlNfNGVZOD1zOTYtYw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 35
+      "title": "NotebookLM図解術！フレームワーク特化カスタム指示",
+      "url": "https://zenn.dev/softbank/articles/99d0bb48b30dce",
+      "publishedAt": "2026-06-09T22:56:52.000Z",
+      "summary": "「ボタン一発でスライド資料を作ってみたけれど、なんだか物足りない……」と困ったことはありませんでしたか？ 「AIが自動で綺麗にまとめてくれたけれど、自分が本当に見せたい『分析フレームワークのマトリックス図』や『業務プロセスのフロー図』が抜けていて、結局スライドで手直ししている……」 こんな使い方だと、せ...",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--rVYwY_Ua--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:NotebookLM%25E5%259B%25B3%25E8%25A7%25A3%25E8%25A1%2593%25EF%25BC%2581%25E3%2583%2595%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%25A0%25E3%2583%25AF%25E3%2583%25BC%25E3%2582%25AF%25E7%2589%25B9%25E5%258C%2596%25E3%2582%25AB%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%25A0%25E6%258C%2587%25E7%25A4%25BA%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E6%259D%25BE%25E6%25B0%25B8%25E6%25A0%2584%25E4%25BA%25BA%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzg5M2YzODNlZDIuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2582%25BD%25E3%2583%2595%25E3%2583%2588%25E3%2583%2590%25E3%2583%25B3%25E3%2582%25AF%2520%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2U4NzkzNTdlNzkuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "bookmarkCount": 15
     },
     {
       "id": "feedly-https://note.com/npaka/n/n337118664b85",
@@ -776,24 +833,14 @@
       "author": "テクノエッジ TechnoEdge"
     },
     {
-      "id": "hatena-https://zenn.dev/g2/articles/7aeb22e8ebbf82",
+      "id": "hatena-https://qiita.com/ktdatascience/items/6f7e861f0cc7df3de4c0",
       "source": "hatena",
-      "title": "どこからでもAIで仕事をできるようにしたけど、疲れてやめた話",
-      "url": "https://zenn.dev/g2/articles/7aeb22e8ebbf82",
-      "publishedAt": "2026-06-09T06:35:17.000Z",
-      "summary": "お風呂から始まるエンジニアリング きっかけはお風呂でした。私はお風呂が好きで、毎日湯船に一時間は浸かっています。お風呂でのんびり小説や漫画を読む。熱でも出ない限りは、そうやって湯船に浸かってのんびりとする時間は欠かさずとっていました。 AIがまだそこまで長時間稼働できなかった今年の初め。お風呂に入る...",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--yIckv1iP--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%25A9%25E3%2581%2593%25E3%2581%258B%25E3%2582%2589%25E3%2581%25A7%25E3%2582%2582AI%25E3%2581%25A7%25E4%25BB%2595%25E4%25BA%258B%25E3%2582%2592%25E3%2581%25A7%25E3%2581%258D%25E3%2582%258B%25E3%2582%2588%25E3%2581%2586%25E3%2581%25AB%25E3%2581%2597%25E3%2581%259F%25E3%2581%2591%25E3%2581%25A9%25E3%2580%2581%25E7%2596%25B2%25E3%2582%258C%25E3%2581%25A6%25E3%2582%2584%25E3%2582%2581%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:G2%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzZlZGRkZDkwODIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 26
-    },
-    {
-      "id": "hatena-https://zenn.dev/acntechjp/articles/32c9e28ae49e43",
-      "source": "hatena",
-      "title": "AIで脆弱性が増えた今、実際に悪用されているのは何なのか?",
-      "url": "https://zenn.dev/acntechjp/articles/32c9e28ae49e43",
-      "publishedAt": "2026-06-09T05:58:08.000Z",
-      "summary": "測る道具も性質が違います。CVE件数は「発見」であって悪用とは別物。KEVは「確認された悪用」で、CISA KEVは無償・低ノイズですが保守的、VulnCheck KEVは広いものの exploit intelligence を販売する企業の発表です。EPSS(FIRST)は悪用される確率の予測で、実際の悪用記録ではありません。 そして最大の前提として、ど...",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--51rAuXsO--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25A7%25E8%2584%2586%25E5%25BC%25B1%25E6%2580%25A7%25E3%2581%258C%25E5%25A2%2597%25E3%2581%2588%25E3%2581%259F%25E4%25BB%258A%25E3%2580%2581%25E5%25AE%259F%25E9%259A%259B%25E3%2581%25AB%25E6%2582%25AA%25E7%2594%25A8%25E3%2581%2595%25E3%2582%258C%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E3%2581%25AE%25E3%2581%25AF%25E4%25BD%2595%25E3%2581%25AA%25E3%2581%25AE%25E3%2581%258B%253F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:maiku%2520shimomi%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2U2ZDA4MDY5ODcuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Accenture%2520Japan%2520%2528%25E6%259C%2589%25E5%25BF%2597%2529%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzhlODkyMDM1M2IuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 21
+      "title": "なぜBraveは拡張機能なしで広告を消せるのか？仕組みを5分でゆるく整理する - Qiita",
+      "url": "https://qiita.com/ktdatascience/items/6f7e861f0cc7df3de4c0",
+      "publishedAt": "2026-06-09T05:47:38.000Z",
+      "summary": "対象読者: Braveを使っている（または気になっている）人。ブラウザの内部実装に詳しくなくてもOKです。 Braveは広告を「隠す」のではなく、そもそも取りに行かない。これが速さと通信量削減の正体です。ちなみにBraveの回し者ではないです。純粋に仕組みが気になったのでまとめてます。 私はBraveに乗り換えてから、ペ...",
+      "thumbnail": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Ftech-festa-ogp-background-4b5015b2c518c7e6b9062a7c9f5f5e90.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYzOTM3NDk2JTJGZDAxZmQwNDA0YmY2ODY3NmFhZTI5ZjNhM2Y5YTUzZGZlMjQ4YmIyYSUyRmxhcmdlLnBuZyUzRjE3NDU5MDYwMzY_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWYyZjBmZTU5NjFkZjdiNDgwY2NkYzUyOTc2MzQ1Yzk1%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D01799e75ac5f8111fd0473b7a1186a7e?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgxJUFBJUUzJTgxJTlDQnJhdmUlRTMlODElQUYlRTYlOEIlQTElRTUlQkMlQjUlRTYlQTklOUYlRTglODMlQkQlRTMlODElQUElRTMlODElOTclRTMlODElQTclRTUlQkElODMlRTUlOTElOEElRTMlODIlOTIlRTYlQjYlODglRTMlODElOUIlRTMlODIlOEIlRTMlODElQUUlRTMlODElOEIlRUYlQkMlOUYlRTQlQkIlOTUlRTclQjUlODQlRTMlODElQkYlRTMlODIlOTI1JUU1JTg4JTg2JUUzJTgxJUE3JUUzJTgyJTg2JUUzJTgyJThCJUUzJTgxJThGJUU2JTk1JUI0JUU3JTkwJTg2JUUzJTgxJTk5JUUzJTgyJThCJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjNGRkZGRkYmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9NGVkMGUwYjI2MTMyNmFlZTE2NWRkODJhNTI0N2RhNDA&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBrdGRhdGFzY2llbmNlJnR4dC1jb2xvcj0lMjNGRkZGRkYmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MDVjZGI1NWNkNzdkZDU2NmFjZmQwYTA5MGQyYzMxMGE&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=52cc7fec70d51173d2377538d7d9a6db",
+      "bookmarkCount": 114
     },
     {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/09/5161.html",
@@ -958,26 +1005,6 @@
       "author": "テクノエッジ TechnoEdge"
     },
     {
-      "id": "feedly-https://www.techno-edge.net/article/2026/06/08/5156.html",
-      "source": "feedly",
-      "title": "iPhone Foldはこれなのか？COMPUTEXで謎のモックを発見(山根康宏)",
-      "url": "https://www.techno-edge.net/article/2026/06/08/5156.html",
-      "publishedAt": "2026-06-08T09:02:43.000Z",
-      "summary": "COMPUTEXで発見されたモックは横折り折りたたみiPhoneの可能性があり、これが実現すれば新しいUIや使い勝手の向上が期待される。",
-      "thumbnail": "https://www.techno-edge.net/imgs/rss/32054.jpg",
-      "author": "テクノエッジ TechnoEdge"
-    },
-    {
-      "id": "feedly-https://www.techno-edge.net/article/2026/06/08/5155.html",
-      "source": "feedly",
-      "title": "ヤーヤーヤーヤーヤー！セガ『クレイジータクシー：ワールドツアー』2027年発売　マルチ対応の完全新作、The Offspring楽曲も復活",
-      "url": "https://www.techno-edge.net/article/2026/06/08/5155.html",
-      "publishedAt": "2026-06-08T04:34:27.000Z",
-      "summary": "ヤーヤーヤーヤーヤー！6月8日配信の『XBOX Games Showcase』で、セガが新作『クレイジータクシー：ワールドツアー』を発表しました。",
-      "thumbnail": "https://www.techno-edge.net/imgs/rss/32084.jpg",
-      "author": "テクノエッジ TechnoEdge"
-    },
-    {
       "id": "feedly-https://tech.algomatic.jp/entry/advent-calendar/2026-06/capybara",
       "source": "feedly",
       "title": "実装者を信じてはいけない",
@@ -1101,24 +1128,6 @@
       "publishedAt": "2026-06-05T21:09:24.000Z",
       "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2063004981788299264/img/jDfqEksQ1eXoLZX8.jpg",
       "author": "@NotebookLM"
-    },
-    {
-      "id": "feedly-https://note.com/npaka/n/ndeef4df16dd2",
-      "source": "feedly",
-      "title": "Gemma 4 QAT の概要",
-      "url": "https://note.com/npaka/n/ndeef4df16dd2",
-      "publishedAt": "2026-06-05T20:48:59.000Z",
-      "summary": "以下の記事が面白かったので、簡単にまとめました。 ・Gemma 4 QAT models: Optimizing model compression for mobile and laptop efficiency 続きをみる",
-      "author": "npaka"
-    },
-    {
-      "id": "feedly-https://note.com/npaka/n/n940b7ad4ce19",
-      "source": "feedly",
-      "title": "Irodori TTS の音声クローンを試す",
-      "url": "https://note.com/npaka/n/n940b7ad4ce19",
-      "publishedAt": "2026-06-05T13:14:12.000Z",
-      "summary": "「Irodori TTS」の音声クローンを試したのでまとめました。 続きをみる",
-      "author": "npaka"
     },
     {
       "id": "x-2062874889049276570",
@@ -3963,7 +3972,7 @@
       "publishedAt": "2026-05-29T01:17:50.000Z",
       "summary": "パランティアは「最先端AI企業」なのか──海外で広がる“監視国家AI”への警戒 2026年3月5日、首相官邸、外務省は、高市総理がPalantir Technologiesのピーター・ティール共同創業者兼会長幹部と面会したことを公表した。 出典： 首相官邸 一見すると、先端技術に関する通常の外交投稿に見える。 しかし海外では、Palantir ...",
       "thumbnail": "https://newshonyaku.com/wp-content/uploads/2026/05/20260528.png",
-      "bookmarkCount": 57
+      "bookmarkCount": 74
     },
     {
       "id": "x-2060056572286701752",
