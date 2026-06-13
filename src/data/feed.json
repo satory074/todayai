@@ -1,41 +1,60 @@
 {
-  "updatedAt": "2026-06-12T18:46:49.847Z",
+  "updatedAt": "2026-06-13T01:05:00.850Z",
   "items": [
     {
-      "id": "feedly-https://qiita.com/TianqiYuan/items/ceb969d84a27583c6304",
+      "id": "feedly-https://qiita.com/shu15511551/items/231620bd2334cff74cf3",
       "source": "feedly",
-      "title": "GitHub で注目したい14のオープンソース AI Agent ツール",
-      "url": "https://qiita.com/TianqiYuan/items/ceb969d84a27583c6304",
-      "publishedAt": "2026-06-12T17:59:33.000Z",
-      "summary": "オリジナルの公開場所: https://www.nocobase.com/en/blog/github-open-source-ai-agent-tools-16 最近、私たちは AI Agent のオープンソースプロジェクト に関するおすすめ記事をいくつか公開し、多くの開...",
+      "title": "（告知編）自作の VBA 管理ツールを更新 ── Excel MCP を参考に、開いたままのブックを触れるようにした話",
+      "url": "https://qiita.com/shu15511551/items/231620bd2334cff74cf3",
+      "publishedAt": "2026-06-13T00:55:14.000Z",
+      "summary": "はじめに この連載で何度か紹介してきた自作ツール vba_manager.py（GitHub で公開中）を大きく更新したので、その告知です。あわせて、使ってみて分かった「これで何が変わったのか」の話をします。 もともとこのツールは、Excel の VBA コードを管...",
       "author": "AIタグが付けられた新着記事 - Qiita"
     },
     {
-      "id": "feedly-https://qiita.com/lemonIN/items/782919664e2378ff8c60",
+      "id": "feedly-https://qiita.com/kotaro_ai_lab/items/06c10280c6678d7ef7ed",
       "source": "feedly",
-      "title": "バズれ！配信者アクション",
-      "url": "https://qiita.com/lemonIN/items/782919664e2378ff8c60",
-      "publishedAt": "2026-06-12T17:20:24.000Z",
-      "summary": "バズれ！配信者アクション 企画概要 プレイヤーは駆け出しのゲーム配信者となり、2Dアクションゲームをプレイする傍ら、配信中に起こる様々なトラブルを乗り越え、視聴者の心をつかみ「バズる」ことを目指す、新感覚2Dアクションゲームです。PCプラットフォームで、気軽にサクッとプ...",
+      "title": "【最新】Claude Fable 5 登場 — Opus の「上」に置かれた最上位ティアの全貌（料金・API差分・移行ポイント）",
+      "url": "https://qiita.com/kotaro_ai_lab/items/06c10280c6678d7ef7ed",
+      "publishedAt": "2026-06-13T00:54:52.000Z",
+      "summary": "株式会社Good Labでエンジニアをしている コータロー です。 日々、Java・SQL・Gitなどの技術情報や、新人エンジニア向けの学習ノウハウ、 AI活用についての情報を発信しています。 Good Labについて気になった方は、コーポレートサイトもぜひご覧ください。 ...",
       "author": "AIタグが付けられた新着記事 - Qiita"
     },
     {
-      "id": "feedly-https://qiita.com/CHINADEA/items/9ad5762a7d84e403bdf8",
+      "id": "feedly-https://qiita.com/d94231/items/f0bdb0f5359c302461b3",
       "source": "feedly",
-      "title": "Tripo AIの「Project Eden」とは？ AI 3DとWorld Modelの次のステージ",
-      "url": "https://qiita.com/CHINADEA/items/9ad5762a7d84e403bdf8",
-      "publishedAt": "2026-06-12T17:18:25.000Z",
-      "summary": "Tripo AIの「Project Eden」とは？ AI 3DとWorld Modelの次のステージ AI 3D Foundation ModelとWorld Modelの研究開発を進めるTripo AIは、総額約2億ドルの資金調達とともに、新たな研究プロジェクト「Pr...",
+      "title": "【総集編】気象庁データを分析してわかった、データ分析で必ずハマる6つの罠------データ分析で誰もがハマる罠は、気候データの中にも潜んでいた。",
+      "url": "https://qiita.com/d94231/items/f0bdb0f5359c302461b3",
+      "publishedAt": "2026-06-12T23:39:52.000Z",
+      "summary": "はじめに 気象庁の40年分データを分析し続けた。 すると、 「東京が一番暑い」 「温暖化は一直線に進む」 「暖冬なのに大雪が増えた」 という当たり前だと思っていた話が、ことごとく \"半分だけ正しかった\" 。 そして振り返ってみると、間違っていたのは気候の理解だけではな...",
       "author": "AIタグが付けられた新着記事 - Qiita"
     },
     {
-      "id": "feedly-https://qiita.com/SmartTec/items/43ca2f22a5d051e8c9d4",
+      "id": "feedly-https://qiita.com/aakan/items/530111020b79dfc4e3c4",
       "source": "feedly",
-      "title": "Claude Fable 5 をエンジニア視点で読み解く｜Mythosクラス初の一般公開モデルと安全分類器の罠",
-      "url": "https://qiita.com/SmartTec/items/43ca2f22a5d051e8c9d4",
-      "publishedAt": "2026-06-12T17:07:03.000Z",
-      "summary": "はじめに 2026年6月9日、Anthropic が新モデル Claude Fable 5 を発表しました。Opus の上に位置する「Mythos クラス」の、初めて一般公開されたモデルです。本記事では、エンジニアが押さえるべきポイント（能力・料金・API・安全分類器の...",
+      "title": "〖AI News まとめ〗生成AI ニュースレポート — 2026-06-13",
+      "url": "https://qiita.com/aakan/items/530111020b79dfc4e3c4",
+      "publishedAt": "2026-06-12T23:20:46.000Z",
+      "summary": "生成AI ニュースレポート — 2026-06-13 収集日時: 2026-06-13 対象期間: 過去48時間（直近情報を中心に） 記事数: 24件 主要ニュース 1. DiffusionGemma: 開発者ガイド ソース: Google Developer...",
       "author": "AIタグが付けられた新着記事 - Qiita"
+    },
+    {
+      "id": "hatena-https://togetter.com/li/2708640",
+      "source": "hatena",
+      "title": "『まじで人死ぬぞこれ』府中本町駅の改札外のエレベーターの異常動作が話題に「タワー・オブ・テラーで見た動き」→メンテナンスへ「人の命を救ったよコレは」",
+      "url": "https://togetter.com/li/2708640",
+      "publishedAt": "2026-06-12T22:06:56.000Z",
+      "summary": "おけまる @okemarudayoFT6 まじで人死ぬぞこれ アトラクションじゃないしやべーよこれ 府中本町駅の改札外のエレベーターは絶対使わないように！マジで人死ぬ さっきまでは2階着くときに10センチぐらい上いってたしいつロープ切れるのかわからん pic.x.com/nSWgwa9f8I 2026-06-12 21:20:15 おけまる @okemarudayoFT6 18...",
+      "thumbnail": "https://s.tgstc.com/ogp3/673c522476bd9b0a2b4a18ec610b9d1f-1200x630.jpeg",
+      "bookmarkCount": 34
+    },
+    {
+      "id": "feedly-https://monoist.itmedia.co.jp/mn/articles/2606/13/news019.html",
+      "source": "feedly",
+      "title": "トヨタが抜かれる日――キオクシア首位奪取、2005年「時価総額トップ10」を振り返る",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2606/13/news019.html",
+      "publishedAt": "2026-06-12T22:00:00.000Z",
+      "summary": "2026年6月8日～12日に公開された記事の中から、MONOist編集部が厳選した今週の注目ニュースをお届けします。",
+      "author": "ITmedia AI＋ 最新記事一覧"
     },
     {
       "id": "feedly-https://zenn.dev/webtoolgen/articles/bf928122e37c5f",
@@ -58,6 +77,16 @@
       "author": "Zennの「AI」のフィード"
     },
     {
+      "id": "hatena-https://gigazine.net/news/20260612-deezer-ai-generated-music-detector/",
+      "source": "hatena",
+      "title": "無料のAI音楽検出ツールを音楽配信サービスのDeezerがリリース、YouTube MusicやSpotifyなどのプレイリストをスキャン可能",
+      "url": "https://gigazine.net/news/20260612-deezer-ai-generated-music-detector/",
+      "publishedAt": "2026-06-12T15:03:46.000Z",
+      "summary": "音楽ストリーミングサービスのDeezerが、YouTube Music・Spotify・Apple Musicなどの他サービスで作成したプレイリストをスキャンして、プレイリストに含まれているAI生成音楽を検出できる無料サービスをリリースしました。 Deezerの無料AI 音楽検出機能｜AI 曲チェッカー https://www.deezer.com/explore/ja/ai-music-d...",
+      "thumbnail": "https://i.gzn.jp/img/2026/06/12/deezer-ai-generated-music-detector/00.jpg",
+      "bookmarkCount": 30
+    },
+    {
       "id": "hatena-https://gigazine.net/news/20260613-anime-2026summer/",
       "source": "hatena",
       "title": "2026年夏開始の新作アニメ一覧",
@@ -65,7 +94,7 @@
       "publishedAt": "2026-06-12T15:02:48.000Z",
       "summary": "放送・配信中のアニメが終わり、入れ替わりに新たな作品が始まる時期がやってきました。2026年夏(2026年6月～2026年9月ごろ)に始まるアニメの数は約75本で、近年の傾向から外れることなく多め。1話2分～5分程度のショートアニメも含まれているとはいえ、PVをチェックするだけでも相当な時間を要します。 オリジナルアニ...",
       "thumbnail": "https://i.gzn.jp/img/2026/06/13/anime-2026summer/00.png",
-      "bookmarkCount": 8
+      "bookmarkCount": 50
     },
     {
       "id": "feedly-https://zenn.dev/wharfe/articles/claude-code-japanese-first-person",
@@ -105,7 +134,7 @@
       "publishedAt": "2026-06-12T14:16:22.000Z",
       "summary": "厚生労働省は6月12日、2023年1月4日から25年10月29日に送信された「Microsoft Teams」のチャットが消失したと発表した。原因はグループウェアの運用を委託していた東芝による作業ミス。消えたデータのうち、行政文書が含まれる一部チャットは復元が困難という。 26年4月25日に実施した更改作業にミスがあった。削除され...",
       "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/12/cover_news129.jpg",
-      "bookmarkCount": 34
+      "bookmarkCount": 97
     },
     {
       "id": "feedly-https://zenn.dev/wharfe/articles/claude-code-tool-result-confabulation",
@@ -124,7 +153,7 @@
       "url": "https://www.global.toshiba/jp/news/corporate/2026/06/news-20260612-01.html",
       "publishedAt": "2026-06-12T14:11:37.000Z",
       "summary": "当社が受注した厚生労働省LANシステムの更改作業において、一部のデータを誤って消失させる事案が発生しました。 関係者の皆様に多大なご迷惑とご心配をおかけしておりますことを、深くお詫び申し上げます。 当社は本件を真摯に受け止め、再発防止に取り組んでまいります。 １．事案の概要 厚生労働省LANシステム（Micro...",
-      "bookmarkCount": 12
+      "bookmarkCount": 70
     },
     {
       "id": "feedly-https://zenn.dev/shoebill_dev27/books/claude-code-ops",
@@ -166,6 +195,16 @@
       "author": "Zennの「AI」のフィード"
     },
     {
+      "id": "hatena-https://www.nikkei.com/article/DGXZQOUA12ATG0S6A610C2000000/",
+      "source": "hatena",
+      "title": "厚労省、Teamsチャット750万件が消失　委託業者の誤操作で - 日本経済新聞",
+      "url": "https://www.nikkei.com/article/DGXZQOUA12ATG0S6A610C2000000/",
+      "publishedAt": "2026-06-12T13:39:26.000Z",
+      "summary": "厚生労働省は12日、業務で使う米マイクロソフト「Teams（チームス）」のチャット約750万件が消失し、復元できない状態にあると公表した。省内システムの運用を委託した東芝がシステム切り替え中に誤って操作したことが原因という。業務上のチャットは行",
+      "thumbnail": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3162210012062026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&h=630&w=1200&s=37a1e19db61453028fe5637acef45445",
+      "bookmarkCount": 60
+    },
+    {
       "id": "feedly-https://zenn.dev/yydev/articles/99ed65af24c569",
       "source": "feedly",
       "title": "「ショートカット、覚えた瞬間がピーク」問題を、Claude Codeと組んで解決した",
@@ -174,6 +213,15 @@
       "summary": "作ったもの ショートカットを ツールごとにまとめて管理 できる Web アプリ「KeyMap」を作りました。 普段はシステムエンジニアをしているのですが、実装は VS Code 上の Claude Code と相談しながら、自分は “使いやすさ” の判断に集中する という作り方で進めました。 🔗 https://keymap-app.vercel.app やれることはシンプルです。 VS …",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--DZqgI6lL--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25BC%25E3%2583%2588%25E3%2582%25AB%25E3%2583%2583%25E3%2583%2588%25E3%2580%2581%25E8%25A6%259A%25E3%2581%2588%25E3%2581%259F%25E7%259E%25AC%25E9%2596%2593%25E3%2581%258C%25E3%2583%2594%25E3%2583%25BC%25E3%2582%25AF%25E3%2580%258D%25E5%2595%258F%25E9%25A1%258C%25E3%2582%2592%25E3%2580%2581Claude%2520Code%25E3%2581%25A8%25E7%25B5%2584%25E3%2582%2593%25E3%2581%25A7%25E8%25A7%25A3%25E6%25B1%25BA%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:yy%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2Q5ZDY3NWQyMjEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
       "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "hatena-https://pc.watch.impress.co.jp/docs/news/2116913.html",
+      "source": "hatena",
+      "title": "MCP連携でOpus 4.8超え、1兆パラメータLLM「Kimi K2.7 Code」無償公開",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2116913.html",
+      "publishedAt": "2026-06-12T12:40:27.000Z",
+      "thumbnail": "https://pc.watch.impress.co.jp/img/pcw/list/2116/913/01.png",
+      "bookmarkCount": 87
     },
     {
       "id": "feedly-https://zenn.dev/yokoto/articles/4d8d067ba404c4",
@@ -212,6 +260,15 @@
       "summary": "はじめに MCP を触り始めると、つい「何本つないだか」を進捗として見たくなります。自分も最初はその見方をしていました。ただ、2026-05-31 に Vault 運用ルールを見直したとき、先に固定すべきなのは接続数ではなく、仕様変化をどう追うかという判断基準だと整理しました。 その日に実際にやったのは、週次レビューで見えた差分を AI-AGENT.md、AGENTS.md、runtime-…",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--TnFw9uiJ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:MCP%25E3%2581%25AF%25E6%258E%25A5%25E7%25B6%259A%25E6%2595%25B0%25E3%2582%2588%25E3%2582%258Aprotocol%2520watch%25E3%2582%2592%25E5%2585%2588%25E3%2581%25AB%25E5%259B%25BA%25E5%25AE%259A%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:K.D%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2NlNGZmNzQ5NDcuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
       "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "hatena-https://www.watch.impress.co.jp/docs/news/2116886.html",
+      "source": "hatena",
+      "title": "AIに「航空機並みの安全審査」「独裁を防ぐ」　アンソロピックCEOが政策提言",
+      "url": "https://www.watch.impress.co.jp/docs/news/2116886.html",
+      "publishedAt": "2026-06-12T11:44:25.000Z",
+      "thumbnail": "https://www.watch.impress.co.jp/img/ipw/list/2116/886/an1.jpg",
+      "bookmarkCount": 38
     },
     {
       "id": "feedly-https://zenn.dev/kikaikaya/articles/flowsmith-declarative-ai-workflow",
@@ -1514,7 +1571,7 @@
       "publishedAt": "2026-06-12T09:40:59.000Z",
       "summary": "はじめに こんにちは、タイミーでエンジニアをしている徳富(@yannKazu1)です。 タイミーではメインサービスのバックエンドを Rails で開発しています（Go を採用しているプロダクトもありますが、本記事では Rails を前提とします）。 突然ですが、皆さんのチームでは CI の待ち時間、気になっていませんか？ 「Push し...",
       "thumbnail": "https://ogimage.blog.st-hatena.com/26006613497622710/14945776032041484973/1781233303",
-      "bookmarkCount": 15
+      "bookmarkCount": 26
     },
     {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/12/5177.html",
@@ -1534,7 +1591,7 @@
       "publishedAt": "2026-06-12T09:09:24.000Z",
       "summary": "コードエディタ「Zed」を開発するZedが、AIエージェント時代に向けた開発履歴管理ツール「DeltaDB」を発表しました。Gitのようにコミット単位で変更を記録するのではなく、コードが作られていく途中の会話や編集操作まで記録し、人間とAIエージェントが作業の流れを追いやすくする仕組みとのことです。 Software Is Made...",
       "thumbnail": "https://i.gzn.jp/img/2026/06/12/zed-deltadb/00.jpg",
-      "bookmarkCount": 12
+      "bookmarkCount": 30
     },
     {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/12/5176.html",
@@ -1553,7 +1610,7 @@
       "url": "https://forest.watch.impress.co.jp/docs/serial/usecopilotpc/2116720.html",
       "publishedAt": "2026-06-12T08:59:11.000Z",
       "thumbnail": "https://forest.watch.impress.co.jp/img/wf/list/2116/720/top.png",
-      "bookmarkCount": 5
+      "bookmarkCount": 9
     },
     {
       "id": "hatena-https://aba.hatenablog.com/entry/2026/06/12/175339",
@@ -1563,7 +1620,7 @@
       "publishedAt": "2026-06-12T08:54:49.000Z",
       "summary": "Claude Fable 5 がリリースされた。Fable 5は、Anthropic が “Mythos級” と呼ぶ、長期自律タスクや高度な研究・サイバー領域で従来モデルを大きく上回る能力層のモデルを、一般提供向けに安全制御付きで公開した高性能モデルである。Fable 5 は長期・複雑なタスクに強いが、サイバー、生物、モデル蒸留など一部の高リス...",
       "thumbnail": "https://cdn.image.st-hatena.com/image/scale/f45cd54cc43fbfa26269031411324acb38609e1e/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FA%2FABA%2F20260612%2F20260612173914.gif",
-      "bookmarkCount": 36
+      "bookmarkCount": 102
     },
     {
       "id": "hatena-https://internet.watch.impress.co.jp/docs/news/2116742.html",
@@ -1572,7 +1629,7 @@
       "url": "https://internet.watch.impress.co.jp/docs/news/2116742.html",
       "publishedAt": "2026-06-12T07:35:34.000Z",
       "thumbnail": "https://internet.watch.impress.co.jp/img/iw/list/2116/742/1a.jpg",
-      "bookmarkCount": 162
+      "bookmarkCount": 206
     },
     {
       "id": "hatena-https://gigazine.net/news/20260612-jacket-pulls-drinking-water-from-air/",
@@ -1582,17 +1639,7 @@
       "publishedAt": "2026-06-12T07:25:53.000Z",
       "summary": "テキサス大学オースティン校の研究チームが、空気中の水分を集めて飲料水を取り出せるジャケット型デバイスを開発しました。この技術は繊維そのものに水分回収機能を持たせることで、ハイキングやキャンプ、農作業、災害対応、軍事活動など、飲料水を確保しにくい環境での利用を想定しています。 Scalable hierarchical ...",
       "thumbnail": "https://i.gzn.jp/img/2026/06/12/jacket-pulls-drinking-water-from-air/00.jpg",
-      "bookmarkCount": 111
-    },
-    {
-      "id": "hatena-https://togetter.com/li/2708372",
-      "source": "hatena",
-      "title": "自称インフルエンサーの要求を、店員が毅然と断っており信用できる店だと思った「店員さんも慣れているのかな」「今風な迷惑客」",
-      "url": "https://togetter.com/li/2708372",
-      "publishedAt": "2026-06-12T07:12:00.000Z",
-      "summary": "めいなん🍆 @054758373 昨日大須で細かいモノ色々買ってたんだけど、レジで目の前の客が「インフルエンサーだから提供しろ」みたいな事言ってる事案に初めて遭遇した。 都市伝説だと思っていた。 店員さんが笑顔で「ぶっ飛ばすぞ」的な事言っててココは信用出来るな！と思った。 2026-06-12 09:10:32",
-      "thumbnail": "https://s.tgstc.com/ogp3/21b84a11bd469d1c6cc69a1e912e46a0-1200x630.jpeg",
-      "bookmarkCount": 41
+      "bookmarkCount": 124
     },
     {
       "id": "feedly-https://tech.algomatic.jp/entry/2026/06/12/153036",
@@ -1620,17 +1667,7 @@
       "publishedAt": "2026-06-12T06:10:21.000Z",
       "summary": "this.copied = null, 2000); } }\" class=\"max-w-lg mx-auto pt-8 sm:pt-16\">",
       "thumbnail": "https://late.sh/static/og-image.png",
-      "bookmarkCount": 10
-    },
-    {
-      "id": "hatena-https://togetter.com/li/2708349",
-      "source": "hatena",
-      "title": "スキマバイトで無断欠勤したら3年間の利用停止になった…利用停止期間はサービスで差があるものの、無断欠勤に辟易する現場からの声が寄せられる",
-      "url": "https://togetter.com/li/2708349",
-      "publishedAt": "2026-06-12T06:06:39.000Z",
-      "summary": "スキマバイトで無断欠勤したら3年間の利用停止になった…利用停止期間はサービスで差があるものの、無断欠勤に辟易する現場からの声が寄せられる",
-      "thumbnail": "https://s.tgstc.com/ogp3/718f63ccb1fb36f78678e0556434760f-1200x630.jpeg",
-      "bookmarkCount": 36
+      "bookmarkCount": 40
     },
     {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/12/5175.html",
@@ -1650,17 +1687,7 @@
       "publishedAt": "2026-06-12T04:23:45.000Z",
       "summary": "だいじろー @DB_Daijiro Geminiはアメリカもイギリスも結構ジェミナイって発音されてるけど日本語はジェミニ（Google Japanの公式見解）、誰が日本語読み発音を決定するんだろうなあ🧐 2026-06-11 22:33:06 Geminiの日本語表記は「ジェミニ」 英語の発音との違いが話題に #エキスパートトピ（山口健太） - エキスパート...",
       "thumbnail": "https://s.tgstc.com/ogp3/fb2270d3f604eb0bce10c8f5850e5299-1200x630.jpeg",
-      "bookmarkCount": 49
-    },
-    {
-      "id": "hatena-https://speakerdeck.com/har1101/ezienteitukuragniawsderu-men-siyou",
-      "source": "hatena",
-      "title": "エージェンティックRAGにAWSで入門しよう！",
-      "url": "https://speakerdeck.com/har1101/ezienteitukuragniawsderu-men-siyou",
-      "publishedAt": "2026-06-12T04:15:47.000Z",
-      "summary": "2026/06/11 (木) AWSでAIエージェント構築を始めよう！Amazon Bedrock AgentCore 実践入門 での登壇資料です",
-      "thumbnail": "https://files.speakerdeck.com/presentations/972cce6ce9fc4c9587763ddb7f0c3219/slide_0.jpg?39668427",
-      "bookmarkCount": 24
+      "bookmarkCount": 64
     },
     {
       "id": "hatena-https://www.normaltech.ai/p/why-ai-hasnt-replaced-software-engineers",
@@ -1670,7 +1697,7 @@
       "publishedAt": "2026-06-12T03:45:13.000Z",
       "summary": "There is great anxiety and uncertainty about AI replacing jobs. How can we move past vague warnings and bombastic predictions and bring data to bear on this question? One good way is to look at the…",
       "thumbnail": "https://substackcdn.com/image/fetch/$s_!eBfS!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F931ce348-4a6a-44e9-ad78-322dd8421bd7_1286x764.png",
-      "bookmarkCount": 7
+      "bookmarkCount": 13
     },
     {
       "id": "feedly-https://www.itmedia.co.jp/aiplus/article/2606/12/2000000084/",
@@ -1688,16 +1715,7 @@
       "url": "https://internet.watch.impress.co.jp/docs/column/hobbytime/2116552.html",
       "publishedAt": "2026-06-12T03:31:15.000Z",
       "thumbnail": "https://internet.watch.impress.co.jp/img/iw/list/2116/552/001.jpg",
-      "bookmarkCount": 13
-    },
-    {
-      "id": "hatena-https://internet.watch.impress.co.jp/docs/yajiuma/2116657.html",
-      "source": "hatena",
-      "title": "裁判で双方の弁護士がAIを用いて存在しない架空の判例を引用、判事激怒で裁判は中止に【やじうまWatch】",
-      "url": "https://internet.watch.impress.co.jp/docs/yajiuma/2116657.html",
-      "publishedAt": "2026-06-12T03:24:13.000Z",
-      "thumbnail": "https://internet.watch.impress.co.jp/img/iw/list/2116/657/yajiuma-watch_3.png",
-      "bookmarkCount": 217
+      "bookmarkCount": 22
     },
     {
       "id": "x-2065269034317402139",
@@ -1726,16 +1744,6 @@
       "author": "npaka"
     },
     {
-      "id": "hatena-https://suumo.jp/journal/2026/06/12/217716/",
-      "source": "hatena",
-      "title": "日本初、2階建て「3Dプリンター住宅」誕生！ 造形はわずか10日、前例なき構造計算や法律の壁をどう突破したか　宮城県栗原市",
-      "url": "https://suumo.jp/journal/2026/06/12/217716/",
-      "publishedAt": "2026-06-12T02:00:06.000Z",
-      "summary": "宮城県栗原市の山あいののどかなまちに、高さ約6ｍの円筒形の建物が姿を現した。2025年11月、日本初となる「2階建て3Dプリンター住宅」が誕生したのだ。1階建ての事例はSUUMOジャーナルでも何度か紹介してきたが、2階建ては初。どのようにしてできあがったのか、今どうなっているのか、話を聞いた。 宮城県栗原市に日本...",
-      "thumbnail": "https://suumo.jp/journal/wp/wp-content/uploads/2026/06/217716_main.jpg",
-      "bookmarkCount": 403
-    },
-    {
       "id": "feedly-https://www.itmedia.co.jp/aiplus/article/2606/12/2000000083/",
       "source": "feedly",
       "title": "データセンター建設に足りないのは「発電」ではなく「送電」　AI需要で電力消費26％増、Gartner予想",
@@ -1745,33 +1753,33 @@
       "author": "ITmedia AI＋ 最新記事一覧"
     },
     {
+      "id": "hatena-https://www.gizmodo.jp/article/google-ofers-tpu-for-intel/",
+      "source": "hatena",
+      "title": "Googleがインテルに大量注文。半導体300万個を大口受注したインテル株も急成長 | ギズモード・ジャパン",
+      "url": "https://www.gizmodo.jp/article/google-ofers-tpu-for-intel/",
+      "publishedAt": "2026-06-12T01:30:42.000Z",
+      "summary": "テック業界に電撃走るニュースが飛び込んできました。Googleがインテルに対し、300万個を超えるTPUを発注したと報じられています。なんという大口顧客…！ CPU（中央演算処理装置）が何でもできる頭脳なのに対し、TPU（Tensor Processing Unit）はAIの機械学習や行列計算に特化した、Google独自の半導体のこと。 実は最近...",
+      "thumbnail": "https://media.loom-app.com/loom/2026/06/12/72b69578-5583-4b60-a92b-56c8a9369643/original.jpg?w=1200&h=630",
+      "bookmarkCount": 13
+    },
+    {
       "id": "hatena-https://pc.watch.impress.co.jp/docs/column/nishikawa/2116566.html",
       "source": "hatena",
       "title": "【西川和久の不定期コラム】 PC高すぎ問題へのアンチテーゼ！あえて「3年前のスペック」で作られた10万円ミニPCの実力",
       "url": "https://pc.watch.impress.co.jp/docs/column/nishikawa/2116566.html",
       "publishedAt": "2026-06-12T01:30:32.000Z",
       "thumbnail": "https://pc.watch.impress.co.jp/img/pcw/list/2116/566/H00.jpg",
-      "bookmarkCount": 7
+      "bookmarkCount": 16
     },
     {
-      "id": "hatena-https://atmarkit.itmedia.co.jp/ait/articles/2606/12/news014.html",
+      "id": "hatena-https://xtech.nikkei.com/atcl/nxt/column/18/00692/061100190/",
       "source": "hatena",
-      "title": "プログラミングの知識は不要？ 　話題の「Claude Code」で非エンジニアが「欲しかったあのツール」を作る",
-      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2606/12/news014.html",
-      "publishedAt": "2026-06-12T01:23:12.000Z",
-      "summary": "非エンジニアのためのClaude Code入門 AnthropicのAIコーディングツール「Claude Code」が注目を集めている。プログラマー向けの製品と思われがちだが、自然言語の指示で実際の成果物を出力する特性は、IT管理者やマーケティング担当者といった非開発者にこそ大きな価値がある。本Tech TIPSでは、コマンドライン不要で手...",
-      "thumbnail": "https://image.itmedia.co.jp/ait/articles/2606/12/cover_news014.jpg",
-      "bookmarkCount": 30
-    },
-    {
-      "id": "hatena-https://togetter.com/li/2708248",
-      "source": "hatena",
-      "title": "三井住友信託銀行、こんなに酷い入力フォームは久しぶりに見た「ぜ、全角…！？」「電話番号生年月日はギリ耐えたがメールアドレス全角えぐい」",
-      "url": "https://togetter.com/li/2708248",
-      "publishedAt": "2026-06-12T01:13:50.000Z",
-      "summary": "toroddi @toroddi @kazeburo 90年代でもなかなかおめにかかれない酷さ そして半角で入力すると「全角で入力してください」と怒られる 判別してるならそのまま置換しろや!と思わずにはいられない 2026-06-12 08:21:41 一二三はじめ @Ihuhim_Ahizem ネットバンキングでの振込で 振込依頼人名を変更するときに 姓と名の間の...",
-      "thumbnail": "https://s.tgstc.com/ogp3/c773678a2c30ed9d0538690eb5a93406-1200x630.jpeg",
-      "bookmarkCount": 24
+      "title": "Mythos時代は「ループエンジニアリング」が不可欠、推論コスト爆発を防げ",
+      "url": "https://xtech.nikkei.com/atcl/nxt/column/18/00692/061100190/",
+      "publishedAt": "2026-06-12T01:26:29.000Z",
+      "summary": "「プロンプトエンジニアリングはもう古い。これからはコンテキストエンジニアリング」というコラムを筆者が書いたのは2025年10月のこと。それから半年強がたち、今度は「ループエンジニアリング（Loop Engineering）」が話題だ。2026年6月9日（米国時間）に登場した「Mythos級」の性能を有する「Claude Fable 5」を有効...",
+      "thumbnail": "https://xtech.nikkei.com/atcl/nxt/column/18/00692/061100190/topm.jpg?20220512",
+      "bookmarkCount": 22
     },
     {
       "id": "hatena-https://ianyepan.github.io/posts/emacs-in-pop-culture/",
@@ -1779,8 +1787,8 @@
       "title": "Emacs Appearances in Pop Culture",
       "url": "https://ianyepan.github.io/posts/emacs-in-pop-culture/",
       "publishedAt": "2026-06-12T01:05:55.000Z",
-      "summary": "software engineer, emacs enthusiast, keyboard lover. occasionally nerdy. As an Emacs user, few things are as delightful as catching my favorite text editor out in the wild. It doesn’t happen often …",
-      "bookmarkCount": 18
+      "summary": "software engineer, emacs enthusiast, keyboard lover. occasionally nerdy. Thank you for the support, this blog post got featured on the front page of Hacker News (YCombinator). As an Emacs user, few…",
+      "bookmarkCount": 21
     },
     {
       "id": "x-2065232819908169893",
@@ -1799,7 +1807,7 @@
       "publishedAt": "2026-06-12T00:15:49.000Z",
       "summary": "世界を読み解くニュース・サロン： 本連載は、国際情勢やビジネス動向を深掘り、グローバルな課題とそれが企業に与える影響を分析する。米中関係やテクノロジー業界の変動、地政学的リスクに焦点を当て、複雑な要素を多角的に捉えながら、現代社会の重要な問題を分析。読者にとって成功への洞察を提供していく。 2024年...",
       "thumbnail": "https://image.itmedia.co.jp/business/articles/2606/12/cover_news012.jpg",
-      "bookmarkCount": 19
+      "bookmarkCount": 30
     },
     {
       "id": "hatena-https://www.sbbit.jp/article/st/185729",
@@ -1809,7 +1817,7 @@
       "publishedAt": "2026-06-12T00:09:09.000Z",
       "summary": "米国のAI企業Emergence AIが実施した、自律型AIエージェントによる都市運営シミュレーション「Emergence World」の実験結果が公表された。15日間にわたり仮想の町を運営させた結果、AIモデルの違いによって、構築される社会の安全性や意思決定のプロセスに明確な差異が生じることが確認された。 同実験は、図書館や警察...",
       "thumbnail": "https://img.sbbit.jp/article/image/185729/OGP_bit202606120829254669.jpg",
-      "bookmarkCount": 210
+      "bookmarkCount": 288
     },
     {
       "id": "hatena-https://gigazine.net/news/20260612-bluesky-communities-deeper-smaller-spaces/",
@@ -1819,7 +1827,7 @@
       "publishedAt": "2026-06-11T23:59:23.000Z",
       "summary": "X(旧Twitter)の代替SNSとして人気のBlueskyに、同じことに興味を持つ人々とより深く交流できる「コミュニティ」機能が追加されることが明らかになりました。 communities are coming to Bluesky this year. today, Bluesky is one big space. communities will be smaller spaces …",
       "thumbnail": "https://i.gzn.jp/img/2026/06/12/bluesky-communities-deeper-smaller-spaces/00_m.jpg",
-      "bookmarkCount": 21
+      "bookmarkCount": 24
     },
     {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/12/5174.html",
@@ -1849,7 +1857,7 @@
       "publishedAt": "2026-06-11T22:08:10.000Z",
       "summary": "GitHub Agentic Workflows is now in public preview. With agentic workflows, you can automate reasoning-based tasks like issue triage, CI failure analysis, and documentation updates by leveraging cod…",
       "thumbnail": "https://github.blog/wp-content/uploads/2026/06/606084572-546e9f8f-f321-4512-98d7-3306fe2258ce.jpg",
-      "bookmarkCount": 10
+      "bookmarkCount": 13
     },
     {
       "id": "feedly-https://www.itmedia.co.jp/business/articles/2606/12/news029.html",
@@ -1905,7 +1913,7 @@
       "publishedAt": "2026-06-11T13:30:00.000Z",
       "summary": "はじめに Claude(Claude Code / claude.ai)を日常的に使っていると、「前にこの話したよね」「あのアイデア、どこかに書いた気がする」という場面が増えてくる。 これを解消するために、以下の二層構造を構築した。 長期ナレッジ層: Obsidian + MCP連携で、claude.aiからアイデアや内省を直接読み書き 作業文脈層: Claud...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--zWySqsiV--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%2520%25C3%2597%2520Obsidian%2520%25E3%2581%25A7%25E3%2580%258E%25E8%25A8%2598%25E6%2586%25B6%25E3%2581%25AE%25E4%25BA%258C%25E5%25B1%25A4%25E6%25A7%258B%25E9%2580%25A0%25E3%2580%258F%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:0rv3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2hNMlI2cmMwdkpIVm9SLTFDWFN5MkFTUVYwQWk2cXFLMUhzM2NuYlNzPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 37
+      "bookmarkCount": 49
     },
     {
       "id": "hatena-https://zenn.dev/91works/articles/b535a86336cf42",
@@ -1915,7 +1923,7 @@
       "publishedAt": "2026-06-11T11:42:21.000Z",
       "summary": "はじめに 会社からゲーム事業部作ってみない？と言われたのがきっかけで事業部を作ってみることになり、その経過と終了までをまとめたものになります。 これから事業を始めていく人や、事業を始めるってどういうことなんだろう？という方に少しでも参考になれば幸いです。 事業計画書 まずは事業として設立するには事業...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--mkVohEY5--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%25A0%25E4%25BA%258B%25E6%25A5%25AD%25E9%2583%25A8%25E8%25A8%25AD%25E7%25AB%258B%25E3%2581%2597%25E3%2581%25A6%25E3%2580%2581%25E7%25B5%2582%25E4%25BA%2586%25E3%2581%2597%25E3%2581%259F%25E3%2581%258A%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Kan%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzE5ZDA5N2JmNjIuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:91works%2520Tech%2520Blog%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2I5OWE1ZTBjOTQuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 63
+      "bookmarkCount": 135
     },
     {
       "id": "feedly-https://note.com/npaka/n/n6ea96a2c929c",
@@ -2007,7 +2015,7 @@
       "publishedAt": "2026-06-11T03:47:39.000Z",
       "summary": "ロシアの軍事ブロガーたちは、熱画像装置（サーマルイメージャー）とAI（人工知能）を搭載し、目標の顔を検出して高速の飛翔体を発射する新型FPV（一人称視点）ドローン（無人機）をウクライナ軍が使用している可能性があると警告を発している。ある動画には、ロシア兵がこうしたドローンから頭部への精密射撃を受けたよ...",
       "thumbnail": "https://images.forbesjapan.com/media/article/98901/images/main_image_990f9f3af9c449bf3fad60d6cdf299bf1c5f9543.jpg",
-      "bookmarkCount": 12
+      "bookmarkCount": 16
     },
     {
       "id": "hatena-https://japan.cnet.com/article/35248768/",
@@ -2016,7 +2024,7 @@
       "url": "https://japan.cnet.com/article/35248768/",
       "publishedAt": "2026-06-11T03:01:57.000Z",
       "summary": "イーロン・マスク氏率いるSpaceXは6月8日(現地時間)、軌道上AIデータセンター衛星の初代機「AI1」の設計詳細を、公式Xアカウントに投稿した約30分の技術アップデート動画で公開した。宇宙でAIコンピューティングを展開するという同社の構想に対しては、かねて「真空の宇宙では熱を捨てられないのではないか」という疑問...",
-      "bookmarkCount": 8
+      "bookmarkCount": 11
     },
     {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/11/5170.html",
@@ -2062,15 +2070,6 @@
       "url": "https://www.itmedia.co.jp/enterprise/articles/2606/11/news020.html",
       "publishedAt": "2026-06-10T23:00:00.000Z",
       "summary": "IPAが「DX銘柄2026」選定企業のDX事例をまとめたレポートを公開した。グランプリ企業3社をはじめとするDX事例の他、東証上場企業289社を対象とした調査結果も紹介している。",
-      "author": "ITmedia AI＋ 最新記事一覧"
-    },
-    {
-      "id": "feedly-https://www.itmedia.co.jp/aiplus/article/2606/11/2000000059/",
-      "source": "feedly",
-      "title": "「ChatGPTのコネクタでつながるし、M365 Copilotいらなくない？」→有識者3人に聞いてみた　知らないと損するコンテキスト管理「Work IQ」の仕組み",
-      "url": "https://www.itmedia.co.jp/aiplus/article/2606/11/2000000059/",
-      "publishedAt": "2026-06-10T23:00:00.000Z",
-      "summary": "他社の生成AIにコネクタでM365のデータをつなげばCopilotは不要なのか。両者を分けるのが、参照するコンテキストを管理する「Work IQ」だ。その3層構造の仕組みと、恩恵を最大化するためにユーザーがやるべきことを、3人のMicrosoft MVPが語る。",
       "author": "ITmedia AI＋ 最新記事一覧"
     },
     {
@@ -7593,15 +7592,6 @@
       "title": "PHP依存管理ツールComposerで、GitHub認証トークンがCI/CDログへ平文漏洩する重大欠陥が判明した。多数のリポジトリが認証情報窃取の危険に晒されている。\n\nComposer共同開発者のNils Adermannは、CVE-2026-45793（CVSS",
       "url": "https://x.com/i/status/2054770846699487718",
       "publishedAt": "2026-05-14T03:48:40.000Z",
-      "author": "ブックマーク"
-    },
-    {
-      "id": "x-2054681397256962438",
-      "source": "x",
-      "title": "F5は13日、NGINX に深刻な脆弱性「CVE-2026-42945」が存在すると公表した。細工されたURIを送信するだけで、認証不要でヒープベースのバッファオーバーフローを引き起こせる。CVSS v4スコアは9.2で、リモートコード実行につながる恐れがある。\n\n影響を受…",
-      "url": "https://x.com/i/status/2054681397256962438",
-      "publishedAt": "2026-05-13T21:53:13.000Z",
-      "summary": "F5は13日、NGINX に深刻な脆弱性「CVE-2026-42945」が存在すると公表した。細工されたURIを送信するだけで、認証不要でヒープベースのバッファオーバーフローを引き起こせる。CVSS v4スコアは9.2で、リモートコード実行につながる恐れがある。\n\n影響を受けるのは、NGINX Open Source",
       "author": "ブックマーク"
     }
   ],
