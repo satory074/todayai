@@ -1,51 +1,25 @@
 {
-  "updatedAt": "2026-06-13T18:35:32.397Z",
+  "updatedAt": "2026-06-14T01:06:00.337Z",
   "items": [
     {
-      "id": "feedly-https://qiita.com/kai_kou/items/618da2497af1c1bf0f91",
-      "source": "feedly",
-      "title": "Claude Codeのネスト型サブエージェント入門 — 最大5階層の設計とトークン設計の勘所",
-      "url": "https://qiita.com/kai_kou/items/618da2497af1c1bf0f91",
-      "publishedAt": "2026-06-13T17:23:28.000Z",
-      "summary": "はじめに Claude Code の v2.1.172（2026年6月10日リリース）で、サブエージェントが自身のサブエージェントを起動できる「ネスト型サブエージェント（nested sub-agents）」 が追加されました。公式リリースノートでは「サブエージェントは最...",
-      "author": "AIタグが付けられた新着記事 - Qiita"
+      "id": "hatena-https://togetter.com/li/2708952",
+      "source": "hatena",
+      "title": "天王洲の運河に3年放置された「謎のHDD」、ロマンある存在として話題になるも翌日に消失…「その真相」があまりにも無粋すぎて落胆が広がり、新たな信仰が生まれそう",
+      "url": "https://togetter.com/li/2708952",
+      "publishedAt": "2026-06-13T15:47:09.000Z",
+      "summary": "iP（あいぴー） @_127001 インターネット百景 天王洲の運河にある取れない謎のHDD 初確認が2023年なのでかれこれ3年間は放置中。もしかしたら凄い額の暗号資産が眠ってるのかもしれないし収集したエロ画像データを海に沈めようとしたらたまたま乗っかってしまい手が出せなくなったのかもしれない。とにかくロマンがある...",
+      "thumbnail": "https://s.tgstc.com/ogp3/ebce2a1a2a2a00b07466ed820eeb1973-1200x630.jpeg",
+      "bookmarkCount": 49
     },
     {
-      "id": "feedly-https://qiita.com/kai_kou/items/0d6cc141fc809ff4a279",
-      "source": "feedly",
-      "title": "Gemini API マネージドエージェント入門 — Google管理サンドボックスで自律AIを動かす",
-      "url": "https://qiita.com/kai_kou/items/0d6cc141fc809ff4a279",
-      "publishedAt": "2026-06-13T17:23:26.000Z",
-      "summary": "はじめに Google が Gemini API のマネージドエージェント（Managed Agents）を公開プレビューとして提供開始しました（2026年5月19日発表）。1回の API コールで Google がホストする Linux サンドボックスがプロビジョニング...",
-      "author": "AIタグが付けられた新着記事 - Qiita"
-    },
-    {
-      "id": "feedly-https://qiita.com/agdexai/items/de259bacc62e47aeb447",
-      "source": "feedly",
-      "title": "2026年最新AIエージェントツール700完全ガイド",
-      "url": "https://qiita.com/agdexai/items/de259bacc62e47aeb447",
-      "publishedAt": "2026-06-13T16:04:36.000Z",
-      "summary": "2026年最新AIエージェントツール700完全ガイド AIエージェントの世界は2026年に爆発的に拡大しています。AgDex.aiでは、あらゆるカテゴリで700以上のツールを厳選しました。デザイナー、マーケター、営業チームのための包括的なガイドをご紹介します。 デザイナ...",
-      "author": "AIタグが付けられた新着記事 - Qiita"
-    },
-    {
-      "id": "feedly-https://qiita.com/agdexai/items/6ba4e2eef91eb302b402",
-      "source": "feedly",
-      "title": "テスト記事",
-      "url": "https://qiita.com/agdexai/items/6ba4e2eef91eb302b402",
-      "publishedAt": "2026-06-13T16:04:00.000Z",
-      "summary": "テスト本文",
-      "author": "AIタグが付けられた新着記事 - Qiita"
-    },
-    {
-      "id": "feedly-https://zenn.dev/akagifreeez/articles/eu-ai-act-art50-intro",
-      "source": "feedly",
-      "title": "あなたのAIサービスはEU AI法 第50条の対象? 3分でわかる適用判定フローと最小対応",
-      "url": "https://zenn.dev/akagifreeez/articles/eu-ai-act-art50-intro",
-      "publishedAt": "2026-06-13T13:25:35.000Z",
-      "summary": "この記事は無料です。2026年8月2日にEU AI法 第50条(透明性義務)が適用開始します。 「自分には関係ある? 何をいつまでに実装すればいい?」を、エンジニア目線で最短で判定します。 C2PA署名・チャットボット開示バナー・YouTube開示まで動くコードで踏み込んだ実装の詳細は、別途、有料本としてまとめています(施行前に公開予定／末尾参照)。 ! 本記事は2026年6月時点の情報です…",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--cS2y0uq0--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%2582%25E3%2581%25AA%25E3%2581%259F%25E3%2581%25AEAI%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2593%25E3%2582%25B9%25E3%2581%25AFEU%2520AI%25E6%25B3%2595%2520%25E7%25AC%25AC50%25E6%259D%25A1%25E3%2581%25AE%25E5%25AF%25BE%25E8%25B1%25A1%253F%25203%25E5%2588%2586%25E3%2581%25A7%25E3%2582%258F%25E3%2581%258B%25E3%2582%258B%25E9%2581%25A9%25E7%2594%25A8%25E5%2588%25A4%25E5%25AE%259A%25E3%2583%2595%25E3%2583%25AD%25E3%2583%25BC%25E3%2581%25A8%25E6%259C%2580%25E5%25B0%258F%25E5%25AF%25BE%25E5%25BF%259C%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:akagifreeez%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSVVEald6bUpta1JQV1NjMDhUVW9WZ09GcVU0eFhFVy1oUVJqQVZtcFg1T3VWNXFQND1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "author": "Zennの「AI」のフィード"
+      "id": "hatena-https://kame404.com/posts/diy-nfc-led-coil/",
+      "source": "hatena",
+      "title": "スマホにかざすと光るNFC LEDコイルを自作する | kame404 blog",
+      "url": "https://kame404.com/posts/diy-nfc-led-coil/",
+      "publishedAt": "2026-06-13T13:48:40.000Z",
+      "summary": "kame404 kame404 kame404 kame404 kame404 kame404 kame404 kame404 kame404 kame404 kame404 kame404 kame404 kame404 kame404 2026年6月13日 スマートフォンにかざすと、バッテリーなしでピカピカと光る不思議なNFC LEDがあります。ネイル用の光るチップなどとして市販されてい…",
+      "thumbnail": "https://kame404.com/posts/diy-nfc-led-coil/featured_hu_7f17fafea35a98c0.webp",
+      "bookmarkCount": 51
     },
     {
       "id": "feedly-https://zenn.dev/53able/articles/2eddeed153c41c",
@@ -104,7 +78,7 @@
       "url": "https://visitor.gogatsusai.jp/news/20260613/",
       "publishedAt": "2026-06-13T12:26:53.000Z",
       "summary": "本年5月に開催された第99回五月祭は、1日目にあった犯行予告を受け、大学および警察との協議も行い、参加者の皆さまの安全を最優先に考慮し1日目を中止とする判断に至りました。 このたび、当日の中止判断の経緯や、2日目の再開に向けて講じた安全対策などの一連の対応を取りまとめた「第99回五月祭1日目中止に係る経緯...",
-      "bookmarkCount": 4
+      "bookmarkCount": 24
     },
     {
       "id": "feedly-https://zenn.dev/numarn/articles/73fa473c161361",
@@ -147,6 +121,26 @@
       "author": "Zennの「AI」のフィード"
     },
     {
+      "id": "hatena-https://www.afpbb.com/articles/-/3639482",
+      "source": "hatena",
+      "title": "サッカーW杯の優勝予測、時代は「予言タコ」から「生成AI」に",
+      "url": "https://www.afpbb.com/articles/-/3639482",
+      "publishedAt": "2026-06-13T10:53:56.000Z",
+      "summary": "ドイツ・オーバーハウゼンの水族館「シーライフ」の水槽で、サッカーW杯南アフリカ大会決勝の行方を占い、スペイン国旗のついた箱を選んだタコのパウル（2010年7月9日撮影）。(c)AFP/PATRIK STOLLARZ 【6月13日 AFP】米オープンAIの「チャットGPT」と米アンソロピックの「Claude（クロード）」はスペインの勝利に賭け、...",
+      "thumbnail": "https://afpbb.ismcdn.jp/mwimgs/4/7/1000x/img_47858be7df7d23ad6bcef8b6a7755d16781167.jpg",
+      "bookmarkCount": 9
+    },
+    {
+      "id": "hatena-https://dev.classmethod.jp/articles/obsidian-web-clipper-url-tags/",
+      "source": "hatena",
+      "title": "Obsidian Web Clipperで保存するときにURLごとにタグを自動で付ける | DevelopersIO",
+      "url": "https://dev.classmethod.jp/articles/obsidian-web-clipper-url-tags/",
+      "publishedAt": "2026-06-13T10:23:08.000Z",
+      "summary": "どうも！オペ部の西村祐二です！ Obsidian Web ClipperでWebページを保存するとき、あとから探しやすいようにタグを付けています。 たとえば、YouTubeのページなら YouTube、GitHubのリポジトリなら GitHub、Zennの記事なら Zenn のように、クリップ元に応じてタグを自動で切り替えたいケースがあります。 以前は、こう...",
+      "thumbnail": "https://images.ctfassets.net/ct0aopd36mqt/271wVAxeN1rlKRsu2HX3i2/47104a220a7c282e824443292b7ac5bb/eyecatch_obsidian_1200x630.jpg",
+      "bookmarkCount": 61
+    },
+    {
       "id": "feedly-https://zenn.dev/kanaria007/articles/f08d3ce5951141",
       "source": "feedly",
       "title": "所属・担当・武勇伝を能力と誤認しないためのエンジニア評価設計 - 構造で育てるプロダクト組織付録17",
@@ -174,7 +168,7 @@
       "publishedAt": "2026-06-13T09:14:10.000Z",
       "summary": "Obsidianのようなノートアプリを使い込むほどプラグインや自動化ワークフローの管理が増え、ノート整理自体が目的になってしまうことがあります。機能を意図的に絞り込み、ブラウザだけで動作しPWAとして無料で使えるうえ、クラウドストレージやセルフホストサーバーを通じたデバイス間同期にも対応したオープンソースの...",
       "thumbnail": "https://i.gzn.jp/img/2026/06/13/files-md/00.png",
-      "bookmarkCount": 87
+      "bookmarkCount": 140
     },
     {
       "id": "feedly-https://zenn.dev/harusaki_saku/articles/5d942dfd602398",
@@ -194,7 +188,7 @@
       "publishedAt": "2026-06-13T09:10:57.000Z",
       "summary": "ビジュアル系ロックバンドDIR EN GREYの楽曲が、App Storeに申請を複数回拒否されていることが13日、分かった。 米国のAIテクノロジー企業サイファー・スタジオが、AIでDIR EN GREYの楽曲を使ったアプリを開発。同社はアーティストの権利保護を核としたAIインフラを構築。昨年12月にDIR EN GREYとパートナーシップ契約を...",
       "thumbnail": "https://www.nikkansports.com/entertainment/news/img/202606130000490-w500_0.jpg",
-      "bookmarkCount": 61
+      "bookmarkCount": 83
     },
     {
       "id": "feedly-https://zenn.dev/phinata/articles/ollama-local-llm",
@@ -217,6 +211,16 @@
       "author": "Zennの「AI」のフィード"
     },
     {
+      "id": "feedly-https://zenn.dev/tesla/articles/9e618eb27c01ff",
+      "source": "feedly",
+      "title": "DiffusionGemmaの「生成途中の揺らぎ」で概念の矛盾を測る",
+      "url": "https://zenn.dev/tesla/articles/9e618eb27c01ff",
+      "publishedAt": "2026-06-13T08:59:29.000Z",
+      "summary": "何を試したのか https://deepmind.google/models/gemma/diffusiongemma/ DiffusionGemmaは、通常の自己回帰型LLMのように左から1トークンずつ文章を伸ばすのではなく、いったんランダムなトークンで満たしたキャンバスを、複数ステップかけて並列にデノイズしていく。 Googleの開発者向け記事では、この方式を「256トークンのキャンバス…",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--tCEzMuG6--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:DiffusionGemma%25E3%2581%25AE%25E3%2580%258C%25E7%2594%259F%25E6%2588%2590%25E9%2580%2594%25E4%25B8%25AD%25E3%2581%25AE%25E6%258F%25BA%25E3%2582%2589%25E3%2581%258E%25E3%2580%258D%25E3%2581%25A7%25E6%25A6%2582%25E5%25BF%25B5%25E3%2581%25AE%25E7%259F%259B%25E7%259B%25BE%25E3%2582%2592%25E6%25B8%25AC%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:tesla%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2Q3MmIzODI1NzEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "author": "Zennの「AI」のフィード"
+    },
+    {
       "id": "hatena-https://qiita.com/ktdatascience/items/3c8949b62ce1dfe7a024",
       "source": "hatena",
       "title": "Claude Codeに人生を管理させて3ヶ月、一番効いたのは自動化じゃなかった - Qiita",
@@ -224,7 +228,7 @@
       "publishedAt": "2026-06-13T08:41:27.000Z",
       "summary": "*この記事のまとめ Claude Code × GitHubで「自分の取扱説明書」を作り、AIに丸ごと渡す運用を3ヶ月続けた スキルやMCPで自動化もした。でも一番効いたのは、自動化ではなく「自分を言語化する強制力」だった メモアプリ1つで始められる。エンジニアでなくてもOK 対象読者 AIへの相談がなんとなく浅い、と感じている人 ...",
       "thumbnail": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Ftech-festa-ogp-background-4b5015b2c518c7e6b9062a7c9f5f5e90.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYzOTM3NDk2JTJGZDAxZmQwNDA0YmY2ODY3NmFhZTI5ZjNhM2Y5YTUzZGZlMjQ4YmIyYSUyRmxhcmdlLnBuZyUzRjE3NDU5MDYwMzY_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWYyZjBmZTU5NjFkZjdiNDgwY2NkYzUyOTc2MzQ1Yzk1%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D01799e75ac5f8111fd0473b7a1186a7e?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJTIwQ29kZSVFMyU4MSVBQiVFNCVCQSVCQSVFNyU5NCU5RiVFMyU4MiU5MiVFNyVBRSVBMSVFNyU5MCU4NiVFMyU4MSU5NSVFMyU4MSU5QiVFMyU4MSVBNjMlRTMlODMlQjYlRTYlOUMlODglRTMlODAlODElRTQlQjglODAlRTclOTUlQUElRTUlOEElQjklRTMlODElODQlRTMlODElOUYlRTMlODElQUUlRTMlODElQUYlRTglODclQUElRTUlOEIlOTUlRTUlOEMlOTYlRTMlODElOTglRTMlODIlODMlRTMlODElQUElRTMlODElOEIlRTMlODElQTMlRTMlODElOUYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyM0ZGRkZGRiZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz05MWM1YThkMjY3ZDJjYjUzYjU3Y2M5MzhmYmU0MWRlZQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBrdGRhdGFzY2llbmNlJnR4dC1jb2xvcj0lMjNGRkZGRkYmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MDVjZGI1NWNkNzdkZDU2NmFjZmQwYTA5MGQyYzMxMGE&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=77cb869157a1d875a893eaa3b13c00a8",
-      "bookmarkCount": 44
+      "bookmarkCount": 277
     },
     {
       "id": "hatena-https://blog.inorinrinrin.com/entry/2026/06/13/161113",
@@ -234,7 +238,17 @@
       "publishedAt": "2026-06-13T08:39:26.000Z",
       "summary": "という HTML 要素が 2023年10月にすべての主要ブラウザで利用可能になっていましたが、2026年4月にBaseline Widely Available に到達しました。今回はこの 要素を使って、検索のアクセシビリティについて考えてみます。 スクリーンリーダーとARIA ロール アクセシビリティの向上を支援する技術として...",
       "thumbnail": "https://ogimage.blog.st-hatena.com/6802418398318546029/14945776032041917715/1781360083",
-      "bookmarkCount": 17
+      "bookmarkCount": 20
+    },
+    {
+      "id": "hatena-https://togetter.com/li/2708806",
+      "source": "hatena",
+      "title": "デバッガーがプログラマーにバグ報告をするとき伝え方で反応が全く変わることがあったが何がダメだったんだ？「言っていることは同じ？」「このケースだと明らかに違う」",
+      "url": "https://togetter.com/li/2708806",
+      "publishedAt": "2026-06-13T08:24:01.000Z",
+      "summary": "清遊あみ/NetGamers @NetGamers デバッガーだった頃の話。 バグを見つけた！報告しなきゃ。 A.◯◯で◻︎◻︎すると再現率100%で△△が発生します。ご確認をお願いします。 →なんか知らんがプログラマさん機嫌悪くなる。 B.◯◯で◻︎◻︎すると再現率100%で△△が発生します。こちらは仕様にない挙動かと存じますが問題ございませんでしょう...",
+      "thumbnail": "https://s.tgstc.com/ogp3/ed0531a830f457d23251573ef5042656-1200x630.jpeg",
+      "bookmarkCount": 44
     },
     {
       "id": "hatena-https://www.itmedia.co.jp/mobile/articles/2606/13/news002.html",
@@ -244,7 +258,7 @@
       "publishedAt": "2026-06-13T08:23:22.000Z",
       "summary": "キャッシュレス決済が普及し、人によっては現金を直接やりとりする機会は減っただろう。中でもPayPayの「送る・受け取る」機能は、日常の割り勘や家族間での送金などに非常に便利で、多くのユーザーに日常的に利用されている。しかし、手軽にワンタップでお金が送れてしまうがゆえに、「宛先を間違えて送金してしまった...",
       "thumbnail": "https://image.itmedia.co.jp/mobile/articles/2606/13/cover_news002.jpg",
-      "bookmarkCount": 55
+      "bookmarkCount": 87
     },
     {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/13/5180.html",
@@ -282,7 +296,7 @@
       "url": "https://pc.watch.impress.co.jp/docs/news/2116946.html",
       "publishedAt": "2026-06-13T05:13:00.000Z",
       "thumbnail": "https://pc.watch.impress.co.jp/img/pcw/list/2116/946/01.png",
-      "bookmarkCount": 19
+      "bookmarkCount": 23
     },
     {
       "id": "hatena-https://scrapbox.io/nishio/OKF%E3%81%A8LLM_Wiki",
@@ -292,7 +306,7 @@
       "publishedAt": "2026-06-13T05:00:15.000Z",
       "summary": "本日GoogleがリリースしたOpen Knowledge Formatと、以前から注目してたKarpathyのLLM Wikiとの比較を書いていく。Google自身がOKFをLLM Wikiの改良と位置付けている。KarpathyがLLM Wikiを公表した後Anthropicに入社したことも考えるとこれは標準化戦争だと感じている。 2026-06-13 That’s why today,…",
       "thumbnail": "https://gyazo.com/a54752f690adc163ac2b4ab65e33bc99/max_size/2000",
-      "bookmarkCount": 69
+      "bookmarkCount": 77
     },
     {
       "id": "hatena-https://www.techno-edge.net/article/2026/06/13/5178.html",
@@ -302,7 +316,7 @@
       "publishedAt": "2026-06-13T04:20:46.000Z",
       "summary": "数日前に華々しく登場したばかりのモデルが、いきなり全ユーザー向けに止まりました。理由が「不具合」でも「炎上」でもなく「米国政府の輸出管理指令」だというのが、今回いちばん異例なところです。",
       "thumbnail": "https://www.techno-edge.net/imgs/ogp_f/32234.png",
-      "bookmarkCount": 107
+      "bookmarkCount": 116
     },
     {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/13/5178.html",
@@ -322,7 +336,7 @@
       "publishedAt": "2026-06-13T04:04:35.000Z",
       "summary": "KDDIが提供するオンライン専用ブランド「povo」の公式Xアカウントが6月13日に意味深投稿をした。ポストでは特定の通信キャリア名を明記していないが、投稿がターゲットとしているのは、通信不良に悩む楽天モバイルユーザーである可能性が極めて高い。SNS上では、ショッピングモールの奥に入ると圏外になるなど、楽天モバ...",
       "thumbnail": "https://image.itmedia.co.jp/mobile/articles/2606/13/cover_news027.jpg",
-      "bookmarkCount": 94
+      "bookmarkCount": 115
     },
     {
       "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/13/news028.html",
@@ -342,7 +356,7 @@
       "publishedAt": "2026-06-13T03:49:07.000Z",
       "summary": "As foundation models continue to improve, the lack of relevant context often limits what they can do, especially as they are used to build agentic systems. While these models can help you write cod…",
       "thumbnail": "https://storage.googleapis.com/gweb-cloudblog-publish/images/09_-_Data_Analytics_tFH57V6.max-2600x2600.jpg",
-      "bookmarkCount": 63
+      "bookmarkCount": 64
     },
     {
       "id": "hatena-https://pc.watch.impress.co.jp/docs/news/2116933.html",
@@ -351,16 +365,7 @@
       "url": "https://pc.watch.impress.co.jp/docs/news/2116933.html",
       "publishedAt": "2026-06-13T02:50:31.000Z",
       "thumbnail": "https://pc.watch.impress.co.jp/img/pcw/list/2116/933/01.png",
-      "bookmarkCount": 16
-    },
-    {
-      "id": "hatena-https://www.watch.impress.co.jp/docs/news/2116932.html",
-      "source": "hatena",
-      "title": "アンソロピック、Fable 5などミュトス級AIモデルを公開停止　米国政府が指令",
-      "url": "https://www.watch.impress.co.jp/docs/news/2116932.html",
-      "publishedAt": "2026-06-13T02:30:49.000Z",
-      "thumbnail": "https://www.watch.impress.co.jp/img/ipw/list/2116/932/ant1.jpg",
-      "bookmarkCount": 212
+      "bookmarkCount": 28
     },
     {
       "id": "hatena-https://news.ycombinator.com/item?id=48511072",
@@ -370,16 +375,6 @@
       "publishedAt": "2026-06-13T02:28:36.000Z",
       "summary": "When you spend a lot of time telling people how dangerous your products are, people who have the power to keep dangerous products off the market might listen.Especially if those people aren't prese…",
       "bookmarkCount": 7
-    },
-    {
-      "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/13/news026.html",
-      "source": "hatena",
-      "title": "「Claude Fable 5」「Mythos 5」全面停止　米政府の指令により　Anthropicは早期復旧を宣言",
-      "url": "https://www.itmedia.co.jp/news/articles/2606/13/news026.html",
-      "publishedAt": "2026-06-13T02:21:51.000Z",
-      "summary": "米Anthropicは6月12日（現地時間）、最上位AIモデル「Claude Mythos 5」と、Mythos 5に保護機能を実装した「Claude Fable 5」の提供を全ユーザーで停止すると発表した。米政府が安全保障上の権限に基づき、外国籍者による両モデルへのアクセスを全て停止するよう求める輸出規制指令を出したため。他のモデルは影響を受け...",
-      "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/13/cover_news026.jpg",
-      "bookmarkCount": 50
     },
     {
       "id": "feedly-https://www.itmedia.co.jp/aiplus/article/2606/13/2000000087/",
@@ -406,7 +401,7 @@
       "publishedAt": "2026-06-13T01:35:07.000Z",
       "summary": "GitHub⁠⁠、Copilot CLI向け「LSP Setup」スキルを紹介⁠⁠、定義ジャンプや型情報でコード理解を支援 GitHubは2026年6月10日、GitHub Copilot CLIでLanguage Server Protocol（LSP）サーバーを設定するエージェントスキル「LSP Setup」をGitHub Blogで紹介した。対象言語やOSに応じて言語サーバーをインスト…",
       "thumbnail": "https://gihyo.jp/assets/images/article/2026/06/github-copilot-cli-lsp-setup/02.png",
-      "bookmarkCount": 7
+      "bookmarkCount": 14
     },
     {
       "id": "hatena-https://bytecodealliance.org/articles/WASI-0.3",
@@ -416,7 +411,7 @@
       "publishedAt": "2026-06-13T01:20:40.000Z",
       "summary": "WASI 0.3 is official, and async is now native to WebAssembly Components. The WASI Subgroup voted to ratify WASI 0.3.0, rebasing WASI onto the WebAssembly Component Model’s async primitives. The 0.3…",
       "thumbnail": "https://bytecodealliance.org/images/avatar.png",
-      "bookmarkCount": 10
+      "bookmarkCount": 16
     },
     {
       "id": "hatena-https://www.nikkei.com/article/DGXZQOGN130K40T10C26A6000000/",
@@ -426,7 +421,7 @@
       "publishedAt": "2026-06-13T01:12:38.000Z",
       "summary": "【シリコンバレー=山田遼太郎】米アンソロピックは12日、先端AI（人工知能）モデル「クロード・ミュトス」と「フェイブル」の提供を直ちに停止すると発表した。米政府から輸出管理対象に指定され、外国人が利用できなくするように命じられたという。アンソロピックは米国内外の全ての顧客を対象に、新型AI「Claude Mytho...",
       "thumbnail": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3163318013062026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&fp-x=0.12&fp-y=0.74&h=630&w=1200&s=500794c5495cf145b128cd97e63489f2",
-      "bookmarkCount": 532
+      "bookmarkCount": 538
     },
     {
       "id": "hatena-https://ikyle.me/blog/2026/how-to-setup-a-local-coding-agent-on-macos",
@@ -436,17 +431,7 @@
       "publishedAt": "2026-06-13T01:08:33.000Z",
       "summary": "I'd had my internet fail a few times recently leaving me stranded without a coding agent, and so when I saw the \"Gemma 4 now runs 2x faster with MTP\" Multi-Token Prediction update for Gemma 4 I dec…",
       "thumbnail": "https://ikyle.me/images/hero.png",
-      "bookmarkCount": 28
-    },
-    {
-      "id": "hatena-https://www.anthropic.com/news/fable-mythos-access",
-      "source": "hatena",
-      "title": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5",
-      "url": "https://www.anthropic.com/news/fable-mythos-access",
-      "publishedAt": "2026-06-13T01:02:23.000Z",
-      "summary": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5 The US government, citing national security authorities, has issued an export control directive to suspend all acc…",
-      "thumbnail": "https://cdn.sanity.io/images/4zrzovbb/website/50159fff55088f12070cc8a56eb51ff61006b631-2400x1260.png",
-      "bookmarkCount": 152
+      "bookmarkCount": 94
     },
     {
       "id": "feedly-https://www.itmedia.co.jp/news/articles/2606/12/news113.html",
@@ -465,7 +450,7 @@
       "publishedAt": "2026-06-13T00:55:29.000Z",
       "summary": "生成AIを利用して作られた音楽が急速に広がる中、JASRACは、単純な指示に基づいてAIが歌詞も曲も生成したものは「人間の創作的寄与が認められない作品」として、著作物に該当しないなどとするガイドライン…",
       "thumbnail": "https://imgu.web.nhk/news/u/news/html/20260613/K10015148991_2606130808_0613084341_01_02.jpg",
-      "bookmarkCount": 112
+      "bookmarkCount": 126
     },
     {
       "id": "x-2065597531644743999",
@@ -475,6 +460,16 @@
       "publishedAt": "2026-06-13T00:50:03.000Z",
       "summary": "The US government, citing national security authorities, has issued an export control directive to suspend all access to Fable 5 and Mythos 5 by any foreign national, whether inside or outside the United States, including foreign national Anthropic employees.\n\nThe net effect of",
       "author": "ブックマーク"
+    },
+    {
+      "id": "hatena-https://www.itmedia.co.jp/mobile/articles/2606/13/news022.html",
+      "source": "hatena",
+      "title": "シャープが「AQUOS」を中高価格帯へシフトする理由　メモリ高騰が直撃するエントリースマホの限界",
+      "url": "https://www.itmedia.co.jp/mobile/articles/2606/13/news022.html",
+      "publishedAt": "2026-06-12T23:23:55.000Z",
+      "summary": "AQUOSシリーズを展開するシャープは、6月9日に事業説明会を開催。スマホの性能別構成比を、中高価格帯にシフトしていく方針を明かした。2025年度は「AQUOS wish」シリーズの割合が6割を占め、「AQUOS sense」や「AQUOS R」などは4割にとどまる。この割合を逆転させ、2026年度は7割をAQUOS sense以上の端末にしていく目標...",
+      "thumbnail": "https://image.itmedia.co.jp/mobile/articles/2606/13/cover_news022.jpg",
+      "bookmarkCount": 27
     },
     {
       "id": "feedly-https://monoist.itmedia.co.jp/mn/articles/2606/13/news019.html",
@@ -493,27 +488,7 @@
       "publishedAt": "2026-06-12T15:39:51.000Z",
       "summary": "2018年にこんな記事を書いた。 ビッグバンマージではなく、少しずつ書いたコードをマージしていき、本番環境を壊さずにリリースする、という話。 チーム内では浸透していて、コードベースにはフィーチャーフラグ機能やデバッグ機能が充実している。 今、コーディングAIを使うと、どのような進め方ができるか、どのような...",
       "thumbnail": "https://ogimage.blog.st-hatena.com/13208692334729887859/14945776032041702630/1781277200",
-      "bookmarkCount": 79
-    },
-    {
-      "id": "hatena-https://anond.hatelabo.jp/20260613000242",
-      "source": "hatena",
-      "title": "パソコン買うゾ！！（買ったゾ！！）",
-      "url": "https://anond.hatelabo.jp/20260613000242",
-      "publishedAt": "2026-06-12T15:03:53.000Z",
-      "summary": "7年使っていたPCを買い換えるゾ！！ バイトで買った最初のPCだから思い入れはあるけど、さすがにもうキツイっす。 昨今メモリやら何やら高くなってるらしいけど、今後上がっていくなら今買うしかねえよなあ！？ もう7年前と違ってある程度お金はあるしね。 安くなるかもわからんしね。 時期が悪いおじさん「今は時期が悪...",
-      "thumbnail": "https://anond.hatelabo.jp/assets/images/og-image-1500.gif",
-      "bookmarkCount": 168
-    },
-    {
-      "id": "hatena-https://note.com/hito_miru0303/n/na05f9e240c80",
-      "source": "hatena",
-      "title": "鬼バズりポン出しプロンプト9選✨️ChatGPT画像生成｜ひーさん マーケティング営業×AIデザイナー",
-      "url": "https://note.com/hito_miru0303/n/na05f9e240c80",
-      "publishedAt": "2026-06-12T15:03:02.000Z",
-      "summary": "こんにちはーーー！ AIデザイナー＆営業マンのひーさんです！ よろしくお願いします！！ こんかいはGW期間中に鬼バズりした ChatGPTによる画像作成のプロンプト9選！ 紹介します🥳🥳🥳そして絶妙に毎度違うので そこも注目して見てみてくださいσ(・ϖ・)☝ 脅威の12万インプ🔥 ドーナツバナー保存数プロンプトと合計して14...",
-      "thumbnail": "https://assets.st-note.com/production/uploads/images/274443335/rectangle_large_type_2_3e2d18c61cfd710a5957994cb8ead6e4.jpg?fit=bounds&quality=85&width=1280",
-      "bookmarkCount": 31
+      "bookmarkCount": 84
     },
     {
       "id": "feedly-https://ainow.ai/2026/06/12/278166/?utm_source=rss&utm_medium=rss&utm_campaign=%25e7%2594%259f%25e6%2588%2590ai%25e3%2582%25b3%25e3%2583%25b3%25e3%2583%2597%25e3%2583%25a9%25e3%2582%25a4%25e3%2582%25a2%25e3%2583%25b3%25e3%2582%25b9%25e3%2581%25ae%25e3%2583%25aa%25e3%2582%25b9%25e3%2582%25af%25e3%2581%25a8%25e5%25af%25be%25e7%25ad%2596%25ef%25bc%2581%25e6%258b%2585%25e5%25bd%2593%25e8%2580%2585%25e5%2590%2591",
@@ -532,7 +507,7 @@
       "publishedAt": "2026-06-12T12:46:44.000Z",
       "summary": "アメリカ現地時間の2026年6月9日、二つの大きな発表が同じ日に重なりました。 ニューヨークで開催されたDatadogの年次イベントDASH 2026のキーノートで、Bits AIファミリーが大幅に拡張されました。Detection、Investigation、Remediation、Infrastructure、Code、Release、Testing、Data Analysis、Chat…",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--B1Cn1AoA--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Datadog%25E3%2581%25A8AWS%25E3%2581%258C%25E5%2590%258C%25E3%2581%2598%25E6%2597%25A5%25E3%2581%25AB%25E5%2587%25BA%25E3%2581%2597%25E3%2581%259F%25E2%2580%259COps%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E2%2580%259D%25E3%2581%25AF%25E3%2580%2581%25E4%25BD%2595%25E3%2582%2592%25E5%25A5%25AA%25E3%2581%2584%25E5%2590%2588%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E3%2581%25AE%25E3%2581%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:ikenyal%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzNiM2M1MjhkNjguanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:GENDA%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2I5MzI2NGQ4NzcuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 18
+      "bookmarkCount": 23
     },
     {
       "id": "x-2065412218389397561",
@@ -550,16 +525,6 @@
       "publishedAt": "2026-06-12T11:20:12.000Z",
       "summary": "開示可能な範囲で各社が業務に関する知見を持ち寄り、業界の枠を超えた協働体制を築く。",
       "author": "ITmedia AI＋ 最新記事一覧"
-    },
-    {
-      "id": "hatena-https://xenospectrum.com/agents-last-exam-benchmark-gpt-5-5-beats-claude-fable-5/",
-      "source": "hatena",
-      "title": "最新AI「Claude Fable 5」が敗北。55の産業ツールを操る究極の実務ベンチマーク「ALE」でGPT-5.5が首位を獲得した理由 | XenoSpectrum",
-      "url": "https://xenospectrum.com/agents-last-exam-benchmark-gpt-5-5-beats-claude-fable-5/",
-      "publishedAt": "2026-06-12T11:08:19.000Z",
-      "summary": "この記事のポイント 真の労働能力を測る究極の試練：UC Berkeley RDIと300人超の専門家が構築した「Agents’ Last Exam（ALE）」は、55の産業分野におけるプロ仕様のソフトウェア操作をAIに直接課す、極めて実戦的な評価指標だ。神話の崩壊と王者の帰還：発表直後から世界中の熱狂を集めていたAnthropicの最新モデル「Cla...",
-      "thumbnail": "https://media.xenospectrum.com/large_ai_ultimate_benchmark_test_overwhelmed_a9384b9e7e.webp",
-      "bookmarkCount": 24
     },
     {
       "id": "layerx-a4c008f8-b041-4ef3-ab42-1cd600977632",
@@ -1855,15 +1820,6 @@
       "author": "Algomatic Tech Blog"
     },
     {
-      "id": "feedly-https://note.com/npaka/n/n3f9ab21ba743",
-      "source": "feedly",
-      "title": "OpenCV 5 の新機能まとめ",
-      "url": "https://note.com/npaka/n/n3f9ab21ba743",
-      "publishedAt": "2026-06-12T06:14:11.000Z",
-      "summary": "「OpenCV 5」の新機能についてまとめました。 続きをみる",
-      "author": "npaka"
-    },
-    {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/12/5175.html",
       "source": "feedly",
       "title": "任天堂、転売対策でSwitch 2多言語版の販売を一時停止「買い占め等の疑いがある注文を複数確認」　50時間以上プレイ条件で再開",
@@ -1900,15 +1856,6 @@
       "author": "ITmedia AI＋ 最新記事一覧"
     },
     {
-      "id": "feedly-https://note.com/npaka/n/n2bd9d8b3895d",
-      "source": "feedly",
-      "title": "Suno 入門",
-      "url": "https://note.com/npaka/n/n2bd9d8b3895d",
-      "publishedAt": "2026-06-12T02:23:05.000Z",
-      "summary": "「Suno」の使いはじめ方をまとめました。 続きをみる",
-      "author": "npaka"
-    },
-    {
       "id": "hatena-https://techblog.zozo.com/entry/ai-agent-conference-2026",
       "source": "hatena",
       "title": "AI Agent Conference 2026 参加レポート - ZOZO TECH BLOG",
@@ -1916,7 +1863,7 @@
       "publishedAt": "2026-06-12T02:22:14.000Z",
       "summary": "はじめに こんにちは、SRE部 検索基盤SREブロックの富田です。2026年5月4日〜5日の2日間、New Yorkで開催された「AI Agent Conference 2026」に参加しました。 本記事では、現地の様子と印象に残ったセッションをご紹介します。 目次 はじめに 目次 AI Agent Conferenceとは 特徴 現地の様子 セッションレポート (1) Arc...",
       "thumbnail": "https://cdn.image.st-hatena.com/image/scale/3bb824155c5b0d7eb0028f2485d8d9b02e0894c8/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fv%2Fvasilyjp%2F20260610%2F20260610160752.png",
-      "bookmarkCount": 8
+      "bookmarkCount": 31
     },
     {
       "id": "feedly-https://www.itmedia.co.jp/aiplus/article/2606/12/2000000083/",
@@ -1985,15 +1932,6 @@
       "author": "テクノエッジ TechnoEdge"
     },
     {
-      "id": "feedly-https://note.com/npaka/n/nf909472b7e95",
-      "source": "feedly",
-      "title": "Codex でプレゼン資料の作成を試す",
-      "url": "https://note.com/npaka/n/nf909472b7e95",
-      "publishedAt": "2026-06-11T16:02:10.000Z",
-      "summary": "「Codex」でプレゼン資料の作成を試してみたのでまとめました。 続きをみる",
-      "author": "npaka"
-    },
-    {
       "id": "feedly-https://ainow.ai/2026/06/12/278163/?utm_source=rss&utm_medium=rss&utm_campaign=%25e7%2594%259f%25e6%2588%2590ai%25e3%2582%25ac%25e3%2582%25a4%25e3%2583%2589%25e3%2583%25a9%25e3%2582%25a4%25e3%2583%25b3%25e3%2582%2592%25e4%25bc%2581%25e6%25a5%25ad%25e3%2581%258c%25e7%25ad%2596%25e5%25ae%259a%25e3%2581%2599%25e3%2582%258b%25e6%2589%258b%25e9%25a0%2586%25ef%25bc%2581%25e5%25bf%2585%25e9%25a0%2588%25e9%25a0%2585",
       "source": "feedly",
       "title": "生成AIガイドラインを企業が策定する手順！必須項目も解説",
@@ -2001,24 +1939,6 @@
       "publishedAt": "2026-06-11T15:27:35.000Z",
       "summary": "「全社で生成AIを使え」と号令はかかったものの、情報漏洩や著作権が不安で、止める根拠になる社内ルールがない。本記事では、生成AIガイドラインに盛り込むべき必須項目、ゼロから策定する5つの手順、テンプレートに使える公的ひな... The post 生成AIガイドラインを企業が策定する手順！必須項目も解説 first appeared on AI専門ニュースメディア AINOW.",
       "author": "AI専門ニュースメディア AINOW"
-    },
-    {
-      "id": "feedly-https://note.com/npaka/n/n6ea96a2c929c",
-      "source": "feedly",
-      "title": "Codex のブラウザ操作機能まとめ - Browser ・ Chrome ・ Computer Use ・ Playwright の違い",
-      "url": "https://note.com/npaka/n/n6ea96a2c929c",
-      "publishedAt": "2026-06-11T10:25:18.000Z",
-      "summary": "「Codex」のブラウザ操作機能についてまとめましました。 続きをみる",
-      "author": "npaka"
-    },
-    {
-      "id": "feedly-https://note.com/npaka/n/n11e36666faa3",
-      "source": "feedly",
-      "title": "自作ゲームのバランス調整とレベリングのコツ",
-      "url": "https://note.com/npaka/n/n11e36666faa3",
-      "publishedAt": "2026-06-11T06:58:36.000Z",
-      "summary": "自作ゲームのバランス調整とレベリングのコツについてまとめました。 続きをみる",
-      "author": "npaka"
     },
     {
       "id": "feedly-https://www.itmedia.co.jp/news/articles/2606/11/news110.html",
@@ -2065,15 +1985,6 @@
       "summary": "Anthropic（アンスロピック）の最高峰AIであるMythos（ミソス）を一般向けにしたClaude Fable （フェイブル）が公開され、有償プランユーザーでも使えるようになりました。神話が寓話になり、より人々に近づいたというわけですね。そしてバージョンは5に。",
       "thumbnail": "https://www.techno-edge.net/imgs/rss/32199.png",
       "author": "テクノエッジ TechnoEdge"
-    },
-    {
-      "id": "feedly-https://note.com/npaka/n/n0c5a1dd4a0e8",
-      "source": "feedly",
-      "title": "DiffusionGemma の概要",
-      "url": "https://note.com/npaka/n/n0c5a1dd4a0e8",
-      "publishedAt": "2026-06-11T04:29:36.000Z",
-      "summary": "以下の記事が面白かったので、簡単にまとめました。 ・DiffusionGemma: 4x faster text generation 続きをみる",
-      "author": "npaka"
     },
     {
       "id": "feedly-https://atmarkit.itmedia.co.jp/ait/articles/2606/11/news048.html",
@@ -2133,15 +2044,6 @@
       "author": "Publickey"
     },
     {
-      "id": "feedly-https://note.com/npaka/n/n8a79eec08f43",
-      "source": "feedly",
-      "title": "VLA-JEPA の概要",
-      "url": "https://note.com/npaka/n/n8a79eec08f43",
-      "publishedAt": "2026-06-10T12:39:00.000Z",
-      "summary": "「VLA-JEPA」の概要をまとめました。 続きをみる",
-      "author": "npaka"
-    },
-    {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/10/5167.html",
       "source": "feedly",
       "title": "Anthropic最上位モデルClaude Fable 5公開、スレスパの腕も3倍　強力すぎて危険なMythos 5はサイバー防衛に限定提供",
@@ -2178,24 +2080,6 @@
       "summary": "Googleがサブスクリプションサービス「Google AI Plus」の月額料金を1200円から725円に値下げしました。あわせて、Googleサービスで共有のクラウドストレージ容量も200GBから400GBへと増量。",
       "thumbnail": "https://www.techno-edge.net/imgs/rss/32178.png",
       "author": "テクノエッジ TechnoEdge"
-    },
-    {
-      "id": "feedly-https://note.com/npaka/n/n23a91ac76964",
-      "source": "feedly",
-      "title": "Codex で Autodesk Maya の操作を試す",
-      "url": "https://note.com/npaka/n/n23a91ac76964",
-      "publishedAt": "2026-06-10T00:32:20.000Z",
-      "summary": "「Codex」で「Autodesk Maya」の操作を試したのでまとめました。 続きをみる",
-      "author": "npaka"
-    },
-    {
-      "id": "feedly-https://note.com/npaka/n/n337118664b85",
-      "source": "feedly",
-      "title": "Claude Fable 5 と Claude Mythos 5 の概要",
-      "url": "https://note.com/npaka/n/n337118664b85",
-      "publishedAt": "2026-06-09T21:37:48.000Z",
-      "summary": "以下の記事が面白かったので、簡単にまとめました。 ・Claude Fable 5 and Claude Mythos 5 続きをみる",
-      "author": "npaka"
     },
     {
       "id": "x-2064410506287538387",
@@ -2281,15 +2165,6 @@
       "author": "Algomatic Tech Blog"
     },
     {
-      "id": "feedly-https://note.com/npaka/n/ne22836c76203",
-      "source": "feedly",
-      "title": "Autodesk Maya 超入門",
-      "url": "https://note.com/npaka/n/ne22836c76203",
-      "publishedAt": "2026-06-09T02:31:27.000Z",
-      "summary": "「Autodesk Maya」のはじめ方をまとめました。 続きをみる",
-      "author": "npaka"
-    },
-    {
       "id": "hatena-https://cybozushiki.cybozu.co.jp/articles/m006330.html",
       "source": "hatena",
       "title": "1on1、雑談タイム──これらが失敗に終わるのはなぜか | サイボウズ式",
@@ -2297,7 +2172,7 @@
       "publishedAt": "2026-06-09T01:55:01.000Z",
       "summary": "話題の人気ブログ「おい、」シリーズの著者で、ソフトウェアエンジニアのnwiizoさんによる新連載「生産性を取り戻せ」。この連載では「仕事の生産性」をあらゆる角度からとらえ、チームで生産性を高めていくためのヒントを探っていきます。 第4回は「組織において“善意”が毒になるとき」について考えます。 はじめに あ...",
       "thumbnail": "https://cybozushiki.cybozu.co.jp/images/nwiizo4_eyecatch2_OGP.png",
-      "bookmarkCount": 21
+      "bookmarkCount": 170
     },
     {
       "id": "x-2064139379527004643",
@@ -2412,15 +2287,6 @@
       "author": "Algomatic Tech Blog"
     },
     {
-      "id": "feedly-https://note.com/npaka/n/nda032ee327c2",
-      "source": "feedly",
-      "title": "カラオケ向けAI音源分離ツールまとめ",
-      "url": "https://note.com/npaka/n/nda032ee327c2",
-      "publishedAt": "2026-06-07T23:29:23.000Z",
-      "summary": "カラオケ向けAI音源分離ツールについてまとめました。 続きをみる",
-      "author": "npaka"
-    },
-    {
       "id": "feedly-https://www.publickey1.jp/blog/26/cloudflareviterolldownvoidzeroastrovitecloudflare.html",
       "source": "feedly",
       "title": "CloudflareがViteやRolldownの開発元であるVoidZeroの買収を発表。これでAstroとViteがCloudflareの傘下に",
@@ -2437,42 +2303,6 @@
       "publishedAt": "2026-06-07T15:21:33.000Z",
       "summary": "マイクロソフトは同社が独自に構築したLinuxディストリビューション「Azure Linux 4.0」のパブリックプレビューを発表しました。 Azure Linux 4.0はFedora由来のRPMベースのLinuxディストリビューションです。 これまでマイクロソフトがLinuxを提供してきた主な歴史を振り返ると、2012年にMicrosoft Azure上でCentOSやUbuntuを用い…",
       "author": "Publickey"
-    },
-    {
-      "id": "feedly-https://note.com/npaka/n/n7710dbcf9810",
-      "source": "feedly",
-      "title": "Netlify でWebアプリを公開する",
-      "url": "https://note.com/npaka/n/n7710dbcf9810",
-      "publishedAt": "2026-06-07T09:26:23.000Z",
-      "summary": "NetlifyでWebアプリを公開してみたのでまとめました。 続きをみる",
-      "author": "npaka"
-    },
-    {
-      "id": "feedly-https://note.com/npaka/n/n98557f21b253",
-      "source": "feedly",
-      "title": "Qwen3-TTS-VC ・ Qwen3-TTS-VC-Realtime の音声クローンを試す",
-      "url": "https://note.com/npaka/n/n98557f21b253",
-      "publishedAt": "2026-06-07T04:32:55.000Z",
-      "summary": "「Qwen3-TTS-VC」「Qwen3-TTS-VC-Realtime」の音声クローンを試したのでまとめました。 続きをみる",
-      "author": "npaka"
-    },
-    {
-      "id": "feedly-https://note.com/npaka/n/n080e531462de",
-      "source": "feedly",
-      "title": "Capacitor でWebアプリのスマホアプリ化を試す",
-      "url": "https://note.com/npaka/n/n080e531462de",
-      "publishedAt": "2026-06-07T00:55:20.000Z",
-      "summary": "「Capacitor」でWebアプリのスマホアプリ化を試したのでまとめました。 続きをみる",
-      "author": "npaka"
-    },
-    {
-      "id": "feedly-https://note.com/npaka/n/n23a60355eb1a",
-      "source": "feedly",
-      "title": "Electron でWebアプリのデスクトップ化を試す",
-      "url": "https://note.com/npaka/n/n23a60355eb1a",
-      "publishedAt": "2026-06-06T13:52:18.000Z",
-      "summary": "「Electron」でWebアプリのデスクトップ化を試したのでまとめました。macOSで動作確認してます。 続きをみる",
-      "author": "npaka"
     },
     {
       "id": "x-2063105741976952929",
