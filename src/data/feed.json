@@ -1,41 +1,91 @@
 {
-  "updatedAt": "2026-06-18T13:18:52.276Z",
+  "updatedAt": "2026-06-18T18:54:33.128Z",
   "items": [
     {
-      "id": "feedly-https://qiita.com/aigirlfriendmedia/items/ebed93e5e7b6e7edaefe",
+      "id": "feedly-https://qiita.com/lemonIN/items/5f7ecacfd744a4423339",
       "source": "feedly",
-      "title": "girlfriend AIのオンボーディング文言をプロダクト要件として扱う",
-      "url": "https://qiita.com/aigirlfriendmedia/items/ebed93e5e7b6e7edaefe",
-      "publishedAt": "2026-06-18T12:53:26.000Z",
-      "summary": "オンボーディング文言を仕様として扱う理由 girlfriend AIのオンボーディングは、単なる最初の案内文ではありません。ユーザーがこのサービスをどのような存在として理解し、どこまで期待してよいかを決めるプロダクト要件です。 特にAI companion系の体験では、...",
+      "title": "アンチコメンタリー - Your Play Is Being Judged -",
+      "url": "https://qiita.com/lemonIN/items/5f7ecacfd744a4423339",
+      "publishedAt": "2026-06-18T17:40:09.000Z",
+      "summary": "概要 まるで自身のゲーム配信を視聴者に見られているかのような、メタ視点のホラーゲームです。プレイヤーがゲームをプレイする様子を「ゲーム内の何者か」が監視し、リアルタイムで辛辣な「アンチコメント」を浴びせてきます。配信者や視聴者にとって「あるある」な体験が、やがて精神を蝕む...",
       "author": "AIタグが付けられた新着記事 - Qiita"
     },
     {
-      "id": "feedly-https://qiita.com/pdfractal/items/2f50089a60ac57bf032a",
+      "id": "feedly-https://qiita.com/freefreefree1222/items/c15f53b5564391d2bc8f",
       "source": "feedly",
-      "title": "なぜ、AIの普及を見て「これからはIQの時代だ」と言う人が少ないのか？",
-      "url": "https://qiita.com/pdfractal/items/2f50089a60ac57bf032a",
-      "publishedAt": "2026-06-18T12:37:18.000Z",
-      "summary": "はじめに AIの普及によって、ソフトウェア開発の意味は大きく変わりつつあります。かつては何かを作るために、プログラミング言語、開発環境、フレームワーク、エラー処理などを一つずつ覚える必要がありました。現在は、Claude Code、GitHub Copilot、ChatG...",
+      "title": "Notionで情報収集を半分の時間に！エンジニアのためのナレッジベース構築術",
+      "url": "https://qiita.com/freefreefree1222/items/c15f53b5564391d2bc8f",
+      "publishedAt": "2026-06-18T17:11:40.000Z",
+      "summary": "環境情報 使用ツール: Notion（無料プラン / 有料プラン） ブラウザ: Google Chrome / Firefox / Safari 拡張機能: Notion Web Clipper（公式） 連携サービス: Notion AI（有料オプション） 対象読者: ...",
       "author": "AIタグが付けられた新着記事 - Qiita"
     },
     {
-      "id": "feedly-https://qiita.com/d94231/items/c08dc921f2b7ed9c8ff5",
+      "id": "feedly-https://qiita.com/ariefwara/items/ed6650f2512a0b1ccc20",
       "source": "feedly",
-      "title": "【総集編】AIでデータ分析・市場縮小の犯人を探したら、顧客の優先順位が変わっていた",
-      "url": "https://qiita.com/d94231/items/c08dc921f2b7ed9c8ff5",
-      "publishedAt": "2026-06-18T12:24:20.000Z",
-      "summary": "シリーズ: 公開データだけで市場の通説を検証する（総集編） 第1弾: 「暑すぎて秋物が売れない」は本当か？ 気温・検索・購買データで17年を検証した 第2弾: 「暑すぎて秋物が売れない」を検証したら、犯人は気温ではなく家計だった 第3弾: 「節約している」は本当か？ 家計...",
+      "title": "Agentic AIのデモは成功した。次はCFOを納得させる事業計画を組め",
+      "url": "https://qiita.com/ariefwara/items/ed6650f2512a0b1ccc20",
+      "publishedAt": "2026-06-18T16:16:02.000Z",
+      "summary": "この記事で扱うこと Agentic AI（自律型AIエージェント）のデモは誰でも感動させられます。しかし、その後の投資委員会で「コストは？リスクは？本当に価値が出る証拠は？」と詰められて頓挫するケースが後を絶ちません。 本記事では、Agentic AIの事業計画をシステム...",
       "author": "AIタグが付けられた新着記事 - Qiita"
     },
     {
-      "id": "feedly-https://qiita.com/kikuziro/items/f5a9743b14f83431580f",
+      "id": "hatena-https://github.blog/changelog/2026-06-18-safer-pull_request_target-defaults-for-github-actions-checkout/",
+      "source": "hatena",
+      "title": "Safer pull_request_target defaults for GitHub Actions checkout - GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-06-18-safer-pull_request_target-defaults-for-github-actions-checkout/",
+      "publishedAt": "2026-06-18T15:53:38.000Z",
+      "summary": "Safer pull_request_target defaults for GitHub Actions checkout The pull_request_target event is one of the most commonly misused triggers in GitHub Actions, leading to vulnerabilities in workflows.…",
+      "thumbnail": "https://github.blog/wp-content/uploads/2026/06/608669117-583082b0-3922-42af-8297-bfcd0ca39ef9.jpg",
+      "bookmarkCount": 4
+    },
+    {
+      "id": "feedly-https://qiita.com/optimisuke/items/7ab743aa92dcd99e39a3",
       "source": "feedly",
-      "title": "【AWS】Managed Knowledge BasesでチャンクサイズをCLIで指定する",
-      "url": "https://qiita.com/kikuziro/items/f5a9743b14f83431580f",
-      "publishedAt": "2026-06-18T12:24:12.000Z",
-      "summary": "TL;DR（先に結論） マネージドナレッジベース（type: MANAGED）をマネジメントコンソールで作ると、チャンクは「固定サイズ 300トークン / 20%オーバーラップ」となり変更できない AWS CLI から作り直すと、FIXED_SIZE でチャンク...",
+      "title": "自動車業界に学ぶ、AI成果物との向き合い方",
+      "url": "https://qiita.com/optimisuke/items/7ab743aa92dcd99e39a3",
+      "publishedAt": "2026-06-18T15:06:32.000Z",
+      "summary": "はじめに Claude Code や Codex みたいな AI コーディングエージェントを使っていると、コードを書くこと自体はどんどん楽になってきました。一方で、少し時間が経ったコードを見返したときに「これ、なんで作ったんだっけ」「どの要求と関係してる？」「どのテストで...",
       "author": "AIタグが付けられた新着記事 - Qiita"
+    },
+    {
+      "id": "hatena-https://devblogs.microsoft.com/typescript/announcing-typescript-7-0-rc/",
+      "source": "hatena",
+      "title": "Announcing TypeScript 7.0 RC - TypeScript",
+      "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-7-0-rc/",
+      "publishedAt": "2026-06-18T15:01:45.000Z",
+      "summary": "Today we are excited to announce the Release Candidate of TypeScript 7.0! If you haven’t been following TypeScript 7.0’s development, this release is significant in that it is built on a completely…",
+      "thumbnail": "https://devblogs.microsoft.com/typescript/wp-content/uploads/sites/11/2026/06/ts7-0-rc-1.png",
+      "bookmarkCount": 5
+    },
+    {
+      "id": "hatena-https://gigazine.net/news/20260618-us-science-chaos/",
+      "source": "hatena",
+      "title": "アメリカの科学界はトランプ大統領の政策で大混乱状態に陥っている",
+      "url": "https://gigazine.net/news/20260618-us-science-chaos/",
+      "publishedAt": "2026-06-18T12:42:28.000Z",
+      "summary": "2025年、ドナルド・トランプ大統領が政府効率化省(DOGE)を通じた大規模な予算削減を実行したことで、NASAといった科学系機関に大混乱が生じました。一体何が起こったのか、科学ジャーナリストのアダム・ロジャース氏が解説しています。 America’s compact between science and politics is broken | Scientific American...",
+      "thumbnail": "https://i.gzn.jp/img/2026/06/18/us-science-chaos/00.jpg",
+      "bookmarkCount": 19
+    },
+    {
+      "id": "hatena-https://trifectatech.org/blog/zlib-rs-in-firefox/",
+      "source": "hatena",
+      "title": "zlib-rs in Firefox - Trifecta Tech Foundation",
+      "url": "https://trifectatech.org/blog/zlib-rs-in-firefox/",
+      "publishedAt": "2026-06-18T11:29:00.000Z",
+      "summary": "As of 151.0.0, Firefox uses zlib-rs for gzip (de)compression. This is very exciting, and has both performance and safety advantages. We first started talking to Mozilla engineers in summer 2024, an…",
+      "thumbnail": "https://trifectatech.org/trifecta-tech-foundation-share.png",
+      "bookmarkCount": 9
+    },
+    {
+      "id": "hatena-https://github.com/beamivalice/PonyExl3",
+      "source": "hatena",
+      "title": "GitHub - beamivalice/PonyExl3: Run Exl3 format LLM quant on Apple Silicon",
+      "url": "https://github.com/beamivalice/PonyExl3",
+      "publishedAt": "2026-06-18T11:13:58.000Z",
+      "summary": "v0.2.0 - Update, Converter now landed but it's still in beta shape since I haven't tested the tool against a few supported models. But the results with Qwen and MiniCPM were good enough to justify …",
+      "thumbnail": "https://opengraph.githubassets.com/eb1c6281eb2a8bd0439f7e22aa7abb6656cc8bacd10b2319d404c4206dab1a21/beamivalice/PonyExl3",
+      "bookmarkCount": 6
     },
     {
       "id": "feedly-https://www.itmedia.co.jp/aiplus/article/2606/18/2000000105/",
@@ -54,7 +104,7 @@
       "publishedAt": "2026-06-18T10:33:27.000Z",
       "summary": "米オープンAIは近く日本で広告配信を始める。生成AI（人工知能）「Chat（チャット）GPT」で対話中に、利用者の関心が高い広告を表示する。生成AIが検索に取ってかわりつつあるなか、広告でも影響力を持つことになる。広告の中心は紙・テレビからデジタルへと変わってきた。米グーグルなどプラットフォーマーは検索エンジ...",
       "thumbnail": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3187002018062026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&fp-x=0.26&fp-y=0.33&h=630&w=1200&s=dd4b893cda236261128ffd7c96a04a37",
-      "bookmarkCount": 28
+      "bookmarkCount": 65
     },
     {
       "id": "feedly-https://zenn.dev/tottoko_hamu/articles/2026-06-08-090000",
@@ -114,7 +164,7 @@
       "publishedAt": "2026-06-18T09:53:22.000Z",
       "summary": "中国の大手テクノロジー企業であるAlibabaが世界モデルを用いたAIサービス「HappyOyster 1.0」を2026年6月17日にリリースしました。HappyOyster 1.0は指示通りの世界をリアルタイムで生成可能で、WASDキーで空間内を自由に動くことができます。無料で使えるそうなので実際に世界を生成してキャラクターを操作してみまし...",
       "thumbnail": "https://i.gzn.jp/img/2026/06/18/happyoyster-real-time-world-model/00.png",
-      "bookmarkCount": 16
+      "bookmarkCount": 25
     },
     {
       "id": "feedly-https://zenn.dev/417/books/flue-framework-guide",
@@ -210,7 +260,7 @@
       "url": "https://forest.watch.impress.co.jp/docs/news/2118074.html",
       "publishedAt": "2026-06-18T08:48:54.000Z",
       "thumbnail": "https://forest.watch.impress.co.jp/img/wf/list/2118/074/image1.png",
-      "bookmarkCount": 9
+      "bookmarkCount": 39
     },
     {
       "id": "feedly-https://zenn.dev/hchwr01/articles/10121283d2c6d6",
@@ -221,6 +271,16 @@
       "summary": "まずは「社内ツールがバラバラ問題」を解決したい 最近、AIでアプリを作る話は珍しくなくなりました。 画面を作る。 APIを作る。 DBを設計する。 この辺はAIがかなりの精度でこなしてくれます。 でもふと思ったんです。 AIだけで、実際に使えるSaaSは作れるのか？ サンプルアプリではなく、 ちゃんと運用できて、 お金を払ってもらえるレベルのサービスです。 そこで始めたのが Bancha（b…",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--F4MCzVPe--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Bancha%25E3%2581%25A8%25E3%2581%2584%25E3%2581%2586%25E5%2590%258D%25E3%2581%25AESaaS%25E3%2582%2592AI%25E3%2581%25A0%25E3%2581%2591%25E3%2581%25A7%25E4%25BD%259C%25E3%2582%258B%2520%25231%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%258F%25E3%2583%2581%25E3%2583%25AF%25E3%2583%25AC%25E3%2582%25A8%25E3%2583%25B3%25E3%2583%2582%25E3%2583%258B%25E3%2582%25A2%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25B0%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTFkzV3A5aW84d0diM3ZpOXNISmItRW14Mzh6R0N2SnpIMGQzeTlVMmRtdTgzazFqSmE9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
       "author": "Zennの「AI」のフィード"
+    },
+    {
+      "id": "hatena-https://gigazine.net/news/20260618-epic-games-lore/",
+      "source": "hatena",
+      "title": "Epic Gamesが大容量バイナリに強いバージョン管理システム「Lore」を公開、ゲーム制作のコードと素材をまとめて管理",
+      "url": "https://gigazine.net/news/20260618-epic-games-lore/",
+      "publishedAt": "2026-06-18T08:38:37.000Z",
+      "summary": "Epic Gamesがゲームやエンターテインメント制作向けのオープンソースのバージョン管理システム「Lore」を公開しました。Loreはソースコードだけでなく画像や音声、3Dモデルといった大容量のバイナリファイルを扱うことを前提に設計されており、MITライセンスで利用できます。 Lore | 次世代オープン ソース バージョン管...",
+      "thumbnail": "https://i.gzn.jp/img/2026/06/18/epic-games-lore/00.png",
+      "bookmarkCount": 9
     },
     {
       "id": "feedly-https://zenn.dev/kazushi6/articles/5c2d995d6c383c",
@@ -242,15 +302,6 @@
       "author": "Algomatic Tech Blog"
     },
     {
-      "id": "hatena-https://forest.watch.impress.co.jp/docs/news/2118064.html",
-      "source": "hatena",
-      "title": "「Windows App Development CLI」（winapp）v0.3.2が公開、MSIXバンドルに対応／x64とARM64をまとめて1ファイルに、UIスクリーンショットも高品質",
-      "url": "https://forest.watch.impress.co.jp/docs/news/2118064.html",
-      "publishedAt": "2026-06-18T07:49:32.000Z",
-      "thumbnail": "https://forest.watch.impress.co.jp/img/wf/list/2118/064/image_top.png",
-      "bookmarkCount": 10
-    },
-    {
       "id": "hatena-https://chanto.co.jp/blog/2026/06/whisker",
       "source": "hatena",
       "title": "Rustでクロスプラットフォームアプリ開発 | CHANTO Inc.",
@@ -258,7 +309,7 @@
       "publishedAt": "2026-06-18T07:45:02.000Z",
       "summary": "Takeshi TsukamotoCHANTO株式会社 代表取締役 モバイルアプリ、Web、サーバー、クラウドなんでもやります。プログラミングが好き。 Rustはパフォーマンス、安全性、エコシステムの充実と三拍子揃ったとてもいい言語です。 自作ツールの開発などにこれまで積極的にRustを使ってきて、その書きやすさと一度コンパイルが通...",
       "thumbnail": "https://chanto.co.jp/api/og?title=Rust%E3%81%A7%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%97%E3%83%A9%E3%83%83%E3%83%88%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA&authorName=itome&authorAvatar=%2Fauthors%2Fitome.png",
-      "bookmarkCount": 39
+      "bookmarkCount": 68
     },
     {
       "id": "hatena-https://note.com/gokigen_40life/n/nfc68bc03dded",
@@ -268,7 +319,17 @@
       "publishedAt": "2026-06-18T07:28:33.000Z",
       "summary": "ミーハーなアート好きの私、 全然詳しくないけど名画を見るのは大好きです🫶 noteをきっかけに知った、 飯田橋の印刷博物館で行っている企画展 「ヴァチカン教皇庁図書館」に行ってきました。 「印刷博物館」の「名著」なので、 展示自体は書籍が中心。 これは好みによって面白さが分かれるかもしれません。 しかし歴史上...",
       "thumbnail": "https://assets.st-note.com/production/uploads/images/285362261/rectangle_large_type_2_ccb9244f5851df89f0bdac017ac92b9a.png?fit=bounds&quality=85&width=1280",
-      "bookmarkCount": 14
+      "bookmarkCount": 31
+    },
+    {
+      "id": "hatena-https://gigazine.net/news/20260618-flight-simulator-google-earth/",
+      "source": "hatena",
+      "title": "Google Earthで飛行機操縦シミュレーションが可能に",
+      "url": "https://gigazine.net/news/20260618-flight-simulator-google-earth/",
+      "publishedAt": "2026-06-18T06:51:25.000Z",
+      "summary": "Googleの地球儀シミュレータ「Google Earth」に、飛行機に乗った気分になって地球の上空を飛び回れるフライトシミュレータ機能が追加されました。アプリダウンロード不要でブラウザから体験することができます。 【楽しいお知らせ】 Web 版 Google Earth の『フライト シミュレータ機能』、アプリダウンロード不要ですべ...",
+      "thumbnail": "https://i.gzn.jp/img/2026/06/18/flight-simulator-google-earth/00.png",
+      "bookmarkCount": 6
     },
     {
       "id": "hatena-https://tech.layerx.co.jp/entry/prompt-log-driven-ai-workflow",
@@ -278,7 +339,7 @@
       "publishedAt": "2026-06-18T06:48:09.000Z",
       "summary": "アイキャッチ はじめに こんにちは。バクラク申請・経費精算の開発をしているyoheiです。 最近、自宅寿司にハマっており寿司アカデミーに通うかほんの少し迷ってます。 近ごろはもっぱらAIを使ってコーディングしているのですが、同じような指示を書いてるな〜と思うことありませんか？ PRを作って、レビューコメントを...",
       "thumbnail": "https://cdn.image.st-hatena.com/image/scale/2abacecbeaaaef6ca41452031ca69842b85ccfdd/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fm%2Fmyohei11%2F20260617%2F20260617184939.png",
-      "bookmarkCount": 11
+      "bookmarkCount": 67
     },
     {
       "id": "hatena-https://www.itmedia.co.jp/mobile/articles/2606/18/news097.html",
@@ -288,7 +349,17 @@
       "publishedAt": "2026-06-18T06:05:29.000Z",
       "summary": "NTTは6月18日、第41回定時株主総会を開催した。同社の商号変更後初めての株主総会で、会場に来場した株主は1630人（前年比8人減）、オンライン視聴数は7885人（前年比253人増）だったという。議決事項については会社提案の3議案は全件承認、株主提案の12件は全件否認となった。 この記事では、同社子会社であるNTTドコモ...",
       "thumbnail": "https://image.itmedia.co.jp/mobile/articles/2606/18/cover_news097.jpg",
-      "bookmarkCount": 22
+      "bookmarkCount": 37
+    },
+    {
+      "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/18/news099.html",
+      "source": "hatena",
+      "title": "ChatGPTに新機能、予約したタスクを自動実行できる「Scheduled tasks」　状況監視も依頼可能",
+      "url": "https://www.itmedia.co.jp/news/articles/2606/18/news099.html",
+      "publishedAt": "2026-06-18T06:04:06.000Z",
+      "summary": "米OpenAIは6月17日（現地時間）、ChatGPTに新機能「Scheduled tasks」を順次展開すると発表した。ChatGPTにリマインダーの送信や定期的な作業、各種状況の監視などを依頼すると、指定したタイミングで自動的に実行する。タスクの管理機能や処理速度、通知機能もあわせて改善したという。 Scheduled tasksは、サイドバー...",
+      "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/18/cover_news099.jpg",
+      "bookmarkCount": 5
     },
     {
       "id": "hatena-https://gigazine.net/news/20260618-electric-nose-smell-food-bad/",
@@ -298,7 +369,26 @@
       "publishedAt": "2026-06-18T05:41:30.000Z",
       "summary": "賞味期限を少し過ぎた牛乳や数日前に作ったおかずが腐ってないか調べるため、匂いを嗅いで確かめた経験がある人は多いはず。しかし、人間の鼻は確かに鋭敏ではあるものの、必ずしも腐ったかどうかを完璧に判別できるわけではありません。新たにカリフォルニア大学バークレー校の研究チームが、人間よりも正確に腐った食...",
       "thumbnail": "https://i.gzn.jp/img/2026/06/18/electric-nose-smell-food-bad/00.jpg",
-      "bookmarkCount": 22
+      "bookmarkCount": 28
+    },
+    {
+      "id": "hatena-https://japan.cnet.com/article/35249087/",
+      "source": "hatena",
+      "title": "月110GBが3270円の「povo」登場　au品質で「つながらない2社」のユーザー刈り取りへ",
+      "url": "https://japan.cnet.com/article/35249087/",
+      "publishedAt": "2026-06-18T05:28:39.000Z",
+      "summary": "KDDIは6月18日、オンライン専用プラン「povo2.0」で、メイン回線としての利用を見据えた新たなトッピングを提供すると発表した。 目玉は、povo2.0で最大容量となる1年間トッピング「1.32TB（365日間）」だ。料金は3万9240円で、月あたりに換算すると110GBを3270円で使える。データ容量を我慢せずに使いたい人向けで、メ...",
+      "thumbnail": "https://japan.cnet.com/storage/2026/06/18/7d14af5bad9d16db169feab3978ac0d1/b81b348c-183f-4731-8431-1fd04d110b6e.jpeg",
+      "bookmarkCount": 20
+    },
+    {
+      "id": "hatena-https://internet.watch.impress.co.jp/docs/yajiuma/2118142.html",
+      "source": "hatena",
+      "title": "「サ終ゲームの継続動作をパブリッシャーへ義務付け」法案化は欧州委員会に却下される【やじうまWatch】",
+      "url": "https://internet.watch.impress.co.jp/docs/yajiuma/2118142.html",
+      "publishedAt": "2026-06-18T05:24:37.000Z",
+      "thumbnail": "https://internet.watch.impress.co.jp/img/iw/list/2118/142/yajiuma-watch_4.png",
+      "bookmarkCount": 4
     },
     {
       "id": "hatena-https://k-tai.watch.impress.co.jp/docs/news/2118224.html",
@@ -307,47 +397,26 @@
       "url": "https://k-tai.watch.impress.co.jp/docs/news/2118224.html",
       "publishedAt": "2026-06-18T05:23:54.000Z",
       "thumbnail": "https://k-tai.watch.impress.co.jp/img/ktw/list/2118/224/005.jpg",
-      "bookmarkCount": 4
+      "bookmarkCount": 14
     },
     {
-      "id": "hatena-https://gigazine.net/news/20260618-midjourney-medical-scanner/",
+      "id": "hatena-https://internet.watch.impress.co.jp/docs/yajiuma/2118136.html",
       "source": "hatena",
-      "title": "画像生成AIの「Midjourney」がまさかの医療分野に進出、60秒で全身をスキャンできる「Midjourney Scanner」を開発中",
-      "url": "https://gigazine.net/news/20260618-midjourney-medical-scanner/",
-      "publishedAt": "2026-06-18T04:24:59.000Z",
-      "summary": "画像生成AIの開発で知られるMidjourneyが「Midjourney Medical」という新部門を設立して医療機器の開発を進めていることを日本時間の2026年6月18日に発表しました。開発中の機器は「Midjourney Scanner」と呼ばれており、全身をスキャンして体内の3Dマップをミリメートル単位で作成可能とのこと。アメリカ食品医薬局(FDA...",
-      "thumbnail": "https://i.gzn.jp/img/2026/06/18/midjourney-medical-scanner/00.png",
-      "bookmarkCount": 24
+      "title": "あの「コモドール」の名を冠した折りたたみガラケーが突如発表される。ブラウザー・SNSはあえて排除【やじうまWatch】",
+      "url": "https://internet.watch.impress.co.jp/docs/yajiuma/2118136.html",
+      "publishedAt": "2026-06-18T04:55:40.000Z",
+      "thumbnail": "https://internet.watch.impress.co.jp/img/iw/list/2118/136/yajiuma-watch_1.png",
+      "bookmarkCount": 5
     },
     {
-      "id": "hatena-https://togetter.com/li/2710695",
+      "id": "hatena-https://joho-todai.com/epic-games-lore-version-control/",
       "source": "hatena",
-      "title": "夜、なにやら娘の独り言が激しいので様子を見に行ったら、血の気が引いた話「これやったことある」「子供は割と通る道」",
-      "url": "https://togetter.com/li/2710695",
-      "publishedAt": "2026-06-18T04:00:15.000Z",
-      "summary": "ゆーぱぱ @too6mi こちらは3歳くらいの時のお話です 役職の方でしたがとても温厚な方でその後笑い話にしていただけました... (これ以降は再発防止に努めたため同じことは起きてません) 2026-06-17 23:03:44",
-      "thumbnail": "https://s.tgstc.com/ogp3/5c755383c1092375dc4edaeb9f35660b-1200x630.jpeg",
-      "bookmarkCount": 42
-    },
-    {
-      "id": "hatena-https://zenn.dev/finatext/articles/77560a30ecf3f0",
-      "source": "hatena",
-      "title": "LLMの自由度を設計する：本番AIエージェントのコスト・再現性・観測性",
-      "url": "https://zenn.dev/finatext/articles/77560a30ecf3f0",
-      "publishedAt": "2026-06-18T03:51:32.000Z",
-      "summary": "初めまして！ナウキャストのよーたです。 データ&AIソリューション事業部にてAI Full-Cycle Engineerという職種でAIエージェントの開発やデータ基盤の整備を行っています。 はじめに PoCで動くエージェントと、数千件・数万件の業務データを安定して処理し、観測可能にするエージェントは別物です。 例えば、企業サイト...",
-      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--k3ughh7F--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:LLM%25E3%2581%25AE%25E8%2587%25AA%25E7%2594%25B1%25E5%25BA%25A6%25E3%2582%2592%25E8%25A8%25AD%25E8%25A8%2588%25E3%2581%2599%25E3%2582%258B%25EF%25BC%259A%25E6%259C%25AC%25E7%2595%25AAAI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AE%25E3%2582%25B3%25E3%2582%25B9%25E3%2583%2588%25E3%2583%25BB%25E5%2586%258D%25E7%258F%25BE%25E6%2580%25A7%25E3%2583%25BB%25E8%25A6%25B3%25E6%25B8%25AC%25E6%2580%25A7%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2582%2588%25E3%2583%25BC%25E3%2581%259F%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2NjOTE1NmJhMjEuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Finatext%2520Tech%2520Blog%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2MwMjdjZjRlYTguanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 7
-    },
-    {
-      "id": "hatena-https://speakerdeck.com/cyberagentdevelopers/the-evolution-of-engineers",
-      "source": "hatena",
-      "title": "「エンジニア進化論」2028年の開発完全自動化、エンジニアはどう進化するか",
-      "url": "https://speakerdeck.com/cyberagentdevelopers/the-evolution-of-engineers",
-      "publishedAt": "2026-06-18T03:48:31.000Z",
-      "summary": "2026年6月17日（水）開催の「エンジニアの役割の変化に向き合うConference」での発表スライドです。",
-      "thumbnail": "https://files.speakerdeck.com/presentations/32b972d6e06141e6b4e5f47a74c34cdd/slide_0.jpg?39729975",
-      "bookmarkCount": 41
+      "title": "Epic GamesがGitの死角を突く。バージョン管理「Lore」公開",
+      "url": "https://joho-todai.com/epic-games-lore-version-control/",
+      "publishedAt": "2026-06-18T04:37:57.000Z",
+      "summary": "※ ◎=ネイティブ対応 △=制限付き対応 ×=非対応。LoreはUEFN（Unreal Editor for Fortnite）内蔵VCSとして運用実績あり。pre-1.0 Gitの設計に正面から答える設計意図はわかりやすい。GitとPerforceの長所を選び取り、短所を避ける。 集中型のサーバーを持ちつつ、リポジトリの状態をマークルツリーと不変のリビジョンチェ...",
+      "thumbnail": "https://joho-todai.com/content/images/size/w1200/2026/06/ad767766793aec7f9dc06a02e.webp",
+      "bookmarkCount": 27
     },
     {
       "id": "hatena-https://www.itmedia.co.jp/news/articles/2606/18/news085.html",
@@ -357,7 +426,7 @@
       "publishedAt": "2026-06-18T03:20:45.000Z",
       "summary": "Web広告の「閉じる」ボタンが意図的に分かりにくく配置されている問題に、ネットユーザーがいらだっている。 ここ最近は、斜めに傾けた「close」の文字が「閉じる」ボタンの代わりに表示される広告が増えており、「閉じ方が分からなかった」「悪意を感じる」などと、SNSで批判が広がっている。 問題の広告は、広告から離...",
       "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/18/cover_news085.png",
-      "bookmarkCount": 320
+      "bookmarkCount": 367
     },
     {
       "id": "feedly-https://www.itmedia.co.jp/aiplus/article/2606/18/2000000103/",
@@ -378,24 +447,14 @@
       "author": "ITmedia AI＋ 最新記事一覧"
     },
     {
-      "id": "hatena-https://gigazine.net/news/20260618-openai-lifescibench/",
+      "id": "hatena-https://prtimes.jp/main/html/rd/p/000000077.000136051.html",
       "source": "hatena",
-      "title": "AIが科学者にとってどれだけ役立つかを測定できるベンチマークテスト「LifeSciBench」をOpenAIが公開",
-      "url": "https://gigazine.net/news/20260618-openai-lifescibench/",
-      "publishedAt": "2026-06-18T02:51:15.000Z",
-      "summary": "OpenAIがAIベンチマークテスト「LifeSciBench」を2026年6月17日に発表しました。LifeSciBenchは「AIが生命科学研究者にとってどれだけ有用か」を測定できるベンチマークテストで、従来の科学系テストと比べて実際の運用に沿った評価が可能とされています。 Introducing LifeSciBench | OpenAI https://openai.com/inde…",
-      "thumbnail": "https://i.gzn.jp/img/2026/06/18/openai-lifescibench/00.png",
-      "bookmarkCount": 8
-    },
-    {
-      "id": "hatena-https://www.techno-edge.net/article/2026/06/18/5201.html",
-      "source": "hatena",
-      "title": "アップルもRAM不足には抗えず。ティム・クックCEO、「価格上昇はもはや不可避」と述べる | テクノエッジ TechnoEdge",
-      "url": "https://www.techno-edge.net/article/2026/06/18/5201.html",
-      "publishedAt": "2026-06-18T02:49:50.000Z",
-      "summary": "ガジェット全般、サイエンス、宇宙、音楽、モータースポーツetc... 電気・ネットワーク技術者。実績媒体Engadget日本版, Autoblog日本版, Forbes JAPAN他 8月いっぱいでアップルのCEOから退任することが決まっているティム・クック氏は、「RAMageddon（ラマゲドン）」とまで呼ばれ始めたRAM / SSD用チップ不足に関し、こ...",
-      "thumbnail": "https://www.techno-edge.net/imgs/ogp_f/32381.jpg",
-      "bookmarkCount": 26
+      "title": "ZEN大学出版会が設立、第一弾として4タイトルを刊行",
+      "url": "https://prtimes.jp/main/html/rd/p/000000077.000136051.html",
+      "publishedAt": "2026-06-18T02:59:39.000Z",
+      "summary": "ZEN大学出版会が設立、第一弾として4タイトルを刊行AI時代に「知の主体」としての人間の価値を高める ZEN大学は、このたび出版事業として「ZEN大学出版会」を立ち上げ、2026年6月に創刊ラインナップ4タイトルを発売することをお知らせします。 ZEN大学は、現代における最先端の技術を活用し、すべての人々に質の高い高等...",
+      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/136051/77/136051-77-426787c468f9ad2f9de3c2406fea85df-1280x720.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "bookmarkCount": 4
     },
     {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/18/5201.html",
@@ -418,15 +477,6 @@
       "author": "テクノエッジ TechnoEdge"
     },
     {
-      "id": "hatena-https://pc.watch.impress.co.jp/docs/news/2118066.html",
-      "source": "hatena",
-      "title": "Claude Code生成のデザイン大幅改善可能に。「Claude Design」大型アップデート",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2118066.html",
-      "publishedAt": "2026-06-18T02:24:16.000Z",
-      "thumbnail": "https://pc.watch.impress.co.jp/img/pcw/list/2118/066/01.png",
-      "bookmarkCount": 34
-    },
-    {
       "id": "hatena-https://www.gizmodo.jp/article/opencode_google_gemma_4-krq/",
       "source": "hatena",
       "title": "けっこう実用的。「OpenCode」×ローカルLLMで“無料Claude Code”してみた | ギズモード・ジャパン",
@@ -434,56 +484,7 @@
       "publishedAt": "2026-06-18T02:16:16.000Z",
       "summary": "オープンソースのAIコーディングエージェント「OpenCode」をローカルLLM「Gemma-4-26b-a4b」で動かして簡単なゲームを作っているところImage: かみやまたくみ 2026年5月2日の記事を編集して再掲載しています。 AIでいろんなことができる反面、料金もけっこうかかるように。 個人的に最近すごーく気になっています。新し...",
       "thumbnail": "https://media.loom-app.com/gizmodo/dist/images/2026/04/28/opencode_top.jpg?w=1200&h=630",
-      "bookmarkCount": 8
-    },
-    {
-      "id": "hatena-https://www.gizmodo.jp/article/china-turns-on-the-worlds-first-underwater-data-center/",
-      "source": "hatena",
-      "title": "データセンター水使いすぎじゃない？→中国「海の中にデータセンター設置します」 | ギズモード・ジャパン",
-      "url": "https://www.gizmodo.jp/article/china-turns-on-the-worlds-first-underwater-data-center/",
-      "publishedAt": "2026-06-18T01:47:38.000Z",
-      "summary": "月や宇宙空間に建設するよりは海中のほうが現実的ではありますね…。 人類は、化石燃料の燃焼によって海水温を上昇させてきました。そして今回、もっと手っ取り早く、廃熱を放出するデータセンターを海中に沈めて直接温める方法を編み出しちゃいました（念のために付け加えると、データセンターの廃熱で周辺の海水温は上...",
-      "thumbnail": "https://media.loom-app.com/loom/2026/06/17/949f4859-e475-4bf9-92ae-b6024b9b27b9/original.png?w=1200&h=630",
-      "bookmarkCount": 176
-    },
-    {
-      "id": "hatena-https://togetter.com/li/2710658",
-      "source": "hatena",
-      "title": "「偏差値40の高校に激ヤバクラス爆誕」英検2級までなら確実に取れる方法思いついたからクラスの子にフル暗記させて受けさせて2級量産してる…との投稿が話題に、テンプレ等を解説",
-      "url": "https://togetter.com/li/2710658",
-      "publishedAt": "2026-06-18T01:34:26.000Z",
-      "summary": "「偏差値40の高校に激ヤバクラス爆誕」英検2級までなら確実に取れる方法思いついたからクラスの子にフル暗記させて受けさせて2級量産してる…との投稿が話題に、テンプレ等を解説",
-      "thumbnail": "https://s.tgstc.com/ogp3/e0584b4f52389c51823aee5d5e818c12-1200x630.jpeg",
-      "bookmarkCount": 146
-    },
-    {
-      "id": "hatena-https://togetter.com/li/2710627",
-      "source": "hatena",
-      "title": "「情報処理持ってます。Word、Excel使えます」と入社してきた中途の新人が、「郵便物の宛名シール作って」と頼まれたら「教えてもらってないからできません」と言いよった→悪いのは新人か会社かで議論",
-      "url": "https://togetter.com/li/2710627",
-      "publishedAt": "2026-06-18T00:47:55.000Z",
-      "summary": "みーこ @miko_celeste ちょっと衝撃的だった。 30代の中途採用の新人さんは、『情報処理持ってます。Word、Excel使えます』って触れ込みで入社してきたんよ。 で、先輩から郵便物用の宛名シール作ってねって頼まれたら、『教えてもらってないから出来ません』って言いよった😳 2026-06-17 18:37:45 みーこ @miko_celeste...",
-      "thumbnail": "https://s.tgstc.com/ogp3/aee38c1d80a5fd3ce403f8773a19b4ef-1200x630.jpeg",
-      "bookmarkCount": 272
-    },
-    {
-      "id": "hatena-https://internet.watch.impress.co.jp/docs/news/2117989.html",
-      "source": "hatena",
-      "title": "「猫はなぜキーボードに乗る？」から生まれたデスクサイド用猫ベッド、シービージャパンが発売",
-      "url": "https://internet.watch.impress.co.jp/docs/news/2117989.html",
-      "publishedAt": "2026-06-17T23:48:31.000Z",
-      "thumbnail": "https://internet.watch.impress.co.jp/img/iw/list/2117/989/01.jpg",
-      "bookmarkCount": 130
-    },
-    {
-      "id": "hatena-https://gigazine.net/news/20260618-why-meta-destroying-engineering-organization/",
-      "source": "hatena",
-      "title": "Metaが自社の象徴たるエンジニアリング文化を崩壊させてしまった理由とは？",
-      "url": "https://gigazine.net/news/20260618-why-meta-destroying-engineering-organization/",
-      "publishedAt": "2026-06-17T23:32:03.000Z",
-      "summary": "FacebookやInstagramといったソーシャルメディアを運営するMetaの経営陣は、自社のエンジニアリング組織における「AIを駆使した改革」を猛烈な勢いで進めています。そんなMeta内で行なわれている改革の実態を、ゲルゲイ・オロス氏が解説しました。 Why is Meta destroying its engineering organization? https://newsle...",
-      "thumbnail": "https://i.gzn.jp/img/2026/06/18/why-meta-destroying-engineering-organization/00_m.png",
-      "bookmarkCount": 14
+      "bookmarkCount": 29
     },
     {
       "id": "feedly-https://www.itmedia.co.jp/news/articles/2606/18/news038.html",
@@ -505,15 +506,6 @@
       "author": "テクノエッジ TechnoEdge"
     },
     {
-      "id": "hatena-https://www.watch.impress.co.jp/docs/news/2117902.html",
-      "source": "hatena",
-      "title": "グーグル、Gemini搭載の“話せる”新「Google Home スピーカー」",
-      "url": "https://www.watch.impress.co.jp/docs/news/2117902.html",
-      "publishedAt": "2026-06-17T22:51:33.000Z",
-      "thumbnail": "https://www.watch.impress.co.jp/img/ipw/list/2117/902/g01.jpg",
-      "bookmarkCount": 73
-    },
-    {
       "id": "feedly-https://www.itmedia.co.jp/news/articles/2606/18/news043.html",
       "source": "feedly",
       "title": "「AIを使う学生」vs.「使わない学生」、エッセイが創造的なのはどっち？　米大学が2025年に実証実験",
@@ -521,6 +513,16 @@
       "publishedAt": "2026-06-17T22:30:00.000Z",
       "summary": "米ジョージタウン大学に所属する研究者らが国際学術誌Computers in Human Behavior: Artificial Humansに発表した論文「Homogenizing effect of large language models (LLMs) on creative diversity: An empirical comparison of human and ChatGP…",
       "author": "ITmedia AI＋ 最新記事一覧"
+    },
+    {
+      "id": "hatena-https://memo.tyoshida.me/power-platform/copilot-studio/copilot-studio-new-orchestration/",
+      "source": "hatena",
+      "title": "Copilot Studio に「新しいエージェント体験」がやってきました - 吉田の備忘録",
+      "url": "https://memo.tyoshida.me/power-platform/copilot-studio/copilot-studio-new-orchestration/",
+      "publishedAt": "2026-06-17T22:03:51.000Z",
+      "summary": "Microsoft Build が開催された期間に合わせて、大々的な発表なく、しれっとCopilot Studio も新しく生まれ変わりました。 これまでの Copilot Studio は、トピックやフロー（会話の流れ図）といった部品を一つひとつ組み立てていく必要があり、慣れていない方にとっては少しハードルが高いものでした。 そんな中、Micros...",
+      "thumbnail": "https://i0.wp.com/memo.tyoshida.me/wp-content/uploads/2026/06/image-118.png?fit=1893%2C915&ssl=1",
+      "bookmarkCount": 4
     },
     {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/18/5198.html",
@@ -561,25 +563,6 @@
       "author": "ITmedia AI＋ 最新記事一覧"
     },
     {
-      "id": "hatena-https://togetter.com/li/2710597",
-      "source": "hatena",
-      "title": "最近、マジで『いらすとや』見かけないけどなんで？一時期はなんでもかんでもいらすとやだったのに→皆さんの考察集まる「AIに変わっただけ」「色々制約が面倒」",
-      "url": "https://togetter.com/li/2710597",
-      "publishedAt": "2026-06-17T21:17:26.000Z",
-      "summary": "吉田製作所Y @netatank 最近、マジで「いらすとや」見かけないけど？なんでや？一時期はなんでもかんでも いらすとや だったのに。 2026-06-17 14:22:58 かわいいフリー素材集 いらすとや いらすとやは季節のイベント・動物・子供などのかわいいイラストが沢山見つかるフリー素材サイトです。 36 users 531 www.irasutoy...",
-      "thumbnail": "https://s.tgstc.com/ogp3/2789928513293e4bd90632f17169bfd2-1200x630.jpeg",
-      "bookmarkCount": 124
-    },
-    {
-      "id": "hatena-https://pc.watch.impress.co.jp/docs/column/nishikawa/2117740.html",
-      "source": "hatena",
-      "title": "【西川和久の不定期コラム】 ごめんLLM、もう君だけじゃ物足りない。気づけばOpenClaw沼にハマった話",
-      "url": "https://pc.watch.impress.co.jp/docs/column/nishikawa/2117740.html",
-      "publishedAt": "2026-06-17T21:08:39.000Z",
-      "thumbnail": "https://pc.watch.impress.co.jp/img/pcw/list/2117/740/O00.jpg",
-      "bookmarkCount": 141
-    },
-    {
       "id": "x-2067325887909884315",
       "source": "x",
       "title": "New in Claude Design: it stays on brand with your design system across projects, lets you edit directly on the canvas, syncs with Claude …",
@@ -587,16 +570,6 @@
       "publishedAt": "2026-06-17T19:17:55.000Z",
       "summary": "New in Claude Design: it stays on brand with your design system across projects, lets you edit directly on the canvas, syncs with Claude Code, and connects to more of the tools you already use.",
       "author": "ブックマーク"
-    },
-    {
-      "id": "hatena-https://github.com/EpicGames/lore",
-      "source": "hatena",
-      "title": "GitHub - EpicGames/lore: Lore is a next-generation, open source revision control system",
-      "url": "https://github.com/EpicGames/lore",
-      "publishedAt": "2026-06-17T16:03:13.000Z",
-      "summary": "You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Re…",
-      "thumbnail": "https://opengraph.githubassets.com/0a4eff8265367af69ec8037940d2263b8b4e7732a3db4c0bf223ad4e86be2486/EpicGames/lore",
-      "bookmarkCount": 11
     },
     {
       "id": "feedly-https://www.publickey1.jp/blog/26/awsaiaws_finops_agent.html",
@@ -624,7 +597,7 @@
       "publishedAt": "2026-06-17T10:26:24.000Z",
       "summary": "こちらのイベントの登壇資料です エンジニアの役割の変化に向き合うConference https://engineering-shift-con.findy-tools.io/2026/",
       "thumbnail": "https://files.speakerdeck.com/presentations/f04910f831fa49d1a080297a378394dc/slide_0.jpg?39731068",
-      "bookmarkCount": 6
+      "bookmarkCount": 30
     },
     {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/17/5196.html",
@@ -635,6 +608,15 @@
       "summary": "XREALが空間コンピューティングデバイス「XREAL AURA」の予約受付を開始しました。",
       "thumbnail": "https://www.techno-edge.net/imgs/rss/32340.png",
       "author": "テクノエッジ TechnoEdge"
+    },
+    {
+      "id": "hatena-https://qiita.com/Shiro_Shihi/items/d18bf49f0c7a168baa19",
+      "source": "hatena",
+      "title": "「正規表現が0.002ミリ秒遅かった」という理由だけで、全角/半角判定をすべて『ビット演算』で実装した話 - Qiita",
+      "url": "https://qiita.com/Shiro_Shihi/items/d18bf49f0c7a168baa19",
+      "publishedAt": "2026-06-17T09:14:08.000Z",
+      "summary": "この記事は Qiita Tech Festa 2026「この記事誰得？ 私しか得しないニッチな技術で記事投稿！」 の参加記事です。 はじめに みなさん、文字列の全角・半角判定、どうやってますか？ 大半の人はこう答えるでしょう。 「正規表現で /[^\\x20-\\x7E]/ とか使えば一発じゃん」 はい、大正解です。実務では絶対にそうしてくださ...",
+      "bookmarkCount": 11
     },
     {
       "id": "feedly-https://www.itmedia.co.jp/aiplus/article/2606/17/2000000100/",
@@ -653,16 +635,6 @@
       "publishedAt": "2026-06-17T08:44:24.000Z",
       "summary": "Corsorは公式Xで、「近く大幅な改善が行われる予定だ」と述べた。",
       "author": "ITmedia AI＋ 最新記事一覧"
-    },
-    {
-      "id": "hatena-https://qiita.com/hatsukaze/items/192403c9ff6a433fe0b6",
-      "source": "hatena",
-      "title": "【完全ローカル】AIに記憶を持たせる5ステップ — Ollama×RAGでつくる長期記憶チャットボット - Qiita",
-      "url": "https://qiita.com/hatsukaze/items/192403c9ff6a433fe0b6",
-      "publishedAt": "2026-06-17T08:20:59.000Z",
-      "summary": "はじめに こんにちは。開発部の雨です。 今回は、ローカル環境で動く「長期記憶付きチャットボット」をゼロから実装する方法を紹介します。 最初はシンプルに「全会話履歴をそのままLLMに渡す」素朴な実装からスタートし、その問題点を実際に確認しながら、RAG（Retrieval-Augmented Generation）とChromaDBを使って段階...",
-      "thumbnail": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYzNTE3MzMyJTJGZWRiY2M1NzBkOGNiMjRiYzI5NGYxYzdlNGM2NTNhNTNiNDI3NmRkOCUyRnhfbGFyZ2UucG5nJTNGMTY4OTkwOTU1NT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9Y2I1NzYxYzNhMTJiZTRjOGFmNzJiNjI1Njc5MThmZWU%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dcd5201c890e96bdbaecf6fd0c9aa6f6d?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwJUU1JUFFJThDJUU1JTg1JUE4JUUzJTgzJUFEJUUzJTgzJUJDJUUzJTgyJUFCJUUzJTgzJUFCJUUzJTgwJTkxQUklRTMlODElQUIlRTglQTglOTglRTYlODYlQjYlRTMlODIlOTIlRTYlOEMlODElRTMlODElOUYlRTMlODElOUIlRTMlODIlOEI1JUUzJTgyJUI5JUUzJTgzJTg2JUUzJTgzJTgzJUUzJTgzJTk3JTIwJUUyJTgwJTk0JTIwT2xsYW1hJUMzJTk3UkFHJUUzJTgxJUE3JUUzJTgxJUE0JUUzJTgxJThGJUUzJTgyJThCJUU5JTk1JUI3JUU2JTlDJTlGJUU4JUE4JTk4JUU2JTg2JUI2JUUzJTgzJTgxJUUzJTgzJUEzJUUzJTgzJTgzJUUzJTgzJTg4JUUzJTgzJTlDJUUzJTgzJTgzJUUzJTgzJTg4JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9ZDYwMzc4YTc3NmU1MTE5MWJlMDNiNDMxN2UwMTg0YTY&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBoYXRzdWthemUmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1hNGU4YjliMzI0M2I0NDY0ZTViMzgwYzI5NjU5OWY4OQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=cdb89ef0184c9489e158e3529c5fc282",
-      "bookmarkCount": 285
     },
     {
       "id": "feedly-https://www.itmedia.co.jp/aiplus/article/2606/17/2000000099/",
@@ -6572,25 +6544,6 @@
       "publishedAt": "2026-05-20T00:48:07.000Z",
       "summary": "We're currently experiencing some system issues 🛠️\n\nIf you are on a paid plan, you might notice temporary restrictions on your usage and limits. We're working to get this resolved and bring your quotas back to normal ASAP!\n\nThank you so much for your patience and understanding 🙏",
       "author": "@NotebookLM"
-    },
-    {
-      "id": "x-2056802364955504824",
-      "source": "x",
-      "title": "Happy anniversary to our beloved Tailwind 🎂\n\n1.5 billion notebooks, audio overviews, and slide decks later… we are so grateful for the l…",
-      "url": "https://x.com/NotebookLM/status/2056802364955504824",
-      "publishedAt": "2026-05-19T18:21:12.000Z",
-      "summary": "Happy anniversary to our beloved Tailwind 🎂\n\n1.5 billion notebooks, audio overviews, and slide decks later… we are so grateful for the love and support from this incredible, one-of-a-kind community.\n\nWe can’t wait to show you what’s next! 👀",
-      "author": "@NotebookLM"
-    },
-    {
-      "id": "x-2056795641448444098",
-      "source": "x",
-      "title": "Gemini CLI が Antigravity CLI に統合\n\nAntigravity CLI は Go で開発、Gemini CLI の Agent Skills、Hooks、Subagents、Extensions などを維持しつつ、高速に動作、非同期ワークフロー、…",
-      "url": "https://x.com/i/status/2056795641448444098",
-      "publishedAt": "2026-05-19T17:54:28.000Z",
-      "summary": "Gemini CLI が Antigravity CLI に統合\n\nAntigravity CLI は Go で開発、Gemini CLI の Agent Skills、Hooks、Subagents、Extensions などを維持しつつ、高速に動作、非同期ワークフロー、ユニファイドアーキテクチャなど改善。Gemini CLI は 6 月 18 日に終了。",
-      "author": "ブックマーク",
-      "thumbnail": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/GeminiCLI-AntigravityCLI_1200x630.2e16d0ba.fill-1200x600.png"
     }
   ],
   "state": {
