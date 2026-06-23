@@ -52,6 +52,18 @@ export interface FeedsConfig {
     rssUrl: string;
     disabled?: boolean;
   };
+  workspace: {
+    /**
+     * Google Workspace Updates ブログ（Blogger 製）の Atom フィード。
+     * 既定の /feeds/posts/default は FeedBurner（http）へ 302 するため、
+     * `?redirect=false` を付けて Google ドメインから直接 https の Atom を取得する。
+     * 公開フィードなのでトークン・課金・失効なし。表示は「Workspace」バッジ。
+     */
+    rssUrl: string;
+    /** 1回に取り込む最大件数（1ソースの占有を防ぐ） */
+    perFeedLimit: number;
+    disabled?: boolean;
+  };
   layerx: {
     /**
      * LayerX AI・LLM Newsletter（Substack 発行・毎週 Gmail に届く）の取得設定。
@@ -98,6 +110,11 @@ export const feedsConfig: FeedsConfig = {
   },
   hatena: {
     rssUrl: "https://b.hatena.ne.jp/hotentry/it.rss",
+    disabled: false,
+  },
+  workspace: {
+    rssUrl: "https://workspaceupdates.googleblog.com/feeds/posts/default?redirect=false",
+    perFeedLimit: 15,
     disabled: false,
   },
   layerx: {

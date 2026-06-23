@@ -1,7 +1,7 @@
 /**
  * フィード集約スクリプト。
  *
- * 3ソース（X / Feedly / はてブ）を取得 → FeedItem に正規化 → 既存キャッシュとマージ
+ * 5ソース（X / Feedly / はてブ / Workspace / LayerX）を取得 → FeedItem に正規化 → 既存キャッシュとマージ
  * → 重複排除・ソート・トリム → src/data/feed.json に書き出す。
  *
  * 各ソースは個別に try/catch する。あるソースの取得に失敗した場合、
@@ -21,6 +21,7 @@ import { fetchX, fetchXAccounts } from "./sources/x";
 import { fetchFeedly } from "./sources/feedly";
 import { fetchHatena } from "./sources/hatena";
 import { fetchLayerX } from "./sources/layerx";
+import { fetchWorkspace } from "./sources/workspace";
 
 loadEnv();
 
@@ -150,6 +151,26 @@ async function run(): Promise<void> {
     }
   }
 
+  // ---- Google Workspace Updates（Blogger Atom を直接取得。トークン不要）----
+  if (feedsConfig.workspace.disabled) {
+    console.log("[workspace] disabled");
+    collected.push(...cachedFor(cache, "workspace"));
+  } else {
+    try {
+      const items = await fetchWorkspace({
+        rssUrl: feedsConfig.workspace.rssUrl,
+        perFeedLimit: feedsConfig.workspace.perFeedLimit,
+      });
+      collected.push(...items);
+      console.log(`[workspace] ${items.length} items`);
+    } catch (e) {
+      const msg = (e as Error).message;
+      errors.push(`workspace: ${msg}`);
+      console.error("[workspace] 取得失敗（前回キャッシュを維持）:", msg);
+      collected.push(...cachedFor(cache, "workspace"));
+    }
+  }
+
   // ---- LayerX AI・LLM Newsletter（Gmail 経由）----
   if (feedsConfig.layerx.disabled) {
     console.log("[layerx] disabled");
@@ -207,10 +228,13 @@ async function run(): Promise<void> {
   };
   writeCache(out);
 
-  const counts = { x: 0, feedly: 0, hatena: 0, layerx: 0 } as Record<FeedSource, number>;
+  const counts = { x: 0, feedly: 0, hatena: 0, layerx: 0, workspace: 0 } as Record<
+    FeedSource,
+    number
+  >;
   for (const i of items) counts[i.source]++;
   console.log(
-    `\n✅ feed.json 更新: 計 ${items.length} 件 (X=${counts.x} / Feedly=${counts.feedly} / はてブ=${counts.hatena} / LayerX=${counts.layerx})`,
+    `\n✅ feed.json 更新: 計 ${items.length} 件 (X=${counts.x} / Feedly=${counts.feedly} / はてブ=${counts.hatena} / LayerX=${counts.layerx} / Workspace=${counts.workspace})`,
   );
   if (errors.length) {
     console.warn(`⚠️  ${errors.length} 件のソースでエラー:\n  - ${errors.join("\n  - ")}`);
