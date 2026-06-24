@@ -22,6 +22,7 @@ import { fetchFeedly } from "./sources/feedly";
 import { fetchHatena } from "./sources/hatena";
 import { fetchLayerX } from "./sources/layerx";
 import { fetchWorkspace } from "./sources/workspace";
+import { enrichOgImages } from "./sources/enrichOgp";
 
 loadEnv();
 
@@ -221,6 +222,21 @@ async function run(): Promise<void> {
   items = items.filter((i) => new Date(i.publishedAt).getTime() >= cutoff);
   items = items.slice(0, feedsConfig.maxItems);
 
+  // ---- OGP 画像でサムネ補完（トリム後の最終アイテムのみ＝無駄fetch回避）----
+  // X は basecamp 公開JSON 経由で補完済み・LayerX は Substack リダイレクト＆物量大のため対象外。
+  const ogImages = state.ogImages ?? {};
+  try {
+    const r = await enrichOgImages(items, ogImages, new Set(["feedly", "hatena", "workspace"]));
+    console.log(`[ogp] サムネ補完: +${r.resolved} 件解決 (試行 ${r.attempted})`);
+  } catch (e) {
+    console.error("[ogp] サムネ補完でエラー（スキップ）:", (e as Error).message);
+  }
+  // 現存 item id 分だけ残して負キャッシュの無限増殖を防ぐ。
+  const liveIds = new Set(items.map((i) => i.id));
+  state.ogImages = Object.fromEntries(
+    Object.entries(ogImages).filter(([id]) => liveIds.has(id)),
+  );
+
   const out: FeedData = {
     updatedAt: new Date().toISOString(),
     items,
@@ -233,8 +249,9 @@ async function run(): Promise<void> {
     number
   >;
   for (const i of items) counts[i.source]++;
+  const withThumb = items.filter((i) => i.thumbnail).length;
   console.log(
-    `\n✅ feed.json 更新: 計 ${items.length} 件 (X=${counts.x} / Feedly=${counts.feedly} / はてブ=${counts.hatena} / LayerX=${counts.layerx} / Workspace=${counts.workspace})`,
+    `\n✅ feed.json 更新: 計 ${items.length} 件 (X=${counts.x} / Feedly=${counts.feedly} / はてブ=${counts.hatena} / LayerX=${counts.layerx} / Workspace=${counts.workspace}) サムネ ${withThumb} 件`,
   );
   if (errors.length) {
     console.warn(`⚠️  ${errors.length} 件のソースでエラー:\n  - ${errors.join("\n  - ")}`);

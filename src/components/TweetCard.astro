@@ -11,15 +11,15 @@ const author = parseXAuthor(item.author);
 const body = item.summary ?? item.title;
 const ts = absoluteTime(item.publishedAt);
 
-// アバター: ハンドルがあればイニシャル＋安定色、無ければ X ロゴのグレー丸
+// アバター: ハンドルがあればイニシャル＋安定色、無ければ X ロゴのインク丸
 const initialsSeed = author.handle ?? "";
 const initials = author.kind === "handle" ? avatarInitials(initialsSeed) : "";
-const avatarBg = author.kind === "handle" ? avatarColor(initialsSeed) : "var(--color-tweet-border)";
+const avatarBg = author.kind === "handle" ? avatarColor(initialsSeed) : "var(--color-text)";
 ---
 
 <article
   data-source="x"
-  class="group relative rounded-xl border border-[var(--color-tweet-border)] bg-[var(--color-tweet-bg)] p-3.5 text-[var(--color-tweet-text)] transition-colors duration-[var(--duration-base)] hover:bg-[var(--color-tweet-bg-hover)]"
+  class="group relative rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] p-4 text-[var(--color-text)] shadow-[0_1px_2px_rgba(20,22,27,0.04)] transition-all duration-[var(--duration-base)] hover:border-[var(--color-border-strong)] hover:shadow-[0_6px_20px_rgba(20,22,27,0.09)]"
 >
   <a
     href={item.url}
@@ -31,7 +31,7 @@ const avatarBg = author.kind === "handle" ? avatarColor(initialsSeed) : "var(--c
   <!-- ヘッダー: アバター | 名前/ハンドル | X ロゴ -->
   <div class="relative z-10 flex items-start gap-3">
     <div
-      class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-[15px] font-bold text-white"
+      class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-[14px] font-bold text-white"
       style={`background:${avatarBg}`}
       aria-hidden="true"
     >
@@ -39,7 +39,7 @@ const avatarBg = author.kind === "handle" ? avatarColor(initialsSeed) : "var(--c
         author.kind === "handle" ? (
           initials
         ) : (
-          <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 text-[var(--color-tweet-text)]">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 text-white">
             <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
           </svg>
         )
@@ -50,13 +50,17 @@ const avatarBg = author.kind === "handle" ? avatarColor(initialsSeed) : "var(--c
       {
         author.kind === "handle" ? (
           <>
-            <div class="truncate text-[15px] font-bold text-[var(--color-tweet-text)]">
+            <div class="truncate text-[15px] font-bold text-[var(--color-text)]">
               {author.handle}
             </div>
-            <div class="truncate text-[13px] text-[var(--color-tweet-muted)]">@{author.handle}</div>
+            <div class="truncate font-mono text-[12px] text-[var(--color-text-subtle)]">
+              @{author.handle}
+            </div>
           </>
         ) : (
-          <div class="truncate pt-1 text-[13px] text-[var(--color-tweet-muted)]">{author.label}</div>
+          <div class="truncate pt-1 font-mono text-[12px] text-[var(--color-text-subtle)]">
+            {author.label}
+          </div>
         )
       }
     </div>
@@ -64,7 +68,7 @@ const avatarBg = author.kind === "handle" ? avatarColor(initialsSeed) : "var(--c
     <svg
       viewBox="0 0 24 24"
       fill="currentColor"
-      class="ml-1 h-[22px] w-[22px] shrink-0 text-[var(--color-tweet-text)]"
+      class="ml-1 h-[20px] w-[20px] shrink-0 text-[var(--color-text)]"
       aria-label="X"
     >
       <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
@@ -73,7 +77,7 @@ const avatarBg = author.kind === "handle" ? avatarColor(initialsSeed) : "var(--c
 
   <!-- 本文 -->
   <p
-    class="relative z-10 mt-2.5 line-clamp-[8] whitespace-pre-wrap text-[15px] leading-relaxed text-[var(--color-tweet-text)]"
+    class="relative z-10 mt-2.5 line-clamp-[8] whitespace-pre-wrap text-[15px] leading-relaxed text-[var(--color-text)]"
   >
     {body}
   </p>
@@ -81,7 +85,7 @@ const avatarBg = author.kind === "handle" ? avatarColor(initialsSeed) : "var(--c
   <!-- メディア（外部アカウントのみサムネあり） -->
   {
     item.thumbnail && (
-      <div class="relative z-10 mt-3 overflow-hidden rounded-xl border border-[var(--color-tweet-border)] bg-[var(--color-tweet-bg-hover)]">
+      <div class="relative z-10 mt-3 overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)]">
         <img
           src={item.thumbnail}
           alt=""
@@ -94,5 +98,5 @@ const avatarBg = author.kind === "handle" ? avatarColor(initialsSeed) : "var(--c
   }
 
   <!-- 絶対時刻 -->
-  {ts && <div class="relative z-10 mt-2.5 text-[13px] text-[var(--color-tweet-muted)]">{ts}</div>}
+  {ts && <div class="relative z-10 mt-2.5 font-mono text-[12px] text-[var(--color-text-subtle)]">{ts}</div>}
 </article>

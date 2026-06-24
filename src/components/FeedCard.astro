@@ -1,6 +1,6 @@
 ---
 import type { FeedItem } from "@/lib/feed";
-import { SOURCES, relativeTime } from "@/lib/feed";
+import { SOURCES } from "@/lib/feed";
 import TweetCard from "./TweetCard.astro";
 
 interface Props {
@@ -9,85 +9,108 @@ interface Props {
 
 const { item } = Astro.props;
 const meta = SOURCES.find((s) => s.key === item.source)!;
-const rel = relativeTime(item.publishedAt);
+// 画像の有無でレイアウトを分岐（ハイブリッド）。X は専用カード。
+const variant = item.source === "x" ? "tweet" : item.thumbnail ? "hero" : "compact";
 ---
 
 {
-  item.source === "x" ? (
+  variant === "tweet" ? (
     <TweetCard item={item} />
-  ) : (
+  ) : variant === "hero" ? (
     <article
-  data-source={item.source}
-  class="group relative rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] p-4 transition-colors duration-[var(--duration-base)] hover:border-[var(--color-border-strong)] hover:bg-[var(--color-card-hover)]"
->
-  <a
-    href={item.url}
-    target="_blank"
-    rel="noopener noreferrer"
-    class="absolute inset-0 z-20 rounded-xl"
-    aria-label={item.title}></a>
+      data-source={item.source}
+      class="group relative overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] shadow-[0_1px_2px_rgba(20,22,27,0.04)] transition-all duration-[var(--duration-base)] hover:border-[var(--color-border-strong)] hover:shadow-[0_6px_20px_rgba(20,22,27,0.09)]"
+    >
+      <a
+        href={item.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="absolute inset-0 z-20"
+        aria-label={item.title}
+      />
 
-  <div class="relative z-10 flex gap-3.5">
-    <div class="min-w-0 flex-1">
-      <div class="mb-2 flex items-center gap-2 text-[11px]">
-        <span
-          class={`inline-flex items-center rounded-full px-2 py-0.5 font-semibold tracking-wide ${meta.badgeClass}`}
-        >
-          {meta.label}
-        </span>
-        {
-          item.author && (
-            <span class="truncate text-[var(--color-text-subtle)]">{item.author}</span>
-          )
-        }
-        <span class="ml-auto shrink-0 text-[var(--color-text-subtle)]">{rel}</span>
+      <div class="relative z-10 aspect-video w-full overflow-hidden bg-[var(--color-surface)]">
+        <img
+          src={item.thumbnail}
+          alt=""
+          loading="lazy"
+          class="h-full w-full object-cover transition-transform duration-500 ease-[var(--ease-out-soft)] group-hover:scale-[1.03]"
+          onerror="this.parentElement.style.display='none'"
+        />
       </div>
 
-      <h2
-        class="text-[15px] font-semibold leading-snug text-[var(--color-text)] transition-colors group-hover:text-[var(--color-accent-bright)]"
-      >
-        {item.title}
-      </h2>
+      <div class="relative z-10 p-4">
+        <div class="mb-2 flex items-center gap-2">
+          <span
+            class={`inline-flex items-center rounded-full px-2 py-0.5 text-[11px] font-semibold tracking-wide ${meta.badgeClass}`}
+          >
+            {meta.label}
+          </span>
+          {item.author && (
+            <span class="truncate font-mono text-[11px] text-[var(--color-text-subtle)]">
+              {item.author}
+            </span>
+          )}
+        </div>
 
-      {
-        item.summary && (
-          <p class="mt-1.5 line-clamp-2 text-[13px] leading-relaxed text-[var(--color-text-muted)]">
+        <h2 class="font-display text-[17px] font-semibold leading-snug text-[var(--color-text)] transition-colors group-hover:text-[var(--color-accent-bright)]">
+          {item.title}
+        </h2>
+
+        {item.summary && (
+          <p class="mt-2 line-clamp-[5] text-[15px] leading-relaxed text-[var(--color-text-muted)]">
             {item.summary}
           </p>
-        )
-      }
+        )}
 
-      {
-        item.bookmarkCount !== undefined && (
-          <div class="mt-2 inline-flex items-center gap-1 rounded-md bg-[var(--color-hatena-bg)] px-2 py-0.5 text-[11px] font-medium text-[var(--color-hatena)]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="h-3 w-3"
-            >
+        {item.bookmarkCount !== undefined && (
+          <div class="mt-3 inline-flex items-center gap-1 rounded-md bg-[var(--color-hatena-bg)] px-2 py-0.5 text-[11px] font-medium text-[var(--color-hatena)]">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-3 w-3">
               <path d="M6 2a2 2 0 0 0-2 2v18l8-5.5L20 22V4a2 2 0 0 0-2-2H6z" />
             </svg>
             {item.bookmarkCount} users
           </div>
-        )
-      }
-    </div>
+        )}
+      </div>
+    </article>
+  ) : (
+    <article
+      data-source={item.source}
+      class="group relative rounded-lg border border-[var(--color-border)] bg-[var(--color-card)] px-3.5 py-2.5 transition-colors duration-[var(--duration-base)] hover:border-[var(--color-border-strong)] hover:bg-[var(--color-card-hover)]"
+    >
+      <a
+        href={item.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="absolute inset-0 z-20 rounded-lg"
+        aria-label={item.title}
+      />
 
-    {
-      item.thumbnail && (
-        <div class="relative z-10 h-20 w-20 shrink-0 overflow-hidden rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] sm:h-24 sm:w-24">
-          <img
-            src={item.thumbnail}
-            alt=""
-            loading="lazy"
-            class="h-full w-full object-cover"
-            onerror="this.parentElement.style.display='none'"
-          />
+      <div class="relative z-10 flex items-start gap-2.5">
+        <span
+          class={`mt-px inline-flex shrink-0 items-center rounded-full px-2 py-0.5 text-[10.5px] font-semibold tracking-wide ${meta.badgeClass}`}
+        >
+          {meta.label}
+        </span>
+        <div class="min-w-0 flex-1">
+          <h2 class="line-clamp-2 text-[14px] font-medium leading-snug text-[var(--color-text)] transition-colors group-hover:text-[var(--color-accent-bright)]">
+            {item.title}
+          </h2>
+          {item.summary && (
+            <p class="mt-0.5 line-clamp-2 text-[13px] leading-relaxed text-[var(--color-text-muted)]">
+              {item.summary}
+            </p>
+          )}
+          {(item.author || item.bookmarkCount !== undefined) && (
+            <div class="mt-1 flex items-center gap-2 font-mono text-[11px] text-[var(--color-text-subtle)]">
+              {item.author && <span class="truncate">{item.author}</span>}
+              {item.bookmarkCount !== undefined && (
+                <span class="shrink-0">★ {item.bookmarkCount}</span>
+              )}
+            </div>
+          )}
         </div>
-      )
-    }
-    </div>
+      </div>
     </article>
   )
 }

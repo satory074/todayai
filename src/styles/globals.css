@@ -1,53 +1,55 @@
 @import "tailwindcss";
 
 @theme {
-  /* Surface — 落ち着いたダーク */
-  --color-bg: #0a0b0f;
-  --color-surface: #101218;
-  --color-card: #14161e;
-  --color-card-hover: #181b25;
-  --color-border: #232633;
-  --color-border-strong: #313747;
+  /* Surface — 朝刊（明るいペーパー） */
+  --color-bg: #f6f7f9;
+  --color-surface: #eef0f4;
+  --color-card: #ffffff;
+  --color-card-hover: #f1f3f6;
+  --color-border: #e4e7ec;
+  --color-border-strong: #cdd2da;
 
   /* Text */
-  --color-text: #eef0f5;
-  --color-text-muted: #9aa1b0;
-  --color-text-subtle: #646b7d;
+  --color-text: #14161b;
+  --color-text-muted: #5b616e;
+  --color-text-subtle: #8a909c;
 
-  /* Brand accent — エレクトリック・シアン */
-  --color-accent: #3dd7d0;
-  --color-accent-bright: #6ff0ea;
-  --color-accent-deep: #1c8b87;
-  --color-accent-glow: rgba(61, 215, 208, 0.12);
+  /* Brand accent — コバルト（ライト背景では hover を濃くする） */
+  --color-accent: #2f5fff;
+  --color-accent-bright: #1d44e0;
+  --color-accent-deep: #173bbf;
+  --color-accent-glow: rgba(47, 95, 255, 0.1);
 
-  /* ソース別アクセント */
-  --color-x: #e7e9ee;
-  --color-x-bg: rgba(231, 233, 238, 0.08);
-  --color-feedly: #4ec46f;
-  --color-feedly-bg: rgba(78, 196, 111, 0.1);
-  --color-hatena: #3a9ad9;
-  --color-hatena-bg: rgba(58, 154, 217, 0.12);
-  --color-layerx: #ff6719;
-  --color-layerx-bg: rgba(255, 103, 25, 0.12);
-  --color-workspace: #4285f4;
-  --color-workspace-bg: rgba(66, 133, 244, 0.12);
+  /* ソース別アクセント（白背景で可読な文字色＋淡いチップ背景） */
+  --color-x: #15181d;
+  --color-x-bg: rgba(20, 22, 27, 0.06);
+  --color-feedly: #15873c;
+  --color-feedly-bg: rgba(33, 165, 80, 0.12);
+  --color-hatena: #1f7fc2;
+  --color-hatena-bg: rgba(31, 127, 194, 0.12);
+  --color-layerx: #d8500a;
+  --color-layerx-bg: rgba(216, 80, 10, 0.12);
+  --color-workspace: #2d68d8;
+  --color-workspace-bg: rgba(45, 104, 216, 0.12);
 
-  /* X ツイート風カード（公式埋め込み準拠の配色） */
-  --color-tweet-bg: #15202b;
-  --color-tweet-bg-hover: #1e2732;
-  --color-tweet-border: #38444d;
-  --color-tweet-text: #f7f9f9;
-  --color-tweet-muted: #8b98a5;
+  /* X ツイート風カード（朝刊ライトに合わせた配色） */
+  --color-tweet-bg: #ffffff;
+  --color-tweet-bg-hover: #f1f3f6;
+  --color-tweet-border: #e4e7ec;
+  --color-tweet-text: #14161b;
+  --color-tweet-muted: #5b616e;
   --color-tweet-blue: #1d9bf0;
 
   /* Typography */
   --font-sans: "Inter", "Noto Sans JP", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Space Grotesk", "Noto Sans JP", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", ui-monospace, "Menlo", monospace;
 
   --leading-jp-body: 1.7;
 
   /* Motion */
   --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
-  --duration-base: 220ms;
+  --duration-base: 200ms;
 }
 
 html {
@@ -58,13 +60,12 @@ html {
   line-height: var(--leading-jp-body);
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 body {
   min-height: 100vh;
-  background:
-    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(61, 215, 208, 0.07), transparent 55%),
-    var(--color-bg);
+  background: var(--color-bg);
 }
 
 a {
@@ -103,4 +104,17 @@ a {
 /* フィルタ非表示用 */
 [data-source].is-hidden {
   display: none;
+}
+
+/* モーション設定の尊重 */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
 }

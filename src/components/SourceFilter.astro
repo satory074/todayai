@@ -24,11 +24,11 @@ const chips = [
       <button
         type="button"
         data-filter={c.key}
-        class="filter-chip inline-flex items-center gap-1.5 rounded-full border border-[var(--color-border)] px-3 py-1.5 text-[12.5px] font-medium text-[var(--color-text-muted)] transition-colors hover:border-[var(--color-border-strong)] hover:text-[var(--color-text)] aria-[pressed=true]:border-[var(--color-accent-deep)] aria-[pressed=true]:bg-[var(--color-accent-glow)] aria-[pressed=true]:text-[var(--color-accent-bright)]"
+        class="filter-chip inline-flex items-center gap-1.5 rounded-full border border-[var(--color-border)] bg-[var(--color-card)] px-3 py-1.5 text-[12.5px] font-medium text-[var(--color-text-muted)] transition-colors hover:border-[var(--color-border-strong)] hover:text-[var(--color-text)] aria-[pressed=true]:border-[var(--color-accent)] aria-[pressed=true]:bg-[var(--color-accent-glow)] aria-[pressed=true]:text-[var(--color-accent-bright)]"
         aria-pressed={c.key === "all" ? "true" : "false"}
       >
         {c.label}
-        <span class="text-[10.5px] text-[var(--color-text-subtle)]">{counts[c.key]}</span>
+        <span class="font-mono text-[10.5px] tabular-nums text-[var(--color-text-subtle)]">{counts[c.key]}</span>
       </button>
     ))
   }
@@ -37,7 +37,8 @@ const chips = [
 <script>
   const filterBar = document.getElementById("source-filter");
   const chips = Array.from(document.querySelectorAll<HTMLButtonElement>(".filter-chip"));
-  const cards = Array.from(document.querySelectorAll<HTMLElement>("article[data-source]"));
+  // タイムレール行（時刻＋カードを包むラッパ）単位で出し分ける
+  const cards = Array.from(document.querySelectorAll<HTMLElement>("[data-feed-item]"));
   const daySections = Array.from(document.querySelectorAll<HTMLElement>("[data-day-section]"));
 
   function applyFilter(filter: string) {
@@ -48,7 +49,7 @@ const chips = [
     // 中身が全部隠れた日付セクションは見出しごと隠す
     for (const section of daySections) {
       const visible = section.querySelectorAll(
-        "article[data-source]:not(.is-hidden)",
+        "[data-feed-item]:not(.is-hidden)",
       ).length;
       section.classList.toggle("is-hidden", visible === 0);
     }

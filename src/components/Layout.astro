@@ -37,39 +37,39 @@ const ogImage = absUrl("/og-default.png");
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div class="mx-auto flex min-h-screen max-w-2xl flex-col px-4 sm:px-6">
+    <div class="mx-auto flex min-h-screen max-w-[46rem] flex-col px-4 sm:px-6">
       <header
-        class="sticky top-0 z-20 -mx-4 mb-2 border-b border-[var(--color-border)] bg-[var(--color-bg)]/85 px-4 py-3.5 backdrop-blur-md sm:-mx-6 sm:px-6"
+        class="sticky top-0 z-20 -mx-4 mb-2 border-b border-[var(--color-border)] bg-[var(--color-bg)]/85 px-4 py-3 backdrop-blur-md sm:-mx-6 sm:px-6"
       >
         <div class="flex items-center justify-between gap-3">
           <a href={siteLink("/")} class="group flex items-center gap-2.5">
             <span
-              class="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-[var(--color-accent)] to-[var(--color-accent-deep)] text-sm font-bold text-[#06201f] shadow-[0_0_18px_var(--color-accent-glow)]"
+              class="flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--color-accent)] font-mono text-sm font-bold text-white shadow-[0_2px_10px_var(--color-accent-glow)]"
               >ai</span
             >
-            <span class="text-[15px] font-semibold tracking-tight">
+            <span class="font-display text-[16px] font-bold tracking-tight">
               today<span class="text-[var(--color-accent)]">.ai</span>
             </span>
           </a>
-          <nav class="flex items-center gap-1 text-[13px] text-[var(--color-text-muted)]">
+          <nav class="flex items-center gap-1 font-mono text-[12px] text-[var(--color-text-muted)]">
             <a
               href={siteLink("/")}
-              class="rounded-md px-2.5 py-1.5 transition-colors hover:bg-[var(--color-card)] hover:text-[var(--color-text)]"
-              >フィード</a
+              class="rounded-md px-2.5 py-1.5 transition-colors hover:bg-[var(--color-card-hover)] hover:text-[var(--color-text)]"
+              >FEED</a
             >
             <a
               href={siteLink("/about")}
-              class="rounded-md px-2.5 py-1.5 transition-colors hover:bg-[var(--color-card)] hover:text-[var(--color-text)]"
-              >このサイト</a
+              class="rounded-md px-2.5 py-1.5 transition-colors hover:bg-[var(--color-card-hover)] hover:text-[var(--color-text)]"
+              >ABOUT</a
             >
             <a
               href={siteLink("/rss.xml")}
-              class="rounded-md px-2.5 py-1.5 transition-colors hover:bg-[var(--color-card)] hover:text-[var(--color-text)]"
+              class="rounded-md px-2.5 py-1.5 transition-colors hover:bg-[var(--color-card-hover)] hover:text-[var(--color-text)]"
               aria-label="RSS"
               >RSS</a
             >
@@ -85,7 +85,8 @@ const ogImage = absUrl("/og-default.png");
         class="border-t border-[var(--color-border)] py-6 text-center text-[12px] text-[var(--color-text-subtle)]"
       >
         <p>
-          today.ai — AI情報を1つのフィードに。X / Feedly / はてなブックマークから自動集約。
+          today.ai — AI情報を1つのフィードに。X / Feedly / はてブ / Workspace / LayerX
+          から自動集約。
         </p>
       </footer>
     </div>

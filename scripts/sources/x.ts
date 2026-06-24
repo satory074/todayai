@@ -11,6 +11,7 @@
 import type { FeedItem } from "../../src/lib/feed";
 import type { XCategory } from "../../feeds.config";
 import { resolveOgImage } from "./ogp";
+import { mapLimit } from "./util";
 
 interface XTweetEntry {
   id: string;
@@ -39,18 +40,6 @@ function cleanText(text: string): string {
 /** 本文中の t.co URL を出現順に抽出（OGP サムネ補完用）。 */
 function extractTcoUrls(text: string): string[] {
   return text.match(/https?:\/\/t\.co\/\S+/g) ?? [];
-}
-
-/** 並列数を制限して非同期タスクを実行する簡易プール。 */
-async function mapLimit<T>(items: T[], limit: number, fn: (item: T) => Promise<void>): Promise<void> {
-  let cursor = 0;
-  const workers = Array.from({ length: Math.min(limit, items.length) }, async () => {
-    while (cursor < items.length) {
-      const i = cursor++;
-      await fn(items[i]);
-    }
-  });
-  await Promise.all(workers);
 }
 
 // ===== 外部アカウントのポスト（X API App-only Bearer + since_id 増分） =====

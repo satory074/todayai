@@ -2,7 +2,14 @@
 import Layout from "@/components/Layout.astro";
 import FeedCard from "@/components/FeedCard.astro";
 import SourceFilter from "@/components/SourceFilter.astro";
-import { dayKey, dayLabel, relativeTime, type FeedData, type FeedItem } from "@/lib/feed";
+import {
+  dayKey,
+  dayLabel,
+  relativeTime,
+  timeOfDay,
+  type FeedData,
+  type FeedItem,
+} from "@/lib/feed";
 import feedJson from "@/data/feed.json";
 
 const feed = feedJson as FeedData;
@@ -26,11 +33,13 @@ const updatedRel = feed.updatedAt ? relativeTime(feed.updatedAt) : "";
 ---
 
 <Layout>
-  <section class="pt-4">
-    <h1 class="text-[22px] font-bold tracking-tight">AI情報フィード</h1>
-    <p class="mt-1 text-[13px] text-[var(--color-text-muted)]">
-      X・Feedly・はてなブックマーク（テクノロジー）から自動集約。
-      {updatedRel && <span class="text-[var(--color-text-subtle)]">最終更新 {updatedRel}</span>}
+  <section class="pb-1 pt-4">
+    <h1 class="font-display text-[26px] font-bold tracking-tight text-[var(--color-text)]">
+      AI情報フィード
+    </h1>
+    <p class="mt-1.5 text-[13px] text-[var(--color-text-muted)]">
+      X・Feedly・はてブ・Workspace・LayerX から自動集約。
+      {updatedRel && <span class="font-mono text-[var(--color-text-subtle)]">更新 {updatedRel}</span>}
     </p>
   </section>
 
@@ -45,15 +54,26 @@ const updatedRel = feed.updatedAt ? relativeTime(feed.updatedAt) : "";
         </p>
       </div>
     ) : (
-      <div class="space-y-7">
+      <div class="space-y-8">
         {groups.map((group) => (
           <section data-day-section>
-            <h2 class="sticky top-[108px] z-[5] mb-2.5 inline-block rounded-md bg-[var(--color-surface)] px-2.5 py-1 text-[12px] font-semibold tracking-wide text-[var(--color-text-muted)]">
+            <h2 class="sticky top-[112px] z-[5] mb-3 inline-flex items-center rounded-md bg-[var(--color-card)] px-2.5 py-1 font-mono text-[12px] font-semibold tracking-wide text-[var(--color-text-muted)] shadow-[0_1px_2px_rgba(20,22,27,0.05)] ring-1 ring-[var(--color-border)]">
               {group.label}
             </h2>
-            <div class="space-y-2.5">
+            <div class="space-y-3">
               {group.items.map((item) => (
-                <FeedCard item={item} />
+                <div
+                  data-feed-item
+                  data-source={item.source}
+                  class="grid grid-cols-[2.75rem_1fr] gap-2.5 sm:grid-cols-[3.5rem_1fr] sm:gap-3"
+                >
+                  <time class="pt-1 text-right font-mono text-[12px] tabular-nums text-[var(--color-text-subtle)]">
+                    {timeOfDay(item.publishedAt)}
+                  </time>
+                  <div class="border-l border-[var(--color-border)] pl-2.5 sm:pl-3">
+                    <FeedCard item={item} />
+                  </div>
+                </div>
               ))}
             </div>
           </section>

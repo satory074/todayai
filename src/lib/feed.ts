@@ -32,6 +32,8 @@ export interface FeedData {
     xAccountUserIds?: Record<string, string>;
     /** X ブックマーク等 tweet id(`x-<id>`) -> OGP画像URL / ""(確認済み・画像なし) */
     xOgImages?: Record<string, string>;
+    /** X以外（feedly/hatena/workspace）item id -> OGP画像URL / ""(確認済み・画像なし) */
+    ogImages?: Record<string, string>;
   };
 }
 
@@ -80,6 +82,13 @@ export function absoluteTime(iso: string): string {
   const time = d.toLocaleTimeString("ja-JP", { hour: "2-digit", minute: "2-digit", hour12: false });
   const date = d.toLocaleDateString("ja-JP", { year: "numeric", month: "long", day: "numeric" });
   return `${time} · ${date}`;
+}
+
+/** タイムレール用の時刻のみ（"06:50"）。パース不可なら空文字。 */
+export function timeOfDay(iso: string): string {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return "";
+  return d.toLocaleTimeString("ja-JP", { hour: "2-digit", minute: "2-digit", hour12: false });
 }
 
 // ===== X 由来アイテムのアバター/著者表示ヘルパー =====
