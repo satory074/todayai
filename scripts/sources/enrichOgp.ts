@@ -29,7 +29,7 @@ export async function enrichOgImages(
   items: FeedItem[],
   ogCache: Record<string, string>,
   allowed: Set<FeedSource>,
-  opts: { concurrency?: number; maxNew?: number } = {},
+  opts: { concurrency?: number } = {},
 ): Promise<EnrichResult> {
   // 対象: サムネ無し & 許可ソース。キャッシュ済みは流用、未確認のみ取得する。
   const targets: FeedItem[] = [];
@@ -42,12 +42,6 @@ export async function enrichOgImages(
       continue; // 既知（画像有/無）は再取得しない
     }
     targets.push(item);
-  }
-
-  // 物量の多いソース（LayerX 等）は 1run あたりの新規取得を上限で絞る。
-  // items は publishedAt 降順なので、先頭＝新しい順に取得される。
-  if (opts.maxNew !== undefined && targets.length > opts.maxNew) {
-    targets.length = opts.maxNew;
   }
 
   let resolved = 0;

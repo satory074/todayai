@@ -23,6 +23,7 @@ import { fetchHatena } from "./sources/hatena";
 import { fetchLayerX } from "./sources/layerx";
 import { fetchWorkspace } from "./sources/workspace";
 import { enrichOgImages } from "./sources/enrichOgp";
+import { enrichLayerxThumbs } from "./sources/layerxThumb";
 import { enrichTranslations } from "./sources/translate";
 
 loadEnv();
@@ -232,8 +233,6 @@ async function run(): Promise<void> {
 
   // ---- OGP 画像でサムネ補完（トリム後の最終アイテムのみ＝無駄fetch回避）----
   // X は basecamp 公開JSON 経由で補完済み。記事系（feedly/hatena/workspace）は上限なしで補完。
-  // LayerX は Substack リダイレクト＆物量大（~190件/通）のため、1run あたりの新規取得を
-  // maxNew で絞って段階的に補完する（負キャッシュで取得済みは再取得しない）。
   const ogImages = state.ogImages ?? {};
   try {
     const r = await enrichOgImages(items, ogImages, new Set(["feedly", "hatena", "workspace"]));
@@ -241,11 +240,11 @@ async function run(): Promise<void> {
   } catch (e) {
     console.error("[ogp] サムネ補完(記事系)でエラー（スキップ）:", (e as Error).message);
   }
+  // LayerX は掲載リンクの多くが x.com（ツイート）に解決される。x.com はログイン壁で og:image が
+  // 取れないため、syndication でツイートのメディア（無ければ本文リンク先の og:image）を取得する
+  // ハイブリッド。物量大（~190件/通）なので maxNew で 1run の新規取得を絞り段階的に補完。
   try {
-    const r = await enrichOgImages(items, ogImages, new Set(["layerx"]), {
-      maxNew: 40,
-      concurrency: 3,
-    });
+    const r = await enrichLayerxThumbs(items, ogImages, { maxNew: 40, concurrency: 3 });
     console.log(`[ogp] サムネ補完(LayerX): +${r.resolved} 件解決 (試行 ${r.attempted})`);
   } catch (e) {
     console.error("[ogp] サムネ補完(LayerX)でエラー（スキップ）:", (e as Error).message);

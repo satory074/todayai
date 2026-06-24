@@ -17,7 +17,7 @@ function isXHost(host: string): boolean {
 }
 
 /** タイムアウト付き fetch。 */
-async function fetchWithTimeout(url: string, init?: RequestInit): Promise<Response> {
+export async function fetchWithTimeout(url: string, init?: RequestInit): Promise<Response> {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), TIMEOUT_MS);
   try {
@@ -33,7 +33,7 @@ async function fetchWithTimeout(url: string, init?: RequestInit): Promise<Respon
 }
 
 /** HTML から og:image / twitter:image の content を抽出（属性順不同に対応）。 */
-function extractOgImage(html: string, baseUrl: string): string | undefined {
+export function extractOgImage(html: string, baseUrl: string): string | undefined {
   // <meta ... property="og:image" ... content="..."> / name="twitter:image" の両順序を許容
   const metaTags = html.match(/<meta\b[^>]*>/gi) ?? [];
   for (const tag of metaTags) {
@@ -51,20 +51,37 @@ function extractOgImage(html: string, baseUrl: string): string | undefined {
   return undefined;
 }
 
+export interface ResolvedPage {
+  /** リダイレクト追跡後の最終 URL */
+  finalUrl: string;
+  /** HTML 本文。X ホスト（ログイン壁）/ 非HTML / 取得失敗時は未設定 */
+  html?: string;
+}
+
 /**
- * URL を解決して og:image を返す。取得不可・X 由来・エラー時は undefined。
+ * URL をリダイレクト追跡で解決し、最終 URL と（取れれば）HTML を返す。
+ * X ホストは og:image が無いので本文は読まない（最終 URL だけ返す＝呼び出し側で
+ * ツイート ID を取り出して syndication 等に回せる）。取得失敗・エラー時は undefined。
  */
-export async function resolveOgImage(url: string): Promise<string | undefined> {
+export async function resolvePage(url: string): Promise<ResolvedPage | undefined> {
   try {
     const res = await fetchWithTimeout(url);
     if (!res.ok) return undefined;
     const finalUrl = res.url || url;
-    if (isXHost(new URL(finalUrl).host)) return undefined; // ログイン壁で og:image 無し
+    if (isXHost(new URL(finalUrl).host)) return { finalUrl }; // ログイン壁・本文不要
     const ct = res.headers.get("content-type") ?? "";
-    if (!ct.includes("html")) return undefined;
-    const html = await res.text();
-    return extractOgImage(html, finalUrl);
+    if (!ct.includes("html")) return { finalUrl };
+    return { finalUrl, html: await res.text() };
   } catch {
     return undefined;
   }
+}
+
+/**
+ * URL を解決して og:image を返す。取得不可・X 由来・エラー時は undefined。
+ */
+export async function resolveOgImage(url: string): Promise<string | undefined> {
+  const page = await resolvePage(url);
+  if (!page || !page.html) return undefined;
+  return extractOgImage(page.html, page.finalUrl);
 }
