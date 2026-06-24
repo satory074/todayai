@@ -53,6 +53,9 @@
 }
 
 html {
+  /* ライト専用サイト。ブラウザの強制ダークモード（Chrome の Auto Dark）に
+     反転されないよう色スキームを明示し、朝刊ライトテーマのまま表示させる。 */
+  color-scheme: light;
   background: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-sans);
