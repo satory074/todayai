@@ -32,6 +32,29 @@ const chips = [
       </button>
     ))
   }
+
+  <!-- 表示言語の一括トグル（日本語 / 原文）。右端に寄せる -->
+  <div class="ml-auto flex items-center gap-1.5">
+    <span class="font-mono text-[11px] text-[var(--color-text-subtle)]">表示</span>
+    <div class="flex items-center gap-1 rounded-full border border-[var(--color-border)] bg-[var(--color-card)] p-0.5">
+      <button
+        type="button"
+        data-lang="ja"
+        class="lang-toggle rounded-full px-2.5 py-1 text-[12px] font-medium text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-text)] aria-[pressed=true]:bg-[var(--color-accent-glow)] aria-[pressed=true]:text-[var(--color-accent-bright)]"
+        aria-pressed="true"
+      >
+        日本語
+      </button>
+      <button
+        type="button"
+        data-lang="orig"
+        class="lang-toggle rounded-full px-2.5 py-1 text-[12px] font-medium text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-text)] aria-[pressed=true]:bg-[var(--color-accent-glow)] aria-[pressed=true]:text-[var(--color-accent-bright)]"
+        aria-pressed="false"
+      >
+        原文
+      </button>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -63,4 +86,26 @@ const chips = [
     if (!chip?.dataset.filter) return;
     applyFilter(chip.dataset.filter);
   });
+
+  // ===== 表示言語トグル（日本語 / 原文）。:root.show-orig を切り替える =====
+  const langButtons = Array.from(document.querySelectorAll<HTMLButtonElement>(".lang-toggle"));
+  const LANG_KEY = "todayai:lang";
+
+  function applyLang(lang: string) {
+    document.documentElement.classList.toggle("show-orig", lang === "orig");
+    for (const b of langButtons) {
+      b.setAttribute("aria-pressed", b.dataset.lang === lang ? "true" : "false");
+    }
+  }
+
+  // 保存済みの選択を復元（既定: 日本語）
+  applyLang(localStorage.getItem(LANG_KEY) === "orig" ? "orig" : "ja");
+
+  for (const b of langButtons) {
+    b.addEventListener("click", () => {
+      const lang = b.dataset.lang === "orig" ? "orig" : "ja";
+      localStorage.setItem(LANG_KEY, lang);
+      applyLang(lang);
+    });
+  }
 </script>

@@ -106,6 +106,17 @@ a {
   display: none;
 }
 
+/* 表示言語トグル（日本語 / 原文）。既定は日本語、:root.show-orig で原文を表示 */
+.lang-orig {
+  display: none;
+}
+:root.show-orig .lang-ja {
+  display: none;
+}
+:root.show-orig .lang-orig {
+  display: inline;
+}
+
 /* モーション設定の尊重 */
 @media (prefers-reduced-motion: reduce) {
   html {

@@ -5,13 +5,17 @@ export interface FeedItem {
   /** 一意キー（X: tweet id / Feedly: item id / はてブ: entry url） */
   id: string;
   source: FeedSource;
-  /** X は本文先頭、その他は記事タイトル */
+  /** X は本文先頭、その他は記事タイトル（原文） */
   title: string;
   /** 外部リンク（新規タブで開く） */
   url: string;
   /** ISO 8601 */
   publishedAt: string;
   summary?: string;
+  /** title の日本語訳（原文が日本語なら未設定）。集約時に Gemini で補完。 */
+  titleJa?: string;
+  /** summary の日本語訳（原文が日本語 or summary 無しなら未設定）。 */
+  summaryJa?: string;
   thumbnail?: string;
   /** X の screen name / 記事の配信元サイト名 */
   author?: string;
@@ -34,6 +38,8 @@ export interface FeedData {
     xOgImages?: Record<string, string>;
     /** X以外（feedly/hatena/workspace）item id -> OGP画像URL / ""(確認済み・画像なし) */
     ogImages?: Record<string, string>;
+    /** item id -> 翻訳キャッシュ（毎回フレッシュ取得されるソースでも再翻訳しないための永続化） */
+    translations?: Record<string, { titleJa: string; summaryJa?: string }>;
   };
 }
 

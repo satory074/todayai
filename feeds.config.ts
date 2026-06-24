@@ -78,6 +78,20 @@ export interface FeedsConfig {
     maxResults: number;
     disabled?: boolean;
   };
+  translate: {
+    /**
+     * 集約時の機械翻訳（原文→日本語）。Gemini REST API を使う。
+     * 認証は env / GitHub Secrets（GEMINI_API_KEY）。未設定なら翻訳をスキップし、
+     * カードは原文のまま表示される（graceful degradation）。
+     * 原文が日本語のアイテムは検出して翻訳しない（コスト削減）。
+     */
+    model: string;
+    /** 1回の API 呼び出しで翻訳するアイテム数 */
+    batchSize: number;
+    /** バッチを並列実行する数 */
+    concurrency: number;
+    disabled?: boolean;
+  };
   /** 集約後、保持する最大件数 */
   maxItems: number;
   /** 集約後、この日数より古いアイテムは捨てる */
@@ -121,6 +135,12 @@ export const feedsConfig: FeedsConfig = {
     sender: "layerxnews@substack.com",
     newerThanDays: 30,
     maxResults: 20,
+    disabled: false,
+  },
+  translate: {
+    model: "gemini-2.0-flash",
+    batchSize: 20,
+    concurrency: 3,
     disabled: false,
   },
   maxItems: 1000, // LayerX は1通あたり ~190 トピックを個別取り込みするため大きめ

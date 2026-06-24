@@ -1,0 +1,24 @@
+---
+/**
+ * 二言語テキスト。原文（orig）と日本語訳（ja）の両方を DOM に持ち、
+ * グローバルトグル（:root.show-orig）で表示を切り替える。
+ * 翻訳が無い（ja 未設定 or ja===orig）場合は素のテキストを常時表示し、トグルの影響を受けない。
+ */
+interface Props {
+  orig?: string;
+  ja?: string;
+}
+const { orig, ja } = Astro.props;
+const hasBoth = ja && orig && ja !== orig;
+---
+
+{
+  hasBoth ? (
+    <>
+      <span class="lang-ja">{ja}</span>
+      <span class="lang-orig">{orig}</span>
+    </>
+  ) : (
+    ja || orig
+  )
+}

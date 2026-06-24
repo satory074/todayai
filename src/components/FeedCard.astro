@@ -2,6 +2,7 @@
 import type { FeedItem } from "@/lib/feed";
 import { SOURCES } from "@/lib/feed";
 import TweetCard from "./TweetCard.astro";
+import BilingualText from "./BilingualText.astro";
 
 interface Props {
   item: FeedItem;
@@ -19,7 +20,7 @@ const variant = item.source === "x" ? "tweet" : item.thumbnail ? "hero" : "compa
   ) : variant === "hero" ? (
     <article
       data-source={item.source}
-      class="group relative overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] shadow-[0_1px_2px_rgba(20,22,27,0.04)] transition-all duration-[var(--duration-base)] hover:border-[var(--color-border-strong)] hover:shadow-[0_6px_20px_rgba(20,22,27,0.09)]"
+      class="group relative flex flex-col overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] shadow-[0_1px_2px_rgba(20,22,27,0.04)] transition-all duration-[var(--duration-base)] hover:border-[var(--color-border-strong)] hover:shadow-[0_6px_20px_rgba(20,22,27,0.09)] sm:flex-row"
     >
       <a
         href={item.url}
@@ -29,7 +30,7 @@ const variant = item.source === "x" ? "tweet" : item.thumbnail ? "hero" : "compa
         aria-label={item.title}
       />
 
-      <div class="relative z-10 aspect-video w-full overflow-hidden bg-[var(--color-surface)]">
+      <div class="relative z-10 aspect-video w-full overflow-hidden bg-[var(--color-surface)] sm:aspect-auto sm:w-[14rem] sm:shrink-0 sm:self-stretch">
         <img
           src={item.thumbnail}
           alt=""
@@ -39,7 +40,7 @@ const variant = item.source === "x" ? "tweet" : item.thumbnail ? "hero" : "compa
         />
       </div>
 
-      <div class="relative z-10 p-4">
+      <div class="relative z-10 min-w-0 p-4 sm:flex-1">
         <div class="mb-2 flex items-center gap-2">
           <span
             class={`inline-flex items-center rounded-full px-2 py-0.5 text-[11px] font-semibold tracking-wide ${meta.badgeClass}`}
@@ -54,12 +55,12 @@ const variant = item.source === "x" ? "tweet" : item.thumbnail ? "hero" : "compa
         </div>
 
         <h2 class="font-display text-[17px] font-semibold leading-snug text-[var(--color-text)] transition-colors group-hover:text-[var(--color-accent-bright)]">
-          {item.title}
+          <BilingualText orig={item.title} ja={item.titleJa} />
         </h2>
 
         {item.summary && (
           <p class="mt-2 line-clamp-[5] text-[15px] leading-relaxed text-[var(--color-text-muted)]">
-            {item.summary}
+            <BilingualText orig={item.summary} ja={item.summaryJa} />
           </p>
         )}
 
@@ -94,11 +95,11 @@ const variant = item.source === "x" ? "tweet" : item.thumbnail ? "hero" : "compa
         </span>
         <div class="min-w-0 flex-1">
           <h2 class="line-clamp-2 text-[14px] font-medium leading-snug text-[var(--color-text)] transition-colors group-hover:text-[var(--color-accent-bright)]">
-            {item.title}
+            <BilingualText orig={item.title} ja={item.titleJa} />
           </h2>
           {item.summary && (
             <p class="mt-0.5 line-clamp-2 text-[13px] leading-relaxed text-[var(--color-text-muted)]">
-              {item.summary}
+              <BilingualText orig={item.summary} ja={item.summaryJa} />
             </p>
           )}
           {(item.author || item.bookmarkCount !== undefined) && (

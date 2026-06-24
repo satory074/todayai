@@ -23,6 +23,7 @@ import { fetchHatena } from "./sources/hatena";
 import { fetchLayerX } from "./sources/layerx";
 import { fetchWorkspace } from "./sources/workspace";
 import { enrichOgImages } from "./sources/enrichOgp";
+import { enrichTranslations } from "./sources/translate";
 
 loadEnv();
 
@@ -237,6 +238,31 @@ async function run(): Promise<void> {
     Object.entries(ogImages).filter(([id]) => liveIds.has(id)),
   );
 
+  // ---- 機械翻訳で日本語を補完（GEMINI_API_KEY 任意・未設定ならスキップ）----
+  // 原文が日本語のアイテムは検出してスキップ。翻訳済みは state.translations から再適用。
+  const translations = state.translations ?? {};
+  const geminiKey = process.env.GEMINI_API_KEY;
+  if (!feedsConfig.translate.disabled && geminiKey) {
+    try {
+      const r = await enrichTranslations(items, translations, geminiKey, {
+        model: feedsConfig.translate.model,
+        batchSize: feedsConfig.translate.batchSize,
+        concurrency: feedsConfig.translate.concurrency,
+      });
+      console.log(
+        `[translate] +${r.translated} 翻訳 (試行 ${r.attempted}, バッチ ${r.batches})`,
+      );
+    } catch (e) {
+      console.error("[translate] エラー（スキップ）:", (e as Error).message);
+    }
+  } else if (!feedsConfig.translate.disabled) {
+    console.log("[translate] GEMINI_API_KEY 未設定（翻訳スキップ）");
+  }
+  // 現存 item id 分だけ残してキャッシュの無限増殖を防ぐ。
+  state.translations = Object.fromEntries(
+    Object.entries(translations).filter(([id]) => liveIds.has(id)),
+  );
+
   const out: FeedData = {
     updatedAt: new Date().toISOString(),
     items,
@@ -250,8 +276,9 @@ async function run(): Promise<void> {
   >;
   for (const i of items) counts[i.source]++;
   const withThumb = items.filter((i) => i.thumbnail).length;
+  const withJa = items.filter((i) => i.titleJa).length;
   console.log(
-    `\n✅ feed.json 更新: 計 ${items.length} 件 (X=${counts.x} / Feedly=${counts.feedly} / はてブ=${counts.hatena} / LayerX=${counts.layerx} / Workspace=${counts.workspace}) サムネ ${withThumb} 件`,
+    `\n✅ feed.json 更新: 計 ${items.length} 件 (X=${counts.x} / Feedly=${counts.feedly} / はてブ=${counts.hatena} / LayerX=${counts.layerx} / Workspace=${counts.workspace}) サムネ ${withThumb} 件 / 翻訳 ${withJa} 件`,
   );
   if (errors.length) {
     console.warn(`⚠️  ${errors.length} 件のソースでエラー:\n  - ${errors.join("\n  - ")}`);

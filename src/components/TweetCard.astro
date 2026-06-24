@@ -1,6 +1,7 @@
 ---
 import type { FeedItem } from "@/lib/feed";
 import { absoluteTime, avatarColor, avatarInitials, parseXAuthor } from "@/lib/feed";
+import BilingualText from "./BilingualText.astro";
 
 interface Props {
   item: FeedItem;
@@ -9,6 +10,7 @@ interface Props {
 const { item } = Astro.props;
 const author = parseXAuthor(item.author);
 const body = item.summary ?? item.title;
+const bodyJa = item.summaryJa ?? item.titleJa;
 const ts = absoluteTime(item.publishedAt);
 
 // アバター: ハンドルがあればイニシャル＋安定色、無ければ X ロゴのインク丸
@@ -79,7 +81,7 @@ const avatarBg = author.kind === "handle" ? avatarColor(initialsSeed) : "var(--c
   <p
     class="relative z-10 mt-2.5 line-clamp-[8] whitespace-pre-wrap text-[15px] leading-relaxed text-[var(--color-text)]"
   >
-    {body}
+    <BilingualText orig={body} ja={bodyJa} />
   </p>
 
   <!-- メディア（外部アカウントのみサムネあり） -->
