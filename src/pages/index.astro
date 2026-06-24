@@ -57,7 +57,7 @@ const updatedRel = feed.updatedAt ? relativeTime(feed.updatedAt) : "";
       <div class="space-y-8">
         {groups.map((group) => (
           <section data-day-section>
-            <h2 class="sticky top-[112px] z-[5] mb-3 inline-flex items-center rounded-md bg-[var(--color-card)] px-2.5 py-1 font-mono text-[12px] font-semibold tracking-wide text-[var(--color-text-muted)] shadow-[0_1px_2px_rgba(20,22,27,0.05)] ring-1 ring-[var(--color-border)]">
+            <h2 class="sticky top-[var(--stack-h)] z-[5] mb-3 inline-flex items-center rounded-md bg-[var(--color-card)] px-2.5 py-1 font-mono text-[12px] font-semibold tracking-wide text-[var(--color-text-muted)] shadow-[0_1px_2px_rgba(20,22,27,0.05)] ring-1 ring-[var(--color-border)]">
               {group.label}
             </h2>
             <div class="space-y-3">

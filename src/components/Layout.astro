@@ -44,7 +44,8 @@ const ogImage = absUrl("/og-default.png");
   <body>
     <div class="mx-auto flex min-h-screen max-w-[46rem] flex-col px-4 sm:px-6 lg:max-w-[58rem]">
       <header
-        class="sticky top-0 z-20 -mx-4 mb-2 border-b border-[var(--color-border)] bg-[var(--color-bg)]/85 px-4 py-3 backdrop-blur-md sm:-mx-6 sm:px-6"
+        id="app-header"
+        class="sticky-surface sticky top-0 z-20 -mx-4 mb-2 border-b border-[var(--color-border)] px-4 py-3 sm:-mx-6 sm:px-6"
       >
         <div class="flex items-center justify-between gap-3">
           <a href={siteLink("/")} class="group flex items-center gap-2.5">

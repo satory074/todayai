@@ -68,6 +68,34 @@ body {
   background: var(--color-bg);
 }
 
+/* sticky バーの高さは JS（SourceFilter）が実測して上書きする。
+   フォールバック値は従来の手書きオフセットと一致＝JS無効でも崩れない */
+:root {
+  --header-h: 57px;
+  --stack-h: 112px;
+}
+
+/* ヘッダー／フィルタの sticky 面。
+   既定は不透明（backdrop-filter 非対応でも背後のカードが透けない）、
+   対応ブラウザでのみ frosted（半透明＋ぼかし）に格上げ */
+.sticky-surface {
+  background-color: var(--color-bg);
+}
+@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .sticky-surface {
+    background-color: color-mix(in srgb, var(--color-bg) 82%, transparent);
+    -webkit-backdrop-filter: saturate(140%) blur(12px);
+    backdrop-filter: saturate(140%) blur(12px);
+  }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .sticky-surface {
+    background-color: var(--color-bg);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
+
 a {
   color: inherit;
   text-decoration: none;

@@ -17,7 +17,7 @@ const chips = [
 
 <div
   id="source-filter"
-  class="sticky top-[57px] z-10 -mx-4 mb-4 flex flex-wrap gap-2 border-b border-[var(--color-border)] bg-[var(--color-bg)]/85 px-4 py-3 backdrop-blur-md sm:-mx-6 sm:px-6"
+  class="sticky-surface sticky top-[var(--header-h)] z-10 -mx-4 mb-4 flex flex-wrap gap-2 border-b border-[var(--color-border)] px-4 py-3 sm:-mx-6 sm:px-6"
 >
   {
     chips.map((c) => (
@@ -63,6 +63,23 @@ const chips = [
   // タイムレール行（時刻＋カードを包むラッパ）単位で出し分ける
   const cards = Array.from(document.querySelectorAll<HTMLElement>("[data-feed-item]"));
   const daySections = Array.from(document.querySelectorAll<HTMLElement>("[data-day-section]"));
+
+  // ===== sticky オフセットを実測して CSS 変数に反映（手書きマジックナンバー廃止）=====
+  // --header-h = ヘッダー高さ（フィルタの top）、--stack-h = ヘッダー＋フィルタ（日付見出しの top）。
+  // フィルタは flex-wrap で行数が変わるため、リサイズ／フォント読込で追従させる。
+  const header = document.getElementById("app-header");
+  function measureSticky() {
+    const root = document.documentElement.style;
+    if (header) root.setProperty("--header-h", `${header.offsetHeight}px`);
+    if (header && filterBar)
+      root.setProperty("--stack-h", `${header.offsetHeight + filterBar.offsetHeight}px`);
+  }
+  measureSticky();
+  const stickyObserver = new ResizeObserver(measureSticky);
+  if (header) stickyObserver.observe(header);
+  if (filterBar) stickyObserver.observe(filterBar);
+  window.addEventListener("resize", measureSticky);
+  document.fonts?.ready.then(measureSticky);
 
   function applyFilter(filter: string) {
     for (const card of cards) {
