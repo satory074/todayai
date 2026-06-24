@@ -246,7 +246,7 @@ async function run(): Promise<void> {
   try {
     const r = await enrichLayerxThumbs(items, ogImages, { maxNew: 40, concurrency: 3 });
     console.log(
-      `[ogp] サムネ補完(LayerX): +${r.resolved} 件解決 (試行 ${r.attempted}) 内訳 ${JSON.stringify(r.stages)}`,
+      `[ogp] サムネ補完(LayerX): +${r.resolved} 件解決 (試行 ${r.attempted}) 段階 ${JSON.stringify(r.stages)} Substack応答 ${JSON.stringify(r.probes)}`,
     );
   } catch (e) {
     console.error("[ogp] サムネ補完(LayerX)でエラー（スキップ）:", (e as Error).message);

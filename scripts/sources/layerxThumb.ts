@@ -20,6 +20,8 @@ export interface EnrichResult {
   attempted: number;
   /** 診断用: 解決経路/失敗段階の内訳 */
   stages: Record<string, number>;
+  /** 診断用: Substack 自体の応答内訳（ブロック切り分け） */
+  probes: Record<string, number>;
 }
 
 /** 解決の段階コード（診断用）。 */
@@ -32,16 +34,42 @@ type Stage =
   | "page-og" // x 以外ページの og:image で解決
   | "page-none"; // x 以外ページだが og:image 無し
 
+const UA =
+  "Mozilla/5.0 (compatible; todayai-aggregator/1.0; +https://satory074.github.io/todayai/)";
+
+/** 診断: Substack 自体の応答（リダイレクトを追わない）を確認し、Substack ブロックか
+ *  下流(x.com 等)ブロックかを切り分ける。`s<status>→<redirect先host>` / `s-throw` を返す。 */
+async function probeSubstack(url: string): Promise<string> {
+  const c = new AbortController();
+  const t = setTimeout(() => c.abort(), 5000);
+  try {
+    const p = await fetch(url, { redirect: "manual", signal: c.signal, headers: { "user-agent": UA } });
+    const loc = p.headers.get("location");
+    let host = "";
+    try {
+      if (loc) host = new URL(loc, url).host;
+    } catch {
+      /* ignore */
+    }
+    return `s${p.status}${host ? "→" + host : ""}`;
+  } catch {
+    return "s-throw";
+  } finally {
+    clearTimeout(t);
+  }
+}
+
 /** 1 リンクのサムネを解決し、画像URLと診断段階を返す。 */
-async function resolveThumb(url: string): Promise<{ thumb?: string; stage: Stage }> {
+async function resolveThumb(url: string): Promise<{ thumb?: string; stage: Stage; probe: string }> {
+  const probe = await probeSubstack(url);
   const page = await resolvePage(url);
-  if (!page) return { stage: "page-fail" };
+  if (!page) return { stage: "page-fail", probe };
 
   const tweetId = tweetIdFromUrl(page.finalUrl);
   if (tweetId) {
     const tw = await fetchTweet(tweetId);
-    if (!tw) return { stage: "tweet-fail" };
-    if (tw.photo) return { thumb: tw.photo, stage: "x-media" }; // メディア付きツイート
+    if (!tw) return { stage: "tweet-fail", probe };
+    if (tw.photo) return { thumb: tw.photo, stage: "x-media", probe }; // メディア付きツイート
     // リンク共有ツイート: 本文中の外部リンク（非X）の og:image を解決
     for (const link of tw.links) {
       let host: string;
@@ -52,17 +80,17 @@ async function resolveThumb(url: string): Promise<{ thumb?: string; stage: Stage
       }
       if (/(?:^|\.)(x\.com|twitter\.com|t\.co)$/.test(host)) continue;
       const og = await resolveOgImage(link);
-      if (og) return { thumb: og, stage: "x-link-og" };
+      if (og) return { thumb: og, stage: "x-link-og", probe };
     }
-    return { stage: "x-none" };
+    return { stage: "x-none", probe };
   }
 
   // x.com 以外の通常ページ: 取得済み HTML から og:image
   if (page.html) {
     const og = extractOgImage(page.html, page.finalUrl);
-    return { thumb: og, stage: og ? "page-og" : "page-none" };
+    return { thumb: og, stage: og ? "page-og" : "page-none", probe };
   }
-  return { stage: "page-none" };
+  return { stage: "page-none", probe };
 }
 
 /**
@@ -93,9 +121,11 @@ export async function enrichLayerxThumbs(
 
   let resolved = 0;
   const stages: Record<string, number> = {};
+  const probes: Record<string, number> = {};
   await mapLimit(targets, opts.concurrency ?? 3, async (item) => {
-    const { thumb, stage } = await resolveThumb(item.url);
+    const { thumb, stage, probe } = await resolveThumb(item.url);
     stages[stage] = (stages[stage] ?? 0) + 1;
+    probes[probe] = (probes[probe] ?? 0) + 1;
     if (thumb) {
       item.thumbnail = thumb;
       resolved++;
@@ -103,5 +133,5 @@ export async function enrichLayerxThumbs(
     ogCache[item.id] = thumb ?? ""; // 取得失敗・サムネ無しは負キャッシュ
   });
 
-  return { resolved, attempted: targets.length, stages };
+  return { resolved, attempted: targets.length, stages, probes };
 }
