@@ -30,6 +30,13 @@ loadEnv();
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_FILE = path.join(__dirname, "..", "src", "data", "feed.json");
 
+/**
+ * 翻訳/要約キャッシュ（state.translations）の生成ロジック版。
+ * プロンプトや「翻訳→要約」などロジックを変えたら上げる → 旧キャッシュを破棄して再生成する。
+ * v2: 記事系の summary を「翻訳」から「3行要約」に変更。
+ */
+const ENRICH_VERSION = "2";
+
 function readCache(): FeedData {
   try {
     const raw = fs.readFileSync(DATA_FILE, "utf-8");
@@ -224,13 +231,24 @@ async function run(): Promise<void> {
   items = items.slice(0, feedsConfig.maxItems);
 
   // ---- OGP 画像でサムネ補完（トリム後の最終アイテムのみ＝無駄fetch回避）----
-  // X は basecamp 公開JSON 経由で補完済み・LayerX は Substack リダイレクト＆物量大のため対象外。
+  // X は basecamp 公開JSON 経由で補完済み。記事系（feedly/hatena/workspace）は上限なしで補完。
+  // LayerX は Substack リダイレクト＆物量大（~190件/通）のため、1run あたりの新規取得を
+  // maxNew で絞って段階的に補完する（負キャッシュで取得済みは再取得しない）。
   const ogImages = state.ogImages ?? {};
   try {
     const r = await enrichOgImages(items, ogImages, new Set(["feedly", "hatena", "workspace"]));
-    console.log(`[ogp] サムネ補完: +${r.resolved} 件解決 (試行 ${r.attempted})`);
+    console.log(`[ogp] サムネ補完(記事系): +${r.resolved} 件解決 (試行 ${r.attempted})`);
   } catch (e) {
-    console.error("[ogp] サムネ補完でエラー（スキップ）:", (e as Error).message);
+    console.error("[ogp] サムネ補完(記事系)でエラー（スキップ）:", (e as Error).message);
+  }
+  try {
+    const r = await enrichOgImages(items, ogImages, new Set(["layerx"]), {
+      maxNew: 40,
+      concurrency: 3,
+    });
+    console.log(`[ogp] サムネ補完(LayerX): +${r.resolved} 件解決 (試行 ${r.attempted})`);
+  } catch (e) {
+    console.error("[ogp] サムネ補完(LayerX)でエラー（スキップ）:", (e as Error).message);
   }
   // 現存 item id 分だけ残して負キャッシュの無限増殖を防ぐ。
   const liveIds = new Set(items.map((i) => i.id));
@@ -238,25 +256,34 @@ async function run(): Promise<void> {
     Object.entries(ogImages).filter(([id]) => liveIds.has(id)),
   );
 
-  // ---- 機械翻訳で日本語を補完（GEMINI_API_KEY 任意・未設定ならスキップ）----
-  // 原文が日本語のアイテムは検出してスキップ。翻訳済みは state.translations から再適用。
-  const translations = state.translations ?? {};
+  // ---- 機械翻訳／3行要約で日本語を補完（GEMINI_API_KEY 任意・未設定ならスキップ）----
+  // 記事系は summary を3行要約、その他は翻訳。既処理は state.translations から再適用。
+  // 生成ロジックを変えたら ENRICH_VERSION を上げる → 旧キャッシュを破棄して作り直す。
+  let translations = state.translations ?? {};
   const geminiKey = process.env.GEMINI_API_KEY;
   if (!feedsConfig.translate.disabled && geminiKey) {
+    // ロジック更新時のみ、実際に再生成できる（キーがある）ときに旧キャッシュを破棄する。
+    if (state.enrichVersion !== ENRICH_VERSION) {
+      translations = {};
+      console.log(`[translate] enrichVersion 更新 (${state.enrichVersion ?? "なし"} → ${ENRICH_VERSION})・キャッシュ再生成`);
+    }
     try {
       const r = await enrichTranslations(items, translations, geminiKey, {
         model: feedsConfig.translate.model,
         batchSize: feedsConfig.translate.batchSize,
         concurrency: feedsConfig.translate.concurrency,
+        summarizeSources: feedsConfig.translate.summarizeSources,
+        summaryMinLen: feedsConfig.translate.summaryMinLen,
       });
       console.log(
-        `[translate] +${r.translated} 翻訳 (試行 ${r.attempted}, バッチ ${r.batches})`,
+        `[translate] +${r.translated} 翻訳/要約 (試行 ${r.attempted}, バッチ ${r.batches})`,
       );
+      state.enrichVersion = ENRICH_VERSION;
     } catch (e) {
       console.error("[translate] エラー（スキップ）:", (e as Error).message);
     }
   } else if (!feedsConfig.translate.disabled) {
-    console.log("[translate] GEMINI_API_KEY 未設定（翻訳スキップ）");
+    console.log("[translate] GEMINI_API_KEY 未設定（翻訳/要約スキップ）");
   }
   // 現存 item id 分だけ残してキャッシュの無限増殖を防ぐ。
   state.translations = Object.fromEntries(

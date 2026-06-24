@@ -38,8 +38,13 @@ export interface FeedData {
     xOgImages?: Record<string, string>;
     /** X以外（feedly/hatena/workspace）item id -> OGP画像URL / ""(確認済み・画像なし) */
     ogImages?: Record<string, string>;
-    /** item id -> 翻訳キャッシュ（毎回フレッシュ取得されるソースでも再翻訳しないための永続化） */
-    translations?: Record<string, { titleJa: string; summaryJa?: string }>;
+    /**
+     * item id -> 翻訳/要約キャッシュ（毎回フレッシュ取得されるソースでも再翻訳しないための永続化）。
+     * titleJa は原文が日本語なら未設定、summaryJa は記事系=3行要約 / その他=翻訳。
+     */
+    translations?: Record<string, { titleJa?: string; summaryJa?: string }>;
+    /** translations の生成ロジック版。ENRICH_VERSION と不一致なら作り直す。 */
+    enrichVersion?: string;
   };
 }
 

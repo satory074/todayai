@@ -10,6 +10,8 @@
  * 各 RSS を直接取得する方式に変更（トークン不要）。
  */
 
+import type { FeedSource } from "./src/lib/feed";
+
 export type XCategory = "post" | "like" | "bookmark";
 
 export interface FeedsConfig {
@@ -90,6 +92,14 @@ export interface FeedsConfig {
     batchSize: number;
     /** バッチを並列実行する数 */
     concurrency: number;
+    /**
+     * 概要を「翻訳」ではなく「生成AIで3行要約」に切り替えるソース。
+     * ここに含まれるソースは原文が日本語でも要約する（記事系を想定）。
+     * それ以外のソース（X 等）は従来どおり summary を翻訳する。
+     */
+    summarizeSources: FeedSource[];
+    /** この文字数未満の summary は要約せず翻訳扱い（短すぎる抜粋の無駄要約を防ぐ） */
+    summaryMinLen: number;
     disabled?: boolean;
   };
   /** 集約後、保持する最大件数 */
@@ -141,6 +151,8 @@ export const feedsConfig: FeedsConfig = {
     model: "gemini-2.0-flash",
     batchSize: 20,
     concurrency: 3,
+    summarizeSources: ["feedly", "hatena", "workspace"],
+    summaryMinLen: 40,
     disabled: false,
   },
   maxItems: 1000, // LayerX は1通あたり ~190 トピックを個別取り込みするため大きめ

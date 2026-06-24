@@ -20,7 +20,7 @@ const variant = item.source === "x" ? "tweet" : item.thumbnail ? "hero" : "compa
   ) : variant === "hero" ? (
     <article
       data-source={item.source}
-      class="group relative isolate flex flex-col overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] shadow-[0_1px_2px_rgba(20,22,27,0.04)] transition-all duration-[var(--duration-base)] hover:border-[var(--color-border-strong)] hover:shadow-[0_6px_20px_rgba(20,22,27,0.09)] sm:flex-row"
+      class="group relative isolate flex flex-col overflow-hidden rounded-none border border-[var(--color-border)] bg-[var(--color-card)] shadow-[0_1px_2px_rgba(20,22,27,0.04)] transition-all duration-[var(--duration-base)] hover:border-[var(--color-border-strong)] hover:shadow-[0_6px_20px_rgba(20,22,27,0.09)] sm:flex-row"
     >
       <a
         href={item.url}
@@ -30,7 +30,7 @@ const variant = item.source === "x" ? "tweet" : item.thumbnail ? "hero" : "compa
         aria-label={item.title}
       />
 
-      <div class="relative z-10 aspect-video w-full overflow-hidden bg-[var(--color-surface)] sm:aspect-auto sm:w-[14rem] sm:shrink-0 sm:self-stretch">
+      <div class="relative z-10 aspect-video w-full overflow-hidden bg-[var(--color-surface)] sm:w-[14rem] sm:shrink-0 sm:self-start">
         <img
           src={item.thumbnail}
           alt=""
@@ -59,7 +59,7 @@ const variant = item.source === "x" ? "tweet" : item.thumbnail ? "hero" : "compa
         </h2>
 
         {item.summary && (
-          <p class="mt-2 line-clamp-[5] text-[15px] leading-relaxed text-[var(--color-text-muted)]">
+          <p class="mt-2 line-clamp-3 text-[15px] leading-relaxed text-[var(--color-text-muted)]">
             <BilingualText orig={item.summary} ja={item.summaryJa} />
           </p>
         )}
@@ -77,13 +77,13 @@ const variant = item.source === "x" ? "tweet" : item.thumbnail ? "hero" : "compa
   ) : (
     <article
       data-source={item.source}
-      class="group relative isolate rounded-lg border border-[var(--color-border)] bg-[var(--color-card)] px-3.5 py-2.5 transition-colors duration-[var(--duration-base)] hover:border-[var(--color-border-strong)] hover:bg-[var(--color-card-hover)]"
+      class="group relative isolate rounded-none border border-[var(--color-border)] bg-[var(--color-card)] px-3.5 py-2.5 transition-colors duration-[var(--duration-base)] hover:border-[var(--color-border-strong)] hover:bg-[var(--color-card-hover)]"
     >
       <a
         href={item.url}
         target="_blank"
         rel="noopener noreferrer"
-        class="absolute inset-0 z-20 rounded-lg"
+        class="absolute inset-0 z-20 rounded-none"
         aria-label={item.title}
       />
 
