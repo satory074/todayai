@@ -245,7 +245,9 @@ async function run(): Promise<void> {
   // ハイブリッド。物量大（~190件/通）なので maxNew で 1run の新規取得を絞り段階的に補完。
   try {
     const r = await enrichLayerxThumbs(items, ogImages, { maxNew: 40, concurrency: 3 });
-    console.log(`[ogp] サムネ補完(LayerX): +${r.resolved} 件解決 (試行 ${r.attempted})`);
+    console.log(
+      `[ogp] サムネ補完(LayerX): +${r.resolved} 件解決 (試行 ${r.attempted}) 内訳 ${JSON.stringify(r.stages)}`,
+    );
   } catch (e) {
     console.error("[ogp] サムネ補完(LayerX)でエラー（スキップ）:", (e as Error).message);
   }

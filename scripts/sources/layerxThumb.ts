@@ -18,18 +18,30 @@ import { mapLimit } from "./util";
 export interface EnrichResult {
   resolved: number;
   attempted: number;
+  /** 診断用: 解決経路/失敗段階の内訳 */
+  stages: Record<string, number>;
 }
 
-/** 1 リンクのサムネを解決する（x.com はツイート経由、それ以外は og:image）。 */
-async function resolveThumb(url: string): Promise<string | undefined> {
+/** 解決の段階コード（診断用）。 */
+type Stage =
+  | "page-fail" // リダイレクト解決失敗（x.com が Actions IP を弾く等）
+  | "tweet-fail" // syndication 取得失敗
+  | "x-media" // ツイートのメディア画像で解決
+  | "x-link-og" // リンク共有ツイートの飛び先 og:image で解決
+  | "x-none" // x ツイートだがサムネ無し
+  | "page-og" // x 以外ページの og:image で解決
+  | "page-none"; // x 以外ページだが og:image 無し
+
+/** 1 リンクのサムネを解決し、画像URLと診断段階を返す。 */
+async function resolveThumb(url: string): Promise<{ thumb?: string; stage: Stage }> {
   const page = await resolvePage(url);
-  if (!page) return undefined;
+  if (!page) return { stage: "page-fail" };
 
   const tweetId = tweetIdFromUrl(page.finalUrl);
   if (tweetId) {
     const tw = await fetchTweet(tweetId);
-    if (!tw) return undefined;
-    if (tw.photo) return tw.photo; // メディア付きツイート
+    if (!tw) return { stage: "tweet-fail" };
+    if (tw.photo) return { thumb: tw.photo, stage: "x-media" }; // メディア付きツイート
     // リンク共有ツイート: 本文中の外部リンク（非X）の og:image を解決
     for (const link of tw.links) {
       let host: string;
@@ -40,14 +52,17 @@ async function resolveThumb(url: string): Promise<string | undefined> {
       }
       if (/(?:^|\.)(x\.com|twitter\.com|t\.co)$/.test(host)) continue;
       const og = await resolveOgImage(link);
-      if (og) return og;
+      if (og) return { thumb: og, stage: "x-link-og" };
     }
-    return undefined;
+    return { stage: "x-none" };
   }
 
   // x.com 以外の通常ページ: 取得済み HTML から og:image
-  if (page.html) return extractOgImage(page.html, page.finalUrl);
-  return undefined;
+  if (page.html) {
+    const og = extractOgImage(page.html, page.finalUrl);
+    return { thumb: og, stage: og ? "page-og" : "page-none" };
+  }
+  return { stage: "page-none" };
 }
 
 /**
@@ -77,8 +92,10 @@ export async function enrichLayerxThumbs(
   }
 
   let resolved = 0;
+  const stages: Record<string, number> = {};
   await mapLimit(targets, opts.concurrency ?? 3, async (item) => {
-    const thumb = await resolveThumb(item.url);
+    const { thumb, stage } = await resolveThumb(item.url);
+    stages[stage] = (stages[stage] ?? 0) + 1;
     if (thumb) {
       item.thumbnail = thumb;
       resolved++;
@@ -86,5 +103,5 @@ export async function enrichLayerxThumbs(
     ogCache[item.id] = thumb ?? ""; // 取得失敗・サムネ無しは負キャッシュ
   });
 
-  return { resolved, attempted: targets.length };
+  return { resolved, attempted: targets.length, stages };
 }
