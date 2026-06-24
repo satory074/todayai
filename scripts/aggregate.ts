@@ -240,18 +240,22 @@ async function run(): Promise<void> {
   } catch (e) {
     console.error("[ogp] サムネ補完(記事系)でエラー（スキップ）:", (e as Error).message);
   }
-  // LayerX は掲載リンクの多くが x.com（ツイート）に解決される。syndication でツイートの
-  // メディア（無ければ本文リンク先の og:image）を取得するハイブリッドでサムネを補完できる。
-  // ⚠️ ただし全リンクが通る substack.com/redirect が CI(datacenter IP)を 403 で弾くため
-  // **CI では機能しない**（実測: s403×40・x.com 到達前）。residential IP のローカル実行では
-  // ~70% 解決できるので、env `ENRICH_LAYERX_THUMBS` を立てたときだけ実行する。memory 参照。
-  if (process.env.ENRICH_LAYERX_THUMBS) {
-    try {
-      const r = await enrichLayerxThumbs(items, ogImages, { maxNew: 40, concurrency: 3 });
+  // LayerX サムネ。掲載リンクの多くが x.com（ツイート）に解決されるので、syndication で
+  // ツイートのメディア（無ければ本文リンク先の og:image）を取得するハイブリッド。
+  // ⚠️ 新規解決は CI では不可: 全リンクが通る substack.com/redirect が CI(datacenter IP)を
+  // 403 で弾く（実測 s403×40・x.com 到達前）。residential IP のローカル `npm run enrich:layerx`
+  // では ~70% 解決できる。memory: todayai-gemini-quota-429 参照。
+  // → CI（既定）は maxNew:0＝ネット取得せず、ローカルで埋めた state.ogImages のサムネを
+  //   毎回フレッシュ取得される LayerX 項目に **再適用するだけ**（ローカル補完分を永続化）。
+  //   env ENRICH_LAYERX_THUMBS を立てたときだけ新規解決も行う。
+  const layerxMaxNew = process.env.ENRICH_LAYERX_THUMBS ? 40 : 0;
+  try {
+    const r = await enrichLayerxThumbs(items, ogImages, { maxNew: layerxMaxNew, concurrency: 3 });
+    if (layerxMaxNew > 0) {
       console.log(`[ogp] サムネ補完(LayerX): +${r.resolved} 件解決 (試行 ${r.attempted})`);
-    } catch (e) {
-      console.error("[ogp] サムネ補完(LayerX)でエラー（スキップ）:", (e as Error).message);
     }
+  } catch (e) {
+    console.error("[ogp] サムネ補完(LayerX)でエラー（スキップ）:", (e as Error).message);
   }
   // 現存 item id 分だけ残して負キャッシュの無限増殖を防ぐ。
   const liveIds = new Set(items.map((i) => i.id));

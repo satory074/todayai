@@ -10,7 +10,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "typecheck": "astro check",
-    "aggregate": "tsx scripts/aggregate.ts"
+    "aggregate": "tsx scripts/aggregate.ts",
+    "enrich:layerx": "tsx scripts/enrichLayerxLocal.ts"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
