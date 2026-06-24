@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-06-24T11:38:15.039Z",
+  "updatedAt": "2026-06-24T11:53:02.603Z",
   "items": [
+    {
+      "id": "feedly-https://www.techno-edge.net/article/2026/06/24/5218.html",
+      "source": "feedly",
+      "title": "Anthropic、日本でClaudeコミュニティアンバサダー募集開始　イベント資金やAPIクレジット提供、開発者以外もOK",
+      "url": "https://www.techno-edge.net/article/2026/06/24/5218.html",
+      "publishedAt": "2026-06-24T11:52:42.000Z",
+      "summary": "・AnthropicがClaudeの地域コミュニティ構築を担う「Claude Community Ambassadors」プログラムを開始し、世界各地から参加者を募集している ・アンバサダーにはイベント資金・月次APIクレジット・限定グッズなどが無償提供され、プレリリース機能へのアクセスやプロダクトチームへのフィードバック機会も得られる ・開発者の肩書きは不要で、コミュニティビルダー・技術系…",
+      "thumbnail": "https://www.techno-edge.net/imgs/rss/32499.jpg",
+      "author": "テクノエッジ TechnoEdge",
+      "titleJa": "Anthropic、日本でClaudeコミュニティアンバサダー募集開始　イベント資金やAPIクレジット提供、開発者以外もOK",
+      "summaryJa": "AnthropicがClaudeの地域コミュニティを牽引するアンバサダーを募集開始。選出者にはイベント資金やAPIクレジット、限定グッズが提供され、開発チームへのフィードバック機会も得られます。開発者以外のコミュニティビルダーも歓迎されています。"
+    },
+    {
+      "id": "feedly-https://qiita.com/ijiDX/items/a59045cbc82ee16eaee5",
+      "source": "feedly",
+      "title": "ChatGPTにExcelやWordを貼る前に確認したい情報チェックリスト",
+      "url": "https://qiita.com/ijiDX/items/a59045cbc82ee16eaee5",
+      "publishedAt": "2026-06-24T11:50:40.000Z",
+      "summary": "ChatGPTなどのAIは便利です。 ExcelやWordの内容を整理したり、文章を要約したり、表の内容を説明させたりする場面で使えます。 ただし、貼る前に中身を確認する必要があります。 見えているセルや本文だけが情報ではありません。 AIに貼る前に確認したい情報 Ex...",
+      "thumbnail": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYyNTUyNjElMkZkNGVhNWY2ZjE4ZTBjMDg4ODNmNWY3YjViMTJlYjdmZTJiN2YxNjE2JTJGeF9sYXJnZS5wbmclM0YxNzc5ODM2MjE4P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz0xNGUxMDY3OWZhYWE4ODM0YmM2NWU0NGViYWY2MDg3OQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D2e166411eec1f187d9f6c06b38a01ec8?ixlib=rb-4.1.1&amp;w=1200&amp;fm=jpg&amp;mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2hhdEdQVCVFMyU4MSVBQkV4Y2VsJUUzJTgyJTg0V29yZCVFMyU4MiU5MiVFOCVCMiVCQyVFMyU4MiU4QiVFNSU4OSU4RCVFMyU4MSVBQiVFNyVBMiVCQSVFOCVBQSU4RCVFMyU4MSU5NyVFMyU4MSU5RiVFMyU4MSU4NCVFNiU4MyU4NSVFNSVBMCVCMSVFMyU4MyU4MSVFMyU4MiVBNyVFMyU4MyU4MyVFMyU4MiVBRiVFMyU4MyVBQSVFMyU4MiVCOSVFMyU4MyU4OCZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWU0Y2ZlNmVhMGEzOTJlYzAzYTVkMDdkZTA0YmQyMjg4&amp;mark-x=120&amp;mark-y=112&amp;blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBpamlEWCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTQ1ZTkzODYxODM0MDcwOTM2MTc4MjM2MmJlNDk0MzZi&amp;blend-x=242&amp;blend-y=480&amp;blend-w=838&amp;blend-h=46&amp;blend-fit=crop&amp;blend-crop=left%2Cbottom&amp;blend-mode=normal&amp;s=127de537f2bc34936d21f64ff414a4bc",
+      "author": "AIタグが付けられた新着記事 - Qiita",
+      "titleJa": "ChatGPTにExcelやWordを貼る前に確認したい情報チェックリスト",
+      "summaryJa": "ChatGPTでExcelやWordのデータを活用する際は、利便性が高い一方で情報漏洩のリスクに注意が必要です。AIに貼り付ける前に、機密情報や個人情報が含まれていないか、見えないデータが混入していないかを確認するためのチェックリストを解説します。"
+    },
     {
       "id": "feedly-https://qiita.com/vayaci/items/8d7186167eda83a2af46",
       "source": "feedly",
@@ -50,18 +74,6 @@
       "summaryJa": "RAGシステムの精度を左右する「チャンキング」の重要性を解説します。PDFやマニュアルなどの生のドキュメントを、検索に適した単位へ適切に変換するプロセスについて、RAGの仕組みを紐解きながら、検索精度を高めるための前処理の考え方を整理します。"
     },
     {
-      "id": "feedly-https://qiita.com/tuanphan/items/1608c83b1a7402c3fd37",
-      "source": "feedly",
-      "title": "【Frontend CSS – パート12】ブラウザから見た Overflow：要素がはみ出したとき何が起こるのか？",
-      "url": "https://qiita.com/tuanphan/items/1608c83b1a7402c3fd37",
-      "publishedAt": "2026-06-24T10:02:05.000Z",
-      "summary": "ご注意 この記事は AI のサポートを受けていますが 1. 課題：コンテンツが「溢れて」制御不能になるとき こんな経験、ありませんか？ ケース1： カードコンポーネント、長いテキストが枠からはみ出す。overflow: hidden を追加 — 溢れは止ま...",
-      "thumbnail": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MjU3MTA3JTJGMTUwMjkwNzAwZTMxMWViOWIyMGFkZGU0OTljMzBkYTdiMTU0MmNiYyUyRnhfbGFyZ2UucG5nJTNGMTc3ODA0MjY0OT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MjhlOTAyODQ0ZGM1Mjk0YmRhY2VmOTFhNDNlNWU4OTk%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkZiNmZkNGVlODEwMGExN2E2YjEyOWU2MzE1MWM1OWU4M2RlNTNiOGIwJTJGb3JpZ2luYWwuanBnJTNGMTc2MjA1MjQ5MD9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz02MGRhYmExYzU0N2I5YTc0YTI5ZTZmZTdlMjllYTJlOQ%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3Dfedfdcf3e147008e88f54468a0932ae7?ixlib=rb-4.1.1&amp;w=1200&amp;fm=jpg&amp;mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwRnJvbnRlbmQlMjBDU1MlMjAlRTIlODAlOTMlMjAlRTMlODMlOTElRTMlODMlQkMlRTMlODMlODgxMiVFMyU4MCU5MSVFMyU4MyU5NiVFMyU4MyVBOSVFMyU4MiVBNiVFMyU4MiVCNiVFMyU4MSU4QiVFMyU4MiU4OSVFOCVBNiU4QiVFMyU4MSU5RiUyME92ZXJmbG93JUVGJUJDJTlBJUU4JUE2JTgxJUU3JUI0JUEwJUUzJTgxJThDJUUzJTgxJUFGJUUzJTgxJUJGJUU1JTg3JUJBJUUzJTgxJTk3JUUzJTgxJTlGJUUzJTgxJUE4JUUzJTgxJThEJUU0JUJEJTk1JUUzJTgxJThDJUU4JUI1JUI3JUUzJTgxJTkzJUUzJTgyJThCJUUzJTgxJUFFJUUzJTgxJThCJUVGJUJDJTlGJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9ZjBkZWY1NTU2ZGM3YTRmODBlYzk1ODRlYTVmZWIwOWY&amp;mark-x=120&amp;mark-y=112&amp;blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB0dWFucGhhbiZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWIxNGE0ZDY3ZTEzY2Q3NzNmYjVhY2FlMTA3MmU1ZTBi&amp;blend-x=242&amp;blend-y=454&amp;blend-w=838&amp;blend-h=46&amp;blend-fit=crop&amp;blend-crop=left%2Cbottom&amp;blend-mode=normal&amp;txt64=5qCq5byP5Lya56S-VE9NT1NJQSBWSUVUIE5BTQ&amp;txt-x=242&amp;txt-y=539&amp;txt-width=838&amp;txt-clip=end%2Cellipsis&amp;txt-color=%231E2121&amp;txt-font=Hiragino%20Sans%20W6&amp;txt-size=28&amp;s=7300a0a1e507228c665c0db8644c36a6",
-      "author": "AIタグが付けられた新着記事 - Qiita",
-      "titleJa": "【Frontend CSS – パート12】ブラウザから見た Overflow：要素がはみ出したとき何が起こるのか？",
-      "summaryJa": "Web開発におけるCSSの「overflow」プロパティの挙動を解説します。コンテンツが枠からはみ出す際のブラウザの処理や、overflow: hiddenなどの設定がレイアウトに与える影響について、具体的なケーススタディを交えて制御不能な状態を防ぐための知識をまとめました。"
-    },
-    {
       "id": "feedly-https://www.itmedia.co.jp/news/articles/2606/24/news130.html",
       "source": "feedly",
       "title": "陸自駐屯地で四足歩行型の警備用ロボットが見回り　GMOインターネットグループが開発",
@@ -93,7 +105,7 @@
       "publishedAt": "2026-06-24T08:39:33.000Z",
       "summary": "KDDIの子会社でISP事業を手掛けるビッグローブ（東京都千代田区）は6月23日、同社のメールサービス「BIGLOBEメール」で、利用者のメールアドレスやBIGLOBE ID、パスワードが外部に漏えいした可能性があるとして、会員に至急のパスワード変更を呼びかけた。しかしXなどのSNS上では、同日から翌24日にかけて「画面エラーで...",
       "thumbnail": "https://image.itmedia.co.jp/news/articles/2606/24/cover_news123.jpg",
-      "bookmarkCount": 22,
+      "bookmarkCount": 24,
       "titleJa": "「パスワードが変更できない」の声相次ぐ　BIGLOBE、情報漏えいの可能性で変更呼びかけ　マイページ高負荷が一因",
       "summaryJa": "BIGLOBEメールで個人情報漏えいの可能性があるとして、同社がパスワード変更を呼びかけました。しかし、アクセス集中によりマイページが高負荷となり、変更手続きが困難になる事態が発生。ユーザーから不満の声が相次ぐなど、セキュリティ対応時のシステム負荷が課題となりました。"
     },
@@ -105,7 +117,7 @@
       "publishedAt": "2026-06-24T08:11:42.000Z",
       "summary": "auのデザインケータイ「INFOBAR」を指輪にしたようなヘルスケアデバイス「スマートリカバリーリング INFOBARコラボモデル」が、全国のKDDI直営店・au Style・auショップ・UQスポットで販売を開始しました。 「スマートリカバリーリング」は、「スマートバスマット」でも知られる東京大学発ヘルスケアスタートアップ issi...",
       "thumbnail": "https://www.techno-edge.net/imgs/ogp_f/32478.png",
-      "bookmarkCount": 4,
+      "bookmarkCount": 6,
       "titleJa": "INFOBARデザインのスマートリングがauで販売『NISHIKIGOI』『ICHIMATSU』柄　心拍・睡眠やストレスを24時間7日間計測",
       "summaryJa": "auの「INFOBAR」をモチーフにしたヘルスケアデバイス「スマートリカバリーリング」が販売開始。心拍数、睡眠、ストレスなどを24時間計測可能で、全国のauショップ等で購入できます。"
     },
@@ -141,7 +153,7 @@
       "publishedAt": "2026-06-24T07:17:29.000Z",
       "summary": "マネーフォワード は23日、5月に公表した同社が使うソースコード管理サービスへの不正アクセスに関し、新たに6万2901人分の顧客や従業員などの個人情報が流出した可能性があると発表した。個人情報の不正利用などの被害は、現時点で確認されていないとしている。",
       "thumbnail": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/default.jpg?exp=10800",
-      "bookmarkCount": 22,
+      "bookmarkCount": 23,
       "titleJa": "マネーフォワード、約6．3万人分の情報流出（時事通信） - Yahoo!ニュース",
       "summaryJa": "マネーフォワードは、同社が利用するソースコード管理サービスへの不正アクセスにより、新たに約6.3万人分の個人情報が流出した可能性があると発表しました。現時点で不正利用の被害は確認されていませんが、顧客や従業員のデータが対象となっており、対応が進められています。"
     },
@@ -153,7 +165,7 @@
       "publishedAt": "2026-06-24T07:15:05.000Z",
       "summary": "※当記事のリンクはアフィリエイト広告を含みます。 真っ白な体に、ステージの壁や床から吸い取った色を自分で塗って擬態する──そんな“お絵描きかくれんぼ”が、いま世界中で大ブームを巻き起こしている。対戦型かくれんぼ『めっちゃカメレオン』だ。 売上は2026年6月22日時点で世界累計700万本を突破。 しかも本作を手が...",
       "thumbnail": "https://img.gamewith.jp/article/thumbnail/gamearticle/17059/rectangle/59486.jpg?t=1782208335",
-      "bookmarkCount": 16,
+      "bookmarkCount": 17,
       "titleJa": "『めっちゃカメレオン』開発者インタビュー！たった2人・約2か月で生んだ、世界的大ヒットの裏側 - ゲームウィズ",
       "summaryJa": "世界累計700万本を突破した対戦型かくれんぼゲーム『めっちゃカメレオン』の開発者インタビューです。わずか2人、2か月という短期間でいかにして世界的なヒット作を生み出したのか。その開発の裏側や、独自のゲームデザインの着想について詳しく語られています。"
     },
@@ -249,7 +261,7 @@
       "publishedAt": "2026-06-24T04:52:07.000Z",
       "summary": "ByteDanceは同社のクラウド事業である火山引擎(Volcano Engine)が主催する「FORCE原動力大会」で、動画生成AI「Seedance 2.5」を発表しました。Seedance 2.5は画像、動画、音声などを含む最大50個のマルチモーダル参照素材を入力でき、1回の生成で最長30秒の動画を出力できる点が特徴です。 Seedance 2.5 feature list p...",
       "thumbnail": "https://i.gzn.jp/img/2026/06/24/bytedance-seedance-2-5/00_m.jpg",
-      "bookmarkCount": 14,
+      "bookmarkCount": 15,
       "titleJa": "動画生成AI「Seedance 2.5」をByteDanceが発表、最大50個の参照素材から最大30秒の動画を生成可能",
       "summaryJa": "ByteDanceが動画生成AI「Seedance 2.5」を発表。画像や音声など最大50個のマルチモーダル素材を入力し、一度の生成で最長30秒の高品質な動画を作成できる点が大きな特徴です。"
     },
@@ -273,7 +285,7 @@
       "publishedAt": "2026-06-24T04:12:23.000Z",
       "summary": "沼田和也（王子北教会牧師） @numatakazuya NHK『クローズアップ現代』で、末期がんの86歳の女性が泣きながら、つまり心を深く開いて、AIに相談している様子に衝撃を受ける。AIの応答はみごとで、たぶんわたしが病床訪問しても、あんなふうに配慮し尽くした受け答えはできないだろう。 2026-06-23 19:59:49",
       "thumbnail": "https://s.tgstc.com/ogp3/175a15e1c4bfd28b1ff29dab5de475e5-1200x630.jpeg",
-      "bookmarkCount": 160,
+      "bookmarkCount": 171,
       "titleJa": "『クローズアップ現代』で、末期がんの86歳の女性が泣きながらAIに相談している様子に衝撃を受ける→AIの応答はみごとで、たぶんわたしが病床訪問しても、あんなふうに配慮し尽くした受け答えはできないだろう。",
       "summaryJa": "NHK『クローズアップ現代』で放送された、末期がんの女性がAIに相談する姿に衝撃を受けた牧師の感想。AIの極めて配慮の行き届いた応答に対し、人間以上の寄り添いができる可能性を感じています。"
     },
@@ -362,15 +374,6 @@
       "summaryJa": "生成AIによる開発効率化の恩恵を受けるための「大前提」を解説。AIに任せる範囲と人間が責任を持つ範囲を明確にしないと、かえって確認コストが増大するリスクを、身近な例えを用いて分かりやすく説明しています。"
     },
     {
-      "id": "hatena-https://pc.watch.impress.co.jp/docs/news/2119523.html",
-      "source": "hatena",
-      "title": "個人ファイルも復元できる新機能。6月のWindows 11プレビュー更新",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2119523.html",
-      "publishedAt": "2026-06-24T03:02:56.000Z",
-      "thumbnail": "https://pc.watch.impress.co.jp/img/pcw/list/2119/523/1.png",
-      "bookmarkCount": 10
-    },
-    {
       "id": "feedly-https://www.itmedia.co.jp/aiplus/article/2606/24/2000000116/",
       "source": "feedly",
       "title": "主婦がAIアニメでYouTube登録者100万人を突破――1億ユーザーのAI動画生成サービス「PixVerse」の実態",
@@ -390,7 +393,7 @@
       "publishedAt": "2026-06-24T02:59:52.000Z",
       "summary": "はじめに:なぜ今、GitHub Actionsのセキュリティなのか GitHub Actionsが侵害されると何が起きるか GitHub Actionsに対する攻撃の事例分析 脆弱なトリガー構成を悪用したインジェクション Ultralytics(2024年12月) nx(2025年8月) タグ汚染によるサプライチェーン tj-actions/changed-files(2025年3月) tr…",
       "thumbnail": "https://cdn.image.st-hatena.com/image/scale/31a5e7dd941a353e62759e2e47abed7f283bbd98/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Ff%2Fflattsecurity%2F20260624%2F20260624103511.png",
-      "bookmarkCount": 42,
+      "bookmarkCount": 44,
       "titleJa": "相次ぐGitHub Actions 侵害から学ぶ、初期アクセス手法と開発者が知っておきたい対策 - GMO Flatt Security Blog",
       "summaryJa": "GitHub Actionsの侵害事例を分析し、脆弱なトリガー構成やタグ汚染によるサプライチェーン攻撃の手法を解説。開発者が講じるべきセキュリティ対策を提示する。"
     },
@@ -414,7 +417,7 @@
       "publishedAt": "2026-06-24T02:54:00.000Z",
       "summary": "シンジです。2026年6月23日、AnthropicからClaude Tagがリリースされました。Claudeをチームかエンタープライズプランで契約していて、Slackを使っている場合にのみ使える機能です。Slack のチャンネルで、Claudeが自分のアカウント（アイデンティティ）を持ち、文脈を覚え、自律的に動く「同僚」として常駐させられる機...",
       "thumbnail": "https://blog.cloudnative.co.jp/assets/images/notion/714b701557d6.webp",
-      "bookmarkCount": 29,
+      "bookmarkCount": 30,
       "titleJa": "Claude Tagという名の新機能登場、設定・テスト・監査ログまで実践レビュー",
       "summaryJa": "Anthropicがリリースした「Claude Tag」のレビュー記事。Slack上でClaudeがアカウントを持ち、文脈を理解して自律的に動く「同僚」として常駐できる機能について、設定から監査ログまでを詳しく解説しています。"
     },
@@ -530,7 +533,7 @@
       "url": "https://forest.watch.impress.co.jp/docs/serial/yajiuma/2119473.html",
       "publishedAt": "2026-06-24T01:02:38.000Z",
       "thumbnail": "https://forest.watch.impress.co.jp/img/wf/list/2119/473/codex.jpg",
-      "bookmarkCount": 57
+      "bookmarkCount": 58
     },
     {
       "id": "hatena-https://coliss.com/articles/build-websites/operation/work/hotkeyclash-for-mac-keyboard-shortcuts-clash.html",
@@ -540,7 +543,7 @@
       "publishedAt": "2026-06-24T01:00:13.000Z",
       "summary": "アプリをインストールして困ることが、ショートカットキーが他のアプリと重複している場合です。いつもなら「Command + スペース」でスポットライトを呼び出せるのに、なぜか他のアプリが起動してしまったことはありませんか？ macOSで、ショートカットキーが重複している箇所を特定し、競合しているアプリやどのアプリ...",
       "thumbnail": "https://coliss.com/wp-content/uploads-202602/2026062001@2x.png",
-      "bookmarkCount": 85,
+      "bookmarkCount": 86,
       "titleJa": "こういうアプリが欲しかった！ OSやアプリ間で重複しているショートカットキーを特定する無料アプリ -HotkeyClash",
       "summaryJa": "macOSでショートカットキーの競合を特定できる無料アプリ「HotkeyClash」を紹介。アプリ間のキー重複による誤作動を解消する。"
     },
@@ -552,7 +555,7 @@
       "publishedAt": "2026-06-24T00:50:18.000Z",
       "summary": "Melissa @DtebYQIMTm5Nt8F 部下と「それ（ヘッドセット）って私物ですか？」「私物ですよ〜」という会話を何度も繰り返したんだが、5回目にしてついに「業務で必要なのに自腹で買わなきゃいけないんですか？」という質問だったことが判明した。 意図の汲み取れないアホと思われただろうな〜。自腹だよ。 2026-06-23 18:5...",
       "thumbnail": "https://s.tgstc.com/ogp3/95d24c5c6672c43a324aeb203b019d65-1200x630.jpeg",
-      "bookmarkCount": 159,
+      "bookmarkCount": 160,
       "titleJa": "部下からヘッドセットの件で「それって私物ですか？」「私物ですよ」の会話を何度も繰り返し、最後に自腹なのかという質問だと判明→本来の意図を隠して質問しない方がいい",
       "summaryJa": "部下との曖昧なやり取りから、質問の真意が「自腹購入の強要か」という懸念だったことが判明した事例。コミュニケーションにおける意図の明確化の重要性を説く。"
     },
@@ -576,7 +579,7 @@
       "publishedAt": "2026-06-24T00:04:08.000Z",
       "summary": "はじめに 長いあいだ、ソフトウェア開発のスケールは「分業」で支えられてきました。 漠然とした要望を小さなタスクへ切り出したり、大きな機能を分割したり、ざっくりした設計を細かい作業に落としたり。切り出しの出発点はさまざまですが、やることは結局ひとつです。切り出したものを誰かに割り振り、上がってきたも...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--RrFDEJCv--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25BF%25E3%2582%25B9%25E3%2582%25AF%25E3%2582%2592%25E5%2589%25B2%25E3%2582%258A%25E6%258C%25AF%25E3%2582%258B%25E9%2596%258B%25E7%2599%25BA%25E3%2581%25AF%25E7%25B5%2582%25E3%2582%258F%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:kou%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzUzMzk2ODE4YzEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 18,
+      "bookmarkCount": 19,
       "titleJa": "タスクを割り振る開発は終わった",
       "summaryJa": "ソフトウェア開発において、長年主流だった「タスクの分業・割り振り」という手法の限界を指摘。現代の開発スタイルへの転換を提言する。"
     },
@@ -707,7 +710,7 @@
       "url": "https://pc.watch.impress.co.jp/docs/topic/feature/2118915.html",
       "publishedAt": "2026-06-23T22:24:38.000Z",
       "thumbnail": "https://pc.watch.impress.co.jp/img/pcw/list/2118/915/101.jpg",
-      "bookmarkCount": 203
+      "bookmarkCount": 205
     },
     {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/24/5215.html",
@@ -765,7 +768,7 @@
       "publishedAt": "2026-06-23T18:36:31.000Z",
       "summary": "Claude Tag is a new way for teams to work with Claude. We’re starting on Slack, which Claude can join as a team member. Grant Claude access to selected channels, and connect it to whichever tools, …",
       "thumbnail": "https://cdn.sanity.io/images/4zrzovbb/website/b9ba85fd4d8beaf4efe04a4cf6cec14761e52c78-2400x1260.jpg",
-      "bookmarkCount": 67,
+      "bookmarkCount": 68,
       "titleJa": "Claude Tagの紹介",
       "summaryJa": "チームでClaudeを活用するための新機能「Claude Tag」が登場。Slackにメンバーとして参加し、権限に応じたツール連携やタスク遂行をサポートする。"
     },
@@ -859,7 +862,7 @@
       "publishedAt": "2026-06-23T12:01:21.000Z",
       "summary": "こんにちは。エクスプラザの Unsu です。 最近 \"Loop Engineering\"という言葉をよく目にするようになりました。 また新しいかっこいい名前の何かしらエンジニアリングが出てきたな、くらいに思いつつ、 Addy Osmani の Loop Engineering という記事を読んでみました。 内容は、こんな感じでした。 Loop Engineering とは...",
       "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--nswUvcES--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2580%258B%25E4%25BA%25BA%25E3%2581%25AE%25E3%2583%2597%25E3%2583%25AD%25E3%2583%25B3%25E3%2583%2597%25E3%2583%2588%25E8%25A1%2593%25E3%2582%2592%25E3%2582%2584%25E3%2582%2581%25E3%2581%25A6%25E3%2580%2581%25E3%2583%2581%25E3%2583%25BC%25E3%2583%25A0%25E3%2581%25A7%25E5%259B%259E%25E3%2582%258BAI%25E9%25A7%2586%25E5%258B%2595%25E9%2596%258B%25E7%2599%25BA%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%2597%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2582%25A6%25E3%2583%25B3%25E3%2582%25B9%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzQzOWQzZGM0MGMuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BE%25E3%2582%25A8%25E3%2582%25AF%25E3%2582%25B9%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25B6%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVlZmYzMTA2MDQuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-      "bookmarkCount": 32,
+      "bookmarkCount": 36,
       "titleJa": "個人のプロンプト術からチームで回すAI駆動開発ループへの転換",
       "summaryJa": "個人のスキルに依存しがちなAI活用を、チーム全体で運用する「Loop Engineering」の概念を紹介。開発プロセスにAIを組み込み、組織として生産性を高めるためのアプローチを解説します。"
     },
@@ -883,7 +886,7 @@
       "publishedAt": "2026-06-23T08:00:45.000Z",
       "summary": "はじめに この記事は、Claude Code のセキュリティガードレールを「概念」ではなく「動くコード」で示すことを目的にしています。 「ガードレールが必要だとは分かった。でも何をどう書けばいいのか」という段階の方に向けて書いています。 settings.json の permissions 設計、PreToolUse hook による危険コマンドの遮...",
       "thumbnail": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYxNjEyOTglMkZjMWUzZmZkNmVhZGExOTY5ZmYzYzQ0YjE0ZmRlMDgxYmNkZTZmNTAwJTJGeF9sYXJnZS5wbmclM0YxNTg0ODQ1NTg0P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz1kMDQ2ZmE2Mzg1YzIyMmQ4ZjJkNWI0YjRkYTc3Mjc0NQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dfde89a6aafc1c82cb07bd196a821c036?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJTIwQ29kZSUyMCVFMyU4MiVCQiVFMyU4MiVBRCVFMyU4MyVBNSVFMyU4MyVBQSVFMyU4MyU4NiVFMyU4MiVBMyVFMyU4MiVBQyVFMyU4MyVCQyVFMyU4MyU4OSVFMyU4MyVBQyVFMyU4MyVCQyVFMyU4MyVBQiUyMCVFNSVBRSU5RiVFOCVBMyU4NSVFMyU4MyU4NiVFMyU4MyVCMyVFMyU4MyU5NyVFMyU4MyVBQyVFOSU5QiU4NiUyMCVFMiU4MCU5NCUyMCVFMyU4MiVCMyVFMyU4MyU5NCVFMyU4MyU5QSVFMyU4MSVBNyVFNCVCRCVCRiVFMyU4MSU4OCVFMyU4MiU4QiUyMHNldHRpbmdzLmpzb24lMjAlRTMlODElQTglMjBob29rJTIwJUUzJTgyJUI5JUUzJTgyJUFGJUUyJTgwJUE2JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MTMzYmFhNTg5OTczNDhhNDM3NWFmNjIyNzY1YTdkZDY&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBub2dhdGFrYSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWNiYWE0ODdlNWU4NDg4ZjQ0NjQ0MjVlZTRhNDY2ZWUz&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=1bb9f72b0bf8a0bea16cd30972758a74",
-      "bookmarkCount": 143,
+      "bookmarkCount": 144,
       "titleJa": "Claude Codeセキュリティガードレール実装テンプレート集",
       "summaryJa": "Claude Codeのセキュリティを確保するための設定ファイルやスクリプトの実装例を紹介。settings.jsonの権限設計や危険なコマンドを遮断するフックの実装方法を具体的に解説します。"
     },
@@ -982,6 +985,18 @@
       "author": "@NotebookLM",
       "titleJa": "Flashcards are now fully customizable. Edit questions, tweak answers, and add brand-new cards to create the ultimate set of study tools.",
       "summaryJa": "フラッシュカードが完全にカスタマイズ可能になりました。質問の編集や回答の調整、新しいカードの追加が可能で、自分だけの学習ツールを作成できます。作成したカードは友人やクラスメートと共有可能です。"
+    },
+    {
+      "id": "hatena-https://zenn.dev/lincwell_inc/articles/0b626c490e61b8",
+      "source": "hatena",
+      "title": "AI疲れ軽減のためにモブプロを始めたら抜群の成果と引き換えに人間が疲弊したので、持続可能なモブプロをガチで模索してみた",
+      "url": "https://zenn.dev/lincwell_inc/articles/0b626c490e61b8",
+      "publishedAt": "2026-06-22T17:48:36.000Z",
+      "summary": "AI疲れ軽減のためにモブプロを始めたら抜群の成果と引き換えに人間が疲弊したので、持続可能なモブプロをガチで模索してみた AIの登場により、エンジニアの仕事の進め方も大きく変化しています。 私の所属するチームではAIを活用したモブプログラミングを取り入れました。運用して気付いたことをまとめます。 モブプロの...",
+      "thumbnail": "https://res.cloudinary.com/zenn/image/upload/s--Vyxfz6du--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E7%2596%25B2%25E3%2582%258C%25E8%25BB%25BD%25E6%25B8%259B%25E3%2581%25AE%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AB%25E3%2583%25A2%25E3%2583%2596%25E3%2583%2597%25E3%2583%25AD%25E3%2582%2592%25E5%25A7%258B%25E3%2582%2581%25E3%2581%259F%25E3%2582%2589%25E6%258A%259C%25E7%25BE%25A4%25E3%2581%25AE%25E6%2588%2590%25E6%259E%259C%25E3%2581%25A8%25E5%25BC%2595%25E3%2581%258D%25E6%258F%259B%25E3%2581%2588%25E3%2581%25AB%25E4%25BA%25BA%25E9%2596%2593%25E3%2581%258C%25E7%2596%25B2%25E5%25BC%258A%25E3%2581%2597%25E3%2581%259F%25E3%2581%25AE%25E3%2581%25A7%25E3%2580%2581%25E6%258C%2581%25E7%25B6%259A%25E5%258F%25AF%25E8%2583%25BD%25E3%2581%25AA%25E3%2583%25A2%25E3%2583%2596%25E3%2583%2597%25E3%2583%25AD%25E3%2582%2592%25E3%2582%25AC%25E3%2583%2581%25E3%2581%25A7%25E6%25A8%25A1%25E7%25B4%25A2%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:szka07%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzdkNzA3MDZjNTUuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Linc%2527well%252C%2520inc.%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzE5NTVhYWM1NDkuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+      "bookmarkCount": 6,
+      "titleJa": "AI疲れ軽減のためにモブプロを始めたら抜群の成果と引き換えに人間が疲弊したので、持続可能なモブプロをガチで模索してみた",
+      "summaryJa": "AIを活用したモブプログラミングは高い成果を上げましたが、同時にメンバーの疲弊も招きました。本記事では、その経験を踏まえ、チームが持続可能な形でモブプロを運用するための工夫や改善策を模索し、実践した内容をまとめています。"
     },
     {
       "id": "workspace-https://workspaceupdates.googleblog.com/2026/06/troubleshoot-formula-errors-in-sheets.html",
@@ -2598,18 +2613,6 @@
       "author": "テクノエッジ TechnoEdge",
       "titleJa": "連載「歌うテックニュース」第8回：「明るすぎる鼻の穴」問題。パストレーシングが可能にする「人間らしい鼻の穴」とは？",
       "summaryJa": "ゲームキャラクターの鼻の穴にリアリティが欠ける「明るすぎる鼻の穴」問題について解説。パストレーシング技術を活用することで、いかにして人間らしい自然な表現を実現するかを考察します。"
-    },
-    {
-      "id": "feedly-https://www.techno-edge.net/article/2026/06/19/5203.html",
-      "source": "feedly",
-      "title": "1兆パラメータのコーディングAI「Kimi-K2.7-Code」が無料・商用利用可、既存の衛星画像から地球を3D生成するアリババ開発のAI「ABot-Earth 0.5」など生成AI技術5つを解説（生成AIウィークリー）",
-      "url": "https://www.techno-edge.net/article/2026/06/19/5203.html",
-      "publishedAt": "2026-06-18T23:26:30.000Z",
-      "summary": "この1週間の気になる生成AI技術・研究をいくつかピックアップして解説する今回の「生成AIウィークリー」（第148回）は、テキスト生成を最大4倍高速化するGoogle開発のAIモデル「DiffusionGemma」や、1兆パラメータのコーディング特化AI「Kimi-K2.7-Code」を取り上げてます。",
-      "thumbnail": "https://www.techno-edge.net/imgs/rss/32406.jpg",
-      "author": "テクノエッジ TechnoEdge",
-      "titleJa": "1兆パラメータのコーディングAI「Kimi-K2.7-Code」など生成AI技術5選を解説",
-      "summaryJa": "生成AIウィークリー第148回。テキスト生成を4倍高速化する「DiffusionGemma」や、1兆パラメータのコーディング特化AI「Kimi-K2.7-Code」、地球を3D生成する「ABot-Earth 0.5」など最新技術を解説します。"
     },
     {
       "id": "x-2067744192470949966",
@@ -7746,7 +7749,6 @@
       "feedly-https://www.itmedia.co.jp/news/articles/2606/24/news130.html": "https://image.itmedia.co.jp/news/articles/2606/24/cover_news130.jpg",
       "feedly-https://tech.algomatic.jp/entry/advent-calendar/2026-06/agent-neovim-follow": "https://cdn.image.st-hatena.com/image/scale/6aeeb4e0eda3b24c6557e029182e56152d1b5c1c/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fy%2Fyasu_wakamenori%2F20260624%2F20260624183800.png",
       "feedly-https://qiita.com/imi-glenn/items/aa5fbdfd3200a8bda62d": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGNDM4NTg4OSUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc4MDkyMzE1Mj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ODAyMjc5Y2EzMTdiOTE2ZTFlMjU5MjRjM2MwMmFmNDk%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D172fb2baed66e9890abafb4b717752e4?ixlib=rb-4.1.1&amp;w=1200&amp;fm=jpg&amp;mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9UkFHJUUzJTgxJUFFJUU3JUIyJUJFJUU1JUJBJUE2JUUzJTgxJUFGQ2h1bmtpbmclRTUlODklOEQlRTMlODElQUIlRTYlQjElQkElRTMlODElQkUlRTMlODIlOEIlRUYlQkMlOUElRTclOTQlOUYlRTMlODMlODklRTMlODIlQUQlRTMlODMlQTUlRTMlODMlQTElRTMlODMlQjMlRTMlODMlODglRTMlODIlOTIlRTYlQTQlOUMlRTclQjQlQTIlRTUlOEYlQUYlRTglODMlQkQlRTMlODElQUElRTUlOEQlOTglRTQlQkQlOEQlRTMlODElQUIlRTUlQTQlODklRTMlODElODglRTMlODIlOEImdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz01NGE5NjQxZTBkNTU4YWRiYzkyMTcwZDZjZDE0YTk4YQ&amp;mark-x=120&amp;mark-y=112&amp;blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBpbWktZ2xlbm4mdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz00MzYwN2IyNmE1MzkxZWNlZDk1N2QxZmYzZmIzMmM5Mw&amp;blend-x=242&amp;blend-y=480&amp;blend-w=838&amp;blend-h=46&amp;blend-fit=crop&amp;blend-crop=left%2Cbottom&amp;blend-mode=normal&amp;s=2841e6b210e5ea83c6a2c2f9539b72f7",
-      "feedly-https://qiita.com/tuanphan/items/1608c83b1a7402c3fd37": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MjU3MTA3JTJGMTUwMjkwNzAwZTMxMWViOWIyMGFkZGU0OTljMzBkYTdiMTU0MmNiYyUyRnhfbGFyZ2UucG5nJTNGMTc3ODA0MjY0OT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MjhlOTAyODQ0ZGM1Mjk0YmRhY2VmOTFhNDNlNWU4OTk%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkZiNmZkNGVlODEwMGExN2E2YjEyOWU2MzE1MWM1OWU4M2RlNTNiOGIwJTJGb3JpZ2luYWwuanBnJTNGMTc2MjA1MjQ5MD9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz02MGRhYmExYzU0N2I5YTc0YTI5ZTZmZTdlMjllYTJlOQ%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3Dfedfdcf3e147008e88f54468a0932ae7?ixlib=rb-4.1.1&amp;w=1200&amp;fm=jpg&amp;mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwRnJvbnRlbmQlMjBDU1MlMjAlRTIlODAlOTMlMjAlRTMlODMlOTElRTMlODMlQkMlRTMlODMlODgxMiVFMyU4MCU5MSVFMyU4MyU5NiVFMyU4MyVBOSVFMyU4MiVBNiVFMyU4MiVCNiVFMyU4MSU4QiVFMyU4MiU4OSVFOCVBNiU4QiVFMyU4MSU5RiUyME92ZXJmbG93JUVGJUJDJTlBJUU4JUE2JTgxJUU3JUI0JUEwJUUzJTgxJThDJUUzJTgxJUFGJUUzJTgxJUJGJUU1JTg3JUJBJUUzJTgxJTk3JUUzJTgxJTlGJUUzJTgxJUE4JUUzJTgxJThEJUU0JUJEJTk1JUUzJTgxJThDJUU4JUI1JUI3JUUzJTgxJTkzJUUzJTgyJThCJUUzJTgxJUFFJUUzJTgxJThCJUVGJUJDJTlGJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9ZjBkZWY1NTU2ZGM3YTRmODBlYzk1ODRlYTVmZWIwOWY&amp;mark-x=120&amp;mark-y=112&amp;blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB0dWFucGhhbiZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWIxNGE0ZDY3ZTEzY2Q3NzNmYjVhY2FlMTA3MmU1ZTBi&amp;blend-x=242&amp;blend-y=454&amp;blend-w=838&amp;blend-h=46&amp;blend-fit=crop&amp;blend-crop=left%2Cbottom&amp;blend-mode=normal&amp;txt64=5qCq5byP5Lya56S-VE9NT1NJQSBWSUVUIE5BTQ&amp;txt-x=242&amp;txt-y=539&amp;txt-width=838&amp;txt-clip=end%2Cellipsis&amp;txt-color=%231E2121&amp;txt-font=Hiragino%20Sans%20W6&amp;txt-size=28&amp;s=7300a0a1e507228c665c0db8644c36a6",
       "feedly-https://eetimes.itmedia.co.jp/ee/articles/2606/24/news095.html": "https://image.itmedia.co.jp/ee/articles/2606/24/cover_news095.jpg",
       "feedly-https://qiita.com/vayaci/items/8d7186167eda83a2af46": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Ftech-festa-ogp-background-4b5015b2c518c7e6b9062a7c9f5f5e90.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MzY4NDcxJTJGYTk2ZGU5ZjkzMDg3NjllMjhhMThhMDY2NWEzYzJiMzI3MGU1NzBmYSUyRnhfbGFyZ2UucG5nJTNGMTc3MjIwNjAwNz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MjI1NWY2MTNkNjdhNGRjZjAyNzFhMTU4M2E0MGQzMDE%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D278675242828bb8b6a516238b6a636b8?ixlib=rb-4.1.1&amp;w=1200&amp;fm=jpg&amp;mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9U29mdHdhcmUlMjBNYW5zaW9uJUUzJTgxJUFFQWdlbnRpYyUyMEVuZ2luZWVyaW5nJTIwR3VpZGUlRTMlODIlOTIlRTglQTYlODElRTclQjQlODQlRTMlODElOTclRTMlODElQTYlRTMlODElQkYlRTMlODElOUYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyM0ZGRkZGRiZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz04ZmEzMzRmYzM3ZjJmZDNmOGE2OGRmYTYxMTEzY2IxMg&amp;mark-x=120&amp;mark-y=112&amp;blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB2YXlhY2kmdHh0LWNvbG9yPSUyM0ZGRkZGRiZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1kNGZlNjQzZjJkZDYwN2Q2ZTE2N2Q2ZWJmOTcxMjJlMA&amp;blend-x=242&amp;blend-y=480&amp;blend-w=838&amp;blend-h=46&amp;blend-fit=crop&amp;blend-crop=left%2Cbottom&amp;blend-mode=normal&amp;s=514a4177710bed2d4bf1b95a023c8f77",
       "layerx-252e2426-1ab6-4c42-90e8-924b9c1dbf5e": "",
@@ -7788,7 +7790,48 @@
       "layerx-4dc692f1-2ed2-44ff-834f-5930998ea7bf": "",
       "layerx-c1247c09-d853-4778-a808-598505c52d76": "",
       "layerx-9f5f1e35-6489-432e-b591-cc9fb5e6c974": "",
-      "layerx-c9913cba-4400-4a9a-8dbf-894f4c0526a2": ""
+      "layerx-c9913cba-4400-4a9a-8dbf-894f4c0526a2": "",
+      "feedly-https://qiita.com/ijiDX/items/a59045cbc82ee16eaee5": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYyNTUyNjElMkZkNGVhNWY2ZjE4ZTBjMDg4ODNmNWY3YjViMTJlYjdmZTJiN2YxNjE2JTJGeF9sYXJnZS5wbmclM0YxNzc5ODM2MjE4P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz0xNGUxMDY3OWZhYWE4ODM0YmM2NWU0NGViYWY2MDg3OQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D2e166411eec1f187d9f6c06b38a01ec8?ixlib=rb-4.1.1&amp;w=1200&amp;fm=jpg&amp;mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2hhdEdQVCVFMyU4MSVBQkV4Y2VsJUUzJTgyJTg0V29yZCVFMyU4MiU5MiVFOCVCMiVCQyVFMyU4MiU4QiVFNSU4OSU4RCVFMyU4MSVBQiVFNyVBMiVCQSVFOCVBQSU4RCVFMyU4MSU5NyVFMyU4MSU5RiVFMyU4MSU4NCVFNiU4MyU4NSVFNSVBMCVCMSVFMyU4MyU4MSVFMyU4MiVBNyVFMyU4MyU4MyVFMyU4MiVBRiVFMyU4MyVBQSVFMyU4MiVCOSVFMyU4MyU4OCZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWU0Y2ZlNmVhMGEzOTJlYzAzYTVkMDdkZTA0YmQyMjg4&amp;mark-x=120&amp;mark-y=112&amp;blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBpamlEWCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTQ1ZTkzODYxODM0MDcwOTM2MTc4MjM2MmJlNDk0MzZi&amp;blend-x=242&amp;blend-y=480&amp;blend-w=838&amp;blend-h=46&amp;blend-fit=crop&amp;blend-crop=left%2Cbottom&amp;blend-mode=normal&amp;s=127de537f2bc34936d21f64ff414a4bc",
+      "layerx-c4a33a70-c4b9-413a-9cb1-a47e81c7c8b2": "",
+      "layerx-23f348d2-9fc5-45d6-bd29-f946a977e142": "",
+      "layerx-fc1f7aa5-5af6-4636-8bfa-5ce1b5405e1a": "",
+      "layerx-02a2b9e6-b8fe-4819-a53b-7c66f2f6c60d": "",
+      "layerx-610873fb-4336-4a93-a824-0cebda02faa7": "",
+      "layerx-3c4be91d-9d47-42f2-886c-4de8be066b38": "",
+      "layerx-a52053f3-91c5-40d7-819a-30c636ca4d18": "",
+      "layerx-8456c302-a257-4052-b0c5-32df7f10504d": "",
+      "layerx-d552202d-a8f4-446d-a66a-b66483f2415b": "",
+      "layerx-a86fb658-05cc-454b-8d8b-5a291a439b2e": "",
+      "layerx-3c183abc-8661-4f3a-8320-cfa293d614eb": "",
+      "layerx-3fa1de73-79b1-43eb-bb11-1ab4fe3976fa": "",
+      "layerx-83330372-2ee0-412b-a0a9-0b01a1cf6de8": "",
+      "layerx-08dc466f-2186-491c-9649-22a3319359ee": "",
+      "layerx-7b293a11-2a9c-4c66-b996-295d3b8e9794": "",
+      "layerx-a9bd1809-6c0c-4a90-b73e-82e8212c11c6": "",
+      "layerx-91564bf7-6ccf-4fe4-ac8f-9489cd024bc3": "",
+      "layerx-ec0df4c4-7e42-44ad-9a5a-890e082a4685": "",
+      "layerx-9f5393a6-568a-4289-a255-34c275b588b4": "",
+      "layerx-89c5e232-b139-43e1-b310-a3f8418b6ad8": "",
+      "layerx-3aa42cb4-8eff-4422-ad86-732ce0995a5f": "",
+      "layerx-8db80dfa-4d91-48c7-868e-861c4c59c8e2": "",
+      "layerx-cd0e20cf-532b-42cf-9a2d-0daf9536c125": "",
+      "layerx-e8971841-e9f8-459a-b795-84fd89333ff3": "",
+      "layerx-50b8261c-4d87-4ba0-b6ef-2b17f5388c8b": "",
+      "layerx-eaa98b1c-764d-49b8-84b8-1cc871c95437": "",
+      "layerx-bae17dc2-e409-43a4-a26c-69704e79b775": "",
+      "layerx-6147dbb8-2f28-4c4a-b9aa-fbfb0fee998d": "",
+      "layerx-76207ad1-3773-40c3-bcef-6c605f80d158": "",
+      "layerx-79cb2a24-f567-4405-ae20-2c2b8c31af00": "",
+      "layerx-fccc806d-0ce2-48de-8a48-c93b3d2ac9cd": "",
+      "layerx-7e4bf59d-ff2a-463a-b611-3cbdfae74f57": "",
+      "layerx-75f312c6-9a13-4fab-ad5d-07d730028aac": "",
+      "layerx-d963483a-2542-4060-8b8e-5066cdc3311f": "",
+      "layerx-2023491b-762d-4b94-8a77-e791df7227d4": "",
+      "layerx-328fe40e-6142-4c92-98ae-989a9a1ad5b1": "",
+      "layerx-c8be96e5-884d-4d20-b6bd-243f26b0f0c9": "",
+      "layerx-87c745f7-b078-4dfd-be59-a1f2e6536cea": "",
+      "layerx-a487744a-8b62-4b21-99c4-3834795cc990": "",
+      "layerx-65a287ac-661e-4fce-9e4d-bb36ce609937": ""
     },
     "translations": {
       "hatena-https://blog.flatt.tech/entry/2026-github-actions-security-part1": {
@@ -7878,10 +7921,6 @@
       "feedly-https://qiita.com/imi-glenn/items/aa5fbdfd3200a8bda62d": {
         "titleJa": "RAGの精度はChunking前に決まる：生ドキュメントを検索可能な単位に変える",
         "summaryJa": "RAGシステムの精度を左右する「チャンキング」の重要性を解説します。PDFやマニュアルなどの生のドキュメントを、検索に適した単位へ適切に変換するプロセスについて、RAGの仕組みを紐解きながら、検索精度を高めるための前処理の考え方を整理します。"
-      },
-      "feedly-https://qiita.com/tuanphan/items/1608c83b1a7402c3fd37": {
-        "titleJa": "【Frontend CSS – パート12】ブラウザから見た Overflow：要素がはみ出したとき何が起こるのか？",
-        "summaryJa": "Web開発におけるCSSの「overflow」プロパティの挙動を解説します。コンテンツが枠からはみ出す際のブラウザの処理や、overflow: hiddenなどの設定がレイアウトに与える影響について、具体的なケーススタディを交えて制御不能な状態を防ぐための知識をまとめました。"
       },
       "feedly-https://www.itmedia.co.jp/news/articles/2606/24/news130.html": {
         "titleJa": "陸自駐屯地で四足歩行型の警備用ロボットが見回り　GMOインターネットグループが開発",
@@ -8145,10 +8184,6 @@
       "feedly-https://www.techno-edge.net/article/2026/06/19/5204.html": {
         "titleJa": "連載「歌うテックニュース」第8回：「明るすぎる鼻の穴」問題。パストレーシングが可能にする「人間らしい鼻の穴」とは？",
         "summaryJa": "ゲームキャラクターの鼻の穴にリアリティが欠ける「明るすぎる鼻の穴」問題について解説。パストレーシング技術を活用することで、いかにして人間らしい自然な表現を実現するかを考察します。"
-      },
-      "feedly-https://www.techno-edge.net/article/2026/06/19/5203.html": {
-        "titleJa": "1兆パラメータのコーディングAI「Kimi-K2.7-Code」など生成AI技術5選を解説",
-        "summaryJa": "生成AIウィークリー第148回。テキスト生成を4倍高速化する「DiffusionGemma」や、1兆パラメータのコーディング特化AI「Kimi-K2.7-Code」、地球を3D生成する「ABot-Earth 0.5」など最新技術を解説します。"
       },
       "feedly-https://tech.algomatic.jp/entry/four-years-of-ai-agents": {
         "titleJa": "AIエージェント4年史",
@@ -8489,6 +8524,18 @@
       },
       "x-2062252685701841152": {
         "titleJa": "https://t.co/FAnw6gjsoA"
+      },
+      "feedly-https://www.techno-edge.net/article/2026/06/24/5218.html": {
+        "titleJa": "Anthropic、日本でClaudeコミュニティアンバサダー募集開始　イベント資金やAPIクレジット提供、開発者以外もOK",
+        "summaryJa": "AnthropicがClaudeの地域コミュニティを牽引するアンバサダーを募集開始。選出者にはイベント資金やAPIクレジット、限定グッズが提供され、開発チームへのフィードバック機会も得られます。開発者以外のコミュニティビルダーも歓迎されています。"
+      },
+      "feedly-https://qiita.com/ijiDX/items/a59045cbc82ee16eaee5": {
+        "titleJa": "ChatGPTにExcelやWordを貼る前に確認したい情報チェックリスト",
+        "summaryJa": "ChatGPTでExcelやWordのデータを活用する際は、利便性が高い一方で情報漏洩のリスクに注意が必要です。AIに貼り付ける前に、機密情報や個人情報が含まれていないか、見えないデータが混入していないかを確認するためのチェックリストを解説します。"
+      },
+      "hatena-https://zenn.dev/lincwell_inc/articles/0b626c490e61b8": {
+        "titleJa": "AI疲れ軽減のためにモブプロを始めたら抜群の成果と引き換えに人間が疲弊したので、持続可能なモブプロをガチで模索してみた",
+        "summaryJa": "AIを活用したモブプログラミングは高い成果を上げましたが、同時にメンバーの疲弊も招きました。本記事では、その経験を踏まえ、チームが持続可能な形でモブプロを運用するための工夫や改善策を模索し、実践した内容をまとめています。"
       }
     },
     "enrichVersion": "2"
