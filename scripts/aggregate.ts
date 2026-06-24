@@ -240,16 +240,18 @@ async function run(): Promise<void> {
   } catch (e) {
     console.error("[ogp] サムネ補完(記事系)でエラー（スキップ）:", (e as Error).message);
   }
-  // LayerX は掲載リンクの多くが x.com（ツイート）に解決される。x.com はログイン壁で og:image が
-  // 取れないため、syndication でツイートのメディア（無ければ本文リンク先の og:image）を取得する
-  // ハイブリッド。物量大（~190件/通）なので maxNew で 1run の新規取得を絞り段階的に補完。
-  try {
-    const r = await enrichLayerxThumbs(items, ogImages, { maxNew: 40, concurrency: 3 });
-    console.log(
-      `[ogp] サムネ補完(LayerX): +${r.resolved} 件解決 (試行 ${r.attempted}) 段階 ${JSON.stringify(r.stages)} Substack応答 ${JSON.stringify(r.probes)}`,
-    );
-  } catch (e) {
-    console.error("[ogp] サムネ補完(LayerX)でエラー（スキップ）:", (e as Error).message);
+  // LayerX は掲載リンクの多くが x.com（ツイート）に解決される。syndication でツイートの
+  // メディア（無ければ本文リンク先の og:image）を取得するハイブリッドでサムネを補完できる。
+  // ⚠️ ただし全リンクが通る substack.com/redirect が CI(datacenter IP)を 403 で弾くため
+  // **CI では機能しない**（実測: s403×40・x.com 到達前）。residential IP のローカル実行では
+  // ~70% 解決できるので、env `ENRICH_LAYERX_THUMBS` を立てたときだけ実行する。memory 参照。
+  if (process.env.ENRICH_LAYERX_THUMBS) {
+    try {
+      const r = await enrichLayerxThumbs(items, ogImages, { maxNew: 40, concurrency: 3 });
+      console.log(`[ogp] サムネ補完(LayerX): +${r.resolved} 件解決 (試行 ${r.attempted})`);
+    } catch (e) {
+      console.error("[ogp] サムネ補完(LayerX)でエラー（スキップ）:", (e as Error).message);
+    }
   }
   // 現存 item id 分だけ残して負キャッシュの無限増殖を防ぐ。
   const liveIds = new Set(items.map((i) => i.id));

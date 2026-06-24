@@ -7,6 +7,11 @@
  *       メディアが無いリンク共有ツイートは、本文中の外部リンクの og:image を解決。
  *   - それ以外（記事サイト等） → 通常どおり og:image を抽出。
  *
+ * ⚠️ **CI（GitHub Actions）では機能しない**: 全リンクが通る `substack.com/redirect` が
+ * Cloudflare により datacenter IP を **403** で弾く（実測: CI で `s403` × 40、x.com 到達前）。
+ * residential IP（手元の `npm run aggregate`）では ~70% 解決できる。そのため aggregate.ts では
+ * 既定で呼ばず、環境変数 `ENRICH_LAYERX_THUMBS` を立てたときだけ実行する（ローカル/プロキシ用）。
+ *
  * `enrichOgp.ts` と同じ「state 永続キャッシュ（負キャッシュ込み）＋トリム後対象＋未確認のみ取得
  * ＋1run あたり maxNew で段階補完」パターン。失敗は握りつぶしサムネ無しにフォールバック。
  */
@@ -18,58 +23,18 @@ import { mapLimit } from "./util";
 export interface EnrichResult {
   resolved: number;
   attempted: number;
-  /** 診断用: 解決経路/失敗段階の内訳 */
-  stages: Record<string, number>;
-  /** 診断用: Substack 自体の応答内訳（ブロック切り分け） */
-  probes: Record<string, number>;
 }
 
-/** 解決の段階コード（診断用）。 */
-type Stage =
-  | "page-fail" // リダイレクト解決失敗（x.com が Actions IP を弾く等）
-  | "tweet-fail" // syndication 取得失敗
-  | "x-media" // ツイートのメディア画像で解決
-  | "x-link-og" // リンク共有ツイートの飛び先 og:image で解決
-  | "x-none" // x ツイートだがサムネ無し
-  | "page-og" // x 以外ページの og:image で解決
-  | "page-none"; // x 以外ページだが og:image 無し
-
-const UA =
-  "Mozilla/5.0 (compatible; todayai-aggregator/1.0; +https://satory074.github.io/todayai/)";
-
-/** 診断: Substack 自体の応答（リダイレクトを追わない）を確認し、Substack ブロックか
- *  下流(x.com 等)ブロックかを切り分ける。`s<status>→<redirect先host>` / `s-throw` を返す。 */
-async function probeSubstack(url: string): Promise<string> {
-  const c = new AbortController();
-  const t = setTimeout(() => c.abort(), 5000);
-  try {
-    const p = await fetch(url, { redirect: "manual", signal: c.signal, headers: { "user-agent": UA } });
-    const loc = p.headers.get("location");
-    let host = "";
-    try {
-      if (loc) host = new URL(loc, url).host;
-    } catch {
-      /* ignore */
-    }
-    return `s${p.status}${host ? "→" + host : ""}`;
-  } catch {
-    return "s-throw";
-  } finally {
-    clearTimeout(t);
-  }
-}
-
-/** 1 リンクのサムネを解決し、画像URLと診断段階を返す。 */
-async function resolveThumb(url: string): Promise<{ thumb?: string; stage: Stage; probe: string }> {
-  const probe = await probeSubstack(url);
+/** 1 リンクのサムネを解決する（x.com はツイート経由、それ以外は og:image）。 */
+async function resolveThumb(url: string): Promise<string | undefined> {
   const page = await resolvePage(url);
-  if (!page) return { stage: "page-fail", probe };
+  if (!page) return undefined;
 
   const tweetId = tweetIdFromUrl(page.finalUrl);
   if (tweetId) {
     const tw = await fetchTweet(tweetId);
-    if (!tw) return { stage: "tweet-fail", probe };
-    if (tw.photo) return { thumb: tw.photo, stage: "x-media", probe }; // メディア付きツイート
+    if (!tw) return undefined;
+    if (tw.photo) return tw.photo; // メディア付きツイート
     // リンク共有ツイート: 本文中の外部リンク（非X）の og:image を解決
     for (const link of tw.links) {
       let host: string;
@@ -80,17 +45,14 @@ async function resolveThumb(url: string): Promise<{ thumb?: string; stage: Stage
       }
       if (/(?:^|\.)(x\.com|twitter\.com|t\.co)$/.test(host)) continue;
       const og = await resolveOgImage(link);
-      if (og) return { thumb: og, stage: "x-link-og", probe };
+      if (og) return og;
     }
-    return { stage: "x-none", probe };
+    return undefined;
   }
 
   // x.com 以外の通常ページ: 取得済み HTML から og:image
-  if (page.html) {
-    const og = extractOgImage(page.html, page.finalUrl);
-    return { thumb: og, stage: og ? "page-og" : "page-none", probe };
-  }
-  return { stage: "page-none", probe };
+  if (page.html) return extractOgImage(page.html, page.finalUrl);
+  return undefined;
 }
 
 /**
@@ -120,12 +82,8 @@ export async function enrichLayerxThumbs(
   }
 
   let resolved = 0;
-  const stages: Record<string, number> = {};
-  const probes: Record<string, number> = {};
   await mapLimit(targets, opts.concurrency ?? 3, async (item) => {
-    const { thumb, stage, probe } = await resolveThumb(item.url);
-    stages[stage] = (stages[stage] ?? 0) + 1;
-    probes[probe] = (probes[probe] ?? 0) + 1;
+    const thumb = await resolveThumb(item.url);
     if (thumb) {
       item.thumbnail = thumb;
       resolved++;
@@ -133,5 +91,5 @@ export async function enrichLayerxThumbs(
     ogCache[item.id] = thumb ?? ""; // 取得失敗・サムネ無しは負キャッシュ
   });
 
-  return { resolved, attempted: targets.length, stages, probes };
+  return { resolved, attempted: targets.length };
 }
