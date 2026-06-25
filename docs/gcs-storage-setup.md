@@ -58,10 +58,18 @@ curl -s "https://storage.googleapis.com/todayai-feeds/feed.json" | jq '.items|le
 
 ## ローカルで GCS に書きたいとき（任意）
 
+`npm run aggregate` は常にローカル `src/data/feed.json` に書く（GCS へのアップロードはCIの
+`gcloud storage cp` ステップが担当）。ローカルから GCS に反映したいときは手動で:
+
 ```bash
-gcloud auth application-default login          # ADC を用意
-GCS_BUCKET=todayai-feeds npm run aggregate      # GCS へ書く（未設定ならローカルファイルのまま）
+GCS_BUCKET=todayai-feeds npm run aggregate                                   # GCS を読んで集約→ローカルに書く
+gcloud storage cp src/data/feed.json gs://todayai-feeds/feed.json \
+  --cache-control="public, max-age=300, stale-while-revalidate=3600"          # 手動アップロード
 ```
+
+> 書き込みに **@google-cloud/storage SDK を使わない**のは、SDK の WIF→STS トークン交換が
+> CI の node-fetch 経路で `ERR_STREAM_PREMATURE_CLOSE` を起こすため。gcloud は ADC を
+> native 解決するので堅牢（バケット作成に使ったのと同じ CLI）。
 
 ## ロールバック
 

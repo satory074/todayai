@@ -5,8 +5,9 @@
  * - 無ければローカル `src/data/feed.json` を読む（従来どおり）。
  * GCS 取得に失敗したら ローカルファイル → fallback の順にデグレードする（ビルドを落とさない）。
  *
- * 書き込みは `scripts/lib/feedWrite.ts`（@google-cloud/storage SDK）側。読みは SDK 不要なので
- * （`fetch` + `fs` のみ）、このモジュールは Astro のビルドグラフ（`src/`）から安全に import できる。
+ * 書き込みは `scripts/lib/feedWrite.ts`（常にローカルへ書き、GCS 反映はワークフローの
+ * `gcloud storage cp`）。読みは `fetch` + `fs` のみで依存が軽く、Astro のビルドグラフ
+ * （`src/`）から安全に import できる。
  */
 import * as fs from "node:fs";
 import * as path from "node:path";
