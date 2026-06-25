@@ -59,7 +59,7 @@ const variant = item.source === "x" ? "tweet" : item.thumbnail ? "hero" : "compa
         </h2>
 
         {item.summary && (
-          <p class="mt-2 line-clamp-3 text-[15px] leading-relaxed text-[var(--color-text-muted)]">
+          <p class="mt-2 line-clamp-4 text-[13px] leading-relaxed text-[var(--color-text-muted)]">
             <BilingualText orig={item.summary} ja={item.summaryJa} />
           </p>
         )}
@@ -98,7 +98,7 @@ const variant = item.source === "x" ? "tweet" : item.thumbnail ? "hero" : "compa
             <BilingualText orig={item.title} ja={item.titleJa} />
           </h2>
           {item.summary && (
-            <p class="mt-0.5 line-clamp-2 text-[13px] leading-relaxed text-[var(--color-text-muted)]">
+            <p class="mt-0.5 line-clamp-3 text-[13px] leading-relaxed text-[var(--color-text-muted)]">
               <BilingualText orig={item.summary} ja={item.summaryJa} />
             </p>
           )}

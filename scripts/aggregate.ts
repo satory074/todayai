@@ -36,8 +36,9 @@ const DATA_FILE = path.join(__dirname, "..", "src", "data", "feed.json");
  * プロンプトや「翻訳→要約」などロジックを変えたら上げる → 旧キャッシュを破棄して再生成する。
  * v2: 記事系の summary を「翻訳」から「3行要約」に変更。
  * v3: 要約入力を RSS 抜粋から記事本文（enrichArticles の contentText）に変更＋プロンプト洗練。
+ * v4: 要約を「最大2文・100字以内・要点1〜2点」に短縮（途中切れ解消＋スキャナビリティ）。
  */
-const ENRICH_VERSION = "3";
+const ENRICH_VERSION = "4";
 
 function readCache(): FeedData {
   try {
@@ -249,6 +250,7 @@ async function run(): Promise<void> {
   try {
     const r = await enrichArticles(items, ogImages, translations, new Set(["feedly", "hatena", "workspace"]), {
       extractText: willSummarize,
+      maxLen: 2000, // 短い要約に長文は不要。入力トークンを抑え 429(無料枠TPM超過)・コストを緩和。
     });
     console.log(`[article] og:image +${r.ogResolved} / 本文 +${r.textResolved} (fetch ${r.fetched})`);
   } catch (e) {
