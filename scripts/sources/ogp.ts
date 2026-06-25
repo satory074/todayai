@@ -51,6 +51,53 @@ export function extractOgImage(html: string, baseUrl: string): string | undefine
   return undefined;
 }
 
+/** 最小限の HTML エンティティ復号（要約入力用なので主要なものだけ）。 */
+function decodeEntities(s: string): string {
+  return s
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)));
+}
+
+/**
+ * HTML から記事本文のプレーンテキストを抽出する（要約入力用の heuristic・依存追加なし）。
+ * script/style/nav/header/footer/aside 等の非本文とコメントを除去 → <article>/<main> があれば
+ * その中、無ければ全体 → タグ除去・エンティティ復号・空白整形 → 先頭 maxLen 字に cap。
+ * 完璧な抽出ではない（多少の boilerplate は混じり得る）が、LLM 要約の入力には十分。
+ */
+export function extractMainText(html: string, maxLen = 3000): string {
+  const h = html
+    .replace(/<!--[\s\S]*?-->/g, " ")
+    .replace(
+      /<(script|style|noscript|svg|head|nav|header|footer|aside|form|template|iframe)\b[^>]*>[\s\S]*?<\/\1>/gi,
+      " ",
+    );
+  // タグ片 → プレーンテキスト（ブロック境界は空白に、残タグ除去、復号、空白整形）。
+  const toText = (frag: string): string =>
+    decodeEntities(
+      frag
+        .replace(/<(?:br|\/p|\/div|\/li|\/h[1-6]|\/section)\s*\/?>/gi, " ")
+        .replace(/<[^>]+>/g, " "),
+    )
+      .replace(/\s+/g, " ")
+      .trim();
+
+  // 本文らしい領域（最初の <article> / <main>）を優先。ただし空/薄い（SPA で本文が
+  // クライアント描画される Qiita 等）の場合は全体にフォールバックする。
+  const scopeHtml =
+    /<article\b[^>]*>([\s\S]*?)<\/article>/i.exec(h)?.[1] ??
+    /<main\b[^>]*>([\s\S]*?)<\/main>/i.exec(h)?.[1];
+  let text = scopeHtml ? toText(scopeHtml) : "";
+  if (text.length < 200) text = toText(h);
+
+  return text.length > maxLen ? text.slice(0, maxLen) : text;
+}
+
 export interface ResolvedPage {
   /** リダイレクト追跡後の最終 URL */
   finalUrl: string;

@@ -12,7 +12,7 @@
  * residential IP（手元の `npm run aggregate`）では ~70% 解決できる。そのため aggregate.ts では
  * 既定で呼ばず、環境変数 `ENRICH_LAYERX_THUMBS` を立てたときだけ実行する（ローカル/プロキシ用）。
  *
- * `enrichOgp.ts` と同じ「state 永続キャッシュ（負キャッシュ込み）＋トリム後対象＋未確認のみ取得
+ * `enrichArticles.ts` と同じ「state 永続キャッシュ（負キャッシュ込み）＋トリム後対象＋未確認のみ取得
  * ＋1run あたり maxNew で段階補完」パターン。失敗は握りつぶしサムネ無しにフォールバック。
  */
 import type { FeedItem } from "../../src/lib/feed";

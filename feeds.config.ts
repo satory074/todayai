@@ -151,7 +151,7 @@ export const feedsConfig: FeedsConfig = {
     // gemini-2.0-flash は 2026-06-01 に提供終了（無料枠撤廃で 429 になる）。
     // 後継の Flash-Lite に切替（無料枠あり・翻訳/簡易処理向け）。memory: todayai-gemini-quota-429。
     model: "gemini-3.1-flash-lite",
-    batchSize: 20,
+    batchSize: 10, // 要約入力に記事本文(~3000字)を載せるので1コールが過大にならないよう小さめ
     concurrency: 3,
     summarizeSources: ["feedly", "hatena", "workspace"],
     summaryMinLen: 40,

@@ -22,7 +22,7 @@ import { fetchFeedly } from "./sources/feedly";
 import { fetchHatena } from "./sources/hatena";
 import { fetchLayerX } from "./sources/layerx";
 import { fetchWorkspace } from "./sources/workspace";
-import { enrichOgImages } from "./sources/enrichOgp";
+import { enrichArticles } from "./sources/enrichArticles";
 import { enrichLayerxThumbs } from "./sources/layerxThumb";
 import { enrichTranslations } from "./sources/translate";
 
@@ -35,8 +35,9 @@ const DATA_FILE = path.join(__dirname, "..", "src", "data", "feed.json");
  * 翻訳/要約キャッシュ（state.translations）の生成ロジック版。
  * プロンプトや「翻訳→要約」などロジックを変えたら上げる → 旧キャッシュを破棄して再生成する。
  * v2: 記事系の summary を「翻訳」から「3行要約」に変更。
+ * v3: 要約入力を RSS 抜粋から記事本文（enrichArticles の contentText）に変更＋プロンプト洗練。
  */
-const ENRICH_VERSION = "2";
+const ENRICH_VERSION = "3";
 
 function readCache(): FeedData {
   try {
@@ -231,14 +232,27 @@ async function run(): Promise<void> {
   items = items.filter((i) => new Date(i.publishedAt).getTime() >= cutoff);
   items = items.slice(0, feedsConfig.maxItems);
 
-  // ---- OGP 画像でサムネ補完（トリム後の最終アイテムのみ＝無駄fetch回避）----
-  // X は basecamp 公開JSON 経由で補完済み。記事系（feedly/hatena/workspace）は上限なしで補完。
+  // ---- 翻訳/要約キャッシュを先に確定（enrichArticles が本文取得の要否を判定するため）----
+  // 生成ロジック（ENRICH_VERSION）を変えたら、実際に再生成できる（キーがある）ときだけ旧キャッシュを破棄。
+  let translations = state.translations ?? {};
+  const geminiKey = process.env.GEMINI_API_KEY;
+  const willSummarize = !feedsConfig.translate.disabled && !!geminiKey;
+  if (willSummarize && state.enrichVersion !== ENRICH_VERSION) {
+    translations = {};
+    console.log(`[translate] enrichVersion 更新 (${state.enrichVersion ?? "なし"} → ${ENRICH_VERSION})・キャッシュ再生成`);
+  }
+
+  // ---- 記事系を1回 fetch で og:image＋本文を補完（トリム後の最終アイテムのみ＝無駄fetch回避）----
+  // X は basecamp 公開JSON 経由で補完済み。記事系（feedly/hatena/workspace）は og:image に加え、
+  // これから要約する item には本文プレーンテキストを `contentText`（一時）として載せる（要約入力用）。
   const ogImages = state.ogImages ?? {};
   try {
-    const r = await enrichOgImages(items, ogImages, new Set(["feedly", "hatena", "workspace"]));
-    console.log(`[ogp] サムネ補完(記事系): +${r.resolved} 件解決 (試行 ${r.attempted})`);
+    const r = await enrichArticles(items, ogImages, translations, new Set(["feedly", "hatena", "workspace"]), {
+      extractText: willSummarize,
+    });
+    console.log(`[article] og:image +${r.ogResolved} / 本文 +${r.textResolved} (fetch ${r.fetched})`);
   } catch (e) {
-    console.error("[ogp] サムネ補完(記事系)でエラー（スキップ）:", (e as Error).message);
+    console.error("[article] 記事エンリッチでエラー（スキップ）:", (e as Error).message);
   }
   // LayerX サムネ。掲載リンクの多くが x.com（ツイート）に解決されるので、syndication で
   // ツイートのメディア（無ければ本文リンク先の og:image）を取得するハイブリッド。
@@ -264,16 +278,9 @@ async function run(): Promise<void> {
   );
 
   // ---- 機械翻訳／3行要約で日本語を補完（GEMINI_API_KEY 任意・未設定ならスキップ）----
-  // 記事系は summary を3行要約、その他は翻訳。既処理は state.translations から再適用。
-  // 生成ロジックを変えたら ENRICH_VERSION を上げる → 旧キャッシュを破棄して作り直す。
-  let translations = state.translations ?? {};
-  const geminiKey = process.env.GEMINI_API_KEY;
-  if (!feedsConfig.translate.disabled && geminiKey) {
-    // ロジック更新時のみ、実際に再生成できる（キーがある）ときに旧キャッシュを破棄する。
-    if (state.enrichVersion !== ENRICH_VERSION) {
-      translations = {};
-      console.log(`[translate] enrichVersion 更新 (${state.enrichVersion ?? "なし"} → ${ENRICH_VERSION})・キャッシュ再生成`);
-    }
+  // 記事系は contentText（記事本文）を3行要約、その他は summary を翻訳。既処理は state.translations
+  // から再適用。translations / version 破棄は上（enrichArticles 前）で確定済み。
+  if (willSummarize && geminiKey) {
     try {
       const r = await enrichTranslations(items, translations, geminiKey, {
         model: feedsConfig.translate.model,
@@ -296,6 +303,9 @@ async function run(): Promise<void> {
   state.translations = Object.fromEntries(
     Object.entries(translations).filter(([id]) => liveIds.has(id)),
   );
+
+  // 要約入力用の記事本文は一時フィールド＝永続化しない（feed.json を肥大化させない）。
+  for (const it of items) delete it.contentText;
 
   const out: FeedData = {
     updatedAt: new Date().toISOString(),

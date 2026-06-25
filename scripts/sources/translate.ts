@@ -1,7 +1,7 @@
 /**
  * 機械翻訳／生成AI要約によるアイテム本文の日本語補完。
  *
- * enrichOgp.ts と同じ「state に永続キャッシュ・毎回アイテムへ再適用・トリム後の
+ * enrichArticles.ts と同じ「state に永続キャッシュ・毎回アイテムへ再適用・トリム後の
  * 最終アイテムだけ対象・未確認のみ API」パターン。X bookmark / feedly 等は毎回
  * フレッシュ取得され titleJa/summaryJa を失うが、transCache（state.translations）から
  * 再適用するので再生成しない。
@@ -46,10 +46,13 @@ interface TransCacheEntry {
   summaryJa?: string;
 }
 
-/** 翻訳/要約の対象アイテムと、その summary を要約（true）か翻訳（false）扱いにするかのフラグ。 */
+/** 翻訳/要約の対象アイテムと、要約/翻訳の入力テキスト・処理種別。 */
 interface Target {
   item: FeedItem;
+  /** true=入力を3行要約 / false=入力を翻訳 */
   summarize: boolean;
+  /** 処理対象テキスト。要約=本文(contentText)優先・翻訳=summary（抜粋） */
+  input: string;
 }
 
 /**
@@ -75,14 +78,15 @@ export async function enrichTranslations(
       continue;
     }
     const summary = item.summary?.trim() ?? "";
+    // 要約は記事本文（enrichArticles が付ける contentText）を優先、無ければ抜粋。
+    const body = item.contentText?.trim() || summary;
     const isSummSrc = summSet.has(item.source);
-    const longEnough = summary.length >= opts.summaryMinLen;
-    // 記事系 & 十分な長さの抜粋 → 3行要約（日本語記事も対象）。短い/その他 → 翻訳。
-    const summarize = isSummSrc && longEnough;
+    // 記事系 & 十分な長さの本文/抜粋 → 3行要約（日本語記事も対象）。その他 → 翻訳。
+    const summarize = isSummSrc && body.length >= opts.summaryMinLen;
     const needTitle = !!item.title && !isJapanese(item.title);
     const needSummary = summarize || (summary.length > 0 && !isJapanese(summary));
     if (!needTitle && !needSummary) continue;
-    targets.push({ item, summarize });
+    targets.push({ item, summarize, input: summarize ? body : summary });
   }
 
   // バッチに分割
@@ -123,10 +127,10 @@ async function translateBatch(
   apiKey: string,
   model: string,
 ): Promise<BatchTranslation[] | null> {
-  const input = batch.map(({ item, summarize }, i) => ({
+  const entries = batch.map(({ item, summarize, input }, i) => ({
     i,
     title: item.title ?? "",
-    summary: item.summary ?? "",
+    body: input,
     summarize,
   }));
 
@@ -134,11 +138,14 @@ async function translateBatch(
     "次の配列の各エントリを処理し、{titleJa, summaryJa} を返してください。\n" +
     "・titleJa: title を自然な日本語に翻訳。title が既に日本語ならそのまま、訳す必要が無ければ空文字。\n" +
     "・summaryJa:\n" +
-    "    summarize が true のエントリ → title と summary の内容を、日本語で簡潔に3行以内（全体で120字程度まで）に要約。\n" +
-    "    summarize が false のエントリ → summary を自然な日本語に翻訳（summary が空文字なら空文字）。\n" +
+    "    summarize が true → body（記事本文）の要点を一読でつかめる日本語の要約にする:\n" +
+    "      - 1文目で「何の発表・何が起きたか」を述べ、続けて重要な数字・理由・影響を書く（結論から先に）。\n" +
+    "      - 前置き・宣伝文句・筆者の感想は省き、事実だけを書く。タイトルの言い換えで終わらせない。\n" +
+    "      - やさしい言葉と短い文で、2〜3文・全体100〜120字程度。本文に無い情報は足さない。\n" +
+    "    summarize が false → body を自然な日本語に翻訳（body が空文字なら空文字）。\n" +
     "技術用語・製品名・固有名詞は無理に訳さず一般的な表記を使い、意味を保ってください。\n" +
     "入力と同じ順序・同じ件数で、各要素 {titleJa, summaryJa} の JSON 配列のみを返してください。\n\n" +
-    JSON.stringify(input);
+    JSON.stringify(entries);
 
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
   const body = {

@@ -21,6 +21,11 @@ export interface FeedItem {
   author?: string;
   /** はてブのブックマーク数 */
   bookmarkCount?: number;
+  /**
+   * 集約中のみの一時フィールド。記事ページから抽出した本文プレーンテキスト（要約の入力に使う）。
+   * `aggregate.ts` が feed.json 書き出し前に削除するので、永続化された feed.json には残らない。
+   */
+  contentText?: string;
 }
 
 /** aggregate.ts が書き出す feed.json のトップレベル構造。 */
