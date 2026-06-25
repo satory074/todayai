@@ -23,6 +23,7 @@
     "typescript": "^5.7.0"
   },
   "devDependencies": {
+    "@google-cloud/storage": "^7.21.0",
     "@types/node": "^25.9.0",
     "dotenv": "^16.4.7",
     "rss-parser": "^3.13.0",

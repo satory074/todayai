@@ -1,6 +1,56 @@
 {
-  "updatedAt": "2026-06-25T21:47:05.884Z",
+  "updatedAt": "2026-06-25T22:30:17.084Z",
   "items": [
+    {
+      "id": "feedly-https://qiita.com/doc_lab/items/fce9ec6a20bffa637688",
+      "source": "feedly",
+      "title": "AWS CodeCommitにAmazon Bedrockを組み込んでAIコードレビューを自動化＆手動実行できるようにしてみた",
+      "url": "https://qiita.com/doc_lab/items/fce9ec6a20bffa637688",
+      "publishedAt": "2026-06-25T22:19:29.000Z",
+      "summary": "はじめに 開発プロセスにおいてコードレビューは非常に重要ですが、レビュー待ちの時間の発生や、レビュアーの負担増加が課題になることがあります。 そこで今回は、AWS CodeCommit、Amazon EventBridge、AWS Lambda、そして Amazon Be...",
+      "thumbnail": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSmlZVFJxQ201TGhuQmM1bjVpMG5IdzJmM3E0aS1NWlVtSnVkcWQxN0R5RldIUTVBJTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTkxZDEzYmIxNDMxNmE3YmM3M2RkYzY3YmJhODg3MTI4%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D2dfab2fac66c8fcb673ca03609b84c55?ixlib=rb-4.1.1&amp;w=1200&amp;fm=jpg&amp;mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QVdTJTIwQ29kZUNvbW1pdCVFMyU4MSVBQkFtYXpvbiUyMEJlZHJvY2slRTMlODIlOTIlRTclQjUlODQlRTMlODElQkYlRTglQkUlQkMlRTMlODIlOTMlRTMlODElQTdBSSVFMyU4MiVCMyVFMyU4MyVCQyVFMyU4MyU4OSVFMyU4MyVBQyVFMyU4MyU5MyVFMyU4MyVBNSVFMyU4MyVCQyVFMyU4MiU5MiVFOCU4NyVBQSVFNSU4QiU5NSVFNSU4QyU5NiVFRiVCQyU4NiVFNiU4OSU4QiVFNSU4QiU5NSVFNSVBRSU5RiVFOCVBMSU4QyVFMyU4MSVBNyVFMyU4MSU4RCVFMyU4MiU4QiVFMyU4MiU4OCVFMyU4MSU4NiVFMyU4MSVBQiVFMiU4MCVBNiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWFkNmJiZDM1ZDVmODIwYjMwYzIxODI0OWE4YzkzOTli&amp;mark-x=120&amp;mark-y=112&amp;blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBkb2NfbGFiJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MDdkYTBjMjY5YzM5ZDU4YTYxNmZmMDA5NjE1ZjU0MzE&amp;blend-x=242&amp;blend-y=480&amp;blend-w=838&amp;blend-h=46&amp;blend-fit=crop&amp;blend-crop=left%2Cbottom&amp;blend-mode=normal&amp;s=ed5ddf0eddb718d9889ae0977957c6f6",
+      "author": "AIタグが付けられた新着記事 - Qiita"
+    },
+    {
+      "id": "feedly-https://qiita.com/etale_cohomology/items/5043330f12d891d5c27e",
+      "source": "feedly",
+      "title": "デジタルツイン×世界モデル×Physical AI ── 中国が構築する「現実を学習するAIスタック」の現在地",
+      "url": "https://qiita.com/etale_cohomology/items/5043330f12d891d5c27e",
+      "publishedAt": "2026-06-25T22:03:38.000Z",
+      "summary": "前回の記事（ 中国のAI Agent × World Models はどこまで来たか── Qwen-AgentWorldが示す「言語世界モデル」の最前線 ）では、デジタル環境（ターミナルやブラウザ）を、言語で予測する世界モデル を扱いました。 この記事は、その続編と...",
+      "thumbnail": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0Mzc1MjIzJTJGOWNkODA5ZWY2ODk1M2NhZDdkZWE2MTFjMTcxOWJjMWQ4ZjlkYWFlNCUyRmxhcmdlLnBuZyUzRjE3NzI5NTMwMDY_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWI3ZTg1MjZlZGFlYTc3MWZjN2Q5ZWEzN2M3Y2Q2Y2E5%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D0461f3ac414620ea3225beb4e26df0ef?ixlib=rb-4.1.1&amp;w=1200&amp;fm=jpg&amp;mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgzJTg3JUUzJTgyJUI4JUUzJTgyJUJGJUUzJTgzJUFCJUUzJTgzJTg0JUUzJTgyJUE0JUUzJTgzJUIzJUMzJTk3JUU0JUI4JTk2JUU3JTk1JThDJUUzJTgzJUEyJUUzJTgzJTg3JUUzJTgzJUFCJUMzJTk3UGh5c2ljYWwlMjBBSSUyMCVFMiU5NCU4MCVFMiU5NCU4MCUyMCVFNCVCOCVBRCVFNSU5QiVCRCVFMyU4MSU4QyVFNiVBNyU4QiVFNyVBRiU4OSVFMyU4MSU5OSVFMyU4MiU4QiVFMyU4MCU4QyVFNyU4RiVCRSVFNSVBRSU5RiVFMyU4MiU5MiVFNSVBRCVBNiVFNyVCRiU5MiVFMyU4MSU5OSVFMyU4MiU4QkFJJUUzJTgyJUI5JUUzJTgyJUJGJUUzJTgzJTgzJUUzJTgyJUFGJUUzJTgwJThEJUUzJTgxJUFFJUU3JThGJUJFJUU1JTlDJUE4JUU1JTlDJUIwJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MzY2NmU3MWY2MThmYTk2MTZmMzYzZmJkYWM2ZDBlNGI&amp;mark-x=120&amp;mark-y=112&amp;blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBldGFsZV9jb2hvbW9sb2d5JnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MzdjOTMyNWYwNTM5ZmM2YzkxMDBlYzIxOGQ1ZGZkNTI&amp;blend-x=242&amp;blend-y=480&amp;blend-w=838&amp;blend-h=46&amp;blend-fit=crop&amp;blend-crop=left%2Cbottom&amp;blend-mode=normal&amp;s=c150dc6cb40cab6dc4c02cc6a947ab06",
+      "author": "AIタグが付けられた新着記事 - Qiita"
+    },
+    {
+      "id": "feedly-https://www.techno-edge.net/article/2026/06/26/5228.html",
+      "source": "feedly",
+      "title": "Xbox Series X|S、2026年8月1日から100～150ドル値上げ。Series X 2TBモデルは販売終了へ",
+      "url": "https://www.techno-edge.net/article/2026/06/26/5228.html",
+      "publishedAt": "2026-06-25T22:00:03.000Z",
+      "summary": "マイクロソフトは、Xbox Serieis X|S本体の価格を2026年8月1日より改定すると発表しました。512GBモデルは100ドル、1TBモデルは150ドルの値上げになるとのことです。また、日本未発売の2TBモデルは販売終了（時期未定）するとのことです。",
+      "thumbnail": "https://www.techno-edge.net/imgs/rss/32562.jpg",
+      "author": "テクノエッジ TechnoEdge"
+    },
+    {
+      "id": "feedly-https://www.itmedia.co.jp/business/articles/2606/26/news012.html",
+      "source": "feedly",
+      "title": "“AIの回答が薄い問題”をどう解決？　日本ハム、「AIが食べやすいデータ」作戦の全貌",
+      "url": "https://www.itmedia.co.jp/business/articles/2606/26/news012.html",
+      "publishedAt": "2026-06-25T22:00:00.000Z",
+      "summary": "データ×AIによる意思決定を推進するには、非構造化データを「AIが食べやすいデータ」に変える必要がある。日本ハムが選んだアプローチとは。",
+      "thumbnail": "https://image.itmedia.co.jp/business/articles/2606/26/cover_news012.jpg",
+      "author": "ITmedia AI＋ 最新記事一覧"
+    },
+    {
+      "id": "feedly-https://kn.itmedia.co.jp/kn/articles/2606/26/news041.html",
+      "source": "feedly",
+      "title": "チャットの貴重な情報をAIが収集　AIエージェントで会話を資産に",
+      "url": "https://kn.itmedia.co.jp/kn/articles/2606/26/news041.html",
+      "publishedAt": "2026-06-25T22:00:00.000Z",
+      "summary": "業務上の会話には、後から参照すべき貴重な情報が多く含まれる。しかし、従来型のチャットでは、こうした情報が整理されないまま流れ、必要な場面で見つけにくい。そうした課題を解決するために、AIチャットエージェントが役立つかもしれない。",
+      "thumbnail": "https://image.itmedia.co.jp/kn/articles/2606/26/cover_news041.jpg",
+      "author": "ITmedia AI＋ 最新記事一覧"
+    },
     {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/26/5227.html",
       "source": "feedly",
@@ -39,26 +89,6 @@
       "publishedAt": "2026-06-25T20:16:12.000Z",
       "summary": "Claude Code でサブエージェント（子エージェント）を使うワークフローを hook で制御している人は、一つ気をつけてほしい挙動が報告された。SubagentStop の hook が、サブエージェントを一切起動していないメインセッションの終了時にも発火する、という...",
       "thumbnail": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MzU0MTk3JTJGNzY4MGMzNmI0MjExOWM0NTJhZGE3NTg4MmZmYTdiZGY2YWM5OWY5MSUyRmxhcmdlLnBuZyUzRjE3NzM1OTE5OTU_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWMzNGYyNGM0YWYxNTlkZTgyZTNmODg3NDE5YmZhMDUz%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D37216015e08ec9269277f1ac729b92fb?ixlib=rb-4.1.1&amp;w=1200&amp;fm=jpg&amp;mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9U3ViYWdlbnRTdG9wJTIwJUUzJTgxJUFFJTIwaG9vayUyMCVFMyU4MSU4QyVFMyU4MCU4MSVFMyU4MiVCNSVFMyU4MyU5NiVFMyU4MiVBOCVFMyU4MyVCQyVFMyU4MiVCOCVFMyU4MiVBNyVFMyU4MyVCMyVFMyU4MyU4OCVFMyU4MiU5MiVFNCVCRCVCRiVFMyU4MSVBMyVFMyU4MSVBNiVFMyU4MSU4NCVFMyU4MSVBQSVFMyU4MSU4NCVFMyU4MyVBMSVFMyU4MiVBNCVFMyU4MyVCMyVFMyU4MiVCQiVFMyU4MyU4MyVFMyU4MiVCNyVFMyU4MyVBNyVFMyU4MyVCMyVFMyU4MSVBNyVFMyU4MiU4MiVFNyU5OSVCQSVFNyU4MSVBQiVFMyU4MSU5OSVFMyU4MiU4QiVFMiU4MCU5NCVFMiU4MCU5NCVFMyU4MyU5RSVFMyU4MyVBQiVFMyU4MyU4MSVFMyU4MiVBOCVFMiU4MCVBNiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWM1ZjU1ZTExNjI5NmMyYjQwN2I1MmI4Mjg2ZDE5ODEx&amp;mark-x=120&amp;mark-y=112&amp;blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB5dXJ1a3VzYSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTk1MGY3NWQ2ZWE5NjYzY2RhMzc4ZGE1MWUzNGM2ZGQ4&amp;blend-x=242&amp;blend-y=480&amp;blend-w=838&amp;blend-h=46&amp;blend-fit=crop&amp;blend-crop=left%2Cbottom&amp;blend-mode=normal&amp;s=bccb10c39ddf1bdedbcfd94defea46e9",
-      "author": "AIタグが付けられた新着記事 - Qiita"
-    },
-    {
-      "id": "feedly-https://qiita.com/ohisama@github/items/1b84d96354e9c850dc61",
-      "source": "feedly",
-      "title": "音楽プログラミング Strudelを説明してみる。",
-      "url": "https://qiita.com/ohisama@github/items/1b84d96354e9c850dc61",
-      "publishedAt": "2026-06-25T18:52:14.000Z",
-      "summary": "Strudelとは Strudelは、Webブラウザ上で動作するライブコーディング音楽環境（REPL）であり、JavaScriptを用いて音楽の「パターン」を記述するためのパターン言語です。 1. 音符が無い（五線譜からの解放） Strudelには従来の五線譜や音符の長...",
-      "thumbnail": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Ftech-festa-ogp-background-4b5015b2c518c7e6b9062a7c9f5f5e90.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYxODEwNCUyRmZiMGEzYjAxNmI3NWM3NWZhYjQyMGUxMGIyYTc1YWZjNGQzMTIxMWMlMkZ4X2xhcmdlLnBuZyUzRjE3NTc5ODAzMTA_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTljZjJjZTNhMTliMTU4ZThhNjg3N2RmOTFlMzg1YTFj%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D4a32ac2b6b1cf909331fda35a35a75db?ixlib=rb-4.1.1&amp;w=1200&amp;fm=jpg&amp;mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU5JTlGJUIzJUU2JUE1JUJEJUUzJTgzJTk3JUUzJTgzJUFEJUUzJTgyJUIwJUUzJTgzJUE5JUUzJTgzJTlGJUUzJTgzJUIzJUUzJTgyJUIwJTIwU3RydWRlbCVFMyU4MiU5MiVFOCVBQSVBQyVFNiU5OCU4RSVFMyU4MSU5NyVFMyU4MSVBNiVFMyU4MSVCRiVFMyU4MiU4QiVFMyU4MCU4MiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzRkZGRkZGJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTYyOTZkYjg0ZTdmZDkzNjhlMGYwMjg5OTI3MGNiM2Yw&amp;mark-x=120&amp;mark-y=112&amp;blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBvaGlzYW1hJTQwZ2l0aHViJnR4dC1jb2xvcj0lMjNGRkZGRkYmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9Nzc4MzA5NmI2NjJhZDc1YTA5N2JlMzVkMTM2M2ZlYzY&amp;blend-x=242&amp;blend-y=480&amp;blend-w=838&amp;blend-h=46&amp;blend-fit=crop&amp;blend-crop=left%2Cbottom&amp;blend-mode=normal&amp;s=8305a367a5b4d80ab6cde837bcd09aff",
-      "author": "AIタグが付けられた新着記事 - Qiita"
-    },
-    {
-      "id": "feedly-https://qiita.com/singula/items/0a2b82647176ec2a02d9",
-      "source": "feedly",
-      "title": "連載：AIに仕事を奪われる不安から始めるハーネス作成入門　第8回 MCPサーバーの最小実装 — FastMCPで最初のツールを作る",
-      "url": "https://qiita.com/singula/items/0a2b82647176ec2a02d9",
-      "publishedAt": "2026-06-25T18:25:02.000Z",
-      "summary": "MCPサーバーの最小実装 — FastMCPで最初のツールを作る 連載：AIに仕事を奪われる不安から始めるハーネス作成入門 全24回（週2回・12週間）｜第8回 / 24 この連載は、AIに仕事を奪われるかもしれないという不安を「ハーネス（AIエージェント制御の仕組み）...",
-      "thumbnail": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGNDQ0MTY0NSUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc4MDM1OTQxOT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YTRmNTcyODNmOGFiZGZiMTQyNjY4ZmFjMGU2ODZiZGI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D14104917457f1094a74215d09c50a2af?ixlib=rb-4.1.1&amp;w=1200&amp;fm=jpg&amp;mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU5JTgwJUEzJUU4JUJDJTg5JUVGJUJDJTlBQUklRTMlODElQUIlRTQlQkIlOTUlRTQlQkElOEIlRTMlODIlOTIlRTUlQTUlQUElRTMlODIlOEYlRTMlODIlOEMlRTMlODIlOEIlRTQlQjglOEQlRTUlQUUlODklRTMlODElOEIlRTMlODIlODklRTUlQTclOEIlRTMlODIlODElRTMlODIlOEIlRTMlODMlOEYlRTMlODMlQkMlRTMlODMlOEQlRTMlODIlQjklRTQlQkQlOUMlRTYlODglOTAlRTUlODUlQTUlRTklOTYlODAlRTMlODAlODAlRTclQUMlQUM4JUU1JTlCJTlFJTIwTUNQJUUzJTgyJUI1JUUzJTgzJUJDJUUzJTgzJTkwJUUzJTgzJUJDJUUzJTgxJUFFJUU2JTlDJTgwJUU1JUIwJThGJUU1JUFFJTlGJUU4JUEzJTg1JTIwJUUyJTgwJTk0JTIwRmFzdE1DJUUyJTgwJUE2JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9ZDYyNmRmYzViODJiYjVhZmQxYWFlYjZkYTdjOTdmNDI&amp;mark-x=120&amp;mark-y=112&amp;blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBzaW5ndWxhJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9YWM3ZDc4MjgxZGU5ZGFhYmRiZDhjMDU3N2NkMWExYTU&amp;blend-x=242&amp;blend-y=480&amp;blend-w=838&amp;blend-h=46&amp;blend-fit=crop&amp;blend-crop=left%2Cbottom&amp;blend-mode=normal&amp;s=a3e25f45440299afcbb7ec1a9080d8fb",
       "author": "AIタグが付けられた新着記事 - Qiita"
     },
     {
@@ -117,6 +147,16 @@
       "publishedAt": "2026-06-25T13:22:06.000Z",
       "thumbnail": "https://pc.watch.impress.co.jp/img/pcw/list/2120/164/image.jpg",
       "bookmarkCount": 129
+    },
+    {
+      "id": "hatena-https://taisy0.com/2026/06/25/224470.html",
+      "source": "hatena",
+      "title": "Apple、Mac・iPad・Vision Proなどを値上げ | 気になる、記になる…",
+      "url": "https://taisy0.com/2026/06/25/224470.html",
+      "publishedAt": "2026-06-25T12:54:05.000Z",
+      "summary": "本日、Appleが、一部製品の価格を改定し、値上げしました。 値上げが実施されたのはMacとiPadとVision Proとなっており、価格改定の詳細は下記の通り。iPhone・Apple Watch・AirPodsは据え置きとなっていますが、恐らく、iPhoneとApple Watchは今秋の新型発売に合わせて実質値上げが行われるものと予想されます。 Mac 製...",
+      "thumbnail": "https://taisy0.com/wp-content/uploads/2026/06/th_Apple-OS-27-updates-260608_big.large_2x-1.jpg",
+      "bookmarkCount": 4
     },
     {
       "id": "feedly-https://www.itmedia.co.jp/news/articles/2606/25/news132.html",
@@ -904,26 +944,6 @@
       "author": "ITmedia AI＋ 最新記事一覧"
     },
     {
-      "id": "feedly-https://www.itmedia.co.jp/enterprise/articles/2606/24/news011.html",
-      "source": "feedly",
-      "title": "慶応大がNotionを選んだ「3つの理由」　“何ができるか”以外の決め手は？",
-      "url": "https://www.itmedia.co.jp/enterprise/articles/2606/24/news011.html",
-      "publishedAt": "2026-06-24T23:00:00.000Z",
-      "summary": "慶應義塾大学が全教職員にNotionを導入し、「AIキャンパス構想」を本格始動した。数あるツールからNotionを選んだ理由は何か。また、同大が目指す、生成AI時代におけるナレッジ管理の形とは。",
-      "thumbnail": "https://image.itmedia.co.jp/enterprise/articles/2606/24/cover_news011.jpg",
-      "author": "ITmedia AI＋ 最新記事一覧"
-    },
-    {
-      "id": "feedly-https://www.itmedia.co.jp/aiplus/article/2606/25/2000000126/",
-      "source": "feedly",
-      "title": "OpenAI、初の独自AIチップ「Jalapeno」発表──Broadcomと共同開発の推論用アクセラレータ",
-      "url": "https://www.itmedia.co.jp/aiplus/article/2606/25/2000000126/",
-      "publishedAt": "2026-06-24T22:38:39.000Z",
-      "summary": "OpenAIは、Broadcomと共同開発したLLMの推論に特化した独自AIチップ「Jalapeno」を発表した。同社初の「インテリジェンスプロセッサ」と位置付けており、設計から製造用のテープアウトまでを9カ月で完了したという。数世代にわたる計算基盤の第1弾として、年内に展開を始める計画だ。",
-      "thumbnail": "https://www.itmedia.co.jp/aiplus/article/ogp/2606/25/2000000126/10000617/2048",
-      "author": "ITmedia AI＋ 最新記事一覧"
-    },
-    {
       "id": "feedly-https://www.techno-edge.net/article/2026/06/25/5221.html",
       "source": "feedly",
       "title": "Google、Gemini 3.5 FlashにPC・スマホ操作を自動実行する「コンピューター使用」機能を追加",
@@ -1163,16 +1183,6 @@
       "publishedAt": "2026-06-23T04:45:26.000Z",
       "summary": "ValveがSteamOSゲーム機 Steam Machine を発売しました。国内価格は512GBモデル本体のみ18万9980円から、コントローラ Steam Controller 付属で20万4980円から。",
       "thumbnail": "https://www.techno-edge.net/imgs/rss/32465.png",
-      "author": "テクノエッジ TechnoEdge"
-    },
-    {
-      "id": "feedly-https://www.techno-edge.net/article/2026/06/23/5213.html",
-      "source": "feedly",
-      "title": "HHKB Studioに新色「灰」キートップ発売　キーボード本体セットで5000円オフの期間限定セットも",
-      "url": "https://www.techno-edge.net/article/2026/06/23/5213.html",
-      "publishedAt": "2026-06-23T04:32:44.000Z",
-      "summary": "PFUがプログラマーズキーボード「Happy Hacking Keyboard（HHKB）」シリーズの新製品、「HHKB Studioキートップセット（灰）」を発売しました。",
-      "thumbnail": "https://www.techno-edge.net/imgs/rss/32460.jpg",
       "author": "テクノエッジ TechnoEdge"
     },
     {
@@ -6311,7 +6321,9 @@
       "url": "https://x.com/i/status/2061885329649602886",
       "publishedAt": "2026-06-02T18:59:05.000Z",
       "summary": "【速報】OpenAI、Codexの新機能「Sites」を発表\n\nポイント：\n・Codexアプリ内でWebサイトやアプリを（ワークスペース内に）公開・共有\n・作成したコンテンツはOpenAIホストのURLで共有\n・「@ Sites」でデプロイURL取得までを自動化\n・ChatGPT Business／Enterprise向け",
-      "author": "ブックマーク"
+      "author": "@ctgptlb",
+      "authorName": "AGIラボ",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1671845985574875137/W689Frac_400x400.jpg"
     },
     {
       "id": "x-2061877343078244459",
@@ -6320,7 +6332,9 @@
       "url": "https://x.com/i/status/2061877343078244459",
       "publishedAt": "2026-06-02T18:27:21.000Z",
       "summary": "We’ve added a CLI for Claude Platform to make every API endpoint runnable from your terminal.\n\nCall the Messages API, stand up Claude Managed Agents, pipe results straight into your shell.\n\nThe ant CLI is well understood by coding agents (Claude Code) using the claude-api skill.",
-      "author": "ブックマーク"
+      "author": "@ClaudeDevs",
+      "authorName": "ClaudeDevs",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2044472418815893504/xf14RxM8_400x400.png"
     },
     {
       "id": "x-2061815599747981764",
@@ -6329,7 +6343,9 @@
       "url": "https://x.com/i/status/2061815599747981764",
       "publishedAt": "2026-06-02T14:22:00.000Z",
       "summary": "🚨 Claude Code's GitHub Actions Vulnerability Lets Attackers Compromise Any Repository \n\nSource: https://t.co/OuNlRkFEYd\n\nA critical supply chain vulnerability in Claude Code's GitHub Actions that could allow attackers to compromise any repository using Anthropic's official CI/CD",
-      "author": "ブックマーク"
+      "author": "@The_Cyber_News",
+      "authorName": "Cyber Security News",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1174924326807592960/aJMuU6Ms_400x400.jpg"
     },
     {
       "id": "x-2061765570161508782",
@@ -6337,8 +6353,10 @@
       "title": "あとで読む",
       "url": "https://x.com/i/status/2061765570161508782",
       "publishedAt": "2026-06-02T11:03:12.000Z",
-      "author": "ブックマーク",
-      "thumbnail": "https://files.speakerdeck.com/presentations/07b980cf9a494d2e986bf3ac9150b3b5/slide_0.jpg?39475139"
+      "author": "@iwashi86",
+      "thumbnail": "https://files.speakerdeck.com/presentations/07b980cf9a494d2e986bf3ac9150b3b5/slide_0.jpg?39475139",
+      "authorName": "iwashi / Yoshimasa Iwase",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1409992269973704705/PIGP4eEZ_400x400.jpg"
     },
     {
       "id": "x-2061382263766663514",
@@ -6346,8 +6364,10 @@
       "title": "「AI×人事戦略」が加速？　メルカリやSansanが相次ぎ新体制に　“AI前提の組織”目指す",
       "url": "https://x.com/i/status/2061382263766663514",
       "publishedAt": "2026-06-01T09:40:04.000Z",
-      "author": "ブックマーク",
-      "thumbnail": "https://www.itmedia.co.jp/aiplus/article/ogp/2606/01/2000000041/10000223/2048"
+      "author": "@itm_aiplus",
+      "thumbnail": "https://www.itmedia.co.jp/aiplus/article/ogp/2606/01/2000000041/10000223/2048",
+      "authorName": "ITmedia AI＋",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1764479065791348736/cZaiR26R_400x400.jpg"
     },
     {
       "id": "x-2061364822974050599",
@@ -6355,8 +6375,10 @@
       "title": "テックブログ更新しました！\n\nClaude Codeのセキュリティ運用・組織運用についてです🔥",
       "url": "https://x.com/i/status/2061364822974050599",
       "publishedAt": "2026-06-01T08:30:46.000Z",
-      "author": "ブックマーク",
-      "thumbnail": "https://nocode-sol.co.jp/wp-content/uploads/2026/05/LLM_API%E3%81%AE%E3%82%B9%E3%82%B9%E3%83%A1%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC-19.png"
+      "author": "@kokisennyu",
+      "thumbnail": "https://nocode-sol.co.jp/wp-content/uploads/2026/05/LLM_API%E3%81%AE%E3%82%B9%E3%82%B9%E3%83%A1%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC-19.png",
+      "authorName": "せんにゅう| DX・システム開発",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2028078195153756160/9wT6co2f_400x400.png"
     },
     {
       "id": "x-2061038034339102839",
@@ -6364,8 +6386,10 @@
       "title": "改めて多層防御必須な時代になってきてる。",
       "url": "https://x.com/i/status/2061038034339102839",
       "publishedAt": "2026-05-31T10:52:14.000Z",
-      "author": "ブックマーク",
-      "thumbnail": "https://files.speakerdeck.com/presentations/172ff2ae285c4aca8f5c16f65d2e4616/slide_0.jpg?27186140"
+      "author": "@react_nextjs",
+      "thumbnail": "https://files.speakerdeck.com/presentations/172ff2ae285c4aca8f5c16f65d2e4616/slide_0.jpg?27186140",
+      "authorName": "Shogo Fukami",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1895340397628661766/wPXgqa9Z_400x400.jpg"
     },
     {
       "id": "layerx-bff38792-456c-408b-80d5-f394d6216584",
@@ -7339,7 +7363,9 @@
       "title": "GrokをDynamic Workflowsのメンバーに入れるの、天才の発想過ぎる。",
       "url": "https://x.com/i/status/2060251312730804396",
       "publishedAt": "2026-05-29T06:46:05.000Z",
-      "author": "ブックマーク"
+      "author": "@oikon48",
+      "authorName": "Oikon",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1957490792601456640/Z2aPsuaY_400x400.jpg"
     },
     {
       "id": "x-2060194449104457904",
@@ -7348,7 +7374,9 @@
       "url": "https://x.com/i/status/2060194449104457904",
       "publishedAt": "2026-05-29T03:00:07.000Z",
       "summary": "【速報】\n有名エンジニアが「自分が毎日使ってる本物のskills」を丸ごと公開して、GitHubで爆発的に伸びてます😳\nmattpocock/skills、すでに★約10万。\n\n何がいいかというと👇\n・\"バイブコーディング\"用じゃなく「本物の開発」用\n・小さくて、改造しやすくて、組み合わせ自由\n・どのAIモデルでも動く",
-      "author": "ブックマーク"
+      "author": "@opensourcelab9",
+      "authorName": "オープンソース研究所",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2043709040921059328/1qDRmMiX_400x400.jpg"
     },
     {
       "id": "x-2060056572286701752",
@@ -7357,7 +7385,9 @@
       "url": "https://x.com/i/status/2060056572286701752",
       "publishedAt": "2026-05-28T17:52:15.000Z",
       "summary": "Claude公式プロンプトガイドにOpus4.8向けの内容が追加されていました。ユーザーの指示を文字通り解釈する、effort設定が結構重要、ツール使用控えめになったから呼んでほしければ強めに指示しろ、などといった特性がわかりやすく書かれていたので、斜め読みして箇条書きで紹介します。（斜め読みなの",
-      "author": "ブックマーク"
+      "author": "@MLBear2",
+      "authorName": "ML_Bear",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1658299129414696960/nL2U4pbx_400x400.jpg"
     },
     {
       "id": "x-2060013727907303435",
@@ -7366,8 +7396,10 @@
       "url": "https://x.com/i/status/2060013727907303435",
       "publishedAt": "2026-05-28T15:02:00.000Z",
       "summary": "Today we’re launching Command Line, a new technical blog about how and why we build.\n \nOur first stories go behind the architecture, design decisions, and research shaping the next wave of developer tools.\n \nStay tuned for more next week at #MicrosoftBuild",
-      "author": "ブックマーク",
-      "thumbnail": "https://commandline.microsoft.com/wp-content/uploads/2026/05/command-line-intro-16x9-bigger-cursor-scaled.png"
+      "author": "@msdev",
+      "thumbnail": "https://commandline.microsoft.com/wp-content/uploads/2026/05/command-line-intro-16x9-bigger-cursor-scaled.png",
+      "authorName": "Microsoft Developer",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1768324979303874560/3IRejxE9_400x400.jpg"
     },
     {
       "id": "x-2059992622165549326",
@@ -7376,7 +7408,9 @@
       "url": "https://x.com/i/status/2059992622165549326",
       "publishedAt": "2026-05-28T13:38:08.000Z",
       "summary": "Google Cloud は5月28日、AIを活用した新たなサイバー防御基盤「Google AI Threat Defense」を発表した。生成AIの普及により、攻撃者が脆弱性発見や攻撃自動化を高速化しているとして、従来の人手中心の脆弱性管理では対応できなくなっていると説明している。\n\n新サービスは、Wiz",
-      "author": "ブックマーク"
+      "author": "@yousukezan",
+      "authorName": "yousukezan",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1171815320434069504/Llnddol-_400x400.jpg"
     },
     {
       "id": "x-2059966960876601539",
@@ -7397,8 +7431,10 @@
       "url": "https://x.com/i/status/2059703536825565499",
       "publishedAt": "2026-05-27T18:29:25.000Z",
       "summary": "Private MCP servers 🤝 OpenAI products\n\nYour team can keep MCP servers inside your network while ChatGPT, Codex, and the Responses API connect through outbound-only HTTPS.\n\n🔗 https://t.co/UVq0KpT0km",
-      "author": "ブックマーク",
-      "thumbnail": "https://developers.openai.com/og/api/docs/guides/secure-mcp-tunnels.png"
+      "author": "@OpenAIDevs",
+      "thumbnail": "https://developers.openai.com/og/api/docs/guides/secure-mcp-tunnels.png",
+      "authorName": "OpenAI Developers",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2022002720971096064/l3Kyt4qt_400x400.jpg"
     }
   ],
   "state": {
@@ -8355,8 +8391,6 @@
       "feedly-https://www.itmedia.co.jp/news/articles/2606/25/news062.html": "https://image.itmedia.co.jp/news/articles/2606/25/cover_news062.jpg",
       "feedly-https://www.itmedia.co.jp/enterprise/articles/2606/25/news026.html": "https://image.itmedia.co.jp/enterprise/articles/2606/25/cover_news026.jpg",
       "feedly-https://www.itmedia.co.jp/business/articles/2606/25/news034.html": "https://image.itmedia.co.jp/business/articles/2606/25/cover_news034.png",
-      "feedly-https://www.itmedia.co.jp/enterprise/articles/2606/24/news011.html": "https://image.itmedia.co.jp/enterprise/articles/2606/24/cover_news011.jpg",
-      "feedly-https://www.itmedia.co.jp/aiplus/article/2606/25/2000000126/": "https://www.itmedia.co.jp/aiplus/article/ogp/2606/25/2000000126/10000617/2048",
       "workspace-https://workspaceupdates.googleblog.com/2026/06/stricter-classifications-for-google-groups-to-enhance-data-security-and-privacy.html": "",
       "feedly-https://note.com/npaka/n/n342d4c6bcf16": "https://assets.st-note.com/production/uploads/images/288522338/rectangle_large_type_2_54650e5135b4c382b86b7fa6926ffa21.jpeg?fit=bounds&quality=85&width=1280",
       "hatena-https://quubee.pages.dev/": "",
@@ -8372,11 +8406,13 @@
       "feedly-https://www.itmedia.co.jp/news/articles/2606/25/news132.html": "https://image.itmedia.co.jp/news/articles/2606/25/cover_news132.jpg",
       "feedly-https://qiita.com/yurukusa/items/5a4f67b7e0f732a3f7c4": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MzU0MTk3JTJGNzY4MGMzNmI0MjExOWM0NTJhZGE3NTg4MmZmYTdiZGY2YWM5OWY5MSUyRmxhcmdlLnBuZyUzRjE3NzM1OTE5OTU_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWMzNGYyNGM0YWYxNTlkZTgyZTNmODg3NDE5YmZhMDUz%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D37216015e08ec9269277f1ac729b92fb?ixlib=rb-4.1.1&amp;w=1200&amp;fm=jpg&amp;mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9U3ViYWdlbnRTdG9wJTIwJUUzJTgxJUFFJTIwaG9vayUyMCVFMyU4MSU4QyVFMyU4MCU4MSVFMyU4MiVCNSVFMyU4MyU5NiVFMyU4MiVBOCVFMyU4MyVCQyVFMyU4MiVCOCVFMyU4MiVBNyVFMyU4MyVCMyVFMyU4MyU4OCVFMyU4MiU5MiVFNCVCRCVCRiVFMyU4MSVBMyVFMyU4MSVBNiVFMyU4MSU4NCVFMyU4MSVBQSVFMyU4MSU4NCVFMyU4MyVBMSVFMyU4MiVBNCVFMyU4MyVCMyVFMyU4MiVCQiVFMyU4MyU4MyVFMyU4MiVCNyVFMyU4MyVBNyVFMyU4MyVCMyVFMyU4MSVBNyVFMyU4MiU4MiVFNyU5OSVCQSVFNyU4MSVBQiVFMyU4MSU5OSVFMyU4MiU4QiVFMiU4MCU5NCVFMiU4MCU5NCVFMyU4MyU5RSVFMyU4MyVBQiVFMyU4MyU4MSVFMyU4MiVBOCVFMiU4MCVBNiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWM1ZjU1ZTExNjI5NmMyYjQwN2I1MmI4Mjg2ZDE5ODEx&amp;mark-x=120&amp;mark-y=112&amp;blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB5dXJ1a3VzYSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTk1MGY3NWQ2ZWE5NjYzY2RhMzc4ZGE1MWUzNGM2ZGQ4&amp;blend-x=242&amp;blend-y=480&amp;blend-w=838&amp;blend-h=46&amp;blend-fit=crop&amp;blend-crop=left%2Cbottom&amp;blend-mode=normal&amp;s=bccb10c39ddf1bdedbcfd94defea46e9",
       "feedly-https://qiita.com/happy_engineer/items/acd76390b30b0f7df3d0": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYzNzgzMjg5JTJGNjM0ZjZjZTUzMDYzMTg4OTliNmVhODE5NmRhMTMyMTAxYjg0ZWZjYSUyRmxhcmdlLnBuZyUzRjE3MTQ3NDAzMzk_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTM4OTBjZmJmNWVjYmMxMTQ0MmM3YjdiMzY2YTBkNTY1%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D9de2fd73ab798446594dcc757c0d66d4?ixlib=rb-4.1.1&amp;w=1200&amp;fm=jpg&amp;mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTYlOTklODIlRTQlQkIlQTMlRTMlODElQUJTRSVFMyU4MSU4QyVFNyU5NCU5RiVFMyU4MSU4RCVFNiVBRSU4QiVFMyU4MiU4QiVFMyU4MSU5RiVFMyU4MiU4MSVFMyU4MSVBQiVFNSVCRiU4NSVFOCVBNiU4MSVFMyU4MSVBQSVFMyU4MiVCOSVFMyU4MiVBRCVFMyU4MyVBQiVFMyU4MiU5MiVFNiU5NSVCNCVFNyU5MCU4NiVFMyU4MSU5OSVFMyU4MiU4QiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWU0N2NhODc4NTIzY2JhZGM3MjVmMDczZDg5MTcyYjY3&amp;mark-x=120&amp;mark-y=112&amp;blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBoYXBweV9lbmdpbmVlciZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTQ2MzM5OGM2MWRiNzE1NDQ1NzQ1YmRkZWY0NzZjMTk2&amp;blend-x=242&amp;blend-y=480&amp;blend-w=838&amp;blend-h=46&amp;blend-fit=crop&amp;blend-crop=left%2Cbottom&amp;blend-mode=normal&amp;s=8bbab640e6891aa46021fa1d5ce62d77",
-      "feedly-https://qiita.com/ohisama@github/items/1b84d96354e9c850dc61": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Ftech-festa-ogp-background-4b5015b2c518c7e6b9062a7c9f5f5e90.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYxODEwNCUyRmZiMGEzYjAxNmI3NWM3NWZhYjQyMGUxMGIyYTc1YWZjNGQzMTIxMWMlMkZ4X2xhcmdlLnBuZyUzRjE3NTc5ODAzMTA_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTljZjJjZTNhMTliMTU4ZThhNjg3N2RmOTFlMzg1YTFj%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D4a32ac2b6b1cf909331fda35a35a75db?ixlib=rb-4.1.1&amp;w=1200&amp;fm=jpg&amp;mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU5JTlGJUIzJUU2JUE1JUJEJUUzJTgzJTk3JUUzJTgzJUFEJUUzJTgyJUIwJUUzJTgzJUE5JUUzJTgzJTlGJUUzJTgzJUIzJUUzJTgyJUIwJTIwU3RydWRlbCVFMyU4MiU5MiVFOCVBQSVBQyVFNiU5OCU4RSVFMyU4MSU5NyVFMyU4MSVBNiVFMyU4MSVCRiVFMyU4MiU4QiVFMyU4MCU4MiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzRkZGRkZGJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTYyOTZkYjg0ZTdmZDkzNjhlMGYwMjg5OTI3MGNiM2Yw&amp;mark-x=120&amp;mark-y=112&amp;blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBvaGlzYW1hJTQwZ2l0aHViJnR4dC1jb2xvcj0lMjNGRkZGRkYmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9Nzc4MzA5NmI2NjJhZDc1YTA5N2JlMzVkMTM2M2ZlYzY&amp;blend-x=242&amp;blend-y=480&amp;blend-w=838&amp;blend-h=46&amp;blend-fit=crop&amp;blend-crop=left%2Cbottom&amp;blend-mode=normal&amp;s=8305a367a5b4d80ab6cde837bcd09aff",
-      "feedly-https://qiita.com/singula/items/0a2b82647176ec2a02d9": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGNDQ0MTY0NSUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc4MDM1OTQxOT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YTRmNTcyODNmOGFiZGZiMTQyNjY4ZmFjMGU2ODZiZGI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D14104917457f1094a74215d09c50a2af?ixlib=rb-4.1.1&amp;w=1200&amp;fm=jpg&amp;mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU5JTgwJUEzJUU4JUJDJTg5JUVGJUJDJTlBQUklRTMlODElQUIlRTQlQkIlOTUlRTQlQkElOEIlRTMlODIlOTIlRTUlQTUlQUElRTMlODIlOEYlRTMlODIlOEMlRTMlODIlOEIlRTQlQjglOEQlRTUlQUUlODklRTMlODElOEIlRTMlODIlODklRTUlQTclOEIlRTMlODIlODElRTMlODIlOEIlRTMlODMlOEYlRTMlODMlQkMlRTMlODMlOEQlRTMlODIlQjklRTQlQkQlOUMlRTYlODglOTAlRTUlODUlQTUlRTklOTYlODAlRTMlODAlODAlRTclQUMlQUM4JUU1JTlCJTlFJTIwTUNQJUUzJTgyJUI1JUUzJTgzJUJDJUUzJTgzJTkwJUUzJTgzJUJDJUUzJTgxJUFFJUU2JTlDJTgwJUU1JUIwJThGJUU1JUFFJTlGJUU4JUEzJTg1JTIwJUUyJTgwJTk0JTIwRmFzdE1DJUUyJTgwJUE2JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9ZDYyNmRmYzViODJiYjVhZmQxYWFlYjZkYTdjOTdmNDI&amp;mark-x=120&amp;mark-y=112&amp;blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBzaW5ndWxhJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9YWM3ZDc4MjgxZGU5ZGFhYmRiZDhjMDU3N2NkMWExYTU&amp;blend-x=242&amp;blend-y=480&amp;blend-w=838&amp;blend-h=46&amp;blend-fit=crop&amp;blend-crop=left%2Cbottom&amp;blend-mode=normal&amp;s=a3e25f45440299afcbb7ec1a9080d8fb",
       "feedly-https://monoist.itmedia.co.jp/mn/articles/2606/26/news056.html": "https://image.itmedia.co.jp/mn/articles/2606/26/cover_news056.jpg",
       "feedly-https://note.com/npaka/n/n6f72d540e3e7": "https://assets.st-note.com/production/uploads/images/288736432/rectangle_large_type_2_302d3f9b3de7488157c1f825b17af6af.png?fit=bounds&quality=85&width=1280",
-      "workspace-https://workspaceupdates.googleblog.com/2026/06/read-along-in-google-classroom-is-now-available-to-all-education-users-to-support-foundational-literacy.html": ""
+      "workspace-https://workspaceupdates.googleblog.com/2026/06/read-along-in-google-classroom-is-now-available-to-all-education-users-to-support-foundational-literacy.html": "",
+      "feedly-https://www.itmedia.co.jp/business/articles/2606/26/news012.html": "https://image.itmedia.co.jp/business/articles/2606/26/cover_news012.jpg",
+      "feedly-https://qiita.com/doc_lab/items/fce9ec6a20bffa637688": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSmlZVFJxQ201TGhuQmM1bjVpMG5IdzJmM3E0aS1NWlVtSnVkcWQxN0R5RldIUTVBJTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTkxZDEzYmIxNDMxNmE3YmM3M2RkYzY3YmJhODg3MTI4%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D2dfab2fac66c8fcb673ca03609b84c55?ixlib=rb-4.1.1&amp;w=1200&amp;fm=jpg&amp;mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QVdTJTIwQ29kZUNvbW1pdCVFMyU4MSVBQkFtYXpvbiUyMEJlZHJvY2slRTMlODIlOTIlRTclQjUlODQlRTMlODElQkYlRTglQkUlQkMlRTMlODIlOTMlRTMlODElQTdBSSVFMyU4MiVCMyVFMyU4MyVCQyVFMyU4MyU4OSVFMyU4MyVBQyVFMyU4MyU5MyVFMyU4MyVBNSVFMyU4MyVCQyVFMyU4MiU5MiVFOCU4NyVBQSVFNSU4QiU5NSVFNSU4QyU5NiVFRiVCQyU4NiVFNiU4OSU4QiVFNSU4QiU5NSVFNSVBRSU5RiVFOCVBMSU4QyVFMyU4MSVBNyVFMyU4MSU4RCVFMyU4MiU4QiVFMyU4MiU4OCVFMyU4MSU4NiVFMyU4MSVBQiVFMiU4MCVBNiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWFkNmJiZDM1ZDVmODIwYjMwYzIxODI0OWE4YzkzOTli&amp;mark-x=120&amp;mark-y=112&amp;blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBkb2NfbGFiJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MDdkYTBjMjY5YzM5ZDU4YTYxNmZmMDA5NjE1ZjU0MzE&amp;blend-x=242&amp;blend-y=480&amp;blend-w=838&amp;blend-h=46&amp;blend-fit=crop&amp;blend-crop=left%2Cbottom&amp;blend-mode=normal&amp;s=ed5ddf0eddb718d9889ae0977957c6f6",
+      "feedly-https://qiita.com/etale_cohomology/items/5043330f12d891d5c27e": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0Mzc1MjIzJTJGOWNkODA5ZWY2ODk1M2NhZDdkZWE2MTFjMTcxOWJjMWQ4ZjlkYWFlNCUyRmxhcmdlLnBuZyUzRjE3NzI5NTMwMDY_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWI3ZTg1MjZlZGFlYTc3MWZjN2Q5ZWEzN2M3Y2Q2Y2E5%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D0461f3ac414620ea3225beb4e26df0ef?ixlib=rb-4.1.1&amp;w=1200&amp;fm=jpg&amp;mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgzJTg3JUUzJTgyJUI4JUUzJTgyJUJGJUUzJTgzJUFCJUUzJTgzJTg0JUUzJTgyJUE0JUUzJTgzJUIzJUMzJTk3JUU0JUI4JTk2JUU3JTk1JThDJUUzJTgzJUEyJUUzJTgzJTg3JUUzJTgzJUFCJUMzJTk3UGh5c2ljYWwlMjBBSSUyMCVFMiU5NCU4MCVFMiU5NCU4MCUyMCVFNCVCOCVBRCVFNSU5QiVCRCVFMyU4MSU4QyVFNiVBNyU4QiVFNyVBRiU4OSVFMyU4MSU5OSVFMyU4MiU4QiVFMyU4MCU4QyVFNyU4RiVCRSVFNSVBRSU5RiVFMyU4MiU5MiVFNSVBRCVBNiVFNyVCRiU5MiVFMyU4MSU5OSVFMyU4MiU4QkFJJUUzJTgyJUI5JUUzJTgyJUJGJUUzJTgzJTgzJUUzJTgyJUFGJUUzJTgwJThEJUUzJTgxJUFFJUU3JThGJUJFJUU1JTlDJUE4JUU1JTlDJUIwJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MzY2NmU3MWY2MThmYTk2MTZmMzYzZmJkYWM2ZDBlNGI&amp;mark-x=120&amp;mark-y=112&amp;blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBldGFsZV9jb2hvbW9sb2d5JnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MzdjOTMyNWYwNTM5ZmM2YzkxMDBlYzIxOGQ1ZGZkNTI&amp;blend-x=242&amp;blend-y=480&amp;blend-w=838&amp;blend-h=46&amp;blend-fit=crop&amp;blend-crop=left%2Cbottom&amp;blend-mode=normal&amp;s=c150dc6cb40cab6dc4c02cc6a947ab06",
+      "feedly-https://kn.itmedia.co.jp/kn/articles/2606/26/news041.html": "https://image.itmedia.co.jp/kn/articles/2606/26/cover_news041.jpg"
     },
     "translations": {
       "hatena-https://pc.watch.impress.co.jp/docs/news/2119895.html": {
@@ -8491,14 +8527,6 @@
         "titleJa": "【役に立つの？】「Google公式」の初心者向けAI講座、受けてみたら想像以上にすごかった",
         "summaryJa": "Googleが提供する初心者向けAI講座は、AIの基礎から活用法までを体系的に学べる。7つのコースで構成され、実務で役立つスキルを効率的に習得できる。"
       },
-      "feedly-https://www.itmedia.co.jp/enterprise/articles/2606/24/news011.html": {
-        "titleJa": "慶応大がNotionを選んだ「3つの理由」　“何ができるか”以外の決め手は？",
-        "summaryJa": "慶應義塾大学は、AI機能の活用や情報管理の効率化を目的にNotionを導入した。機能面だけでなく、AIによる情報整理のしやすさが選定の決め手となった。"
-      },
-      "feedly-https://www.itmedia.co.jp/aiplus/article/2606/25/2000000126/": {
-        "titleJa": "OpenAI、初の独自AIチップ「Jalapeno」発表──Broadcomと共同開発の推論用アクセラレータ",
-        "summaryJa": "OpenAIは、Broadcomと共同開発した推論特化型の独自AIチップ「Jalapeno」を発表した。LLMの推論性能を大幅に向上させ、2026年末から順次展開する。"
-      },
       "feedly-https://www.techno-edge.net/article/2026/06/25/5221.html": {
         "titleJa": "Google、Gemini 3.5 FlashにPC・スマホ操作を自動実行する「コンピューター使用」機能を追加",
         "summaryJa": "Googleは「Gemini 3.5 Flash」に、画面を認識して操作を実行する機能を統合した。これにより、ブラウザやアプリを横断した複雑な業務フローの自動化が可能になる。"
@@ -8594,10 +8622,6 @@
       "feedly-https://www.techno-edge.net/article/2026/06/23/5214.html": {
         "titleJa": "Steam Machine発売、18万9980円から。25万円の2TBモデルも売り切れ　Steam DeckやFrameと連携するValve純正ゲーミングPC",
         "summaryJa": "Valveは、SteamOSを搭載した小型デスクトップPC「Steam Machine」を発売しました。Steam Deckの6倍の性能を持ち、ストリーミングやコントローラー連携に最適化されています。"
-      },
-      "feedly-https://www.techno-edge.net/article/2026/06/23/5213.html": {
-        "titleJa": "HHKB Studioに新色「灰」キートップ発売　キーボード本体セットで5000円オフの期間限定セットも",
-        "summaryJa": "PFUは、キーボード「HHKB Studio」向けの新色キートップ「灰」を発売しました。視認性とデザイン性を両立したカラーで、本体とのセット購入で5000円引きとなるキャンペーンも実施されます。"
       },
       "feedly-https://note.com/npaka/n/ncd98bd9f3029": {
         "titleJa": "Meta Quest と PC をUSB有線通信する方法",
@@ -9251,6 +9275,71 @@
         "name": "Chrome Unboxed",
         "handle": "chromeunboxed",
         "avatar": "https://pbs.twimg.com/profile_images/1249728779813093380/NKaURvui_400x400.jpg"
+      },
+      "x-2061877343078244459": {
+        "name": "ClaudeDevs",
+        "handle": "ClaudeDevs",
+        "avatar": "https://pbs.twimg.com/profile_images/2044472418815893504/xf14RxM8_400x400.png"
+      },
+      "x-2061765570161508782": {
+        "name": "iwashi / Yoshimasa Iwase",
+        "handle": "iwashi86",
+        "avatar": "https://pbs.twimg.com/profile_images/1409992269973704705/PIGP4eEZ_400x400.jpg"
+      },
+      "x-2061815599747981764": {
+        "name": "Cyber Security News",
+        "handle": "The_Cyber_News",
+        "avatar": "https://pbs.twimg.com/profile_images/1174924326807592960/aJMuU6Ms_400x400.jpg"
+      },
+      "x-2061382263766663514": {
+        "name": "ITmedia AI＋",
+        "handle": "itm_aiplus",
+        "avatar": "https://pbs.twimg.com/profile_images/1764479065791348736/cZaiR26R_400x400.jpg"
+      },
+      "x-2061364822974050599": {
+        "name": "せんにゅう| DX・システム開発",
+        "handle": "kokisennyu",
+        "avatar": "https://pbs.twimg.com/profile_images/2028078195153756160/9wT6co2f_400x400.png"
+      },
+      "x-2061885329649602886": {
+        "name": "AGIラボ",
+        "handle": "ctgptlb",
+        "avatar": "https://pbs.twimg.com/profile_images/1671845985574875137/W689Frac_400x400.jpg"
+      },
+      "x-2060194449104457904": {
+        "name": "オープンソース研究所",
+        "handle": "opensourcelab9",
+        "avatar": "https://pbs.twimg.com/profile_images/2043709040921059328/1qDRmMiX_400x400.jpg"
+      },
+      "x-2060056572286701752": {
+        "name": "ML_Bear",
+        "handle": "MLBear2",
+        "avatar": "https://pbs.twimg.com/profile_images/1658299129414696960/nL2U4pbx_400x400.jpg"
+      },
+      "x-2060013727907303435": {
+        "name": "Microsoft Developer",
+        "handle": "msdev",
+        "avatar": "https://pbs.twimg.com/profile_images/1768324979303874560/3IRejxE9_400x400.jpg"
+      },
+      "x-2059992622165549326": {
+        "name": "yousukezan",
+        "handle": "yousukezan",
+        "avatar": "https://pbs.twimg.com/profile_images/1171815320434069504/Llnddol-_400x400.jpg"
+      },
+      "x-2061038034339102839": {
+        "name": "Shogo Fukami",
+        "handle": "react_nextjs",
+        "avatar": "https://pbs.twimg.com/profile_images/1895340397628661766/wPXgqa9Z_400x400.jpg"
+      },
+      "x-2059703536825565499": {
+        "name": "OpenAI Developers",
+        "handle": "OpenAIDevs",
+        "avatar": "https://pbs.twimg.com/profile_images/2022002720971096064/l3Kyt4qt_400x400.jpg"
+      },
+      "x-2060251312730804396": {
+        "name": "Oikon",
+        "handle": "oikon48",
+        "avatar": "https://pbs.twimg.com/profile_images/1957490792601456640/Z2aPsuaY_400x400.jpg"
       }
     }
   }

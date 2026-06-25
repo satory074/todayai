@@ -11,12 +11,11 @@
  * CI 実行    : GitHub Actions が Secrets を env に渡して実行。
  */
 import { config as loadEnv } from "dotenv";
-import * as fs from "node:fs";
-import * as path from "node:path";
-import { fileURLToPath } from "node:url";
 
 import { feedsConfig } from "../feeds.config";
 import type { FeedData, FeedItem, FeedSource } from "../src/lib/feed";
+import { readFeed } from "../src/lib/feedStore";
+import { writeFeed } from "./lib/feedWrite";
 import { fetchX, fetchXAccounts } from "./sources/x";
 import { fetchFeedly } from "./sources/feedly";
 import { fetchHatena } from "./sources/hatena";
@@ -28,9 +27,6 @@ import { enrichTranslations } from "./sources/translate";
 
 loadEnv();
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const DATA_FILE = path.join(__dirname, "..", "src", "data", "feed.json");
-
 /**
  * 翻訳/要約キャッシュ（state.translations）の生成ロジック版。
  * プロンプトや「翻訳→要約」などロジックを変えたら上げる → 旧キャッシュを破棄して再生成する。
@@ -40,20 +36,20 @@ const DATA_FILE = path.join(__dirname, "..", "src", "data", "feed.json");
  */
 const ENRICH_VERSION = "4";
 
-function readCache(): FeedData {
-  try {
-    const raw = fs.readFileSync(DATA_FILE, "utf-8");
-    const parsed = JSON.parse(raw) as FeedData;
-    if (!Array.isArray(parsed.items)) parsed.items = [];
-    return parsed;
-  } catch {
-    return { updatedAt: new Date(0).toISOString(), items: [], state: {} };
-  }
+// 読み書きは feedStore/feedWrite が GCS（GCS_BUCKET 設定時）/ローカルファイルを透過的に切替える。
+// 集約開始時の読みはキャッシュバスタ不要（前回 run の書き込みは十分に古い）。
+async function readCache(): Promise<FeedData> {
+  const data = await readFeed<FeedData>({
+    updatedAt: new Date(0).toISOString(),
+    items: [],
+    state: {},
+  });
+  if (!Array.isArray(data.items)) data.items = [];
+  return data;
 }
 
-function writeCache(data: FeedData): void {
-  fs.mkdirSync(path.dirname(DATA_FILE), { recursive: true });
-  fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2) + "\n");
+async function writeCache(data: FeedData): Promise<void> {
+  await writeFeed(data);
 }
 
 /** 指定ソースの前回キャッシュ分。失敗時のフォールバックに使う。 */
@@ -62,7 +58,7 @@ function cachedFor(cache: FeedData, source: FeedSource): FeedItem[] {
 }
 
 async function run(): Promise<void> {
-  const cache = readCache();
+  const cache = await readCache();
   const state = cache.state ?? {};
   const collected: FeedItem[] = [];
   const errors: string[] = [];
@@ -336,7 +332,7 @@ async function run(): Promise<void> {
     items,
     state,
   };
-  writeCache(out);
+  await writeCache(out);
 
   const counts = { x: 0, feedly: 0, hatena: 0, layerx: 0, workspace: 0 } as Record<
     FeedSource,

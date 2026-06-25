@@ -1,10 +1,13 @@
 import rss from "@astrojs/rss";
 import { absUrl } from "@/lib/url";
 import { sourceLabel, type FeedData } from "@/lib/feed";
-import feedJson from "@/data/feed.json";
+import { readFeed } from "@/lib/feedStore";
 
 export async function GET() {
-  const feed = feedJson as FeedData;
+  const feed = await readFeed<FeedData>(
+    { updatedAt: new Date(0).toISOString(), items: [] },
+    { bust: process.env.GITHUB_RUN_ID },
+  );
   const items = [...feed.items].sort(
     (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
   );
