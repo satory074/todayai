@@ -19,6 +19,10 @@ export interface FeedItem {
   thumbnail?: string;
   /** X の screen name / 記事の配信元サイト名 */
   author?: string;
+  /** X のプロフィール画像URL（_400x400 版）。集約時に syndication / X API で補完。 */
+  avatarUrl?: string;
+  /** X の表示名（@handle とは別。例 "NotebookLM"）。集約時に補完。 */
+  authorName?: string;
   /** はてブのブックマーク数 */
   bookmarkCount?: number;
   /**
@@ -26,6 +30,16 @@ export interface FeedItem {
    * `aggregate.ts` が feed.json 書き出し前に削除するので、永続化された feed.json には残らない。
    */
   contentText?: string;
+}
+
+/** X ツイートの著者メタ（syndication 解決結果のキャッシュ）。 */
+export interface XAuthorMeta {
+  /** 表示名 */
+  name: string;
+  /** screen name（@なし） */
+  handle: string;
+  /** プロフィール画像URL（_400x400 版）。無ければ未設定 */
+  avatar?: string;
 }
 
 /** aggregate.ts が書き出す feed.json のトップレベル構造。 */
@@ -41,6 +55,12 @@ export interface FeedData {
     xAccountUserIds?: Record<string, string>;
     /** X ブックマーク等 tweet id(`x-<id>`) -> OGP画像URL / ""(確認済み・画像なし) */
     xOgImages?: Record<string, string>;
+    /**
+     * X item id(`x-<id>`) -> 著者メタ（syndication 解決）/ null(確認済み・著者なしの負キャッシュ)。
+     * ブックマーク等で元ツイートの著者・アイコンを復元するための永続化。
+     * fetch 失敗（transient/CIブロック）時は記録せず次回 run で再試行する。
+     */
+    xAuthors?: Record<string, XAuthorMeta | null>;
     /** X以外（feedly/hatena/workspace）item id -> OGP画像URL / ""(確認済み・画像なし) */
     ogImages?: Record<string, string>;
     /**

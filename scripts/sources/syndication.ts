@@ -26,6 +26,7 @@ interface SynResponse {
   mediaDetails?: { media_url_https?: string }[];
   photos?: { url?: string }[];
   entities?: { urls?: { expanded_url?: string }[] };
+  user?: { name?: string; screen_name?: string; profile_image_url_https?: string };
 }
 
 export interface TweetData {
@@ -35,6 +36,13 @@ export interface TweetData {
   photo?: string;
   /** 本文に含まれる外部リンク（expanded_url）。リンク共有ツイートのサムネ解決に使う */
   links: string[];
+  /** 著者（表示名 / @handle / プロフィール画像）。レスポンスに user が無ければ undefined */
+  author?: { name: string; handle: string; avatar?: string };
+}
+
+/** プロフィール画像URLを高解像度（_400x400）に置換。`_normal.jpg` → `_400x400.jpg`。 */
+function hiResAvatar(url: string): string {
+  return url.replace(/_normal(\.\w+)?($|\?)/, "_400x400$1$2");
 }
 
 /** ツイート ID から本文・メディア・リンクを取得。失敗時は undefined（呼び出し側でスキップ）。 */
@@ -50,7 +58,17 @@ export async function fetchTweet(id: string): Promise<TweetData | undefined> {
     const links = (j.entities?.urls ?? [])
       .map((u) => u.expanded_url)
       .filter((u): u is string => !!u);
-    return { text: j.text ?? "", photo, links };
+    const author =
+      j.user?.screen_name
+        ? {
+            name: j.user.name?.trim() || j.user.screen_name,
+            handle: j.user.screen_name,
+            avatar: j.user.profile_image_url_https
+              ? hiResAvatar(j.user.profile_image_url_https)
+              : undefined,
+          }
+        : undefined;
+    return { text: j.text ?? "", photo, links, author };
   } catch {
     return undefined;
   }

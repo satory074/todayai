@@ -33,7 +33,7 @@ const avatarBg = author.kind === "handle" ? avatarColor(initialsSeed) : "var(--c
   <!-- ヘッダー: アバター | 名前/ハンドル | X ロゴ -->
   <div class="relative z-10 flex items-start gap-3">
     <div
-      class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-[14px] font-bold text-white"
+      class="relative flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-full text-[14px] font-bold text-white"
       style={`background:${avatarBg}`}
       aria-hidden="true"
     >
@@ -46,6 +46,17 @@ const avatarBg = author.kind === "handle" ? avatarColor(initialsSeed) : "var(--c
           </svg>
         )
       }
+      {
+        item.avatarUrl && (
+          <img
+            src={item.avatarUrl}
+            alt=""
+            loading="lazy"
+            class="absolute inset-0 h-full w-full object-cover"
+            onerror="this.style.display='none'"
+          />
+        )
+      }
     </div>
 
     <div class="min-w-0 flex-1 leading-tight">
@@ -53,7 +64,7 @@ const avatarBg = author.kind === "handle" ? avatarColor(initialsSeed) : "var(--c
         author.kind === "handle" ? (
           <>
             <div class="truncate text-[15px] font-bold text-[var(--color-text)]">
-              {author.handle}
+              {item.authorName ?? author.handle}
             </div>
             <div class="truncate font-mono text-[12px] text-[var(--color-text-subtle)]">
               @{author.handle}

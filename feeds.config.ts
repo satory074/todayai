@@ -52,6 +52,12 @@ export interface FeedsConfig {
   hatena: {
     /** はてなブックマーク 人気エントリー テクノロジー の RSS */
     rssUrl: string;
+    /**
+     * はてブの保持上限件数（newest を残す）。人気エントリーRSSは現在分しか返さないので
+     * 集約時に過去分も蓄積する（maxAgeDays の対象外＝実質全期間）。この値は feed.json の
+     * 単調増加を抑える安全弁（既定 1000 ≒ 数ヶ月分）。完全無制限にしたいなら大きくする。
+     */
+    retentionMax: number;
     disabled?: boolean;
   };
   workspace: {
@@ -134,6 +140,7 @@ export const feedsConfig: FeedsConfig = {
   },
   hatena: {
     rssUrl: "https://b.hatena.ne.jp/hotentry/it.rss",
+    retentionMax: 1000, // 過去分も保持（実質全期間）。feed.json 肥大を抑える安全弁
     disabled: false,
   },
   workspace: {

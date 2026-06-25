@@ -90,11 +90,14 @@ async function run(): Promise<void> {
         username: feedsConfig.x.username,
         categories: feedsConfig.x.categories,
         ogCache: state.xOgImages ?? {},
+        authorCache: state.xAuthors ?? {},
       });
       state.xOgImages = r.ogCache;
+      state.xAuthors = r.authorCache;
       xItems.push(...r.items);
       const withThumb = r.items.filter((i) => i.thumbnail).length;
-      console.log(`[x] basecamp公開JSON: ${r.items.length} items (${feedsConfig.x.categories.join("/") || "なし"}, サムネ ${withThumb})`);
+      const withAvatar = r.items.filter((i) => i.avatarUrl).length;
+      console.log(`[x] basecamp公開JSON: ${r.items.length} items (${feedsConfig.x.categories.join("/") || "なし"}, サムネ ${withThumb}, アバター ${withAvatar})`);
     } catch (e) {
       const msg = (e as Error).message;
       errors.push(`x(json): ${msg}`);
@@ -147,19 +150,22 @@ async function run(): Promise<void> {
   }
 
   // ---- はてブ ----
+  // 人気エントリーRSSは「今まさに人気の約30件」しか返さないので、毎回フレッシュ取得分だけだと
+  // ランキングから外れた記事が消えてしまう。過去分も保持するため**成功時もキャッシュを土台に蓄積**する
+  // （他ソースの失敗時フォールバックと違い、はてブは常にキャッシュを引き継ぐ）。dedup（id=entry url）で
+  // 重複は1件に集約。年齢/件数トリムからの除外は後段（はてブは retentionMax まで全期間保持）。
+  collected.push(...cachedFor(cache, "hatena"));
   if (feedsConfig.hatena.disabled) {
     console.log("[hatena] disabled");
-    collected.push(...cachedFor(cache, "hatena"));
   } else {
     try {
       const items = await fetchHatena({ rssUrl: feedsConfig.hatena.rssUrl });
       collected.push(...items);
-      console.log(`[hatena] ${items.length} items`);
+      console.log(`[hatena] ${items.length} items (＋過去 ${cachedFor(cache, "hatena").length} 件を保持)`);
     } catch (e) {
       const msg = (e as Error).message;
       errors.push(`hatena: ${msg}`);
       console.error("[hatena] 取得失敗（前回キャッシュを維持）:", msg);
-      collected.push(...cachedFor(cache, "hatena"));
     }
   }
 
@@ -229,9 +235,20 @@ async function run(): Promise<void> {
     (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
   );
 
+  // 年齢トリム: はてブは「全期間保持」のため maxAgeDays の対象外。他ソースはロールオフ。
   const cutoff = Date.now() - feedsConfig.maxAgeDays * 86400000;
-  items = items.filter((i) => new Date(i.publishedAt).getTime() >= cutoff);
-  items = items.slice(0, feedsConfig.maxItems);
+  items = items.filter(
+    (i) => i.source === "hatena" || new Date(i.publishedAt).getTime() >= cutoff,
+  );
+  // 件数トリム: はてブと他ソースを分離し、はてブは別枠（retentionMax）で保持＝他ソースを押し出さない／
+  // 押し出されない。両者とも publishedAt 降順なので slice で newest を残す。最後に日付順へ統合。
+  const hatenaItems = items
+    .filter((i) => i.source === "hatena")
+    .slice(0, feedsConfig.hatena.retentionMax);
+  const otherItems = items.filter((i) => i.source !== "hatena").slice(0, feedsConfig.maxItems);
+  items = [...hatenaItems, ...otherItems].sort(
+    (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
+  );
 
   // ---- 翻訳/要約キャッシュを先に確定（enrichArticles が本文取得の要否を判定するため）----
   // 生成ロジック（ENRICH_VERSION）を変えたら、実際に再生成できる（キーがある）ときだけ旧キャッシュを破棄。
@@ -278,6 +295,11 @@ async function run(): Promise<void> {
   state.ogImages = Object.fromEntries(
     Object.entries(ogImages).filter(([id]) => liveIds.has(id)),
   );
+  if (state.xAuthors) {
+    state.xAuthors = Object.fromEntries(
+      Object.entries(state.xAuthors).filter(([id]) => liveIds.has(id)),
+    );
+  }
 
   // ---- 機械翻訳／3行要約で日本語を補完（GEMINI_API_KEY 任意・未設定ならスキップ）----
   // 記事系は contentText（記事本文）を3行要約、その他は summary を翻訳。既処理は state.translations
