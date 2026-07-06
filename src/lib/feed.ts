@@ -1,8 +1,8 @@
 /** 全情報源を統一する正規化済みフィードアイテム。 */
-export type FeedSource = "x" | "feedly" | "hatena" | "layerx" | "workspace";
+export type FeedSource = "x" | "zenn" | "qiita" | "hatena" | "layerx" | "workspace";
 
 export interface FeedItem {
-  /** 一意キー（X: tweet id / Feedly: item id / はてブ: entry url） */
+  /** 一意キー（X: tweet id / 記事系(zenn/qiita/workspace): 記事URL / はてブ: entry url） */
   id: string;
   source: FeedSource;
   /** X は本文先頭、その他は記事タイトル（原文） */
@@ -61,7 +61,7 @@ export interface FeedData {
      * fetch 失敗（transient/CIブロック）時は記録せず次回 run で再試行する。
      */
     xAuthors?: Record<string, XAuthorMeta | null>;
-    /** X以外（feedly/hatena/workspace）item id -> OGP画像URL / ""(確認済み・画像なし) */
+    /** X以外（zenn/qiita/hatena/workspace）item id -> OGP画像URL / ""(確認済み・画像なし) */
     ogImages?: Record<string, string>;
     /**
      * item id -> 翻訳/要約キャッシュ（毎回フレッシュ取得されるソースでも再翻訳しないための永続化）。
@@ -82,10 +82,11 @@ export interface SourceMeta {
 
 export const SOURCES: SourceMeta[] = [
   { key: "x", label: "X", badgeClass: "src-x" },
-  { key: "feedly", label: "Feedly", badgeClass: "src-feedly" },
   { key: "hatena", label: "はてブ", badgeClass: "src-hatena" },
   { key: "layerx", label: "LayerX", badgeClass: "src-layerx" },
   { key: "workspace", label: "Workspace", badgeClass: "src-workspace" },
+  { key: "zenn", label: "Zenn", badgeClass: "src-zenn" },
+  { key: "qiita", label: "Qiita", badgeClass: "src-qiita" },
 ];
 
 export function sourceLabel(source: FeedSource): string {

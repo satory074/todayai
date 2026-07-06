@@ -1,7 +1,7 @@
 /**
  * フィード集約スクリプト。
  *
- * 5ソース（X / Feedly / はてブ / Workspace / LayerX）を取得 → FeedItem に正規化 → 既存キャッシュとマージ
+ * 6ソース（X / Zenn / Qiita / はてブ / Workspace / LayerX）を取得 → FeedItem に正規化 → 既存キャッシュとマージ
  * → 重複排除・ソート・トリム → src/data/feed.json に書き出す。
  *
  * 各ソースは個別に try/catch する。あるソースの取得に失敗した場合、
@@ -17,7 +17,7 @@ import type { FeedData, FeedItem, FeedSource } from "../src/lib/feed";
 import { readFeed } from "../src/lib/feedStore";
 import { writeFeed } from "./lib/feedWrite";
 import { fetchX, fetchXAccounts } from "./sources/x";
-import { fetchFeedly } from "./sources/feedly";
+import { fetchRss } from "./sources/rss";
 import { fetchHatena } from "./sources/hatena";
 import { fetchLayerX } from "./sources/layerx";
 import { fetchWorkspace } from "./sources/workspace";
@@ -125,23 +125,23 @@ async function run(): Promise<void> {
     collected.push(...xItems);
   }
 
-  // ---- Feedly（フォルダ相当の RSS を直接集約。トークン不要）----
-  if (feedsConfig.feedly.disabled) {
-    console.log("[feedly] disabled");
-    collected.push(...cachedFor(cache, "feedly"));
-  } else {
+  // ---- Zenn「AI」トピック / Qiita「AI」タグ（公開 RSS を直接取得。トークン不要）----
+  for (const source of ["zenn", "qiita"] as const) {
+    const cfg = feedsConfig[source];
+    if (cfg.disabled) {
+      console.log(`[${source}] disabled`);
+      collected.push(...cachedFor(cache, source));
+      continue;
+    }
     try {
-      const items = await fetchFeedly({
-        rssUrls: feedsConfig.feedly.rssUrls,
-        perFeedLimit: feedsConfig.feedly.perFeedLimit,
-      });
+      const items = await fetchRss({ rssUrl: cfg.rssUrl, source, limit: cfg.limit });
       collected.push(...items);
-      console.log(`[feedly] ${items.length} items (${feedsConfig.feedly.rssUrls.length} feeds)`);
+      console.log(`[${source}] ${items.length} items`);
     } catch (e) {
       const msg = (e as Error).message;
-      errors.push(`feedly: ${msg}`);
-      console.error("[feedly] 取得失敗（前回キャッシュを維持）:", msg);
-      collected.push(...cachedFor(cache, "feedly"));
+      errors.push(`${source}: ${msg}`);
+      console.error(`[${source}] 取得失敗（前回キャッシュを維持）:`, msg);
+      collected.push(...cachedFor(cache, source));
     }
   }
 
@@ -257,11 +257,11 @@ async function run(): Promise<void> {
   }
 
   // ---- 記事系を1回 fetch で og:image＋本文を補完（トリム後の最終アイテムのみ＝無駄fetch回避）----
-  // X は basecamp 公開JSON 経由で補完済み。記事系（feedly/hatena/workspace）は og:image に加え、
+  // X は basecamp 公開JSON 経由で補完済み。記事系（zenn/qiita/hatena/workspace）は og:image に加え、
   // これから要約する item には本文プレーンテキストを `contentText`（一時）として載せる（要約入力用）。
   const ogImages = state.ogImages ?? {};
   try {
-    const r = await enrichArticles(items, ogImages, translations, new Set(["feedly", "hatena", "workspace"]), {
+    const r = await enrichArticles(items, ogImages, translations, new Set(["zenn", "qiita", "hatena", "workspace"]), {
       extractText: willSummarize,
       maxLen: 2000, // 短い要約に長文は不要。入力トークンを抑え 429(無料枠TPM超過)・コストを緩和。
     });
@@ -334,7 +334,7 @@ async function run(): Promise<void> {
   };
   await writeCache(out);
 
-  const counts = { x: 0, feedly: 0, hatena: 0, layerx: 0, workspace: 0 } as Record<
+  const counts = { x: 0, zenn: 0, qiita: 0, hatena: 0, layerx: 0, workspace: 0 } as Record<
     FeedSource,
     number
   >;
@@ -342,7 +342,7 @@ async function run(): Promise<void> {
   const withThumb = items.filter((i) => i.thumbnail).length;
   const withJa = items.filter((i) => i.titleJa).length;
   console.log(
-    `\n✅ feed.json 更新: 計 ${items.length} 件 (X=${counts.x} / Feedly=${counts.feedly} / はてブ=${counts.hatena} / LayerX=${counts.layerx} / Workspace=${counts.workspace}) サムネ ${withThumb} 件 / 翻訳 ${withJa} 件`,
+    `\n✅ feed.json 更新: 計 ${items.length} 件 (X=${counts.x} / Zenn=${counts.zenn} / Qiita=${counts.qiita} / はてブ=${counts.hatena} / LayerX=${counts.layerx} / Workspace=${counts.workspace}) サムネ ${withThumb} 件 / 翻訳 ${withJa} 件`,
   );
   if (errors.length) {
     console.warn(`⚠️  ${errors.length} 件のソースでエラー:\n  - ${errors.join("\n  - ")}`);

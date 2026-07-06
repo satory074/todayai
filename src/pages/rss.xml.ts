@@ -15,7 +15,7 @@ export async function GET() {
   return rss({
     title: "today.ai — AI情報フィード",
     description:
-      "特定のXアカウント・Feedlyフォルダ・はてなブックマーク（テクノロジー）から集約したAI関連情報。",
+      "特定のXアカウント・Zenn/Qiita・はてなブックマーク（テクノロジー）から集約したAI関連情報。",
     site: absUrl("/"),
     items: items.map((item) => ({
       title: `[${sourceLabel(item.source)}] ${item.title}`,

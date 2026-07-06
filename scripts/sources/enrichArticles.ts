@@ -1,5 +1,5 @@
 /**
- * 記事系ソース（feedly / hatena / workspace）のエンリッチ。
+ * 記事系ソース（zenn / qiita / hatena / workspace）のエンリッチ。
  *
  * 記事 URL を **1回だけ** fetch（`resolvePage`）し、その HTML から:
  *   - og:image（サムネが無く未確認のもの）→ `item.thumbnail` ＋ `ogCache`（負キャッシュ込み）

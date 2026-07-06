@@ -2,12 +2,12 @@
  * フィード情報源の設定。
  *
  * ★ 実運用前に以下を埋めること:
- *   - x.username     : 取得したい X(Twitter) アカウントのユーザー名（@ なし）
- *   - feedly.rssUrls : 集約したい AI 関連 RSS フィードの URL 一覧
+ *   - x.username : 取得したい X(Twitter) アカウントのユーザー名（@ なし）
+ *   - zenn/qiita.rssUrl : 集約したい AI 関連 RSS フィードの URL
  *
  * トークン類（X_*）は .env / GitHub Secrets に置く（このファイルには書かない）。
- * Feedly は API トークンが現在 Enterprise プラン限定のため使わず、フォルダ相当の
- * 各 RSS を直接取得する方式に変更（トークン不要）。
+ * 記事系（Zenn/Qiita/はてブ/Workspace）は公開 RSS を rss-parser で直接取得する
+ * （トークン・課金・失効なし）。
  */
 
 import type { FeedSource } from "./src/lib/feed";
@@ -37,16 +37,18 @@ export interface FeedsConfig {
     /** true の場合、X取得を完全にスキップ */
     disabled?: boolean;
   };
-  feedly: {
-    /**
-     * 直接取得する RSS フィードの URL 一覧（Feedly API の代替）。
-     * Feedly の開発者トークンは現在 Enterprise プラン限定で個人利用できないため、
-     * Feedly フォルダに入れていた各 RSS を rss-parser で直接取得する。
-     * トークン・課金・失効なし。表示は従来どおり「Feedly」バッジ。
-     */
-    rssUrls: string[];
-    /** 1フィードあたり取り込む最大件数（1ソースの占有を防ぐ） */
-    perFeedLimit: number;
+  /** Zenn「AI」トピックの公開 RSS（rss-parser で直接取得。トークン不要）。 */
+  zenn: {
+    rssUrl: string;
+    /** 取り込む最大件数（1ソースの占有を防ぐ） */
+    limit?: number;
+    disabled?: boolean;
+  };
+  /** Qiita「AI」タグの公開 RSS（rss-parser で直接取得。トークン不要）。 */
+  qiita: {
+    rssUrl: string;
+    /** 取り込む最大件数（1ソースの占有を防ぐ） */
+    limit?: number;
     disabled?: boolean;
   };
   hatena: {
@@ -123,19 +125,14 @@ export const feedsConfig: FeedsConfig = {
     accountMaxResults: 20,
     disabled: false,
   },
-  feedly: {
-    // AI 関連 RSS（Feedly フォルダ相当）。@なしのトークン不要・課金不要・失効なし。
-    rssUrls: [
-      "https://rss.itmedia.co.jp/rss/2.0/aiplus.xml", // ITmedia AI＋
-      "https://www.techno-edge.net/rss20/index.rdf", // テクノエッジ TechnoEdge
-      "https://note.com/npaka/rss", // npaka（AI/LLM）
-      "https://ainow.ai/feed", // AINOW
-      "https://zenn.dev/topics/ai/feed", // Zenn AIトピック
-      "https://qiita.com/tags/ai/feed", // Qiita AIタグ
-      "https://tech.algomatic.jp/feed", // Algomatic Tech Blog
-      "https://www.publickey1.jp/atom.xml", // Publickey
-    ],
-    perFeedLimit: 15,
+  zenn: {
+    rssUrl: "https://zenn.dev/topics/ai/feed", // Zenn AIトピック
+    limit: 20,
+    disabled: false,
+  },
+  qiita: {
+    rssUrl: "https://qiita.com/tags/ai/feed", // Qiita AIタグ
+    limit: 20,
     disabled: false,
   },
   hatena: {
@@ -160,7 +157,7 @@ export const feedsConfig: FeedsConfig = {
     model: "gemini-3.1-flash-lite",
     batchSize: 10, // 要約入力に記事本文(~3000字)を載せるので1コールが過大にならないよう小さめ
     concurrency: 3,
-    summarizeSources: ["feedly", "hatena", "workspace"],
+    summarizeSources: ["zenn", "qiita", "hatena", "workspace"],
     summaryMinLen: 40,
     disabled: false,
   },

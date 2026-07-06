@@ -2,7 +2,7 @@
  * 機械翻訳／生成AI要約によるアイテム本文の日本語補完。
  *
  * enrichArticles.ts と同じ「state に永続キャッシュ・毎回アイテムへ再適用・トリム後の
- * 最終アイテムだけ対象・未確認のみ API」パターン。X bookmark / feedly 等は毎回
+ * 最終アイテムだけ対象・未確認のみ API」パターン。X bookmark / 記事系 等は毎回
  * フレッシュ取得され titleJa/summaryJa を失うが、transCache（state.translations）から
  * 再適用するので再生成しない。
  *

@@ -23,8 +23,10 @@
   /* ソース別アクセント（白背景で可読な文字色＋淡いチップ背景） */
   --color-x: #15181d;
   --color-x-bg: rgba(20, 22, 27, 0.06);
-  --color-feedly: #15873c;
-  --color-feedly-bg: rgba(33, 165, 80, 0.12);
+  --color-zenn: #3ea8ff;
+  --color-zenn-bg: rgba(62, 168, 255, 0.12);
+  --color-qiita: #55c500;
+  --color-qiita-bg: rgba(85, 197, 0, 0.12);
   --color-hatena: #1f7fc2;
   --color-hatena-bg: rgba(31, 127, 194, 0.12);
   --color-layerx: #d8500a;
@@ -115,9 +117,13 @@ a {
   color: var(--color-x);
   background: var(--color-x-bg);
 }
-.src-feedly {
-  color: var(--color-feedly);
-  background: var(--color-feedly-bg);
+.src-zenn {
+  color: var(--color-zenn);
+  background: var(--color-zenn-bg);
+}
+.src-qiita {
+  color: var(--color-qiita);
+  background: var(--color-qiita-bg);
 }
 .src-hatena {
   color: var(--color-hatena);

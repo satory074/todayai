@@ -8,7 +8,7 @@ import Layout from "@/components/Layout.astro";
 
     <p class="mt-4 text-[14px] leading-relaxed text-[var(--color-text-muted)]">
       <strong class="text-[var(--color-text)]">today.ai</strong> は、AI関連の情報を1つのタイムラインにまとめて読むための個人用フィードです。
-      数時間ごとに以下の3つの情報源を自動取得し、時系列で表示します。
+      数時間ごとに以下の情報源を自動取得し、時系列で表示します。
     </p>
 
     <div class="mt-6 space-y-3">
@@ -19,11 +19,19 @@ import Layout from "@/components/Layout.astro";
         </p>
       </div>
       <div class="rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] p-4">
-        <span class="src-feedly inline-flex rounded-full px-2 py-0.5 text-[11px] font-semibold"
-          >Feedly</span
+        <span class="src-zenn inline-flex rounded-full px-2 py-0.5 text-[11px] font-semibold"
+          >Zenn</span
         >
         <p class="mt-2 text-[13px] text-[var(--color-text-muted)]">
-          AI 関連の RSS フィード（ITmedia AI＋・テクノエッジ・Zenn/Qiita の AI など）から集約した記事。
+          Zenn「AI」トピックの新着記事。
+        </p>
+      </div>
+      <div class="rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] p-4">
+        <span class="src-qiita inline-flex rounded-full px-2 py-0.5 text-[11px] font-semibold"
+          >Qiita</span
+        >
+        <p class="mt-2 text-[13px] text-[var(--color-text-muted)]">
+          Qiita「AI」タグの新着記事。
         </p>
       </div>
       <div class="rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] p-4">

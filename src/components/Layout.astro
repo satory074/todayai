@@ -9,7 +9,7 @@ interface Props {
 
 const {
   title = "today.ai — AI情報フィード",
-  description = "特定のXアカウント・Feedlyフォルダ・はてなブックマーク（テクノロジー）からAI関連情報を集約する個人フィード。",
+  description = "特定のXアカウント・Zenn/Qiita・はてなブックマーク（テクノロジー）からAI関連情報を集約する個人フィード。",
 } = Astro.props;
 
 const ogImage = absUrl("/og-default.png");
@@ -86,7 +86,7 @@ const ogImage = absUrl("/og-default.png");
         class="border-t border-[var(--color-border)] py-6 text-center text-[12px] text-[var(--color-text-subtle)]"
       >
         <p>
-          today.ai — AI情報を1つのフィードに。X / Feedly / はてブ / Workspace / LayerX
+          today.ai — AI情報を1つのフィードに。X / Zenn / Qiita / はてブ / Workspace / LayerX
           から自動集約。
         </p>
       </footer>
