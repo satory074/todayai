@@ -1,6 +1,6 @@
 ---
 import type { FeedItem } from "@/lib/feed";
-import { SOURCES } from "@/lib/feed";
+import { sourceMeta } from "@/lib/feed";
 import TweetCard from "./TweetCard.astro";
 import BilingualText from "./BilingualText.astro";
 
@@ -9,7 +9,7 @@ interface Props {
 }
 
 const { item } = Astro.props;
-const meta = SOURCES.find((s) => s.key === item.source)!;
+const meta = sourceMeta(item.source);
 // 画像の有無でレイアウトを分岐（ハイブリッド）。X は専用カード。
 const variant = item.source === "x" ? "tweet" : item.thumbnail ? "hero" : "compact";
 ---

@@ -93,6 +93,16 @@ export function sourceLabel(source: FeedSource): string {
   return SOURCES.find((s) => s.key === source)?.label ?? source;
 }
 
+/** feed.json の source が SOURCES に登録済みか（外部 JSON 由来の未知値を弾く用）。 */
+export function isKnownSource(source: string): source is FeedSource {
+  return SOURCES.some((s) => s.key === source);
+}
+
+/** source のメタ。未登録なら中立フォールバック（バッジ色なし・ラベルは生の source）。 */
+export function sourceMeta(source: FeedSource): SourceMeta {
+  return SOURCES.find((s) => s.key === source) ?? { key: source, label: source, badgeClass: "" };
+}
+
 /** 相対時刻（"3分前" / "2時間前" / "5日前" / 日付）。 */
 export function relativeTime(iso: string, now: Date = new Date()): string {
   const then = new Date(iso).getTime();
