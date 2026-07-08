@@ -42,7 +42,7 @@ const ogImage = absUrl("/og-default.png");
     />
   </head>
   <body>
-    <div class="mx-auto flex min-h-screen max-w-[46rem] flex-col px-4 sm:px-6 lg:max-w-[58rem]">
+    <div class="mx-auto flex min-h-screen max-w-[46rem] flex-col px-4 pb-12 sm:px-6 lg:max-w-[58rem]">
       <header
         id="app-header"
         class="sticky-surface sticky top-0 z-20 -mx-4 mb-2 border-b border-[var(--color-border)] px-4 py-3 sm:-mx-6 sm:px-6"
@@ -89,18 +89,29 @@ const ogImage = absUrl("/og-default.png");
           today.ai — AI情報を1つのフィードに。X / Zenn / Qiita / はてブ / Workspace / LayerX
           から自動集約。
         </p>
-        <p class="mt-2">
+      </footer>
+
+      <!-- サイト間ナビ: 画面下端に常駐する控えめな逆リンクバー（→ satory074.com/apps）。
+           フィードが長大で通常フッターは実質スクロール到達不能なため、tenji と同じく fixed で常時表示する -->
+      <nav
+        aria-label="サイト間ナビゲーション"
+        class="fixed inset-x-0 bottom-0 z-30 border-t border-[var(--color-border)] bg-[var(--color-bg)]"
+        style="padding-bottom: env(safe-area-inset-bottom)"
+      >
+        <div
+          class="mx-auto flex h-9 max-w-[46rem] items-center justify-center px-4 sm:px-6 lg:max-w-[58rem]"
+        >
           <a
             href="https://satory074.com/apps/"
             target="_blank"
             rel="noopener"
             aria-label="satory074 のほかのアプリ一覧を新しいタブで開く"
-            class="inline-flex items-center gap-1 transition-colors hover:text-[var(--color-accent)]"
+            class="inline-flex items-center gap-1 font-mono text-[12px] text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-accent)]"
           >
             satory074 のほかのアプリ <span aria-hidden="true">↗</span>
           </a>
-        </p>
-      </footer>
+        </div>
+      </nav>
     </div>
   </body>
 </html>
