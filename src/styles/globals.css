@@ -33,6 +33,8 @@
   --color-layerx-bg: rgba(216, 80, 10, 0.12);
   --color-workspace: #2d68d8;
   --color-workspace-bg: rgba(45, 104, 216, 0.12);
+  --color-gcloud: #ea4335;
+  --color-gcloud-bg: rgba(234, 67, 53, 0.12);
 
   /* X ツイート風カード（朝刊ライトに合わせた配色） */
   --color-tweet-bg: #ffffff;
@@ -136,6 +138,10 @@ a {
 .src-workspace {
   color: var(--color-workspace);
   background: var(--color-workspace-bg);
+}
+.src-gcloud {
+  color: var(--color-gcloud);
+  background: var(--color-gcloud-bg);
 }
 
 /* フィルタ非表示用 */

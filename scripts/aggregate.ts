@@ -1,7 +1,7 @@
 /**
  * フィード集約スクリプト。
  *
- * 6ソース（X / Zenn / Qiita / はてブ / Workspace / LayerX）を取得 → FeedItem に正規化 → 既存キャッシュとマージ
+ * 7ソース（X / Zenn / Qiita / はてブ / Workspace / LayerX / GCP）を取得 → FeedItem に正規化 → 既存キャッシュとマージ
  * → 重複排除・ソート・トリム → src/data/feed.json に書き出す。
  *
  * 各ソースは個別に try/catch する。あるソースの取得に失敗した場合、
@@ -21,6 +21,7 @@ import { fetchRss } from "./sources/rss";
 import { fetchHatena } from "./sources/hatena";
 import { fetchLayerX } from "./sources/layerx";
 import { fetchWorkspace } from "./sources/workspace";
+import { fetchGcloud } from "./sources/gcloud";
 import { enrichArticles } from "./sources/enrichArticles";
 import { enrichLayerxThumbs } from "./sources/layerxThumb";
 import { enrichTranslations } from "./sources/translate";
@@ -185,6 +186,26 @@ async function run(): Promise<void> {
     }
   }
 
+  // ---- Google Cloud リリースノート（Atom を直接取得。トークン不要）----
+  if (feedsConfig.gcloud.disabled) {
+    console.log("[gcloud] disabled");
+    collected.push(...cachedFor(cache, "gcloud"));
+  } else {
+    try {
+      const items = await fetchGcloud({
+        rssUrl: feedsConfig.gcloud.rssUrl,
+        limit: feedsConfig.gcloud.limit,
+      });
+      collected.push(...items);
+      console.log(`[gcloud] ${items.length} items`);
+    } catch (e) {
+      const msg = (e as Error).message;
+      errors.push(`gcloud: ${msg}`);
+      console.error("[gcloud] 取得失敗（前回キャッシュを維持）:", msg);
+      collected.push(...cachedFor(cache, "gcloud"));
+    }
+  }
+
   // ---- LayerX AI・LLM Newsletter（Gmail 経由）----
   if (feedsConfig.layerx.disabled) {
     console.log("[layerx] disabled");
@@ -334,7 +355,7 @@ async function run(): Promise<void> {
   };
   await writeCache(out);
 
-  const counts = { x: 0, zenn: 0, qiita: 0, hatena: 0, layerx: 0, workspace: 0 } as Record<
+  const counts = { x: 0, zenn: 0, qiita: 0, hatena: 0, layerx: 0, workspace: 0, gcloud: 0 } as Record<
     FeedSource,
     number
   >;
@@ -342,7 +363,7 @@ async function run(): Promise<void> {
   const withThumb = items.filter((i) => i.thumbnail).length;
   const withJa = items.filter((i) => i.titleJa).length;
   console.log(
-    `\n✅ feed.json 更新: 計 ${items.length} 件 (X=${counts.x} / Zenn=${counts.zenn} / Qiita=${counts.qiita} / はてブ=${counts.hatena} / LayerX=${counts.layerx} / Workspace=${counts.workspace}) サムネ ${withThumb} 件 / 翻訳 ${withJa} 件`,
+    `\n✅ feed.json 更新: 計 ${items.length} 件 (X=${counts.x} / Zenn=${counts.zenn} / Qiita=${counts.qiita} / はてブ=${counts.hatena} / LayerX=${counts.layerx} / Workspace=${counts.workspace} / GCP=${counts.gcloud}) サムネ ${withThumb} 件 / 翻訳 ${withJa} 件`,
   );
   if (errors.length) {
     console.warn(`⚠️  ${errors.length} 件のソースでエラー:\n  - ${errors.join("\n  - ")}`);

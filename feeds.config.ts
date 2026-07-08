@@ -51,6 +51,17 @@ export interface FeedsConfig {
     limit?: number;
     disabled?: boolean;
   };
+  /**
+   * Google Cloud リリースノートの公開 Atom（rss-parser で直接取得。トークン不要）。
+   * 1エントリ=1日で本文にその日の全製品更新がまとまる。scripts/sources/gcloud.ts が
+   * 製品名を抽出して見出しにする。
+   */
+  gcloud: {
+    rssUrl: string;
+    /** 取り込む最大件数（1ソースの占有を防ぐ） */
+    limit?: number;
+    disabled?: boolean;
+  };
   hatena: {
     /** はてなブックマーク 人気エントリー テクノロジー の RSS */
     rssUrl: string;
@@ -135,6 +146,11 @@ export const feedsConfig: FeedsConfig = {
     limit: 20,
     disabled: false,
   },
+  gcloud: {
+    rssUrl: "https://docs.cloud.google.com/feeds/gcp-release-notes.xml", // Google Cloud リリースノート（Atom）
+    limit: 30,
+    disabled: false,
+  },
   hatena: {
     rssUrl: "https://b.hatena.ne.jp/hotentry/it.rss",
     retentionMax: 1000, // 過去分も保持（実質全期間）。feed.json 肥大を抑える安全弁
@@ -157,7 +173,7 @@ export const feedsConfig: FeedsConfig = {
     model: "gemini-3.1-flash-lite",
     batchSize: 10, // 要約入力に記事本文(~3000字)を載せるので1コールが過大にならないよう小さめ
     concurrency: 3,
-    summarizeSources: ["zenn", "qiita", "hatena", "workspace"],
+    summarizeSources: ["zenn", "qiita", "hatena", "workspace", "gcloud"],
     summaryMinLen: 40,
     disabled: false,
   },
