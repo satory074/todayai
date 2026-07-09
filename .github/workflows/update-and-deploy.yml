@@ -97,6 +97,9 @@ jobs:
         env:
           GCS_BUCKET: ${{ vars.GCS_BUCKET }}
           GH_USER: ${{ github.repository_owner }}
+          # Cloudflare Web Analytics のビーコン token（公開値なので secret ではなくリポジトリ「変数」）。
+          # 未設定なら空文字 → Layout.astro がビーコンを出力しない（graceful）。
+          PUBLIC_CF_BEACON_TOKEN: ${{ vars.PUBLIC_CF_BEACON_TOKEN }}
 
       - uses: actions/upload-pages-artifact@v3
         with:

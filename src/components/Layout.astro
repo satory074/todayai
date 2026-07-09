@@ -13,6 +13,12 @@ const {
 } = Astro.props;
 
 const ogImage = absUrl("/og-default.png");
+
+// Cloudflare Web Analytics — Cookie 不要のプライバシー配慮解析（バナー不要）。
+// PUBLIC_CF_BEACON_TOKEN（.env / リポジトリ変数）が入っていればビーコンを出力し、
+// 未設定なら何も出さない＝ビルドは壊れない（graceful）。トークンはページソースに出る
+// 公開値なので secret ではなくリポジトリ「変数」で渡す。
+const cfBeaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
 ---
 
 <!doctype html>
@@ -40,6 +46,16 @@ const ogImage = absUrl("/og-default.png");
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    {
+      cfBeaconToken && (
+        <script
+          is:inline
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon={JSON.stringify({ token: cfBeaconToken })}
+        />
+      )
+    }
   </head>
   <body>
     <div class="mx-auto flex min-h-screen max-w-[46rem] flex-col px-4 pb-12 sm:px-6 lg:max-w-[58rem]">
