@@ -53,9 +53,15 @@ async function writeCache(data: FeedData): Promise<void> {
   await writeFeed(data);
 }
 
-/** 指定ソースの前回キャッシュ分。失敗時のフォールバックに使う。 */
+/** 指定ソースの前回キャッシュ分。全ソースがこれを土台に蓄積する（全期間アーカイブ）。 */
 function cachedFor(cache: FeedData, source: FeedSource): FeedItem[] {
   return cache.items.filter((i) => i.source === source);
+}
+
+/** ソース別の保持上限件数。未設定のソースでも安全なようフォールバック付き。 */
+function retentionMaxFor(source: FeedSource): number {
+  const cfg = feedsConfig[source] as { retentionMax?: number } | undefined;
+  return cfg?.retentionMax ?? 1000;
 }
 
 async function run(): Promise<void> {
@@ -73,12 +79,10 @@ async function run(): Promise<void> {
     console.log("[x] disabled");
     collected.push(...cachedFor(cache, "x"));
   } else {
-    // 外部アカウントのポストは since_id 増分のため前回分を保持する。
-    // ブックマークは公開JSONが全件返すので保持せず毎回フレッシュに置換（古い設定の残骸も purge）。
-    const accountAuthors = new Set(feedsConfig.x.accounts.map((u) => `@${u}`));
-    const xItems: FeedItem[] = cachedFor(cache, "x").filter(
-      (i) => i.author !== undefined && accountAuthors.has(i.author),
-    );
+    // 全期間アーカイブ: ブックマークも外部アカウントも前回分を土台に蓄積する（他ソースと統一）。
+    // fresh 取得分は dedup（id）で更新される。上流から消えたブックマークも残り続ける
+    // （毎回フレッシュ置換していた頃の purge は無くなる＝アーカイブ方針として一貫）。
+    const xItems: FeedItem[] = [...cachedFor(cache, "x")];
 
     // (a) 自分のブックマーク等（basecamp 公開JSON、トークン不要）
     try {
@@ -127,30 +131,29 @@ async function run(): Promise<void> {
   }
 
   // ---- Zenn「AI」トピック / Qiita「AI」タグ（公開 RSS を直接取得。トークン不要）----
+  // 取得窓（limit）が狭く RSS は最新数十件しか返さないので、前回分を土台に蓄積して過去分を保持する
+  // （全期間アーカイブ。dedup=id で重複は集約）。取得失敗/disabled でも蓄積済みの過去分は残る。
   for (const source of ["zenn", "qiita"] as const) {
     const cfg = feedsConfig[source];
+    collected.push(...cachedFor(cache, source));
     if (cfg.disabled) {
       console.log(`[${source}] disabled`);
-      collected.push(...cachedFor(cache, source));
       continue;
     }
     try {
       const items = await fetchRss({ rssUrl: cfg.rssUrl, source, limit: cfg.limit });
       collected.push(...items);
-      console.log(`[${source}] ${items.length} items`);
+      console.log(`[${source}] ${items.length} items (＋過去 ${cachedFor(cache, source).length} 件を保持)`);
     } catch (e) {
       const msg = (e as Error).message;
       errors.push(`${source}: ${msg}`);
       console.error(`[${source}] 取得失敗（前回キャッシュを維持）:`, msg);
-      collected.push(...cachedFor(cache, source));
     }
   }
 
   // ---- はてブ ----
-  // 人気エントリーRSSは「今まさに人気の約30件」しか返さないので、毎回フレッシュ取得分だけだと
-  // ランキングから外れた記事が消えてしまう。過去分も保持するため**成功時もキャッシュを土台に蓄積**する
-  // （他ソースの失敗時フォールバックと違い、はてブは常にキャッシュを引き継ぐ）。dedup（id=entry url）で
-  // 重複は1件に集約。年齢/件数トリムからの除外は後段（はてブは retentionMax まで全期間保持）。
+  // 人気エントリーRSSは「今まさに人気の約30件」しか返さないので、前回分を土台に蓄積して過去分を保持する
+  // （全ソース共通の全期間アーカイブ。dedup=id で重複は集約、後段で retentionMax まで保持）。
   collected.push(...cachedFor(cache, "hatena"));
   if (feedsConfig.hatena.disabled) {
     console.log("[hatena] disabled");
@@ -167,9 +170,10 @@ async function run(): Promise<void> {
   }
 
   // ---- Google Workspace Updates（Blogger Atom を直接取得。トークン不要）----
+  // 前回分を土台に蓄積（全期間アーカイブ）。取得失敗/disabled でも過去分は残る。
+  collected.push(...cachedFor(cache, "workspace"));
   if (feedsConfig.workspace.disabled) {
     console.log("[workspace] disabled");
-    collected.push(...cachedFor(cache, "workspace"));
   } else {
     try {
       const items = await fetchWorkspace({
@@ -177,19 +181,19 @@ async function run(): Promise<void> {
         perFeedLimit: feedsConfig.workspace.perFeedLimit,
       });
       collected.push(...items);
-      console.log(`[workspace] ${items.length} items`);
+      console.log(`[workspace] ${items.length} items (＋過去 ${cachedFor(cache, "workspace").length} 件を保持)`);
     } catch (e) {
       const msg = (e as Error).message;
       errors.push(`workspace: ${msg}`);
       console.error("[workspace] 取得失敗（前回キャッシュを維持）:", msg);
-      collected.push(...cachedFor(cache, "workspace"));
     }
   }
 
   // ---- Google Cloud リリースノート（Atom を直接取得。トークン不要）----
+  // 前回分を土台に蓄積（全期間アーカイブ）。取得は直近60日分だが、それより古い日も過去分として残る。
+  collected.push(...cachedFor(cache, "gcloud"));
   if (feedsConfig.gcloud.disabled) {
     console.log("[gcloud] disabled");
-    collected.push(...cachedFor(cache, "gcloud"));
   } else {
     try {
       const items = await fetchGcloud({
@@ -197,19 +201,20 @@ async function run(): Promise<void> {
         limit: feedsConfig.gcloud.limit,
       });
       collected.push(...items);
-      console.log(`[gcloud] ${items.length} items`);
+      console.log(`[gcloud] ${items.length} items (＋過去 ${cachedFor(cache, "gcloud").length} 件を保持)`);
     } catch (e) {
       const msg = (e as Error).message;
       errors.push(`gcloud: ${msg}`);
       console.error("[gcloud] 取得失敗（前回キャッシュを維持）:", msg);
-      collected.push(...cachedFor(cache, "gcloud"));
     }
   }
 
   // ---- LayerX AI・LLM Newsletter（Gmail 経由）----
+  // 前回分を土台に蓄積（全期間アーカイブ）。取得は直近 newerThanDays 日分のメールだが、
+  // それより古いトピックも過去分として残る。取得失敗/未設定/disabled でも過去分は残る。
+  collected.push(...cachedFor(cache, "layerx"));
   if (feedsConfig.layerx.disabled) {
     console.log("[layerx] disabled");
-    collected.push(...cachedFor(cache, "layerx"));
   } else {
     const clientId = process.env.GMAIL_CLIENT_ID;
     const clientSecret = process.env.GMAIL_CLIENT_SECRET;
@@ -217,7 +222,6 @@ async function run(): Promise<void> {
     if (!clientId || !clientSecret || !refreshToken) {
       errors.push("layerx: GMAIL_CLIENT_ID/SECRET/REFRESH_TOKEN 未設定");
       console.error("[layerx] GMAIL_* 未設定（取得スキップ・前回キャッシュを維持）");
-      collected.push(...cachedFor(cache, "layerx"));
     } else {
       try {
         const items = await fetchLayerX({
@@ -229,12 +233,11 @@ async function run(): Promise<void> {
           refreshToken,
         });
         collected.push(...items);
-        console.log(`[layerx] ${items.length} items`);
+        console.log(`[layerx] ${items.length} items (＋過去 ${cachedFor(cache, "layerx").length} 件を保持)`);
       } catch (e) {
         const msg = (e as Error).message;
         errors.push(`layerx: ${msg}`);
         console.error("[layerx] 取得失敗（前回キャッシュを維持）:", msg);
-        collected.push(...cachedFor(cache, "layerx"));
       }
     }
   }
@@ -252,20 +255,18 @@ async function run(): Promise<void> {
     (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
   );
 
-  // 年齢トリム: はてブは「全期間保持」のため maxAgeDays の対象外。他ソースはロールオフ。
-  const cutoff = Date.now() - feedsConfig.maxAgeDays * 86400000;
-  items = items.filter(
-    (i) => i.source === "hatena" || new Date(i.publishedAt).getTime() >= cutoff,
-  );
-  // 件数トリム: はてブと他ソースを分離し、はてブは別枠（retentionMax）で保持＝他ソースを押し出さない／
-  // 押し出されない。両者とも publishedAt 降順なので slice で newest を残す。最後に日付順へ統合。
-  const hatenaItems = items
-    .filter((i) => i.source === "hatena")
-    .slice(0, feedsConfig.hatena.retentionMax);
-  const otherItems = items.filter((i) => i.source !== "hatena").slice(0, feedsConfig.maxItems);
-  items = [...hatenaItems, ...otherItems].sort(
-    (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
-  );
+  // 件数トリム（全期間アーカイブ・ソース別枠）: 年齢トリムは廃止。ソースごとに retentionMax まで保持し、
+  // 物量の多いソース（LayerX）が他ソースを押し出さない。items は publishedAt 降順なので、
+  // ソース別バケットも降順が保たれ slice(0,cap) で newest を残す。最後に日付順へ統合。
+  const bySource = new Map<FeedSource, FeedItem[]>();
+  for (const item of items) {
+    const arr = bySource.get(item.source);
+    if (arr) arr.push(item);
+    else bySource.set(item.source, [item]);
+  }
+  items = [...bySource.entries()]
+    .flatMap(([source, arr]) => arr.slice(0, retentionMaxFor(source)))
+    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 
   // ---- 翻訳/要約キャッシュを先に確定（enrichArticles が本文取得の要否を判定するため）----
   // 生成ロジック（ENRICH_VERSION）を変えたら、実際に再生成できる（キーがある）ときだけ旧キャッシュを破棄。

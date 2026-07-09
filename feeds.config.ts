@@ -34,21 +34,27 @@ export interface FeedsConfig {
     accounts: string[];
     /** 外部アカウント1件あたり1回に取得する最大件数（5〜100） */
     accountMaxResults: number;
+    /** このソースの保持上限件数（newest を残す）。全ソース共通の全期間アーカイブ安全弁（後述 retentionMax）。 */
+    retentionMax: number;
     /** true の場合、X取得を完全にスキップ */
     disabled?: boolean;
   };
   /** Zenn「AI」トピックの公開 RSS（rss-parser で直接取得。トークン不要）。 */
   zenn: {
     rssUrl: string;
-    /** 取り込む最大件数（1ソースの占有を防ぐ） */
+    /** 1回に取り込む最大件数（取得窓。蓄積は retentionMax まで） */
     limit?: number;
+    /** 保持上限件数（全期間アーカイブの安全弁） */
+    retentionMax: number;
     disabled?: boolean;
   };
   /** Qiita「AI」タグの公開 RSS（rss-parser で直接取得。トークン不要）。 */
   qiita: {
     rssUrl: string;
-    /** 取り込む最大件数（1ソースの占有を防ぐ） */
+    /** 1回に取り込む最大件数（取得窓。蓄積は retentionMax まで） */
     limit?: number;
+    /** 保持上限件数（全期間アーカイブの安全弁） */
+    retentionMax: number;
     disabled?: boolean;
   };
   /**
@@ -58,18 +64,16 @@ export interface FeedsConfig {
    */
   gcloud: {
     rssUrl: string;
-    /** 取り込む最大件数（1ソースの占有を防ぐ） */
+    /** 1回に取り込む最大件数（取得窓。蓄積は retentionMax まで） */
     limit?: number;
+    /** 保持上限件数（全期間アーカイブの安全弁） */
+    retentionMax: number;
     disabled?: boolean;
   };
   hatena: {
     /** はてなブックマーク 人気エントリー テクノロジー の RSS */
     rssUrl: string;
-    /**
-     * はてブの保持上限件数（newest を残す）。人気エントリーRSSは現在分しか返さないので
-     * 集約時に過去分も蓄積する（maxAgeDays の対象外＝実質全期間）。この値は feed.json の
-     * 単調増加を抑える安全弁（既定 1000 ≒ 数ヶ月分）。完全無制限にしたいなら大きくする。
-     */
+    /** 保持上限件数（全期間アーカイブの安全弁。後述 retentionMax） */
     retentionMax: number;
     disabled?: boolean;
   };
@@ -81,8 +85,10 @@ export interface FeedsConfig {
      * 公開フィードなのでトークン・課金・失効なし。表示は「Workspace」バッジ。
      */
     rssUrl: string;
-    /** 1回に取り込む最大件数（1ソースの占有を防ぐ） */
+    /** 1回に取り込む最大件数（取得窓。蓄積は retentionMax まで） */
     perFeedLimit: number;
+    /** 保持上限件数（全期間アーカイブの安全弁） */
+    retentionMax: number;
     disabled?: boolean;
   };
   layerx: {
@@ -97,6 +103,8 @@ export interface FeedsConfig {
     newerThanDays: number;
     /** 1回に取得する最大メール数 */
     maxResults: number;
+    /** 保持上限件数（全期間アーカイブの安全弁。~190件/通と物量大） */
+    retentionMax: number;
     disabled?: boolean;
   };
   translate: {
@@ -121,11 +129,15 @@ export interface FeedsConfig {
     summaryMinLen: number;
     disabled?: boolean;
   };
-  /** 集約後、保持する最大件数 */
-  maxItems: number;
-  /** 集約後、この日数より古いアイテムは捨てる */
-  maxAgeDays: number;
 }
+
+/**
+ * 保持ポリシー（全ソース共通）:
+ * 集約は各ソースとも「前回分を土台に蓄積」し、id で重複排除する（全期間アーカイブ）。
+ * 年齢による一律トリム（旧 maxAgeDays）は行わず、各ソースの `retentionMax`（newest を残す件数上限）が
+ * 唯一の上限＝ソース別枠なので、物量の多いソース（LayerX）が他ソースを押し出さない。
+ * feed.json 肥大を抑える安全弁なので、無制限に近づけたいソースは値を大きくする。
+ */
 
 export const feedsConfig: FeedsConfig = {
   x: {
@@ -134,21 +146,25 @@ export const feedsConfig: FeedsConfig = {
     categories: ["bookmark"], // 自分のデータからはブックマークのみ取り込む
     accounts: ["NotebookLM", "claudeai", "atm_aiplus", "OpenAIDevs", "OpenAI", "GeminiApp"], // 外部アカウントのポスト（@なし）。複数可
     accountMaxResults: 20,
+    retentionMax: 1000,
     disabled: false,
   },
   zenn: {
     rssUrl: "https://zenn.dev/topics/ai/feed", // Zenn AIトピック
     limit: 20,
+    retentionMax: 1000, // 取りこぼしが激しかった主対象。数ヶ月〜相当
     disabled: false,
   },
   qiita: {
     rssUrl: "https://qiita.com/tags/ai/feed", // Qiita AIタグ
     limit: 20,
+    retentionMax: 1000, // 取りこぼしが激しかった主対象。数ヶ月〜相当
     disabled: false,
   },
   gcloud: {
     rssUrl: "https://docs.cloud.google.com/feeds/gcp-release-notes.xml", // Google Cloud リリースノート（Atom）
     limit: 30,
+    retentionMax: 500, // 低頻度（~1件/日）。~1.4年分
     disabled: false,
   },
   hatena: {
@@ -159,12 +175,14 @@ export const feedsConfig: FeedsConfig = {
   workspace: {
     rssUrl: "https://workspaceupdates.googleblog.com/feeds/posts/default?redirect=false",
     perFeedLimit: 15,
+    retentionMax: 500, // 低頻度。~1.4年分
     disabled: false,
   },
   layerx: {
     sender: "layerxnews@substack.com",
     newerThanDays: 30,
     maxResults: 20,
+    retentionMax: 2000, // ~190件/通と物量大。別枠なので他ソースを押し出さない
     disabled: false,
   },
   translate: {
@@ -177,6 +195,4 @@ export const feedsConfig: FeedsConfig = {
     summaryMinLen: 40,
     disabled: false,
   },
-  maxItems: 1000, // LayerX は1通あたり ~190 トピックを個別取り込みするため大きめ
-  maxAgeDays: 30,
 };
