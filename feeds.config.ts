@@ -144,7 +144,7 @@ export const feedsConfig: FeedsConfig = {
     sourceUrl: "https://storage.googleapis.com/basecamp-feeds/x-tweets.json",
     username: "satory074",
     categories: ["bookmark"], // 自分のデータからはブックマークのみ取り込む
-    accounts: ["NotebookLM", "claudeai", "atm_aiplus", "OpenAIDevs", "OpenAI", "GeminiApp"], // 外部アカウントのポスト（@なし）。複数可
+    accounts: ["NotebookLM", "claudeai", "itm_aiplus", "OpenAIDevs", "OpenAI", "GeminiApp"], // 外部アカウントのポスト（@なし）。複数可
     accountMaxResults: 20,
     retentionMax: 1000,
     disabled: false,
