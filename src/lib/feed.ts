@@ -80,11 +80,12 @@ export interface SourceMeta {
   badgeClass: string;
 }
 
+// 並び順がそのままフィルタチップの表示順（先頭に「すべて」が付く）。
 export const SOURCES: SourceMeta[] = [
   { key: "x", label: "X", badgeClass: "src-x" },
-  { key: "hatena", label: "はてブ", badgeClass: "src-hatena" },
-  { key: "layerx", label: "LayerX", badgeClass: "src-layerx" },
   { key: "workspace", label: "Workspace", badgeClass: "src-workspace" },
+  { key: "layerx", label: "LayerX", badgeClass: "src-layerx" },
+  { key: "hatena", label: "はてブ", badgeClass: "src-hatena" },
   { key: "zenn", label: "Zenn", badgeClass: "src-zenn" },
   { key: "qiita", label: "Qiita", badgeClass: "src-qiita" },
   { key: "gcloud", label: "GCP", badgeClass: "src-gcloud" },
