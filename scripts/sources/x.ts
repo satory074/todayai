@@ -12,7 +12,7 @@ import type { FeedItem, XAuthorMeta } from "../../src/lib/feed";
 import type { XCategory } from "../../feeds.config";
 import { resolveOgImage } from "./ogp";
 import { fetchTweet } from "./syndication";
-import { mapLimit } from "./util";
+import { mapLimit, truncateSafe } from "./util";
 
 /** プロフィール画像URLを高解像度（_400x400）に置換。`_normal.jpg` → `_400x400.jpg`。 */
 function hiResAvatar(url: string): string {
@@ -157,7 +157,7 @@ export async function fetchXAccounts(opts: {
           }
         }
         const text = t.text.trim();
-        const title = text.length > 140 ? text.slice(0, 137) + "…" : text;
+        const title = truncateSafe(text, 140, 137);
         const user = t.author_id ? usersById.get(t.author_id) : undefined;
         items.push({
           id: `x-${t.id}`,
@@ -219,7 +219,7 @@ export async function fetchX(opts: {
     const raw = (t.description ?? "").trim();
     const text = cleanText(raw) || raw;
     if (!text) continue;
-    const title = text.length > 140 ? text.slice(0, 137) + "…" : text;
+    const title = truncateSafe(text, 140, 137);
     // 自分の投稿は自アカウントURL、いいね/ブックマークは作者不明のため /i/status を使う
     const url =
       t.category === "post"

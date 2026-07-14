@@ -19,6 +19,7 @@
  */
 import Parser from "rss-parser";
 import type { FeedItem } from "../../src/lib/feed";
+import { truncateSafe } from "./util";
 
 type GcItem = {
   title?: string;
@@ -43,7 +44,7 @@ function plainText(html: string | undefined, maxLen: number): string | undefined
     .replace(/\s+/g, " ")
     .trim();
   if (!text) return undefined;
-  return text.length > maxLen ? text.slice(0, maxLen - 1) + "…" : text;
+  return truncateSafe(text, maxLen, maxLen - 1);
 }
 
 /** 当日の `<content>` から製品名（`<h2 class="release-note-product-title">…</h2>`）を順序保持で抽出。 */

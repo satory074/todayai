@@ -10,13 +10,17 @@
  */
 import * as fs from "node:fs";
 import * as path from "node:path";
+import { stripLoneSurrogates } from "../sources/util";
 
 const LOCAL_FILE = path.join(process.cwd(), "src", "data", "feed.json");
 
 /** feed.json をローカルに保存する（GCS への反映はワークフローの gcloud cp が行う）。 */
 export async function writeFeed(data: unknown, filename = "feed.json"): Promise<void> {
   const target = filename === "feed.json" ? LOCAL_FILE : path.join(path.dirname(LOCAL_FILE), filename);
-  const body = JSON.stringify(data, null, 2) + "\n";
+  // 単独サロゲート（絵文字を分断した切り詰め等の名残）を全文字列から除去してから書く。
+  // 混入すると jq 等の厳格なパーサが feed.json 全体を不正 JSON として拒否する。
+  const body =
+    JSON.stringify(data, (_key, v) => (typeof v === "string" ? stripLoneSurrogates(v) : v), 2) + "\n";
   fs.mkdirSync(path.dirname(target), { recursive: true });
   fs.writeFileSync(target, body);
   console.log(`[store] ローカル書き込み: ${target} (${body.length} bytes)`);

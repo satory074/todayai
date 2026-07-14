@@ -7,6 +7,7 @@
  * aggregate 内で X ブックマークのサムネ補完に使う。失敗は握りつぶし undefined を返す
  * （集約全体を止めない）。
  */
+import { dropSplitSurrogateEnd } from "./util";
 
 const UA =
   "Mozilla/5.0 (compatible; todayai-aggregator/1.0; +https://satory074.github.io/todayai/)";
@@ -95,7 +96,7 @@ export function extractMainText(html: string, maxLen = 3000): string {
   let text = scopeHtml ? toText(scopeHtml) : "";
   if (text.length < 200) text = toText(h);
 
-  return text.length > maxLen ? text.slice(0, maxLen) : text;
+  return text.length > maxLen ? dropSplitSurrogateEnd(text.slice(0, maxLen)) : text;
 }
 
 export interface ResolvedPage {

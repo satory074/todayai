@@ -10,6 +10,7 @@
  */
 import Parser from "rss-parser";
 import type { FeedItem, FeedSource } from "../../src/lib/feed";
+import { truncateSafe } from "./util";
 
 type RssItem = {
   title?: string;
@@ -42,7 +43,7 @@ function snippet(s: string | undefined): string | undefined {
     .replace(/\s+/g, " ")
     .trim();
   if (!text) return undefined;
-  return text.length > 200 ? text.slice(0, 197) + "…" : text;
+  return truncateSafe(text, 200, 197);
 }
 
 function thumbnail(it: RssItem): string | undefined {
