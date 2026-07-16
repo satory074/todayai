@@ -14,6 +14,10 @@ const {
 
 const ogImage = absUrl("/og-default.png");
 
+// canonical / og:url。Astro.url.pathname は既に base（/todayai）込みなので absUrl() に
+// 渡すと base が二重付与になる → Astro.site を基点に new URL で組む。
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
 // Cloudflare Web Analytics — Cookie 不要のプライバシー配慮解析（バナー不要）。
 // PUBLIC_CF_BEACON_TOKEN（.env / リポジトリ変数）が入っていればビーコンを出力し、
 // 未設定なら何も出さない＝ビルドは壊れない（graceful）。トークンはページソースに出る
@@ -28,6 +32,7 @@ const cfBeaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
     <link rel="icon" type="image/svg+xml" href={siteLink("/favicon.svg")} />
     <link
       rel="alternate"
@@ -36,6 +41,7 @@ const cfBeaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
       href={siteLink("/rss.xml")}
     />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImage} />
