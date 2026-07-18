@@ -118,26 +118,42 @@ export function relativeTime(iso: string, now: Date = new Date()): string {
   const day = Math.floor(hour / 24);
   if (day < 7) return `${day}日前`;
   return new Date(iso).toLocaleDateString("ja-JP", {
+    timeZone: "Asia/Tokyo",
     year: "numeric",
     month: "short",
     day: "numeric",
   });
 }
 
-/** 絶対時刻（X 埋め込み風"14:32 · 2026年6月7日"）。 */
+/** 絶対時刻（X 埋め込み風"14:32 · 2026年6月7日"）。JST 固定。 */
 export function absoluteTime(iso: string): string {
   const d = new Date(iso);
   if (Number.isNaN(d.getTime())) return "";
-  const time = d.toLocaleTimeString("ja-JP", { hour: "2-digit", minute: "2-digit", hour12: false });
-  const date = d.toLocaleDateString("ja-JP", { year: "numeric", month: "long", day: "numeric" });
+  const time = d.toLocaleTimeString("ja-JP", {
+    timeZone: "Asia/Tokyo",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  });
+  const date = d.toLocaleDateString("ja-JP", {
+    timeZone: "Asia/Tokyo",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
   return `${time} · ${date}`;
 }
 
-/** タイムレール用の時刻のみ（"06:50"）。パース不可なら空文字。 */
+/** タイムレール用の時刻のみ（"06:50"）。JST 固定。パース不可なら空文字。 */
 export function timeOfDay(iso: string): string {
   const d = new Date(iso);
   if (Number.isNaN(d.getTime())) return "";
-  return d.toLocaleTimeString("ja-JP", { hour: "2-digit", minute: "2-digit", hour12: false });
+  return d.toLocaleTimeString("ja-JP", {
+    timeZone: "Asia/Tokyo",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  });
 }
 
 // ===== X 由来アイテムのアバター/著者表示ヘルパー =====
@@ -181,19 +197,29 @@ export function avatarColor(seed: string): string {
   return `hsl(${hash} 55% 45%)`;
 }
 
-/** 日付ヘッダ用のキー（"2026-06-03"）。 */
+/** 日付ヘッダ用のキー（JST 暦日 "2026-06-03"）。パース不可なら空文字。 */
 export function dayKey(iso: string): string {
-  return new Date(iso).toISOString().slice(0, 10);
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return "";
+  // en-CA は "YYYY-MM-DD" 形式。JST 暦日でグループ化する。
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Tokyo",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(d);
 }
 
-/** 日付ヘッダの表示（"今日" / "昨日" / "6月1日 (月)"）。 */
+/** 日付ヘッダの表示（"今日" / "昨日" / "6月1日 (月)"）。JST 暦日基準。 */
 export function dayLabel(key: string, now: Date = new Date()): string {
-  const todayKey = now.toISOString().slice(0, 10);
-  const yest = new Date(now.getTime() - 86400000).toISOString().slice(0, 10);
+  const todayKey = dayKey(now.toISOString());
+  const yestKey = dayKey(new Date(now.getTime() - 86400000).toISOString());
   if (key === todayKey) return "今日";
-  if (key === yest) return "昨日";
-  const d = new Date(key + "T00:00:00");
+  if (key === yestKey) return "昨日";
+  // key は JST 暦日。UTC 正午に置けば JST でフォーマットしても同じ日付。
+  const d = new Date(key + "T12:00:00Z");
   return d.toLocaleDateString("ja-JP", {
+    timeZone: "Asia/Tokyo",
     month: "long",
     day: "numeric",
     weekday: "short",
