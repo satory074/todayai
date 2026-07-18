@@ -50,8 +50,8 @@ function cleanText(text: string): string {
   return text.replace(/\s*https?:\/\/t\.co\/\S+\s*$/g, "").trim();
 }
 
-/** 本文中の t.co URL を出現順に抽出（OGP サムネ補完用）。 */
-function extractTcoUrls(text: string): string[] {
+/** 本文中の t.co URL を出現順に抽出（OGP サムネ / リンクプレビュー補完用）。 */
+export function extractTcoUrls(text: string): string[] {
   return text.match(/https?:\/\/t\.co\/\S+/g) ?? [];
 }
 

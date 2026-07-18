@@ -13,6 +13,13 @@ const body = item.summary ?? item.title;
 const bodyJa = item.summaryJa ?? item.titleJa;
 const ts = absoluteTime(item.publishedAt);
 
+// リンクプレビュー（本文の t.co 先の OGP カード）。本文からは t.co を落として生 URL を隠す。
+const lp = item.linkPreview;
+const stripTco = (s?: string) => (s ? s.replace(/\s*https?:\/\/t\.co\/\S+/g, "").trim() : s);
+const displayBody = lp ? stripTco(body) : body;
+const displayBodyJa = lp ? stripTco(bodyJa) : bodyJa;
+const hasBody = !!(displayBody || displayBodyJa);
+
 // アバター: ハンドルがあればイニシャル＋安定色、無ければ X ロゴのインク丸
 const initialsSeed = author.handle ?? "";
 const initials = author.kind === "handle" ? avatarInitials(initialsSeed) : "";
@@ -88,12 +95,14 @@ const avatarBg = author.kind === "handle" ? avatarColor(initialsSeed) : "var(--c
     </svg>
   </div>
 
-  <!-- 本文 -->
-  <p
-    class="relative z-10 mt-2.5 line-clamp-[8] whitespace-pre-wrap text-[15px] leading-relaxed text-[var(--color-text)]"
-  >
-    <BilingualText orig={body} ja={bodyJa} />
-  </p>
+  <!-- 本文（linkPreview があるときは t.co を除去。空なら非表示） -->
+  {
+    hasBody && (
+      <p class="relative z-10 mt-2.5 line-clamp-[8] whitespace-pre-wrap text-[15px] leading-relaxed text-[var(--color-text)]">
+        <BilingualText orig={displayBody} ja={displayBodyJa} />
+      </p>
+    )
+  }
 
   <!-- メディア（外部アカウントのみサムネあり） -->
   {
@@ -107,6 +116,41 @@ const avatarBg = author.kind === "handle" ? avatarColor(initialsSeed) : "var(--c
           onerror="this.parentElement.style.display='none'"
         />
       </div>
+    )
+  }
+
+  <!-- リンクプレビュー（本文の t.co 先 OGP カード）。カード面より上（z-30）でリンク先へ遷移。 -->
+  {
+    lp && (
+      <a
+        href={lp.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="relative z-30 mt-3 block overflow-hidden rounded-none border border-[var(--color-border)] bg-[var(--color-surface)] transition-colors duration-[var(--duration-base)] hover:border-[var(--color-border-strong)]"
+      >
+        {lp.image && (
+          <img
+            src={lp.image}
+            alt=""
+            loading="lazy"
+            class="aspect-video w-full border-b border-[var(--color-border)] object-cover"
+            onerror="this.style.display='none'"
+          />
+        )}
+        <div class="p-3">
+          <div class="truncate font-mono text-[11px] text-[var(--color-text-subtle)]">{lp.domain}</div>
+          {(lp.title || lp.titleJa) && (
+            <div class="mt-1 line-clamp-2 text-[14px] font-bold leading-snug text-[var(--color-text)]">
+              <BilingualText orig={lp.title} ja={lp.titleJa} />
+            </div>
+          )}
+          {(lp.description || lp.descriptionJa) && (
+            <div class="mt-1 line-clamp-2 text-[13px] leading-relaxed text-[var(--color-text-subtle)]">
+              <BilingualText orig={lp.description} ja={lp.descriptionJa} />
+            </div>
+          )}
+        </div>
+      </a>
     )
   }
 

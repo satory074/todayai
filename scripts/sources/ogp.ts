@@ -33,23 +33,49 @@ export async function fetchWithTimeout(url: string, init?: RequestInit): Promise
   }
 }
 
-/** HTML から og:image / twitter:image の content を抽出（属性順不同に対応）。 */
-export function extractOgImage(html: string, baseUrl: string): string | undefined {
-  // <meta ... property="og:image" ... content="..."> / name="twitter:image" の両順序を許容
+/**
+ * HTML から meta タグの content を1つ拾う（属性順不同に対応）。
+ * `keys` のいずれか（property / name のどちらでも）に一致した最初の content を返す。
+ */
+function extractMetaContent(html: string, keys: Set<string>): string | undefined {
   const metaTags = html.match(/<meta\b[^>]*>/gi) ?? [];
   for (const tag of metaTags) {
     const key = /(?:property|name)\s*=\s*["']([^"']+)["']/i.exec(tag)?.[1]?.toLowerCase();
-    if (key !== "og:image" && key !== "og:image:url" && key !== "twitter:image") continue;
+    if (!key || !keys.has(key)) continue;
     const content = /content\s*=\s*["']([^"']+)["']/i.exec(tag)?.[1];
-    if (content) {
-      try {
-        return new URL(content, baseUrl).toString();
-      } catch {
-        return content;
-      }
-    }
+    if (content) return content;
   }
   return undefined;
+}
+
+const OG_IMAGE_KEYS = new Set(["og:image", "og:image:url", "twitter:image"]);
+const OG_TITLE_KEYS = new Set(["og:title", "twitter:title"]);
+const OG_DESC_KEYS = new Set(["og:description", "twitter:description"]);
+
+/** HTML から og:image / twitter:image の content を抽出（属性順不同に対応）。 */
+export function extractOgImage(html: string, baseUrl: string): string | undefined {
+  // <meta ... property="og:image" ... content="..."> / name="twitter:image" の両順序を許容
+  const content = extractMetaContent(html, OG_IMAGE_KEYS);
+  if (!content) return undefined;
+  try {
+    return new URL(content, baseUrl).toString();
+  } catch {
+    return content;
+  }
+}
+
+/** HTML から og:title / twitter:title を抽出。無ければ <title> をフォールバック。 */
+export function extractOgTitle(html: string): string | undefined {
+  const meta = extractMetaContent(html, OG_TITLE_KEYS);
+  if (meta) return decodeEntities(meta).trim() || undefined;
+  const title = /<title\b[^>]*>([\s\S]*?)<\/title>/i.exec(html)?.[1];
+  return title ? decodeEntities(title).replace(/\s+/g, " ").trim() || undefined : undefined;
+}
+
+/** HTML から og:description / twitter:description を抽出。 */
+export function extractOgDescription(html: string): string | undefined {
+  const meta = extractMetaContent(html, OG_DESC_KEYS);
+  return meta ? decodeEntities(meta).replace(/\s+/g, " ").trim() || undefined : undefined;
 }
 
 /** 最小限の HTML エンティティ復号（要約入力用なので主要なものだけ）。 */

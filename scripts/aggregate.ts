@@ -24,6 +24,7 @@ import { fetchWorkspace } from "./sources/workspace";
 import { fetchGcloud } from "./sources/gcloud";
 import { enrichArticles } from "./sources/enrichArticles";
 import { enrichLayerxThumbs } from "./sources/layerxThumb";
+import { enrichXLinks } from "./sources/xLinkCard";
 import { enrichTranslations } from "./sources/translate";
 
 loadEnv();
@@ -34,8 +35,16 @@ loadEnv();
  * v2: 記事系の summary を「翻訳」から「3行要約」に変更。
  * v3: 要約入力を RSS 抜粋から記事本文（enrichArticles の contentText）に変更＋プロンプト洗練。
  * v4: 要約を「最大2文・100字以内・要点1〜2点」に短縮（途中切れ解消＋スキャナビリティ）。
+ * v5: X リンクプレビュー（linkPreview）の title/description も翻訳対象に追加。
  */
-const ENRICH_VERSION = "4";
+const ENRICH_VERSION = "5";
+
+/**
+ * X リンクプレビューの1run あたり新規解決の上限。外部サイトは多くが CI でも解決できるので
+ * 既定で走らせる（LayerX と違い Substack 壁を通らない）。env `X_LINK_MAX_NEW` で上書き可
+ * （ローカル一括バックフィル用）。
+ */
+const X_LINK_MAX_NEW = Number(process.env.X_LINK_MAX_NEW) || 40;
 
 // 読み書きは feedStore/feedWrite が GCS（GCS_BUCKET 設定時）/ローカルファイルを透過的に切替える。
 // 集約開始時の読みはキャッシュバスタ不要（前回 run の書き込みは十分に古い）。
@@ -308,10 +317,24 @@ async function run(): Promise<void> {
   } catch (e) {
     console.error("[ogp] サムネ補完(LayerX)でエラー（スキップ）:", (e as Error).message);
   }
+  // X ツイート本文の t.co をリンクプレビュー（画像＋タイトル＋説明＋ドメイン）に解決。
+  // 外部アカウント（X API 経路）は t.co を一切解決しないので、ここで両経路を横断して補完する。
+  // 外部サイトは多くが CI でも解決できるが、一部は Cloudflare 等で 403 になり得る＝負キャッシュ＋
+  // 再適用で吸収し、ローカル `npm run enrich:xlinks` で埋められる（LayerX と同じ運用）。
+  const xLinkCards = state.xLinkCards ?? {};
+  try {
+    const r = await enrichXLinks(items, xLinkCards, { maxNew: X_LINK_MAX_NEW, concurrency: 5 });
+    console.log(`[xlink] リンクプレビュー補完(X): +${r.resolved} 件解決 (試行 ${r.attempted})`);
+  } catch (e) {
+    console.error("[xlink] リンクプレビュー補完(X)でエラー（スキップ）:", (e as Error).message);
+  }
   // 現存 item id 分だけ残して負キャッシュの無限増殖を防ぐ。
   const liveIds = new Set(items.map((i) => i.id));
   state.ogImages = Object.fromEntries(
     Object.entries(ogImages).filter(([id]) => liveIds.has(id)),
+  );
+  state.xLinkCards = Object.fromEntries(
+    Object.entries(xLinkCards).filter(([id]) => liveIds.has(id)),
   );
   if (state.xAuthors) {
     state.xAuthors = Object.fromEntries(

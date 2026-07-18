@@ -26,10 +26,32 @@ export interface FeedItem {
   /** はてブのブックマーク数 */
   bookmarkCount?: number;
   /**
+   * X ツイート本文中の t.co リンク先の OGP プレビュー（リンクカード）。集約時に enrichXLinks が解決し、
+   * title/description は translate ステップで日本語補完（titleJa/descriptionJa）。表示は TweetCard。
+   */
+  linkPreview?: XLinkCard & { titleJa?: string; descriptionJa?: string };
+  /**
    * 集約中のみの一時フィールド。記事ページから抽出した本文プレーンテキスト（要約の入力に使う）。
    * `aggregate.ts` が feed.json 書き出し前に削除するので、永続化された feed.json には残らない。
    */
   contentText?: string;
+}
+
+/**
+ * X ツイート本文リンク（t.co）の解決結果 = リンクプレビューカード（原文のみ・日本語訳は別途）。
+ * enrichXLinks が resolvePage + OGP / syndication で解決し `state.xLinkCards` にキャッシュする。
+ */
+export interface XLinkCard {
+  /** リダイレクト解決後の最終 URL（カードのタップ遷移先） */
+  url: string;
+  /** og:title / twitter:title（原文） */
+  title?: string;
+  /** og:description / twitter:description（原文） */
+  description?: string;
+  /** og:image / twitter:image */
+  image?: string;
+  /** 表示用ホスト（www. 除去） */
+  domain: string;
 }
 
 /** X ツイートの著者メタ（syndication 解決結果のキャッシュ）。 */
@@ -64,10 +86,19 @@ export interface FeedData {
     /** X以外（zenn/qiita/hatena/workspace）item id -> OGP画像URL / ""(確認済み・画像なし) */
     ogImages?: Record<string, string>;
     /**
+     * X item id(`x-<id>`) -> リンクプレビューカード（原文）/ null(確認済み・カードなしの負キャッシュ)。
+     * 毎回フレッシュ取得される X 項目にも再適用するための永続化。fetch 失敗も null で記録し再取得を抑制。
+     */
+    xLinkCards?: Record<string, XLinkCard | null>;
+    /**
      * item id -> 翻訳/要約キャッシュ（毎回フレッシュ取得されるソースでも再翻訳しないための永続化）。
      * titleJa は原文が日本語なら未設定、summaryJa は記事系=3行要約 / その他=翻訳。
+     * linkTitleJa/linkDescJa は linkPreview（X リンクカード）の title/description の日本語訳。
      */
-    translations?: Record<string, { titleJa?: string; summaryJa?: string }>;
+    translations?: Record<
+      string,
+      { titleJa?: string; summaryJa?: string; linkTitleJa?: string; linkDescJa?: string }
+    >;
     /** translations の生成ロジック版。ENRICH_VERSION と不一致なら作り直す。 */
     enrichVersion?: string;
   };

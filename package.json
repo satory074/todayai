@@ -11,7 +11,8 @@
     "astro": "astro",
     "typecheck": "astro check",
     "aggregate": "tsx scripts/aggregate.ts",
-    "enrich:layerx": "tsx scripts/enrichLayerxLocal.ts"
+    "enrich:layerx": "tsx scripts/enrichLayerxLocal.ts",
+    "enrich:xlinks": "tsx scripts/enrichXLinksLocal.ts"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
