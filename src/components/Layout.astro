@@ -64,7 +64,7 @@ const cfBeaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
     }
   </head>
   <body>
-    <div class="mx-auto flex min-h-screen max-w-[46rem] flex-col px-4 pb-12 sm:px-6 lg:max-w-[58rem]">
+    <div class="mx-auto flex min-h-screen max-w-[46rem] flex-col px-4 pb-[calc(48px+env(safe-area-inset-bottom))] sm:px-6 lg:max-w-[58rem]">
       <header
         id="app-header"
         class="sticky-surface sticky top-0 z-20 -mx-4 mb-2 border-b border-[var(--color-border)] px-4 py-3 sm:-mx-6 sm:px-6"
@@ -100,7 +100,7 @@ const cfBeaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
         </div>
       </header>
 
-      <main class="flex-1 pb-16">
+      <main class="flex-1">
         <slot />
       </main>
 
@@ -117,12 +117,10 @@ const cfBeaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
            フィードが長大で通常フッターは実質スクロール到達不能なため、tenji と同じく fixed で常時表示する -->
       <nav
         aria-label="サイト間ナビゲーション"
-        class="fixed inset-x-0 bottom-0 z-30 border-t border-[var(--color-border)] bg-[var(--color-bg)]"
+        class="app-backlink-bar fixed inset-x-0 bottom-0 z-40 border-t border-[var(--color-border)] bg-[var(--color-bg)]/90 backdrop-blur"
         style="padding-bottom: env(safe-area-inset-bottom)"
       >
-        <div
-          class="mx-auto flex h-9 max-w-[46rem] items-center justify-center px-4 sm:px-6 lg:max-w-[58rem]"
-        >
+        <div class="mx-auto flex h-9 items-center justify-center px-4">
           <a
             href="https://satory074.com/apps/"
             target="_blank"
