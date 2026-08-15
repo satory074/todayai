@@ -160,6 +160,11 @@ a {
   display: inline;
 }
 
+/* 固定バックリンクバーがページ内アンカーの飛び先を隠さないように */
+html {
+  scroll-padding-bottom: calc(48px + env(safe-area-inset-bottom));
+}
+
 /* モーション設定の尊重 */
 @media (prefers-reduced-motion: reduce) {
   html {
