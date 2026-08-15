@@ -1,0 +1,41 @@
+---
+import FeedCard from "./FeedCard.astro";
+import { groupByDay, timeOfDay, type FeedItem } from "@/lib/feed";
+
+interface Props {
+  items: FeedItem[];
+}
+
+const { items } = Astro.props;
+const groups = groupByDay(items);
+---
+
+<!-- 日付グルーピング＋タイムレール。data-day-section / data-feed-item / data-source は
+     SourceFilter のスクリプトが出し分けに使うので変えないこと。 -->
+<div class="space-y-8">
+  {
+    groups.map((group) => (
+      <section data-day-section>
+        <h2 class="sticky top-[var(--stack-h)] z-[5] mb-3 inline-flex items-center rounded-md bg-[var(--color-card)] px-2.5 py-1 font-mono text-[12px] font-semibold tracking-wide text-[var(--color-text-muted)] shadow-[0_1px_2px_rgba(20,22,27,0.05)] ring-1 ring-[var(--color-border)]">
+          {group.label}
+        </h2>
+        <div class="space-y-3">
+          {group.items.map((item) => (
+            <div
+              data-feed-item
+              data-source={item.source}
+              class="grid grid-cols-[2.75rem_1fr] gap-2.5 sm:grid-cols-[3.5rem_1fr] sm:gap-3"
+            >
+              <time class="pt-1 text-right font-mono text-[12px] tabular-nums text-[var(--color-text-subtle)]">
+                {timeOfDay(item.publishedAt)}
+              </time>
+              <div class="border-l border-[var(--color-border)] pl-2.5 sm:pl-3">
+                <FeedCard item={item} />
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    ))
+  }
+</div>

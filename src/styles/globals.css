@@ -149,6 +149,13 @@ a {
   display: none;
 }
 
+/* タイムライン行は画面外のレイアウト/描画をスキップ＝数百件のページでも初回描画が軽い。
+   contain-intrinsic-size は未描画時のプレースホルダ高（auto で一度描画した実高を記憶） */
+[data-feed-item] {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 9rem;
+}
+
 /* 表示言語トグル（日本語 / 原文）。既定は日本語、:root.show-orig で原文を表示 */
 .lang-orig {
   display: none;

@@ -8,9 +8,10 @@ export async function GET() {
     { updatedAt: new Date(0).toISOString(), items: [] },
     { bust: process.env.GITHUB_RUN_ID },
   );
-  const items = [...feed.items].sort(
-    (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
-  );
+  // RSS リーダーが定期取得するため全件（数千件・圧縮後でも ~MB）は出さず最新のみ。
+  const items = [...feed.items]
+    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
+    .slice(0, 100);
 
   return rss({
     title: "today.ai — AI情報フィード",

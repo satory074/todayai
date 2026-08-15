@@ -1,0 +1,117 @@
+---
+import Layout from "@/components/Layout.astro";
+import SourceFilter from "@/components/SourceFilter.astro";
+import Timeline from "@/components/Timeline.astro";
+import ArchiveNav from "@/components/ArchiveNav.astro";
+import {
+  isKnownSource,
+  monthKey,
+  monthLabel,
+  monthsOf,
+  type FeedData,
+  type FeedItem,
+  type MonthMeta,
+} from "@/lib/feed";
+import { readFeed } from "@/lib/feedStore";
+import { siteLink } from "@/lib/url";
+
+// slug: "2026-08"（1ページ目）/ "2026-08/2"（2ページ目以降）。
+// items は props で渡す＝ページ側で feed を再フェッチしない。
+// ⚠️ getStaticPaths は隔離スコープで実行される（frontmatter の変数を参照できない）ので定数も中に置く。
+export async function getStaticPaths() {
+  // 月内の件数分割。流入が多い月は数千件になる（今の流入は ~150件/日）ため、
+  // 月ページ1枚に全件描画するとトップと同じ肥大が再発する。
+  const ARCHIVE_PAGE_SIZE = 500;
+  const feed = await readFeed<FeedData>(
+    { updatedAt: new Date(0).toISOString(), items: [] },
+    { bust: process.env.GITHUB_RUN_ID },
+  );
+  const items = [...feed.items]
+    .filter((i) => isKnownSource(i.source))
+    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+  const months = monthsOf(items);
+
+  const byMonth = new Map<string, FeedItem[]>();
+  for (const item of items) {
+    const key = monthKey(item.publishedAt);
+    const bucket = byMonth.get(key);
+    if (bucket) bucket.push(item);
+    else byMonth.set(key, [item]);
+  }
+
+  return [...byMonth.entries()].flatMap(([month, monthItems]) => {
+    const pageCount = Math.max(1, Math.ceil(monthItems.length / ARCHIVE_PAGE_SIZE));
+    return Array.from({ length: pageCount }, (_, i) => {
+      const page = i + 1;
+      return {
+        params: { slug: page === 1 ? month : `${month}/${page}` },
+        props: {
+          month,
+          page,
+          pageCount,
+          items: monthItems.slice((page - 1) * ARCHIVE_PAGE_SIZE, page * ARCHIVE_PAGE_SIZE),
+          months,
+        },
+      };
+    });
+  });
+}
+
+interface Props {
+  month: string;
+  page: number;
+  pageCount: number;
+  items: FeedItem[];
+  months: MonthMeta[];
+}
+
+const { month, page, pageCount, items, months } = Astro.props;
+const label = monthLabel(month);
+const pageSuffix = pageCount > 1 ? `（${page}/${pageCount}）` : "";
+const pageLink = (p: number) => siteLink(p === 1 ? `/archive/${month}/` : `/archive/${month}/${p}/`);
+---
+
+<Layout
+  title={`${label}のアーカイブ${pageSuffix} | today.ai`}
+  description={`${label}に集約した AI 関連情報のアーカイブ${pageSuffix}。`}
+>
+  <section class="pb-1 pt-4">
+    <h1 class="font-display text-[26px] font-bold tracking-tight text-[var(--color-text)]">
+      {label}のアーカイブ
+    </h1>
+    <p class="mt-1.5 text-[13px] text-[var(--color-text-muted)]">
+      <span class="font-mono tabular-nums">{items.length}件{pageSuffix && ` ${pageSuffix}`}</span>
+      ·
+      <a href={siteLink("/")} class="text-[var(--color-accent-bright)] hover:underline">
+        最新のタイムラインへ
+      </a>
+    </p>
+  </section>
+
+  <SourceFilter items={items} />
+  <Timeline items={items} />
+
+  {
+    pageCount > 1 && (
+      <nav aria-label="月内ページ" class="mt-8 flex items-center justify-between font-mono text-[13px] text-[var(--color-text-muted)]">
+        {page > 1 ? (
+          <a href={pageLink(page - 1)} class="hover:text-[var(--color-accent-bright)]">
+            ← 新しい
+          </a>
+        ) : (
+          <span />
+        )}
+        <span class="tabular-nums">{page} / {pageCount}</span>
+        {page < pageCount ? (
+          <a href={pageLink(page + 1)} class="hover:text-[var(--color-accent-bright)]">
+            古い →
+          </a>
+        ) : (
+          <span />
+        )}
+      </nav>
+    )
+  }
+
+  <ArchiveNav months={months} current={month} />
+</Layout>

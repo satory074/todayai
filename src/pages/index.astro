@@ -1,15 +1,14 @@
 ---
 import Layout from "@/components/Layout.astro";
-import FeedCard from "@/components/FeedCard.astro";
 import SourceFilter from "@/components/SourceFilter.astro";
+import Timeline from "@/components/Timeline.astro";
+import ArchiveNav from "@/components/ArchiveNav.astro";
 import {
-  dayKey,
-  dayLabel,
   isKnownSource,
+  monthsOf,
   relativeTime,
-  timeOfDay,
+  takeRecentByDay,
   type FeedData,
-  type FeedItem,
 } from "@/lib/feed";
 import { readFeed } from "@/lib/feedStore";
 
@@ -20,21 +19,15 @@ const feed = await readFeed<FeedData>(
   { bust: process.env.GITHUB_RUN_ID },
 );
 // 退役ソース（SOURCES 未登録）のアイテムは描画しない＝バッジ lookup のクラッシュとゴースト行を防ぐ。
-const items = [...feed.items]
+const allItems = [...feed.items]
   .filter((i) => isKnownSource(i.source))
   .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 
-// 日付ごとにグループ化（表示順を維持）
-const groups: { key: string; label: string; items: FeedItem[] }[] = [];
-for (const item of items) {
-  const key = dayKey(item.publishedAt);
-  let group = groups.find((g) => g.key === key);
-  if (!group) {
-    group = { key, label: dayLabel(key), items: [] };
-    groups.push(group);
-  }
-  group.items.push(item);
-}
+// 全件（数千件）を1ページに描画すると HTML が10MB超・DOM 数万ノードになり読み込みが数秒かかる。
+// トップは直近の JST 暦日単位で ~400件だけ描画し、過去分は月別アーカイブ（/archive/YYYY-MM/）へ。
+const INDEX_MAX_ITEMS = 400;
+const items = takeRecentByDay(allItems, INDEX_MAX_ITEMS);
+const months = monthsOf(allItems);
 
 const updatedRel = feed.updatedAt ? relativeTime(feed.updatedAt) : "";
 ---
@@ -61,31 +54,9 @@ const updatedRel = feed.updatedAt ? relativeTime(feed.updatedAt) : "";
         </p>
       </div>
     ) : (
-      <div class="space-y-8">
-        {groups.map((group) => (
-          <section data-day-section>
-            <h2 class="sticky top-[var(--stack-h)] z-[5] mb-3 inline-flex items-center rounded-md bg-[var(--color-card)] px-2.5 py-1 font-mono text-[12px] font-semibold tracking-wide text-[var(--color-text-muted)] shadow-[0_1px_2px_rgba(20,22,27,0.05)] ring-1 ring-[var(--color-border)]">
-              {group.label}
-            </h2>
-            <div class="space-y-3">
-              {group.items.map((item) => (
-                <div
-                  data-feed-item
-                  data-source={item.source}
-                  class="grid grid-cols-[2.75rem_1fr] gap-2.5 sm:grid-cols-[3.5rem_1fr] sm:gap-3"
-                >
-                  <time class="pt-1 text-right font-mono text-[12px] tabular-nums text-[var(--color-text-subtle)]">
-                    {timeOfDay(item.publishedAt)}
-                  </time>
-                  <div class="border-l border-[var(--color-border)] pl-2.5 sm:pl-3">
-                    <FeedCard item={item} />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-        ))}
-      </div>
+      <Timeline items={items} />
     )
   }
+
+  {months.length > 0 && <ArchiveNav months={months} />}
 </Layout>

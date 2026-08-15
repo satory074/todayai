@@ -241,6 +241,77 @@ export function dayKey(iso: string): string {
   }).format(d);
 }
 
+/** 月キー（JST 暦月 "2026-08"）。パース不可なら空文字。 */
+export function monthKey(iso: string): string {
+  return dayKey(iso).slice(0, 7);
+}
+
+/** 月キーの表示（"2026年8月"）。 */
+export function monthLabel(key: string): string {
+  const [y, m] = key.split("-");
+  return `${Number(y)}年${Number(m)}月`;
+}
+
+/** 日付ヘッダ単位のグループ（Timeline 描画用）。 */
+export interface DayGroup {
+  key: string;
+  label: string;
+  items: FeedItem[];
+}
+
+/** items（降順ソート済み想定）を JST 暦日でグループ化（表示順を維持）。 */
+export function groupByDay(items: FeedItem[]): DayGroup[] {
+  const groups: DayGroup[] = [];
+  for (const item of items) {
+    const key = dayKey(item.publishedAt);
+    let group = groups.find((g) => g.key === key);
+    if (!group) {
+      group = { key, label: dayLabel(key), items: [] };
+      groups.push(group);
+    }
+    group.items.push(item);
+  }
+  return groups;
+}
+
+/** アーカイブナビ用の月メタ。 */
+export interface MonthMeta {
+  key: string;
+  label: string;
+  count: number;
+}
+
+/** items（降順ソート済み想定）から月メタ一覧（新しい月順）。 */
+export function monthsOf(items: FeedItem[]): MonthMeta[] {
+  const months = new Map<string, MonthMeta>();
+  for (const item of items) {
+    const key = monthKey(item.publishedAt);
+    const meta = months.get(key);
+    if (meta) meta.count++;
+    else months.set(key, { key, label: monthLabel(key), count: 1 });
+  }
+  return [...months.values()];
+}
+
+/**
+ * 降順ソート済み items を JST 暦日単位で先頭から積み、maxItems を超えたらその日で打ち切る。
+ * 日の途中では切らない（日付見出しの下に「その日の一部だけ」が出るのを防ぐ）。先頭1日は必ず含める。
+ * トップページを全件描画しないための上限（全件は月別アーカイブページへ）。
+ */
+export function takeRecentByDay(items: FeedItem[], maxItems: number): FeedItem[] {
+  const out: FeedItem[] = [];
+  let currentDay = "";
+  for (const item of items) {
+    const key = dayKey(item.publishedAt);
+    if (key !== currentDay) {
+      if (out.length >= maxItems) break;
+      currentDay = key;
+    }
+    out.push(item);
+  }
+  return out;
+}
+
 /** 日付ヘッダの表示（"今日" / "昨日" / "6月1日 (月)"）。JST 暦日基準。 */
 export function dayLabel(key: string, now: Date = new Date()): string {
   const todayKey = dayKey(now.toISOString());

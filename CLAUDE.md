@@ -29,7 +29,7 @@ npm run enrich:xlinks -- --fresh  # 負キャッシュ（null）を一掃して�
 **2フェーズ構成。ビルド時集約と実行時表示が分離している。**
 
 1. **集約（Node/tsx、ビルド前）**: GitHub Actions の cron（6時間ごと、`.github/workflows/update-and-deploy.yml`）が `scripts/aggregate.ts` を実行。7ソースを `FeedItem` に正規化 → 既存 feed.json とマージ → id で重複排除 → publishedAt 降順ソート → **ソース別 `retentionMax` でトリム**（後述の全期間アーカイブ）→ **トリム後の最終アイテムに OGP サムネ補完 → 機械翻訳で日本語補完（いずれも後述）** → feed.json を上書き。
-2. **表示（Astro、完全静的）**: `src/pages/index.astro`（と `rss.xml.ts`）が **ビルド時に** feed.json を読み込んで描画する。サイトは**実行時には**一切フェッチしない（SSG）。feed.json がレンダリングの単一の真実。
+2. **表示（Astro、完全静的）**: `src/pages/index.astro`（と `rss.xml.ts`）が **ビルド時に** feed.json を読み込んで描画する。サイトは**実行時には**一切フェッチしない（SSG）。feed.json がレンダリングの単一の真実。**全件は1ページに描画しない**（feed は数千件まで成長し、全件描画すると HTML 14MB・DOM 7.5万ノード・DCL ~4秒になる実測あり）: トップは `takeRecentByDay`（`src/lib/feed.ts`）で**直近の JST 暦日単位 ~400件のみ**、過去分は**月別アーカイブ** `/archive/YYYY-MM/`（`src/pages/archive/[...slug].astro`。流入 ~150件/日で月数千件になるため**月内500件でさらにページ分割**、2ページ目以降は `/archive/YYYY-MM/2/`）。⚠️ **Astro の `getStaticPaths` は隔離スコープ**＝frontmatter の変数を参照できないので定数・items 加工は関数内に置き、ページへは props で渡す（再フェッチしない）。タイムライン描画（日付グルーピング＋タイムレール）は `Timeline.astro`、月ナビは `ArchiveNav.astro` に共通化（`data-day-section`/`data-feed-item`/`data-source` 属性は SourceFilter のフィルタが依存）。`rss.xml` は最新100件のみ。軽量化として `[data-feed-item]` に `content-visibility: auto`（globals.css、画面外カードの描画スキップ）、Google Fonts は `media="print"`+onload の非ブロッキング読込（Layout.astro）、全 `<img>` に `loading="lazy" decoding="async"`。
 
 **feed.json の保管先（`src/lib/feedStore.ts` 読み / `scripts/lib/feedWrite.ts` 書き）**: `GCS_BUCKET` 環境変数で2モードを透過切替（basecamp の `feed-storage.ts` と同方式）。
 - **ローカルモード（`GCS_BUCKET` 未設定・既定/開発）**: `src/data/feed.json` を fs で読み書き。従来どおり CI（feed-bot）が main にコミット。
