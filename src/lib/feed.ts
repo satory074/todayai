@@ -293,23 +293,43 @@ export function monthsOf(items: FeedItem[]): MonthMeta[] {
   return [...months.values()];
 }
 
+// トップページの表示ウィンドウ。全ソース直近 WINDOW_DAYS 日（JST 暦日）を描画し、
+// 流量の多い LIMITED_SOURCES は初期表示 LIMITED_DAYS 日＋残りを折りたたみ（「もっと見せる」で展開）。
+const WINDOW_DAYS = 7;
+const LIMITED_DAYS = 2;
+/** 初期表示を LIMITED_DAYS 日に制限するソース（並びは「もっと見せる」ボタン文言の表示順） */
+export const LIMITED_SOURCES: readonly FeedSource[] = ["hatena", "zenn", "qiita"];
+
+/** JST 暦日キーを days 日ずらす（負で過去）。UTC 正午に置けば JST でも同じ暦日（dayLabel と同じ手法） */
+function shiftDayKey(key: string, days: number): string {
+  return dayKey(new Date(new Date(key + "T12:00:00Z").getTime() + days * 86400000).toISOString());
+}
+
+export interface RecentWindow {
+  items: FeedItem[];
+  /** 初期状態で折りたたむアイテム id（LIMITED_SOURCES の LIMITED_DAYS+1 日目以降） */
+  collapsedIds: Set<string>;
+}
+
 /**
- * 降順ソート済み items を JST 暦日単位で先頭から積み、maxItems を超えたらその日で打ち切る。
- * 日の途中では切らない（日付見出しの下に「その日の一部だけ」が出るのを防ぐ）。先頭1日は必ず含める。
- * トップページを全件描画しないための上限（全件は月別アーカイブページへ）。
+ * 降順ソート済み items から直近 WINDOW_DAYS 日（JST 暦日）分を切り出す。
+ * 基準日は最新アイテムの暦日（wall-clock ではない＝フィードが stale でも空ページにならない）。
+ * トップページを全件描画しないためのウィンドウ（全件は月別アーカイブページへ）。
  */
-export function takeRecentByDay(items: FeedItem[], maxItems: number): FeedItem[] {
+export function takeRecentWindow(items: FeedItem[]): RecentWindow {
+  const collapsedIds = new Set<string>();
+  if (items.length === 0) return { items: [], collapsedIds };
+  const anchor = dayKey(items[0].publishedAt);
+  const cutoff = shiftDayKey(anchor, -(WINDOW_DAYS - 1));
+  const limitedCutoff = shiftDayKey(anchor, -(LIMITED_DAYS - 1));
   const out: FeedItem[] = [];
-  let currentDay = "";
   for (const item of items) {
     const key = dayKey(item.publishedAt);
-    if (key !== currentDay) {
-      if (out.length >= maxItems) break;
-      currentDay = key;
-    }
+    if (!key || key < cutoff) continue;
     out.push(item);
+    if (key < limitedCutoff && LIMITED_SOURCES.includes(item.source)) collapsedIds.add(item.id);
   }
-  return out;
+  return { items: out, collapsedIds };
 }
 
 /** 日付ヘッダの表示（"今日" / "昨日" / "6月1日 (月)"）。JST 暦日基準。 */

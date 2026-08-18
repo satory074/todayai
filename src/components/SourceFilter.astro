@@ -82,16 +82,21 @@ const chips = [
   document.fonts?.ready.then(measureSticky);
 
   function applyFilter(filter: string) {
+    const filterActive = filter !== "all";
+    // 絞り込み中は CSS（globals.css の :root.filter-active）が is-collapsed を自動解除する
+    document.documentElement.classList.toggle("filter-active", filterActive);
     for (const card of cards) {
-      const match = filter === "all" || card.dataset.source === filter;
+      const match = !filterActive || card.dataset.source === filter;
       card.classList.toggle("is-hidden", !match);
     }
-    // 中身が全部隠れた日付セクションは見出しごと隠す
+    // 絞り込み中のみ、中身が全部隠れた日付セクションを見出しごと隠す。
+    // 「すべて」では常に表示（折りたたみだけの日も「もっと見せる」ボタン行を残すため）。
+    // すべてに戻すと filter-active が外れて未展開分が CSS で再折りたたみ＝初期状態に復帰する。
     for (const section of daySections) {
-      const visible = section.querySelectorAll(
-        "[data-feed-item]:not(.is-hidden)",
-      ).length;
-      section.classList.toggle("is-hidden", visible === 0);
+      const hide =
+        filterActive &&
+        section.querySelectorAll("[data-feed-item]:not(.is-hidden)").length === 0;
+      section.classList.toggle("is-hidden", hide);
     }
     for (const chip of chips) {
       chip.setAttribute("aria-pressed", chip.dataset.filter === filter ? "true" : "false");

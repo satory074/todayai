@@ -149,6 +149,25 @@ a {
   display: none;
 }
 
+/* 初期折りたたみ（トップの はてブ/Zenn/Qiita 3日目以降）。SSR で付くクラスなので JS 無効でも畳んだまま */
+[data-source].is-collapsed {
+  display: none;
+}
+/* 「すべて」以外で絞り込み中は折りたたみを自動解除（選んだソースは全日表示）。
+   :not(.is-hidden) が必須＝非選択ソースの折りたたみ分まで再表示しない（is-hidden を勝たせる）。
+   ラッパは Timeline のタイムレール行＝常に grid */
+:root.filter-active [data-source].is-collapsed:not(.is-hidden) {
+  display: grid;
+}
+/* 絞り込み中は自動解除で全件見えているので「もっと見せる」ボタン行は不要 */
+:root.filter-active [data-show-more-row] {
+  display: none;
+}
+/* 中身が全部隠れた日付セクションの見出し隠し（SourceFilter のスクリプトが付ける） */
+[data-day-section].is-hidden {
+  display: none;
+}
+
 /* タイムライン行は画面外のレイアウト/描画をスキップ＝数百件のページでも初回描画が軽い。
    contain-intrinsic-size は未描画時のプレースホルダ高（auto で一度描画した実高を記憶） */
 [data-feed-item] {
