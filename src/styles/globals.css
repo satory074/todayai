@@ -163,6 +163,18 @@ a {
 :root.filter-active [data-show-more-row] {
   display: none;
 }
+/* フィルタバー2段目（X アカウント）／3段目（出典元）の出し入れ。
+   Tailwind の display ユーティリティ（flex）は UA の [hidden] より強いので明示的に潰す。 */
+[data-account-row][hidden],
+[data-origin-row][hidden],
+[data-origin][hidden] {
+  display: none;
+}
+/* アカウントチップの上限超過分。「他N件」ボタンで is-extra を外して展開する */
+.account-chip.is-extra {
+  display: none;
+}
+
 /* 中身が全部隠れた日付セクションの見出し隠し（SourceFilter のスクリプトが付ける） */
 [data-day-section].is-hidden {
   display: none;

@@ -109,17 +109,73 @@ export interface SourceMeta {
   label: string;
   /** Tailwind 用のアクセントクラス（バッジ等） */
   badgeClass: string;
+  /**
+   * 出典元の「人間向け」ページ（フィード URL ではない）。
+   * フィルタバーの出典行と /about のカードが参照する＝出典 URL の単一の置き場所。
+   * feeds.config.ts の rssUrl は scripts 専用（Astro から未 import）なので二重管理しない。
+   */
+  originUrl: string;
+  /** 出典行・about に出す表示名 */
+  originLabel: string;
+  /** 補足（購読方法など）。任意 */
+  originNote?: string;
 }
 
 // 並び順がそのままフィルタチップの表示順（先頭に「すべて」が付く）。
 export const SOURCES: SourceMeta[] = [
-  { key: "x", label: "X", badgeClass: "src-x" },
-  { key: "workspace", label: "Workspace", badgeClass: "src-workspace" },
-  { key: "layerx", label: "LayerX", badgeClass: "src-layerx" },
-  { key: "hatena", label: "はてブ", badgeClass: "src-hatena" },
-  { key: "zenn", label: "Zenn", badgeClass: "src-zenn" },
-  { key: "qiita", label: "Qiita", badgeClass: "src-qiita" },
-  { key: "gcloud", label: "GCP", badgeClass: "src-gcloud" },
+  {
+    key: "x",
+    label: "X",
+    badgeClass: "src-x",
+    originUrl: "https://x.com/",
+    originLabel: "x.com",
+  },
+  {
+    key: "workspace",
+    label: "Workspace",
+    badgeClass: "src-workspace",
+    originUrl: "https://workspaceupdates.googleblog.com/",
+    originLabel: "Google Workspace Updates",
+  },
+  {
+    key: "layerx",
+    label: "LayerX",
+    badgeClass: "src-layerx",
+    // 株式会社LayerX 発行の週刊ニュースレター。LayerX 公式サイト（layerx.co.jp/jobs/aillm/）が
+    // このURLをリンクしている＝公式の購読導線。layerx.co.jp/newsletter は存在しない（404）。
+    originUrl: "https://layerxnews.substack.com/",
+    originLabel: "LayerX AI・LLM Newsletter",
+    originNote: "株式会社LayerX 発行の週刊ニュースレター（Substack・無料）。過去号のウェブ閲覧は購読者限定。",
+  },
+  {
+    key: "hatena",
+    label: "はてブ",
+    badgeClass: "src-hatena",
+    originUrl: "https://b.hatena.ne.jp/hotentry/it",
+    originLabel: "はてなブックマーク 人気エントリー・テクノロジー",
+  },
+  {
+    key: "zenn",
+    label: "Zenn",
+    badgeClass: "src-zenn",
+    originUrl: "https://zenn.dev/topics/ai",
+    originLabel: "Zenn「AI」トピック",
+  },
+  {
+    key: "qiita",
+    label: "Qiita",
+    badgeClass: "src-qiita",
+    originUrl: "https://qiita.com/tags/ai",
+    originLabel: "Qiita「AI」タグ",
+  },
+  {
+    key: "gcloud",
+    label: "GCP",
+    badgeClass: "src-gcloud",
+    // cloud.google.com/release-notes は docs.cloud.google.com へ 301（rssUrl と同じドメイン）
+    originUrl: "https://docs.cloud.google.com/release-notes",
+    originLabel: "Google Cloud リリースノート",
+  },
 ];
 
 export function sourceLabel(source: FeedSource): string {
@@ -133,7 +189,16 @@ export function isKnownSource(source: string): source is FeedSource {
 
 /** source のメタ。未登録なら中立フォールバック（バッジ色なし・ラベルは生の source）。 */
 export function sourceMeta(source: FeedSource): SourceMeta {
-  return SOURCES.find((s) => s.key === source) ?? { key: source, label: source, badgeClass: "" };
+  return (
+    SOURCES.find((s) => s.key === source) ?? {
+      key: source,
+      label: source,
+      badgeClass: "",
+      // 未登録ソースは描画前に isKnownSource で弾かれるので出典は空（リンクは出さない）
+      originUrl: "",
+      originLabel: source,
+    }
+  );
 }
 
 /** 相対時刻（"3分前" / "2時間前" / "5日前" / 日付）。 */
@@ -226,6 +291,70 @@ export function avatarColor(seed: string): string {
     hash = (hash * 31 + seed.charCodeAt(i)) % 360;
   }
   return `hsl(${hash} 55% 45%)`;
+}
+
+/**
+ * X アイテムのアカウント絞り込みキー。Timeline の `data-x-account` と
+ * SourceFilter のチップ `data-account` が同じ値を使う＝定義はここ1か所。
+ * ハンドルが解決できたものは "@handle"、未解決（author が "ブックマーク" 等の
+ * カテゴリラベルのまま）は X_ACCOUNT_OTHER にまとめる。
+ */
+export const X_ACCOUNT_OTHER = "__other";
+
+export function xAccountKey(item: FeedItem): string {
+  const a = parseXAuthor(item.author);
+  return a.kind === "handle" && a.handle ? `@${a.handle}` : X_ACCOUNT_OTHER;
+}
+
+/** フィルタチップ1個分のアカウント情報。 */
+export interface XAccountMeta {
+  /** 絞り込みキー（"@handle" or X_ACCOUNT_OTHER） */
+  key: string;
+  /** チップの表示名（表示名が無ければ "@handle"） */
+  label: string;
+  /** "@" を除いたハンドル。未解決なら未設定 */
+  handle?: string;
+  avatarUrl?: string;
+  count: number;
+}
+
+/**
+ * ページに描画済みの items から X アカウント一覧を導出する（件数降順）。
+ * feeds.config.ts の `x.accounts` は外部アカウント分しか列挙していないのに対し、
+ * ブックマークは任意アカウントの投稿を含む（実測 88 ハンドル）ため、
+ * 必ず items 側から作る。ページごとに母数が違うので件数もページ単位。
+ */
+export function xAccountsOf(items: FeedItem[]): XAccountMeta[] {
+  const map = new Map<string, XAccountMeta>();
+  for (const item of items) {
+    if (item.source !== "x") continue;
+    const key = xAccountKey(item);
+    const existing = map.get(key);
+    if (existing) {
+      existing.count++;
+      // 著者解決は段階的に進むので、後から出てきた表示名/アイコンで穴埋めする
+      existing.avatarUrl ??= item.avatarUrl;
+      if (existing.handle && existing.label === `@${existing.handle}` && item.authorName) {
+        existing.label = item.authorName;
+      }
+      continue;
+    }
+    const handle = key === X_ACCOUNT_OTHER ? undefined : key.slice(1);
+    map.set(key, {
+      key,
+      label: handle ? (item.authorName ?? `@${handle}`) : "その他",
+      handle,
+      avatarUrl: item.avatarUrl,
+      count: 1,
+    });
+  }
+  // 件数降順 → 同数はキー昇順（ビルド間で並びがぶれないように）。
+  // 著者未解決の「その他」は件数に関わらず末尾へ（上位を占有させない）。
+  return [...map.values()].sort((a, b) => {
+    if (a.key === X_ACCOUNT_OTHER) return 1;
+    if (b.key === X_ACCOUNT_OTHER) return -1;
+    return b.count - a.count || a.key.localeCompare(b.key);
+  });
 }
 
 /** 日付ヘッダ用のキー（JST 暦日 "2026-06-03"）。パース不可なら空文字。 */

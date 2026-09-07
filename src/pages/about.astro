@@ -1,5 +1,21 @@
 ---
 import Layout from "@/components/Layout.astro";
+import { SOURCES, sourceMeta } from "@/lib/feed";
+
+// 各ソースの説明。出典 URL / 表示名は SOURCES（src/lib/feed.ts）が単一の置き場所。
+const descriptions: Record<string, string> = {
+  x: "特定の X(Twitter) アカウントの投稿とブックマーク。タイムライン上ではアカウント単位でも絞り込めます。",
+  zenn: "Zenn「AI」トピックの新着記事。",
+  qiita: "Qiita「AI」タグの新着記事。",
+  hatena: "はてなブックマーク 人気エントリー「テクノロジー」。",
+  workspace: "Google Workspace Updates ブログの新着。",
+  layerx: "LayerX AI・LLM Newsletter に毎週掲載される各トピック。",
+  gcloud: "Google Cloud リリースノート（全プロダクト）。日ごとにまとめて表示。",
+};
+
+// 表示順は about 用（フィルタチップの順とは独立に、身近な順で並べる）
+const order = ["x", "zenn", "qiita", "hatena", "workspace", "layerx", "gcloud"] as const;
+const sources = order.map((key) => sourceMeta(key)).filter((s) => SOURCES.some((x) => x.key === s.key));
 ---
 
 <Layout title="このサイトについて — today.ai">
@@ -12,63 +28,64 @@ import Layout from "@/components/Layout.astro";
     </p>
 
     <div class="mt-6 space-y-3">
-      <div class="rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] p-4">
-        <span class="src-x inline-flex rounded-full px-2 py-0.5 text-[11px] font-semibold">X</span>
-        <p class="mt-2 text-[13px] text-[var(--color-text-muted)]">
-          特定の X(Twitter) アカウントの投稿。公式 API で増分取得しています。
-        </p>
-      </div>
-      <div class="rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] p-4">
-        <span class="src-zenn inline-flex rounded-full px-2 py-0.5 text-[11px] font-semibold"
-          >Zenn</span
-        >
-        <p class="mt-2 text-[13px] text-[var(--color-text-muted)]">
-          Zenn「AI」トピックの新着記事。
-        </p>
-      </div>
-      <div class="rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] p-4">
-        <span class="src-qiita inline-flex rounded-full px-2 py-0.5 text-[11px] font-semibold"
-          >Qiita</span
-        >
-        <p class="mt-2 text-[13px] text-[var(--color-text-muted)]">
-          Qiita「AI」タグの新着記事。
-        </p>
-      </div>
-      <div class="rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] p-4">
-        <span class="src-hatena inline-flex rounded-full px-2 py-0.5 text-[11px] font-semibold"
-          >はてブ</span
-        >
-        <p class="mt-2 text-[13px] text-[var(--color-text-muted)]">
-          はてなブックマーク 人気エントリー「テクノロジー」。
-        </p>
-      </div>
-      <div class="rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] p-4">
-        <span class="src-workspace inline-flex rounded-full px-2 py-0.5 text-[11px] font-semibold"
-          >Workspace</span
-        >
-        <p class="mt-2 text-[13px] text-[var(--color-text-muted)]">
-          Google Workspace Updates ブログの新着。
-        </p>
-      </div>
-      <div class="rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] p-4">
-        <span class="src-layerx inline-flex rounded-full px-2 py-0.5 text-[11px] font-semibold"
-          >LayerX</span
-        >
-        <p class="mt-2 text-[13px] text-[var(--color-text-muted)]">
-          LayerX AI・LLM Newsletter（週刊）の各トピック。
-        </p>
-      </div>
-      <div class="rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] p-4">
-        <span class="src-gcloud inline-flex rounded-full px-2 py-0.5 text-[11px] font-semibold"
-          >GCP</span
-        >
-        <p class="mt-2 text-[13px] text-[var(--color-text-muted)]">
-          Google Cloud リリースノート（全プロダクト）。日ごとにまとめて表示。
-        </p>
-      </div>
+      {
+        sources.map((s) => (
+          <div class="rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] p-4">
+            <span class={`${s.badgeClass} inline-flex rounded-full px-2 py-0.5 text-[11px] font-semibold`}>
+              {s.label}
+            </span>
+            <p class="mt-2 text-[13px] text-[var(--color-text-muted)]">{descriptions[s.key]}</p>
+            <p class="mt-2 text-[12px]">
+              <span class="font-mono text-[var(--color-text-subtle)]">出典</span>{" "}
+              <a
+                href={s.originUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-[var(--color-accent-bright)] underline-offset-2 hover:underline"
+              >
+                {s.originLabel} <span aria-hidden="true">↗</span>
+              </a>
+            </p>
+            {s.originNote && (
+              <p class="mt-1 text-[12px] text-[var(--color-text-subtle)]">{s.originNote}</p>
+            )}
+          </div>
+        ))
+      }
     </div>
 
-    <p class="mt-6 text-[12px] text-[var(--color-text-subtle)]">
+    <h2 class="mt-8 text-[16px] font-bold tracking-tight">LayerX AI・LLM Newsletter について</h2>
+    <p class="mt-2 text-[13px] leading-relaxed text-[var(--color-text-muted)]">
+      「LayerX」タブの中身は、<strong class="text-[var(--color-text)]">株式会社LayerX</strong> が発行する週刊ニュースレター
+      <strong class="text-[var(--color-text)]">「LayerX AI・LLM Newsletter」</strong>（Substack・無料）に掲載された各トピックです。
+      today.ai はそのリンクを1件ずつタイムラインに並べているだけなので、
+      <strong class="text-[var(--color-text)]">本文そのものは配信元でお読みください。</strong>
+    </p>
+    <p class="mt-2 text-[13px] leading-relaxed text-[var(--color-text-muted)]">
+      購読の登録は公式ページから行えます。過去号のウェブ閲覧は購読者限定です。
+    </p>
+    <p class="mt-2 text-[13px]">
+      <a
+        href="https://layerxnews.substack.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-1 rounded-full border border-[var(--color-border)] bg-[var(--color-card)] px-3 py-1.5 font-medium text-[var(--color-accent-bright)] transition-colors hover:border-[var(--color-border-strong)]"
+      >
+        LayerX AI・LLM Newsletter を購読する <span aria-hidden="true">↗</span>
+      </a>
+    </p>
+    <p class="mt-2 text-[12px] text-[var(--color-text-subtle)]">
+      LayerX の
+      <a
+        href="https://jobs.layerx.co.jp/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-[var(--color-accent-bright)] underline-offset-2 hover:underline">採用サイト ↗</a
+      >
+      のフッターからも、同じニュースレターが案内されています。today.ai は LayerX とは無関係の個人サイトです。
+    </p>
+
+    <p class="mt-8 text-[12px] text-[var(--color-text-subtle)]">
       GitHub Actions（6時間ごと）でフィードを取得し、GitHub Pages に静的サイトとしてデプロイしています。
       各アイテムのリンク先は元の投稿・記事です。
     </p>

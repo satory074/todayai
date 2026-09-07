@@ -1,6 +1,13 @@
 ---
 import FeedCard from "./FeedCard.astro";
-import { groupByDay, sourceLabel, timeOfDay, LIMITED_SOURCES, type FeedItem } from "@/lib/feed";
+import {
+  groupByDay,
+  sourceLabel,
+  timeOfDay,
+  xAccountKey,
+  LIMITED_SOURCES,
+  type FeedItem,
+} from "@/lib/feed";
 
 interface Props {
   items: FeedItem[];
@@ -13,8 +20,9 @@ const groups = groupByDay(items);
 const showMoreLabel = LIMITED_SOURCES.map(sourceLabel).join("・");
 ---
 
-<!-- 日付グルーピング＋タイムレール。data-day-section / data-feed-item / data-source と
-     is-collapsed / data-show-more-row は SourceFilter のスクリプト・CSS が出し分けに使うので変えないこと。 -->
+<!-- 日付グルーピング＋タイムレール。data-day-section / data-feed-item / data-source / data-x-account と
+     is-collapsed / data-show-more-row は SourceFilter のスクリプト・CSS が出し分けに使うので変えないこと。
+     data-x-account は X のアカウント絞り込み（第2軸）用。X 以外の行には付かない。 -->
 <div class="space-y-8">
   {
     groups.map((group) => {
@@ -31,6 +39,7 @@ const showMoreLabel = LIMITED_SOURCES.map(sourceLabel).join("・");
               <div
                 data-feed-item
                 data-source={item.source}
+                data-x-account={item.source === "x" ? xAccountKey(item) : undefined}
                 class:list={[
                   "grid grid-cols-[2.75rem_1fr] gap-2.5 sm:grid-cols-[3.5rem_1fr] sm:gap-3",
                   collapsedIds?.has(item.id) && "is-collapsed",

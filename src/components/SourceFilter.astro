@@ -1,5 +1,11 @@
 ---
-import { SOURCES, type FeedItem } from "@/lib/feed";
+import {
+  SOURCES,
+  avatarColor,
+  avatarInitials,
+  xAccountsOf,
+  type FeedItem,
+} from "@/lib/feed";
 
 interface Props {
   items: FeedItem[];
@@ -13,60 +19,176 @@ const chips = [
   { key: "all", label: "すべて", badgeClass: "" },
   ...SOURCES.map((s) => ({ key: s.key, label: s.label, badgeClass: s.badgeClass })),
 ];
+
+// X のアカウント絞り込み（第2軸）。このページに実際に描画されるアイテムから導出する
+// ＝ feeds.config.ts の x.accounts には無いブックマーク由来のアカウントも拾える。
+const xAccounts = xAccountsOf(items);
+// 月別アーカイブは distinct 48 まで伸びる（大半は1件）ので、初期表示は上位のみ。
+const ACCOUNT_CHIP_LIMIT = 12;
+const extraAccountCount = Math.max(0, xAccounts.length - ACCOUNT_CHIP_LIMIT);
+
+const chipBase =
+  "inline-flex items-center gap-1.5 rounded-full border border-[var(--color-border)] bg-[var(--color-card)] px-3 py-1.5 text-[12.5px] font-medium text-[var(--color-text-muted)] transition-colors hover:border-[var(--color-border-strong)] hover:text-[var(--color-text)] aria-[pressed=true]:border-[var(--color-accent)] aria-[pressed=true]:bg-[var(--color-accent-glow)] aria-[pressed=true]:text-[var(--color-accent-bright)]";
+const accountChipBase =
+  "account-chip inline-flex items-center gap-1.5 rounded-full border border-[var(--color-border)] bg-[var(--color-card)] py-1 pl-1 pr-2.5 text-[12px] font-medium text-[var(--color-text-muted)] transition-colors hover:border-[var(--color-border-strong)] hover:text-[var(--color-text)] aria-[pressed=true]:border-[var(--color-accent)] aria-[pressed=true]:bg-[var(--color-accent-glow)] aria-[pressed=true]:text-[var(--color-accent-bright)]";
 ---
 
+<!-- ソース絞り込み（1段目）／X アカウント絞り込み（2段目）／出典元リンク（3段目）。
+     2・3段目はこの #source-filter の「内側」に置くこと＝ResizeObserver が高さ変化を拾って
+     --stack-h（日付見出しの sticky top）を追従させる。外に出すと日付見出しの位置がずれる。 -->
 <div
   id="source-filter"
-  class="sticky-surface sticky top-[var(--header-h)] z-10 -mx-4 mb-4 flex flex-wrap gap-2 border-b border-[var(--color-border)] px-4 py-3 sm:-mx-6 sm:px-6"
+  class="sticky-surface sticky top-[var(--header-h)] z-10 -mx-4 mb-4 flex flex-col gap-2 border-b border-[var(--color-border)] px-4 py-3 sm:-mx-6 sm:px-6"
 >
+  <div class="flex flex-wrap gap-2">
+    {
+      chips.map((c) => (
+        <button type="button" data-filter={c.key} class={`filter-chip ${chipBase}`} aria-pressed={c.key === "all" ? "true" : "false"}>
+          {c.label}
+          <span class="font-mono text-[10.5px] tabular-nums text-[var(--color-text-subtle)]">{counts[c.key]}</span>
+        </button>
+      ))
+    }
+
+    <!-- 表示言語の一括トグル（日本語 / 原文）。右端に寄せる -->
+    <div class="ml-auto flex items-center gap-1.5">
+      <span class="font-mono text-[11px] text-[var(--color-text-subtle)]">表示</span>
+      <div class="flex items-center gap-1 rounded-full border border-[var(--color-border)] bg-[var(--color-card)] p-0.5">
+        <button
+          type="button"
+          data-lang="ja"
+          class="lang-toggle rounded-full px-2.5 py-1 text-[12px] font-medium text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-text)] aria-[pressed=true]:bg-[var(--color-accent-glow)] aria-[pressed=true]:text-[var(--color-accent-bright)]"
+          aria-pressed="true"
+        >
+          日本語
+        </button>
+        <button
+          type="button"
+          data-lang="orig"
+          class="lang-toggle rounded-full px-2.5 py-1 text-[12px] font-medium text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-text)] aria-[pressed=true]:bg-[var(--color-accent-glow)] aria-[pressed=true]:text-[var(--color-accent-bright)]"
+          aria-pressed="false"
+        >
+          原文
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2段目: X のアカウント絞り込み。既定は非表示で、「X」選択中 or アカウント選択中だけ出す
+       （＝「すべて」に戻しても選択が残っている限り行が見える＝見えない絞り込みを作らない）。 -->
   {
-    chips.map((c) => (
-      <button
-        type="button"
-        data-filter={c.key}
-        class="filter-chip inline-flex items-center gap-1.5 rounded-full border border-[var(--color-border)] bg-[var(--color-card)] px-3 py-1.5 text-[12.5px] font-medium text-[var(--color-text-muted)] transition-colors hover:border-[var(--color-border-strong)] hover:text-[var(--color-text)] aria-[pressed=true]:border-[var(--color-accent)] aria-[pressed=true]:bg-[var(--color-accent-glow)] aria-[pressed=true]:text-[var(--color-accent-bright)]"
-        aria-pressed={c.key === "all" ? "true" : "false"}
+    xAccounts.length > 0 && (
+      <div
+        data-account-row
+        hidden
+        aria-label="X アカウントで絞り込み"
+        class="flex flex-wrap items-center gap-1.5 border-t border-[var(--color-border)] pt-2"
       >
-        {c.label}
-        <span class="font-mono text-[10.5px] tabular-nums text-[var(--color-text-subtle)]">{counts[c.key]}</span>
-      </button>
-    ))
+        <span class="font-mono text-[11px] text-[var(--color-text-subtle)]">アカウント</span>
+        <button type="button" data-account="all" class={accountChipBase} aria-pressed="true">
+          <span class="pl-1.5">すべて</span>
+          <span class="font-mono text-[10.5px] tabular-nums text-[var(--color-text-subtle)]">{counts.x}</span>
+        </button>
+        {xAccounts.map((a, i) => (
+          <button
+            type="button"
+            data-account={a.key}
+            data-handle={a.handle}
+            data-label={a.label}
+            class:list={[accountChipBase, i >= ACCOUNT_CHIP_LIMIT && "is-extra"]}
+            aria-pressed="false"
+          >
+            <span
+              class="relative flex h-5 w-5 shrink-0 items-center justify-center overflow-hidden rounded-full text-[9px] font-bold text-white"
+              style={`background:${a.handle ? avatarColor(a.handle) : "var(--color-text)"}`}
+              aria-hidden="true"
+            >
+              {a.handle ? avatarInitials(a.handle) : "?"}
+              {a.avatarUrl && (
+                <img
+                  src={a.avatarUrl}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  class="absolute inset-0 h-full w-full object-cover"
+                  onerror="this.style.display='none'"
+                />
+              )}
+            </span>
+            <span class="max-w-[9rem] truncate">{a.label}</span>
+            <span class="font-mono text-[10.5px] tabular-nums text-[var(--color-text-subtle)]">{a.count}</span>
+          </button>
+        ))}
+        {extraAccountCount > 0 && (
+          <button
+            type="button"
+            data-account-more
+            class="rounded-full border border-dashed border-[var(--color-border)] px-2.5 py-1 text-[12px] font-medium text-[var(--color-text-subtle)] transition-colors hover:border-[var(--color-border-strong)] hover:text-[var(--color-text)]"
+          >
+            他{extraAccountCount}件
+          </button>
+        )}
+      </div>
+    )
   }
 
-  <!-- 表示言語の一括トグル（日本語 / 原文）。右端に寄せる -->
-  <div class="ml-auto flex items-center gap-1.5">
-    <span class="font-mono text-[11px] text-[var(--color-text-subtle)]">表示</span>
-    <div class="flex items-center gap-1 rounded-full border border-[var(--color-border)] bg-[var(--color-card)] p-0.5">
-      <button
-        type="button"
-        data-lang="ja"
-        class="lang-toggle rounded-full px-2.5 py-1 text-[12px] font-medium text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-text)] aria-[pressed=true]:bg-[var(--color-accent-glow)] aria-[pressed=true]:text-[var(--color-accent-bright)]"
-        aria-pressed="true"
+  <!-- 3段目: 出典元。選択中のソース（またはアカウント）の1本だけ表示する。
+       JS 無効なら全部 hidden のまま＝レイアウトは崩れない。外部URLなので siteLink() は通さない。 -->
+  <div
+    data-origin-row
+    hidden
+    class="flex flex-wrap items-center gap-x-2 gap-y-1 border-t border-[var(--color-border)] pt-2 text-[11.5px] text-[var(--color-text-subtle)]"
+  >
+    {
+      SOURCES.map((s) => (
+        <span data-origin={s.key} hidden class="flex flex-wrap items-center gap-x-2 gap-y-1">
+          <span class="font-mono">出典</span>
+          <a
+            href={s.originUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-[var(--color-accent-bright)] underline-offset-2 hover:underline"
+          >
+            {s.originLabel} <span aria-hidden="true">↗</span>
+          </a>
+          {s.originNote && <span>{s.originNote}</span>}
+        </span>
+      ))
+    }
+    <!-- X はアカウント選択中だけプロフィールへ差し替える（href/文言は JS が入れる） -->
+    <span data-origin="x-account" hidden class="flex items-center gap-x-2">
+      <span class="font-mono">出典</span>
+      <a
+        data-origin-x-link
+        href="https://x.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-[var(--color-accent-bright)] underline-offset-2 hover:underline"
       >
-        日本語
-      </button>
-      <button
-        type="button"
-        data-lang="orig"
-        class="lang-toggle rounded-full px-2.5 py-1 text-[12px] font-medium text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-text)] aria-[pressed=true]:bg-[var(--color-accent-glow)] aria-[pressed=true]:text-[var(--color-accent-bright)]"
-        aria-pressed="false"
-      >
-        原文
-      </button>
-    </div>
+        <span data-origin-x-label>x.com</span> <span aria-hidden="true">↗</span>
+      </a>
+    </span>
   </div>
 </div>
 
 <script>
+  import { X_ACCOUNT_OTHER } from "@/lib/feed";
+
   const filterBar = document.getElementById("source-filter");
-  const chips = Array.from(document.querySelectorAll<HTMLButtonElement>(".filter-chip"));
+  const sourceChips = Array.from(document.querySelectorAll<HTMLButtonElement>(".filter-chip"));
+  const accountChips = Array.from(document.querySelectorAll<HTMLButtonElement>(".account-chip"));
+  const accountRow = document.querySelector<HTMLElement>("[data-account-row]");
+  const originRow = document.querySelector<HTMLElement>("[data-origin-row]");
+  const originBlocks = Array.from(document.querySelectorAll<HTMLElement>("[data-origin]"));
+  const originXLink = document.querySelector<HTMLAnchorElement>("[data-origin-x-link]");
+  const originXLabel = document.querySelector<HTMLElement>("[data-origin-x-label]");
   // タイムレール行（時刻＋カードを包むラッパ）単位で出し分ける
   const cards = Array.from(document.querySelectorAll<HTMLElement>("[data-feed-item]"));
   const daySections = Array.from(document.querySelectorAll<HTMLElement>("[data-day-section]"));
 
   // ===== sticky オフセットを実測して CSS 変数に反映（手書きマジックナンバー廃止）=====
   // --header-h = ヘッダー高さ（フィルタの top）、--stack-h = ヘッダー＋フィルタ（日付見出しの top）。
-  // フィルタは flex-wrap で行数が変わるため、リサイズ／フォント読込で追従させる。
+  // フィルタは flex-wrap と2・3段目の出し入れで高さが変わるため、変化のたびに測り直す。
   const header = document.getElementById("app-header");
   function measureSticky() {
     const root = document.documentElement.style;
@@ -81,33 +203,100 @@ const chips = [
   window.addEventListener("resize", measureSticky);
   document.fonts?.ready.then(measureSticky);
 
-  function applyFilter(filter: string) {
-    const filterActive = filter !== "all";
-    // 絞り込み中は CSS（globals.css の :root.filter-active）が is-collapsed を自動解除する
-    document.documentElement.classList.toggle("filter-active", filterActive);
+  // ===== 絞り込み: ソース（1段目）× X アカウント（2段目）の2軸 =====
+  let sourceFilter = "all";
+  let accountFilter = "all";
+
+  function applyFilters() {
+    // :root.filter-active は「ソースを1つに絞った」ときだけ。CSS（globals.css）がこれを見て
+    // is-collapsed を自動解除し「もっと見せる」を隠す＝「選んだソースは全日見せる」の意味。
+    // アカウント軸は X の中の絞り込みなので、これに含めない
+    // （含めると「すべて」表示のままアカウントを選んだだけで、無関係な はてブ/Zenn/Qiita が
+    //  7日分に一気に展開されて驚く）。
+    document.documentElement.classList.toggle("filter-active", sourceFilter !== "all");
+    // 日付セクションの空判定はアカウント軸も含めた「何か絞り込み中か」で行う
+    const filterActive = sourceFilter !== "all" || accountFilter !== "all";
+
     for (const card of cards) {
-      const match = !filterActive || card.dataset.source === filter;
-      card.classList.toggle("is-hidden", !match);
+      const sourceOk = sourceFilter === "all" || card.dataset.source === sourceFilter;
+      // アカウント軸は X の行にだけ効かせる＝他ソースは出したまま X の中だけ絞る
+      const accountOk =
+        accountFilter === "all" ||
+        card.dataset.source !== "x" ||
+        card.dataset.xAccount === accountFilter;
+      card.classList.toggle("is-hidden", !(sourceOk && accountOk));
     }
+
     // 絞り込み中のみ、中身が全部隠れた日付セクションを見出しごと隠す。
     // 「すべて」では常に表示（折りたたみだけの日も「もっと見せる」ボタン行を残すため）。
-    // すべてに戻すと filter-active が外れて未展開分が CSS で再折りたたみ＝初期状態に復帰する。
     for (const section of daySections) {
       const hide =
-        filterActive &&
-        section.querySelectorAll("[data-feed-item]:not(.is-hidden)").length === 0;
+        filterActive && section.querySelectorAll("[data-feed-item]:not(.is-hidden)").length === 0;
       section.classList.toggle("is-hidden", hide);
     }
-    for (const chip of chips) {
-      chip.setAttribute("aria-pressed", chip.dataset.filter === filter ? "true" : "false");
+
+    for (const chip of sourceChips) {
+      chip.setAttribute("aria-pressed", chip.dataset.filter === sourceFilter ? "true" : "false");
     }
+    for (const chip of accountChips) {
+      chip.setAttribute("aria-pressed", chip.dataset.account === accountFilter ? "true" : "false");
+    }
+
+    syncAccountRow();
+    syncOriginRow();
+    // 2・3段目の出し入れでバーの高さが変わる＝日付見出しの sticky top を測り直す。
+    // ResizeObserver 任せにしない: 非アクティブタブでは rAF/ResizeObserver が止まるうえ、
+    // 高さが変わる瞬間はここで確実に分かるので同期的に測る（クリック1回につき1回）。
+    measureSticky();
+  }
+
+  // アカウント行は「X 選択中」か「アカウント選択中」に出す。
+  // 後者を条件に入れないと、X → すべて に戻したときに絞り込みだけ残って行が消える。
+  function syncAccountRow() {
+    if (accountRow) accountRow.hidden = !(sourceFilter === "x" || accountFilter !== "all");
+  }
+
+  // 出典行: アカウント選択中はそのプロフィール、そうでなければ選択中ソースの出典元。
+  function syncOriginRow() {
+    const account = accountFilter !== "all" ? accountFilter : null;
+    const handle = account && account !== X_ACCOUNT_OTHER ? account.slice(1) : null;
+    const key = handle ? "x-account" : sourceFilter !== "all" ? sourceFilter : null;
+
+    if (handle && originXLink && originXLabel) {
+      const chip = accountChips.find((c) => c.dataset.account === account);
+      originXLink.href = `https://x.com/${handle}`;
+      originXLabel.textContent = `${chip?.dataset.label ?? `@${handle}`}（@${handle}）を X で見る`;
+    }
+    for (const block of originBlocks) block.hidden = block.dataset.origin !== key;
+    if (originRow) originRow.hidden = key === null;
   }
 
   filterBar?.addEventListener("click", (e) => {
-    const chip = (e.target as HTMLElement).closest<HTMLButtonElement>(".filter-chip");
-    if (!chip?.dataset.filter) return;
-    applyFilter(chip.dataset.filter);
+    const target = e.target as HTMLElement;
+
+    const sourceChip = target.closest<HTMLButtonElement>(".filter-chip");
+    if (sourceChip?.dataset.filter) {
+      sourceFilter = sourceChip.dataset.filter;
+      applyFilters();
+      return;
+    }
+
+    const accountChip = target.closest<HTMLButtonElement>(".account-chip");
+    if (accountChip?.dataset.account) {
+      accountFilter = accountChip.dataset.account;
+      applyFilters();
+      return;
+    }
+
+    // 上限を超えたアカウントチップを展開（以後は畳み直さない）
+    if (target.closest("[data-account-more]")) {
+      for (const chip of accountChips) chip.classList.remove("is-extra");
+      target.closest<HTMLElement>("[data-account-more]")?.remove();
+      measureSticky(); // チップが数行増えてバーが伸びる＝日付見出しの sticky top を測り直す
+    }
   });
+
+  applyFilters();
 
   // ===== 表示言語トグル（日本語 / 原文）。:root.show-orig を切り替える =====
   const langButtons = Array.from(document.querySelectorAll<HTMLButtonElement>(".lang-toggle"));
