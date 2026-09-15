@@ -142,6 +142,44 @@ const cfBeaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
           </a>
         </div>
       </nav>
+
+      <!-- 追従する「トップへ戻る」ボタン。scrollY>600 で表示（位置・出し入れは globals.css の .back-to-top）。
+           z-30 = sticky ヘッダー(z-20)/フィルタ(z-10)より前面、バックリンクバー(z-40)より下 -->
+      <button
+        type="button"
+        id="back-to-top"
+        aria-label="ページの先頭へ戻る"
+        class="back-to-top fixed right-4 z-30 flex h-11 w-11 items-center justify-center rounded-full border border-[var(--color-border-strong)] bg-[var(--color-card)] text-[var(--color-text-muted)] shadow-[0_4px_14px_rgba(20,22,27,0.12)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] sm:right-6"
+      >
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </button>
     </div>
+    <script>
+      // トップへ戻るボタンの出し入れ。rAF は使わない（非アクティブタブでは止まる）＝scroll で直接判定。
+      const backToTop = document.getElementById("back-to-top");
+      if (backToTop) {
+        const sync = () => backToTop.classList.toggle("is-visible", window.scrollY > 600);
+        window.addEventListener("scroll", sync, { passive: true });
+        sync(); // リロードで途中位置が復元されたとき用
+        backToTop.addEventListener("click", () => {
+          // behavior 未指定＝html の scroll-behavior に従う（smooth。prefers-reduced-motion では auto）
+          window.scrollTo({ top: 0 });
+          // ボタンは隠れてフォーカスを失うので、キーボード利用者のフォーカスを先頭のロゴへ移す
+          document.querySelector<HTMLElement>("#app-header a")?.focus({ preventScroll: true });
+        });
+      }
+    </script>
   </body>
 </html>

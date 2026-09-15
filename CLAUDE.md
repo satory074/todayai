@@ -95,6 +95,7 @@ npm run enrich:xlinks -- --fresh  # 負キャッシュ（null）を一掃して�
 - **sticky オフセットは JS 実測の CSS 変数**（旧来の `top-[57px]`/`top-[112px]` 手書きマジックナンバーは廃止）: `globals.css` の `:root` に `--header-h`/`--stack-h`（= ヘッダー高 / ヘッダー＋フィルタ高）をフォールバック値付きで定義し、`SourceFilter.astro` の `<script>` が `#app-header` と `#source-filter` を実測して上書きする（初回＋`window.resize`＋`document.fonts.ready`＋`ResizeObserver`）。**さらに 2・3段目を出し入れする `applyFilters()` と「他N件」展開の直後にも同期で測り直す**＝高さが変わる瞬間はこちらが知っているので、非アクティブタブで rAF/ResizeObserver が凍っても日付見出しがずれない。フィルタは `top-[var(--header-h)]`、日付見出し（`index.astro`）は `top-[var(--stack-h)]`。**フィルタは `flex-wrap` で行数が変わる**ので固定値だと幅が狭いと崩れる＝実測必須。ヘッダーに `id="app-header"` が必要。
 - **ヘッダー／フィルタの sticky 面は `.sticky-surface`**（`globals.css`）: 既定は不透明 `--color-bg`、`@supports (backdrop-filter)` のときだけ frosted（`color-mix` 半透明＋blur）に格上げ。backdrop-filter 非対応や `prefers-reduced-transparency` でも背後のカードが透けない。**カード `<article>` には `isolate`（`isolation:isolate`）必須**（`FeedCard`/`TweetCard`）: 付けないと内部の `z-10`/`z-20`（オーバーレイ `<a>` と本文 `div`）がルートのスタッキングコンテキストへ漏れ、`z-10` の sticky フィルタの**上に**カード本文が描画されてタイトルがバー上にブリードする。
 
+- **トップへ戻るボタンは `Layout.astro` 共通**（`#back-to-top`＋`globals.css` の `.back-to-top`）: `scrollY > 600` で `.is-visible` を付けて表示（scroll の passive リスナで直接判定・rAF 不使用）。位置は `bottom: calc(48px + safe-area)`＝固定バックリンクバーの上に浮かせており、body の `pb-[calc(48px+…)]` と同じ 48px に連動＝**バーの高さを変えたらここも変える**。z-30（sticky ヘッダー z-20 より前・バックリンクバー z-40 より下）。非表示時は `visibility:hidden` まで落として Tab フォーカスを防ぐ。
 
 ---
 

@@ -203,6 +203,29 @@ html {
   scroll-padding-bottom: calc(48px + env(safe-area-inset-bottom));
 }
 
+/* 追従する「トップへ戻る」ボタン（Layout.astro）。固定バックリンクバー（h-9＋safe-area）の上 12px に浮かせる。
+   body の pb-[calc(48px+…)] と同じ 48px に連動＝バーの高さを変えたらここも変える。
+   非表示時は visibility まで落とす＝見えないのに Tab でフォーカスできる状態を作らない。
+   visibility はフェードアウト後に切り替える（表示時は即時） */
+.back-to-top {
+  bottom: calc(48px + env(safe-area-inset-bottom));
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition:
+    opacity var(--duration-base) var(--ease-out-soft),
+    transform var(--duration-base) var(--ease-out-soft),
+    color var(--duration-base),
+    border-color var(--duration-base),
+    visibility 0s linear var(--duration-base);
+}
+.back-to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition-delay: 0s;
+}
+
 /* モーション設定の尊重 */
 @media (prefers-reduced-motion: reduce) {
   html {
