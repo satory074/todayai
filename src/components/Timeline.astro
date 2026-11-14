@@ -8,18 +8,24 @@
  *
  * data-day / data-section / data-feed-item / data-source / data-x-account / data-more / data-count /
  * data-more-count は SourceFilter のスクリプトが絞り込みに使うので変えないこと。
+ *
+ * 末尾の script は閲覧時の補正: 「今日/昨日」と更新時刻の相対表記（ビルド時に決めると 6 時間ごとの
+ * 静的ビルドなのでずれる）、トップだけ「前回以降の新着」（data-k と localStorage の既読集合を比較）。
  */
 import ArticleRow from "./ArticleRow.astro";
 import TweetRow from "./TweetRow.astro";
-import { groupDaySections, type FeedItem } from "@/lib/feed";
+import { groupDaySections, itemKey, type FeedItem } from "@/lib/feed";
 
 interface Props {
   items: FeedItem[];
   /** true（トップ）なら各セクションを先頭数件＋「残り N 件」に畳む。アーカイブは false（全件表示） */
   collapse?: boolean;
+  /** true（トップ）なら「前回以降の新着」に印を付ける */
+  markNew?: boolean;
 }
 
-const { items, collapse = false } = Astro.props;
+const { items, collapse = false, markNew = false } = Astro.props;
+const k = (item: FeedItem) => (markNew ? itemKey(item.id) : undefined);
 const days = groupDaySections(items, { collapse });
 
 // 2 日目以降は content-visibility:auto で画面外の描画を省く（1 日目＝初期表示域には付けない）。
@@ -44,12 +50,17 @@ const estimateRem = (day: (typeof days)[number]) =>
               <span class="sec-count">
                 <span data-count>{sec.head.length + sec.rest.length}</span>件
               </span>
+              {markNew && <span class="new-pill" data-sec-new hidden />}
               <span class="sec-day" aria-hidden="true">
                 {day.short}
               </span>
             </h3>
             {sec.head.map((item) =>
-              item.source === "x" ? <TweetRow item={item} /> : <ArticleRow item={item} badge={sec.def.badge} />,
+              item.source === "x" ? (
+                <TweetRow item={item} k={k(item)} />
+              ) : (
+                <ArticleRow item={item} badge={sec.def.badge} k={k(item)} />
+              ),
             )}
             {sec.rest.length > 0 && (
               <details class="more" data-more>
@@ -63,12 +74,13 @@ const estimateRem = (day: (typeof days)[number]) =>
                     </span>
                     <span class="more-open">折りたたむ</span>
                   </span>
+                  {markNew && <span class="new-pill" data-more-new hidden />}
                 </summary>
                 {sec.rest.map((item) =>
                   item.source === "x" ? (
-                    <TweetRow item={item} />
+                    <TweetRow item={item} k={k(item)} />
                   ) : (
-                    <ArticleRow item={item} badge={sec.def.badge} />
+                    <ArticleRow item={item} badge={sec.def.badge} k={k(item)} />
                   ),
                 )}
               </details>
@@ -79,3 +91,97 @@ const estimateRem = (day: (typeof days)[number]) =>
     ))
   }
 </div>
+
+<script>
+  import { dayKey, relativeTime } from "@/lib/feed";
+
+  // ===== 閲覧時の日付補正 =====
+  // ビルド時は「11月14日(土)」「11/14 14:29 更新」の絶対表記だけを出しておき、ここで
+  // 「今日」「昨日」と「N時間前」を足す（JST 暦日。dayKey/relativeTime は Asia/Tokyo 固定）。
+  function refreshDates() {
+    const now = new Date();
+    const today = dayKey(now.toISOString());
+    const yesterday = dayKey(new Date(now.getTime() - 86400000).toISOString());
+    for (const day of document.querySelectorAll<HTMLElement>("[data-day]")) {
+      const key = day.id.slice(2); // "d-2026-11-14"
+      const rel = key === today ? "今日" : key === yesterday ? "昨日" : "";
+      for (const el of day.querySelectorAll<HTMLElement>("[data-day-label], .sec-day")) {
+        el.dataset.abs ??= el.textContent?.trim() ?? "";
+        el.textContent = rel ? `${rel} ${el.dataset.abs}` : el.dataset.abs;
+      }
+    }
+    const updated = document.querySelector<HTMLTimeElement>("[data-updated]");
+    if (updated) {
+      updated.dataset.abs ??= updated.textContent?.trim() ?? "";
+      updated.title = updated.dataset.abs;
+      updated.textContent = relativeTime(updated.dateTime, now) || updated.dataset.abs;
+    }
+  }
+  refreshDates();
+  // 開きっぱなしのタブに戻ってきたときも合わせ直す（日付をまたいだ・数時間経った）
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") refreshDates();
+  });
+
+  // ===== 前回以降の新着（トップだけ。行に data-k があるときだけ動く）=====
+  // 時刻ではなく「前回見たページに載っていたか」で判定する: X のブックマークは元ツイートの投稿時刻を、
+  // はてブは記事の公開時刻を持つので、時刻比較だと後から入った古い日付の項目を取りこぼす。
+  // 既読集合は前回ページに載っていた行の data-k（空白区切り）。初回訪問は何も付けない。
+  const rows = Array.from(document.querySelectorAll<HTMLElement>("[data-feed-item][data-k]"));
+  if (rows.length > 0) {
+    const STORE = "todayai:seen";
+    let seen: Set<string> | null = null;
+    try {
+      const raw = localStorage.getItem(STORE);
+      if (raw !== null) seen = new Set(raw.split(" "));
+    } catch {
+      // 保存領域が使えない環境では新着表示をしない
+    }
+
+    let total = 0;
+    if (seen) {
+      for (const row of rows) {
+        if (!seen.has(row.dataset.k ?? "")) {
+          row.dataset.new = "";
+          total++;
+        }
+      }
+      for (const sec of document.querySelectorAll<HTMLElement>("[data-section]")) {
+        const n = sec.querySelectorAll("[data-feed-item][data-new]").length;
+        const pill = sec.querySelector<HTMLElement>("[data-sec-new]");
+        if (pill && n > 0) {
+          pill.textContent = `新着 ${n}`;
+          pill.hidden = false;
+        }
+        const more = sec.querySelector("[data-more]");
+        const inMore = more ? more.querySelectorAll("[data-feed-item][data-new]").length : 0;
+        const morePill = more?.querySelector<HTMLElement>("[data-more-new]");
+        if (morePill && inMore > 0) {
+          morePill.textContent = `新着 ${inMore}`;
+          morePill.hidden = false;
+        }
+      }
+      const summary = document.querySelector<HTMLElement>("[data-new-summary]");
+      const summaryCount = document.querySelector<HTMLElement>("[data-new-total]");
+      if (summary && summaryCount && total > 0) {
+        summaryCount.textContent = String(total);
+        summary.hidden = false;
+      }
+    }
+
+    // 今ページに載っている行を既読として保存。読んでいる最中に印が消えないよう、
+    // ページを離れる（非表示になる）ときに書く。iOS は pagehide を飛ばすことがあるので両方で。
+    const keys = rows.map((r) => r.dataset.k).join(" ");
+    const save = () => {
+      try {
+        localStorage.setItem(STORE, keys);
+      } catch {
+        // 保存できなくても表示には影響しない
+      }
+    };
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "hidden") save();
+    });
+    addEventListener("pagehide", save);
+  }
+</script>

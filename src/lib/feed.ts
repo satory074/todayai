@@ -296,6 +296,19 @@ export function formatStamp(iso: string): string {
   });
 }
 
+/**
+ * 行の短い識別子（item.id の FNV-1a 32bit を base36、6〜7 文字）。「前回以降の新着」の既読管理で
+ * localStorage に数百件ぶん保存するので、URL そのもの（id）より短くする。
+ */
+export function itemKey(id: string): string {
+  let h = 0x811c9dc5;
+  for (let i = 0; i < id.length; i++) {
+    h ^= id.charCodeAt(i);
+    h = Math.imul(h, 0x01000193);
+  }
+  return (h >>> 0).toString(36);
+}
+
 // ===== X 由来アイテムのアバター/著者表示ヘルパー =====
 
 /** X の author は "@handle"（自投稿・外部アカウント）か カテゴリラベル（いいね/ブックマーク/投稿）。 */

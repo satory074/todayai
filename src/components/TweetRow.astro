@@ -18,9 +18,11 @@ import BilingualText from "./BilingualText.astro";
 
 interface Props {
   item: FeedItem;
+  /** 「前回以降の新着」判定用の短い識別子（トップだけ。itemKey） */
+  k?: string;
 }
 
-const { item } = Astro.props;
+const { item, k } = Astro.props;
 const author = parseXAuthor(item.author);
 const body = item.summary ?? item.title;
 const bodyJa = item.summaryJa ?? item.titleJa;
@@ -43,7 +45,7 @@ const avatarBg = author.kind === "handle" ? avatarColor(author.handle ?? "") : "
 const initials = author.kind === "handle" ? avatarInitials(author.handle ?? "") : "X";
 ---
 
-<article class="row" data-feed-item data-source="x" data-x-account={xAccountKey(item)}>
+<article class="row" data-feed-item data-source="x" data-x-account={xAccountKey(item)} data-k={k}>
   {
     thumb && (
       <img

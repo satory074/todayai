@@ -15,16 +15,18 @@ interface Props {
   item: FeedItem;
   /** ソースバッジを出すか（同じソースだけが並ぶセクションでは見出しで分かるので出さない） */
   badge?: boolean;
+  /** 「前回以降の新着」判定用の短い識別子（トップだけ。itemKey） */
+  k?: string;
 }
 
-const { item, badge = true } = Astro.props;
+const { item, badge = true, k } = Astro.props;
 const meta = sourceMeta(item.source);
 const thumb = displayThumb(item);
 const author = displayAuthor(item);
 const time = timeOfDay(item.publishedAt);
 ---
 
-<article class="row" data-feed-item data-source={item.source}>
+<article class="row" data-feed-item data-source={item.source} data-k={k}>
   {
     thumb && (
       <img

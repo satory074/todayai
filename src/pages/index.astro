@@ -44,6 +44,9 @@ const months = monthsOf(allItems);
           </span>
         )
       }
+      <span data-new-summary hidden class="font-mono text-xs text-[var(--color-accent-bright)]">
+        · 前回以降の新着 <span data-new-total></span> 件
+      </span>
     </p>
   </section>
 
@@ -58,7 +61,7 @@ const months = monthsOf(allItems);
         </p>
       </div>
     ) : (
-      <Timeline items={items} collapse />
+      <Timeline items={items} collapse markNew />
     )
   }
 
