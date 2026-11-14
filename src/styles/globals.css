@@ -131,6 +131,205 @@
   }
 }
 
+/* ===== リスト行（ArticleRow / TweetRow）=====
+   @layer components に置く＝ Tailwind のユーティリティで個別に上書きでき、
+   フィルタ用のレイヤー外ルール（.is-hidden / .is-collapsed の display:none）にも負ける（意図どおり）。
+   行ごとに長いユーティリティ文字列を出すと 750 行で HTML が数 MB になるので、共通の見た目はここに集約する。 */
+@layer components {
+  .row {
+    /* 見出しリンクの ::after（行全面）を行の中に閉じ込める。isolation は内部の z-index を外へ漏らさない
+       （漏れると sticky のフィルタバーの上に行の文字が描かれる） */
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    column-gap: 0.75rem;
+    align-content: start;
+    padding: 0.75rem 0.5rem;
+    margin-inline: -0.5rem;
+    border-bottom: 1px solid var(--color-border);
+    transition: background-color var(--duration-base);
+  }
+  /* 実写サムネがある行だけ右に列を作る（無い行に空の列を確保しない）。
+     行は「見出し/メタ/要約（X は頭/本文/リンク）」の 3 段＋余り 1fr。サムネが文字より高いとき
+     余白は最後の 1fr に入る＝見出しと要約の間が間延びしない */
+  .row:has(> .row-thumb) {
+    grid-template-columns: minmax(0, 1fr) 6rem;
+    grid-template-rows: auto auto auto 1fr;
+  }
+  .row > :not(.row-thumb) {
+    grid-column: 1;
+  }
+  .row-thumb {
+    grid-column: 2;
+    grid-row: 1 / -1;
+    width: 6rem;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 0.375rem;
+    background: var(--color-surface);
+  }
+  .row:has(.row-link:hover) {
+    background: var(--color-card-hover);
+  }
+  /* 行全体をクリック可能にする（card ガイドの stretched link）。フォーカスリングは行に描く */
+  .row-link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+  .row-link:focus-visible {
+    outline: none;
+  }
+  .row:has(.row-link:focus-visible) {
+    outline: 2px solid var(--color-accent);
+    outline-offset: -2px;
+    border-radius: 0.25rem;
+  }
+  /* 行リンク以外のリンク・ボタン（X のリンクプレビュー等）は全面リンクより上に出して押せるように */
+  .row :is(a:not(.row-link), button) {
+    position: relative;
+    z-index: 1;
+  }
+
+  .row-title {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--color-text);
+    overflow-wrap: anywhere;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+  }
+  .row:has(.row-link:hover) .row-title {
+    color: var(--color-accent-bright);
+  }
+  .row-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.125rem 0.5rem;
+    margin-top: 0.25rem;
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    line-height: 1.5;
+    color: var(--color-text-subtle);
+  }
+  .row-author {
+    max-width: 14rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .row-summary {
+    margin-top: 0.25rem;
+    font-size: 0.8125rem;
+    line-height: 1.65;
+    color: var(--color-text-muted);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 0 0.5rem;
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  /* X の投稿行 */
+  .tweet-head {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 0;
+  }
+  .tweet-head .row-meta {
+    margin-top: 0;
+    flex-wrap: nowrap;
+    min-width: 0;
+  }
+  .tweet-name {
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    flex: 0 1 auto;
+    min-width: 0;
+  }
+  .avatar {
+    position: relative;
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    overflow: hidden;
+    border-radius: 999px;
+    font-size: 0.625rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  .avatar img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .tweet-body {
+    margin-top: 0.375rem;
+    font-size: 0.875rem;
+    line-height: 1.65;
+    color: var(--color-text);
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    overflow: hidden;
+  }
+  .tweet-link {
+    display: block;
+    margin-top: 0.5rem;
+    padding: 0.375rem 0.625rem;
+    border: 1px solid var(--color-border);
+    border-radius: 0.375rem;
+    background: var(--color-card);
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    transition: border-color var(--duration-base);
+  }
+  .tweet-link:hover {
+    border-color: var(--color-border-strong);
+  }
+  .tweet-link-domain {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    color: var(--color-text-subtle);
+  }
+  .tweet-link-title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    font-weight: 600;
+    color: var(--color-text);
+  }
+}
+
 /* sticky バーの高さは JS（SourceFilter）が実測して上書きする。
    フォールバック値は従来の手書きオフセットと一致＝JS無効でも崩れない */
 :root {
@@ -228,7 +427,7 @@
    contain-intrinsic-size は未描画時のプレースホルダ高（auto で一度描画した実高を記憶） */
 [data-feed-item] {
   content-visibility: auto;
-  contain-intrinsic-size: auto 9rem;
+  contain-intrinsic-size: auto 6rem;
 }
 
 /* 表示言語トグル（日本語 / 原文）。既定は日本語、:root.show-orig で原文を表示 */

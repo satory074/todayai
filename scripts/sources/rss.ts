@@ -21,6 +21,10 @@ type RssItem = {
   contentSnippet?: string;
   content?: string;
   enclosure?: { url?: string };
+  /** 書き手。Zenn の RSS は dc:creator（rss-parser が creator に入れる） */
+  creator?: string;
+  /** 書き手。Qiita の Atom は <author><name>（rss-parser が author に入れる） */
+  author?: string;
   mediaThumbnail?: { $?: { url?: string } };
   mediaContent?: { $?: { url?: string } };
 };
@@ -66,7 +70,6 @@ export async function fetchRss(opts: {
   limit?: number;
 }): Promise<FeedItem[]> {
   const feed = await parser.parseURL(opts.rssUrl);
-  const feedName = feed.title?.trim();
   const items: FeedItem[] = [];
   for (const it of feed.items) {
     if (opts.limit !== undefined && items.length >= opts.limit) break;
@@ -80,7 +83,9 @@ export async function fetchRss(opts: {
       publishedAt: publishedAt(it),
       summary: snippet(it.contentSnippet ?? it.content),
       thumbnail: thumbnail(it),
-      author: feedName,
+      // 記事の書き手（Zenn=creator / Qiita=author）。かつてはフィード名（「Zennの「AI」のフィード」等）を
+      // 入れていて全カードに同じ文言が並んでいた。取れなければ空＝表示側で著者欄を出さない。
+      author: (it.creator ?? it.author)?.trim() || undefined,
     });
   }
   return items;

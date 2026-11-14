@@ -1,13 +1,7 @@
 ---
-import FeedCard from "./FeedCard.astro";
-import {
-  groupByDay,
-  sourceLabel,
-  timeOfDay,
-  xAccountKey,
-  LIMITED_SOURCES,
-  type FeedItem,
-} from "@/lib/feed";
+import ArticleRow from "./ArticleRow.astro";
+import TweetRow from "./TweetRow.astro";
+import { groupByDay, sourceLabel, LIMITED_SOURCES, type FeedItem } from "@/lib/feed";
 
 interface Props {
   items: FeedItem[];
@@ -20,9 +14,9 @@ const groups = groupByDay(items);
 const showMoreLabel = LIMITED_SOURCES.map(sourceLabel).join("・");
 ---
 
-<!-- 日付グルーピング＋タイムレール。data-day-section / data-feed-item / data-source / data-x-account と
+<!-- 日付グルーピング＋リスト行。data-day-section / data-feed-item / data-source / data-x-account と
      is-collapsed / data-show-more-row は SourceFilter のスクリプト・CSS が出し分けに使うので変えないこと。
-     data-x-account は X のアカウント絞り込み（第2軸）用。X 以外の行には付かない。 -->
+     行（ArticleRow / TweetRow の <article>）自身が data-feed-item を持つ。 -->
 <div class="space-y-8">
   {
     groups.map((group) => {
@@ -31,43 +25,26 @@ const showMoreLabel = LIMITED_SOURCES.map(sourceLabel).join("・");
         : 0;
       return (
         <section data-day-section>
-          <h2 class="sticky top-[var(--stack-h)] z-[5] mb-3 inline-flex items-center rounded-md bg-[var(--color-card)] px-2.5 py-1 font-mono text-xs font-semibold tracking-wide text-[var(--color-text-muted)] shadow-[0_1px_2px_rgba(20,22,27,0.05)] ring-1 ring-[var(--color-border)]">
+          <h2 class="sticky top-[var(--stack-h)] z-[5] mb-1 inline-flex items-center rounded-md bg-[var(--color-card)] px-2.5 py-1 font-mono text-xs font-semibold tracking-wide text-[var(--color-text-muted)] shadow-[0_1px_2px_rgba(20,22,27,0.05)] ring-1 ring-[var(--color-border)]">
             {group.label}
           </h2>
-          <div class="space-y-3">
-            {group.items.map((item) => (
-              <div
-                data-feed-item
-                data-source={item.source}
-                data-x-account={item.source === "x" ? xAccountKey(item) : undefined}
-                class:list={[
-                  "grid grid-cols-[2.75rem_1fr] gap-2.5 sm:grid-cols-[3.5rem_1fr] sm:gap-3",
-                  collapsedIds?.has(item.id) && "is-collapsed",
-                ]}
-              >
-                <time class="pt-1 text-right font-mono text-xs tabular-nums text-[var(--color-text-subtle)]">
-                  {timeOfDay(item.publishedAt)}
-                </time>
-                <div class="border-l border-[var(--color-border)] pl-2.5 sm:pl-3">
-                  <FeedCard item={item} />
-                </div>
-              </div>
-            ))}
+          <div class="row-list">
+            {group.items.map((item) =>
+              item.source === "x" ? (
+                <TweetRow item={item} />
+              ) : (
+                <ArticleRow item={item} collapsed={collapsedIds?.has(item.id)} />
+              ),
+            )}
             {collapsedCount > 0 && (
-              <div
-                data-show-more-row
-                class="grid grid-cols-[2.75rem_1fr] gap-2.5 sm:grid-cols-[3.5rem_1fr] sm:gap-3"
-              >
-                <span />
-                <div class="border-l border-[var(--color-border)] pl-2.5 sm:pl-3">
-                  <button
-                    type="button"
-                    data-show-more
-                    class="inline-flex items-center gap-1 rounded-full border border-[var(--color-border)] bg-[var(--color-card)] px-3 py-1.5 text-[0.78125rem] font-medium text-[var(--color-text-muted)] transition-colors hover:border-[var(--color-border-strong)] hover:text-[var(--color-text)]"
-                  >
-                    {showMoreLabel} をもっと見せる（<span class="font-mono tabular-nums">{collapsedCount}</span>件）
-                  </button>
-                </div>
+              <div data-show-more-row class="py-3">
+                <button
+                  type="button"
+                  data-show-more
+                  class="inline-flex items-center gap-1 rounded-full border border-[var(--color-border)] bg-[var(--color-card)] px-3 py-1.5 text-[0.78125rem] font-medium text-[var(--color-text-muted)] transition-colors hover:border-[var(--color-border-strong)] hover:text-[var(--color-text)]"
+                >
+                  {showMoreLabel} をもっと見せる（<span class="font-mono tabular-nums">{collapsedCount}</span>件）
+                </button>
               </div>
             )}
           </div>

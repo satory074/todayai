@@ -201,6 +201,55 @@ export function sourceMeta(source: FeedSource): SourceMeta {
   );
 }
 
+// ===== 表示用の取捨選択（サムネ・著者）=====
+
+/**
+ * 「タイトル文字を焼き込んだだけ」の自動生成 OGP 画像の URL パターン。見出しと同じ文字を
+ * 画像でもう一度見せるだけなので表示しない（実測: Zenn 992/1000 件・Qiita ほぼ全件がこれ）。
+ * はてブ・X のリンク先がこれらのサイトのこともあるので、ソースではなく URL でも判定する。
+ */
+const AUTO_OGP_PATTERNS = [
+  "res.cloudinary.com/zenn/", // Zenn の記事 OGP（タイトル＋著者アイコン）
+  "article-ogp-background", // Qiita の記事 OGP（二重エンコードされた URL 内にもこの文字列が残る）
+  "ogimage.blog.st-hatena.com", // はてなブログの自動 OGP
+  "s.tgstc.com/ogp", // Togetter の自動 OGP
+  "opengraph.githubassets.com", // GitHub リポジトリの自動カード
+  "anond.hatelabo.jp/assets", // はてな匿名ダイアリーのロゴ
+];
+
+/** 記事サムネを出さないソース（ほぼ全件が自動生成 OGP） */
+const NO_THUMB_SOURCES: readonly FeedSource[] = ["zenn", "qiita"];
+
+/** 画像 URL が「見る価値のある実写系」か（自動生成 OGP でないか）。 */
+export function isUsefulImage(url?: string): url is string {
+  return !!url && !AUTO_OGP_PATTERNS.some((p) => url.includes(p));
+}
+
+/** 行の右に出すサムネ。出さないなら undefined。X は添付メディア → リンク先画像の順。 */
+export function displayThumb(item: FeedItem): string | undefined {
+  if (NO_THUMB_SOURCES.includes(item.source)) return undefined;
+  if (isUsefulImage(item.thumbnail)) return item.thumbnail;
+  const linkImage = item.linkPreview?.image;
+  if (item.source === "x" && isUsefulImage(linkImage)) return linkImage;
+  return undefined;
+}
+
+/**
+ * 旧集約が author に入れていたフィード名（記事の書き手ではない）。全件に同じ文言が出るだけなので隠す。
+ * scripts/sources/rss.ts は実際の書き手（Zenn=dc:creator / Qiita=author）を入れるよう修正済みだが、
+ * キャッシュに残る古い項目はフィード名のままなので表示側でも弾く。
+ */
+const FEED_NAME_AUTHORS = new Set(["Zennの「AI」のフィード", "AIタグが付けられた新着記事 - Qiita"]);
+/** author が常にフィード名・発行元になるソース（書き手の情報がない） */
+const NO_AUTHOR_SOURCES: readonly FeedSource[] = ["layerx", "workspace", "gcloud"];
+
+/** 記事行に出す著者名。出さないなら undefined（X は TweetRow が別に扱う）。 */
+export function displayAuthor(item: FeedItem): string | undefined {
+  if (item.source === "x" || NO_AUTHOR_SOURCES.includes(item.source)) return undefined;
+  const a = item.author?.trim();
+  return a && !FEED_NAME_AUTHORS.has(a) ? a : undefined;
+}
+
 /** 相対時刻（"3分前" / "2時間前" / "5日前" / 日付）。 */
 export function relativeTime(iso: string, now: Date = new Date()): string {
   const then = new Date(iso).getTime();
