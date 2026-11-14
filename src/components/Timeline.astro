@@ -1,71 +1,81 @@
 ---
+/**
+ * 日ごと×ソース別セクション（朝刊型）。
+ *   section[data-day]            日（h2）
+ *     section[data-section=…]    ソース別の段（固定見出し h3。日付入り＝スクロール中もどの日か分かる）
+ *       行（ArticleRow / TweetRow、h4）× 先頭 N 件
+ *       <details data-more>      「残り N 件」（ネイティブ。JS 不要・ページ内検索で開く・Safari 可）
+ *
+ * data-day / data-section / data-feed-item / data-source / data-x-account / data-more / data-count /
+ * data-more-count は SourceFilter のスクリプトが絞り込みに使うので変えないこと。
+ */
 import ArticleRow from "./ArticleRow.astro";
 import TweetRow from "./TweetRow.astro";
-import { groupByDay, sourceLabel, LIMITED_SOURCES, type FeedItem } from "@/lib/feed";
+import { groupDaySections, type FeedItem } from "@/lib/feed";
 
 interface Props {
   items: FeedItem[];
-  /** トップ専用: 初期折りたたみ対象の id（「もっと見せる」で展開）。未指定（アーカイブ）なら全件表示 */
-  collapsedIds?: Set<string>;
+  /** true（トップ）なら各セクションを先頭数件＋「残り N 件」に畳む。アーカイブは false（全件表示） */
+  collapse?: boolean;
 }
 
-const { items, collapsedIds } = Astro.props;
-const groups = groupByDay(items);
-const showMoreLabel = LIMITED_SOURCES.map(sourceLabel).join("・");
+const { items, collapse = false } = Astro.props;
+const days = groupDaySections(items, { collapse });
+
+// 2 日目以降は content-visibility:auto で画面外の描画を省く（1 日目＝初期表示域には付けない）。
+// 未描画時のプレースホルダ高は「見えている行数 × 平均行高」で見積もる（ずれても auto で実高を記憶）。
+const estimateRem = (day: (typeof days)[number]) =>
+  day.sections.reduce((sum, s) => sum + 2 + s.head.length * 5.75 + (s.rest.length ? 2.5 : 0), 3);
 ---
 
-<!-- 日付グルーピング＋リスト行。data-day-section / data-feed-item / data-source / data-x-account と
-     is-collapsed / data-show-more-row は SourceFilter のスクリプト・CSS が出し分けに使うので変えないこと。
-     行（ArticleRow / TweetRow の <article>）自身が data-feed-item を持つ。 -->
-<div class="space-y-8">
+<div class="days">
   {
-    groups.map((group) => {
-      const collapsedCount = collapsedIds
-        ? group.items.filter((i) => collapsedIds.has(i.id)).length
-        : 0;
-      return (
-        <section data-day-section>
-          <h2 class="sticky top-[var(--stack-h)] z-[5] mb-1 inline-flex items-center rounded-md bg-[var(--color-card)] px-2.5 py-1 font-mono text-xs font-semibold tracking-wide text-[var(--color-text-muted)] shadow-[0_1px_2px_rgba(20,22,27,0.05)] ring-1 ring-[var(--color-border)]">
-            {group.label}
-          </h2>
-          <div class="row-list">
-            {group.items.map((item) =>
-              item.source === "x" ? (
-                <TweetRow item={item} />
-              ) : (
-                <ArticleRow item={item} collapsed={collapsedIds?.has(item.id)} />
-              ),
+    days.map((day) => (
+      <section data-day id={`d-${day.key}`} class="day" style={`--day-est:${estimateRem(day)}rem`}>
+        <h2 class="day-heading">
+          <time datetime={day.key} data-day-label>
+            {day.label}
+          </time>
+        </h2>
+        {day.sections.map((sec) => (
+          <section data-section={sec.def.key} class="sec">
+            <h3 class="sec-bar">
+              <span class="sec-name">{sec.def.heading}</span>
+              <span class="sec-count">
+                <span data-count>{sec.head.length + sec.rest.length}</span>件
+              </span>
+              <span class="sec-day" aria-hidden="true">
+                {day.short}
+              </span>
+            </h3>
+            {sec.head.map((item) =>
+              item.source === "x" ? <TweetRow item={item} /> : <ArticleRow item={item} badge={sec.def.badge} />,
             )}
-            {collapsedCount > 0 && (
-              <div data-show-more-row class="py-3">
-                <button
-                  type="button"
-                  data-show-more
-                  class="inline-flex items-center gap-1 rounded-full border border-[var(--color-border)] bg-[var(--color-card)] px-3 py-1.5 text-[0.78125rem] font-medium text-[var(--color-text-muted)] transition-colors hover:border-[var(--color-border-strong)] hover:text-[var(--color-text)]"
-                >
-                  {showMoreLabel} をもっと見せる（<span class="font-mono tabular-nums">{collapsedCount}</span>件）
-                </button>
-              </div>
+            {sec.rest.length > 0 && (
+              <details class="more" data-more>
+                <summary>
+                  <span class="more-label">
+                    <span class="sr-only">
+                      {day.label} {sec.def.heading}の
+                    </span>
+                    <span class="more-closed">
+                      残り <span data-more-count>{sec.rest.length}</span> 件を表示
+                    </span>
+                    <span class="more-open">折りたたむ</span>
+                  </span>
+                </summary>
+                {sec.rest.map((item) =>
+                  item.source === "x" ? (
+                    <TweetRow item={item} />
+                  ) : (
+                    <ArticleRow item={item} badge={sec.def.badge} />
+                  ),
+                )}
+              </details>
             )}
-          </div>
-        </section>
-      );
-    })
+          </section>
+        ))}
+      </section>
+    ))
   }
 </div>
-
-<script>
-  // 「もっと見せる」: その日の折りたたみ分（is-collapsed）を展開してボタン行ごと消す。
-  // is-collapsed を DOM から除去する＝以後はフィルタを往復しても通常アイテムとして扱われる。
-  // アーカイブページでは data-show-more が無いので no-op。
-  for (const btn of document.querySelectorAll<HTMLButtonElement>("[data-show-more]")) {
-    btn.addEventListener("click", () => {
-      const section = btn.closest("[data-day-section]");
-      if (!section) return;
-      for (const item of section.querySelectorAll("[data-feed-item].is-collapsed")) {
-        item.classList.remove("is-collapsed");
-      }
-      btn.closest("[data-show-more-row]")?.remove();
-    });
-  }
-</script>

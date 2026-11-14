@@ -5,12 +5,23 @@ import { siteLink, absUrl } from "@/lib/url";
 interface Props {
   title?: string;
   description?: string;
+  /** ヘッダーに「原文」切替ボタンを出すか（翻訳のあるフィード一覧ページだけ） */
+  langToggle?: boolean;
 }
 
 const {
   title = "today.ai — AI情報フィード",
   description = "特定のXアカウント・Zenn/Qiita・はてなブックマーク（テクノロジー）からAI関連情報を集約する個人フィード。",
+  langToggle = false,
 } = Astro.props;
+
+// ヘッダーナビの現在地（aria-current）。Astro.url.pathname は base（/todayai）込み
+const path = Astro.url.pathname.replace(/\/+$/, "");
+const navItems = [
+  { href: siteLink("/archive/"), label: "アーカイブ", current: path.startsWith(siteLink("/archive")) },
+  { href: siteLink("/about"), label: "About", current: path === siteLink("/about") },
+  { href: siteLink("/rss.xml"), label: "RSS", current: false },
+];
 
 const ogImage = absUrl("/og-default.png");
 
@@ -34,6 +45,12 @@ const cfBeaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f7f9" />
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1115" />
+    <!-- 表示言語（日本語／原文）を描画前に復元＝原文派の人に一瞬日本語が出てから切り替わるちらつきを出さない -->
+    <script is:inline>
+      try {
+        if (localStorage.getItem("todayai:lang") === "orig") document.documentElement.classList.add("show-orig");
+      } catch (e) {}
+    </script>
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
@@ -85,11 +102,9 @@ const cfBeaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
       >本文へスキップ</a
     >
     <div class="mx-auto flex min-h-screen max-w-[46rem] flex-col px-4 pb-[calc(3rem+env(safe-area-inset-bottom))] sm:px-6 lg:max-w-[58rem]">
-      <header
-        id="app-header"
-        class="sticky-surface sticky top-0 z-20 -mx-4 mb-2 border-b border-[var(--color-border)] px-4 py-3 sm:-mx-6 sm:px-6"
-      >
-        <div class="flex items-center justify-between gap-3">
+      <!-- ヘッダーは固定しない（スクロールで流れる）。画面上端に残すのはチップバーだけ＝読む面積を最大化 -->
+      <header id="app-header" class="py-3">
+        <div class="flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
           <a href={siteLink("/")} class="group flex items-center gap-2.5">
             <span
               class="flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--color-brand)] font-mono text-sm font-bold text-white shadow-[0_2px_10px_var(--color-accent-glow)]"
@@ -99,24 +114,34 @@ const cfBeaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
               today<span class="text-[var(--color-accent)]">.ai</span>
             </span>
           </a>
-          <nav class="flex items-center gap-1 font-mono text-xs text-[var(--color-text-muted)]">
-            <a
-              href={siteLink("/")}
-              class="rounded-md px-2.5 py-1.5 transition-colors hover:bg-[var(--color-card-hover)] hover:text-[var(--color-text)]"
-              >FEED</a
-            >
-            <a
-              href={siteLink("/about")}
-              class="rounded-md px-2.5 py-1.5 transition-colors hover:bg-[var(--color-card-hover)] hover:text-[var(--color-text)]"
-              >ABOUT</a
-            >
-            <a
-              href={siteLink("/rss.xml")}
-              class="rounded-md px-2.5 py-1.5 transition-colors hover:bg-[var(--color-card-hover)] hover:text-[var(--color-text)]"
-              aria-label="RSS"
-              >RSS</a
-            >
-          </nav>
+          <div class="flex items-center gap-1">
+            <nav aria-label="サイト内" class="flex items-center font-mono text-xs text-[var(--color-text-muted)]">
+              {
+                navItems.map((n) => (
+                  <a
+                    href={n.href}
+                    aria-current={n.current ? "page" : undefined}
+                    class="rounded-md px-2 py-1.5 transition-colors hover:bg-[var(--color-card-hover)] hover:text-[var(--color-text)] aria-[current=page]:text-[var(--color-text)] aria-[current=page]:underline aria-[current=page]:underline-offset-4"
+                  >
+                    {n.label}
+                  </a>
+                ))
+              }
+            </nav>
+            {
+              langToggle && (
+                <button
+                  type="button"
+                  id="lang-toggle"
+                  aria-pressed="false"
+                  title="翻訳前の原文で表示する"
+                  class="ml-1 rounded-full border border-[var(--color-border)] bg-[var(--color-card)] px-2.5 py-1 text-xs font-medium text-[var(--color-text-muted)] transition-colors hover:border-[var(--color-border-strong)] hover:text-[var(--color-text)] aria-[pressed=true]:border-[var(--color-accent)] aria-[pressed=true]:bg-[var(--color-accent-glow)] aria-[pressed=true]:text-[var(--color-accent-bright)]"
+                >
+                  原文
+                </button>
+              )
+            }
+          </div>
         </div>
       </header>
 
@@ -154,7 +179,7 @@ const cfBeaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
       </nav>
 
       <!-- 追従する「トップへ戻る」ボタン。scrollY>600 で表示（位置・出し入れは globals.css の .back-to-top）。
-           z-30 = sticky ヘッダー(z-20)/フィルタ(z-10)より前面、バックリンクバー(z-40)より下 -->
+           z-30 = 固定チップバー(z-20)/セクション見出し(z-10)より前面、バックリンクバー(z-40)より下 -->
       <button
         type="button"
         id="back-to-top"
@@ -177,6 +202,25 @@ const cfBeaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
       </button>
     </div>
     <script>
+      // 表示言語トグル（日本語 / 原文）。:root.show-orig を切り替え、選択は localStorage に保存。
+      // 初期状態は <head> のインライン script が描画前に復元済み＝ここではボタンの押下状態を合わせるだけ。
+      const langToggle = document.getElementById("lang-toggle");
+      if (langToggle) {
+        const root = document.documentElement;
+        const sync = () => langToggle.setAttribute("aria-pressed", String(root.classList.contains("show-orig")));
+        sync();
+        langToggle.addEventListener("click", () => {
+          const orig = !root.classList.contains("show-orig");
+          root.classList.toggle("show-orig", orig);
+          try {
+            localStorage.setItem("todayai:lang", orig ? "orig" : "ja");
+          } catch {
+            // 保存できない環境（プライベートモード等）でも切替自体は効く
+          }
+          sync();
+        });
+      }
+
       // トップへ戻るボタンの出し入れ。rAF は使わない（非アクティブタブでは止まる）＝scroll で直接判定。
       const backToTop = document.getElementById("back-to-top");
       if (backToTop) {

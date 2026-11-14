@@ -13,24 +13,18 @@ import BilingualText from "./BilingualText.astro";
 
 interface Props {
   item: FeedItem;
-  /** ソースバッジを出すか（同じソースだけが並ぶ場所では冗長なので消せる） */
+  /** ソースバッジを出すか（同じソースだけが並ぶセクションでは見出しで分かるので出さない） */
   badge?: boolean;
-  /** 初期折りたたみ（トップの はてブ/Zenn/Qiita 3日目以降。「もっと見せる」で展開） */
-  collapsed?: boolean;
 }
 
-const { item, badge = true, collapsed = false } = Astro.props;
+const { item, badge = true } = Astro.props;
 const meta = sourceMeta(item.source);
 const thumb = displayThumb(item);
 const author = displayAuthor(item);
 const time = timeOfDay(item.publishedAt);
 ---
 
-<article
-  class:list={["row", collapsed && "is-collapsed"]}
-  data-feed-item
-  data-source={item.source}
->
+<article class="row" data-feed-item data-source={item.source}>
   {
     thumb && (
       <img
@@ -45,11 +39,11 @@ const time = timeOfDay(item.publishedAt);
       />
     )
   }
-  <h3 class="row-title">
+  <h4 class="row-title">
     <a class="row-link" href={item.url} target="_blank" rel="noopener noreferrer">
       <BilingualText orig={item.title} ja={item.titleJa} />
     </a>
-  </h3>
+  </h4>
   <p class="row-meta">
     {badge && <span class={`badge ${meta.badgeClass}`}>{meta.label}</span>}
     {author && <span class="row-author">{author}</span>}

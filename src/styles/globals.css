@@ -106,6 +106,8 @@
     text-rendering: optimizeLegibility;
     /* 固定バックリンクバーがページ内アンカーの飛び先を隠さないように */
     scroll-padding-bottom: calc(3rem + env(safe-area-inset-bottom));
+    /* Tab 移動・ページ内リンクの飛び先が固定のチップバー＋セクション見出しの下に隠れないように（WCAG 2.4.11） */
+    scroll-padding-top: calc(var(--chipbar-h) + var(--secbar-h) + 0.5rem);
   }
 
   body {
@@ -133,7 +135,7 @@
 
 /* ===== リスト行（ArticleRow / TweetRow）=====
    @layer components に置く＝ Tailwind のユーティリティで個別に上書きでき、
-   フィルタ用のレイヤー外ルール（.is-hidden / .is-collapsed の display:none）にも負ける（意図どおり）。
+   絞り込みで付く [hidden] のレイヤー外ルール（display:none!important）にも負ける（意図どおり）。
    行ごとに長いユーティリティ文字列を出すと 750 行で HTML が数 MB になるので、共通の見た目はここに集約する。 */
 @layer components {
   .row {
@@ -330,34 +332,6 @@
   }
 }
 
-/* sticky バーの高さは JS（SourceFilter）が実測して上書きする。
-   フォールバック値は従来の手書きオフセットと一致＝JS無効でも崩れない */
-:root {
-  --header-h: 57px;
-  --stack-h: 112px;
-}
-
-/* ヘッダー／フィルタの sticky 面。
-   既定は不透明（backdrop-filter 非対応でも背後のカードが透けない）、
-   対応ブラウザでのみ frosted（半透明＋ぼかし）に格上げ */
-.sticky-surface {
-  background-color: var(--color-bg);
-}
-@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
-  .sticky-surface {
-    background-color: color-mix(in srgb, var(--color-bg) 82%, transparent);
-    -webkit-backdrop-filter: saturate(140%) blur(12px);
-    backdrop-filter: saturate(140%) blur(12px);
-  }
-}
-@media (prefers-reduced-transparency: reduce) {
-  .sticky-surface {
-    background-color: var(--color-bg);
-    -webkit-backdrop-filter: none;
-    backdrop-filter: none;
-  }
-}
-
 /* hidden 属性を常に勝たせる（Tailwind の flex 等の display ユーティリティは UA の [hidden] より強いため）。
    until-found は display を触ると検索で開かなくなるので除外 */
 [hidden]:not([hidden="until-found"]) {
@@ -394,40 +368,231 @@
   background: var(--color-gcloud-bg);
 }
 
-/* フィルタ非表示用 */
-[data-source].is-hidden {
-  display: none;
+/* ===== 固定領域（チップバー＋セクション見出し）=====
+   画面上端に固定するのはこの 2 つだけ。高さは rem の定数＝ JS で実測しない（旧 ResizeObserver 方式は廃止）。
+   スマホ 844px で 2.5rem + 1.5rem + 下端バックリンクバー 36px ≈ 100px（画面の 12% 未満）。 */
+:root {
+  --chipbar-h: 2.5rem;
+  --secbar-h: 1.5rem;
 }
 
-/* 初期折りたたみ（トップの はてブ/Zenn/Qiita 3日目以降）。SSR で付くクラスなので JS 無効でも畳んだまま */
-[data-source].is-collapsed {
-  display: none;
-}
-/* 「すべて」以外で絞り込み中は折りたたみを自動解除（選んだソースは全日表示）。
-   :not(.is-hidden) が必須＝非選択ソースの折りたたみ分まで再表示しない（is-hidden を勝たせる）。
-   ラッパは Timeline のタイムレール行＝常に grid */
-:root.filter-active [data-source].is-collapsed:not(.is-hidden) {
-  display: grid;
-}
-/* 絞り込み中は自動解除で全件見えているので「もっと見せる」ボタン行は不要 */
-:root.filter-active [data-show-more-row] {
-  display: none;
-}
-/* アカウントチップの上限超過分。「他N件」ボタンで is-extra を外して展開する */
-.account-chip.is-extra {
-  display: none;
-}
+@layer components {
+  .chipbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    min-block-size: var(--chipbar-h);
+    /* 不透明（下を流れる固定見出しや行が透けない） */
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+  }
+  /* 1 行・横スクロール（折り返して何段にもしない）。右端のフェードで続きがあることを示す */
+  .chipbar-track {
+    display: flex;
+    flex: 1;
+    gap: 0.375rem;
+    min-width: 0;
+    padding-block: 0.375rem;
+    padding-inline-end: 1.5rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+    mask-image: linear-gradient(to right, #000 calc(100% - 1.5rem), transparent);
+  }
+  .chipbar-track::-webkit-scrollbar {
+    display: none;
+  }
+  .chip {
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    gap: 0.375rem;
+    min-block-size: 1.75rem;
+    padding: 0 0.75rem;
+    scroll-snap-align: start;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    background: var(--color-card);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    line-height: 1.2;
+    white-space: nowrap;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    transition:
+      color var(--duration-base),
+      border-color var(--duration-base),
+      background-color var(--duration-base);
+  }
+  .chip:hover {
+    border-color: var(--color-border-strong);
+    color: var(--color-text);
+  }
+  .chip[aria-pressed="true"] {
+    border-color: var(--color-accent);
+    background: var(--color-accent-glow);
+    color: var(--color-accent-bright);
+  }
+  .chip-count {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    font-variant-numeric: tabular-nums;
+    color: var(--color-text-subtle);
+  }
+  .chip[aria-pressed="true"] .chip-count {
+    color: inherit;
+  }
+  .chip-sm {
+    min-block-size: 1.5rem;
+    padding: 0 0.625rem;
+    font-size: 0.75rem;
+  }
+  .chip-account {
+    gap: 0.3125rem;
+    padding-left: 0.1875rem;
+  }
+  .chip-account-name {
+    max-width: 9rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  /* アカウントチップの上限超過分。「他N件」ボタンで is-extra を外して展開する */
+  .chip.is-extra {
+    display: none;
+  }
+  .chip-more {
+    border-style: dashed;
+    color: var(--color-text-subtle);
+  }
+  .avatar.avatar-xs {
+    width: 1.25rem;
+    height: 1.25rem;
+    font-size: 0.5625rem;
+  }
 
-/* 中身が全部隠れた日付セクションの見出し隠し（SourceFilter のスクリプトが付ける） */
-[data-day-section].is-hidden {
-  display: none;
-}
+  /* 絞り込みの文脈（X のアカウント行・出典）。固定しない＝スクロールで流れる */
+  .filter-context > :not([hidden]) {
+    margin-top: 0.75rem;
+  }
+  .account-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.375rem;
+  }
+  .origin-row > p {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.125rem 0.5rem;
+    font-size: 0.75rem;
+    color: var(--color-text-subtle);
+  }
+  .origin-row > p + p {
+    margin-top: 0.25rem;
+  }
+  .filter-context-label {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    color: var(--color-text-subtle);
+  }
+  .origin-link {
+    color: var(--color-accent-bright);
+    text-underline-offset: 2px;
+  }
+  .origin-link:hover {
+    text-decoration: underline;
+  }
 
-/* タイムライン行は画面外のレイアウト/描画をスキップ＝数百件のページでも初回描画が軽い。
-   contain-intrinsic-size は未描画時のプレースホルダ高（auto で一度描画した実高を記憶） */
-[data-feed-item] {
-  content-visibility: auto;
-  contain-intrinsic-size: auto 6rem;
+  /* ===== 日 → ソース別セクション（Timeline.astro）===== */
+  .day {
+    margin-top: 1.75rem;
+  }
+  /* 2 日目以降は画面外の描画を省く（1 日目＝初期表示域には付けない）。
+     --day-est は Timeline が行数から見積もった未描画時の高さ（auto で一度描画した実高を記憶） */
+  .day ~ .day {
+    content-visibility: auto;
+    contain-intrinsic-size: auto none auto var(--day-est, 40rem);
+  }
+  .day-heading {
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid var(--color-text);
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .sec {
+    margin-top: 0.75rem;
+  }
+  /* セクション見出しはチップバーの直下に固定（日付入り＝どの日のどのソースを読んでいるか分かる） */
+  .sec-bar {
+    position: sticky;
+    top: var(--chipbar-h);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-block-size: var(--secbar-h);
+    padding-block: 0.125rem;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border-strong);
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    line-height: 1.3;
+    color: var(--color-text-subtle);
+  }
+  .sec-name {
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: var(--color-text);
+  }
+  .sec-day {
+    margin-left: auto;
+  }
+
+  /* 「残り N 件」（<details>）。マーカーは Safari 分も消して自前の ▸ に */
+  .more > summary {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--color-accent-bright);
+    list-style: none;
+    cursor: pointer;
+  }
+  .more > summary::-webkit-details-marker {
+    display: none;
+  }
+  .more-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  .more-label::before {
+    content: "▸";
+    content: "▸" / "";
+    display: inline-block;
+    transition: transform var(--duration-base);
+  }
+  .more[open] .more-label::before {
+    transform: rotate(90deg);
+  }
+  .more > summary:hover .more-label {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .more-open,
+  .more[open] .more-closed {
+    display: none;
+  }
+  .more[open] .more-open {
+    display: inline;
+  }
 }
 
 /* 表示言語トグル（日本語 / 原文）。既定は日本語、:root.show-orig で原文を表示 */

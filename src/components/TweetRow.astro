@@ -33,7 +33,10 @@ const stripTco = (s?: string) => (s ? s.replace(/\s*https?:\/\/t\.co\/\S+/g, "")
 const displayBody = lp ? stripTco(body) : body?.trim();
 const displayBodyJa = lp ? stripTco(bodyJa) : bodyJa?.trim();
 const hasBody = !!(displayBody || displayBodyJa);
-const lpTitle = lp && (lp.title || lp.titleJa);
+// リンク先タイトルが本文と同じ文言（ニュース媒体の告知ツイート等）なら二重に見せない
+const norm = (t?: string) => (t ?? "").replace(/\s+/g, "");
+const lpTitle =
+  lp && (lp.title || lp.titleJa) && !(norm(displayBody).includes(norm(lp.title)) && norm(lp.title).length > 0);
 
 const name = author.kind === "handle" ? (item.authorName ?? author.handle) : author.label;
 const avatarBg = author.kind === "handle" ? avatarColor(author.handle ?? "") : "var(--color-avatar-fallback)";
@@ -72,9 +75,9 @@ const initials = author.kind === "handle" ? avatarInitials(author.handle ?? "") 
         )
       }
     </span>
-    <h3 class="row-title tweet-name">
+    <h4 class="row-title tweet-name">
       <a class="row-link" href={item.url} target="_blank" rel="noopener noreferrer">{name}</a>
-    </h3>
+    </h4>
     <p class="row-meta">
       {author.kind === "handle" && <span class="row-author">@{author.handle}</span>}
       {time && <time datetime={item.publishedAt}>{time}</time>}

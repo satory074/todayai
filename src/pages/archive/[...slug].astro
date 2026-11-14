@@ -8,6 +8,7 @@ import {
   monthKey,
   monthLabel,
   monthsOf,
+  paginateByDay,
   type FeedData,
   type FeedItem,
   type MonthMeta,
@@ -20,7 +21,8 @@ import { siteLink } from "@/lib/url";
 // ⚠️ getStaticPaths は隔離スコープで実行される（frontmatter の変数を参照できない）ので定数も中に置く。
 export async function getStaticPaths() {
   // 月内の件数分割。流入が多い月は数千件になる（今の流入は ~150件/日）ため、
-  // 月ページ1枚に全件描画するとトップと同じ肥大が再発する。
+  // 月ページ1枚に全件描画するとトップと同じ肥大が再発する。500 件を目安に「日の境目」で切る
+  // （1 日を 2 ページに割ると、その日のセクションや はてブの users 順が割れる）。
   const ARCHIVE_PAGE_SIZE = 500;
   const feed = await readFeed<FeedData>(
     { updatedAt: new Date(0).toISOString(), items: [] },
@@ -40,18 +42,13 @@ export async function getStaticPaths() {
   }
 
   return [...byMonth.entries()].flatMap(([month, monthItems]) => {
-    const pageCount = Math.max(1, Math.ceil(monthItems.length / ARCHIVE_PAGE_SIZE));
-    return Array.from({ length: pageCount }, (_, i) => {
+    const pages = paginateByDay(monthItems, ARCHIVE_PAGE_SIZE);
+    const pageCount = pages.length;
+    return pages.map((pageItems, i) => {
       const page = i + 1;
       return {
         params: { slug: page === 1 ? month : `${month}/${page}` },
-        props: {
-          month,
-          page,
-          pageCount,
-          items: monthItems.slice((page - 1) * ARCHIVE_PAGE_SIZE, page * ARCHIVE_PAGE_SIZE),
-          months,
-        },
+        props: { month, page, pageCount, items: pageItems, months },
       };
     });
   });
@@ -72,14 +69,15 @@ const pageLink = (p: number) => siteLink(p === 1 ? `/archive/${month}/` : `/arch
 ---
 
 <Layout
+  langToggle
   title={`${label}のアーカイブ${pageSuffix} | today.ai`}
   description={`${label}に集約した AI 関連情報のアーカイブ${pageSuffix}。`}
 >
-  <section class="pb-1 pt-4">
+  <section class="pb-3 pt-2">
     <h1 class="font-display text-[1.625rem] font-bold tracking-tight text-[var(--color-text)]">
       {label}のアーカイブ
     </h1>
-    <p class="mt-1.5 text-[0.8125rem] text-[var(--color-text-muted)]">
+    <p class="mt-1 text-[0.8125rem] text-[var(--color-text-muted)]">
       <span class="font-mono tabular-nums">{items.length}件{pageSuffix && ` ${pageSuffix}`}</span>
       ·
       <a href={siteLink("/")} class="text-[var(--color-accent-bright)] hover:underline">
