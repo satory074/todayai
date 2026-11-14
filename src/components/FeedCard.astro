@@ -44,29 +44,29 @@ const variant = item.source === "x" ? "tweet" : item.thumbnail ? "hero" : "compa
       <div class="relative z-10 min-w-0 p-4 sm:flex-1">
         <div class="mb-2 flex items-center gap-2">
           <span
-            class={`inline-flex items-center rounded-full px-2 py-0.5 text-[11px] font-semibold tracking-wide ${meta.badgeClass}`}
+            class={`inline-flex items-center rounded-full px-2 py-0.5 text-[0.6875rem] font-semibold tracking-wide ${meta.badgeClass}`}
           >
             {meta.label}
           </span>
           {item.author && (
-            <span class="truncate font-mono text-[11px] text-[var(--color-text-subtle)]">
+            <span class="truncate font-mono text-[0.6875rem] text-[var(--color-text-subtle)]">
               {item.author}
             </span>
           )}
         </div>
 
-        <h2 class="font-display text-[17px] font-semibold leading-snug break-words text-[var(--color-text)] transition-colors group-hover:text-[var(--color-accent-bright)]">
+        <h2 class="font-display text-[1.0625rem] font-semibold leading-snug break-words text-[var(--color-text)] transition-colors group-hover:text-[var(--color-accent-bright)]">
           <BilingualText orig={item.title} ja={item.titleJa} />
         </h2>
 
         {item.summary && (
-          <p class="mt-2 line-clamp-4 text-[13px] leading-relaxed text-[var(--color-text-muted)]">
+          <p class="mt-2 line-clamp-4 text-[0.8125rem] leading-relaxed text-[var(--color-text-muted)]">
             <BilingualText orig={item.summary} ja={item.summaryJa} />
           </p>
         )}
 
         {item.bookmarkCount !== undefined && (
-          <div class="mt-3 inline-flex items-center gap-1 rounded-md bg-[var(--color-hatena-bg)] px-2 py-0.5 text-[11px] font-medium text-[var(--color-hatena)]">
+          <div class="mt-3 inline-flex items-center gap-1 rounded-md bg-[var(--color-hatena-bg)] px-2 py-0.5 text-[0.6875rem] font-medium text-[var(--color-hatena)]">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-3 w-3">
               <path d="M6 2a2 2 0 0 0-2 2v18l8-5.5L20 22V4a2 2 0 0 0-2-2H6z" />
             </svg>
@@ -90,21 +90,21 @@ const variant = item.source === "x" ? "tweet" : item.thumbnail ? "hero" : "compa
 
       <div class="relative z-10 flex items-start gap-2.5">
         <span
-          class={`mt-px inline-flex shrink-0 items-center rounded-full px-2 py-0.5 text-[10.5px] font-semibold tracking-wide ${meta.badgeClass}`}
+          class={`mt-px inline-flex shrink-0 items-center rounded-full px-2 py-0.5 text-[0.65625rem] font-semibold tracking-wide ${meta.badgeClass}`}
         >
           {meta.label}
         </span>
         <div class="min-w-0 flex-1">
-          <h2 class="line-clamp-2 text-[14px] font-medium leading-snug text-[var(--color-text)] transition-colors group-hover:text-[var(--color-accent-bright)]">
+          <h2 class="line-clamp-2 text-sm font-medium leading-snug text-[var(--color-text)] transition-colors group-hover:text-[var(--color-accent-bright)]">
             <BilingualText orig={item.title} ja={item.titleJa} />
           </h2>
           {item.summary && (
-            <p class="mt-0.5 line-clamp-3 text-[13px] leading-relaxed text-[var(--color-text-muted)]">
+            <p class="mt-0.5 line-clamp-3 text-[0.8125rem] leading-relaxed text-[var(--color-text-muted)]">
               <BilingualText orig={item.summary} ja={item.summaryJa} />
             </p>
           )}
           {(item.author || item.bookmarkCount !== undefined) && (
-            <div class="mt-1 flex items-center gap-2 font-mono text-[11px] text-[var(--color-text-subtle)]">
+            <div class="mt-1 flex items-center gap-2 font-mono text-[0.6875rem] text-[var(--color-text-subtle)]">
               {item.author && <span class="truncate">{item.author}</span>}
               {item.bookmarkCount !== undefined && (
                 <span class="shrink-0">★ {item.bookmarkCount}</span>

@@ -19,10 +19,10 @@ const sources = order.map((key) => sourceMeta(key)).filter((s) => SOURCES.some((
 ---
 
 <Layout title="このサイトについて — today.ai">
-  <section class="prose-invert pt-6">
-    <h1 class="text-[22px] font-bold tracking-tight">このサイトについて</h1>
+  <section class="pt-6">
+    <h1 class="text-[1.375rem] font-bold tracking-tight">このサイトについて</h1>
 
-    <p class="mt-4 text-[14px] leading-relaxed text-[var(--color-text-muted)]">
+    <p class="mt-4 text-sm leading-relaxed text-[var(--color-text-muted)]">
       <strong class="text-[var(--color-text)]">today.ai</strong> は、AI関連の情報を1つのタイムラインにまとめて読むための個人用フィードです。
       数時間ごとに以下の情報源を自動取得し、時系列で表示します。
     </p>
@@ -31,11 +31,11 @@ const sources = order.map((key) => sourceMeta(key)).filter((s) => SOURCES.some((
       {
         sources.map((s) => (
           <div class="rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] p-4">
-            <span class={`${s.badgeClass} inline-flex rounded-full px-2 py-0.5 text-[11px] font-semibold`}>
+            <span class={`${s.badgeClass} inline-flex rounded-full px-2 py-0.5 text-[0.6875rem] font-semibold`}>
               {s.label}
             </span>
-            <p class="mt-2 text-[13px] text-[var(--color-text-muted)]">{descriptions[s.key]}</p>
-            <p class="mt-2 text-[12px]">
+            <p class="mt-2 text-[0.8125rem] text-[var(--color-text-muted)]">{descriptions[s.key]}</p>
+            <p class="mt-2 text-xs">
               <span class="font-mono text-[var(--color-text-subtle)]">出典</span>{" "}
               <a
                 href={s.originUrl}
@@ -47,24 +47,24 @@ const sources = order.map((key) => sourceMeta(key)).filter((s) => SOURCES.some((
               </a>
             </p>
             {s.originNote && (
-              <p class="mt-1 text-[12px] text-[var(--color-text-subtle)]">{s.originNote}</p>
+              <p class="mt-1 text-xs text-[var(--color-text-subtle)]">{s.originNote}</p>
             )}
           </div>
         ))
       }
     </div>
 
-    <h2 class="mt-8 text-[16px] font-bold tracking-tight">LayerX AI・LLM Newsletter について</h2>
-    <p class="mt-2 text-[13px] leading-relaxed text-[var(--color-text-muted)]">
+    <h2 class="mt-8 text-base font-bold tracking-tight">LayerX AI・LLM Newsletter について</h2>
+    <p class="mt-2 text-[0.8125rem] leading-relaxed text-[var(--color-text-muted)]">
       「LayerX」タブの中身は、<strong class="text-[var(--color-text)]">株式会社LayerX</strong> が発行する週刊ニュースレター
       <strong class="text-[var(--color-text)]">「LayerX AI・LLM Newsletter」</strong>（Substack・無料）に掲載された各トピックです。
       today.ai はそのリンクを1件ずつタイムラインに並べているだけなので、
       <strong class="text-[var(--color-text)]">本文そのものは配信元でお読みください。</strong>
     </p>
-    <p class="mt-2 text-[13px] leading-relaxed text-[var(--color-text-muted)]">
+    <p class="mt-2 text-[0.8125rem] leading-relaxed text-[var(--color-text-muted)]">
       購読の登録は公式ページから行えます。過去号のウェブ閲覧は購読者限定です。
     </p>
-    <p class="mt-2 text-[13px]">
+    <p class="mt-2 text-[0.8125rem]">
       <a
         href="https://layerxnews.substack.com/"
         target="_blank"
@@ -74,7 +74,7 @@ const sources = order.map((key) => sourceMeta(key)).filter((s) => SOURCES.some((
         LayerX AI・LLM Newsletter を購読する <span aria-hidden="true">↗</span>
       </a>
     </p>
-    <p class="mt-2 text-[12px] text-[var(--color-text-subtle)]">
+    <p class="mt-2 text-xs text-[var(--color-text-subtle)]">
       LayerX の
       <a
         href="https://jobs.layerx.co.jp/"
@@ -85,7 +85,7 @@ const sources = order.map((key) => sourceMeta(key)).filter((s) => SOURCES.some((
       のフッターからも、同じニュースレターが案内されています。today.ai は LayerX とは無関係の個人サイトです。
     </p>
 
-    <p class="mt-8 text-[12px] text-[var(--color-text-subtle)]">
+    <p class="mt-8 text-xs text-[var(--color-text-subtle)]">
       GitHub Actions（6時間ごと）でフィードを取得し、GitHub Pages に静的サイトとしてデプロイしています。
       各アイテムのリンク先は元の投稿・記事です。
     </p>

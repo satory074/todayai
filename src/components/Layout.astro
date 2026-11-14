@@ -30,6 +30,10 @@ const cfBeaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ライト／ダーク両対応（OS 設定に追従）。CSS より先に伝えて読み込み時の白フラッシュを抑える -->
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f7f9" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1115" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
@@ -74,7 +78,13 @@ const cfBeaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
     }
   </head>
   <body>
-    <div class="mx-auto flex min-h-screen max-w-[46rem] flex-col px-4 pb-[calc(48px+env(safe-area-inset-bottom))] sm:px-6 lg:max-w-[58rem]">
+    <!-- キーボード利用者が長いヘッダー/フィルタを飛ばして本文へ行けるスキップリンク（フォーカス時だけ見える） -->
+    <a
+      href="#main"
+      class="sr-only z-50 rounded-md bg-[var(--color-card)] px-3 py-2 text-sm font-medium text-[var(--color-accent-bright)] shadow focus:not-sr-only focus:fixed focus:left-3 focus:top-3"
+      >本文へスキップ</a
+    >
+    <div class="mx-auto flex min-h-screen max-w-[46rem] flex-col px-4 pb-[calc(3rem+env(safe-area-inset-bottom))] sm:px-6 lg:max-w-[58rem]">
       <header
         id="app-header"
         class="sticky-surface sticky top-0 z-20 -mx-4 mb-2 border-b border-[var(--color-border)] px-4 py-3 sm:-mx-6 sm:px-6"
@@ -82,14 +92,14 @@ const cfBeaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
         <div class="flex items-center justify-between gap-3">
           <a href={siteLink("/")} class="group flex items-center gap-2.5">
             <span
-              class="flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--color-accent)] font-mono text-sm font-bold text-white shadow-[0_2px_10px_var(--color-accent-glow)]"
+              class="flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--color-brand)] font-mono text-sm font-bold text-white shadow-[0_2px_10px_var(--color-accent-glow)]"
               >ai</span
             >
-            <span class="font-display text-[16px] font-bold tracking-tight">
+            <span class="font-display text-base font-bold tracking-tight">
               today<span class="text-[var(--color-accent)]">.ai</span>
             </span>
           </a>
-          <nav class="flex items-center gap-1 font-mono text-[12px] text-[var(--color-text-muted)]">
+          <nav class="flex items-center gap-1 font-mono text-xs text-[var(--color-text-muted)]">
             <a
               href={siteLink("/")}
               class="rounded-md px-2.5 py-1.5 transition-colors hover:bg-[var(--color-card-hover)] hover:text-[var(--color-text)]"
@@ -110,12 +120,12 @@ const cfBeaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
         </div>
       </header>
 
-      <main class="flex-1">
+      <main id="main" tabindex="-1" class="flex-1 focus:outline-none">
         <slot />
       </main>
 
       <footer
-        class="border-t border-[var(--color-border)] py-6 text-center text-[12px] text-[var(--color-text-subtle)]"
+        class="border-t border-[var(--color-border)] py-6 text-center text-xs text-[var(--color-text-subtle)]"
       >
         <p>
           today.ai — AI情報を1つのフィードに。X / Zenn / Qiita / はてブ / Workspace / LayerX / GCP
@@ -136,7 +146,7 @@ const cfBeaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
             target="_blank"
             rel="noopener"
             aria-label="satory074 のほかのアプリ一覧を新しいタブで開く"
-            class="inline-flex h-full items-center gap-1 px-3 font-mono text-[12px] text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-accent)]"
+            class="inline-flex h-full items-center gap-1 px-3 font-mono text-xs text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-accent-bright)]"
           >
             satory074 のほかのアプリ <span aria-hidden="true">↗</span>
           </a>

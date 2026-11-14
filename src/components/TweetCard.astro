@@ -23,7 +23,7 @@ const hasBody = !!(displayBody || displayBodyJa);
 // アバター: ハンドルがあればイニシャル＋安定色、無ければ X ロゴのインク丸
 const initialsSeed = author.handle ?? "";
 const initials = author.kind === "handle" ? avatarInitials(initialsSeed) : "";
-const avatarBg = author.kind === "handle" ? avatarColor(initialsSeed) : "var(--color-text)";
+const avatarBg = author.kind === "handle" ? avatarColor(initialsSeed) : "var(--color-avatar-fallback)";
 ---
 
 <article
@@ -40,7 +40,7 @@ const avatarBg = author.kind === "handle" ? avatarColor(initialsSeed) : "var(--c
   <!-- ヘッダー: アバター | 名前/ハンドル | X ロゴ -->
   <div class="relative z-10 flex items-start gap-3">
     <div
-      class="relative flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-full text-[14px] font-bold text-white"
+      class="relative flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-full text-sm font-bold text-white"
       style={`background:${avatarBg}`}
       aria-hidden="true"
     >
@@ -71,15 +71,15 @@ const avatarBg = author.kind === "handle" ? avatarColor(initialsSeed) : "var(--c
       {
         author.kind === "handle" ? (
           <>
-            <div class="truncate text-[15px] font-bold text-[var(--color-text)]">
+            <div class="truncate text-[0.9375rem] font-bold text-[var(--color-text)]">
               {item.authorName ?? author.handle}
             </div>
-            <div class="truncate font-mono text-[12px] text-[var(--color-text-subtle)]">
+            <div class="truncate font-mono text-xs text-[var(--color-text-subtle)]">
               @{author.handle}
             </div>
           </>
         ) : (
-          <div class="truncate pt-1 font-mono text-[12px] text-[var(--color-text-subtle)]">
+          <div class="truncate pt-1 font-mono text-xs text-[var(--color-text-subtle)]">
             {author.label}
           </div>
         )
@@ -99,7 +99,7 @@ const avatarBg = author.kind === "handle" ? avatarColor(initialsSeed) : "var(--c
   <!-- 本文（linkPreview があるときは t.co を除去。空なら非表示） -->
   {
     hasBody && (
-      <p class="relative z-10 mt-2.5 line-clamp-[8] whitespace-pre-wrap text-[15px] leading-relaxed text-[var(--color-text)]">
+      <p class="relative z-10 mt-2.5 line-clamp-[8] whitespace-pre-wrap text-[0.9375rem] leading-relaxed text-[var(--color-text)]">
         <BilingualText orig={displayBody} ja={displayBodyJa} />
       </p>
     )
@@ -141,14 +141,14 @@ const avatarBg = author.kind === "handle" ? avatarColor(initialsSeed) : "var(--c
           />
         )}
         <div class="p-3">
-          <div class="truncate font-mono text-[11px] text-[var(--color-text-subtle)]">{lp.domain}</div>
+          <div class="truncate font-mono text-[0.6875rem] text-[var(--color-text-subtle)]">{lp.domain}</div>
           {(lp.title || lp.titleJa) && (
-            <div class="mt-1 line-clamp-2 text-[14px] font-bold leading-snug text-[var(--color-text)]">
+            <div class="mt-1 line-clamp-2 text-sm font-bold leading-snug text-[var(--color-text)]">
               <BilingualText orig={lp.title} ja={lp.titleJa} />
             </div>
           )}
           {(lp.description || lp.descriptionJa) && (
-            <div class="mt-1 line-clamp-2 text-[13px] leading-relaxed text-[var(--color-text-subtle)]">
+            <div class="mt-1 line-clamp-2 text-[0.8125rem] leading-relaxed text-[var(--color-text-subtle)]">
               <BilingualText orig={lp.description} ja={lp.descriptionJa} />
             </div>
           )}
@@ -158,5 +158,5 @@ const avatarBg = author.kind === "handle" ? avatarColor(initialsSeed) : "var(--c
   }
 
   <!-- 絶対時刻 -->
-  {ts && <div class="relative z-10 mt-2.5 font-mono text-[12px] text-[var(--color-text-subtle)]">{ts}</div>}
+  {ts && <div class="relative z-10 mt-2.5 font-mono text-xs text-[var(--color-text-subtle)]">{ts}</div>}
 </article>

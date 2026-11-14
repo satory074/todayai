@@ -76,10 +76,10 @@ const pageLink = (p: number) => siteLink(p === 1 ? `/archive/${month}/` : `/arch
   description={`${label}に集約した AI 関連情報のアーカイブ${pageSuffix}。`}
 >
   <section class="pb-1 pt-4">
-    <h1 class="font-display text-[26px] font-bold tracking-tight text-[var(--color-text)]">
+    <h1 class="font-display text-[1.625rem] font-bold tracking-tight text-[var(--color-text)]">
       {label}のアーカイブ
     </h1>
-    <p class="mt-1.5 text-[13px] text-[var(--color-text-muted)]">
+    <p class="mt-1.5 text-[0.8125rem] text-[var(--color-text-muted)]">
       <span class="font-mono tabular-nums">{items.length}件{pageSuffix && ` ${pageSuffix}`}</span>
       ·
       <a href={siteLink("/")} class="text-[var(--color-accent-bright)] hover:underline">
@@ -93,7 +93,7 @@ const pageLink = (p: number) => siteLink(p === 1 ? `/archive/${month}/` : `/arch
 
   {
     pageCount > 1 && (
-      <nav aria-label="月内ページ" class="mt-8 flex items-center justify-between font-mono text-[13px] text-[var(--color-text-muted)]">
+      <nav aria-label="月内ページ" class="mt-8 flex items-center justify-between font-mono text-[0.8125rem] text-[var(--color-text-muted)]">
         {page > 1 ? (
           <a href={pageLink(page - 1)} class="hover:text-[var(--color-accent-bright)]">
             ← 新しい
