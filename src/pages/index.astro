@@ -18,9 +18,9 @@ const allItems = [...feed.items]
   .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 
 // 全件（数千件）を1ページに描画すると HTML が10MB超・DOM 数万ノードになり読み込みが数秒かかる。
-// トップは直近7 JST暦日のみ（基準は最新アイテムの暦日）。各日はソース別セクションに分け、
-// セクションごとに先頭数件＋「残り N 件」（Timeline の collapse）。過去分は月別アーカイブへ。
-const items = takeRecentWindow(allItems);
+// トップは直近7 JST暦日のみ（基準は最新アイテムの暦日）。全ソースを時刻順に混ぜて並べ、流量の多い
+// はてブ・Zenn・Qiita は直近2日だけ出して残りを日ごとの「もっと見せる」に畳む（collapsedIds）。過去分は月別アーカイブへ。
+const { items, collapsedIds } = takeRecentWindow(allItems);
 const months = monthsOf(allItems);
 
 // 更新時刻はビルド時には絶対表記で出す（相対表記をビルド時に決めると、6 時間ごとの静的ビルドなので
@@ -61,7 +61,7 @@ const months = monthsOf(allItems);
         </p>
       </div>
     ) : (
-      <Timeline items={items} collapse markNew />
+      <Timeline items={items} collapsedIds={collapsedIds} markNew />
     )
   }
 

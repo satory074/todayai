@@ -1,0 +1,132 @@
+---
+/**
+ * X の投稿 1 件のカード。アバター・表示名/@handle・X ロゴ → 本文 8 行 → 添付画像 16:9 →
+ * リンクプレビュー（本文 t.co の行き先。画像 16:9＋ドメイン＋タイトル＋説明）。
+ * カード全面のリンク（ツイートへ）は表示名のリンクを ::after で引き伸ばす（FeedCard と同じ .card-link）。
+ * リンクプレビューは別リンクとして全面リンクの上に重ねる＝そこを押すとリンク先へ。
+ * 時刻は Timeline 左の時刻レールに出すのでカードには出さない。
+ * X ロゴは Timeline が 1 回だけ出す <symbol id="x-logo"> を <use> で参照（件数分 path を出さない）。
+ */
+import type { FeedItem } from "@/lib/feed";
+import { avatarColor, avatarInitials, parseXAuthor } from "@/lib/feed";
+import BilingualText from "./BilingualText.astro";
+
+interface Props {
+  item: FeedItem;
+}
+
+const { item } = Astro.props;
+const author = parseXAuthor(item.author);
+const body = item.summary ?? item.title;
+const bodyJa = item.summaryJa ?? item.titleJa;
+
+// リンクプレビューがあるときは本文の t.co を落として生 URL を隠す（空になれば本文ごと出さない）
+const lp = item.linkPreview;
+const stripTco = (s?: string) => (s ? s.replace(/\s*https?:\/\/t\.co\/\S+/g, "").trim() : s);
+const displayBody = lp ? stripTco(body) : body?.trim();
+const displayBodyJa = lp ? stripTco(bodyJa) : bodyJa?.trim();
+const hasBody = !!(displayBody || displayBodyJa);
+// リンク先タイトルが本文と同じ文言（ニュース媒体の告知ツイート等）なら二重に見せない
+const norm = (t?: string) => (t ?? "").replace(/\s+/g, "");
+const lpTitle =
+  lp && (lp.title || lp.titleJa) && !(norm(displayBody).includes(norm(lp.title)) && norm(lp.title).length > 0);
+
+const isHandle = author.kind === "handle";
+const name = isHandle ? (item.authorName ?? author.handle) : author.label;
+// アバター: ハンドルがあればイニシャル＋安定色、無ければ X ロゴ
+const avatarBg = isHandle ? avatarColor(author.handle ?? "") : "var(--color-avatar-fallback)";
+---
+
+<article class="card card-tweet">
+  <div class="tweet-head">
+    <span class="avatar avatar-lg" style={`background:${avatarBg}`} aria-hidden="true">
+      {
+        isHandle ? (
+          avatarInitials(author.handle ?? "")
+        ) : (
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <use href="#x-logo" />
+          </svg>
+        )
+      }
+      {
+        item.avatarUrl && (
+          <img
+            src={item.avatarUrl}
+            alt=""
+            width="44"
+            height="44"
+            loading="lazy"
+            decoding="async"
+            onerror="this.remove()"
+          />
+        )
+      }
+    </span>
+    <div class="tweet-who">
+      <h3 class:list={["tweet-name", !isHandle && "tweet-label"]}>
+        <a class="card-link" href={item.url} target="_blank" rel="noopener noreferrer">{name}</a>
+      </h3>
+      {isHandle && <p class="tweet-handle">@{author.handle}</p>}
+    </div>
+    <svg class="tweet-xlogo" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <use href="#x-logo" />
+    </svg>
+  </div>
+
+  {
+    hasBody && (
+      <p class="tweet-body">
+        <BilingualText orig={displayBody} ja={displayBodyJa} />
+      </p>
+    )
+  }
+
+  {
+    item.thumbnail && (
+      <div class="tweet-media">
+        <img
+          src={item.thumbnail}
+          alt=""
+          width="640"
+          height="360"
+          loading="lazy"
+          decoding="async"
+          onerror="this.parentElement.remove()"
+        />
+      </div>
+    )
+  }
+
+  {
+    lp && (
+      <a class="tweet-link" href={lp.url} target="_blank" rel="noopener noreferrer">
+        {lp.image && (
+          <img
+            class="tweet-link-img"
+            src={lp.image}
+            alt=""
+            width="640"
+            height="360"
+            loading="lazy"
+            decoding="async"
+            onerror="this.remove()"
+          />
+        )}
+        <div class="tweet-link-body">
+          <div class="tweet-link-domain">{lp.domain}</div>
+          {lpTitle && (
+            <div class="tweet-link-title">
+              <BilingualText orig={lp.title} ja={lp.titleJa} />
+            </div>
+          )}
+          {(lp.description || lp.descriptionJa) && (
+            <div class="tweet-link-desc">
+              <BilingualText orig={lp.description} ja={lp.descriptionJa} />
+            </div>
+          )}
+        </div>
+      </a>
+    )
+  }
+</article>

@@ -1,8 +1,8 @@
 ---
 /**
  * 絞り込み UI。
- *   1) 固定のチップバー（#source-filter）: セクション単位（すべて/X/公式/はてブ/LayerX/Zenn/Qiita）。
- *      1 行・横スクロール。画面上端に固定するのはこれ 1 本だけ（＋各セクションの固定見出し）。
+ *   1) 固定のチップバー（#source-filter）: すべて/X/公式/はてブ/LayerX/Zenn/Qiita（SECTIONS。公式＝Workspace＋GCP）。
+ *      1 行・横スクロール。画面上端に固定するのはこれ 1 本だけ（＋各日の固定の日付札）。
  *   2) 絞り込みの文脈（#filter-context、固定しない）: X のアカウント行と出典リンク。
  *      かつてはチップバーの 2・3 段目に入れていて、X を選ぶと固定領域がスマホ画面の 41% を占めた。
  *
@@ -138,50 +138,26 @@ const extraAccountCount = Math.max(0, xAccounts.length - ACCOUNT_CHIP_LIMIT);
   const originXLabel = document.querySelector<HTMLElement>("[data-origin-x-label]");
   const context = document.getElementById("filter-context");
   const days = Array.from(document.querySelectorAll<HTMLElement>("[data-day]"));
-  const sections = Array.from(document.querySelectorAll<HTMLElement>("[data-section]"));
-  const xRows = Array.from(document.querySelectorAll<HTMLElement>('[data-feed-item][data-source="x"]'));
+  const rows = Array.from(document.querySelectorAll<HTMLElement>("[data-feed-item]"));
 
   const validSections = new Set(sectionChips.map((c) => c.dataset.filter));
   const validAccounts = new Set(accountChips.map((c) => c.dataset.account));
 
-  // 絞り込みは2軸: ①セクション（チップバー）×②X のアカウント（X の行にだけ効く＝他セクションは出したまま）
+  // 絞り込みは2軸: ①チップ（行の data-sec）×②X のアカウント（X の行にだけ効く＝他ソースは出したまま）
   let sectionFilter = "all";
   let accountFilter = "all";
 
   function applyFilters() {
-    for (const sec of sections) {
-      sec.hidden = sectionFilter !== "all" && sec.dataset.section !== sectionFilter;
+    for (const row of rows) {
+      const offSection = sectionFilter !== "all" && row.dataset.sec !== sectionFilter;
+      const offAccount = accountFilter !== "all" && row.dataset.source === "x" && row.dataset.xAccount !== accountFilter;
+      row.hidden = offSection || offAccount;
     }
-    for (const row of xRows) {
-      row.hidden = accountFilter !== "all" && row.dataset.xAccount !== accountFilter;
-    }
-
-    // 件数・「残り N 件」を見えている行で数え直し、空になった段・日は見出しごと隠す
-    for (const sec of sections) {
-      if (sec.hidden) continue;
-      const visible = sec.querySelectorAll("[data-feed-item]:not([hidden])").length;
-      const count = sec.querySelector("[data-count]");
-      if (count) count.textContent = String(visible);
-      const more = sec.querySelector<HTMLDetailsElement>("[data-more]");
-      if (more) {
-        // 絞り込みで自動的に開いた分はいったん閉じて、今の条件で判定し直す
-        if (more.dataset.autoOpen) {
-          more.open = false;
-          delete more.dataset.autoOpen;
-        }
-        const inMore = more.querySelectorAll("[data-feed-item]:not([hidden])").length;
-        const moreCount = more.querySelector("[data-more-count]");
-        if (moreCount) moreCount.textContent = String(inMore);
-        more.hidden = inMore === 0;
-        // 例外: 先頭の行が全部絞り込みで消え、畳んだ側にだけ該当がある → 開いて見せる
-        if (visible === inMore && inMore > 0 && !more.open) {
-          more.open = true;
-          more.dataset.autoOpen = "1";
-        }
-      }
-      sec.hidden = visible === 0;
-    }
-    for (const day of days) day.hidden = !day.querySelector("[data-section]:not([hidden])");
+    // 「すべて」以外を選んだら、トップの折りたたみ（はてブ・Zenn・Qiita の 3 日目以降）を解除して全日出す。
+    // globals.css が :root.filter-active を見て is-collapsed を表示し、「もっと見せる」ボタンを隠す。
+    document.documentElement.classList.toggle("filter-active", sectionFilter !== "all");
+    // 該当行が 1 件も無い日は日付札ごと隠す
+    for (const day of days) day.hidden = !day.querySelector("[data-feed-item]:not([hidden])");
 
     for (const chip of sectionChips) {
       chip.setAttribute("aria-pressed", String(chip.dataset.filter === sectionFilter));

@@ -1,0 +1,92 @@
+---
+/**
+ * 1 件のカード。画像の有無でレイアウトを分ける（X は TweetCard）。
+ *   hero    画像あり。スマホは 16:9 の画像を見出しの上に、sm 以上は左に 14rem。
+ *   compact 画像なし。バッジ＋見出し 2 行＋要約 3 行の小さいカード。
+ * 画像は item.thumbnail をそのまま出す（Zenn/Qiita のタイトル入り自動生成 OGP も出す）。
+ *
+ * カード全体をクリック可能にする方法は「見出しのリンクを ::after でカード全面に引き伸ばす」型
+ * （globals.css の .card-link）。空の <a aria-label> を被せる方式は、読み上げ名（原文タイトル）と
+ * 見えている文字（日本語訳）が食い違い WCAG 2.5.3 に反する＝リンク名は見えている見出しそのもの。
+ * 見た目は globals.css の @layer components（.card / .card-hero / .card-compact）に集約。
+ */
+import type { FeedItem } from "@/lib/feed";
+import { displayAuthor, sourceMeta } from "@/lib/feed";
+import TweetCard from "./TweetCard.astro";
+import BilingualText from "./BilingualText.astro";
+
+interface Props {
+  item: FeedItem;
+}
+
+const { item } = Astro.props;
+const meta = sourceMeta(item.source);
+const author = displayAuthor(item);
+const variant = item.source === "x" ? "tweet" : item.thumbnail ? "hero" : "compact";
+---
+
+{
+  variant === "tweet" ? (
+    <TweetCard item={item} />
+  ) : variant === "hero" ? (
+    <article class="card card-hero">
+      <div class="card-thumb">
+        <img
+          src={item.thumbnail}
+          alt=""
+          width="640"
+          height="360"
+          loading="lazy"
+          decoding="async"
+          onerror="this.parentElement.remove()"
+        />
+      </div>
+      <div class="card-body">
+        <p class="card-meta">
+          <span class={`badge ${meta.badgeClass}`}>{meta.label}</span>
+          {author && <span class="card-author">{author}</span>}
+        </p>
+        <h3 class="card-title">
+          <a class="card-link" href={item.url} target="_blank" rel="noopener noreferrer">
+            <BilingualText orig={item.title} ja={item.titleJa} />
+          </a>
+        </h3>
+        {item.summary && (
+          <p class="card-summary">
+            <BilingualText orig={item.summary} ja={item.summaryJa} />
+          </p>
+        )}
+        {item.bookmarkCount !== undefined && (
+          <p class="card-users">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M6 2a2 2 0 0 0-2 2v18l8-5.5L20 22V4a2 2 0 0 0-2-2H6z" />
+            </svg>
+            {item.bookmarkCount} users
+          </p>
+        )}
+      </div>
+    </article>
+  ) : (
+    <article class="card card-compact">
+      <span class={`badge ${meta.badgeClass}`}>{meta.label}</span>
+      <div class="card-compact-main">
+        <h3 class="card-title-sm">
+          <a class="card-link" href={item.url} target="_blank" rel="noopener noreferrer">
+            <BilingualText orig={item.title} ja={item.titleJa} />
+          </a>
+        </h3>
+        {item.summary && (
+          <p class="card-summary">
+            <BilingualText orig={item.summary} ja={item.summaryJa} />
+          </p>
+        )}
+        {(author || item.bookmarkCount !== undefined) && (
+          <p class="card-foot">
+            {author && <span class="card-author">{author}</span>}
+            {item.bookmarkCount !== undefined && <span>★ {item.bookmarkCount}</span>}
+          </p>
+        )}
+      </div>
+    </article>
+  )
+}

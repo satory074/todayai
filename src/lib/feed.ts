@@ -201,38 +201,7 @@ export function sourceMeta(source: FeedSource): SourceMeta {
   );
 }
 
-// ===== 表示用の取捨選択（サムネ・著者）=====
-
-/**
- * 「タイトル文字を焼き込んだだけ」の自動生成 OGP 画像の URL パターン。見出しと同じ文字を
- * 画像でもう一度見せるだけなので表示しない（実測: Zenn 992/1000 件・Qiita ほぼ全件がこれ）。
- * はてブ・X のリンク先がこれらのサイトのこともあるので、ソースではなく URL でも判定する。
- */
-const AUTO_OGP_PATTERNS = [
-  "res.cloudinary.com/zenn/", // Zenn の記事 OGP（タイトル＋著者アイコン）
-  "article-ogp-background", // Qiita の記事 OGP（二重エンコードされた URL 内にもこの文字列が残る）
-  "ogimage.blog.st-hatena.com", // はてなブログの自動 OGP
-  "s.tgstc.com/ogp", // Togetter の自動 OGP
-  "opengraph.githubassets.com", // GitHub リポジトリの自動カード
-  "anond.hatelabo.jp/assets", // はてな匿名ダイアリーのロゴ
-];
-
-/** 記事サムネを出さないソース（ほぼ全件が自動生成 OGP） */
-const NO_THUMB_SOURCES: readonly FeedSource[] = ["zenn", "qiita"];
-
-/** 画像 URL が「見る価値のある実写系」か（自動生成 OGP でないか）。 */
-export function isUsefulImage(url?: string): url is string {
-  return !!url && !AUTO_OGP_PATTERNS.some((p) => url.includes(p));
-}
-
-/** 行の右に出すサムネ。出さないなら undefined。X は添付メディア → リンク先画像の順。 */
-export function displayThumb(item: FeedItem): string | undefined {
-  if (NO_THUMB_SOURCES.includes(item.source)) return undefined;
-  if (isUsefulImage(item.thumbnail)) return item.thumbnail;
-  const linkImage = item.linkPreview?.image;
-  if (item.source === "x" && isUsefulImage(linkImage)) return linkImage;
-  return undefined;
-}
+// ===== 表示用の取捨選択（著者）=====
 
 /**
  * 旧集約が author に入れていたフィード名（記事の書き手ではない）。全件に同じ文言が出るだけなので隠す。
@@ -243,7 +212,7 @@ const FEED_NAME_AUTHORS = new Set(["Zennの「AI」のフィード", "AIタグ�
 /** author が常にフィード名・発行元になるソース（書き手の情報がない） */
 const NO_AUTHOR_SOURCES: readonly FeedSource[] = ["layerx", "workspace", "gcloud"];
 
-/** 記事行に出す著者名。出さないなら undefined（X は TweetRow が別に扱う）。 */
+/** 記事カードに出す著者名。出さないなら undefined（X は TweetCard が別に扱う）。 */
 export function displayAuthor(item: FeedItem): string | undefined {
   if (item.source === "x" || NO_AUTHOR_SOURCES.includes(item.source)) return undefined;
   const a = item.author?.trim();
@@ -459,9 +428,9 @@ export function monthsOf(items: FeedItem[]): MonthMeta[] {
   return [...months.values()];
 }
 
-// ===== 日ごと×ソース別セクション（朝刊型）=====
-// 1 日の中を「X → 公式 → はてブ → LayerX → Zenn → Qiita」の段に分け、各段は先頭数件＋「残り N 件」。
-// 時刻順に全ソースを混ぜると Zenn だけで 1 日 40 件あり、公式発表（X の公式アカウント・Workspace・GCP）が埋もれるため。
+// ===== 絞り込みチップの単位 =====
+// タイムラインは全ソースを時刻順に混ぜて出す。チップだけは Workspace と GCP を「公式」にまとめる
+// （どちらも 1 日 1〜2 件で、別々のチップにするとチップバーが長くなるだけ）。
 
 export type SectionKey = "x" | "official" | "hatena" | "layerx" | "zenn" | "qiita";
 
@@ -469,36 +438,20 @@ export interface SectionDef {
   key: SectionKey;
   /** フィルタチップの表示名 */
   label: string;
-  /** セクション見出しの表示名 */
-  heading: string;
   sources: readonly FeedSource[];
-  /** 並べ方。bookmarks = はてブの users 降順（同数は新しい順のまま） */
-  order: "time" | "bookmarks";
-  /** トップで最初に見せる件数（残りは「残り N 件」に畳む）。null = 畳まない */
-  head: number | null;
-  /** 行にソースバッジを出すか（複数ソースが混ざるセクションだけ。単一ソースなら見出しで分かる） */
-  badge: boolean;
 }
 
-/** 並び順がそのまま 1 日の中のセクション順・フィルタチップの順。 */
+/** 並び順がそのままフィルタチップの順。 */
 export const SECTIONS: readonly SectionDef[] = [
-  { key: "x", label: "X", heading: "X", sources: ["x"], order: "time", head: 10, badge: false },
-  {
-    key: "official",
-    label: "公式",
-    heading: "公式アップデート",
-    sources: ["workspace", "gcloud"],
-    order: "time",
-    head: null,
-    badge: true,
-  },
-  { key: "hatena", label: "はてブ", heading: "はてブ", sources: ["hatena"], order: "bookmarks", head: 5, badge: false },
-  { key: "layerx", label: "LayerX", heading: "LayerX", sources: ["layerx"], order: "time", head: 5, badge: false },
-  { key: "zenn", label: "Zenn", heading: "Zenn", sources: ["zenn"], order: "time", head: 5, badge: false },
-  { key: "qiita", label: "Qiita", heading: "Qiita", sources: ["qiita"], order: "time", head: 5, badge: false },
+  { key: "x", label: "X", sources: ["x"] },
+  { key: "official", label: "公式", sources: ["workspace", "gcloud"] },
+  { key: "hatena", label: "はてブ", sources: ["hatena"] },
+  { key: "layerx", label: "LayerX", sources: ["layerx"] },
+  { key: "zenn", label: "Zenn", sources: ["zenn"] },
+  { key: "qiita", label: "Qiita", sources: ["qiita"] },
 ];
 
-/** ソース → セクション。Record なのでソースを足すと型エラーになり、割り当て漏れに気づける。 */
+/** ソース → チップ。Record なのでソースを足すと型エラーになり、割り当て漏れに気づける。 */
 export const SECTION_OF: Record<FeedSource, SectionKey> = {
   x: "x",
   workspace: "official",
@@ -509,68 +462,36 @@ export const SECTION_OF: Record<FeedSource, SectionKey> = {
   qiita: "qiita",
 };
 
-/** 「残り N 件」にする最小件数。残りが 1〜2 件なら畳まず全部出す（開く手間の方が大きい） */
-const MIN_COLLAPSE = 3;
+// ===== 日ごとのまとまり（時系列タイムライン）=====
 
-export interface DaySection {
-  def: SectionDef;
-  /** 最初から見せる行 */
-  head: FeedItem[];
-  /** 「残り N 件」に畳む行（collapse:false なら常に空） */
-  rest: FeedItem[];
-}
-
-export interface DayBlock {
+export interface DayGroup {
   /** JST 暦日 "2026-11-14" */
   key: string;
-  /** "11月14日(金)" */
+  /** "11月14日(土)" */
   label: string;
-  /** "11/14(金)"（固定のセクション見出し用） */
-  short: string;
-  sections: DaySection[];
+  /** その日のアイテム（入力の並び＝新しい順のまま） */
+  items: FeedItem[];
 }
 
-/**
- * items（降順ソート済み想定）を JST 暦日 → セクションに分ける。
- * collapse=true（トップ）なら各セクションを SectionDef.head 件＋残りに分け、false（アーカイブ）なら全件を head に入れる。
- */
-export function groupDaySections(items: FeedItem[], opts: { collapse: boolean }): DayBlock[] {
-  // Map は挿入順＝最初に現れた順。items が新しい順なので日も新しい順になる
-  const byDay = new Map<string, Map<SectionKey, FeedItem[]>>();
+/** items（降順ソート済み想定）を JST 暦日ごとにまとめる。日も新しい順。 */
+export function groupByDay(items: FeedItem[]): DayGroup[] {
+  const groups: DayGroup[] = [];
+  let current: DayGroup | undefined;
   for (const item of items) {
     const key = dayKey(item.publishedAt);
     if (!key) continue;
-    let day = byDay.get(key);
-    if (!day) byDay.set(key, (day = new Map()));
-    const sk = SECTION_OF[item.source];
-    const list = day.get(sk);
-    if (list) list.push(item);
-    else day.set(sk, [item]);
-  }
-
-  const blocks: DayBlock[] = [];
-  for (const [key, bySection] of byDay) {
-    const sections: DaySection[] = [];
-    for (const def of SECTIONS) {
-      const list = bySection.get(def.key);
-      if (!list?.length) continue;
-      // sort は安定ソート＝同じ users 数なら元の新しい順が保たれる
-      const sorted =
-        def.order === "bookmarks"
-          ? [...list].sort((a, b) => (b.bookmarkCount ?? 0) - (a.bookmarkCount ?? 0))
-          : list;
-      let n = opts.collapse && def.head !== null ? def.head : sorted.length;
-      if (sorted.length - n < MIN_COLLAPSE) n = sorted.length;
-      sections.push({ def, head: sorted.slice(0, n), rest: sorted.slice(n) });
+    if (current?.key !== key) {
+      current = { key, label: formatDayLabel(key), items: [] };
+      groups.push(current);
     }
-    blocks.push({ key, label: formatDayLabel(key), short: formatDayShort(key), sections });
+    current.items.push(item);
   }
-  return blocks;
+  return groups;
 }
 
 /**
  * アーカイブの月内ページ分割。target 件を目安に「日の境目」でだけ切る
- * （1 日の途中で切ると、その日のはてブ users 順やセクションが 2 ページに割れるため）。
+ * （1 日の途中で切ると、日付見出しと「その日の分」が 2 ページに割れて読みにくいため）。
  * 1 日だけで target を超える日はその日ごと 1 ページ。items は降順ソート済み想定。
  */
 export function paginateByDay(items: FeedItem[], target: number): FeedItem[][] {
@@ -592,26 +513,43 @@ export function paginateByDay(items: FeedItem[], target: number): FeedItem[][] {
   return pages;
 }
 
-// トップページの表示ウィンドウ。全ソース直近 WINDOW_DAYS 日（JST 暦日）を描画する。
-// それより前は月別アーカイブへ。各セクションの畳み込みは groupDaySections が行う。
+// トップページの表示ウィンドウ。全ソース直近 WINDOW_DAYS 日（JST 暦日）を描画し、
+// 流量の多い LIMITED_SOURCES は初期表示 LIMITED_DAYS 日＋残りを折りたたみ（「もっと見せる」で展開）。
+// それより前は月別アーカイブへ。
 const WINDOW_DAYS = 7;
+const LIMITED_DAYS = 2;
+/** 初期表示を LIMITED_DAYS 日に制限するソース（並びは「もっと見せる」ボタン文言の表示順） */
+export const LIMITED_SOURCES: readonly FeedSource[] = ["hatena", "zenn", "qiita"];
 
 /** JST 暦日キーを days 日ずらす（負で過去）。UTC 正午に置けば JST でも同じ暦日 */
 function shiftDayKey(key: string, days: number): string {
   return dayKey(new Date(new Date(key + "T12:00:00Z").getTime() + days * 86400000).toISOString());
 }
 
+export interface RecentWindow {
+  items: FeedItem[];
+  /** 初期状態で折りたたむアイテム id（LIMITED_SOURCES の LIMITED_DAYS+1 日目以降） */
+  collapsedIds: Set<string>;
+}
+
 /**
  * 降順ソート済み items から直近 WINDOW_DAYS 日（JST 暦日）分を切り出す。
  * 基準日は最新アイテムの暦日（wall-clock ではない＝フィードが stale でも空ページにならない）。
  */
-export function takeRecentWindow(items: FeedItem[]): FeedItem[] {
-  if (items.length === 0) return [];
-  const cutoff = shiftDayKey(dayKey(items[0].publishedAt), -(WINDOW_DAYS - 1));
-  return items.filter((item) => {
+export function takeRecentWindow(items: FeedItem[]): RecentWindow {
+  const collapsedIds = new Set<string>();
+  if (items.length === 0) return { items: [], collapsedIds };
+  const anchor = dayKey(items[0].publishedAt);
+  const cutoff = shiftDayKey(anchor, -(WINDOW_DAYS - 1));
+  const limitedCutoff = shiftDayKey(anchor, -(LIMITED_DAYS - 1));
+  const out: FeedItem[] = [];
+  for (const item of items) {
     const key = dayKey(item.publishedAt);
-    return !!key && key >= cutoff;
-  });
+    if (!key || key < cutoff) continue;
+    out.push(item);
+    if (key < limitedCutoff && LIMITED_SOURCES.includes(item.source)) collapsedIds.add(item.id);
+  }
+  return { items: out, collapsedIds };
 }
 
 // JST 暦日 key（"2026-11-14"）の表示。UTC 正午に置けば JST でフォーマットしても同じ日付。
@@ -623,19 +561,8 @@ const DAY_LABEL_FMT = new Intl.DateTimeFormat("ja-JP", {
   day: "numeric",
   weekday: "short",
 });
-const DAY_SHORT_FMT = new Intl.DateTimeFormat("ja-JP", {
-  timeZone: "Asia/Tokyo",
-  month: "numeric",
-  day: "numeric",
-  weekday: "short",
-});
 
 /** "11月14日(金)" */
 export function formatDayLabel(key: string): string {
   return DAY_LABEL_FMT.format(new Date(key + "T12:00:00Z"));
-}
-
-/** "11/14(金)" */
-export function formatDayShort(key: string): string {
-  return DAY_SHORT_FMT.format(new Date(key + "T12:00:00Z"));
 }

@@ -1,94 +1,105 @@
 ---
 /**
- * 日ごと×ソース別セクション（朝刊型）。
- *   section[data-day]            日（h2）
- *     section[data-section=…]    ソース別の段（固定見出し h3。日付入り＝スクロール中もどの日か分かる）
- *       行（ArticleRow / TweetRow、h4）× 先頭 N 件
- *       <details data-more>      「残り N 件」（ネイティブ。JS 不要・ページ内検索で開く・Safari 可）
+ * 時系列タイムライン。その日の全ソースを時刻の新しい順に混ぜて並べる。
+ *   section[data-day]          日（固定の日付札 h2）
+ *     div[data-feed-item]      行＝左に時刻レール、右に縦線とカード（FeedCard / TweetCard、h3）
+ *     [data-show-more-row]     トップの 3 日目以降だけ「はてブ・Zenn・Qiita をもっと見せる（N件）」
  *
- * data-day / data-section / data-feed-item / data-source / data-x-account / data-more / data-count /
- * data-more-count は SourceFilter のスクリプトが絞り込みに使うので変えないこと。
+ * data-day / data-feed-item / data-source / data-sec / data-x-account と is-collapsed / data-show-more-row は
+ * SourceFilter のスクリプトと globals.css が絞り込み・折りたたみに使うので変えないこと。
  *
  * 末尾の script は閲覧時の補正: 「今日/昨日」と更新時刻の相対表記（ビルド時に決めると 6 時間ごとの
  * 静的ビルドなのでずれる）、トップだけ「前回以降の新着」（data-k と localStorage の既読集合を比較）。
  */
-import ArticleRow from "./ArticleRow.astro";
-import TweetRow from "./TweetRow.astro";
-import { groupDaySections, itemKey, type FeedItem } from "@/lib/feed";
+import FeedCard from "./FeedCard.astro";
+import {
+  LIMITED_SOURCES,
+  SECTION_OF,
+  groupByDay,
+  itemKey,
+  sourceLabel,
+  timeOfDay,
+  xAccountKey,
+  type FeedItem,
+} from "@/lib/feed";
 
 interface Props {
   items: FeedItem[];
-  /** true（トップ）なら各セクションを先頭数件＋「残り N 件」に畳む。アーカイブは false（全件表示） */
-  collapse?: boolean;
+  /** トップ専用: 初期折りたたみ対象の id（「もっと見せる」で展開）。未指定（アーカイブ）なら全件表示 */
+  collapsedIds?: Set<string>;
   /** true（トップ）なら「前回以降の新着」に印を付ける */
   markNew?: boolean;
 }
 
-const { items, collapse = false, markNew = false } = Astro.props;
-const k = (item: FeedItem) => (markNew ? itemKey(item.id) : undefined);
-const days = groupDaySections(items, { collapse });
+const { items, collapsedIds, markNew = false } = Astro.props;
+const days = groupByDay(items);
+const showMoreLabel = LIMITED_SOURCES.map(sourceLabel).join("・");
+const isCollapsed = (item: FeedItem) => !!collapsedIds?.has(item.id);
 
 // 2 日目以降は content-visibility:auto で画面外の描画を省く（1 日目＝初期表示域には付けない）。
-// 未描画時のプレースホルダ高は「見えている行数 × 平均行高」で見積もる（ずれても auto で実高を記憶）。
-const estimateRem = (day: (typeof days)[number]) =>
-  day.sections.reduce((sum, s) => sum + 2 + s.head.length * 5.75 + (s.rest.length ? 2.5 : 0), 3);
+// 未描画時のプレースホルダ高は「畳まれていない行のカード種別ごとの目安高」の合計で見積もる
+// （ずれても auto で一度描画した実高を記憶する）。
+const cardEstimateRem = (item: FeedItem) => (item.source === "x" ? 17 : item.thumbnail ? 18 : 7.5) + 0.75;
+const estimateRem = (list: FeedItem[]) =>
+  list.reduce((sum, item) => sum + (isCollapsed(item) ? 0 : cardEstimateRem(item)), 3);
 ---
+
+<!-- X ロゴ（TweetCard が <use href="#x-logo"> で参照）。件数分の path を出さないために 1 回だけ置く -->
+<svg width="0" height="0" class="absolute" aria-hidden="true">
+  <symbol id="x-logo" viewBox="0 0 24 24">
+    <path
+      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+    ></path>
+  </symbol>
+</svg>
+<!-- JS 無効時は「もっと見せる」が押せないので最初から全部出す -->
+<noscript><style>.tl-row.is-collapsed{display:grid!important}[data-show-more-row]{display:none!important}</style></noscript>
 
 <div class="days">
   {
-    days.map((day) => (
-      <section data-day id={`d-${day.key}`} class="day" style={`--day-est:${estimateRem(day)}rem`}>
-        <h2 class="day-heading">
-          <time datetime={day.key} data-day-label>
-            {day.label}
-          </time>
-        </h2>
-        {day.sections.map((sec) => (
-          <section data-section={sec.def.key} class="sec">
-            <h3 class="sec-bar">
-              <span class="sec-name">{sec.def.heading}</span>
-              <span class="sec-count">
-                <span data-count>{sec.head.length + sec.rest.length}</span>件
-              </span>
-              {markNew && <span class="new-pill" data-sec-new hidden />}
-              <span class="sec-day" aria-hidden="true">
-                {day.short}
-              </span>
-            </h3>
-            {sec.head.map((item) =>
-              item.source === "x" ? (
-                <TweetRow item={item} k={k(item)} />
-              ) : (
-                <ArticleRow item={item} badge={sec.def.badge} k={k(item)} />
-              ),
+    days.map((day) => {
+      const collapsedCount = day.items.filter(isCollapsed).length;
+      return (
+        <section data-day id={`d-${day.key}`} class="day" style={`--day-est:${estimateRem(day.items)}rem`}>
+          <h2 class="day-heading">
+            <time datetime={day.key} data-day-label>
+              {day.label}
+            </time>
+            {markNew && <span class="new-pill" data-day-new hidden />}
+          </h2>
+          <div class="day-items">
+            {day.items.map((item) => (
+              <div
+                class:list={["tl-row", isCollapsed(item) && "is-collapsed"]}
+                data-feed-item
+                data-source={item.source}
+                data-sec={SECTION_OF[item.source]}
+                data-x-account={item.source === "x" ? xAccountKey(item) : undefined}
+                data-k={markNew ? itemKey(item.id) : undefined}
+              >
+                <time class="tl-time" datetime={item.publishedAt}>
+                  {timeOfDay(item.publishedAt)}
+                </time>
+                <div class="tl-card">
+                  <FeedCard item={item} />
+                </div>
+              </div>
+            ))}
+            {collapsedCount > 0 && (
+              <div class="tl-row" data-show-more-row>
+                <span />
+                <div class="tl-card">
+                  <button type="button" class="show-more" data-show-more>
+                    {showMoreLabel} をもっと見せる（<span class="tabular-nums">{collapsedCount}</span>件）
+                    {markNew && <span class="new-pill" data-more-new hidden />}
+                  </button>
+                </div>
+              </div>
             )}
-            {sec.rest.length > 0 && (
-              <details class="more" data-more>
-                <summary>
-                  <span class="more-label">
-                    <span class="sr-only">
-                      {day.label} {sec.def.heading}の
-                    </span>
-                    <span class="more-closed">
-                      残り <span data-more-count>{sec.rest.length}</span> 件を表示
-                    </span>
-                    <span class="more-open">折りたたむ</span>
-                  </span>
-                  {markNew && <span class="new-pill" data-more-new hidden />}
-                </summary>
-                {sec.rest.map((item) =>
-                  item.source === "x" ? (
-                    <TweetRow item={item} k={k(item)} />
-                  ) : (
-                    <ArticleRow item={item} badge={sec.def.badge} k={k(item)} />
-                  ),
-                )}
-              </details>
-            )}
-          </section>
-        ))}
-      </section>
-    ))
+          </div>
+        </section>
+      );
+    })
   }
 </div>
 
@@ -105,10 +116,10 @@ const estimateRem = (day: (typeof days)[number]) =>
     for (const day of document.querySelectorAll<HTMLElement>("[data-day]")) {
       const key = day.id.slice(2); // "d-2026-11-14"
       const rel = key === today ? "今日" : key === yesterday ? "昨日" : "";
-      for (const el of day.querySelectorAll<HTMLElement>("[data-day-label], .sec-day")) {
-        el.dataset.abs ??= el.textContent?.trim() ?? "";
-        el.textContent = rel ? `${rel} ${el.dataset.abs}` : el.dataset.abs;
-      }
+      const el = day.querySelector<HTMLElement>("[data-day-label]");
+      if (!el) continue;
+      el.dataset.abs ??= el.textContent?.trim() ?? "";
+      el.textContent = rel ? `${rel} ${el.dataset.abs}` : el.dataset.abs;
     }
     const updated = document.querySelector<HTMLTimeElement>("[data-updated]");
     if (updated) {
@@ -122,6 +133,21 @@ const estimateRem = (day: (typeof days)[number]) =>
   document.addEventListener("visibilitychange", () => {
     if (document.visibilityState === "visible") refreshDates();
   });
+
+  // ===== 「もっと見せる」=====
+  // その日の折りたたみ分（is-collapsed）を展開してボタン行ごと消す。is-collapsed を DOM から外す＝
+  // 以後はフィルタを往復しても通常の行として扱われる。アーカイブには data-show-more が無いので何もしない。
+  for (const btn of document.querySelectorAll<HTMLButtonElement>("[data-show-more]")) {
+    btn.addEventListener("click", () => {
+      const day = btn.closest("[data-day]");
+      if (!day) return;
+      const revealed = Array.from(day.querySelectorAll<HTMLElement>("[data-feed-item].is-collapsed"));
+      for (const row of revealed) row.classList.remove("is-collapsed");
+      btn.closest("[data-show-more-row]")?.remove();
+      // 押したボタンが消えるので、フォーカスを開いた先頭の行へ移す（body に落とさない）
+      revealed[0]?.querySelector<HTMLAnchorElement>(".card-link")?.focus({ preventScroll: true });
+    });
+  }
 
   // ===== 前回以降の新着（トップだけ。行に data-k があるときだけ動く）=====
   // 時刻ではなく「前回見たページに載っていたか」で判定する: X のブックマークは元ツイートの投稿時刻を、
@@ -146,20 +172,17 @@ const estimateRem = (day: (typeof days)[number]) =>
           total++;
         }
       }
-      for (const sec of document.querySelectorAll<HTMLElement>("[data-section]")) {
-        const n = sec.querySelectorAll("[data-feed-item][data-new]").length;
-        const pill = sec.querySelector<HTMLElement>("[data-sec-new]");
-        if (pill && n > 0) {
-          pill.textContent = `新着 ${n}`;
-          pill.hidden = false;
-        }
-        const more = sec.querySelector("[data-more]");
-        const inMore = more ? more.querySelectorAll("[data-feed-item][data-new]").length : 0;
-        const morePill = more?.querySelector<HTMLElement>("[data-more-new]");
-        if (morePill && inMore > 0) {
-          morePill.textContent = `新着 ${inMore}`;
-          morePill.hidden = false;
-        }
+      const showPill = (pill: HTMLElement | null, n: number) => {
+        if (!pill || n === 0) return;
+        pill.textContent = `新着 ${n}`;
+        pill.hidden = false;
+      };
+      for (const day of document.querySelectorAll<HTMLElement>("[data-day]")) {
+        showPill(day.querySelector("[data-day-new]"), day.querySelectorAll("[data-feed-item][data-new]").length);
+        showPill(
+          day.querySelector("[data-more-new]"),
+          day.querySelectorAll("[data-feed-item].is-collapsed[data-new]").length,
+        );
       }
       const summary = document.querySelector<HTMLElement>("[data-new-summary]");
       const summaryCount = document.querySelector<HTMLElement>("[data-new-total]");

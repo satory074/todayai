@@ -106,8 +106,8 @@
     text-rendering: optimizeLegibility;
     /* 固定バックリンクバーがページ内アンカーの飛び先を隠さないように */
     scroll-padding-bottom: calc(3rem + env(safe-area-inset-bottom));
-    /* Tab 移動・ページ内リンクの飛び先が固定のチップバー＋セクション見出しの下に隠れないように（WCAG 2.4.11） */
-    scroll-padding-top: calc(var(--chipbar-h) + var(--secbar-h) + 0.5rem);
+    /* Tab 移動・ページ内リンクの飛び先が固定のチップバー＋日付札の下に隠れないように（WCAG 2.4.11） */
+    scroll-padding-top: calc(var(--chipbar-h) + var(--dayhead-h) + 0.5rem);
   }
 
   body {
@@ -133,139 +133,213 @@
   }
 }
 
-/* ===== リスト行（ArticleRow / TweetRow）=====
+/* ===== カード（FeedCard / TweetCard）=====
    @layer components に置く＝ Tailwind のユーティリティで個別に上書きでき、
-   絞り込みで付く [hidden] のレイヤー外ルール（display:none!important）にも負ける（意図どおり）。
-   行ごとに長いユーティリティ文字列を出すと 750 行で HTML が数 MB になるので、共通の見た目はここに集約する。 */
+   絞り込みで付く [hidden]（レイヤー外の display:none!important）には負ける（意図どおり）。
+   カードごとに長いユーティリティ文字列を出すと 800 件で HTML が数 MB になるので、見た目はここに集約する。
+   影の色はテーマ共通（ダークでは見えないが、枠線で区切れるので専用の値は置かない）。 */
 @layer components {
-  .row {
-    /* 見出しリンクの ::after（行全面）を行の中に閉じ込める。isolation は内部の z-index を外へ漏らさない
-       （漏れると sticky のフィルタバーの上に行の文字が描かれる） */
+  .card {
+    /* 見出しリンクの ::after（カード全面）をカードの中に閉じ込める。isolation は内部の z-index を外へ漏らさない
+       （漏れると固定のチップバー・日付札の上にカードの文字が描かれる） */
     position: relative;
     isolation: isolate;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    column-gap: 0.75rem;
-    align-content: start;
-    padding: 0.75rem 0.5rem;
-    margin-inline: -0.5rem;
-    border-bottom: 1px solid var(--color-border);
-    transition: background-color var(--duration-base);
+    border: 1px solid var(--color-border);
+    background: var(--color-card);
+    color: var(--color-text);
+    transition:
+      border-color var(--duration-base),
+      box-shadow var(--duration-base),
+      background-color var(--duration-base);
   }
-  /* 実写サムネがある行だけ右に列を作る（無い行に空の列を確保しない）。
-     行は「見出し/メタ/要約（X は頭/本文/リンク）」の 3 段＋余り 1fr。サムネが文字より高いとき
-     余白は最後の 1fr に入る＝見出しと要約の間が間延びしない */
-  .row:has(> .row-thumb) {
-    grid-template-columns: minmax(0, 1fr) 6rem;
-    grid-template-rows: auto auto auto 1fr;
+  .card:hover {
+    border-color: var(--color-border-strong);
   }
-  .row > :not(.row-thumb) {
-    grid-column: 1;
+  .card-hero,
+  .card-tweet {
+    box-shadow: 0 1px 2px rgba(20, 22, 27, 0.04);
   }
-  .row-thumb {
-    grid-column: 2;
-    grid-row: 1 / -1;
-    width: 6rem;
-    height: auto;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    border-radius: 0.375rem;
-    background: var(--color-surface);
+  .card-hero:hover,
+  .card-tweet:hover {
+    box-shadow: 0 6px 20px rgba(20, 22, 27, 0.09);
   }
-  .row:has(.row-link:hover) {
-    background: var(--color-card-hover);
-  }
-  /* 行全体をクリック可能にする（card ガイドの stretched link）。フォーカスリングは行に描く */
-  .row-link::after {
+
+  /* カード全体をクリック可能にする（card ガイドの stretched link）。フォーカスリングはカードに描く */
+  .card-link::after {
     content: "";
     position: absolute;
     inset: 0;
   }
-  .row-link:focus-visible {
+  .card-link:focus-visible {
     outline: none;
   }
-  .row:has(.row-link:focus-visible) {
+  .card:has(.card-link:focus-visible) {
     outline: 2px solid var(--color-accent);
-    outline-offset: -2px;
-    border-radius: 0.25rem;
+    outline-offset: 2px;
   }
-  /* 行リンク以外のリンク・ボタン（X のリンクプレビュー等）は全面リンクより上に出して押せるように */
-  .row :is(a:not(.row-link), button) {
+  /* 全面リンク以外のリンク・ボタン（X のリンクプレビュー）は全面リンクより上に出して押せるように */
+  .card :is(a:not(.card-link), button) {
     position: relative;
     z-index: 1;
   }
 
-  .row-title {
-    font-size: 0.9375rem;
-    font-weight: 600;
-    line-height: 1.5;
-    color: var(--color-text);
-    overflow-wrap: anywhere;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-    overflow: hidden;
-  }
-  .row:has(.row-link:hover) .row-title {
-    color: var(--color-accent-bright);
-  }
-  .row-meta {
-    display: flex;
-    flex-wrap: wrap;
+  .badge {
+    display: inline-flex;
+    flex: none;
     align-items: center;
-    gap: 0.125rem 0.5rem;
-    margin-top: 0.25rem;
-    font-family: var(--font-mono);
+    border-radius: 999px;
+    padding: 0.125rem 0.5rem;
+    font-family: var(--font-sans);
     font-size: 0.6875rem;
-    line-height: 1.5;
-    color: var(--color-text-subtle);
+    font-weight: 600;
+    letter-spacing: 0.025em;
   }
-  .row-author {
-    max-width: 14rem;
+  .card-author {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    color: var(--color-text-subtle);
   }
-  .row-summary {
-    margin-top: 0.25rem;
+  .card-summary {
+    margin-top: 0.5rem;
     font-size: 0.8125rem;
-    line-height: 1.65;
+    line-height: 1.625;
     color: var(--color-text-muted);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    overflow: hidden;
+  }
+  .card:hover :is(.card-title, .card-title-sm) {
+    color: var(--color-accent-bright);
+  }
+
+  /* 画像ありの記事: スマホは 16:9 の画像を見出しの上に、sm（40rem）以上は左に 14rem */
+  .card-hero {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .card-thumb {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: var(--color-surface);
+  }
+  .card-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 500ms var(--ease-out-soft);
+  }
+  .card-hero:hover .card-thumb img {
+    transform: scale(1.03);
+  }
+  .card-body {
+    min-width: 0;
+    padding: 1rem;
+  }
+  @media (min-width: 40rem) {
+    .card-hero {
+      flex-direction: row;
+    }
+    .card-thumb {
+      flex: none;
+      align-self: flex-start;
+      width: 14rem;
+    }
+    .card-body {
+      flex: 1;
+    }
+  }
+  .card-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 0;
+    margin-bottom: 0.5rem;
+  }
+  .card-title {
+    font-family: var(--font-display);
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 1.375;
+    overflow-wrap: anywhere;
+    transition: color var(--duration-base);
+  }
+  .card-users {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-top: 0.75rem;
+    padding: 0.125rem 0.5rem;
+    border-radius: 0.375rem;
+    background: var(--color-hatena-bg);
+    font-size: 0.6875rem;
+    font-weight: 500;
+    color: var(--color-hatena);
+  }
+  .card-users svg {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  /* 画像なしの記事: バッジ＋見出し 2 行＋要約 3 行 */
+  .card-compact {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.625rem;
+    padding: 0.625rem 0.875rem;
+  }
+  .card-compact:hover {
+    background: var(--color-card-hover);
+  }
+  .card-compact .badge {
+    margin-top: 1px;
+    font-size: 0.65625rem;
+  }
+  .card-compact-main {
+    flex: 1;
+    min-width: 0;
+  }
+  .card-title-sm {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.375;
+    overflow-wrap: anywhere;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     line-clamp: 2;
     overflow: hidden;
+    transition: color var(--duration-base);
   }
-  .badge {
-    display: inline-flex;
-    align-items: center;
-    border-radius: 999px;
-    padding: 0 0.5rem;
-    font-family: var(--font-sans);
-    font-size: 0.6875rem;
-    font-weight: 600;
-    letter-spacing: 0.02em;
+  .card-compact .card-summary {
+    margin-top: 0.125rem;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
   }
-
-  /* X の投稿行 */
-  .tweet-head {
+  .card-foot {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    min-width: 0;
+    margin-top: 0.25rem;
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    color: var(--color-text-subtle);
   }
-  .tweet-head .row-meta {
-    margin-top: 0;
-    flex-wrap: nowrap;
-    min-width: 0;
+
+  /* X の投稿 */
+  .card-tweet {
+    padding: 1rem;
   }
-  .tweet-name {
-    -webkit-line-clamp: 1;
-    line-clamp: 1;
-    flex: 0 1 auto;
-    min-width: 0;
+  .tweet-head {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
   }
   .avatar {
     position: relative;
@@ -288,47 +362,116 @@
     height: 100%;
     object-fit: cover;
   }
-  .tweet-body {
-    margin-top: 0.375rem;
+  .avatar.avatar-lg {
+    width: 2.75rem;
+    height: 2.75rem;
     font-size: 0.875rem;
-    line-height: 1.65;
+  }
+  .avatar svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  .tweet-who {
+    flex: 1;
+    min-width: 0;
+    line-height: 1.25;
+  }
+  .tweet-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.9375rem;
+    font-weight: 700;
+  }
+  .tweet-name.tweet-label {
+    padding-top: 0.25rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--color-text-subtle);
+  }
+  .tweet-handle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--color-text-subtle);
+  }
+  .tweet-xlogo {
+    flex: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: 0.25rem;
     color: var(--color-text);
-    white-space: pre-line;
+  }
+  .tweet-body {
+    margin-top: 0.625rem;
+    font-size: 0.9375rem;
+    line-height: 1.625;
+    white-space: pre-wrap;
     overflow-wrap: anywhere;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
-    line-clamp: 4;
+    -webkit-line-clamp: 8;
+    line-clamp: 8;
     overflow: hidden;
   }
+  .tweet-media,
   .tweet-link {
     display: block;
-    margin-top: 0.5rem;
-    padding: 0.375rem 0.625rem;
+    margin-top: 0.75rem;
+    overflow: hidden;
     border: 1px solid var(--color-border);
-    border-radius: 0.375rem;
-    background: var(--color-card);
-    font-size: 0.8125rem;
-    line-height: 1.5;
+    background: var(--color-surface);
+  }
+  .tweet-media img,
+  .tweet-link-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+  .tweet-link {
     transition: border-color var(--duration-base);
   }
   .tweet-link:hover {
     border-color: var(--color-border-strong);
   }
+  .tweet-link-img {
+    border-bottom: 1px solid var(--color-border);
+  }
+  .tweet-link-body {
+    padding: 0.75rem;
+  }
   .tweet-link-domain {
-    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     font-family: var(--font-mono);
     font-size: 0.6875rem;
     color: var(--color-text-subtle);
   }
-  .tweet-link-title {
+  .tweet-link-title,
+  .tweet-link-desc {
+    margin-top: 0.25rem;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     line-clamp: 2;
     overflow: hidden;
-    font-weight: 600;
+  }
+  .tweet-link-title {
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.375;
     color: var(--color-text);
+  }
+  .tweet-link-desc {
+    font-size: 0.8125rem;
+    line-height: 1.625;
+    color: var(--color-text-subtle);
   }
 }
 
@@ -368,12 +511,12 @@
   background: var(--color-gcloud-bg);
 }
 
-/* ===== 固定領域（チップバー＋セクション見出し）=====
+/* ===== 固定領域（チップバー＋日付札）=====
    画面上端に固定するのはこの 2 つだけ。高さは rem の定数＝ JS で実測しない（旧 ResizeObserver 方式は廃止）。
-   スマホ 844px で 2.5rem + 1.5rem + 下端バックリンクバー 36px ≈ 100px（画面の 12% 未満）。 */
+   --dayhead-h は日付札の高さ＋チップバーとの隙間。スマホ 844px で 2.5rem + 1.875rem + 下端バックリンクバー 36px ≈ 106px。 */
 :root {
   --chipbar-h: 2.5rem;
-  --secbar-h: 1.5rem;
+  --dayhead-h: 1.875rem;
 }
 
 @layer components {
@@ -507,7 +650,7 @@
     text-decoration: underline;
   }
 
-  /* ===== 日 → ソース別セクション（Timeline.astro）===== */
+  /* ===== 時系列タイムライン（Timeline.astro）===== */
   .day {
     margin-top: 1.75rem;
   }
@@ -515,78 +658,96 @@
      --day-est は Timeline が行数から見積もった未描画時の高さ（auto で一度描画した実高を記憶） */
   .day ~ .day {
     content-visibility: auto;
-    contain-intrinsic-size: auto none auto var(--day-est, 40rem);
+    contain-intrinsic-size: auto none auto var(--day-est, 60rem);
   }
+  /* 日付札。チップバーの直下に固定（スクロール中もどの日を読んでいるか分かる）。不透明 */
   .day-heading {
-    padding-bottom: 0.25rem;
-    border-bottom: 2px solid var(--color-text);
-    font-family: var(--font-display);
-    font-size: 1.25rem;
-    font-weight: 700;
-    letter-spacing: -0.01em;
-  }
-  .sec {
-    margin-top: 0.75rem;
-  }
-  /* セクション見出しはチップバーの直下に固定（日付入り＝どの日のどのソースを読んでいるか分かる） */
-  .sec-bar {
     position: sticky;
-    top: var(--chipbar-h);
+    top: calc(var(--chipbar-h) + 0.25rem);
     z-index: 10;
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    min-block-size: var(--secbar-h);
-    padding-block: 0.125rem;
-    background: var(--color-bg);
-    border-bottom: 1px solid var(--color-border-strong);
+    width: fit-content;
+    margin-bottom: 0.75rem;
+    padding: 0.25rem 0.625rem;
+    border-radius: 0.375rem;
+    background: var(--color-card);
+    box-shadow:
+      0 0 0 1px var(--color-border),
+      0 1px 2px rgba(20, 22, 27, 0.05);
     font-family: var(--font-mono);
-    font-size: 0.6875rem;
-    line-height: 1.3;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    line-height: 1.5;
+    color: var(--color-text-muted);
+  }
+  /* gap で間隔を取る＝絞り込みで隠れた行の分の隙間が残らない */
+  .day-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  /* 行＝左に時刻レール、右に縦線とカード */
+  .tl-row {
+    display: grid;
+    grid-template-columns: 2.75rem minmax(0, 1fr);
+    column-gap: 0.625rem;
+  }
+  .tl-time {
+    padding-top: 0.25rem;
+    text-align: right;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.5;
     color: var(--color-text-subtle);
   }
-  .sec-name {
-    font-family: var(--font-sans);
-    font-size: 0.8125rem;
-    font-weight: 700;
-    color: var(--color-text);
+  .tl-card {
+    min-width: 0;
+    padding-left: 0.625rem;
+    border-left: 1px solid var(--color-border);
   }
-  .sec-day {
-    margin-left: auto;
+  @media (min-width: 40rem) {
+    .tl-row {
+      grid-template-columns: 3.5rem minmax(0, 1fr);
+      column-gap: 0.75rem;
+    }
+    .tl-card {
+      padding-left: 0.75rem;
+    }
   }
-
-  /* 「残り N 件」（<details>）。マーカーは Safari 分も消して自前の ▸ に */
-  .more > summary {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid var(--color-border);
-    font-size: 0.8125rem;
-    font-weight: 500;
-    color: var(--color-accent-bright);
-    list-style: none;
-    cursor: pointer;
-  }
-  .more > summary::-webkit-details-marker {
+  /* トップの初期折りたたみ（はてブ・Zenn・Qiita の 3 日目以降）。SSR で付くクラスなので JS 無効でも畳む
+     （JS 無効時は Timeline の <noscript> が解除する）。「すべて」以外で絞り込み中は解除＝選んだソースは全日出す */
+  :root:not(.filter-active) .tl-row.is-collapsed {
     display: none;
   }
-  .more-label {
+  :root.filter-active [data-show-more-row] {
+    display: none;
+  }
+  .show-more {
     display: inline-flex;
     align-items: center;
     gap: 0.25rem;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    background: var(--color-card);
+    font-size: 0.78125rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    transition:
+      color var(--duration-base),
+      border-color var(--duration-base);
   }
-  .more-label::before {
-    content: "▸";
-    content: "▸" / "";
-    display: inline-block;
-    transition: transform var(--duration-base);
+  .show-more:hover {
+    border-color: var(--color-border-strong);
+    color: var(--color-text);
   }
-  .more[open] .more-label::before {
-    transform: rotate(90deg);
-  }
-  .more > summary:hover .more-label {
-    text-decoration: underline;
-    text-underline-offset: 2px;
-  }
-  /* 「前回以降の新着」。色だけに頼らず文字の「NEW」で示す */
+
+  /* 「前回以降の新着」。色だけに頼らず文字の「NEW」で示す（行は時刻レールの下） */
   .new-pill {
     display: inline-flex;
     align-items: center;
@@ -599,26 +760,21 @@
     line-height: 1.5;
     color: var(--color-accent-bright);
   }
-  .more > summary .new-pill {
-    margin-left: 0.5rem;
+  .show-more .new-pill {
+    margin-left: 0.25rem;
   }
-  .row[data-new] .row-meta::before {
+  .tl-row[data-new] .tl-time::after {
     content: "NEW";
     content: "NEW" / "新着";
+    display: block;
+    width: fit-content;
+    margin: 0.25rem 0 0 auto;
     padding: 0 0.375rem;
     border-radius: 999px;
     background: var(--color-accent-glow);
     font-size: 0.625rem;
     font-weight: 600;
     color: var(--color-accent-bright);
-  }
-
-  .more-open,
-  .more[open] .more-closed {
-    display: none;
-  }
-  .more[open] .more-open {
-    display: inline;
   }
 }
 
