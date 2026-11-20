@@ -101,6 +101,8 @@ export interface FeedData {
     >;
     /** translations の生成ロジック版。ENRICH_VERSION と不一致なら作り直す。 */
     enrichVersion?: string;
+    /** 翻訳だけの生成ロジック版。TRANSLATE_VERSION と不一致なら翻訳を作り直す（3行要約は残す）。 */
+    translateVersion?: string;
   };
 }
 

@@ -25,6 +25,12 @@ export interface TranslateOptions {
   summarizeSources: FeedSource[];
   /** この文字数未満の summary は要約せず翻訳扱い。 */
   summaryMinLen: number;
+  /**
+   * true なら「翻訳」のキャッシュ（titleJa・要約対象外ソースの summaryJa・リンクカード訳）を捨てて
+   * 作り直す。記事系の3行要約（summaryJa）は残す＝記事本文の再取得も要約のやり直しもしない。
+   * aggregate.ts の TRANSLATE_VERSION が state と違うときに立つ。
+   */
+  resetTranslations?: boolean;
 }
 
 export interface TranslateResult {
@@ -83,48 +89,63 @@ export async function enrichTranslations(
 ): Promise<TranslateResult> {
   const summSet = new Set(opts.summarizeSources);
 
-  // 対象: キャッシュ済みは流用、未処理（title翻訳 / summary要約or翻訳 / linkPreview翻訳）だけ API へ。
+  // 欄ごとに「訳が要るか」を決め、キャッシュに無い欄だけ API へ送る。
+  // 要らない欄（日本語タイトル等）の訳はキャッシュにあっても捨てる。かつてはモデルが空欄に
+  // 勝手な見出しを入れて返し、それを採用していた（日本語タイトルの書き換え・X 本文の差し替え）。
   const targets: Target[] = [];
   for (const item of items) {
-    const cached = transCache[item.id];
-    // 既知の翻訳/要約はまず再適用（linkPreview は enrichXLinks 後なので item に載っている）。
-    if (cached?.titleJa) item.titleJa = cached.titleJa;
-    if (cached?.summaryJa) item.summaryJa = cached.summaryJa;
-    if (item.linkPreview) {
-      if (cached?.linkTitleJa) item.linkPreview.titleJa = cached.linkTitleJa;
-      if (cached?.linkDescJa) item.linkPreview.descriptionJa = cached.linkDescJa;
+    const isSummSrc = summSet.has(item.source);
+    let cached = transCache[item.id];
+    if (cached && opts.resetTranslations) {
+      // 3行要約だけ残す（翻訳は作り直す）。
+      cached = transCache[item.id] =
+        isSummSrc && cached.summaryJa ? { summaryJa: cached.summaryJa } : {};
     }
+    const c: TransCacheEntry = cached ?? {};
 
-    // linkPreview は本文と別ライフサイクル（maxNew で後から解決され得る）。未翻訳なら都度対象化。
-    const lp = item.linkPreview;
-    const linkTitle = lp?.title && !isJapanese(lp.title) && !cached?.linkTitleJa ? lp.title : "";
-    const linkDesc =
-      lp?.description && !isJapanese(lp.description) && !cached?.linkDescJa ? lp.description : "";
-    const needLink = !!linkTitle || !!linkDesc;
-
-    // title/summary は cached があれば処理済み（従来挙動）。link だけ未処理なら link のみ再翻訳。
-    if (cached) {
-      if (needLink) {
-        targets.push({ item, summarize: false, titleInput: "", input: "", linkTitle, linkDesc });
-      }
-      continue;
-    }
-
+    // X は本文に t.co を含み得る。翻訳入力からは t.co を除去（生 URL の誤翻訳を防ぐ）。
+    const titleInput = stripTco(item.title ?? "");
     const summary = item.summary?.trim() ?? "";
     // 要約は記事本文（enrichArticles が付ける contentText）を優先、無ければ抜粋。
     const body = item.contentText?.trim() || summary;
-    const isSummSrc = summSet.has(item.source);
     // 記事系 & 十分な長さの本文/抜粋 → 3行要約（日本語記事も対象）。その他 → 翻訳。
     const summarize = isSummSrc && body.length >= opts.summaryMinLen;
-    // X は本文に t.co を含み得る。翻訳入力からは t.co を除去（生 URL の誤翻訳を防ぐ）。
-    const titleInput = stripTco(item.title ?? "");
     const summaryInput = summarize ? body : stripTco(summary);
-    const needTitle = !!titleInput && !isJapanese(titleInput);
-    const needSummary = summarize || (summaryInput.length > 0 && !isJapanese(summaryInput));
-    if (!needTitle && !needSummary && !needLink) continue;
+    const lp = item.linkPreview;
+
+    const wantTitle = !!titleInput && !isJapanese(titleInput);
+    const wantSummary = summarize || (summaryInput.length > 0 && !isJapanese(summaryInput));
+    const wantLinkTitle = !!lp?.title && !isJapanese(lp.title);
+    const wantLinkDesc = !!lp?.description && !isJapanese(lp.description);
+
+    // 要らない欄の訳を捨てる。記事系の summaryJa は残す（キャッシュ済みの項目は本文を取り直さない
+    // ので、ここでの want 判定が要約時と食い違い得る＝要約を誤って消さない）。
+    if (!wantTitle) delete c.titleJa;
+    if (!isSummSrc && !wantSummary) delete c.summaryJa;
+    if (!wantLinkTitle) delete c.linkTitleJa;
+    if (!wantLinkDesc) delete c.linkDescJa;
+
+    // 表示用フィールドはキャッシュに合わせる（前回の feed.json から持ち越した古い訳を残さない）。
+    if (c.titleJa) item.titleJa = c.titleJa;
+    else delete item.titleJa;
+    if (c.summaryJa) item.summaryJa = c.summaryJa;
+    else delete item.summaryJa;
+    if (lp) {
+      if (c.linkTitleJa) lp.titleJa = c.linkTitleJa;
+      else delete lp.titleJa;
+      if (c.linkDescJa) lp.descriptionJa = c.linkDescJa;
+      else delete lp.descriptionJa;
+    }
+
+    // linkPreview は本文と別ライフサイクル（maxNew で後から解決され得る）ので欄ごとに判定する。
+    const needTitle = wantTitle && !c.titleJa;
+    const needSummary = wantSummary && !c.summaryJa;
+    const linkTitle = wantLinkTitle && !c.linkTitleJa ? lp!.title! : "";
+    const linkDesc = wantLinkDesc && !c.linkDescJa ? lp!.description! : "";
+    if (!needTitle && !needSummary && !linkTitle && !linkDesc) continue;
     targets.push({
       item,
-      summarize,
+      summarize: needSummary && summarize,
       titleInput: needTitle ? titleInput : "",
       input: needSummary ? summaryInput : "",
       linkTitle,
@@ -143,13 +164,16 @@ export async function enrichTranslations(
     const out = await translateBatch(batch, apiKey, opts.model);
     if (!out) return; // バッチ失敗 → 次回 run で再試行
     for (let i = 0; i < batch.length; i++) {
-      const { item } = batch[i];
+      const { item, titleInput, input, linkTitle, linkDesc } = batch[i];
       const t = out[i];
       if (!t) continue;
-      const titleJa = t.titleJa?.trim() || undefined; // 原文が日本語なら空文字で返る
-      const summaryJa = t.summaryJa?.trim() || undefined;
-      const linkTitleJa = t.linkTitleJa?.trim() || undefined;
-      const linkDescJa = t.linkDescJa?.trim() || undefined;
+      // 頼んだ欄だけ採用する。空で送った欄にもモデルは何か入れて返すことがある
+      // （日本語タイトルを要約した見出し、リンク先の題を X 本文の訳として返す等）。
+      const pick = (asked: string, v?: string) => (asked ? v?.trim() || undefined : undefined);
+      const titleJa = pick(titleInput, t.titleJa);
+      const summaryJa = pick(input, t.summaryJa);
+      const linkTitleJa = pick(linkTitle, t.linkTitleJa);
+      const linkDescJa = pick(linkDesc, t.linkDescJa);
       if (!titleJa && !summaryJa && !linkTitleJa && !linkDescJa) continue;
       if (titleJa) item.titleJa = titleJa;
       if (summaryJa) item.summaryJa = summaryJa;
@@ -196,15 +220,16 @@ async function translateBatch(
 
   const prompt =
     "次の配列の各エントリを処理し、{titleJa, summaryJa, linkTitleJa, linkDescJa} を返してください。\n" +
-    "・titleJa: title を自然な日本語に翻訳。title が既に日本語ならそのまま、空文字なら空文字。\n" +
+    "・titleJa: title を自然な日本語に翻訳。要約・省略・言い換えはせず、原文の文と情報をすべて残す（見出しらしく縮めない）。\n" +
     "・summaryJa:\n" +
     "    summarize が true → body（記事本文）の要点を一読でつかめる日本語の要約にする:\n" +
     "      - 最重要の要点を結論から1つ書く。複数トピックの記事でも要点を1〜2点に絞り、網羅的に列挙しない。\n" +
     "      - 前置き・宣伝文句・筆者の感想は省き、事実だけを書く。タイトルの言い換えで終わらせない。\n" +
     "      - 最大2文・100字以内。やさしい言葉と短い文で必ず言い切る。本文に無い情報は足さない。\n" +
-    "    summarize が false → body を自然な日本語に翻訳（body が空文字なら空文字）。\n" +
-    "・linkTitleJa: linkTitle（リンク先の見出し）を自然な日本語に翻訳。空文字なら空文字。\n" +
-    "・linkDescJa: linkDesc（リンク先の説明）を自然な日本語に翻訳。空文字なら空文字。\n" +
+    "    summarize が false → body を自然な日本語に翻訳（要約・省略しない）。\n" +
+    "・linkTitleJa: linkTitle（リンク先の見出し）を自然な日本語に翻訳。\n" +
+    "・linkDescJa: linkDesc（リンク先の説明）を自然な日本語に翻訳。\n" +
+    "各出力は対応する入力（title / body / linkTitle / linkDesc）だけから作ってください。入力が空文字なら、その出力も必ず空文字にします（他の欄の内容を流用したり推測で補ったりしない）。\n" +
     "技術用語・製品名・固有名詞は無理に訳さず一般的な表記を使い、意味を保ってください。\n" +
     "入力と同じ順序・同じ件数で、各要素 {titleJa, summaryJa, linkTitleJa, linkDescJa} の JSON 配列のみを返してください。\n\n" +
     JSON.stringify(entries);

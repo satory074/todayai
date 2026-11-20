@@ -37,8 +37,16 @@ loadEnv();
  * v3: 要約入力を RSS 抜粋から記事本文（enrichArticles の contentText）に変更＋プロンプト洗練。
  * v4: 要約を「最大2文・100字以内・要点1〜2点」に短縮（途中切れ解消＋スキャナビリティ）。
  * v5: X リンクプレビュー（linkPreview）の title/description も翻訳対象に追加。
+ * ⚠️ 上げると3行要約も含めて全件作り直す（記事本文の再取得つき）。翻訳だけ直すなら TRANSLATE_VERSION。
  */
 const ENRICH_VERSION = "5";
+/**
+ * 翻訳（titleJa・X 等の summaryJa・リンクカード訳）だけの生成ロジック版。上げると翻訳だけ作り直し、
+ * 記事系の3行要約は残す（state.translateVersion と比較）。
+ * v1: 日本語タイトルに AI が付けた見出し・リンクカード再翻訳で上書きされた X 本文の訳を捨て、
+ *     「要約せず全文を訳す」プロンプトで英語タイトル等を訳し直す。
+ */
+const TRANSLATE_VERSION = "1";
 
 /**
  * X リンクプレビューの1run あたり新規解決の上限。外部サイトは多くが CI でも解決できるので
@@ -381,11 +389,14 @@ async function run(): Promise<void> {
         concurrency: feedsConfig.translate.concurrency,
         summarizeSources: feedsConfig.translate.summarizeSources,
         summaryMinLen: feedsConfig.translate.summaryMinLen,
+        resetTranslations: state.translateVersion !== TRANSLATE_VERSION,
       });
       console.log(
         `[translate] +${r.translated} 翻訳/要約 (試行 ${r.attempted}, バッチ ${r.batches})`,
       );
       state.enrichVersion = ENRICH_VERSION;
+      // 翻訳を捨てた後は欄ごとの未翻訳判定で再試行されるので、バッチが一部失敗しても版は進めてよい。
+      state.translateVersion = TRANSLATE_VERSION;
     } catch (e) {
       console.error("[translate] エラー（スキップ）:", (e as Error).message);
     }
