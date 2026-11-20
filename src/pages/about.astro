@@ -11,10 +11,11 @@ const descriptions: Record<string, string> = {
   workspace: "Google Workspace Updates ブログの新着。",
   layerx: "LayerX AI・LLM Newsletter に毎週掲載される各トピック。",
   gcloud: "Google Cloud リリースノート（全プロダクト）。日ごとにまとめて表示。",
+  ipa: "IPA（情報処理推進機構）の緊急対策情報・注意喚起。更新のお知らせは何が変わったかを表示。",
 };
 
 // 表示順は about 用（フィルタチップの順とは独立に、身近な順で並べる）
-const order = ["x", "zenn", "qiita", "hatena", "workspace", "layerx", "gcloud"] as const;
+const order = ["x", "zenn", "qiita", "hatena", "workspace", "layerx", "gcloud", "ipa"] as const;
 const sources = order.map((key) => sourceMeta(key)).filter((s) => SOURCES.some((x) => x.key === s.key));
 ---
 

@@ -70,6 +70,18 @@ export interface FeedsConfig {
     retentionMax: number;
     disabled?: boolean;
   };
+  /**
+   * IPA「重要なセキュリティ情報」（緊急対策情報・注意喚起）の公開 RSS 1.0（トークン不要）。
+   * 抜粋が無いので scripts/sources/ipa.ts が記事ページの「概要」「更新履歴」を読んで summary を作る。
+   */
+  ipa: {
+    rssUrl: string;
+    /** 1 run で記事ページを読む上限（summary 未取得分だけ読む。初回のバックフィルも含め IPA に負荷をかけない） */
+    maxPageFetch: number;
+    /** 保持上限件数（全期間アーカイブの安全弁） */
+    retentionMax: number;
+    disabled?: boolean;
+  };
   hatena: {
     /** はてなブックマーク 人気エントリー テクノロジー の RSS */
     rssUrl: string;
@@ -167,6 +179,12 @@ export const feedsConfig: FeedsConfig = {
     retentionMax: 500, // 低頻度（~1件/日）。~1.4年分
     disabled: false,
   },
+  ipa: {
+    rssUrl: "https://www.ipa.go.jp/security/alert-rss.rdf", // 緊急対策情報・注意喚起（RSS 1.0）
+    maxPageFetch: 40, // RSS は ~30 件。初回だけ全件、以降は新着の数件
+    retentionMax: 500, // 低頻度（月 5〜10 件）。数年分
+    disabled: false,
+  },
   hatena: {
     rssUrl: "https://b.hatena.ne.jp/hotentry/it.rss",
     retentionMax: 1000, // 過去分も保持（実質全期間）。feed.json 肥大を抑える安全弁
@@ -191,7 +209,7 @@ export const feedsConfig: FeedsConfig = {
     model: "gemini-3.1-flash-lite",
     batchSize: 10, // 要約入力に記事本文(~3000字)を載せるので1コールが過大にならないよう小さめ
     concurrency: 3,
-    summarizeSources: ["zenn", "qiita", "hatena", "workspace", "gcloud"],
+    summarizeSources: ["zenn", "qiita", "hatena", "workspace", "gcloud", "ipa"],
     summaryMinLen: 40,
     disabled: false,
   },

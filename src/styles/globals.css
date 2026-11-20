@@ -38,6 +38,8 @@
   --color-workspace-bg: rgba(36, 89, 191, 0.1);
   --color-gcloud: #b3261e;
   --color-gcloud-bg: rgba(179, 38, 30, 0.1);
+  --color-ipa: #7a2e9e;
+  --color-ipa-bg: rgba(122, 46, 158, 0.1);
 
   /* Typography */
   --font-sans: "Inter", "Noto Sans JP", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -86,6 +88,8 @@
     --color-workspace-bg: rgba(126, 166, 255, 0.14);
     --color-gcloud: #ff7b70;
     --color-gcloud-bg: rgba(255, 123, 112, 0.14);
+    --color-ipa: #d09cff;
+    --color-ipa-bg: rgba(208, 156, 255, 0.14);
   }
 }
 
@@ -509,6 +513,10 @@
 .src-gcloud {
   color: var(--color-gcloud);
   background: var(--color-gcloud-bg);
+}
+.src-ipa {
+  color: var(--color-ipa);
+  background: var(--color-ipa-bg);
 }
 
 /* ===== 固定領域（チップバー＋日付札）=====

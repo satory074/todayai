@@ -1,5 +1,5 @@
 /** 全情報源を統一する正規化済みフィードアイテム。 */
-export type FeedSource = "x" | "zenn" | "qiita" | "hatena" | "layerx" | "workspace" | "gcloud";
+export type FeedSource = "x" | "zenn" | "qiita" | "hatena" | "layerx" | "workspace" | "gcloud" | "ipa";
 
 export interface FeedItem {
   /** 一意キー（X: tweet id / 記事系(zenn/qiita/workspace): 記事URL / はてブ: entry url） */
@@ -176,6 +176,14 @@ export const SOURCES: SourceMeta[] = [
     originUrl: "https://docs.cloud.google.com/release-notes",
     originLabel: "Google Cloud リリースノート",
   },
+  {
+    key: "ipa",
+    label: "IPA",
+    badgeClass: "src-ipa",
+    // 年別の一覧（security-alert/2026/index.html 等）は年が変わると古くなるので、年をまたぐ入口を指す
+    originUrl: "https://www.ipa.go.jp/security/security-alert/index.html",
+    originLabel: "IPA 重要なセキュリティ情報",
+  },
 ];
 
 export function sourceLabel(source: FeedSource): string {
@@ -210,7 +218,7 @@ export function sourceMeta(source: FeedSource): SourceMeta {
  */
 const FEED_NAME_AUTHORS = new Set(["Zennの「AI」のフィード", "AIタグが付けられた新着記事 - Qiita"]);
 /** author が常にフィード名・発行元になるソース（書き手の情報がない） */
-const NO_AUTHOR_SOURCES: readonly FeedSource[] = ["layerx", "workspace", "gcloud"];
+const NO_AUTHOR_SOURCES: readonly FeedSource[] = ["layerx", "workspace", "gcloud", "ipa"];
 
 /** 記事カードに出す著者名。出さないなら undefined（X は TweetCard が別に扱う）。 */
 export function displayAuthor(item: FeedItem): string | undefined {
@@ -429,8 +437,8 @@ export function monthsOf(items: FeedItem[]): MonthMeta[] {
 }
 
 // ===== 絞り込みチップの単位 =====
-// タイムラインは全ソースを時刻順に混ぜて出す。チップだけは Workspace と GCP を「公式」にまとめる
-// （どちらも 1 日 1〜2 件で、別々のチップにするとチップバーが長くなるだけ）。
+// タイムラインは全ソースを時刻順に混ぜて出す。チップだけは Workspace・GCP・IPA を「公式」にまとめる
+// （どれも 1 日 0〜2 件で、別々のチップにするとチップバーが長くなるだけ）。
 
 export type SectionKey = "x" | "official" | "hatena" | "layerx" | "zenn" | "qiita";
 
@@ -444,7 +452,7 @@ export interface SectionDef {
 /** 並び順がそのままフィルタチップの順。 */
 export const SECTIONS: readonly SectionDef[] = [
   { key: "x", label: "X", sources: ["x"] },
-  { key: "official", label: "公式", sources: ["workspace", "gcloud"] },
+  { key: "official", label: "公式", sources: ["workspace", "gcloud", "ipa"] },
   { key: "hatena", label: "はてブ", sources: ["hatena"] },
   { key: "layerx", label: "LayerX", sources: ["layerx"] },
   { key: "zenn", label: "Zenn", sources: ["zenn"] },
@@ -456,6 +464,7 @@ export const SECTION_OF: Record<FeedSource, SectionKey> = {
   x: "x",
   workspace: "official",
   gcloud: "official",
+  ipa: "official",
   hatena: "hatena",
   layerx: "layerx",
   zenn: "zenn",

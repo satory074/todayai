@@ -1,7 +1,7 @@
 /**
  * フィード集約スクリプト。
  *
- * 7ソース（X / Zenn / Qiita / はてブ / Workspace / LayerX / GCP）を取得 → FeedItem に正規化 → 既存キャッシュとマージ
+ * 8ソース（X / Zenn / Qiita / はてブ / Workspace / LayerX / GCP / IPA）を取得 → FeedItem に正規化 → 既存キャッシュとマージ
  * → 重複排除・ソート・トリム → src/data/feed.json に書き出す。
  *
  * 各ソースは個別に try/catch する。あるソースの取得に失敗した場合、
@@ -22,6 +22,7 @@ import { fetchHatena } from "./sources/hatena";
 import { fetchLayerX } from "./sources/layerx";
 import { fetchWorkspace } from "./sources/workspace";
 import { fetchGcloud } from "./sources/gcloud";
+import { fetchIpa } from "./sources/ipa";
 import { enrichArticles } from "./sources/enrichArticles";
 import { enrichLayerxThumbs } from "./sources/layerxThumb";
 import { enrichXLinks } from "./sources/xLinkCard";
@@ -218,6 +219,33 @@ async function run(): Promise<void> {
     }
   }
 
+  // ---- IPA 重要なセキュリティ情報（RSS 1.0 を直接取得。トークン不要）----
+  // 前回分を土台に蓄積（全期間アーカイブ）。RSS は直近 ~30 件だけなので、それより古いお知らせも過去分として残る。
+  // 同じ id は**今回の取得分を優先**する: 前回ページを読めず summary 無しだった項目を今回読めた分で置き換えたいが、
+  // 下の dedup は publishedAt が同じだと先に積んだ方（前回分）を残すので、ここで前回分から外しておく。
+  const ipaCached = cachedFor(cache, "ipa");
+  if (feedsConfig.ipa.disabled) {
+    console.log("[ipa] disabled");
+    collected.push(...ipaCached);
+  } else {
+    try {
+      const items = await fetchIpa({
+        rssUrl: feedsConfig.ipa.rssUrl,
+        cached: ipaCached,
+        maxPageFetch: feedsConfig.ipa.maxPageFetch,
+      });
+      const fresh = new Set(items.map((i) => i.id));
+      collected.push(...ipaCached.filter((i) => !fresh.has(i.id)), ...items);
+      const withSummary = items.filter((i) => i.summary).length;
+      console.log(`[ipa] ${items.length} items (概要あり ${withSummary}) (＋過去 ${ipaCached.length} 件を保持)`);
+    } catch (e) {
+      collected.push(...ipaCached);
+      const msg = (e as Error).message;
+      errors.push(`ipa: ${msg}`);
+      console.error("[ipa] 取得失敗（前回キャッシュを維持）:", msg);
+    }
+  }
+
   // ---- LayerX AI・LLM Newsletter（Gmail 経由）----
   // 前回分を土台に蓄積（全期間アーカイブ）。取得は直近 newerThanDays 日分のメールだが、
   // それより古いトピックも過去分として残る。取得失敗/未設定/disabled でも過去分は残る。
@@ -379,7 +407,7 @@ async function run(): Promise<void> {
   };
   await writeCache(out);
 
-  const counts = { x: 0, zenn: 0, qiita: 0, hatena: 0, layerx: 0, workspace: 0, gcloud: 0 } as Record<
+  const counts = { x: 0, zenn: 0, qiita: 0, hatena: 0, layerx: 0, workspace: 0, gcloud: 0, ipa: 0 } as Record<
     FeedSource,
     number
   >;
@@ -387,7 +415,7 @@ async function run(): Promise<void> {
   const withThumb = items.filter((i) => i.thumbnail).length;
   const withJa = items.filter((i) => i.titleJa).length;
   console.log(
-    `\n✅ feed.json 更新: 計 ${items.length} 件 (X=${counts.x} / Zenn=${counts.zenn} / Qiita=${counts.qiita} / はてブ=${counts.hatena} / LayerX=${counts.layerx} / Workspace=${counts.workspace} / GCP=${counts.gcloud}) サムネ ${withThumb} 件 / 翻訳 ${withJa} 件`,
+    `\n✅ feed.json 更新: 計 ${items.length} 件 (X=${counts.x} / Zenn=${counts.zenn} / Qiita=${counts.qiita} / はてブ=${counts.hatena} / LayerX=${counts.layerx} / Workspace=${counts.workspace} / GCP=${counts.gcloud} / IPA=${counts.ipa}) サムネ ${withThumb} 件 / 翻訳 ${withJa} 件`,
   );
   if (errors.length) {
     console.warn(`⚠️  ${errors.length} 件のソースでエラー:\n  - ${errors.join("\n  - ")}`);
