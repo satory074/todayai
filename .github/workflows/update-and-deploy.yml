@@ -101,6 +101,11 @@ jobs:
           # 未設定なら空文字 → Layout.astro がビーコンを出力しない（graceful）。
           PUBLIC_CF_BEACON_TOKEN: ${{ vars.PUBLIC_CF_BEACON_TOKEN }}
 
+      # 検索エンジン向けの不変条件（canonical・サイトマップ・JSON-LD・戻りリンクのバー・サイト内リンクの末尾 /）。
+      # 破ったら deploy しない（集約した feed.json の保存は上で済んでいるので、データは失われない）
+      - name: SEO check
+        run: node scripts/seo-check.mjs dist https://satory074.github.io/todayai/ --require-backlink
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist

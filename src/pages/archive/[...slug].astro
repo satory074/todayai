@@ -72,6 +72,9 @@ const pageLink = (p: number) => siteLink(p === 1 ? `/archive/${month}/` : `/arch
   langToggle
   title={`${label}のアーカイブ${pageSuffix} | today.ai`}
   description={`${label}に集約した AI 関連情報のアーカイブ${pageSuffix}。`}
+  schemaType="CollectionPage"
+  schemaName={`${label}のアーカイブ${pageSuffix}`}
+  schemaExtra={{ temporalCoverage: month }}
 >
   <section class="pb-3 pt-2">
     <h1 class="font-display text-[1.625rem] font-bold tracking-tight text-[var(--color-text)]">
