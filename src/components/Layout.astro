@@ -1,33 +1,51 @@
 ---
 import "@/styles/globals.css";
 import { siteLink, absUrl } from "@/lib/url";
+import { canonicalOf, jsonLdString, pageJsonLd, type SchemaType } from "@/lib/seo";
 
 interface Props {
   title?: string;
   description?: string;
   /** ヘッダーに「原文」切替ボタンを出すか（翻訳のあるフィード一覧ページだけ） */
   langToggle?: boolean;
+  /** 構造化データの型。トップは WebSite、アーカイブは CollectionPage、about は AboutPage */
+  schemaType?: SchemaType;
+  /** 構造化データの name（省略時は title）。画面の h1 と同じ言葉にする */
+  schemaName?: string;
+  /** 構造化データに足す項目（画面に出ている内容だけ） */
+  schemaExtra?: Record<string, unknown>;
 }
 
 const {
   title = "today.ai — AI情報フィード",
-  description = "特定のXアカウント・Zenn/Qiita・はてなブックマーク（テクノロジー）からAI関連情報を集約する個人フィード。",
+  description = "AI関連の情報を X・Zenn・Qiita・はてなブックマーク・Google Workspace Updates・LayerX AI・LLM Newsletter・Google Cloud リリースノート・IPA から自動で集め、時系列で読める個人フィード。",
   langToggle = false,
+  schemaType = "WebPage",
+  schemaName,
+  schemaExtra,
 } = Astro.props;
 
 // ヘッダーナビの現在地（aria-current）。Astro.url.pathname は base（/todayai）込み
 const path = Astro.url.pathname.replace(/\/+$/, "");
 const navItems = [
   { href: siteLink("/archive/"), label: "アーカイブ", current: path.startsWith(siteLink("/archive")) },
-  { href: siteLink("/about"), label: "About", current: path === siteLink("/about") },
+  { href: siteLink("/about/"), label: "About", current: path === siteLink("/about") },
   { href: siteLink("/rss.xml"), label: "RSS", current: false },
 ];
 
 const ogImage = absUrl("/og-default.png");
 
 // canonical / og:url。Astro.url.pathname は既に base（/todayai）込みなので absUrl() に
-// 渡すと base が二重付与になる → Astro.site を基点に new URL で組む。
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+// 渡すと base が二重付与になる → Astro.site を基点に組む。トップの pathname は "/todayai"（/ 無し）で
+// 来るので、canonicalOf() が末尾 / にそろえる（サイトマップ・GitHub Pages の 301 先と同じ URL）。
+const canonicalURL = canonicalOf(Astro.url.pathname);
+const jsonLd = pageJsonLd({
+  type: schemaType,
+  name: schemaName ?? title,
+  url: canonicalURL,
+  description,
+  extra: schemaExtra,
+});
 
 // Cloudflare Web Analytics — Cookie 不要のプライバシー配慮解析（バナー不要）。
 // PUBLIC_CF_BEACON_TOKEN（.env / リポジトリ変数）が入っていればビーコンを出力し、
@@ -67,6 +85,8 @@ const cfBeaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImage} />
     <meta name="twitter:card" content="summary_large_image" />
+    <!-- 構造化データ（1 ページ 1 つ）。作者は satory074.com の #person -->
+    <script is:inline type="application/ld+json" set:html={jsonLdString(jsonLd)} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <!-- Google Fonts はレンダーブロッキングにしない: media="print" で非適用のまま読み込み、

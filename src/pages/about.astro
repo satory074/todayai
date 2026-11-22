@@ -19,7 +19,12 @@ const order = ["x", "zenn", "qiita", "hatena", "workspace", "layerx", "gcloud", 
 const sources = order.map((key) => sourceMeta(key)).filter((s) => SOURCES.some((x) => x.key === s.key));
 ---
 
-<Layout title="このサイトについて — today.ai">
+<Layout
+  title="このサイトについて — today.ai"
+  description="today.ai が AI 関連の情報を集めている 8 つの情報源（X・Zenn・Qiita・はてなブックマーク・Google Workspace Updates・LayerX AI・LLM Newsletter・Google Cloud リリースノート・IPA）と、それぞれの出典・更新のしくみ。"
+  schemaType="AboutPage"
+  schemaName="このサイトについて"
+>
   <section class="pt-6">
     <h1 class="text-[1.375rem] font-bold tracking-tight">このサイトについて</h1>
 
