@@ -439,10 +439,11 @@ export function monthsOf(items: FeedItem[]): MonthMeta[] {
 }
 
 // ===== 絞り込みチップの単位 =====
-// タイムラインは全ソースを時刻順に混ぜて出す。チップだけは Workspace・GCP・IPA を「公式」にまとめる
-// （どれも 1 日 0〜2 件で、別々のチップにするとチップバーが長くなるだけ）。
+// タイムラインは全ソースを時刻順に混ぜて出す。チップは 1 ソース 1 枚。
+// （2026-11 まで Workspace・GCP・IPA を「公式」1 枚にまとめていたが、ユーザーの判断で分けた。
+//  件数 0 のソースはチップを出さない＝SourceFilter が counts で落とす。）
 
-export type SectionKey = "x" | "official" | "hatena" | "layerx" | "zenn" | "qiita";
+export type SectionKey = "x" | "workspace" | "gcloud" | "ipa" | "hatena" | "layerx" | "zenn" | "qiita";
 
 export interface SectionDef {
   key: SectionKey;
@@ -454,7 +455,9 @@ export interface SectionDef {
 /** 並び順がそのままフィルタチップの順。 */
 export const SECTIONS: readonly SectionDef[] = [
   { key: "x", label: "X", sources: ["x"] },
-  { key: "official", label: "公式", sources: ["workspace", "gcloud", "ipa"] },
+  { key: "workspace", label: "Workspace", sources: ["workspace"] },
+  { key: "gcloud", label: "GCP", sources: ["gcloud"] },
+  { key: "ipa", label: "IPA", sources: ["ipa"] },
   { key: "hatena", label: "はてブ", sources: ["hatena"] },
   { key: "layerx", label: "LayerX", sources: ["layerx"] },
   { key: "zenn", label: "Zenn", sources: ["zenn"] },
@@ -464,9 +467,9 @@ export const SECTIONS: readonly SectionDef[] = [
 /** ソース → チップ。Record なのでソースを足すと型エラーになり、割り当て漏れに気づける。 */
 export const SECTION_OF: Record<FeedSource, SectionKey> = {
   x: "x",
-  workspace: "official",
-  gcloud: "official",
-  ipa: "official",
+  workspace: "workspace",
+  gcloud: "gcloud",
+  ipa: "ipa",
   hatena: "hatena",
   layerx: "layerx",
   zenn: "zenn",

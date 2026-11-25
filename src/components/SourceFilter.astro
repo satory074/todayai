@@ -1,7 +1,7 @@
 ---
 /**
  * 絞り込み UI。
- *   1) 固定のチップバー（#source-filter）: すべて/X/公式/はてブ/LayerX/Zenn/Qiita（SECTIONS。公式＝Workspace＋GCP）。
+ *   1) 固定のチップバー（#source-filter）: すべて/X/Workspace/GCP/IPA/はてブ/LayerX/Zenn/Qiita（SECTIONS の順。1 ソース 1 枚）。
  *      1 行・横スクロール。画面上端に固定するのはこれ 1 本だけ（＋各日の固定の日付札）。
  *   2) 絞り込みの文脈（#filter-context、固定しない）: X のアカウント行と出典リンク。
  *      かつてはチップバーの 2・3 段目に入れていて、X を選ぶと固定領域がスマホ画面の 41% を占めた。
@@ -102,7 +102,7 @@ const extraAccountCount = Math.max(0, xAccounts.length - ACCOUNT_CHIP_LIMIT);
     )
   }
 
-  <!-- 出典元。選択中のセクション（公式は Workspace と GCP の 2 本）またはアカウントの分だけ表示。
+  <!-- 出典元。選択中のセクション（＝ソース）またはアカウントの分だけ表示。
        外部 URL なので siteLink() は通さない。 -->
   <div data-origin-row hidden class="origin-row">
     {
