@@ -21,7 +21,7 @@ export interface FeedItem {
   author?: string;
   /** X のプロフィール画像URL（_400x400 版）。集約時に syndication / X API で補完。 */
   avatarUrl?: string;
-  /** X の表示名（@handle とは別。例 "NotebookLM"）。集約時に補完。 */
+  /** X の表示名（@handle とは別。例 "Gemini Notebook"）。集約時に補完。 */
   authorName?: string;
   /** はてブのブックマーク数 */
   bookmarkCount?: number;

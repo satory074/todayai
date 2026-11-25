@@ -88,6 +88,11 @@ export interface XAccountsResult {
   items: FeedItem[];
   /** username -> 次回 since_id に使う最新ツイートID（呼び出し側で state に保存） */
   sinceIds: Record<string, string>;
+  /**
+   * 設定のユーザー名を書き換えた（＝相手が改名した）と判定した組。
+   * 呼び出し側が前回までの項目の @handle と URL をこの組で付け替える。
+   */
+  renames: { from: string; to: string }[];
 }
 
 async function resolveUserId(username: string, bearer: string): Promise<string> {
@@ -119,6 +124,7 @@ export async function fetchXAccounts(opts: {
   const newSinceIds: Record<string, string> = { ...opts.sinceIds };
   const userIds: Record<string, string> = { ...opts.userIds };
   const errors: string[] = [];
+  const renames: { from: string; to: string }[] = [];
 
   for (const username of opts.accounts) {
     try {
@@ -126,6 +132,17 @@ export async function fetchXAccounts(opts: {
       if (!userId) {
         userId = await resolveUserId(username, opts.bearer);
         userIds[username] = userId;
+        // 改名の引き継ぎ: ユーザー ID は改名しても変わらない。同じ ID を前の名前で覚えていたら
+        // 改名とみなし、since_id を引き継ぐ（引き継がないと直近 maxResults 件を取り直して課金が増える）。
+        const from = Object.keys(userIds).find(
+          (k) => k !== username && userIds[k] === userId && !opts.accounts.includes(k),
+        );
+        if (from) {
+          if (newSinceIds[from] && !newSinceIds[username]) newSinceIds[username] = newSinceIds[from];
+          delete newSinceIds[from];
+          delete userIds[from];
+          renames.push({ from, to: username });
+        }
       }
       const url = new URL(`${X_API_BASE}/users/${userId}/tweets`);
       url.searchParams.set("max_results", String(Math.max(5, Math.min(100, opts.maxResults))));
@@ -134,7 +151,7 @@ export async function fetchXAccounts(opts: {
       url.searchParams.set("media.fields", "url,preview_image_url");
       url.searchParams.set("user.fields", "profile_image_url,name,username");
       url.searchParams.set("exclude", "retweets,replies");
-      const since = opts.sinceIds[username];
+      const since = newSinceIds[username];
       if (since) url.searchParams.set("since_id", since); // ★ 新着のみ＝重複課金回避
 
       const res = await fetch(url.toString(), {
@@ -159,6 +176,11 @@ export async function fetchXAccounts(opts: {
         const text = t.text.trim();
         const title = truncateSafe(text, 140, 137);
         const user = t.author_id ? usersById.get(t.author_id) : undefined;
+        // 取得は ID で行うので、相手が改名しても止まらず「旧名のまま」新着が入り続ける。気づけるよう知らせる。
+        if (user?.username && user.username.toLowerCase() !== username.toLowerCase()) {
+          const msg = `x @${username}: @${user.username} に改名されています。feeds.config.ts の x.accounts を書き換えてください`;
+          if (!errors.includes(msg)) errors.push(msg);
+        }
         items.push({
           id: `x-${t.id}`,
           source: "x",
@@ -177,7 +199,7 @@ export async function fetchXAccounts(opts: {
       errors.push(`x @${username}: ${(e as Error).message}`);
     }
   }
-  return { items, sinceIds: newSinceIds, userIds, errors };
+  return { items, sinceIds: newSinceIds, userIds, errors, renames };
 }
 
 // ===== 自分のデータ（basecamp 公開JSON） =====
@@ -287,4 +309,31 @@ export async function fetchX(opts: {
   }
 
   return { items, ogCache, authorCache };
+}
+
+/**
+ * 改名（設定の旧ユーザー名 from → 新ユーザー名 to）を前回までの項目に反映する。戻り値は付け替えた件数。
+ * 付け替えないと同じアカウントが旧名・新名の 2 つのチップに割れ、旧名のプロフィールへリンクし続ける。
+ * 書き換えた項目はそのまま feed.json に残るので、呼ぶのは改名を検出した 1 回だけでよい。
+ * ブックマーク側の著者キャッシュ（authorCache）も毎回再適用されるので、旧名なら同じく付け替える。
+ */
+export function applyXRename(
+  items: FeedItem[],
+  authorCache: Record<string, XAuthorMeta | null>,
+  from: string,
+  to: string,
+): number {
+  const fromKey = `@${from}`.toLowerCase();
+  const fromUrl = new RegExp(`^https://x\\.com/${from}/`, "i");
+  let n = 0;
+  for (const it of items) {
+    if (it.source !== "x" || it.author?.toLowerCase() !== fromKey) continue;
+    it.author = `@${to}`;
+    it.url = it.url.replace(fromUrl, `https://x.com/${to}/`);
+    n++;
+  }
+  for (const meta of Object.values(authorCache)) {
+    if (meta && meta.handle.toLowerCase() === from.toLowerCase()) meta.handle = to;
+  }
+  return n;
 }

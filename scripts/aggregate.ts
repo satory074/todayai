@@ -16,7 +16,7 @@ import { feedsConfig } from "../feeds.config";
 import type { FeedData, FeedItem, FeedSource } from "../src/lib/feed";
 import { readFeed } from "../src/lib/feedStore";
 import { writeFeed } from "./lib/feedWrite";
-import { fetchX, fetchXAccounts } from "./sources/x";
+import { applyXRename, fetchX, fetchXAccounts } from "./sources/x";
 import { fetchRss } from "./sources/rss";
 import { fetchHatena } from "./sources/hatena";
 import { fetchLayerX } from "./sources/layerx";
@@ -139,6 +139,10 @@ async function run(): Promise<void> {
         });
         state.xAccountSinceIds = r.sinceIds;
         state.xAccountUserIds = r.userIds;
+        for (const { from, to } of r.renames) {
+          const n = applyXRename(xItems, state.xAuthors ?? {}, from, to);
+          console.log(`[x] 改名を引き継ぎ: @${from} → @${to}（既存 ${n} 件を付け替え）`);
+        }
         xItems.push(...r.items);
         for (const e of r.errors) errors.push(e);
         console.log(`[x] 外部アカウント: +${r.items.length} new (${feedsConfig.x.accounts.join(",")})`);
